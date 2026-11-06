@@ -1,0 +1,18 @@
+`verilator_config
+
+// The vendored upstream files (TransDot, cvfpu) as they are
+lint_off -file "*/hw/rtl/ucc/vendor/*"
+
+// The FU's RTL and benches are kept as they were synthesized, comments aside. These are the style warnings they
+// have: the FPnew fma's implicit width extensions in the modules derived from it, ascending ranges, unused package
+// parameters and signals, and pins left empty. Every other -Wall warning stays fatal.
+lint_off -rule WIDTHEXPAND -file "*/hw/rtl/ucc/ucc_fp32_ctrl.sv"
+lint_off -rule WIDTHEXPAND -file "*/hw/rtl/ucc/ucc_fp32_norm.sv"
+lint_off -rule WIDTHEXPAND -file "*/hw/rtl/ucc/ucc_fma.sv"
+lint_off -rule WIDTHTRUNC -file "*/hw/rtl/ucc/ucc_fp32_ctrl.sv"
+lint_off -rule WIDTHTRUNC -file "*/hw/rtl/ucc/ucc_fp32_norm.sv"
+lint_off -rule ASCRANGE -file "*/hw/rtl/ucc/ucc_fma.sv"
+lint_off -rule UNUSEDPARAM -file "*/hw/rtl/ucc/ucc_pkg.sv"
+lint_off -rule PINCONNECTEMPTY -file "*/hw/rtl/ucc/*"
+lint_off -rule UNUSEDSIGNAL -file "*/hw/rtl/ucc/*"
+lint_off -rule UNUSEDSIGNAL -file "*/hw/unittest/ucc_lane/bench/*"

@@ -1,0 +1,878 @@
+// Copyright 2019 ETH Zurich and University of Bologna.
+//
+// Copyright and related rights are licensed under the Solderpad Hardware
+// License, Version 0.51 (the "License"); you may not use this file except in
+// compliance with the License. You may obtain a copy of the License at
+// http://solderpad.org/licenses/SHL-0.51. Unless required by applicable law
+// or agreed to in writing, software, hardware and materials distributed under
+// this License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+// CONDITIONS OF ANY KIND, either express or implied. See the License for the
+// specific language governing permissions and limitations under the License.
+//
+// SPDX-License-Identifier: SHL-0.51
+
+// Author: Stefan Mach <smach@iis.ee.ethz.ch>
+
+package fpnew_pkg;
+
+  // ---------
+  // FP TYPES
+  // ---------
+  // | Enumerator | Format                | Width  | EXP_BITS | MAN_BITS
+  // |:----------:|-----------------------|-------:|:--------:|:--------:
+  // | FP32       | IEEE binary32         | 32 bit | 8        | 23
+  // | FP64       | IEEE binary64         | 64 bit | 11       | 52
+  // | FP16       | IEEE binary16         | 16 bit | 5        | 10
+  // | FP8        | binary8 (E4M3)        |  8 bit | 4        | 3
+  // | FP16ALT    | binary16alt (BF16)    | 16 bit | 8        | 7
+  // | FP4        | E2M1                  |  4 bit | 2        | 1
+  // | FP8ALT     | binary8alt (E5M2)     |  8 bit | 5        | 2
+  // *NOTE:* Add new formats only at the end of the enumeration for backwards compatibilty!
+
+  // Encoding for a format
+  typedef struct packed {
+    int unsigned exp_bits;
+    int unsigned man_bits;
+  } fp_encoding_t;
+
+  localparam int unsigned NUM_FP_FORMATS = 7; // change me to add formats
+  localparam int unsigned FP_FORMAT_BITS = $clog2(NUM_FP_FORMATS);
+
+  // FP formats
+  typedef enum logic [FP_FORMAT_BITS-1:0] {
+    FP32    = 'd0,
+    FP64    = 'd1,
+    FP16    = 'd2,
+    FP8     = 'd3,
+    FP16ALT = 'd4,
+    FP4     = 'd5,
+    FP8ALT  = 'd6
+    // add new formats here
+  } fp_format_e;
+
+  // Encodings for supported FP formats
+  localparam fp_encoding_t [0:NUM_FP_FORMATS-1] FP_ENCODINGS  = '{
+    '{8,  23}, // IEEE binary32 (single)
+    '{11, 52}, // IEEE binary64 (double)
+    '{5,  10}, // IEEE binary16 (half)
+    '{4,  3},  // custom binary8 (E4M3)
+    '{8,  7},  // custom binary16alt (BF16)
+    '{2,  1},  // custom fp4 (E2M1)
+    '{5,  2}   // custom binary8alt (E5M2) — wider exp than E4M3
+    // add new formats here
+  };
+
+  typedef logic [0:NUM_FP_FORMATS-1]       fmt_logic_t;    // Logic indexed by FP format (for masks)
+  typedef logic [0:NUM_FP_FORMATS-1][31:0] fmt_unsigned_t; // Unsigned indexed by FP format
+
+  localparam fmt_logic_t CPK_FORMATS = 7'b1100000; // FP32 and FP64 can provide CPK only
+
+  // ---------
+  // INT TYPES
+  // ---------
+  // | Enumerator | Width  |
+  // |:----------:|-------:|
+  // | INT8       |  8 bit |
+  // | INT16      | 16 bit |
+  // | INT32      | 32 bit |
+  // | INT64      | 64 bit |
+  // *NOTE:* Add new formats only at the end of the enumeration for backwards compatibilty!
+
+  localparam int unsigned NUM_INT_FORMATS = 5; // change me to add formats
+  localparam int unsigned INT_FORMAT_BITS = $clog2(NUM_INT_FORMATS);
+
+  // Int formats. INT4 is appended last to preserve the legacy enum encoding
+  // for INT8/16/32/64; it covers the MFSA paper's INT4 DPA mode (k=8 lanes
+  // packed into one 32-b operand word). The paper expects the FP4 multiplier
+  // to be reused for INT4 (sign-mag → two's-complement on the FP4 DP2 stage).
+  typedef enum logic [INT_FORMAT_BITS-1:0] {
+    INT8,
+    INT16,
+    INT32,
+    INT64,
+    INT4
+    // add new formats here
+  } int_format_e;
+
+  // Returns the width of an INT format by index
+  function automatic int unsigned int_width(int_format_e ifmt);
+    unique case (ifmt)
+      INT8:  return 8;
+      INT16: return 16;
+      INT32: return 32;
+      INT64: return 64;
+      INT4:  return 4;
+      default: begin
+        // pragma translate_off
+        $fatal(1, "Invalid INT format supplied");
+        // pragma translate_on
+        // just return any integer to avoid any latches
+        // hopefully this error is caught by simulation
+        return INT8;
+      end
+    endcase
+  endfunction
+
+  typedef logic [0:NUM_INT_FORMATS-1] ifmt_logic_t; // Logic indexed by INT format (for masks)
+
+  // --------------
+  // FP OPERATIONS
+  // --------------
+  localparam int unsigned NUM_OPGROUPS = 4;
+
+  // Each FP operation belongs to an operation group
+  typedef enum logic [1:0] {
+    ADDMUL, DIVSQRT, NONCOMP, CONV
+  } opgroup_e;
+
+  localparam int unsigned OP_BITS = 5;
+
+  typedef enum logic [OP_BITS-1:0] {
+    FMADD, FNMSUB, ADD, MUL,     // ADDMUL operation group
+    DIV, SQRT,                   // DIVSQRT operation group
+    SGNJ, MINMAX, CMP, CLASSIFY, // NONCOMP operation group
+    F2F, F2I, I2F, CPKAB, CPKCD, // CONV operation group
+    ADDS,                         // ADDMUL operation group (kept after CPK* to preserve legacy encoding)
+    TDOT_SIMD_FMADD,              // ADDMUL operation group (TransDot merged-SIMD FMADD)
+    TDOT_DP_FMADD,                // ADDMUL operation group (TransDot dot-product FMADD)
+    TDOT_FP4_DP_FMADD,            // ADDMUL operation group (TransDot FP4 dot-product FMADD)
+    INT_DP_FMADD                  // ADDMUL-class integer DPA MAC (paper Section III-C INT path).
+                                  // int_fmt_i selects INT16 (2-DPA) or INT8 (4-DPA);
+                                  // op_mod_i = 0 for signed, 1 for unsigned operands.
+                                  // Result is INT32, written to the 32-b cascade.
+  } operation_e;
+
+  // -------------
+  // DIVSQRT UNIT
+  // -------------
+  typedef enum logic[1:0] {
+    PULP,    // "PULP" instantiates the PULP DivSqrt unit supports FP64, FP32, FP16, FP16ALT, FP8 and SIMD operations
+    TH32,    // "TH32" instantiates the E906 DivSqrt unit supports only FP32 (no SIMD support)
+    THMULTI  // "THMULTI" instantiates the C910 DivSqrt unit supports FP64, FP32, FP16, FP16ALT and SIMD operations
+  } divsqrt_unit_t;
+
+  // -------------------
+  // RISC-V FP-SPECIFIC
+  // -------------------
+  // Rounding modes
+  typedef enum logic [2:0] {
+    RNE = 3'b000,
+    RTZ = 3'b001,
+    RDN = 3'b010,
+    RUP = 3'b011,
+    RMM = 3'b100,
+    ROD = 3'b101,  // This mode is not defined in RISC-V FP-SPEC
+    DYN = 3'b111
+  } roundmode_e;
+
+  // Status flags
+  typedef struct packed {
+    logic NV; // Invalid
+    logic DZ; // Divide by zero
+    logic OF; // Overflow
+    logic UF; // Underflow
+    logic NX; // Inexact
+  } status_t;
+
+  // Information about a floating point value
+  typedef struct packed {
+    logic is_normal;     // is the value normal
+    logic is_subnormal;  // is the value subnormal
+    logic is_zero;       // is the value zero
+    logic is_inf;        // is the value infinity
+    logic is_nan;        // is the value NaN
+    logic is_signalling; // is the value a signalling NaN
+    logic is_quiet;      // is the value a quiet NaN
+    logic is_boxed;      // is the value properly NaN-boxed (RISC-V specific)
+  } fp_info_t;
+
+  // Classification mask
+  typedef enum logic [9:0] {
+    NEGINF     = 10'b00_0000_0001,
+    NEGNORM    = 10'b00_0000_0010,
+    NEGSUBNORM = 10'b00_0000_0100,
+    NEGZERO    = 10'b00_0000_1000,
+    POSZERO    = 10'b00_0001_0000,
+    POSSUBNORM = 10'b00_0010_0000,
+    POSNORM    = 10'b00_0100_0000,
+    POSINF     = 10'b00_1000_0000,
+    SNAN       = 10'b01_0000_0000,
+    QNAN       = 10'b10_0000_0000
+  } classmask_e;
+
+  // ------------------
+  // FPU configuration
+  // ------------------
+  // Pipelining registers can be inserted (at elaboration time) into operational units
+  typedef enum logic [1:0] {
+    BEFORE,     // registers are inserted at the inputs of the unit
+    AFTER,      // registers are inserted at the outputs of the unit
+    INSIDE,     // registers are inserted at predetermined (suboptimal) locations in the unit
+    DISTRIBUTED // registers are evenly distributed, INSIDE >= AFTER >= BEFORE
+  } pipe_config_t;
+
+  // Arithmetic units can be arranged in parallel (per format), merged (multi-format) or not at all.
+  typedef enum logic [1:0] {
+    DISABLED, // arithmetic units are not generated
+    PARALLEL, // arithmetic units are generated in prallel slices, one for each format
+    MERGED    // arithmetic units are contained within a merged unit holding multiple formats
+  } unit_type_t;
+
+  // Array of unit types indexed by format
+  typedef unit_type_t [0:NUM_FP_FORMATS-1] fmt_unit_types_t;
+
+  // Array of format-specific unit types by opgroup
+  typedef fmt_unit_types_t [0:NUM_OPGROUPS-1] opgrp_fmt_unit_types_t;
+  // same with unsigned
+  typedef fmt_unsigned_t [0:NUM_OPGROUPS-1] opgrp_fmt_unsigned_t;
+
+  // FPU configuration: features
+  typedef struct packed {
+    int unsigned Width;
+    logic        EnableVectors;
+    logic        EnableNanBox;
+    fmt_logic_t  FpFmtMask;
+    ifmt_logic_t IntFmtMask;
+  } fpu_features_t;
+
+  localparam fpu_features_t RV64D = '{
+    Width:         64,
+    EnableVectors: 1'b0,
+    EnableNanBox:  1'b1,
+    FpFmtMask:     7'b1100000,
+    IntFmtMask:    4'b0011
+  };
+
+  localparam fpu_features_t RV32D = '{
+    Width:         64,
+    EnableVectors: 1'b1,
+    EnableNanBox:  1'b1,
+    FpFmtMask:     7'b1100000,
+    IntFmtMask:    4'b0010
+  };
+
+  localparam fpu_features_t RV32F = '{
+    Width:         32,
+    EnableVectors: 1'b0,
+    EnableNanBox:  1'b1,
+    FpFmtMask:     7'b1000000,
+    IntFmtMask:    4'b0010
+  };
+
+  localparam fpu_features_t RV64D_Xsflt = '{
+    Width:         64,
+    EnableVectors: 1'b1,
+    EnableNanBox:  1'b1,
+    FpFmtMask:     7'b1111100,
+    IntFmtMask:    4'b1111
+  };
+
+  localparam fpu_features_t RV32F_Xsflt = '{
+    Width:         32,
+    EnableVectors: 1'b1,
+    EnableNanBox:  1'b1,
+    FpFmtMask:     7'b1011100,
+    IntFmtMask:    4'b1110
+  };
+
+  localparam fpu_features_t RV32F_Xf16alt_Xfvec = '{
+    Width:         32,
+    EnableVectors: 1'b1,
+    EnableNanBox:  1'b1,
+    FpFmtMask:     7'b1000100,
+    IntFmtMask:    4'b0110
+  };
+
+  localparam fpu_features_t fp32_addmul_no_simd = '{
+    Width:         32,
+    EnableVectors: 1'b0,
+    EnableNanBox:  1'b1,
+    FpFmtMask:     7'b1000000,
+    IntFmtMask:    4'b0000
+  };
+
+  localparam fpu_features_t fp16_addmul_no_simd = '{
+    Width:         16,
+    EnableVectors: 1'b0,
+    EnableNanBox:  1'b1,
+    FpFmtMask:     7'b0000100,
+    IntFmtMask:    4'b0000
+  };
+
+  localparam fpu_features_t fp32_fp16_addmul_no_simd = '{
+    Width:         32,
+    EnableVectors: 1'b0,
+    EnableNanBox:  1'b1,
+    FpFmtMask:     7'b1010000,
+    IntFmtMask:    4'b0000
+  };
+
+  localparam fpu_features_t fp32_fp16_addmul_simd = '{
+    Width:         32,
+    EnableVectors: 1'b1,
+    EnableNanBox:  1'b1,
+    FpFmtMask:     7'b1010000,
+    IntFmtMask:    4'b0000
+  };
+
+  localparam fpu_features_t fp32_fp16_fp8_addmul_no_simd = '{
+    Width:         32,
+    EnableVectors: 1'b0,
+    EnableNanBox:  1'b1,
+    FpFmtMask:     7'b1011000,
+    IntFmtMask:    4'b0000
+  };
+
+  localparam fpu_features_t fp32_fp16_fp8_addmul_simd = '{
+    Width:         32,
+    EnableVectors: 1'b1,
+    EnableNanBox:  1'b1,
+    FpFmtMask:     7'b1011000,
+    IntFmtMask:    4'b0000
+  };
+
+  localparam fpu_features_t int32_addmul_no_simd = '{
+    Width:         32,
+    EnableVectors: 1'b0,
+    EnableNanBox:  1'b1,
+    FpFmtMask:     7'b1000000,
+    IntFmtMask:    4'b0010
+  };
+
+  localparam fpu_features_t transdot_features = '{
+    Width:         32,
+    EnableVectors: 1'b0,
+    EnableNanBox:  1'b1,
+    FpFmtMask:     7'b1011010,
+    IntFmtMask:    4'b0000
+  };
+
+  // Full MFSA hero config for ICCD2026: 6 FP formats (FP32, FP16, BF16, FP8
+  // E4M3, FP8ALT E5M2, FP4) + INT8/INT16/INT32 + INT4 (FP4-DP runtime slot)
+  // + MX (MXFP8, MXFP4 via OBSR). FpFmtMask=7'b1011111 covers all six FP
+  // (bit6=FP32, bit5=FP64 disabled, bit4=BF16, bit3=FP8, bit2=FP16, bit1=FP4,
+  // bit0=FP8ALT). IntFmtMask=4'b1110 enables INT8/INT16/INT32 (INT64
+  // disabled because the array's 32-b cascade cannot carry it). INT4 reuses
+  // the FP4-DP slot at runtime via `int_mode_i` + IntFmt=INT4, so it does
+  // not appear in IntFmtMask.
+  localparam fpu_features_t transdot_features_with_int = '{
+    Width:         32,
+    EnableVectors: 1'b0,
+    EnableNanBox:  1'b1,
+    FpFmtMask:     7'b1011111,
+    IntFmtMask:    4'b1110
+  };
+
+  localparam fpu_features_t transdot_features_fp16_dp_only = '{
+    Width:         32,
+    EnableVectors: 1'b0,
+    EnableNanBox:  1'b1,
+    FpFmtMask:     7'b1010000,
+    IntFmtMask:    4'b0000
+  };
+
+  // Cumulative per-format variants used by the ASIC PE-level area staircase
+  // (syn/asic/pe). Width stays at 32 so the PE port list is format-independent;
+  // the FpFmtMask grows by one format per stage. Each mask bit is cfg[fmt],
+  // indexed as [0:NUM_FP_FORMATS-1] → MSB of the literal is cfg[0]=FP32.
+  //   Bit position (MSB..LSB in the literal): FP32, FP64, FP16, FP8, FP16ALT, FP4
+  //
+  // NOTE: The transdot FMA's SIMD block (transdot_fp4_fp8_fp16_fp32_fma_opt.sv
+  // line 282) unconditionally slices [15:0] out of operands_q_simd whenever
+  // fmt iterates to FP16 or FP8, regardless of the config mask. That makes
+  // truly-single-format masks (FP16-only / FP8-only / FP4-only) fail
+  // elaboration because WIDTH=fp_width(that format) < 16. To keep every stage
+  // elaboratable we hold FP32 in the mask for every stage above the first.
+  localparam fpu_features_t transdot_features_stage1_fp32 = '{
+    Width:         32,
+    EnableVectors: 1'b0,
+    EnableNanBox:  1'b1,
+    FpFmtMask:     7'b1000000,            // FP32
+    IntFmtMask:    4'b0000
+  };
+
+  localparam fpu_features_t transdot_features_stage2_fp32_fp16 = '{
+    Width:         32,
+    EnableVectors: 1'b0,
+    EnableNanBox:  1'b1,
+    FpFmtMask:     7'b1010000,            // FP32 + FP16
+    IntFmtMask:    4'b0000
+  };
+
+  localparam fpu_features_t transdot_features_stage3_fp32_fp16_fp8 = '{
+    Width:         32,
+    EnableVectors: 1'b0,
+    EnableNanBox:  1'b1,
+    FpFmtMask:     7'b1011000,            // FP32 + FP16 + FP8
+    IntFmtMask:    4'b0000
+  };
+  // Stage 4 is `transdot_features` (7'b1011010, FP32+FP16+FP8+FP4).
+
+  // BF16 (FP16ALT, bit 4) feature masks for the ICCAD 2026 PPA study.
+  // FP32 (bit 0) is kept on in every variant to sidestep the SIMD-slice
+  // elab bug in transdot_fp4_fp8_fp16_fp32_fma_opt.sv (see line ~282 fix).
+  localparam fpu_features_t transdot_features_bf16_only = '{
+    Width:         32,
+    EnableVectors: 1'b0,
+    EnableNanBox:  1'b1,
+    FpFmtMask:     7'b1000100,            // FP32 + FP16ALT (BF16)
+    IntFmtMask:    4'b0000
+  };
+
+  localparam fpu_features_t transdot_features_bf16_fp8 = '{
+    Width:         32,
+    EnableVectors: 1'b0,
+    EnableNanBox:  1'b1,
+    FpFmtMask:     7'b1011100,            // FP32 + FP16 + FP8 + FP16ALT
+    IntFmtMask:    4'b0000
+  };
+
+  localparam fpu_features_t transdot_features_bf16_fp4 = '{
+    Width:         32,
+    EnableVectors: 1'b0,
+    EnableNanBox:  1'b1,
+    FpFmtMask:     7'b1000110,            // FP32 + FP16ALT + FP4
+    IntFmtMask:    4'b0000
+  };
+
+  // FP8 + FP4 dot-product PE. The FMA's SIMD lane (operands_q_simd of
+  // WIDTH/2) requires WIDTH >= 16 to decode FP8/FP16 SIMD slices, so the
+  // smallest viable mask still includes one 16-bit anchor format. FP16 is
+  // far smaller than FP32, giving us a meaningfully smaller PE than the
+  // FP32-anchored variant. INT helpers are auto-disabled by the
+  // INT_HELPER_SUPPORTED gate (no FP32 in mask).
+  localparam fpu_features_t transdot_features_fp8_fp4 = '{
+    Width:         32,
+    EnableVectors: 1'b0,
+    EnableNanBox:  1'b1,
+    FpFmtMask:     7'b0011010,            // FP16 + FP8 + FP4
+    IntFmtMask:    4'b0000
+  };
+
+  localparam fpu_features_t transdot_features_bf16_fp8_fp4 = '{
+    Width:         32,
+    EnableVectors: 1'b0,
+    EnableNanBox:  1'b1,
+    FpFmtMask:     7'b1011110,            // FP32 + FP16 + FP8 + FP16ALT + FP4
+    IntFmtMask:    4'b0000
+  };
+
+  // ICCD-2026 Table IV cumulative INT staircase. Each step adds one int_format_e
+  // bit to the previous FP staircase. INT4 is *not* a separate cumulative step —
+  // it reuses the FP4 DP2 slot at runtime via int4_mode_i, so a config that has
+  // FP4 enabled in FpFmtMask already carries the INT4 silicon. INT8/INT16 do
+  // need their IntFmtMask bits flipped on; both are 16-bit-safe so they
+  // elaborate alongside the existing FpFmtMask without the elaborate guard
+  // tripping. IntFmtMask bit ordering (per int_format_e): bit 3 = INT8,
+  // bit 2 = INT16, bit 1 = INT32, bit 0 = INT64.
+  localparam fpu_features_t transdot_features_bf16_fp8_int8 = '{
+    Width:         32,
+    EnableVectors: 1'b0,
+    EnableNanBox:  1'b1,
+    FpFmtMask:     7'b1011100,            // FP32 + FP16 + FP8 + FP16ALT (no FP4)
+    IntFmtMask:    4'b1000               // INT8
+  };
+
+  localparam fpu_features_t transdot_features_bf16_fp8_fp4_int8 = '{
+    Width:         32,
+    EnableVectors: 1'b0,
+    EnableNanBox:  1'b1,
+    FpFmtMask:     7'b1011110,            // FP32 + FP16 + FP8 + FP16ALT + FP4
+    IntFmtMask:    4'b1000               // INT8 (INT4 carried by the FP4 DP2 path)
+  };
+
+  localparam fpu_features_t transdot_features_bf16_fp8_fp4_int8_int16 = '{
+    Width:         32,
+    EnableVectors: 1'b0,
+    EnableNanBox:  1'b1,
+    FpFmtMask:     7'b1011110,            // FP32 + FP16 + FP8 + FP16ALT + FP4
+    IntFmtMask:    4'b1100               // INT8 + INT16
+  };
+
+  // E5M2 (FP8ALT) added on top of the BF16 + FP8 + FP4 set. FP8ALT rides the
+  // FP8-DP path's 4-lane substrate (its 3-b effective mantissa fits the FP8
+  // 4×4 multiplier), with SUPER_EXP_BITS_FP8 widened to 5 to hold its 5-b
+  // exponent. Direct analog of how BF16 was added on top of FP16.
+  localparam fpu_features_t transdot_features_bf16_fp8_fp4_fp8alt = '{
+    Width:         32,
+    EnableVectors: 1'b0,
+    EnableNanBox:  1'b1,
+    FpFmtMask:     7'b1011111,            // FP32 + FP16 + FP8 + FP16ALT + FP4 + FP8ALT
+    IntFmtMask:    4'b0000
+  };
+
+  // ICCD 2026 incremental-cost sweep on top of BF16. The bf16_fp8 preset
+  // above already includes FP16, which conflates two additions; these
+  // strictly add formats one at a time so the PPA delta isolates each.
+  //   bf16            = transdot_features_bf16_only       (FP32 + BF16)
+  //   +fp8 (e4m3/e5m2) = transdot_features_bf16_fp8_fp8alt (this preset)
+  //   +fp4             = transdot_features_bf16_fp8_fp8alt_fp4
+  //   +fp16            = transdot_features_bf16_fp8_fp4_fp8alt (above)
+  // Mask bit order (left to right): FP32, FP64, FP16, FP8, FP16ALT, FP4, FP8ALT.
+  localparam fpu_features_t transdot_features_bf16_fp8_fp8alt = '{
+    Width:         32,
+    EnableVectors: 1'b0,
+    EnableNanBox:  1'b1,
+    FpFmtMask:     7'b1001101,            // FP32 + FP8 + FP16ALT + FP8ALT
+    IntFmtMask:    4'b0000
+  };
+
+  localparam fpu_features_t transdot_features_bf16_fp8_fp8alt_fp4 = '{
+    Width:         32,
+    EnableVectors: 1'b0,
+    EnableNanBox:  1'b1,
+    FpFmtMask:     7'b1001111,            // FP32 + FP8 + FP16ALT + FP4 + FP8ALT
+    IntFmtMask:    4'b0000
+  };
+
+  // No-FP32 variants of the BF16-incremental sweep. These drop FP32 from
+  // the FpFmtMask entirely -- the elaboration bug fixed at
+  // transdot_fp4_fp8_fp16_fp32_fma_opt.sv:282 is what previously forced
+  // FP32 to stay in. If elaboration still works, these isolate the
+  // FP32-multiplier cost from the rest of the multi-format datapath.
+  localparam fpu_features_t transdot_features_bf16_fp8_fp8alt_nofp32 = '{
+    Width:         32,
+    EnableVectors: 1'b0,
+    EnableNanBox:  1'b1,
+    FpFmtMask:     7'b0001101,            // BF16 + FP8 + FP8ALT (no FP32)
+    IntFmtMask:    4'b0000
+  };
+
+  localparam fpu_features_t transdot_features_bf16_fp8_fp8alt_fp4_nofp32 = '{
+    Width:         32,
+    EnableVectors: 1'b0,
+    EnableNanBox:  1'b1,
+    FpFmtMask:     7'b0001111,            // BF16 + FP8 + FP4 + FP8ALT (no FP32)
+    IntFmtMask:    4'b0000
+  };
+
+  localparam fpu_features_t transdot_features_bf16_full_nofp32 = '{
+    Width:         32,
+    EnableVectors: 1'b0,
+    EnableNanBox:  1'b1,
+    FpFmtMask:     7'b0011111,            // FP16 + BF16 + FP8 + FP4 + FP8ALT (no FP32)
+    IntFmtMask:    4'b0000
+  };
+
+  // FPU configuraion: implementation
+  typedef struct packed {
+    opgrp_fmt_unsigned_t   PipeRegs;
+    opgrp_fmt_unit_types_t UnitTypes;
+    pipe_config_t          PipeConfig;
+  } fpu_implementation_t;
+
+  localparam fpu_implementation_t DEFAULT_NOREGS = '{
+    PipeRegs:   '{default: 0},
+    UnitTypes:  '{'{default: PARALLEL}, // ADDMUL
+                  '{default: MERGED},   // DIVSQRT
+                  '{default: PARALLEL}, // NONCOMP
+                  '{default: MERGED}},  // CONV
+    PipeConfig: BEFORE
+  };
+
+  localparam fpu_implementation_t DEFAULT_SNITCH = '{
+    PipeRegs:   '{default: 1},
+    UnitTypes:  '{'{default: PARALLEL}, // ADDMUL
+                  '{default: DISABLED}, // DIVSQRT
+                  '{default: PARALLEL}, // NONCOMP
+                  '{default: MERGED}},  // CONV
+    PipeConfig: BEFORE
+  };
+
+  localparam fpu_implementation_t ADDMUL_ONLY = '{
+    PipeRegs:   '{default: 4},
+    UnitTypes:  '{'{default: MERGED}, // ADDMUL
+                  '{default: DISABLED}, // DIVSQRT
+                  '{default: DISABLED}, // NONCOMP
+                  '{default: DISABLED}},  // CONV
+    //PipeConfig: BEFORE
+    PipeConfig: DISTRIBUTED
+  };
+
+  localparam fpu_implementation_t ADDMUL_ONLY_PIPE3 = '{
+    PipeRegs:   '{default: 3},
+    UnitTypes:  '{'{default: MERGED}, // ADDMUL
+                  '{default: DISABLED}, // DIVSQRT
+                  '{default: DISABLED}, // NONCOMP
+                  '{default: DISABLED}},  // CONV
+    //PipeConfig: BEFORE
+    PipeConfig: DISTRIBUTED
+  };
+
+  localparam fpu_implementation_t ADDMUL_ONLY_PIPE1 = '{
+    PipeRegs:   '{default: 1},
+    UnitTypes:  '{'{default: MERGED}, // ADDMUL
+                  '{default: DISABLED}, // DIVSQRT
+                  '{default: DISABLED}, // NONCOMP
+                  '{default: DISABLED}},  // CONV
+    PipeConfig: BEFORE
+    //PipeConfig: DISTRIBUTED
+  };
+
+  // Zero-pipe variant used by the ASIC PE/array flow so the combinational
+  // critical path through one PE is what gets reported.
+  localparam fpu_implementation_t ADDMUL_ONLY_PIPE0 = '{
+    PipeRegs:   '{default: 0},
+    UnitTypes:  '{'{default: MERGED}, // ADDMUL
+                  '{default: DISABLED}, // DIVSQRT
+                  '{default: DISABLED}, // NONCOMP
+                  '{default: DISABLED}},  // CONV
+    PipeConfig: BEFORE
+  };
+
+  // 2-pipe variant (DISTRIBUTED) used for 2-term DPA iso-latency sweeps
+  // (BF16, FP4). RETIME must be on when synthesising this variant.
+  localparam fpu_implementation_t ADDMUL_ONLY_PIPE2 = '{
+    PipeRegs:   '{default: 2},
+    UnitTypes:  '{'{default: MERGED}, // ADDMUL
+                  '{default: DISABLED}, // DIVSQRT
+                  '{default: DISABLED}, // NONCOMP
+                  '{default: DISABLED}},  // CONV
+    PipeConfig: DISTRIBUTED
+  };
+
+  // Explicit 4-pipe alias of ADDMUL_ONLY for symmetry in PPA sweep tables.
+  localparam fpu_implementation_t ADDMUL_ONLY_PIPE4 = ADDMUL_ONLY;
+
+  // -----------------------
+  // Synthesis optimization
+  // -----------------------
+  localparam logic DONT_CARE = 1'b1; // the value to assign as don't care
+
+  // -------------------------
+  // General helper functions
+  // -------------------------
+  function automatic int minimum(int a, int b);
+    return (a < b) ? a : b;
+  endfunction
+
+  function automatic int maximum(int a, int b);
+    return (a > b) ? a : b;
+  endfunction
+
+  // -------------------------------------------
+  // Helper functions for FP formats and values
+  // -------------------------------------------
+  // Returns the width of a FP format
+  function automatic int unsigned fp_width(fp_format_e fmt);
+    return FP_ENCODINGS[fmt].exp_bits + FP_ENCODINGS[fmt].man_bits + 1;
+  endfunction
+
+  // Returns the widest FP format present
+  function automatic int unsigned max_fp_width(fmt_logic_t cfg);
+    automatic int unsigned res = 0;
+    for (int unsigned i = 0; i < NUM_FP_FORMATS; i++)
+      if (cfg[i])
+        res = unsigned'(maximum(res, fp_width(fp_format_e'(i))));
+    return res;
+  endfunction
+
+  // Returns the narrowest FP format present
+  function automatic int unsigned min_fp_width(fmt_logic_t cfg);
+    automatic int unsigned res = max_fp_width(cfg);
+    for (int unsigned i = 0; i < NUM_FP_FORMATS; i++)
+      if (cfg[i])
+        res = unsigned'(minimum(res, fp_width(fp_format_e'(i))));
+    return res;
+  endfunction
+
+  // Returns the number of expoent bits for a format
+  function automatic int unsigned exp_bits(fp_format_e fmt);
+    return FP_ENCODINGS[fmt].exp_bits;
+  endfunction
+
+  // Returns the number of mantissa bits for a format
+  function automatic int unsigned man_bits(fp_format_e fmt);
+    return FP_ENCODINGS[fmt].man_bits;
+  endfunction
+
+  // Returns the bias value for a given format (as per IEEE 754-2008)
+  function automatic int unsigned bias(fp_format_e fmt);
+    return unsigned'(2**(FP_ENCODINGS[fmt].exp_bits-1)-1); // symmetrical bias
+  endfunction
+
+  function automatic fp_encoding_t super_format(fmt_logic_t cfg);
+    automatic fp_encoding_t res;
+    res = '0;
+    for (int unsigned fmt = 0; fmt < NUM_FP_FORMATS; fmt++)
+      if (cfg[fmt]) begin // only active format
+        res.exp_bits = unsigned'(maximum(res.exp_bits, exp_bits(fp_format_e'(fmt))));
+        res.man_bits = unsigned'(maximum(res.man_bits, man_bits(fp_format_e'(fmt))));
+      end
+    return res;
+  endfunction
+
+  // -------------------------------------------
+  // Helper functions for INT formats and values
+  // -------------------------------------------
+  // Returns the widest INT format present
+  function automatic int unsigned max_int_width(ifmt_logic_t cfg);
+    automatic int unsigned res = 0;
+    for (int ifmt = 0; ifmt < NUM_INT_FORMATS; ifmt++) begin
+      if (cfg[ifmt]) res = maximum(res, int_width(int_format_e'(ifmt)));
+    end
+    return res;
+  endfunction
+
+  // --------------------------------------------------
+  // Helper functions for operations and FPU structure
+  // --------------------------------------------------
+  // Returns the operation group of the given operation
+  function automatic opgroup_e get_opgroup(operation_e op);
+    unique case (op)
+      FMADD, FNMSUB, ADD, ADDS, MUL,
+      TDOT_SIMD_FMADD, TDOT_DP_FMADD, TDOT_FP4_DP_FMADD,
+      INT_DP_FMADD:                                              return ADDMUL;
+      DIV, SQRT:                                                 return DIVSQRT;
+      SGNJ, MINMAX, CMP, CLASSIFY:                               return NONCOMP;
+      F2F, F2I, I2F, CPKAB, CPKCD:                               return CONV;
+      default:                                                   return NONCOMP;
+    endcase
+  endfunction
+
+  // Returns whether the operation selects TransDot DP behavior.
+  function automatic logic is_transdot_dp_op(operation_e op);
+    return (op == TDOT_DP_FMADD) || (op == TDOT_FP4_DP_FMADD);
+  endfunction
+
+  // Returns whether the operation selects TransDot merged SIMD behavior.
+  function automatic logic is_transdot_simd_op(operation_e op);
+    return (op == TDOT_SIMD_FMADD);
+  endfunction
+
+  // Returns whether the operation selects the FP4 TransDot path.
+  function automatic logic is_transdot_fp4_op(operation_e op);
+    return (op == TDOT_FP4_DP_FMADD);
+  endfunction
+
+  // Returns whether the operation selects the INT DPA path (paper §III-C).
+  function automatic logic is_int_dp_op(operation_e op);
+    return (op == INT_DP_FMADD);
+  endfunction
+
+
+  // Returns the number of operands by operation group
+  function automatic int unsigned num_operands(opgroup_e grp);
+    unique case (grp)
+      ADDMUL:  return 3;
+      DIVSQRT: return 2;
+      NONCOMP: return 2;
+      CONV:    return 3; // vectorial casts use 3 operands
+      default: return 0;
+    endcase
+  endfunction
+
+  // Returns the number of lanes according to width, format and vectors
+  function automatic int unsigned num_lanes(int unsigned width, fp_format_e fmt, logic vec);
+    return vec ? width / fp_width(fmt) : 1; // if no vectors, only one lane
+  endfunction
+
+  // Returns the maximum number of lanes in the FPU according to width, format config and vectors
+  function automatic int unsigned max_num_lanes(int unsigned width, fmt_logic_t cfg, logic vec);
+    return vec ? width / min_fp_width(cfg) : 1; // if no vectors, only one lane
+  endfunction
+
+    // Returns the maximum number of lanes in the FPU according to width, format config and vectors
+  function automatic int unsigned num_divsqrt_lanes(int unsigned width, fmt_logic_t cfg, logic vec, divsqrt_unit_t DivSqrtSel);
+    automatic fmt_logic_t cfg_tmp;
+    cfg_tmp = (DivSqrtSel == THMULTI) ? cfg & 7'b1110100 : cfg;
+    return vec ? width / min_fp_width(cfg_tmp) : 1; // if no vectors, only one lane
+  endfunction
+
+  // Returns a mask of active FP formats that are present in lane lane_no of a multiformat slice
+  function automatic fmt_logic_t get_lane_formats(int unsigned width,
+                                                  fmt_logic_t cfg,
+                                                  int unsigned lane_no);
+    automatic fmt_logic_t res;
+    for (int unsigned fmt = 0; fmt < NUM_FP_FORMATS; fmt++)
+      // Mask active formats with the number of lanes for that format
+      res[fmt] = cfg[fmt] & (width / fp_width(fp_format_e'(fmt)) > lane_no);
+    return res;
+  endfunction
+
+  // Returns a mask of active INT formats that are present in lane lane_no of a multiformat slice
+  function automatic ifmt_logic_t get_lane_int_formats(int unsigned width,
+                                                       fmt_logic_t cfg,
+                                                       ifmt_logic_t icfg,
+                                                       int unsigned lane_no);
+    automatic ifmt_logic_t res;
+    automatic fmt_logic_t lanefmts;
+    res = '0;
+    lanefmts = get_lane_formats(width, cfg, lane_no);
+
+    for (int unsigned ifmt = 0; ifmt < NUM_INT_FORMATS; ifmt++)
+      for (int unsigned fmt = 0; fmt < NUM_FP_FORMATS; fmt++)
+        // Mask active int formats with the width of the float formats
+        if ((fp_width(fp_format_e'(fmt)) == int_width(int_format_e'(ifmt))))
+          res[ifmt] |= icfg[ifmt] && lanefmts[fmt];
+    return res;
+  endfunction
+
+  // Returns a mask of active FP formats that are present in lane lane_no of a CONV slice
+  function automatic fmt_logic_t get_conv_lane_formats(int unsigned width,
+                                                       fmt_logic_t cfg,
+                                                       int unsigned lane_no);
+    automatic fmt_logic_t res;
+    for (int unsigned fmt = 0; fmt < NUM_FP_FORMATS; fmt++)
+      // Mask active formats with the number of lanes for that format, CPK at least twice
+      res[fmt] = cfg[fmt] && ((width / fp_width(fp_format_e'(fmt)) > lane_no) ||
+                             (CPK_FORMATS[fmt] && (lane_no < 2)));
+    return res;
+  endfunction
+
+  // Returns a mask of active INT formats that are present in lane lane_no of a CONV slice
+  function automatic ifmt_logic_t get_conv_lane_int_formats(int unsigned width,
+                                                            fmt_logic_t cfg,
+                                                            ifmt_logic_t icfg,
+                                                            int unsigned lane_no);
+    automatic ifmt_logic_t res;
+    automatic fmt_logic_t lanefmts;
+    res = '0;
+    lanefmts = get_conv_lane_formats(width, cfg, lane_no);
+
+    for (int unsigned ifmt = 0; ifmt < NUM_INT_FORMATS; ifmt++)
+      for (int unsigned fmt = 0; fmt < NUM_FP_FORMATS; fmt++)
+        // Mask active int formats with the width of the float formats
+        res[ifmt] |= icfg[ifmt] && lanefmts[fmt] &&
+                     (fp_width(fp_format_e'(fmt)) == int_width(int_format_e'(ifmt)));
+    return res;
+  endfunction
+
+  // Return whether any active format is set as MERGED
+  function automatic logic any_enabled_multi(fmt_unit_types_t types, fmt_logic_t cfg);
+    for (int unsigned i = 0; i < NUM_FP_FORMATS; i++)
+      if (cfg[i] && types[i] == MERGED)
+        return 1'b1;
+      return 1'b0;
+  endfunction
+
+  // Return whether the given format is the first active one set as MERGED
+  function automatic logic is_first_enabled_multi(fp_format_e fmt,
+                                                  fmt_unit_types_t types,
+                                                  fmt_logic_t cfg);
+    for (int unsigned i = 0; i < NUM_FP_FORMATS; i++) begin
+      if (cfg[i] && types[i] == MERGED) return (fp_format_e'(i) == fmt);
+    end
+    return 1'b0;
+  endfunction
+
+  // Returns the first format that is active and is set as MERGED
+  function automatic fp_format_e get_first_enabled_multi(fmt_unit_types_t types, fmt_logic_t cfg);
+    for (int unsigned i = 0; i < NUM_FP_FORMATS; i++)
+      if (cfg[i] && types[i] == MERGED)
+        return fp_format_e'(i);
+      return fp_format_e'(0);
+  endfunction
+
+  // Returns the largest number of regs that is active and is set as MERGED
+  function automatic int unsigned get_num_regs_multi(fmt_unsigned_t regs,
+                                                     fmt_unit_types_t types,
+                                                     fmt_logic_t cfg);
+    automatic int unsigned res = 0;
+    for (int unsigned i = 0; i < NUM_FP_FORMATS; i++) begin
+      if (cfg[i] && types[i] == MERGED) res = maximum(res, regs[i]);
+    end
+    return res;
+  endfunction
+
+endpackage

@@ -29,6 +29,7 @@ all:
 	$(MAKE) -C fdivsqrt_unit
 	$(MAKE) -C tex_lerp
 	$(MAKE) -C mufu_unit
+	$(MAKE) -C ucc_lane
 
 run:
 	$(MAKE) -C generic_queue run
@@ -61,6 +62,7 @@ run:
 	$(MAKE) -C fdivsqrt_unit run
 	$(MAKE) -C tex_lerp run
 	$(MAKE) -C mufu_unit run
+	$(MAKE) -C ucc_lane run
 
 # FPU arithmetic units only — executed (not just built) so CI gates correctness.
 run-fpu:
@@ -73,6 +75,10 @@ run-fpu:
 # MUFU datapath, bit-exact against the sw/common golden model.
 run-mufu:
 	$(MAKE) -C mufu_unit run
+
+# The UCC FU (hw/rtl/ucc): its model tests and its regression against the exact references.
+run-ucc:
+	$(MAKE) -C ucc_lane run
 
 # TCU FEDP datapath — executed per format so a tcu/tfr change is gated by CI.
 # Each format must enable its own RTL datapath (FP16-only is the default). Covers
@@ -161,3 +167,4 @@ clean:
 	$(MAKE) -C fdivsqrt_unit clean
 	$(MAKE) -C tex_lerp clean
 	$(MAKE) -C mufu_unit clean
+	$(MAKE) -C ucc_lane clean

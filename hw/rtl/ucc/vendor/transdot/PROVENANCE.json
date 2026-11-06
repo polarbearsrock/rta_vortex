@@ -1,0 +1,90 @@
+{
+  "repository": "https://github.com/pncel/TransDot",
+  "commit": "599aaa5a50f97244a40e63ca6d7bd81db1deb383",
+  "note": "Unmodified upstream files. fpnew_fma.sv and nv_tc/simt_units/fp64_fma_lane.sv fetched from GitHub at the commit; the rest copied from dora-lab's rta_tensor example (vendor/transdot_native, same commit). Every git blob matches the upstream tree. The DPA-16 files (nv_tc/dpa16/rtl, nv_tc/dpa16/model/dpa16_ref.py, nv_tc/README.md) are copied from dora-lab's rta_dpa16 array (vendor/nv_tc_dpa16, same commit); their blobs match the upstream tree too.",
+  "files": {
+    "nv_tc/README.md": {
+      "upstream_path": "nv_tc/README.md",
+      "git_blob": "49b5a77309a6d9095d284d31f3bc65ca0429d5be",
+      "sha256": "f791a856ddcb66bc6e169e3e08814d6793c14b26fd869f52801fa2653768c3c0"
+    },
+    "nv_tc/dpa16/model/dpa16_ref.py": {
+      "upstream_path": "nv_tc/dpa16/model/dpa16_ref.py",
+      "git_blob": "a530afba12a9a4c263d0ae4c1c362a784b1cae5d",
+      "sha256": "b2ff495e7ee82d5eef30303a8af321e03cbb2a68ec27ce58fc84a45273d92679"
+    },
+    "nv_tc/dpa16/rtl/dpa16_align_sum.sv": {
+      "upstream_path": "nv_tc/dpa16/rtl/dpa16_align_sum.sv",
+      "git_blob": "451b14949dd1d24cb2258b191cc2bee4765c491a",
+      "sha256": "c4007b839343cf8304a5c2feddda678742647de2275753f37ea57e6808ded005"
+    },
+    "nv_tc/dpa16/rtl/dpa16_core.sv": {
+      "upstream_path": "nv_tc/dpa16/rtl/dpa16_core.sv",
+      "git_blob": "038defc893670cdfbd2222f15c459c056ca92c70",
+      "sha256": "0b099626227c1c97004c9ca8c5452332b145d94172d688eadae51d8dc508660e"
+    },
+    "nv_tc/dpa16/rtl/dpa16_mul12.sv": {
+      "upstream_path": "nv_tc/dpa16/rtl/dpa16_mul12.sv",
+      "git_blob": "b6e8a25b7523ed05306157a8293dec3d7891dbd6",
+      "sha256": "4e9e8ed17d4099c822bb3ce6bc3f680fc30bb8bd7a7ef11f651be4cbdd1f1392"
+    },
+    "nv_tc/dpa16/rtl/dpa16_norm.sv": {
+      "upstream_path": "nv_tc/dpa16/rtl/dpa16_norm.sv",
+      "git_blob": "0d4f77248196c5dc518cf87f0982c681738649d7",
+      "sha256": "0cfce5a895f7f53599354e70f844e9fe495ed73007004374d2c61cd70ae71b0d"
+    },
+    "nv_tc/dpa16/rtl/dpa16_pkg.sv": {
+      "upstream_path": "nv_tc/dpa16/rtl/dpa16_pkg.sv",
+      "git_blob": "df9d013df121d9cc7c7901870ececf2982da6da5",
+      "sha256": "1cafba9809839bbcb66b93d969a6fa497e79fd423b6c6d5001874a4cf16cbcd0"
+    },
+    "nv_tc/dpa16/rtl/dpa16_unpack.sv": {
+      "upstream_path": "nv_tc/dpa16/rtl/dpa16_unpack.sv",
+      "git_blob": "781d053a3df046dd802ee84fab7d9568a7991dc8",
+      "sha256": "56aeacab77d3a55c0a515c7894e73cc5fef38bfa25e5ae5e56332d2bce9f1223"
+    },
+    "nv_tc/simt_units/fp64_fma_lane.sv": {
+      "upstream_path": "nv_tc/simt_units/fp64_fma_lane.sv",
+      "git_blob": "b099e27ec2418b053187423784203567a990c39a",
+      "sha256": "49212338f2864217c5ac43ee83bedb2d94e43709015c45542586990e248e93c1"
+    },
+    "src/fpnew_classifier.sv": {
+      "upstream_path": "src/fpnew_classifier.sv",
+      "git_blob": "a322946d7388b55fa9d05bd68722158abf8132d9",
+      "sha256": "cfff43772aea7d918cb0ab3c2e0e996ea34b8740d8edb43f359582ce9978546f"
+    },
+    "src/fpnew_fma.sv": {
+      "upstream_path": "src/fpnew_fma.sv",
+      "git_blob": "60097b1559ec514ea4e95e1c99b615cfb770415c",
+      "sha256": "dd3da70d6cc492a9900528cf48da20546ed378933d5c00b3dedb187d243b8148"
+    },
+    "src/fpnew_pkg.sv": {
+      "upstream_path": "src/fpnew_pkg.sv",
+      "git_blob": "979b56c26dd00f90ab2a6fbe4e87bea1de1be1c9",
+      "sha256": "cb0fe68ec05224935aaf11684a2c9afbc68898206cfa54de605d4946caa95eb5"
+    },
+    "src/fpnew_rounding.sv": {
+      "upstream_path": "src/fpnew_rounding.sv",
+      "git_blob": "4e677209423f8b8751e5c655fae6a4ed46690b42",
+      "sha256": "67d0a15d9e418159eea18a4b521e5d30a563f251e058049041cb2a0cbb0327bd"
+    }
+  },
+  "common_cells": {
+    "repository": "https://github.com/pulp-platform/common_cells",
+    "commit": "6aeee85d0a34fedc06c14f04fd6363c9f7b4eeea",
+    "files": {
+      "src/cf_math_pkg.sv": {
+        "git_blob": "9f35a44e98039233fb868d31a7e2265f30e70f2c",
+        "sha256": "afc32fcae21f6cbb834c5ee602a1aaee1b518fc436a86d4fe1b97942473d35c8"
+      },
+      "src/lzc.sv": {
+        "git_blob": "424eb2ef629667300f6f0a04710e51ca8713dba9",
+        "sha256": "c47046cab67cd9e9ff46f9b2a4c055f301eabd0f135d76d96639eb41c9fa3609"
+      },
+      "include/common_cells/registers.svh": {
+        "git_blob": "c1975edcb3c59dc907ba10d93e9754dcc1ff83e4",
+        "sha256": "4958be84265b95bf22983f5698d657239f1d9e4eae635163a63186b6b2a6ba08"
+      }
+    }
+  }
+}

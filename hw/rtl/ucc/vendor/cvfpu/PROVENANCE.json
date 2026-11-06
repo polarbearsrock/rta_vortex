@@ -1,0 +1,29 @@
+{
+  "repository": "https://github.com/openhwgroup/cvfpu",
+  "commit": "58ca3c376beb914b2b80b811d4b270c063d4e6f7",
+  "files": {
+    "LICENSE.apache": {
+      "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "LICENSE.solderpad": {
+      "git_blob": "5ca76ba6b9baa026af71ce88cb11215c8575bb8c",
+      "sha256": "93b73d82e2a9049adbee0a6c4c3327fdcaa5acdb2217e669e196bb3c60c2b0e1"
+    },
+    "src/fpnew_cast_multi.sv": {
+      "git_blob": "264334fd775e3fff0f093cef60ad97039e97be13",
+      "sha256": "4197978c70627ccf65790b25fa9abc10c240fb5cafebb1c3ed09930009a499ce"
+    },
+    "src/fpnew_noncomp.sv": {
+      "git_blob": "3e41a97d8110bbf25417f9479cb7b7a1bc239cef",
+      "sha256": "56e0656f0960bebfed806bbb268a014904e2e9e17690d6905fc32b1935657021"
+    }
+  },
+  "note": "Unmodified. fpnew_noncomp and fpnew_cast_multi are the units the DICE v2 PE's FPUs use. The DICE v2 PE builds its FPUs from its own copy of cvfpu; the files in dice_identical are byte-identical to that copy. The FU has no divider; the THMULTI divider it had before (fpnew_divsqrt_th_64_multi with the T-Head C910 VFDSU) is in dora-lab's git history of examples/devices/rta_ucc/vendor/cvfpu, before 17feed1.",
+  "dice_identical": [
+    "LICENSE.apache",
+    "LICENSE.solderpad",
+    "src/fpnew_cast_multi.sv",
+    "src/fpnew_noncomp.sv"
+  ]
+}
