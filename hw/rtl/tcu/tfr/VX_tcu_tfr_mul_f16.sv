@@ -22,7 +22,8 @@ module VX_tcu_tfr_mul_f16 import VX_tcu_pkg::*;
     parameter WA    = 28,
     parameter EXP_W = 10,
     parameter USE_DSP = 0,  // map the 11x11 mantissa multiply onto a DSP48 slice
-    parameter PROD_REG = 0  // product/flag register stages (multiply-stage seam)
+    parameter PROD_REG = 0, // product/flag register stages (multiply-stage seam)
+    parameter EXTERNAL_MUL = 0
 ) (
     input wire                      clk,
     input wire                      enable,
@@ -34,6 +35,9 @@ module VX_tcu_tfr_mul_f16 import VX_tcu_pkg::*;
 
     input wire [N-1:0][31:0]        a_row,
     input wire [N-1:0][31:0]        b_col,
+    output wire [TCK-1:0][10:0]     mantissa_a,
+    output wire [TCK-1:0][10:0]     mantissa_b,
+    input wire [TCK-1:0][21:0]      external_products,
 
     // result_exp/exceptions are pre-seam (classify cycle); result_sig is
     // post-seam (PROD_REG cycles later).
@@ -44,6 +48,10 @@ module VX_tcu_tfr_mul_f16 import VX_tcu_pkg::*;
     `UNUSED_SPARAM (INSTANCE_ID)
     `UNUSED_VAR ({clk, req_id, valid_in})
     `UNUSED_VAR (vld_mask)
+    `STATIC_ASSERT (!EXTERNAL_MUL || PROD_REG == 0, ("external multiplier interface is combinational"))
+    if (!EXTERNAL_MUL) begin : g_unused_external
+        `UNUSED_VAR (external_products)
+    end
 
     // Bank-select for the significand path, delayed to post-seam timing.
     logic sig_en;
@@ -252,17 +260,23 @@ module VX_tcu_tfr_mul_f16 import VX_tcu_pkg::*;
         // Mantissa product: 11x11 -> 22. USE_DSP maps it to a DSP48 (the 22-bit
         // product fits one DSP48E2 27x18); PROD_REG lands in its PREG.
         wire [21:0] man_prod;
-        VX_tcu_tfr_wmul #(
-            .N (11),
-            .USE_DSP (USE_DSP),
-            .OUT_REG (PROD_REG)
-        ) wtmul (
-            .clk    (clk),
-            .enable (enable),
-            .a (ma_sel),
-            .b (mb_sel),
-            .p (man_prod)
-        );
+        assign mantissa_a[i] = ma_sel;
+        assign mantissa_b[i] = mb_sel;
+        if (EXTERNAL_MUL) begin : g_external
+            assign man_prod = external_products[i];
+        end else begin : g_internal
+            VX_tcu_tfr_wmul #(
+                .N       (11),
+                .USE_DSP (USE_DSP),
+                .OUT_REG (PROD_REG)
+            ) wtmul (
+                .clk    (clk),
+                .enable (enable),
+                .a      (ma_sel),
+                .b      (mb_sel),
+                .p      (man_prod)
+            );
+        end
 
         wire sign_sel_r;
         VX_pipe_register #(

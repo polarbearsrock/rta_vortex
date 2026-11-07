@@ -27,7 +27,10 @@ module VX_tcu_tfr_shared_mul import VX_tcu_pkg::*;  #(
     parameter TCK = 2 * N,      // Max physical lanes
     parameter SF = 1,           // Scale factor slots
     parameter USE_DSP = 0,      // map mantissa multipliers onto DSP48 slices
-    parameter PROD_REG = 0      // product/flag register stages (multiply-stage seam)
+    parameter PROD_REG = 0,     // product/flag register stages (multiply-stage seam)
+    parameter EXTERNAL_MUL = 0,
+    parameter EXTERNAL_EXP = 0,
+    parameter EXTERNAL_F8 = 0
 ) (
     input wire              clk,
     input wire              enable,
@@ -41,6 +44,14 @@ module VX_tcu_tfr_shared_mul import VX_tcu_pkg::*;  #(
     input wire [N-1:0][31:0] a_row,
     input wire [N-1:0][31:0] b_col,
     input wire [31:0]        c_val,
+    output wire [TCK-1:0][10:0] mantissa_a,
+    output wire [TCK-1:0][10:0] mantissa_b,
+    input wire [TCK-1:0][21:0] external_products,
+    input wire                external_exp_enable,
+    input wire [TCK:0][EXP_W-1:0] external_exponents,
+    output wire [TCK-1:0][1:0][3:0] f8_mantissa_a,
+    output wire [TCK-1:0][1:0][3:0] f8_mantissa_b,
+    input wire [TCK-1:0][1:0][7:0] external_f8_products,
 `ifdef VX_CFG_TCU_MX_ENABLE
     input wire [SF-1:0][7:0] sf_a,
     input wire [SF-1:0][7:0] sf_b,
@@ -82,7 +93,8 @@ module VX_tcu_tfr_shared_mul import VX_tcu_pkg::*;  #(
         .WA(WA),
         .EXP_W(EXP_W),
         .USE_DSP(USE_DSP),
-        .PROD_REG(PROD_REG)
+        .PROD_REG(PROD_REG),
+        .EXTERNAL_MUL(EXTERNAL_MUL)
     ) mul_f16 (
         .clk        (clk),
         .enable     (enable),
@@ -92,10 +104,17 @@ module VX_tcu_tfr_shared_mul import VX_tcu_pkg::*;  #(
         .fmt_f      (fmt_s[3:0]),
         .a_row      (a_row),
         .b_col      (b_col),
+        .mantissa_a (mantissa_a),
+        .mantissa_b (mantissa_b),
+        .external_products (external_products),
         .result_sig (mul_f16_sig),
         .result_exp (mul_f16_exp),
         .exceptions (mul_f16_exc)
     );
+`else
+    assign mantissa_a = '0;
+    assign mantissa_b = '0;
+    `UNUSED_VAR (external_products)
 `endif
 
 `ifdef VX_CFG_TCU_FP8_ENABLE
@@ -109,6 +128,9 @@ module VX_tcu_tfr_shared_mul import VX_tcu_pkg::*;  #(
     wire [SF-1:0][TCK-1:0][EXP_W-1:0] mul_f8_exp_s;
     fedp_excep_t [SF-1:0][TCK-1:0]    mul_f8_exc_s;
     wire [SF-1:0][TCK-1:0]            mul_f8_zero_s;
+    wire [SF-1:0][TCK-1:0][1:0][3:0] f8_ma, f8_mb;
+    assign f8_mantissa_a = f8_ma[0];
+    assign f8_mantissa_b = f8_mb[0];
 
     for (genvar s = 0; s < SF; ++s) begin : g_mul_f8_sf
         VX_tcu_tfr_mul_f8 #(
@@ -118,7 +140,8 @@ module VX_tcu_tfr_shared_mul import VX_tcu_pkg::*;  #(
             .WA(WA),
             .EXP_W(EXP_W),
             .USE_DSP(USE_DSP),
-            .PROD_REG(PROD_REG)
+            .PROD_REG(PROD_REG),
+            .EXTERNAL_MUL(EXTERNAL_F8)
         ) mul_f8 (
             .clk        (clk),
             .enable     (enable),
@@ -128,6 +151,9 @@ module VX_tcu_tfr_shared_mul import VX_tcu_pkg::*;  #(
             .fmt_f      (fmt_s[3:0]),
             .a_row      (a_row),
             .b_col      (b_col),
+            .mantissa_a (f8_ma[s]),
+            .mantissa_b (f8_mb[s]),
+            .external_products (external_f8_products),
         `ifdef VX_CFG_TCU_MX_ENABLE
             .sf_a       (sf_a[s]),
             .sf_b       (sf_b[s]),
@@ -146,6 +172,9 @@ module VX_tcu_tfr_shared_mul import VX_tcu_pkg::*;  #(
         assign mul_f8_exc[i]  = mul_f8_exc_s[SF_SLOT][i];
         assign mul_f8_zero[i] = mul_f8_zero_s[SF_SLOT][i];
     end
+`else
+    assign f8_mantissa_a = '0;
+    assign f8_mantissa_b = '0;
 `endif
 
 `ifdef VX_CFG_TCU_MX_ENABLE
@@ -395,9 +424,10 @@ module VX_tcu_tfr_shared_mul import VX_tcu_pkg::*;  #(
 
     // Exact-cancellation lanes drop out of the max-exponent search.
     for (genvar i = 0; i < TCK; ++i) begin : g_exp_kill
-        assign exponents[i] = sig_zero[i] ? '0 : join_exp_r[i];
+        assign exponents[i] = EXTERNAL_EXP && external_exp_enable ? external_exponents[i]
+                            : sig_zero[i] ? '0 : join_exp_r[i];
     end
-    assign exponents[TCK] = join_exp_r[TCK];
+    assign exponents[TCK] = EXTERNAL_EXP && external_exp_enable ? external_exponents[TCK] : join_exp_r[TCK];
 
     // Maximum exponent select
     VX_tcu_tfr_max_exp #(

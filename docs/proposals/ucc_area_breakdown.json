@@ -1,0 +1,2916 @@
+{
+  "measurements": [
+    {
+      "top": "VX_ucc_dpa16_comb",
+      "total_um2": 33566.778,
+      "preprocessed_sha256": "cb38bac340ad022095929be02ffd84bda71f1b544a98f7c8bb559ab78f1b78f7",
+      "categories_um2": {
+        "retained_exponent_ordering": 1373.148,
+        "retained_multiplier_logic": 3502.296,
+        "retained_reduction_adders": 256.536,
+        "unattributed_other": 3885.588,
+        "unattributed_tensor_preparation": 24549.21
+      },
+      "limitation": "Genus flattens arithmetic and control together. Retained categories are attributable subsets, not complete functional costs. Zero/missing categories mean no separately retained hierarchy; mux/control and normalization are also in the unattributed residual.",
+      "hierarchy": [
+        {
+          "depth": 0,
+          "path": "VX_ucc_dpa16_comb",
+          "module": "VX_ucc_dpa16_comb",
+          "inclusive_um2": 33566.778,
+          "cells": 48587,
+          "exclusive_um2": 3885.588,
+          "category": "unattributed_other"
+        },
+        {
+          "depth": 2,
+          "path": "VX_ucc_dpa16_comb/mul",
+          "module": "VX_tcu_tfr_shared_mul_N8_W25_WA32_SF4_USE_DSP0_PRO",
+          "inclusive_um2": 29681.19,
+          "cells": 43205,
+          "exclusive_um2": 21870.45,
+          "category": "unattributed_tensor_preparation"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/find_max_exp",
+          "module": "VX_tcu_tfr_max_exp_N17_WIDTH10",
+          "inclusive_um2": 1373.148,
+          "cells": 2385,
+          "exclusive_um2": 1373.148,
+          "category": "retained_exponent_ordering"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/g_mul_f8_sf[0].mul_f8",
+          "module": "VX_tcu_tfr_mul_f8_N8_TCK16_W25_WA32_EXP_W10_USE_DS",
+          "inclusive_um2": 1350.972,
+          "cells": 2323,
+          "exclusive_um2": 1350.972,
+          "category": "unattributed_tensor_preparation"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/g_mul_f8_sf[1].mul_f8_g_lane[4].g_internal.wtmul",
+          "module": "VX_tcu_tfr_wmul_N4_LANES2_USE_DSP0_OUT_REG0_20",
+          "inclusive_um2": 58.464,
+          "cells": 84,
+          "exclusive_um2": 58.464,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/g_mul_f8_sf[1].mul_f8_g_lane[5].g_internal.wtmul",
+          "module": "VX_tcu_tfr_wmul_N4_LANES2_USE_DSP0_OUT_REG0_21",
+          "inclusive_um2": 58.464,
+          "cells": 84,
+          "exclusive_um2": 58.464,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/g_mul_f8_sf[1].mul_f8_g_lane[5].sub_adder",
+          "module": "VX_ks_adder_N25_BYPASS0_43",
+          "inclusive_um2": 36.54,
+          "cells": 54,
+          "exclusive_um2": 36.54,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/g_mul_f8_sf[1].mul_f8_g_lane[6].g_internal.wtmul",
+          "module": "VX_tcu_tfr_wmul_N4_LANES2_USE_DSP0_OUT_REG0_22",
+          "inclusive_um2": 58.464,
+          "cells": 84,
+          "exclusive_um2": 58.464,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/g_mul_f8_sf[1].mul_f8_g_lane[6].sub_adder",
+          "module": "VX_ks_adder_N25_BYPASS0_45",
+          "inclusive_um2": 44.226,
+          "cells": 72,
+          "exclusive_um2": 44.226,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/g_mul_f8_sf[1].mul_f8_g_lane[7].g_internal.wtmul",
+          "module": "VX_tcu_tfr_wmul_N4_LANES2_USE_DSP0_OUT_REG0_23",
+          "inclusive_um2": 58.464,
+          "cells": 84,
+          "exclusive_um2": 58.464,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/g_mul_f8_sf[2].mul_f8",
+          "module": "VX_tcu_tfr_mul_f8_N8_TCK16_W25_WA32_EXP_W10_USE_DS",
+          "inclusive_um2": 1327.788,
+          "cells": 2260,
+          "exclusive_um2": 1327.788,
+          "category": "unattributed_tensor_preparation"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/g_mul_f8_sf[3].mul_f8_g_lane[12].g_internal.wtmul",
+          "module": "VX_tcu_tfr_wmul_N4_LANES2_USE_DSP0_OUT_REG0_60",
+          "inclusive_um2": 58.464,
+          "cells": 84,
+          "exclusive_um2": 58.464,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/g_mul_f8_sf[3].mul_f8_g_lane[12].sub_adder",
+          "module": "VX_ks_adder_N25_BYPASS0_121",
+          "inclusive_um2": 43.848,
+          "cells": 72,
+          "exclusive_um2": 43.848,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/g_mul_f8_sf[3].mul_f8_g_lane[13].g_internal.wtmul",
+          "module": "VX_tcu_tfr_wmul_N4_LANES2_USE_DSP0_OUT_REG0_61",
+          "inclusive_um2": 58.464,
+          "cells": 84,
+          "exclusive_um2": 58.464,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/g_mul_f8_sf[3].mul_f8_g_lane[13].sub_adder",
+          "module": "VX_ks_adder_N25_BYPASS0_123",
+          "inclusive_um2": 43.848,
+          "cells": 72,
+          "exclusive_um2": 43.848,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/g_mul_f8_sf[3].mul_f8_g_lane[14].g_internal.wtmul",
+          "module": "VX_tcu_tfr_wmul_N4_LANES2_USE_DSP0_OUT_REG0_62",
+          "inclusive_um2": 58.464,
+          "cells": 84,
+          "exclusive_um2": 58.464,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/g_mul_f8_sf[3].mul_f8_g_lane[14].sub_adder",
+          "module": "VX_ks_adder_N25_BYPASS0_125",
+          "inclusive_um2": 44.226,
+          "cells": 72,
+          "exclusive_um2": 44.226,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/g_mul_f8_sf[3].mul_f8_g_lane[15].g_internal.wtmul",
+          "module": "VX_tcu_tfr_wmul_N4_LANES2_USE_DSP0_OUT_REG0_63",
+          "inclusive_um2": 58.464,
+          "cells": 84,
+          "exclusive_um2": 58.464,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/g_mul_f8_sf[3].mul_f8_g_lane[15].sub_adder",
+          "module": "VX_ks_adder_N25_BYPASS0_127",
+          "inclusive_um2": 43.848,
+          "cells": 72,
+          "exclusive_um2": 43.848,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[0].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[0].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[0].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[1].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_1",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[1].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_1",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[1].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_1",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[2].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_2",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[2].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_2",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[2].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_2",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[3].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_3",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[3].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_3",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[3].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_3",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[4].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_4",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[4].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_4",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[4].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_4",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[5].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_5",
+          "inclusive_um2": 33.768,
+          "cells": 42,
+          "exclusive_um2": 33.768,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[5].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_5",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[5].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_5",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[6].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_6",
+          "inclusive_um2": 33.768,
+          "cells": 42,
+          "exclusive_um2": 33.768,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[6].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_6",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[6].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_6",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[7].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_7",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[7].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_7",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[7].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_7",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[8].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_8",
+          "inclusive_um2": 33.768,
+          "cells": 42,
+          "exclusive_um2": 33.768,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[8].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_8",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[8].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_8",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[9].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_9",
+          "inclusive_um2": 33.768,
+          "cells": 42,
+          "exclusive_um2": 33.768,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[9].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_9",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[9].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_9",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[10].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_10",
+          "inclusive_um2": 33.768,
+          "cells": 42,
+          "exclusive_um2": 33.768,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[10].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_10",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[10].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_10",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[11].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_11",
+          "inclusive_um2": 33.768,
+          "cells": 42,
+          "exclusive_um2": 33.768,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[11].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_11",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[11].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_11",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[12].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_12",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[12].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_12",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[12].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_12",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[13].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_13",
+          "inclusive_um2": 33.768,
+          "cells": 42,
+          "exclusive_um2": 33.768,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[13].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_13",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[13].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_13",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[14].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_14",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[14].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_14",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[14].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_14",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[15].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_15",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[15].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_15",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_dpa16_comb/mul/mul_f16_g_lane[15].g_internal.wtmul_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_15",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        }
+      ]
+    },
+    {
+      "top": "VX_ucc_bf16x9_comb",
+      "total_um2": 34665.876,
+      "preprocessed_sha256": "6043da6826d8a1a7f85d5ca52590cde457e061b3aca128b85955329c417e8730",
+      "categories_um2": {
+        "retained_exponent_ordering": 1432.872,
+        "retained_multiplier_logic": 1342.656,
+        "retained_reduction_adders": 344.232,
+        "unattributed_other": 8381.646,
+        "unattributed_tensor_preparation": 23164.47
+      },
+      "limitation": "Genus flattens arithmetic and control together. Retained categories are attributable subsets, not complete functional costs. Zero/missing categories mean no separately retained hierarchy; mux/control and normalization are also in the unattributed residual.",
+      "hierarchy": [
+        {
+          "depth": 0,
+          "path": "VX_ucc_bf16x9_comb",
+          "module": "VX_ucc_bf16x9_comb",
+          "inclusive_um2": 34665.876,
+          "cells": 50678,
+          "exclusive_um2": 8381.646,
+          "category": "unattributed_other"
+        },
+        {
+          "depth": 2,
+          "path": "VX_ucc_bf16x9_comb/g_mul[0].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 2,
+          "path": "VX_ucc_bf16x9_comb/g_mul[1].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_1",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 2,
+          "path": "VX_ucc_bf16x9_comb/g_mul[2].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_2",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 2,
+          "path": "VX_ucc_bf16x9_comb/g_mul[3].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_3",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 2,
+          "path": "VX_ucc_bf16x9_comb/g_mul[4].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_4",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 2,
+          "path": "VX_ucc_bf16x9_comb/g_mul[5].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_5",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 2,
+          "path": "VX_ucc_bf16x9_comb/g_mul[5].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_5",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 2,
+          "path": "VX_ucc_bf16x9_comb/g_mul[6].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_6",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 2,
+          "path": "VX_ucc_bf16x9_comb/g_mul[6].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_6",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 2,
+          "path": "VX_ucc_bf16x9_comb/g_mul[7].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_7",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 2,
+          "path": "VX_ucc_bf16x9_comb/g_mul[7].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_7",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 2,
+          "path": "VX_ucc_bf16x9_comb/g_mul[8].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_8",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 2,
+          "path": "VX_ucc_bf16x9_comb/g_mul[8].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_8",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 2,
+          "path": "VX_ucc_bf16x9_comb/g_mul[9].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_9",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 2,
+          "path": "VX_ucc_bf16x9_comb/g_mul[10].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_10",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 2,
+          "path": "VX_ucc_bf16x9_comb/g_mul[11].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_11",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 2,
+          "path": "VX_ucc_bf16x9_comb/g_mul[12].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_12",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 2,
+          "path": "VX_ucc_bf16x9_comb/g_mul[13].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_13",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 2,
+          "path": "VX_ucc_bf16x9_comb/g_mul[14].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_14",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 2,
+          "path": "VX_ucc_bf16x9_comb/g_mul[15].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_15",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 2,
+          "path": "VX_ucc_bf16x9_comb/mul",
+          "module": "VX_tcu_tfr_shared_mul_N8_W25_WA32_SF4_USE_DSP0_PRO",
+          "inclusive_um2": 25409.286,
+          "cells": 39064,
+          "exclusive_um2": 20490.498,
+          "category": "unattributed_tensor_preparation"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_bf16x9_comb/mul/find_max_exp",
+          "module": "VX_tcu_tfr_max_exp_N17_WIDTH10",
+          "inclusive_um2": 1432.872,
+          "cells": 2294,
+          "exclusive_um2": 1432.872,
+          "category": "retained_exponent_ordering"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_bf16x9_comb/mul/g_mul_f8_sf[0].mul_f8_g_lane[0].g_internal.wtmul",
+          "module": "VX_tcu_tfr_wmul_N4_LANES2_USE_DSP0_OUT_REG0",
+          "inclusive_um2": 58.464,
+          "cells": 84,
+          "exclusive_um2": 58.464,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_bf16x9_comb/mul/g_mul_f8_sf[0].mul_f8_g_lane[0].sub_adder",
+          "module": "VX_ks_adder_N25_BYPASS0_31",
+          "inclusive_um2": 43.848,
+          "cells": 73,
+          "exclusive_um2": 43.848,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_bf16x9_comb/mul/g_mul_f8_sf[0].mul_f8_g_lane[1].g_internal.wtmul",
+          "module": "VX_tcu_tfr_wmul_N4_LANES2_USE_DSP0_OUT_REG0_1",
+          "inclusive_um2": 58.464,
+          "cells": 84,
+          "exclusive_um2": 58.464,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_bf16x9_comb/mul/g_mul_f8_sf[0].mul_f8_g_lane[1].sub_adder",
+          "module": "VX_ks_adder_N25_BYPASS0_3",
+          "inclusive_um2": 43.848,
+          "cells": 73,
+          "exclusive_um2": 43.848,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_bf16x9_comb/mul/g_mul_f8_sf[0].mul_f8_g_lane[2].g_internal.wtmul",
+          "module": "VX_tcu_tfr_wmul_N4_LANES2_USE_DSP0_OUT_REG0_2",
+          "inclusive_um2": 58.464,
+          "cells": 84,
+          "exclusive_um2": 58.464,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_bf16x9_comb/mul/g_mul_f8_sf[0].mul_f8_g_lane[2].sub_adder",
+          "module": "VX_ks_adder_N25_BYPASS0_5",
+          "inclusive_um2": 43.974,
+          "cells": 72,
+          "exclusive_um2": 43.974,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_bf16x9_comb/mul/g_mul_f8_sf[0].mul_f8_g_lane[3].g_internal.wtmul",
+          "module": "VX_tcu_tfr_wmul_N4_LANES2_USE_DSP0_OUT_REG0_3",
+          "inclusive_um2": 58.464,
+          "cells": 84,
+          "exclusive_um2": 58.464,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_bf16x9_comb/mul/g_mul_f8_sf[0].mul_f8_g_lane[3].sub_adder",
+          "module": "VX_ks_adder_N25_BYPASS0_7",
+          "inclusive_um2": 43.722,
+          "cells": 74,
+          "exclusive_um2": 43.722,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_bf16x9_comb/mul/g_mul_f8_sf[1].mul_f8_g_lane[4].g_internal.wtmul",
+          "module": "VX_tcu_tfr_wmul_N4_LANES2_USE_DSP0_OUT_REG0_20",
+          "inclusive_um2": 58.464,
+          "cells": 84,
+          "exclusive_um2": 58.464,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_bf16x9_comb/mul/g_mul_f8_sf[1].mul_f8_g_lane[4].sub_adder",
+          "module": "VX_ks_adder_N25_BYPASS0_41",
+          "inclusive_um2": 43.848,
+          "cells": 72,
+          "exclusive_um2": 43.848,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_bf16x9_comb/mul/g_mul_f8_sf[1].mul_f8_g_lane[5].g_internal.wtmul",
+          "module": "VX_tcu_tfr_wmul_N4_LANES2_USE_DSP0_OUT_REG0_21",
+          "inclusive_um2": 58.464,
+          "cells": 84,
+          "exclusive_um2": 58.464,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_bf16x9_comb/mul/g_mul_f8_sf[1].mul_f8_g_lane[5].sub_adder",
+          "module": "VX_ks_adder_N25_BYPASS0_43",
+          "inclusive_um2": 36.54,
+          "cells": 54,
+          "exclusive_um2": 36.54,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_bf16x9_comb/mul/g_mul_f8_sf[1].mul_f8_g_lane[6].g_internal.wtmul",
+          "module": "VX_tcu_tfr_wmul_N4_LANES2_USE_DSP0_OUT_REG0_22",
+          "inclusive_um2": 58.464,
+          "cells": 84,
+          "exclusive_um2": 58.464,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_bf16x9_comb/mul/g_mul_f8_sf[1].mul_f8_g_lane[6].sub_adder",
+          "module": "VX_ks_adder_N25_BYPASS0_45",
+          "inclusive_um2": 44.226,
+          "cells": 73,
+          "exclusive_um2": 44.226,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_bf16x9_comb/mul/g_mul_f8_sf[1].mul_f8_g_lane[7].g_internal.wtmul",
+          "module": "VX_tcu_tfr_wmul_N4_LANES2_USE_DSP0_OUT_REG0_23",
+          "inclusive_um2": 58.464,
+          "cells": 84,
+          "exclusive_um2": 58.464,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_bf16x9_comb/mul/g_mul_f8_sf[1].mul_f8_g_lane[7].sub_adder",
+          "module": "VX_ks_adder_N25_BYPASS0_47",
+          "inclusive_um2": 44.226,
+          "cells": 73,
+          "exclusive_um2": 44.226,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_bf16x9_comb/mul/g_mul_f8_sf[2].mul_f8",
+          "module": "VX_tcu_tfr_mul_f8_N8_TCK16_W25_WA32_EXP_W10_USE_DS",
+          "inclusive_um2": 1350.09,
+          "cells": 2324,
+          "exclusive_um2": 1350.09,
+          "category": "unattributed_tensor_preparation"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_bf16x9_comb/mul/g_mul_f8_sf[3].mul_f8",
+          "module": "VX_tcu_tfr_mul_f8_N8_TCK16_W25_WA32_EXP_W10_USE_DS",
+          "inclusive_um2": 1323.882,
+          "cells": 2250,
+          "exclusive_um2": 1323.882,
+          "category": "unattributed_tensor_preparation"
+        }
+      ]
+    },
+    {
+      "top": "VX_ucc_v4_const_unpaired_comb",
+      "total_um2": 38436.93,
+      "preprocessed_sha256": "2743efcd7c6f03538c664a62d00f8be6537c8fd9922a35f3eb9a0b987d29f493",
+      "categories_um2": {
+        "retained_coefficient_rom": 334.656,
+        "retained_exponent_ordering": 1461.978,
+        "retained_multiplier_logic": 3633.336,
+        "retained_reduction_adders": 1955.646,
+        "unattributed_other": 7734.636,
+        "unattributed_tensor_preparation": 23316.678
+      },
+      "limitation": "Genus flattens arithmetic and control together. Retained categories are attributable subsets, not complete functional costs. Zero/missing categories mean no separately retained hierarchy; mux/control and normalization are also in the unattributed residual.",
+      "hierarchy": [
+        {
+          "depth": 0,
+          "path": "VX_ucc_v4_const_unpaired_comb",
+          "module": "VX_ucc_v4_const_unpaired_comb",
+          "inclusive_um2": 38436.93,
+          "cells": 56680,
+          "exclusive_um2": 0.0,
+          "category": "unattributed_other"
+        },
+        {
+          "depth": 2,
+          "path": "VX_ucc_v4_const_unpaired_comb/core",
+          "module": "VX_ucc_comb_W64_CHUNK11_ENABLE_INT1_ENABLE_AUX1_EN",
+          "inclusive_um2": 38436.93,
+          "cells": 56680,
+          "exclusive_um2": 7734.636,
+          "category": "unattributed_other"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_ex2.prepare_coefficients_rom",
+          "module": "VX_rom_DATAW72_SIZE512_OUT_REG0_INIT_DATAx01fffff0",
+          "inclusive_um2": 334.656,
+          "cells": 667,
+          "exclusive_um2": 334.656,
+          "category": "retained_coefficient_rom"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[0].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0",
+          "inclusive_um2": 37.8,
+          "cells": 55,
+          "exclusive_um2": 37.8,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[0].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30",
+          "inclusive_um2": 100.674,
+          "cells": 89,
+          "exclusive_um2": 100.674,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[0].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30",
+          "inclusive_um2": 67.41,
+          "cells": 39,
+          "exclusive_um2": 67.41,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[1].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_1",
+          "inclusive_um2": 33.768,
+          "cells": 37,
+          "exclusive_um2": 33.768,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[1].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_1",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[1].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_1",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[2].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_2",
+          "inclusive_um2": 56.322,
+          "cells": 100,
+          "exclusive_um2": 56.322,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[2].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_2",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[2].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_2",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[3].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_3",
+          "inclusive_um2": 33.768,
+          "cells": 42,
+          "exclusive_um2": 33.768,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[3].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_3",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[3].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_3",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[4].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_4",
+          "inclusive_um2": 33.264,
+          "cells": 33,
+          "exclusive_um2": 33.264,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[4].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_4",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[4].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_4",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[5].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_5",
+          "inclusive_um2": 33.768,
+          "cells": 42,
+          "exclusive_um2": 33.768,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[5].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_5",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[5].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_5",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[6].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_6",
+          "inclusive_um2": 33.768,
+          "cells": 42,
+          "exclusive_um2": 33.768,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[6].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_6",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[6].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_6",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[7].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_7",
+          "inclusive_um2": 33.768,
+          "cells": 42,
+          "exclusive_um2": 33.768,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[7].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_7",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[7].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_7",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[8].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_8",
+          "inclusive_um2": 33.768,
+          "cells": 42,
+          "exclusive_um2": 33.768,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[8].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_8",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[8].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_8",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[9].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_9",
+          "inclusive_um2": 33.264,
+          "cells": 41,
+          "exclusive_um2": 33.264,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[9].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_9",
+          "inclusive_um2": 96.39,
+          "cells": 81,
+          "exclusive_um2": 96.39,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[9].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_9",
+          "inclusive_um2": 69.174,
+          "cells": 46,
+          "exclusive_um2": 69.174,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[10].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_10",
+          "inclusive_um2": 45.738,
+          "cells": 50,
+          "exclusive_um2": 45.738,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[10].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_10",
+          "inclusive_um2": 100.674,
+          "cells": 100,
+          "exclusive_um2": 100.674,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[10].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_10",
+          "inclusive_um2": 74.34,
+          "cells": 69,
+          "exclusive_um2": 74.34,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[11].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_11",
+          "inclusive_um2": 32.508,
+          "cells": 34,
+          "exclusive_um2": 32.508,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[11].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_11",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[11].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_11",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[12].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_12",
+          "inclusive_um2": 45.108,
+          "cells": 51,
+          "exclusive_um2": 45.108,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[12].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_12",
+          "inclusive_um2": 108.612,
+          "cells": 122,
+          "exclusive_um2": 108.612,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[12].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_12",
+          "inclusive_um2": 84.042,
+          "cells": 80,
+          "exclusive_um2": 84.042,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[13].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_13",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[13].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_13",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[13].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_13",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[14].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_14",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[14].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_14",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[14].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_14",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[15].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_15",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[15].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_15",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_mul[15].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_15",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_partitioned_accumulator.accumulator_popcount",
+          "module": "VX_popcount_N17",
+          "inclusive_um2": 49.14,
+          "cells": 87,
+          "exclusive_um2": 49.14,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/g_partitioned_accumulator.accumulator_reduction",
+          "module": "VX_csa_tree_N18_W64_S64",
+          "inclusive_um2": 1574.37,
+          "cells": 1273,
+          "exclusive_um2": 1574.37,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/tensor_prepare",
+          "module": "VX_tcu_tfr_shared_mul_N8_W25_WA32_SF4_USE_DSP0_PRO",
+          "inclusive_um2": 25578.504,
+          "cells": 39049,
+          "exclusive_um2": 20636.028,
+          "category": "unattributed_tensor_preparation"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/tensor_prepare/find_max_exp",
+          "module": "VX_tcu_tfr_max_exp_N17_WIDTH10",
+          "inclusive_um2": 1461.978,
+          "cells": 2459,
+          "exclusive_um2": 1461.978,
+          "category": "retained_exponent_ordering"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[0].mul_f8_g_lane[0].g_internal.wtmul",
+          "module": "VX_tcu_tfr_wmul_N4_LANES2_USE_DSP0_OUT_REG0",
+          "inclusive_um2": 58.464,
+          "cells": 84,
+          "exclusive_um2": 58.464,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[0].mul_f8_g_lane[0].sub_adder",
+          "module": "VX_ks_adder_N25_BYPASS0_127",
+          "inclusive_um2": 43.848,
+          "cells": 73,
+          "exclusive_um2": 43.848,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[0].mul_f8_g_lane[1].g_internal.wtmul",
+          "module": "VX_tcu_tfr_wmul_N4_LANES2_USE_DSP0_OUT_REG0_1",
+          "inclusive_um2": 58.464,
+          "cells": 82,
+          "exclusive_um2": 58.464,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[0].mul_f8_g_lane[1].sub_adder",
+          "module": "VX_ks_adder_N25_BYPASS0_3",
+          "inclusive_um2": 43.848,
+          "cells": 73,
+          "exclusive_um2": 43.848,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[0].mul_f8_g_lane[2].g_internal.wtmul",
+          "module": "VX_tcu_tfr_wmul_N4_LANES2_USE_DSP0_OUT_REG0_2",
+          "inclusive_um2": 58.464,
+          "cells": 82,
+          "exclusive_um2": 58.464,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[0].mul_f8_g_lane[2].sub_adder",
+          "module": "VX_ks_adder_N25_BYPASS0_5",
+          "inclusive_um2": 42.84,
+          "cells": 70,
+          "exclusive_um2": 42.84,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[0].mul_f8_g_lane[3].g_internal.wtmul",
+          "module": "VX_tcu_tfr_wmul_N4_LANES2_USE_DSP0_OUT_REG0_3",
+          "inclusive_um2": 58.464,
+          "cells": 84,
+          "exclusive_um2": 58.464,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[0].mul_f8_g_lane[3].sub_adder",
+          "module": "VX_ks_adder_N25_BYPASS0_7",
+          "inclusive_um2": 42.84,
+          "cells": 70,
+          "exclusive_um2": 42.84,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[1].mul_f8_g_lane[4].g_internal.wtmul",
+          "module": "VX_tcu_tfr_wmul_N4_LANES2_USE_DSP0_OUT_REG0_20",
+          "inclusive_um2": 58.464,
+          "cells": 82,
+          "exclusive_um2": 58.464,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[1].mul_f8_g_lane[4].sub_adder",
+          "module": "VX_ks_adder_N25_BYPASS0_41",
+          "inclusive_um2": 36.54,
+          "cells": 54,
+          "exclusive_um2": 36.54,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[1].mul_f8_g_lane[5].g_internal.wtmul",
+          "module": "VX_tcu_tfr_wmul_N4_LANES2_USE_DSP0_OUT_REG0_21",
+          "inclusive_um2": 58.464,
+          "cells": 84,
+          "exclusive_um2": 58.464,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[1].mul_f8_g_lane[5].sub_adder",
+          "module": "VX_ks_adder_N25_BYPASS0_43",
+          "inclusive_um2": 36.54,
+          "cells": 54,
+          "exclusive_um2": 36.54,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[1].mul_f8_g_lane[6].g_internal.wtmul",
+          "module": "VX_tcu_tfr_wmul_N4_LANES2_USE_DSP0_OUT_REG0_22",
+          "inclusive_um2": 58.464,
+          "cells": 84,
+          "exclusive_um2": 58.464,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[1].mul_f8_g_lane[6].sub_adder",
+          "module": "VX_ks_adder_N25_BYPASS0_45",
+          "inclusive_um2": 42.84,
+          "cells": 70,
+          "exclusive_um2": 42.84,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[1].mul_f8_g_lane[7].g_internal.wtmul",
+          "module": "VX_tcu_tfr_wmul_N4_LANES2_USE_DSP0_OUT_REG0_23",
+          "inclusive_um2": 58.464,
+          "cells": 84,
+          "exclusive_um2": 58.464,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[1].mul_f8_g_lane[7].sub_adder",
+          "module": "VX_ks_adder_N25_BYPASS0_47",
+          "inclusive_um2": 42.84,
+          "cells": 70,
+          "exclusive_um2": 42.84,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[2].mul_f8",
+          "module": "VX_tcu_tfr_mul_f8_N8_TCK16_W25_WA32_EXP_W10_USE_DS",
+          "inclusive_um2": 1346.814,
+          "cells": 2326,
+          "exclusive_um2": 1346.814,
+          "category": "unattributed_tensor_preparation"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_const_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[3].mul_f8",
+          "module": "VX_tcu_tfr_mul_f8_N8_TCK16_W25_WA32_EXP_W10_USE_DS",
+          "inclusive_um2": 1333.836,
+          "cells": 2283,
+          "exclusive_um2": 1333.836,
+          "category": "unattributed_tensor_preparation"
+        }
+      ]
+    },
+    {
+      "top": "VX_ucc_v4_compact_unpaired_comb",
+      "total_um2": 38246.67,
+      "preprocessed_sha256": "02fbebcbe6a0c2f56d97a283b4507d90a0e3edb502b4b27e2690ce72bd396439",
+      "categories_um2": {
+        "retained_coefficient_rom": 312.984,
+        "retained_exponent_ordering": 1432.494,
+        "retained_multiplier_logic": 3680.082,
+        "retained_reduction_adders": 2158.758,
+        "unattributed_other": 7366.716,
+        "unattributed_tensor_preparation": 23295.636
+      },
+      "limitation": "Genus flattens arithmetic and control together. Retained categories are attributable subsets, not complete functional costs. Zero/missing categories mean no separately retained hierarchy; mux/control and normalization are also in the unattributed residual.",
+      "hierarchy": [
+        {
+          "depth": 0,
+          "path": "VX_ucc_v4_compact_unpaired_comb",
+          "module": "VX_ucc_v4_compact_unpaired_comb",
+          "inclusive_um2": 38246.67,
+          "cells": 56191,
+          "exclusive_um2": 0.0,
+          "category": "unattributed_other"
+        },
+        {
+          "depth": 2,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core",
+          "module": "VX_ucc_comb_W64_CHUNK11_ENABLE_INT1_ENABLE_AUX1_EN",
+          "inclusive_um2": 38246.67,
+          "cells": 56191,
+          "exclusive_um2": 6947.892,
+          "category": "unattributed_other"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_compact_range.prepare",
+          "module": "VX_ucc_exp_range_compact",
+          "inclusive_um2": 418.824,
+          "cells": 522,
+          "exclusive_um2": 418.824,
+          "category": "unattributed_other"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_ex2.prepare_coefficients_rom",
+          "module": "VX_rom_DATAW72_SIZE512_OUT_REG0_INIT_DATAx01fffff0",
+          "inclusive_um2": 312.984,
+          "cells": 607,
+          "exclusive_um2": 312.984,
+          "category": "retained_coefficient_rom"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[0].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0",
+          "inclusive_um2": 39.564,
+          "cells": 48,
+          "exclusive_um2": 39.564,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[0].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30",
+          "inclusive_um2": 102.816,
+          "cells": 105,
+          "exclusive_um2": 102.816,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[0].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30",
+          "inclusive_um2": 67.158,
+          "cells": 37,
+          "exclusive_um2": 67.158,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[1].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_1",
+          "inclusive_um2": 37.674,
+          "cells": 44,
+          "exclusive_um2": 37.674,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[1].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_1",
+          "inclusive_um2": 103.068,
+          "cells": 108,
+          "exclusive_um2": 103.068,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[1].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_1",
+          "inclusive_um2": 67.536,
+          "cells": 39,
+          "exclusive_um2": 67.536,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[2].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_2",
+          "inclusive_um2": 37.296,
+          "cells": 47,
+          "exclusive_um2": 37.296,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[2].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_2",
+          "inclusive_um2": 98.532,
+          "cells": 86,
+          "exclusive_um2": 98.532,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[2].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_2",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[3].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_3",
+          "inclusive_um2": 33.768,
+          "cells": 43,
+          "exclusive_um2": 33.768,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[3].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_3",
+          "inclusive_um2": 96.894,
+          "cells": 77,
+          "exclusive_um2": 96.894,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[3].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_3",
+          "inclusive_um2": 67.158,
+          "cells": 37,
+          "exclusive_um2": 67.158,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[4].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_4",
+          "inclusive_um2": 33.768,
+          "cells": 42,
+          "exclusive_um2": 33.768,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[4].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_4",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[4].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_4",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[5].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_5",
+          "inclusive_um2": 33.768,
+          "cells": 42,
+          "exclusive_um2": 33.768,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[5].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_5",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[5].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_5",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[6].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_6",
+          "inclusive_um2": 47.502,
+          "cells": 57,
+          "exclusive_um2": 47.502,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[6].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_6",
+          "inclusive_um2": 105.588,
+          "cells": 108,
+          "exclusive_um2": 105.588,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[6].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_6",
+          "inclusive_um2": 67.41,
+          "cells": 36,
+          "exclusive_um2": 67.41,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[7].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_7",
+          "inclusive_um2": 49.896,
+          "cells": 59,
+          "exclusive_um2": 49.896,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[7].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_7",
+          "inclusive_um2": 125.622,
+          "cells": 151,
+          "exclusive_um2": 125.622,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[7].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_7",
+          "inclusive_um2": 85.05,
+          "cells": 95,
+          "exclusive_um2": 85.05,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[8].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_8",
+          "inclusive_um2": 40.572,
+          "cells": 54,
+          "exclusive_um2": 40.572,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[8].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_8",
+          "inclusive_um2": 101.052,
+          "cells": 100,
+          "exclusive_um2": 101.052,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[8].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_8",
+          "inclusive_um2": 67.158,
+          "cells": 37,
+          "exclusive_um2": 67.158,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[9].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_9",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[9].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_9",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[9].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_9",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[10].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_10",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[10].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_10",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[10].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_10",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[11].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_11",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[11].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_11",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[11].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_11",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[12].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_12",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[12].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_12",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[12].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_12",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[13].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_13",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[13].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_13",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[13].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_13",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[14].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_14",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[14].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_14",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[14].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_14",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[15].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_15",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[15].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_15",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_mul[15].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_15",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_partitioned_accumulator.accumulator_high_adder",
+          "module": "VX_ks_adder_N32_BYPASS0_1",
+          "inclusive_um2": 102.564,
+          "cells": 140,
+          "exclusive_um2": 102.564,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_partitioned_accumulator.accumulator_low_adder",
+          "module": "VX_ks_adder_N32_BYPASS0",
+          "inclusive_um2": 91.728,
+          "cells": 114,
+          "exclusive_um2": 91.728,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_partitioned_accumulator.accumulator_popcount",
+          "module": "VX_popcount_N17",
+          "inclusive_um2": 49.266,
+          "cells": 87,
+          "exclusive_um2": 49.266,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/g_partitioned_accumulator.accumulator_reduction",
+          "module": "VX_csa_tree_N18_W64_S64",
+          "inclusive_um2": 1582.938,
+          "cells": 1297,
+          "exclusive_um2": 1582.938,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/tensor_prepare",
+          "module": "VX_tcu_tfr_shared_mul_N8_W25_WA32_SF4_USE_DSP0_PRO",
+          "inclusive_um2": 25528.104,
+          "cells": 38659,
+          "exclusive_um2": 20617.254,
+          "category": "unattributed_tensor_preparation"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/tensor_prepare/find_max_exp",
+          "module": "VX_tcu_tfr_max_exp_N17_WIDTH10",
+          "inclusive_um2": 1432.494,
+          "cells": 2312,
+          "exclusive_um2": 1432.494,
+          "category": "retained_exponent_ordering"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[0].mul_f8_g_lane[0].g_internal.wtmul",
+          "module": "VX_tcu_tfr_wmul_N4_LANES2_USE_DSP0_OUT_REG0",
+          "inclusive_um2": 58.464,
+          "cells": 84,
+          "exclusive_um2": 58.464,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[0].mul_f8_g_lane[0].sub_adder",
+          "module": "VX_ks_adder_N25_BYPASS0_127",
+          "inclusive_um2": 43.848,
+          "cells": 73,
+          "exclusive_um2": 43.848,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[0].mul_f8_g_lane[1].g_internal.wtmul",
+          "module": "VX_tcu_tfr_wmul_N4_LANES2_USE_DSP0_OUT_REG0_1",
+          "inclusive_um2": 58.464,
+          "cells": 82,
+          "exclusive_um2": 58.464,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[0].mul_f8_g_lane[1].sub_adder",
+          "module": "VX_ks_adder_N25_BYPASS0_3",
+          "inclusive_um2": 43.848,
+          "cells": 73,
+          "exclusive_um2": 43.848,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[0].mul_f8_g_lane[2].g_internal.wtmul",
+          "module": "VX_tcu_tfr_wmul_N4_LANES2_USE_DSP0_OUT_REG0_2",
+          "inclusive_um2": 58.464,
+          "cells": 82,
+          "exclusive_um2": 58.464,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[0].mul_f8_g_lane[2].sub_adder",
+          "module": "VX_ks_adder_N25_BYPASS0_5",
+          "inclusive_um2": 42.84,
+          "cells": 70,
+          "exclusive_um2": 42.84,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[0].mul_f8_g_lane[3].g_internal.wtmul",
+          "module": "VX_tcu_tfr_wmul_N4_LANES2_USE_DSP0_OUT_REG0_3",
+          "inclusive_um2": 58.464,
+          "cells": 84,
+          "exclusive_um2": 58.464,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[0].mul_f8_g_lane[3].sub_adder",
+          "module": "VX_ks_adder_N25_BYPASS0_7",
+          "inclusive_um2": 42.84,
+          "cells": 70,
+          "exclusive_um2": 42.84,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[1].mul_f8_g_lane[4].g_internal.wtmul",
+          "module": "VX_tcu_tfr_wmul_N4_LANES2_USE_DSP0_OUT_REG0_20",
+          "inclusive_um2": 58.464,
+          "cells": 82,
+          "exclusive_um2": 58.464,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[1].mul_f8_g_lane[4].sub_adder",
+          "module": "VX_ks_adder_N25_BYPASS0_41",
+          "inclusive_um2": 36.54,
+          "cells": 54,
+          "exclusive_um2": 36.54,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[1].mul_f8_g_lane[5].g_internal.wtmul",
+          "module": "VX_tcu_tfr_wmul_N4_LANES2_USE_DSP0_OUT_REG0_21",
+          "inclusive_um2": 58.464,
+          "cells": 84,
+          "exclusive_um2": 58.464,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[1].mul_f8_g_lane[5].sub_adder",
+          "module": "VX_ks_adder_N25_BYPASS0_43",
+          "inclusive_um2": 36.54,
+          "cells": 54,
+          "exclusive_um2": 36.54,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[1].mul_f8_g_lane[6].g_internal.wtmul",
+          "module": "VX_tcu_tfr_wmul_N4_LANES2_USE_DSP0_OUT_REG0_22",
+          "inclusive_um2": 58.464,
+          "cells": 84,
+          "exclusive_um2": 58.464,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[1].mul_f8_g_lane[6].sub_adder",
+          "module": "VX_ks_adder_N25_BYPASS0_45",
+          "inclusive_um2": 42.84,
+          "cells": 70,
+          "exclusive_um2": 42.84,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[1].mul_f8_g_lane[7].g_internal.wtmul",
+          "module": "VX_tcu_tfr_wmul_N4_LANES2_USE_DSP0_OUT_REG0_23",
+          "inclusive_um2": 58.464,
+          "cells": 84,
+          "exclusive_um2": 58.464,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[1].mul_f8_g_lane[7].sub_adder",
+          "module": "VX_ks_adder_N25_BYPASS0_47",
+          "inclusive_um2": 42.966,
+          "cells": 69,
+          "exclusive_um2": 42.966,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[2].mul_f8",
+          "module": "VX_tcu_tfr_mul_f8_N8_TCK16_W25_WA32_EXP_W10_USE_DS",
+          "inclusive_um2": 1344.294,
+          "cells": 2309,
+          "exclusive_um2": 1344.294,
+          "category": "unattributed_tensor_preparation"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_compact_unpaired_comb/core/tensor_prepare/g_mul_f8_sf[3].mul_f8",
+          "module": "VX_tcu_tfr_mul_f8_N8_TCK16_W25_WA32_EXP_W10_USE_DS",
+          "inclusive_um2": 1334.088,
+          "cells": 2283,
+          "exclusive_um2": 1334.088,
+          "category": "unattributed_tensor_preparation"
+        }
+      ]
+    },
+    {
+      "top": "VX_ucc_v4_anchor_crop_comb",
+      "total_um2": 39809.826,
+      "preprocessed_sha256": "1b00a3e8c052250e09bc0ff75fd2d2d81acb52443e275c6328fd6d2e70c1bf7d",
+      "categories_um2": {
+        "retained_coefficient_rom": 326.214,
+        "retained_multiplier_logic": 3171.042,
+        "retained_reduction_adders": 2065.14,
+        "unattributed_other": 8936.802,
+        "unattributed_tensor_preparation": 25310.628
+      },
+      "limitation": "Genus flattens arithmetic and control together. Retained categories are attributable subsets, not complete functional costs. Zero/missing categories mean no separately retained hierarchy; mux/control and normalization are also in the unattributed residual.",
+      "hierarchy": [
+        {
+          "depth": 0,
+          "path": "VX_ucc_v4_anchor_crop_comb",
+          "module": "VX_ucc_v4_anchor_crop_comb",
+          "inclusive_um2": 39809.826,
+          "cells": 57930,
+          "exclusive_um2": 0.0,
+          "category": "unattributed_other"
+        },
+        {
+          "depth": 2,
+          "path": "VX_ucc_v4_anchor_crop_comb/core",
+          "module": "VX_ucc_comb_W80_CHUNK11_ENABLE_INT1_ENABLE_AUX1_EN",
+          "inclusive_um2": 39809.826,
+          "cells": 57930,
+          "exclusive_um2": 8936.802,
+          "category": "unattributed_other"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_ex2.prepare_coefficients_rom",
+          "module": "VX_rom_DATAW72_SIZE512_OUT_REG0_INIT_DATAx01fffff0",
+          "inclusive_um2": 326.214,
+          "cells": 637,
+          "exclusive_um2": 326.214,
+          "category": "retained_coefficient_rom"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[0].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0",
+          "inclusive_um2": 42.966,
+          "cells": 48,
+          "exclusive_um2": 42.966,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[0].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30",
+          "inclusive_um2": 94.626,
+          "cells": 66,
+          "exclusive_um2": 94.626,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[0].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[1].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_1",
+          "inclusive_um2": 33.768,
+          "cells": 42,
+          "exclusive_um2": 33.768,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[1].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_1",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[1].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_1",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[2].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_2",
+          "inclusive_um2": 62.37,
+          "cells": 113,
+          "exclusive_um2": 62.37,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[2].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_2",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[2].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_2",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[3].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_3",
+          "inclusive_um2": 32.634,
+          "cells": 34,
+          "exclusive_um2": 32.634,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[3].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_3",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[3].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_3",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[4].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_4",
+          "inclusive_um2": 32.634,
+          "cells": 34,
+          "exclusive_um2": 32.634,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[4].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_4",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[4].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_4",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[5].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_5",
+          "inclusive_um2": 33.768,
+          "cells": 42,
+          "exclusive_um2": 33.768,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[5].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_5",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[5].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_5",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[6].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_6",
+          "inclusive_um2": 33.768,
+          "cells": 42,
+          "exclusive_um2": 33.768,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[6].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_6",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[6].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_6",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[7].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_7",
+          "inclusive_um2": 33.768,
+          "cells": 42,
+          "exclusive_um2": 33.768,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[7].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_7",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[7].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_7",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[8].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_8",
+          "inclusive_um2": 33.768,
+          "cells": 42,
+          "exclusive_um2": 33.768,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[8].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_8",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[8].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_8",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[9].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_9",
+          "inclusive_um2": 37.674,
+          "cells": 45,
+          "exclusive_um2": 37.674,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[9].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_9",
+          "inclusive_um2": 100.17,
+          "cells": 94,
+          "exclusive_um2": 100.17,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[9].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_9",
+          "inclusive_um2": 70.686,
+          "cells": 55,
+          "exclusive_um2": 70.686,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[10].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_10",
+          "inclusive_um2": 41.706,
+          "cells": 49,
+          "exclusive_um2": 41.706,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[10].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_10",
+          "inclusive_um2": 98.28,
+          "cells": 90,
+          "exclusive_um2": 98.28,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[10].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_10",
+          "inclusive_um2": 73.458,
+          "cells": 59,
+          "exclusive_um2": 73.458,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[11].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_11",
+          "inclusive_um2": 32.508,
+          "cells": 34,
+          "exclusive_um2": 32.508,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[11].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_11",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[11].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_11",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[12].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_12",
+          "inclusive_um2": 48.762,
+          "cells": 55,
+          "exclusive_um2": 48.762,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[12].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_12",
+          "inclusive_um2": 107.982,
+          "cells": 109,
+          "exclusive_um2": 107.982,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[12].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_12",
+          "inclusive_um2": 77.994,
+          "cells": 69,
+          "exclusive_um2": 77.994,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[13].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_13",
+          "inclusive_um2": 33.768,
+          "cells": 42,
+          "exclusive_um2": 33.768,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[13].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_13",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[13].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_13",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[14].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_14",
+          "inclusive_um2": 32.256,
+          "cells": 32,
+          "exclusive_um2": 32.256,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[14].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_14",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[14].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_14",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[15].multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+          "module": "VX_ks_adder_N22_BYPASS1h0_15",
+          "inclusive_um2": 33.768,
+          "cells": 42,
+          "exclusive_um2": 33.768,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[15].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+          "module": "VX_csa_block_N6_W22_S30_15",
+          "inclusive_um2": 89.712,
+          "cells": 49,
+          "exclusive_um2": 89.712,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_mul[15].multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+          "module": "VX_csa_block_N5_W22_S30_15",
+          "inclusive_um2": 67.032,
+          "cells": 37,
+          "exclusive_um2": 67.032,
+          "category": "retained_multiplier_logic"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_wide_accumulator.accumulator_fp_neg_popcount",
+          "module": "VX_popcount_N17",
+          "inclusive_um2": 49.266,
+          "cells": 87,
+          "exclusive_um2": 49.266,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/g_wide_accumulator.accumulator_sig_csa",
+          "module": "VX_csa_tree_N18_W80_S80",
+          "inclusive_um2": 2015.874,
+          "cells": 1552,
+          "exclusive_um2": 2015.874,
+          "category": "retained_reduction_adders"
+        },
+        {
+          "depth": 4,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/tensor_prepare",
+          "module": "VX_tcu_tfr_shared_mul_N8_W25_WA32_SF4_USE_DSP0_PRO",
+          "inclusive_um2": 25310.628,
+          "cells": 38437,
+          "exclusive_um2": 8684.802,
+          "category": "unattributed_tensor_preparation"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/tensor_prepare/g_mul_f4_sf[0].mul_f4",
+          "module": "VX_tcu_tfr_mul_f4_N8_TCK16_W25_WA32_EXP_W10_USE_DS",
+          "inclusive_um2": 4164.048,
+          "cells": 6038,
+          "exclusive_um2": 4164.048,
+          "category": "unattributed_tensor_preparation"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/tensor_prepare/g_mul_f4_sf[1].mul_f4",
+          "module": "VX_tcu_tfr_mul_f4_N8_TCK16_W25_WA32_EXP_W10_USE_DS",
+          "inclusive_um2": 4152.456,
+          "cells": 6041,
+          "exclusive_um2": 4152.456,
+          "category": "unattributed_tensor_preparation"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/tensor_prepare/g_mul_f4_sf[2].mul_f4",
+          "module": "VX_tcu_tfr_mul_f4_N8_TCK16_W25_WA32_EXP_W10_USE_DS",
+          "inclusive_um2": 4144.518,
+          "cells": 6054,
+          "exclusive_um2": 4144.518,
+          "category": "unattributed_tensor_preparation"
+        },
+        {
+          "depth": 6,
+          "path": "VX_ucc_v4_anchor_crop_comb/core/tensor_prepare/g_mul_f4_sf[3].mul_f4",
+          "module": "VX_tcu_tfr_mul_f4_N8_TCK16_W25_WA32_EXP_W10_USE_DS",
+          "inclusive_um2": 4164.804,
+          "cells": 6085,
+          "exclusive_um2": 4164.804,
+          "category": "unattributed_tensor_preparation"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1615 @@
+{
+  "cases_per_oracle": 66384,
+  "oracles": [
+    "Berkeley SoftFloat",
+    "system libm fmaf"
+  ],
+  "mismatches": 0,
+  "examples": [],
+  "libm_invalid_qnan_policy_differences": 32,
+  "shift": "PASS partitioned shifter: 100000 cases, all 256 shift amounts, both directions, all modes and fills",
+  "shift-separate": "PASS partitioned shifter: 100000 cases, all 256 shift amounts, both directions, all modes and fills",
+  "baseline": "PASS baseline: 15992 pipeline comparisons, 700 mathematical checks, 4005 stalls",
+  "fma11": "PASS FMA/MUL/ADD/SUB: 185536 cases, 0 mismatches",
+  "fma8": "PASS FMA/MUL/ADD/SUB: 185536 cases, 0 mismatches",
+  "fma11_w32": "PASS FMA/MUL/ADD/SUB: 185536 cases, 0 mismatches",
+  "v1": "PASS unified V1: 185536 scalar and 30000 DPA cases, 0 mismatches",
+  "approximate_fma32_accuracy": {
+    "cases": 185536,
+    "width": 32,
+    "chunk": 11,
+    "value_differences_from_ieee": 21502,
+    "flag_differences_from_ieee": 952,
+    "maximum_finite_ulp_distance": 1665454400,
+    "worst_finite_case": {
+      "inputs": [
+        1067474971,
+        1069899714,
+        3220655076
+      ],
+      "op": 0,
+      "rm": 3,
+      "exact": 2982465856,
+      "approximate": 830472192
+    },
+    "note": "Approximate results are round-to-odd partial-term semantics, not IEEE FMA."
+  },
+  "v1_w32": "PASS unified V1: 185536 scalar and 30000 DPA cases, 0 mismatches",
+  "v2": "Integer checks: 101536\nPASS unified V1: 185536 scalar and 30391 DPA cases, 0 mismatches",
+  "v3": "Integer checks: 101536\nShift, conversion and FP comparison checks: 307456\nPASS unified: 185536 scalar and 31592 DPA cases, 0 mismatches",
+  "v4": "Integer checks: 101536\nShift, conversion and FP comparison checks: 508041\nPASS unified: 185536 scalar and 32376 DPA cases, 0 mismatches",
+  "fma11_w64": "PASS FMA/MUL/ADD/SUB: 185536 cases, 0 mismatches",
+  "ex2_observed_accuracy": {
+    "cases": 100585,
+    "different_outputs": 18275,
+    "maximum_observed_finite_ulp": 1,
+    "worst": {
+      "input": 946102774,
+      "actual": 1065353532,
+      "reference": 1065353533
+    },
+    "reference": "Host binary64 exp2 approximation rounded to binary32",
+    "limitation": "Measured error on these inputs; neither an exhaustive error bound nor correctly rounded EXP2 proof."
+  },
+  "native_bf16x9": "PASS unified: 185536 scalar and 30000 DPA cases, 0 mismatches",
+  "native_bf16x9_accuracy": {
+    "cases": 185536,
+    "width": 80,
+    "chunk": 8,
+    "native_bf16x9": true,
+    "value_differences_from_ieee": 46545,
+    "flag_differences_from_ieee": 113514,
+    "maximum_finite_ulp_distance": 1756939440,
+    "worst_finite_case": {
+      "inputs": [
+        1072346534,
+        1070249636,
+        3225017032
+      ],
+      "op": 0,
+      "rm": 3,
+      "exact": 871941296,
+      "approximate": 3032481792
+    },
+    "note": "Native DPA alignment, fixed RNE/FTZ; only invalid flag implemented."
+  },
+  "precision_window_sweep": {
+    "cases": 186240,
+    "chunk": 11,
+    "windows": {
+      "32": {
+        "value_mismatches": 52400,
+        "flag_mismatches": 46716,
+        "first": {
+          "a": 1,
+          "b": 1065353215,
+          "c": 2147483649,
+          "rm": 0,
+          "actual": [
+            0,
+            0
+          ],
+          "expected": [
+            2147483648,
+            3
+          ]
+        }
+      },
+      "56": {
+        "value_mismatches": 24,
+        "flag_mismatches": 24,
+        "first": {
+          "a": 8388607,
+          "b": 872415233,
+          "c": 2147483649,
+          "rm": 0,
+          "actual": [
+            0,
+            0
+          ],
+          "expected": [
+            2147483648,
+            3
+          ]
+        }
+      },
+      "64": {
+        "value_mismatches": 0,
+        "flag_mismatches": 0,
+        "first": null
+      },
+      "65": {
+        "value_mismatches": 0,
+        "flag_mismatches": 0,
+        "first": null
+      },
+      "80": {
+        "value_mismatches": 0,
+        "flag_mismatches": 0,
+        "first": null
+      }
+    },
+    "limitation": "Targeted empirical test, not a formal all-input proof."
+  },
+  "rtl_w64_subnormal_cancellation": "PASS FMA/MUL/ADD/SUB:186240 IEEE vector cases,0 mismatches",
+  "fma_direct": "PASS FMA/MUL/ADD/SUB: 185536 cases, 0 mismatches",
+  "v1_w65": "PASS unified: 185536 scalar and 30000 DPA cases, 0 mismatches",
+  "pair": "PASS paired26/52 shifter:100000 cases",
+  "v4_native_w65": "Integer checks: 101536\nShift, conversion and FP comparison checks: 508041\nPASS unified: 185536 scalar and 32376 DPA cases, 0 mismatches",
+  "v4_paired_w65": "Integer checks: 101536\nShift, conversion and FP comparison checks: 508041\nPASS unified: 185536 scalar and 32376 DPA cases, 0 mismatches",
+  "v4_small_w64": "Integer checks: 101536\nShift, conversion and FP comparison checks: 508041\nPASS unified: 185536 scalar and 32376 DPA cases, 0 mismatches",
+  "small_native_ex2_accuracy": {
+    "cases": 100585,
+    "natural_exp": false,
+    "narrow_polynomial": true,
+    "different_outputs": 17042,
+    "maximum_observed_finite_ulp": 1,
+    "worst": {
+      "input": 946102774,
+      "actual": 1065353532,
+      "reference": 1065353533
+    },
+    "reference": "Host binary64 exponential rounded to binary32",
+    "limitation": "Measured error on these inputs; neither an exhaustive error bound nor correctly rounded EXP2 proof."
+  },
+  "v4_exp_w64": "Integer checks: 101536\nShift, conversion and FP comparison checks: 608691\nPASS unified: 185536 scalar and 32769 DPA cases, 0 mismatches",
+  "int_direct": "PASS standalone INT: 204235 checks, 0 mismatches",
+  "fpu_direct": "PASS standalone FPU: 391968 checks, 0 mismatches",
+  "mufu_direct": "PASS standalone scalar: 201235 checks, 0 mismatches",
+  "natural_exp_accuracy": {
+    "cases": 100650,
+    "natural_exp": true,
+    "narrow_polynomial": true,
+    "different_outputs": 12036,
+    "maximum_observed_finite_ulp": 1,
+    "worst": {
+      "input": 1118376879,
+      "actual": 2088340794,
+      "reference": 2088340793
+    },
+    "reference": "Host binary64 exponential rounded to binary32",
+    "limitation": "Measured error on these inputs; neither an exhaustive error bound nor correctly rounded EXP2 proof."
+  },
+  "mapped_gate_int": {
+    "synthesis": {
+      "top": "VX_ucc_int_standalone",
+      "area_um2": 2490.138,
+      "cells": 2973,
+      "sequential_cells": 0,
+      "data_path_ps": 2390,
+      "slack_ps": 2610,
+      "combinational_area_um2": 2490.138,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 7.08505e-05,
+        "internal_w": 0.00043943,
+        "switching_w": 0.000241168,
+        "dynamic_w": 0.0006805979999999999,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "dd756037d9d222a991e8af15e168d454519de0bd8e362736912612de7d5bd590",
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_int_standalone",
+      "status": "synthesized; functional verification reported separately"
+    },
+    "returncode": 0,
+    "checks": 303928,
+    "test_result": "PASS gate simulation: 303928 checks",
+    "method": "Xcelium zero-delay simulation with installed TSMC Verilog cell models"
+  },
+  "mapped_gate_fpu": {
+    "synthesis": {
+      "top": "VX_ucc_fpu_standalone",
+      "area_um2": 3637.368,
+      "cells": 5601,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "combinational_area_um2": 3637.368,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.000108219,
+        "internal_w": 0.0026206,
+        "switching_w": 0.00224623,
+        "dynamic_w": 0.00486683,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "a1ef7a71c7706706fa342c2bae90ff40bea7cac2df0fad0073a75e3f9beda508",
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_fpu_standalone",
+      "status": "synthesized; functional verification reported separately"
+    },
+    "returncode": 0,
+    "checks": 391968,
+    "test_result": "PASS gate simulation: 391968 checks",
+    "method": "Xcelium zero-delay simulation with installed TSMC Verilog cell models"
+  },
+  "mapped_gate_mufu": {
+    "synthesis": {
+      "top": "VX_ucc_mufu_standalone",
+      "area_um2": 3354.75,
+      "cells": 3874,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "combinational_area_um2": 3354.75,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 9.96973e-05,
+        "internal_w": 0.00343968,
+        "switching_w": 0.00199798,
+        "dynamic_w": 0.00543766,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "6b6d9d4c68c2452ab145decfce6dd01a7e5017a937506f588ca16fe32c2e8139",
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_mufu_standalone",
+      "status": "synthesized; functional verification reported separately"
+    },
+    "returncode": 0,
+    "checks": 201235,
+    "test_result": "PASS gate simulation: 201235 checks",
+    "method": "Xcelium zero-delay simulation with installed TSMC Verilog cell models"
+  },
+  "dpa_model": "format 1: 0/10000 mismatches\nformat 2: 0/10000 mismatches\nformat 3: 0/10000 mismatches\nformat 4: 0/10000 mismatches\nformat 5: 0/10000 mismatches\nformat 10: 0/12560 mismatches\nformat 11: 0/26384 mismatches\nPASS independent DPA: 88944 cases\n",
+  "stream": "PASS stream: 5887 accepted, 5868 retired, 19 reset-discarded, 4407 stalled cycles, 1000 consecutive II=1 acceptances\n",
+  "v4_exact_exp": "Integer checks: 101536\nShift, conversion and FP comparison checks: 608691\nPASS unified: 185536 scalar and 32769 DPA cases, 0 mismatches",
+  "mapped_gate_dpa": {
+    "synthesis": {
+      "top": "VX_ucc_dpa16_comb",
+      "area_um2": 33566.778,
+      "cells": 48587,
+      "sequential_cells": 0,
+      "data_path_ps": 4525,
+      "slack_ps": 475,
+      "combinational_area_um2": 33566.778,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.0011032,
+        "internal_w": 0.00525989,
+        "switching_w": 0.0036643,
+        "dynamic_w": 0.00892419,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "cb38bac340ad022095929be02ffd84bda71f1b544a98f7c8bb559ab78f1b78f7",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_dpa16_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    "returncode": 0,
+    "checks": 7168,
+    "test_result": "PASS gate simulation: 7168 checks\n./bench.sv:29         $display(\"PASS gate simulation: %0d checks\",count); $finish;",
+    "method": "Xcelium zero-delay simulation with installed TSMC Verilog cell models"
+  },
+  "mapped_gate_native": {
+    "synthesis": {
+      "top": "VX_ucc_bf16x9_comb",
+      "area_um2": 34665.876,
+      "cells": 50678,
+      "sequential_cells": 0,
+      "data_path_ps": 4674,
+      "slack_ps": 326,
+      "combinational_area_um2": 34665.876,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00113463,
+        "internal_w": 0.00604002,
+        "switching_w": 0.0042652,
+        "dynamic_w": 0.01030522,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "6043da6826d8a1a7f85d5ca52590cde457e061b3aca128b85955329c417e8730",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_bf16x9_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    "returncode": 0,
+    "checks": 8320,
+    "test_result": "PASS gate simulation: 8320 checks\n./bench.sv:29         $display(\"PASS gate simulation: %0d checks\",count); $finish;",
+    "method": "Xcelium zero-delay simulation with installed TSMC Verilog cell models"
+  },
+  "mapped_gate_approx": {
+    "synthesis": {
+      "top": "VX_ucc_v4_exp_comb",
+      "area_um2": 45097.794,
+      "cells": 64133,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "combinational_area_um2": 45097.794,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00153644,
+        "internal_w": 0.00619406,
+        "switching_w": 0.00420939,
+        "dynamic_w": 0.010403450000000002,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "97b9723af7c20558b87777d5e219b5ae2301dcb1d79099fedc9b23c24fb5a1fd",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_exp_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    "returncode": 0,
+    "checks": 23008,
+    "test_result": "PASS gate simulation: 23008 checks\n./bench.sv:29         $display(\"PASS gate simulation: %0d checks\",count); $finish;",
+    "netlist_rename": {
+      "original_sha256": "465e696cceb9f0c46329f65f32ef8b5005c831c8ad02264097173ccfbf707f13",
+      "simulation_sha256": "ced6df423859592414fc689bb72f513c0618114690fa390a7feae757d4e579a8",
+      "renamed_identifiers": 1,
+      "reversible_rename_verified": true
+    },
+    "method": "Xcelium zero-delay simulation with installed TSMC Verilog cell models"
+  },
+  "mapped_gate_exact": {
+    "synthesis": {
+      "top": "VX_ucc_v4_exact_exp_comb",
+      "area_um2": 48924.288,
+      "cells": 69092,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "combinational_area_um2": 48924.288,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00158359,
+        "internal_w": 0.0116161,
+        "switching_w": 0.00865293,
+        "dynamic_w": 0.02026903,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "d4830920858e02cac9fd825a7bf622582694d76ee7cf1af4008476bd1f2f78ed",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_exact_exp_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    "returncode": 0,
+    "checks": 23008,
+    "test_result": "PASS gate simulation: 23008 checks\n./bench.sv:29         $display(\"PASS gate simulation: %0d checks\",count); $finish;",
+    "netlist_rename": {
+      "original_sha256": "9eb12eeea98ba2e4152deb9cab34092258fb963d048ed7761e2bbfca72f0ebf1",
+      "simulation_sha256": "15ffa841ddef40c6fa9292d1e71cc88764180367f0718d13823d91c2a2fa5365",
+      "renamed_identifiers": 1,
+      "reversible_rename_verified": true
+    },
+    "method": "Xcelium zero-delay simulation with installed TSMC Verilog cell models"
+  },
+  "mapped_gate_csa": {
+    "synthesis": {
+      "top": "VX_ucc_v1_csa_comb",
+      "area_um2": 39161.43,
+      "cells": 56581,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "combinational_area_um2": 39161.43,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00131299,
+        "internal_w": 0.00702501,
+        "switching_w": 0.00499605,
+        "dynamic_w": 0.01202106,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "2cbe7e2800f8f7503447e8127ef082ded7e54a9b5496cec0f93e344630e0773e",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v1_csa_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    "returncode": 0,
+    "checks": 8320,
+    "test_result": "PASS gate simulation: 8320 checks\n./bench.sv:29         $display(\"PASS gate simulation: %0d checks\",count); $finish;",
+    "netlist_rename": {
+      "original_sha256": "8bc6508560efef786365addcbcc155e738b3b7de6e80648e73ac7bda80e30e00",
+      "simulation_sha256": "8bc6508560efef786365addcbcc155e738b3b7de6e80648e73ac7bda80e30e00",
+      "renamed_identifiers": 0,
+      "reversible_rename_verified": true
+    },
+    "method": "Xcelium zero-delay simulation with installed TSMC Verilog cell models"
+  },
+  "v1_csa": "PASS unified: 185536 scalar and 30000 DPA cases, 0 mismatches\n",
+  "mufu_original": "PASS original MUFU combinational view: 16030 pipeline comparisons, 3964 stalls\n",
+  "csa_subnormal_targets": "PASS unified: 186240 scalar and 30000 DPA cases, 0 mismatches\n",
+  "v4_exp_w64_norm": "Integer checks: 101536\nShift, conversion and FP comparison checks: 608691\nPASS unified: 185536 scalar and 32769 DPA cases, 0 mismatches\n",
+  "v4_exp_w64_norm_highprec": "Integer checks: 101536\nShift, conversion and FP comparison checks: 147516\nPASS unified: 185536 scalar and 30968 DPA cases, 0 mismatches\n",
+  "v4_exact_exp_csa": "Integer checks: 101536\nShift, conversion and FP comparison checks: 608691\nPASS unified: 185536 scalar and 32769 DPA cases, 0 mismatches\n",
+  "v4_exact_exp_csa_highprec": "Integer checks: 101536\nShift, conversion and FP comparison checks: 147516\nPASS unified: 186240 scalar and 30968 DPA cases, 0 mismatches\n",
+  "exponential_high_precision": {
+    "oracle": "mpmath 200/300-bit exp and exp2, independently rounded by integer binary32 packer",
+    "limitation": "Precision agreement and sampled error are empirical, not exhaustive proofs.",
+    "measurements": [
+      {
+        "natural": false,
+        "narrow": false,
+        "cases": 73757,
+        "different_results": 15252,
+        "max_finite_ulp": 1,
+        "special_result_differences": 0,
+        "worst": {
+          "input": "33ba91a2",
+          "actual": "3f800000",
+          "reference": "3f800001"
+        },
+        "precision_disagreements": 0
+      },
+      {
+        "natural": false,
+        "narrow": true,
+        "cases": 73757,
+        "different_results": 14746,
+        "max_finite_ulp": 1,
+        "special_result_differences": 0,
+        "worst": {
+          "input": "33ba91a2",
+          "actual": "3f800000",
+          "reference": "3f800001"
+        },
+        "precision_disagreements": 0
+      },
+      {
+        "natural": true,
+        "narrow": false,
+        "cases": 73759,
+        "different_results": 10135,
+        "max_finite_ulp": 1,
+        "special_result_differences": 0,
+        "worst": {
+          "input": "338bc4b7",
+          "actual": "3f800000",
+          "reference": "3f800001"
+        },
+        "precision_disagreements": 0
+      },
+      {
+        "natural": true,
+        "narrow": true,
+        "cases": 73759,
+        "different_results": 10306,
+        "max_finite_ulp": 1,
+        "special_result_differences": 0,
+        "worst": {
+          "input": "338bc4b7",
+          "actual": "3f800000",
+          "reference": "3f800001"
+        },
+        "precision_disagreements": 0
+      }
+    ],
+    "attention_exp_only": {
+      "wide": {
+        "rows": 12,
+        "entries": 18944,
+        "max_probability_abs_error": 4.58136727166103e-09,
+        "max_row_l1_error": 2.3919687947653673e-08,
+        "max_probability_relative_error": 9.634921603937573e-08
+      },
+      "narrow": {
+        "rows": 12,
+        "entries": 18944,
+        "max_probability_abs_error": 4.575894024805294e-09,
+        "max_row_l1_error": 2.3607140698158975e-08,
+        "max_probability_relative_error": 1.0734685951833601e-07
+      },
+      "scope": "Isolated EXP contribution after binary32 max subtraction; sums and division use host binary64, reference uses 200-bit mpmath. This is not a full attention kernel."
+    }
+  },
+  "mapped_gate_small": {
+    "synthesis": {
+      "top": "VX_ucc_v4_small_comb",
+      "area_um2": 39214.35,
+      "cells": 58838,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "combinational_area_um2": 39214.35,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00133064,
+        "internal_w": 0.00591613,
+        "switching_w": 0.00411233,
+        "dynamic_w": 0.01002846,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "1156cf4f9b874d240c4be875f65696d8b57b246a8f93f143c613d7daa39589eb",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_small_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    "returncode": 0,
+    "checks": 22720,
+    "test_result": "PASS gate simulation: 22720 checks",
+    "netlist_rename": {
+      "original_sha256": "8b50766f69b66c5b256b9553e7568ed84be535ff18e23fed90473fe8742a2655",
+      "simulation_sha256": "f142f41aa4a8906b5076cb8e1b2417b81b7122b551c41f0b67985a59586a1dfd",
+      "renamed_identifiers": 1,
+      "reversible_rename_verified": true
+    },
+    "method": "Xcelium zero-delay simulation with installed TSMC Verilog cell models"
+  },
+  "mapped_gate_native_full": {
+    "synthesis": {
+      "top": "VX_ucc_v4_native_comb",
+      "area_um2": 39510.828,
+      "cells": 58683,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "combinational_area_um2": 39510.828,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00132984,
+        "internal_w": 0.00642124,
+        "switching_w": 0.00448635,
+        "dynamic_w": 0.01090759,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "4836ad38497ac414cc4a348033dc8c52f2c95c8f2d0574c93d3c47f241a615de",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_native_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    "returncode": 0,
+    "checks": 22720,
+    "test_result": "PASS gate simulation: 22720 checks",
+    "netlist_rename": {
+      "original_sha256": "6ad3534e5e101274557997439cc75d46854f8bbe4bbfc2fb6917ec6a5b7d1e46",
+      "simulation_sha256": "712a0d239bd07da5e459ccf57777ef62b86b6726bab659f41f1710f6c546ad9a",
+      "renamed_identifiers": 1,
+      "reversible_rename_verified": true
+    },
+    "method": "Xcelium zero-delay simulation with installed TSMC Verilog cell models"
+  },
+  "mapped_gate_paired": {
+    "synthesis": {
+      "top": "VX_ucc_v4_paired_comb",
+      "area_um2": 39957.246,
+      "cells": 60167,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "combinational_area_um2": 39957.246,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00135808,
+        "internal_w": 0.00671578,
+        "switching_w": 0.00461624,
+        "dynamic_w": 0.01133202,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "bacd2ff97c8560c3572e374d9df39bc3dc033677a2b12eabf7671a04a3e30770",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_paired_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    "returncode": 0,
+    "checks": 22720,
+    "test_result": "PASS gate simulation: 22720 checks",
+    "netlist_rename": {
+      "original_sha256": "2fed8cf5799b6480c5f7417958bf46ef53de568924ed3b52f30194196ef708a8",
+      "simulation_sha256": "21a1918eb463a4b94ebb1fffd8182226a831103c91f054f366f1129e1d53023a",
+      "renamed_identifiers": 1,
+      "reversible_rename_verified": true
+    },
+    "method": "Xcelium zero-delay simulation with installed TSMC Verilog cell models"
+  },
+  "mapped_gate_norm": {
+    "synthesis": {
+      "top": "VX_ucc_v4_norm_comb",
+      "area_um2": 45260.838,
+      "cells": 64683,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "combinational_area_um2": 45260.838,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00153942,
+        "internal_w": 0.00631744,
+        "switching_w": 0.00429847,
+        "dynamic_w": 0.01061591,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "a3ceda4d5bb5308d4351aa1b24b4d24a653ec6218d07757bbcbb27a672e5d1a4",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_norm_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    "returncode": 0,
+    "checks": 23008,
+    "test_result": "PASS gate simulation: 23008 checks",
+    "netlist_rename": {
+      "original_sha256": "6a1cfc0ed7340e0c3b56657b52f414c16880d352cd7323182e7f8efc55614f63",
+      "simulation_sha256": "e358729085ea23559b3668db335d4083f4d0a12638a96ea61b53dfcf8bd26150",
+      "renamed_identifiers": 1,
+      "reversible_rename_verified": true
+    },
+    "method": "Xcelium zero-delay simulation with installed TSMC Verilog cell models"
+  },
+  "mapped_gate_full_csa": {
+    "synthesis": {
+      "top": "VX_ucc_v4_csa_comb",
+      "area_um2": 47291.58,
+      "cells": 66514,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "combinational_area_um2": 47291.58,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00156912,
+        "internal_w": 0.00767016,
+        "switching_w": 0.00529825,
+        "dynamic_w": 0.01296841,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "dada74b688a712369621ffec81eee1958a77805e9d6f0c786e701da5c06771f6",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_csa_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    "returncode": 0,
+    "checks": 23008,
+    "test_result": "PASS gate simulation: 23008 checks",
+    "netlist_rename": {
+      "original_sha256": "06753fed161cfe02210940fe583f56aafe7a3c607b5384131e51b14a86675e17",
+      "simulation_sha256": "7edcb5a2445f247587a017ebab259bb0b887e36f6cac549044509c7405383935",
+      "renamed_identifiers": 1,
+      "reversible_rename_verified": true
+    },
+    "method": "Xcelium zero-delay simulation with installed TSMC Verilog cell models"
+  },
+  "mapped_gate_route": {
+    "synthesis": {
+      "top": "VX_ucc_v4_route_comb",
+      "area_um2": 45227.7,
+      "cells": 64400,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "combinational_area_um2": 45227.7,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.001534,
+        "internal_w": 0.00630925,
+        "switching_w": 0.0042706,
+        "dynamic_w": 0.01057985,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "4cc794434f4db4a3d320d1f2ebaac9d39a4d6373d0dd9c98601f5461420cc46f",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_route_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    "returncode": 0,
+    "checks": 23008,
+    "test_result": "PASS gate simulation: 23008 checks",
+    "netlist_rename": {
+      "original_sha256": "b5d0444465080884d09f0a17ea6a8a27602d7f52710cee3d6131f14738fe413f",
+      "simulation_sha256": "8a0a7531babdbcbe0e80b07461ba67fb696b67547fdf7b3e1b5f4ca9cd1fe12f",
+      "renamed_identifiers": 1,
+      "reversible_rename_verified": true
+    },
+    "method": "Xcelium zero-delay simulation with installed TSMC Verilog cell models"
+  },
+  "v4_exp_w64_route": "Integer checks: 101536\nShift, conversion and FP comparison checks: 608691\nPASS unified: 185536 scalar and 32769 DPA cases, 0 mismatches\n",
+  "compact_exp_model": [
+    {
+      "natural": false,
+      "cases": 73757,
+      "max_ulp": 2,
+      "special_differences": 0,
+      "worst": {
+        "input": "0x3e5fffff",
+        "actual": "0x3f94f4ee",
+        "reference": "0x3f94f4f0"
+      }
+    },
+    {
+      "natural": true,
+      "cases": 73759,
+      "max_ulp": 2,
+      "special_differences": 0,
+      "worst": {
+        "input": "0x3e1b43d4",
+        "actual": "0x3f94f4ee",
+        "reference": "0x3f94f4f0"
+      }
+    }
+  ],
+  "mapped_gate_const": {
+    "synthesis": {
+      "top": "VX_ucc_v4_const_comb",
+      "area_um2": 39892.104,
+      "cells": 59885,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "combinational_area_um2": 39892.104,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00134815,
+        "internal_w": 0.00641225,
+        "switching_w": 0.00448695,
+        "dynamic_w": 0.010899200000000001,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "4a590b33305f42871d338c02ed41f5ceb62478cfcf80c385751814fc34209884",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_const_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    "returncode": 0,
+    "checks": 23008,
+    "test_result": "PASS gate simulation: 23008 checks",
+    "netlist_rename": {
+      "original_sha256": "ecbcea1c0eb2b478a45b3b7fc15a8f29c28ce856ca5bb69f1991a84620a2978c",
+      "simulation_sha256": "fa5fc63d7b9da29472636e398ebdb08d613b3a05750d6c6bb8436b52e2692c1d",
+      "renamed_identifiers": 1,
+      "reversible_rename_verified": true
+    },
+    "method": "Xcelium zero-delay simulation with installed TSMC Verilog cell models"
+  },
+  "mapped_gate_compact": {
+    "synthesis": {
+      "top": "VX_ucc_v4_compact_comb",
+      "area_um2": 39431.07,
+      "cells": 58929,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "combinational_area_um2": 39431.07,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00133504,
+        "internal_w": 0.00627162,
+        "switching_w": 0.00437062,
+        "dynamic_w": 0.01064224,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "8fe6c382b8cede3ecb47b105e3815d9ddf7e34b02f6b36d0aba3ebb1dbc0dd49",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_compact_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    "returncode": 0,
+    "checks": 23008,
+    "test_result": "PASS gate simulation: 23008 checks",
+    "netlist_rename": {
+      "original_sha256": "d7030d89093332b8cedf83535af213098d140e1a5949cb59694b5dd9bbd17939",
+      "simulation_sha256": "482a210df227408f6c3475548fcd6c436d1f811ddbc8534dd6e4a0c594267553",
+      "renamed_identifiers": 1,
+      "reversible_rename_verified": true
+    },
+    "method": "Xcelium zero-delay simulation with installed TSMC Verilog cell models"
+  },
+  "mapped_gate_const_unpaired": {
+    "synthesis": {
+      "top": "VX_ucc_v4_const_unpaired_comb",
+      "area_um2": 38436.93,
+      "cells": 56680,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "combinational_area_um2": 38436.93,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00126419,
+        "internal_w": 0.0059727,
+        "switching_w": 0.00416636,
+        "dynamic_w": 0.01013906,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "2743efcd7c6f03538c664a62d00f8be6537c8fd9922a35f3eb9a0b987d29f493",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_const_unpaired_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    "returncode": 0,
+    "checks": 23008,
+    "test_result": "PASS gate simulation: 23008 checks",
+    "netlist_rename": {
+      "original_sha256": "d46f15a0b94cc3d86dd2a48ce7110894529b2189bdfad33489fedad594b51b56",
+      "simulation_sha256": "c718bd3e608ee233b5cbed8d8ce307e1feb56fb850a981080704a73f56a190c3",
+      "renamed_identifiers": 1,
+      "reversible_rename_verified": true
+    },
+    "method": "Xcelium zero-delay simulation with installed TSMC Verilog cell models"
+  },
+  "mapped_gate_csa_const": {
+    "synthesis": {
+      "top": "VX_ucc_v4_csa_const_comb",
+      "area_um2": 40997.124,
+      "cells": 59989,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "combinational_area_um2": 40997.124,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00134836,
+        "internal_w": 0.00702021,
+        "switching_w": 0.00509045,
+        "dynamic_w": 0.012110659999999999,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "3b2afab7bd5703f317b89b644decde6ad05ac7a35960dc4a32a0ba46639fe57e",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_csa_const_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    "returncode": 0,
+    "checks": 23008,
+    "test_result": "PASS gate simulation: 23008 checks",
+    "netlist_rename": {
+      "original_sha256": "4644c61f65437e1ab1495a90b1d46e3df6f8174ae9aae8064711683f7d5331c5",
+      "simulation_sha256": "9f1a6806cd4dc969f04f8c601859461fee849be8f26b263a643a8b65c60872fb",
+      "renamed_identifiers": 1,
+      "reversible_rename_verified": true
+    },
+    "method": "Xcelium zero-delay simulation with installed TSMC Verilog cell models"
+  },
+  "mapped_gate_ex2": {
+    "synthesis": {
+      "top": "VX_ucc_ex2_standalone",
+      "area_um2": 2816.604,
+      "cells": 3571,
+      "sequential_cells": 0,
+      "data_path_ps": 4996,
+      "slack_ps": 4,
+      "combinational_area_um2": 2816.604,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 8.34539e-05,
+        "internal_w": 0.00301404,
+        "switching_w": 0.00176507,
+        "dynamic_w": 0.00477911,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "14e88d5c846b840868639a26bb3c05f2829a6be168b89f2c9d22ba18515c1e1e",
+      "dpa_numeric_sources": {},
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_ex2_standalone",
+      "status": "synthesized; functional verification reported separately"
+    },
+    "returncode": 0,
+    "checks": 100585,
+    "test_result": "PASS gate simulation: 100585 checks",
+    "netlist_rename": {
+      "original_sha256": "e9ee31d4a4434f615fbba84a3a5e468b2e695c8041d9470ecc417d4feafc0e0e",
+      "simulation_sha256": "e9ee31d4a4434f615fbba84a3a5e468b2e695c8041d9470ecc417d4feafc0e0e",
+      "renamed_identifiers": 0,
+      "reversible_rename_verified": true
+    },
+    "method": "Xcelium zero-delay simulation with installed TSMC Verilog cell models"
+  },
+  "v4_exp_w64_const": "Integer checks: 101536\nShift, conversion and FP comparison checks: 608691\nPASS unified: 185536 scalar and 32769 DPA cases, 0 mismatches\n",
+  "v4_exp_w64_const_highprec": "Integer checks: 101536\nShift, conversion and FP comparison checks: 147516\nPASS unified: 185536 scalar and 30968 DPA cases, 0 mismatches\n",
+  "v4_exp_w64_compact": "Integer checks: 101536\nShift, conversion and FP comparison checks: 608691\nPASS unified: 185536 scalar and 32769 DPA cases, 0 mismatches\n",
+  "v4_exp_w64_compact_highprec": "Integer checks: 101536\nShift, conversion and FP comparison checks: 147516\nPASS unified: 185536 scalar and 30968 DPA cases, 0 mismatches\n",
+  "anchored_model": {
+    "checks": 706432,
+    "dominance_checks": 334656,
+    "first_failures": [],
+    "limitation": "Finite arithmetic model and directed tests, not a formal proof or RTL result."
+  },
+  "anchored_softfloat": {
+    "cases": 334656,
+    "mismatches": 0,
+    "examples": [],
+    "oracle": "existing pinned Berkeley SoftFloat binary, selected four rounding modes/tininess policy"
+  },
+  "anchored_scalar_result": "PASS FMA/MUL/ADD/SUB: 185536 cases, 0 mismatches\n",
+  "anchored_scalar_dominance_result": "PASS FMA/MUL/ADD/SUB: 334656 cases, 0 mismatches\n",
+  "anchored_scalar_subnormal_result": "PASS FMA/MUL/ADD/SUB: 186240 cases, 0 mismatches\n",
+  "evidence_scope": {
+    "current_dpa_revision": "Corrected FP8 mask / MXFP4 exponent / NVFP4 scale numerics; see current synthesis manifests.",
+    "historical_entries": "Early v1/v2/v3/W32 sweeps are algorithm experiments, not selected-design PPA. Frozen mapped runs and final_selected_rtl identify deliverable configurations.",
+    "gate_method": "Zero-delay Xcelium with installed TSMC cells; Genus independently checks 5 ns timing."
+  },
+  "mapped_gate_anchor": {
+    "synthesis": {
+      "top": "VX_ucc_v4_anchor_comb",
+      "area_um2": 39944.898,
+      "cells": 58118,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "combinational_area_um2": 39944.898,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00131179,
+        "internal_w": 0.00798123,
+        "switching_w": 0.00562215,
+        "dynamic_w": 0.013603380000000002,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "82f9b1cfeb0606f67d32f82ec15f3f7c5279f5973920a4696a557f602bd3daa2",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_anchor_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    "returncode": 0,
+    "checks": 23008,
+    "test_result": "PASS gate simulation: 23008 checks",
+    "netlist_rename": {
+      "original_sha256": "90b4eee116fdc0f0680ef3a793997629a5ff57b817f44a0fd3512490933d2ca2",
+      "simulation_sha256": "4008c603430bf0c35fa00a7c1021ebe4ce0b1270ed923a4b9cb178c08246c2ca",
+      "renamed_identifiers": 1,
+      "reversible_rename_verified": true
+    },
+    "method": "Xcelium zero-delay simulation with installed TSMC Verilog cell models"
+  },
+  "mapped_gate_anchor_crop": {
+    "synthesis": {
+      "top": "VX_ucc_v4_anchor_crop_comb",
+      "area_um2": 39809.826,
+      "cells": 57930,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "combinational_area_um2": 39809.826,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.0013095,
+        "internal_w": 0.00842867,
+        "switching_w": 0.00595417,
+        "dynamic_w": 0.01438284,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "1b00a3e8c052250e09bc0ff75fd2d2d81acb52443e275c6328fd6d2e70c1bf7d",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_anchor_crop_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    "returncode": 0,
+    "checks": 23008,
+    "test_result": "PASS gate simulation: 23008 checks",
+    "netlist_rename": {
+      "original_sha256": "bacaf754d9680ed7ef5b187e2ca317810054ce36141e1af6ada9afaa365430a2",
+      "simulation_sha256": "3a6e92d80921c50163ba4bfb233558c0119492101a07b0a47594434293fc4751",
+      "renamed_identifiers": 1,
+      "reversible_rename_verified": true
+    },
+    "method": "Xcelium zero-delay simulation with installed TSMC Verilog cell models"
+  },
+  "mapped_gate_compact_unpaired": {
+    "synthesis": {
+      "top": "VX_ucc_v4_compact_unpaired_comb",
+      "area_um2": 38246.67,
+      "cells": 56191,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "combinational_area_um2": 38246.67,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00126922,
+        "internal_w": 0.00596796,
+        "switching_w": 0.00418886,
+        "dynamic_w": 0.01015682,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "02fbebcbe6a0c2f56d97a283b4507d90a0e3edb502b4b27e2690ce72bd396439",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_compact_unpaired_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    "returncode": 0,
+    "checks": 23008,
+    "test_result": "PASS gate simulation: 23008 checks",
+    "netlist_rename": {
+      "original_sha256": "2974198ce251bd75afc34186b9415fdc5be02b1601ddf4a0fc2bd3dae15239c7",
+      "simulation_sha256": "9a115906a5630929fe6847c8fcd397602f946a24e5da4d9376771e7c45bdcbbc",
+      "renamed_identifiers": 1,
+      "reversible_rename_verified": true
+    },
+    "method": "Xcelium zero-delay simulation with installed TSMC Verilog cell models"
+  },
+  "mapped_gate_v1_anchor": {
+    "synthesis": {
+      "top": "VX_ucc_v1_anchor_comb",
+      "area_um2": 37823.31,
+      "cells": 55022,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "combinational_area_um2": 37823.31,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.0012574,
+        "internal_w": 0.00785243,
+        "switching_w": 0.00537479,
+        "dynamic_w": 0.013227220000000001,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "8348122d9750cf4aaf99afd9d84f04f0de0bb90e5f7d29fb75faadfa909d42e6",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v1_anchor_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    "returncode": 0,
+    "checks": 8320,
+    "test_result": "PASS gate simulation: 8320 checks",
+    "netlist_rename": {
+      "original_sha256": "1cc90c7bbe4aa34374287bba8388f0a7e741fc5d556240d3200309ea3ebce478",
+      "simulation_sha256": "1cc90c7bbe4aa34374287bba8388f0a7e741fc5d556240d3200309ea3ebce478",
+      "renamed_identifiers": 0,
+      "reversible_rename_verified": true
+    },
+    "method": "Xcelium zero-delay simulation with installed TSMC Verilog cell models"
+  },
+  "mapped_gate_v1_opt": {
+    "synthesis": {
+      "top": "VX_ucc_v1_opt_comb",
+      "area_um2": 39095.658,
+      "cells": 56662,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "combinational_area_um2": 39095.658,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00130749,
+        "internal_w": 0.00670539,
+        "switching_w": 0.0047383,
+        "dynamic_w": 0.01144369,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "e52b40847e71d5734794e675eba4dea1927318b7309ea0dd5f5a3290576dadb0",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v1_opt_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    "returncode": 0,
+    "checks": 8320,
+    "test_result": "PASS gate simulation: 8320 checks",
+    "netlist_rename": {
+      "original_sha256": "e9350caf2fde2f9af17f0934945131a1c756f9fe9030c2a2ef0d99d87fc61352",
+      "simulation_sha256": "e9350caf2fde2f9af17f0934945131a1c756f9fe9030c2a2ef0d99d87fc61352",
+      "renamed_identifiers": 0,
+      "reversible_rename_verified": true
+    },
+    "method": "Xcelium zero-delay simulation with installed TSMC Verilog cell models"
+  },
+  "mapped_gate_v2_opt": {
+    "synthesis": {
+      "top": "VX_ucc_v2_opt_comb",
+      "area_um2": 39385.08,
+      "cells": 57146,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "combinational_area_um2": 39385.08,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.0013192,
+        "internal_w": 0.00695725,
+        "switching_w": 0.0048933,
+        "dynamic_w": 0.01185055,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "2ebbe165216af3cc3310ce5fd62f810baff3d32415638d11219fbe2157ba02bc",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v2_opt_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    "returncode": 0,
+    "checks": 15232,
+    "test_result": "PASS gate simulation: 15232 checks",
+    "netlist_rename": {
+      "original_sha256": "abfcb4f788db120f730c2baa9a1b905de17033339870e40abe83ec00fa9a7a4e",
+      "simulation_sha256": "abfcb4f788db120f730c2baa9a1b905de17033339870e40abe83ec00fa9a7a4e",
+      "renamed_identifiers": 0,
+      "reversible_rename_verified": true
+    },
+    "method": "Xcelium zero-delay simulation with installed TSMC Verilog cell models"
+  },
+  "mapped_gate_v3_opt": {
+    "synthesis": {
+      "top": "VX_ucc_v3_opt_comb",
+      "area_um2": 39826.458,
+      "cells": 57601,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "combinational_area_um2": 39826.458,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00133355,
+        "internal_w": 0.00693136,
+        "switching_w": 0.0048611,
+        "dynamic_w": 0.011792460000000001,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "776fd1af575803d4aabe7fde7f9a5476e6635c7f829d7b0af3694bce88605ded",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v3_opt_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    "returncode": 0,
+    "checks": 20416,
+    "test_result": "PASS gate simulation: 20416 checks",
+    "netlist_rename": {
+      "original_sha256": "74b2e3159373ac7bc815a44185fdae685030ee16c17e8c7ee36da5fd726d42d7",
+      "simulation_sha256": "74b2e3159373ac7bc815a44185fdae685030ee16c17e8c7ee36da5fd726d42d7",
+      "renamed_identifiers": 0,
+      "reversible_rename_verified": true
+    },
+    "method": "Xcelium zero-delay simulation with installed TSMC Verilog cell models"
+  },
+  "final_selected_rtl": {
+    "ucc_v4_exp_w64_const_unpaired": {
+      "result": "Integer checks: 101536\nShift, conversion and FP comparison checks: 608691\nPASS unified: 185536 scalar and 32769 DPA cases, 0 mismatches",
+      "manifest": "build_ucc/ucc_v4_exp_w64_const_unpaired/test_manifest.json",
+      "top": "VX_ucc_v4_exp_test",
+      "parameters": [
+        "EXP_CONST=1",
+        "SHARED_ALIGN=0"
+      ],
+      "manifest_sha256": "6364b8fe3fdf4790cbc3d1b9704362ea2efd807c10b544116037123a9428db6e",
+      "directed_checks": [
+        {
+          "manifest": "build_ucc/ucc_v4_exp_w64_const_unpaired/highprec_manifest.json",
+          "result": "Integer checks: 101536\nShift, conversion and FP comparison checks: 147516\nPASS unified: 185536 scalar and 30968 DPA cases, 0 mismatches",
+          "vectors_sha256": {
+            "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_v4_exp_w64_const_unpaired/vectors.txt": "8a0192f926d75d7a43dc5dd625c87bc2d66df40b2c693a74854c051e8662ef46",
+            "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_exp_highprec/narrow_vectors.txt": "d401608f95b0a62296a7bca0f362e95a225c19ef68d5488aee37da9ceae6161b"
+          }
+        }
+      ]
+    },
+    "ucc_v4_exact_exp_anchor": {
+      "result": "Integer checks: 101536\nShift, conversion and FP comparison checks: 608691\nPASS unified: 185536 scalar and 32769 DPA cases, 0 mismatches",
+      "manifest": "build_ucc/ucc_v4_exact_exp_anchor/test_manifest.json",
+      "top": "VX_ucc_v4_exact_exp_test",
+      "parameters": [
+        "FMA_ANCHORED=1",
+        "DIRECT_NORM=1",
+        "EXP_CONST=1"
+      ]
+    },
+    "ucc_stream_minimum": {
+      "result": "PASS stream: 6161 accepted, 6143 retired, 18 reset-discarded, 4541 stalled cycles, 1000 consecutive II=1 acceptances, 798 flagged and 231 predicate results",
+      "manifest": "build_ucc/ucc_stream_minimum/test_manifest.json",
+      "top": "VX_ucc_stream",
+      "parameters": [],
+      "manifest_sha256": "8923ee8f3e02d3f4497904f6b04eeea522d8764e63c66d50579f06c8e5419c95",
+      "directed_checks": []
+    },
+    "ucc_stream_exact_final": {
+      "result": "PASS stream: 6161 accepted, 6143 retired, 18 reset-discarded, 4541 stalled cycles, 1000 consecutive II=1 acceptances, 798 flagged and 231 predicate results",
+      "manifest": "build_ucc/ucc_stream_exact_final/test_manifest.json",
+      "top": "VX_ucc_stream",
+      "parameters": [
+        "EXACT_FP=1"
+      ],
+      "manifest_sha256": "32573957d56507537a55a7bc27b2dc5ced1545242f37a63bf1e33ad6656cc48c",
+      "directed_checks": []
+    },
+    "ucc_stream_compact_final": {
+      "result": "PASS stream: 6161 accepted, 6143 retired, 18 reset-discarded, 4541 stalled cycles, 1000 consecutive II=1 acceptances, 798 flagged and 231 predicate results",
+      "manifest": "build_ucc/ucc_stream_compact_final/test_manifest.json",
+      "top": "VX_ucc_stream",
+      "parameters": [
+        "EXP_STYLE=2"
+      ],
+      "manifest_sha256": "0d5a6d65272847e149a092eed622b0d0d0bdc09becdc893b43b77d4df039002e",
+      "directed_checks": []
+    },
+    "ucc_v4_exp_w64_compact_unpaired": {
+      "result": "Integer checks: 101536\nShift, conversion and FP comparison checks: 608691\nPASS unified: 185536 scalar and 32769 DPA cases, 0 mismatches",
+      "manifest": "build_ucc/ucc_v4_exp_w64_compact_unpaired/test_manifest.json",
+      "top": "VX_ucc_v4_exp_test",
+      "parameters": [
+        "COMPACT_EXP=1",
+        "SHARED_ALIGN=0"
+      ],
+      "manifest_sha256": "fecf00656a3a30b9c29f661388909545374d2f612e23c4aa7e308072cca409f2",
+      "directed_checks": [
+        {
+          "manifest": "build_ucc/ucc_v4_exp_w64_compact_unpaired/highprec_manifest.json",
+          "result": "Integer checks: 101536\nShift, conversion and FP comparison checks: 147516\nPASS unified: 185536 scalar and 30968 DPA cases, 0 mismatches",
+          "vectors_sha256": {
+            "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_v4_exp_w64_compact_unpaired/vectors.txt": "8a0192f926d75d7a43dc5dd625c87bc2d66df40b2c693a74854c051e8662ef46",
+            "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_exp_highprec/compact_vectors.txt": "45df6246c0f787f0c3c06bb1477c9b84adb853859f17748556ba08b21cc0cbaf"
+          }
+        }
+      ]
+    },
+    "ucc_v4_exact_exp_anchor_crop": {
+      "result": "Integer checks: 101536\nShift, conversion and FP comparison checks: 608691\nPASS unified: 185536 scalar and 32769 DPA cases, 0 mismatches",
+      "manifest": "build_ucc/ucc_v4_exact_exp_anchor_crop/test_manifest.json",
+      "top": "VX_ucc_v4_exact_exp_test",
+      "parameters": [
+        "FMA_ANCHORED=1",
+        "FMA_CROP=1",
+        "DIRECT_NORM=1",
+        "EXP_CONST=1"
+      ],
+      "manifest_sha256": "632d66e84810551db7be30c3ab11f519f882012ee92b90c41f7ceae9a955b046",
+      "directed_checks": [
+        {
+          "manifest": "build_ucc/ucc_v4_exact_exp_anchor_crop/subnormal_highprec_manifest.json",
+          "result": "Integer checks: 101536\nShift, conversion and FP comparison checks: 147516\nPASS unified: 186240 scalar and 30968 DPA cases, 0 mismatches",
+          "vectors_sha256": {
+            "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_fma_window_sweep/ieee_vectors.txt": "f173e03d4d50bd27408d128ba96e898867521731c7c5eaaba428df550b9b6b46",
+            "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_exp_highprec/wide_vectors.txt": "89168bc912926bc65cf53cd97c67b09e48077b7a400687e67fe714adae871d3a"
+          }
+        },
+        {
+          "manifest": "build_ucc/ucc_v4_exact_exp_anchor_crop/dominance_highprec_manifest.json",
+          "result": "Integer checks: 101536\nShift, conversion and FP comparison checks: 147516\nPASS unified: 334656 scalar and 30968 DPA cases, 0 mismatches",
+          "vectors_sha256": {
+            "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_anchor/dominance_vectors.txt": "4fe0f36e9307687c4e7eaadb184ca36a95f1327b7befc0c44c6a78330b91bb9d",
+            "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_exp_highprec/wide_vectors.txt": "89168bc912926bc65cf53cd97c67b09e48077b7a400687e67fe714adae871d3a"
+          }
+        }
+      ]
+    }
+  },
+  "compact_high_precision_previous": [
+    {
+      "natural": false,
+      "cases": 73757,
+      "max_ulp": 2,
+      "special_differences": 0,
+      "worst": {
+        "input": "0x3e5fffff",
+        "actual": "0x3f94f4ee",
+        "reference": "0x3f94f4f0"
+      }
+    },
+    {
+      "natural": true,
+      "cases": 73759,
+      "max_ulp": 2,
+      "special_differences": 0,
+      "worst": {
+        "input": "0x3e1b43d4",
+        "actual": "0x3f94f4ee",
+        "reference": "0x3f94f4f0"
+      }
+    }
+  ],
+  "compact_high_precision": {
+    "oracle": "mpmath 200/300-bit exp and exp2, independently rounded by integer binary32 packer",
+    "mpmath_version": "1.3.0",
+    "precision_bits": [
+      200,
+      300
+    ],
+    "limitation": "Precision agreement and sampled error are empirical, not exhaustive proofs.",
+    "measurements": [
+      {
+        "natural": false,
+        "narrow": true,
+        "compact": true,
+        "cases": 73757,
+        "different_results": 17617,
+        "max_finite_ulp": 2,
+        "special_result_differences": 0,
+        "worst": {
+          "input": "3e5fffff",
+          "actual": "3f94f4ee",
+          "reference": "3f94f4f0"
+        },
+        "precision_disagreements": 0
+      },
+      {
+        "natural": true,
+        "narrow": true,
+        "compact": true,
+        "cases": 73759,
+        "different_results": 26151,
+        "max_finite_ulp": 2,
+        "special_result_differences": 0,
+        "worst": {
+          "input": "3e1b43d4",
+          "actual": "3f94f4ee",
+          "reference": "3f94f4f0"
+        },
+        "precision_disagreements": 0
+      }
+    ],
+    "attention_exp_only": {
+      "compact": {
+        "rows": 12,
+        "entries": 18944,
+        "max_probability_abs_error": 7.631033194233083e-09,
+        "max_row_l1_error": 3.065350369884782e-08,
+        "max_probability_relative_error": 1.9279443815350958e-07
+      },
+      "scope": "Isolated EXP contribution after binary32 max subtraction; sums and division use host binary64, reference uses 200-bit mpmath. This is not a full attention kernel."
+    }
+  },
+  "selected_designs": {
+    "native_regular": {
+      "top": "VX_ucc_v4_const_unpaired_comb",
+      "stream_parameters": {
+        "EXACT_FP": 0,
+        "EXP_STYLE": 1,
+        "SHARED_ALIGN": 0
+      },
+      "area_um2": 38436.93,
+      "EXP_sampled_max_ulp": 1,
+      "frozen_synthesis_manifest": "build_ucc/ucc_synth/VX_ucc_v4_const_unpaired_comb/manifest.json",
+      "current_source_differences": [
+        "hw/rtl/ucc/VX_ucc_fma_prepare.sv",
+        "hw/rtl/ucc/VX_ucc_comb.sv"
+      ],
+      "revision_note": "Frozen netlist has its own mapped checks. Subsequent FMA prepare changes affect inactive special outputs or disabled exact branches in native mode; final RTL regression uses current source. No claim that resynthesis is byte-identical."
+    },
+    "native_minimum": {
+      "top": "VX_ucc_v4_compact_unpaired_comb",
+      "stream_parameters": {
+        "EXACT_FP": 0,
+        "EXP_STYLE": 2,
+        "SHARED_ALIGN": 0
+      },
+      "area_um2": 38246.67,
+      "EXP_sampled_max_ulp": 2,
+      "frozen_synthesis_manifest": "build_ucc/ucc_synth/VX_ucc_v4_compact_unpaired_comb/manifest.json",
+      "current_source_differences": [
+        "hw/rtl/ucc/VX_ucc_fma_prepare.sv"
+      ],
+      "revision_note": "Frozen netlist has its own mapped checks. Subsequent FMA prepare changes affect inactive special outputs or disabled exact branches in native mode; final RTL regression uses current source. No claim that resynthesis is byte-identical."
+    },
+    "exact": {
+      "top": "VX_ucc_v4_anchor_crop_comb",
+      "stream_parameters": {
+        "EXACT_FP": 1,
+        "FMA_STYLE": 3,
+        "EXP_STYLE": 1
+      },
+      "area_um2": 39809.826,
+      "EXP_sampled_max_ulp": 1,
+      "frozen_synthesis_manifest": "build_ucc/ucc_synth/VX_ucc_v4_anchor_crop_comb/manifest.json",
+      "current_source_differences": [
+        "hw/rtl/ucc/VX_ucc_fma_prepare.sv"
+      ],
+      "revision_note": "Frozen netlist has its own mapped checks. Subsequent FMA prepare changes affect inactive special outputs or disabled exact branches in native mode; final RTL regression uses current source. No claim that resynthesis is byte-identical."
+    }
+  },
+  "final_source_audit": {
+    "ucc_v4_exp_w64_const_unpaired": {
+      "changed_sources": [
+        "hw/rtl/ucc/VX_ucc_fma_prepare.sv"
+      ],
+      "qualification": "Only exact-FMA prepare changed; it is inside g_exact_fp and is not elaborated when NATIVE_FP=1."
+    },
+    "ucc_v4_exp_w64_compact_unpaired": {
+      "changed_sources": [],
+      "qualification": "All recorded RTL/C++ source hashes match current files."
+    },
+    "ucc_v4_exact_exp_anchor_crop": {
+      "changed_sources": [],
+      "qualification": "All recorded RTL/C++ source hashes match current files."
+    },
+    "ucc_stream_exact_final": {
+      "changed_sources": [],
+      "qualification": "All recorded RTL/C++ source hashes match current files."
+    },
+    "ucc_stream_compact_final": {
+      "changed_sources": [],
+      "qualification": "All recorded RTL/C++ source hashes match current files."
+    }
+  }
+}

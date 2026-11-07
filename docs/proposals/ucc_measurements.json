@@ -1,0 +1,1261 @@
+{
+  "measurements": [
+    {
+      "top": "VX_ucc_bf16x9_comb",
+      "area_um2": 34665.876,
+      "cells": 50678,
+      "sequential_cells": 0,
+      "data_path_ps": 4674,
+      "slack_ps": 326,
+      "critical_path_start": "(R) b_vec[4][6]",
+      "critical_path_end": "(R) result[2]",
+      "sequential_fmax_mhz": null,
+      "combinational_area_um2": 34665.876,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00113463,
+        "internal_w": 0.00604002,
+        "switching_w": 0.0042652,
+        "dynamic_w": 0.01030522,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "6043da6826d8a1a7f85d5ca52590cde457e061b3aca128b85955329c417e8730",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_bf16x9_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    {
+      "top": "VX_ucc_dpa16_comb",
+      "area_um2": 33566.778,
+      "cells": 48587,
+      "sequential_cells": 0,
+      "data_path_ps": 4525,
+      "slack_ps": 475,
+      "critical_path_start": "(R) a[2][6]",
+      "critical_path_end": "(R) result[0]",
+      "sequential_fmax_mhz": null,
+      "combinational_area_um2": 33566.778,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.0011032,
+        "internal_w": 0.00525989,
+        "switching_w": 0.0036643,
+        "dynamic_w": 0.00892419,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "cb38bac340ad022095929be02ffd84bda71f1b544a98f7c8bb559ab78f1b78f7",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_dpa16_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    {
+      "top": "VX_ucc_ex2_standalone",
+      "area_um2": 2816.604,
+      "cells": 3571,
+      "sequential_cells": 0,
+      "data_path_ps": 4996,
+      "slack_ps": 4,
+      "critical_path_start": "(F) a[23]",
+      "critical_path_end": "(F) result[22]",
+      "sequential_fmax_mhz": null,
+      "combinational_area_um2": 2816.604,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 8.34539e-05,
+        "internal_w": 0.00301404,
+        "switching_w": 0.00176507,
+        "dynamic_w": 0.00477911,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "14e88d5c846b840868639a26bb3c05f2829a6be168b89f2c9d22ba18515c1e1e",
+      "dpa_numeric_sources": {},
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_ex2_standalone",
+      "status": "synthesized; functional verification reported separately"
+    },
+    {
+      "top": "VX_ucc_fma_standalone",
+      "area_um2": 3594.15,
+      "cells": 5356,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "critical_path_start": "(F) op[1]",
+      "critical_path_end": "(R) result[25]",
+      "sequential_fmax_mhz": null,
+      "combinational_area_um2": 3594.15,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.000102827,
+        "internal_w": 0.00168483,
+        "switching_w": 0.00144193,
+        "dynamic_w": 0.00312676,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "5e4c50f0c73a7defe90286f49574391cdfe815a6a6d29da285dc5170225dd0f8",
+      "dpa_numeric_sources": {},
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_fma_standalone",
+      "status": "synthesized; functional verification reported separately"
+    },
+    {
+      "top": "VX_ucc_fma_test",
+      "area_um2": 6573.42,
+      "cells": 8705,
+      "sequential_cells": 0,
+      "data_path_ps": 4998,
+      "slack_ps": 2,
+      "critical_path_start": "(F) a[23]",
+      "critical_path_end": "(R) result[25]",
+      "sequential_fmax_mhz": null,
+      "combinational_area_um2": 6573.42,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.000195988,
+        "internal_w": 0.00561321,
+        "switching_w": 0.00427617,
+        "dynamic_w": 0.00988938,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "1a30866f46e2e24f150d97507d56a88c8cd672745b1b004cfb6558ec5c384c30",
+      "dpa_numeric_sources": {},
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_fma_test",
+      "status": "synthesized; functional verification reported separately"
+    },
+    {
+      "top": "VX_ucc_fpu_standalone",
+      "area_um2": 3637.368,
+      "cells": 5601,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "critical_path_start": "(F) op[1]",
+      "critical_path_end": "(F) result[24]",
+      "sequential_fmax_mhz": null,
+      "combinational_area_um2": 3637.368,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.000108219,
+        "internal_w": 0.0026206,
+        "switching_w": 0.00224623,
+        "dynamic_w": 0.00486683,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "a1ef7a71c7706706fa342c2bae90ff40bea7cac2df0fad0073a75e3f9beda508",
+      "dpa_numeric_sources": {},
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_fpu_standalone",
+      "status": "synthesized; functional verification reported separately"
+    },
+    {
+      "top": "VX_ucc_int_standalone",
+      "area_um2": 2490.138,
+      "cells": 2973,
+      "sequential_cells": 0,
+      "data_path_ps": 2390,
+      "slack_ps": 2610,
+      "critical_path_start": "(F) a[2]",
+      "critical_path_end": "(F) result[1]",
+      "sequential_fmax_mhz": null,
+      "combinational_area_um2": 2490.138,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 7.08505e-05,
+        "internal_w": 0.00043943,
+        "switching_w": 0.000241168,
+        "dynamic_w": 0.0006805979999999999,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "dd756037d9d222a991e8af15e168d454519de0bd8e362736912612de7d5bd590",
+      "dpa_numeric_sources": {},
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_int_standalone",
+      "status": "synthesized; functional verification reported separately"
+    },
+    {
+      "top": "VX_ucc_mufu_original_comb",
+      "area_um2": 4844.952,
+      "cells": 7295,
+      "sequential_cells": 0,
+      "data_path_ps": 4942,
+      "slack_ps": 58,
+      "critical_path_start": "(R) a[23]",
+      "critical_path_end": "(R) result[0]",
+      "sequential_fmax_mhz": null,
+      "combinational_area_um2": 4844.952,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.000143698,
+        "internal_w": 0.00300886,
+        "switching_w": 0.00170443,
+        "dynamic_w": 0.00471329,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "595ca8b8807ea31b8da2ac8071b50bf613e54e4b9e112158bae730e03f4ebd72",
+      "dpa_numeric_sources": {},
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_mufu_original_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    {
+      "top": "VX_ucc_mufu_standalone",
+      "area_um2": 3354.75,
+      "cells": 3874,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "critical_path_start": "(R) a[4]",
+      "critical_path_end": "(R) result[25]",
+      "sequential_fmax_mhz": null,
+      "combinational_area_um2": 3354.75,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 9.96973e-05,
+        "internal_w": 0.00343968,
+        "switching_w": 0.00199798,
+        "dynamic_w": 0.00543766,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "6b6d9d4c68c2452ab145decfce6dd01a7e5017a937506f588ca16fe32c2e8139",
+      "dpa_numeric_sources": {},
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_mufu_standalone",
+      "status": "synthesized; functional verification reported separately"
+    },
+    {
+      "top": "VX_ucc_shift_separate",
+      "area_um2": 2531.592,
+      "cells": 4207,
+      "sequential_cells": 0,
+      "data_path_ps": 790,
+      "slack_ps": 4210,
+      "critical_path_start": "(F) mode[1]",
+      "critical_path_end": "(R) data_out[100]",
+      "sequential_fmax_mhz": null,
+      "combinational_area_um2": 2531.592,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 6.28209e-05,
+        "internal_w": 0.000143733,
+        "switching_w": 0.00013809,
+        "dynamic_w": 0.000281823,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "db51764f4bbb137aa20b2bd3f6f634058116fd35518d4cce7dea0cca2866c3b4",
+      "dpa_numeric_sources": {},
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_shift_separate",
+      "status": "synthesized; functional verification reported separately"
+    },
+    {
+      "top": "VX_ucc_shift_shared",
+      "area_um2": 816.354,
+      "cells": 1334,
+      "sequential_cells": 0,
+      "data_path_ps": 604,
+      "slack_ps": 4396,
+      "critical_path_start": "(F) left",
+      "critical_path_end": "(F) data_out[2]",
+      "sequential_fmax_mhz": null,
+      "combinational_area_um2": 816.354,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 2.17574e-05,
+        "internal_w": 6.8777e-05,
+        "switching_w": 7.60396e-05,
+        "dynamic_w": 0.0001448166,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "77106f9b7e1e6d1740042f6c90ee8cbc8b1a4a073b284477866992596275ee7b",
+      "dpa_numeric_sources": {},
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_shift_shared",
+      "status": "synthesized; functional verification reported separately"
+    },
+    {
+      "top": "VX_ucc_v1_anchor_comb",
+      "area_um2": 37823.31,
+      "cells": 55022,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "critical_path_start": "(R) a_vec[1][1]",
+      "critical_path_end": "(F) result[23]",
+      "sequential_fmax_mhz": null,
+      "combinational_area_um2": 37823.31,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.0012574,
+        "internal_w": 0.00785243,
+        "switching_w": 0.00537479,
+        "dynamic_w": 0.013227220000000001,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "8348122d9750cf4aaf99afd9d84f04f0de0bb90e5f7d29fb75faadfa909d42e6",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v1_anchor_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    {
+      "top": "VX_ucc_v1_csa_comb",
+      "area_um2": 39161.43,
+      "cells": 56581,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "critical_path_start": "(R) a_vec[6][1]",
+      "critical_path_end": "(F) result[0]",
+      "sequential_fmax_mhz": null,
+      "combinational_area_um2": 39161.43,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00131299,
+        "internal_w": 0.00702501,
+        "switching_w": 0.00499605,
+        "dynamic_w": 0.01202106,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "2cbe7e2800f8f7503447e8127ef082ded7e54a9b5496cec0f93e344630e0773e",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v1_csa_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    {
+      "top": "VX_ucc_v1_opt_comb",
+      "area_um2": 39095.658,
+      "cells": 56662,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "critical_path_start": "(F) b_vec[5][5]",
+      "critical_path_end": "(F) result[22]",
+      "sequential_fmax_mhz": null,
+      "combinational_area_um2": 39095.658,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00130749,
+        "internal_w": 0.00670539,
+        "switching_w": 0.0047383,
+        "dynamic_w": 0.01144369,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "e52b40847e71d5734794e675eba4dea1927318b7309ea0dd5f5a3290576dadb0",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v1_opt_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    {
+      "top": "VX_ucc_v2_opt_comb",
+      "area_um2": 39385.08,
+      "cells": 57146,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "critical_path_start": "(F) a_vec[1][25]",
+      "critical_path_end": "(F) result[23]",
+      "sequential_fmax_mhz": null,
+      "combinational_area_um2": 39385.08,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.0013192,
+        "internal_w": 0.00695725,
+        "switching_w": 0.0048933,
+        "dynamic_w": 0.01185055,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "2ebbe165216af3cc3310ce5fd62f810baff3d32415638d11219fbe2157ba02bc",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v2_opt_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    {
+      "top": "VX_ucc_v3_opt_comb",
+      "area_um2": 39826.458,
+      "cells": 57601,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "critical_path_start": "(R) a_vec[6][30]",
+      "critical_path_end": "(F) result[28]",
+      "sequential_fmax_mhz": null,
+      "combinational_area_um2": 39826.458,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00133355,
+        "internal_w": 0.00693136,
+        "switching_w": 0.0048611,
+        "dynamic_w": 0.011792460000000001,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "776fd1af575803d4aabe7fde7f9a5476e6635c7f829d7b0af3694bce88605ded",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v3_opt_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    {
+      "top": "VX_ucc_v4_anchor_comb",
+      "area_um2": 39944.898,
+      "cells": 58118,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "critical_path_start": "(R) b_vec[3][5]",
+      "critical_path_end": "(F) result[22]",
+      "sequential_fmax_mhz": null,
+      "combinational_area_um2": 39944.898,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00131179,
+        "internal_w": 0.00798123,
+        "switching_w": 0.00562215,
+        "dynamic_w": 0.013603380000000002,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "82f9b1cfeb0606f67d32f82ec15f3f7c5279f5973920a4696a557f602bd3daa2",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_anchor_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    {
+      "top": "VX_ucc_v4_anchor_crop_comb",
+      "area_um2": 39809.826,
+      "cells": 57930,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "critical_path_start": "(F) scale_b[1][6]",
+      "critical_path_end": "(F) result[5]",
+      "sequential_fmax_mhz": null,
+      "combinational_area_um2": 39809.826,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.0013095,
+        "internal_w": 0.00842867,
+        "switching_w": 0.00595417,
+        "dynamic_w": 0.01438284,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "1b00a3e8c052250e09bc0ff75fd2d2d81acb52443e275c6328fd6d2e70c1bf7d",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_anchor_crop_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    {
+      "top": "VX_ucc_v4_compact_comb",
+      "area_um2": 39431.07,
+      "cells": 58929,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "critical_path_start": "(R) b_vec[5][29]",
+      "critical_path_end": "(F) result[6]",
+      "sequential_fmax_mhz": null,
+      "combinational_area_um2": 39431.07,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00133504,
+        "internal_w": 0.00627162,
+        "switching_w": 0.00437062,
+        "dynamic_w": 0.01064224,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "8fe6c382b8cede3ecb47b105e3815d9ddf7e34b02f6b36d0aba3ebb1dbc0dd49",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_compact_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    {
+      "top": "VX_ucc_v4_compact_unpaired_comb",
+      "area_um2": 38246.67,
+      "cells": 56191,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "critical_path_start": "(R) op[6]",
+      "critical_path_end": "(F) result[28]",
+      "sequential_fmax_mhz": null,
+      "combinational_area_um2": 38246.67,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00126922,
+        "internal_w": 0.00596796,
+        "switching_w": 0.00418886,
+        "dynamic_w": 0.01015682,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "02fbebcbe6a0c2f56d97a283b4507d90a0e3edb502b4b27e2690ce72bd396439",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_compact_unpaired_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    {
+      "top": "VX_ucc_v4_const_comb",
+      "area_um2": 39892.104,
+      "cells": 59885,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "critical_path_start": "(R) a_vec[3][21]",
+      "critical_path_end": "(F) result[27]",
+      "sequential_fmax_mhz": null,
+      "combinational_area_um2": 39892.104,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00134815,
+        "internal_w": 0.00641225,
+        "switching_w": 0.00448695,
+        "dynamic_w": 0.010899200000000001,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "4a590b33305f42871d338c02ed41f5ceb62478cfcf80c385751814fc34209884",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_const_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    {
+      "top": "VX_ucc_v4_const_unpaired_comb",
+      "area_um2": 38436.93,
+      "cells": 56680,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "critical_path_start": "(F) a[5]",
+      "critical_path_end": "(F) result[22]",
+      "sequential_fmax_mhz": null,
+      "combinational_area_um2": 38436.93,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00126419,
+        "internal_w": 0.0059727,
+        "switching_w": 0.00416636,
+        "dynamic_w": 0.01013906,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "2743efcd7c6f03538c664a62d00f8be6537c8fd9922a35f3eb9a0b987d29f493",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_const_unpaired_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    {
+      "top": "VX_ucc_v4_csa_comb",
+      "area_um2": 47291.58,
+      "cells": 66514,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "critical_path_start": "(R) scale_b[3][6]",
+      "critical_path_end": "(F) result[23]",
+      "sequential_fmax_mhz": null,
+      "combinational_area_um2": 47291.58,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00156912,
+        "internal_w": 0.00767016,
+        "switching_w": 0.00529825,
+        "dynamic_w": 0.01296841,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "dada74b688a712369621ffec81eee1958a77805e9d6f0c786e701da5c06771f6",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_csa_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    {
+      "top": "VX_ucc_v4_csa_const_comb",
+      "area_um2": 40997.124,
+      "cells": 59989,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "critical_path_start": "(R) b_vec[4][9]",
+      "critical_path_end": "(F) result[0]",
+      "sequential_fmax_mhz": null,
+      "combinational_area_um2": 40997.124,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00134836,
+        "internal_w": 0.00702021,
+        "switching_w": 0.00509045,
+        "dynamic_w": 0.012110659999999999,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "3b2afab7bd5703f317b89b644decde6ad05ac7a35960dc4a32a0ba46639fe57e",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_csa_const_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    {
+      "top": "VX_ucc_v4_exact_exp_comb",
+      "area_um2": 48924.288,
+      "cells": 69092,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "critical_path_start": "(F) fmt[0]",
+      "critical_path_end": "(F) result[16]",
+      "sequential_fmax_mhz": null,
+      "combinational_area_um2": 48924.288,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00158359,
+        "internal_w": 0.0116161,
+        "switching_w": 0.00865293,
+        "dynamic_w": 0.02026903,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "d4830920858e02cac9fd825a7bf622582694d76ee7cf1af4008476bd1f2f78ed",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_exact_exp_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    {
+      "top": "VX_ucc_v4_exp_comb",
+      "area_um2": 45097.794,
+      "cells": 64133,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "critical_path_start": "(F) a_vec[3][21]",
+      "critical_path_end": "(F) result[22]",
+      "sequential_fmax_mhz": null,
+      "combinational_area_um2": 45097.794,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00153644,
+        "internal_w": 0.00619406,
+        "switching_w": 0.00420939,
+        "dynamic_w": 0.010403450000000002,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "97b9723af7c20558b87777d5e219b5ae2301dcb1d79099fedc9b23c24fb5a1fd",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_exp_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    {
+      "top": "VX_ucc_v4_native_comb",
+      "area_um2": 39510.828,
+      "cells": 58683,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "critical_path_start": "(R) a_vec[4][13]",
+      "critical_path_end": "(F) result[0]",
+      "sequential_fmax_mhz": null,
+      "combinational_area_um2": 39510.828,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00132984,
+        "internal_w": 0.00642124,
+        "switching_w": 0.00448635,
+        "dynamic_w": 0.01090759,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "4836ad38497ac414cc4a348033dc8c52f2c95c8f2d0574c93d3c47f241a615de",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_native_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    {
+      "top": "VX_ucc_v4_norm_comb",
+      "area_um2": 45260.838,
+      "cells": 64683,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "critical_path_start": "(F) b_vec[7][17]",
+      "critical_path_end": "(F) result[4]",
+      "sequential_fmax_mhz": null,
+      "combinational_area_um2": 45260.838,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00153942,
+        "internal_w": 0.00631744,
+        "switching_w": 0.00429847,
+        "dynamic_w": 0.01061591,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "a3ceda4d5bb5308d4351aa1b24b4d24a653ec6218d07757bbcbb27a672e5d1a4",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_norm_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    {
+      "top": "VX_ucc_v4_paired_comb",
+      "area_um2": 39957.246,
+      "cells": 60167,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "critical_path_start": "(F) b_vec[1][30]",
+      "critical_path_end": "(R) result[23]",
+      "sequential_fmax_mhz": null,
+      "combinational_area_um2": 39957.246,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00135808,
+        "internal_w": 0.00671578,
+        "switching_w": 0.00461624,
+        "dynamic_w": 0.01133202,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "bacd2ff97c8560c3572e374d9df39bc3dc033677a2b12eabf7671a04a3e30770",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_paired_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    {
+      "top": "VX_ucc_v4_route_comb",
+      "area_um2": 45227.7,
+      "cells": 64400,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "critical_path_start": "(R) a_vec[5][18]",
+      "critical_path_end": "(F) result[1]",
+      "sequential_fmax_mhz": null,
+      "combinational_area_um2": 45227.7,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.001534,
+        "internal_w": 0.00630925,
+        "switching_w": 0.0042706,
+        "dynamic_w": 0.01057985,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "4cc794434f4db4a3d320d1f2ebaac9d39a4d6373d0dd9c98601f5461420cc46f",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_route_comb",
+      "status": "synthesized; functional verification reported separately"
+    },
+    {
+      "top": "VX_ucc_v4_small_comb",
+      "area_um2": 39214.35,
+      "cells": 58838,
+      "sequential_cells": 0,
+      "data_path_ps": 5000,
+      "slack_ps": 0,
+      "critical_path_start": "(F) b_vec[1][5]",
+      "critical_path_end": "(R) result[1]",
+      "sequential_fmax_mhz": null,
+      "combinational_area_um2": 39214.35,
+      "sequential_area_um2": 0.0,
+      "power_vectorless": {
+        "leakage_w": 0.00133064,
+        "internal_w": 0.00591613,
+        "switching_w": 0.00411233,
+        "dynamic_w": 0.01002846,
+        "limitation": "Genus default activity assumptions; no workload waveform annotation."
+      },
+      "timing_budget_ns": 5.0,
+      "timing_met": true,
+      "corner": "TT 0.8V 25C",
+      "wireload": "ZeroWireload",
+      "input_slew_ps": 50,
+      "output_load_ff": 5,
+      "preprocessed_sha256": "1156cf4f9b874d240c4be875f65696d8b57b246a8f93f143c613d7daa39589eb",
+      "dpa_numeric_sources": {
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+        "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+      },
+      "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_small_comb",
+      "status": "synthesized; functional verification reported separately"
+    }
+  ],
+  "shift_area_saving_fraction": 0.6775333466056142,
+  "incremental_comparisons": [
+    {
+      "from": "VX_ucc_dpa16_comb",
+      "to": "VX_ucc_v1_opt_comb",
+      "area_increment_um2": 5528.880000000005,
+      "increment_fraction": 0.16471285984016704,
+      "qualification": "CSA-first exact FMA and direct normalization; differences include mapping/timing interactions."
+    },
+    {
+      "from": "VX_ucc_v1_opt_comb",
+      "to": "VX_ucc_v2_opt_comb",
+      "area_increment_um2": 289.42199999999866,
+      "increment_fraction": 0.007402919270472319,
+      "qualification": "CSA-first exact FMA and direct normalization; differences include mapping/timing interactions."
+    },
+    {
+      "from": "VX_ucc_v2_opt_comb",
+      "to": "VX_ucc_v3_opt_comb",
+      "area_increment_um2": 441.377999999997,
+      "increment_fraction": 0.011206731076844223,
+      "qualification": "CSA-first exact FMA and direct normalization; differences include mapping/timing interactions."
+    },
+    {
+      "from": "VX_ucc_v3_opt_comb",
+      "to": "VX_ucc_v4_csa_const_comb",
+      "area_increment_um2": 1170.6660000000047,
+      "increment_fraction": 0.029394178111445513,
+      "qualification": "CSA-first exact FMA and direct normalization; differences include mapping/timing interactions."
+    }
+  ],
+  "full_unit_comparisons": [
+    {
+      "unified_top": "VX_ucc_v4_exp_comb",
+      "unified_um2": 45097.794,
+      "separate_um2": 43049.034,
+      "overhead_vs_dpa_fraction": 0.3435246600075825,
+      "saving_vs_separate_fraction": -0.0475913118050455,
+      "same_function_groups_system": {
+        "separate_um2": 2317930.776,
+        "unified_um2": 2886258.816,
+        "saving_fraction": -0.24518766733006192
+      },
+      "qualification": "Tensor/scalar modes mutually exclusive; separate units can execute concurrently. Native FP is RNE/FTZ approximate; standalone FPU is IEEE exact. Both MUFU comparators cover EX2 and natural EXP only; polynomial precisions differ.",
+      "requested_64D_16I_32FMA_4SFU": {
+        "separate_um2": 2316547.8,
+        "unified_um2": 2886258.816,
+        "saving_fraction": -0.2459310427352288,
+        "qualification": "User modeling assumption, not NVIDIA disclosure; FMA-only blocks omit conversion/FP compare capabilities included in UCC. SFU here means the measured two-operation EXP/EX2 unit."
+      }
+    },
+    {
+      "unified_top": "VX_ucc_v4_exact_exp_comb",
+      "unified_um2": 48924.288,
+      "separate_um2": 43049.034,
+      "overhead_vs_dpa_fraction": 0.45752112401136635,
+      "saving_vs_separate_fraction": -0.13647818438852766,
+      "same_function_groups_system": {
+        "separate_um2": 2317930.776,
+        "unified_um2": 3131154.432,
+        "saving_fraction": -0.3508403548631256
+      },
+      "qualification": "Tensor/scalar modes mutually exclusive; separate units can execute concurrently. Native FP is RNE/FTZ approximate; standalone FPU is IEEE exact. Both MUFU comparators cover EX2 and natural EXP only; polynomial precisions differ.",
+      "requested_64D_16I_32FMA_4SFU": {
+        "separate_um2": 2316547.8,
+        "unified_um2": 3131154.432,
+        "saving_fraction": -0.35164680478425714,
+        "qualification": "User modeling assumption, not NVIDIA disclosure; FMA-only blocks omit conversion/FP compare capabilities included in UCC. SFU here means the measured two-operation EXP/EX2 unit."
+      }
+    },
+    {
+      "unified_top": "VX_ucc_v4_norm_comb",
+      "unified_um2": 45260.838,
+      "separate_um2": 43049.034,
+      "overhead_vs_dpa_fraction": 0.34838196266558574,
+      "saving_vs_separate_fraction": -0.05137871386382331,
+      "same_function_groups_system": {
+        "separate_um2": 2317930.776,
+        "unified_um2": 2896693.632,
+        "saving_fraction": -0.24968944801654436
+      },
+      "qualification": "Tensor/scalar modes mutually exclusive; separate units can execute concurrently. Native FP is RNE/FTZ approximate; standalone FPU is IEEE exact. Both MUFU comparators cover EX2 and natural EXP only; polynomial precisions differ.",
+      "requested_64D_16I_32FMA_4SFU": {
+        "separate_um2": 2316547.8,
+        "unified_um2": 2896693.632,
+        "saving_fraction": -0.25043551097888006,
+        "qualification": "User modeling assumption, not NVIDIA disclosure; FMA-only blocks omit conversion/FP compare capabilities included in UCC. SFU here means the measured two-operation EXP/EX2 unit."
+      }
+    },
+    {
+      "unified_top": "VX_ucc_v4_csa_comb",
+      "unified_um2": 47291.58,
+      "separate_um2": 43049.034,
+      "overhead_vs_dpa_fraction": 0.40888053062465524,
+      "saving_vs_separate_fraction": -0.0985514796917395,
+      "same_function_groups_system": {
+        "separate_um2": 2317930.776,
+        "unified_um2": 3026661.12,
+        "saving_fraction": -0.3057599266286286
+      },
+      "qualification": "Tensor/scalar modes mutually exclusive; separate units can execute concurrently. Native FP is RNE/FTZ approximate; standalone FPU is IEEE exact. Both MUFU comparators cover EX2 and natural EXP only; polynomial precisions differ.",
+      "requested_64D_16I_32FMA_4SFU": {
+        "separate_um2": 2316547.8,
+        "unified_um2": 3026661.12,
+        "saving_fraction": -0.30653946359319684,
+        "qualification": "User modeling assumption, not NVIDIA disclosure; FMA-only blocks omit conversion/FP compare capabilities included in UCC. SFU here means the measured two-operation EXP/EX2 unit."
+      }
+    },
+    {
+      "unified_top": "VX_ucc_v4_route_comb",
+      "unified_um2": 45227.7,
+      "separate_um2": 43049.034,
+      "overhead_vs_dpa_fraction": 0.3473947365457597,
+      "saving_vs_separate_fraction": -0.05060894049329878,
+      "same_function_groups_system": {
+        "separate_um2": 2317930.776,
+        "unified_um2": 2894572.8,
+        "saving_fraction": -0.24877448022632387
+      },
+      "qualification": "Tensor/scalar modes mutually exclusive; separate units can execute concurrently. Native FP is RNE/FTZ approximate; standalone FPU is IEEE exact. Both MUFU comparators cover EX2 and natural EXP only; polynomial precisions differ.",
+      "requested_64D_16I_32FMA_4SFU": {
+        "separate_um2": 2316547.8,
+        "unified_um2": 2894572.8,
+        "saving_fraction": -0.24951999695408844,
+        "qualification": "User modeling assumption, not NVIDIA disclosure; FMA-only blocks omit conversion/FP compare capabilities included in UCC. SFU here means the measured two-operation EXP/EX2 unit."
+      }
+    },
+    {
+      "unified_top": "VX_ucc_v4_const_comb",
+      "unified_um2": 39892.104,
+      "separate_um2": 43049.034,
+      "overhead_vs_dpa_fraction": 0.1884400701193305,
+      "saving_vs_separate_fraction": 0.07333335284596632,
+      "same_function_groups_system": {
+        "separate_um2": 2317930.776,
+        "unified_um2": 2553094.656,
+        "saving_fraction": -0.10145422910593416
+      },
+      "qualification": "Tensor/scalar modes mutually exclusive; separate units can execute concurrently. Native FP is RNE/FTZ approximate; standalone FPU is IEEE exact. Both MUFU comparators cover EX2 and natural EXP only; polynomial precisions differ.",
+      "requested_64D_16I_32FMA_4SFU": {
+        "separate_um2": 2316547.8,
+        "unified_um2": 2553094.656,
+        "saving_fraction": -0.10211179583689156,
+        "qualification": "User modeling assumption, not NVIDIA disclosure; FMA-only blocks omit conversion/FP compare capabilities included in UCC. SFU here means the measured two-operation EXP/EX2 unit."
+      }
+    },
+    {
+      "unified_top": "VX_ucc_v4_const_unpaired_comb",
+      "unified_um2": 38436.93,
+      "separate_um2": 43049.034,
+      "overhead_vs_dpa_fraction": 0.1450884562110788,
+      "saving_vs_separate_fraction": 0.10713606256530628,
+      "same_function_groups_system": {
+        "separate_um2": 2317930.776,
+        "unified_um2": 2459963.52,
+        "saving_fraction": -0.0612756625308295
+      },
+      "qualification": "Tensor/scalar modes mutually exclusive; separate units can execute concurrently. Native FP is RNE/FTZ approximate; standalone FPU is IEEE exact. Both MUFU comparators cover EX2 and natural EXP only; polynomial precisions differ.",
+      "requested_64D_16I_32FMA_4SFU": {
+        "separate_um2": 2316547.8,
+        "unified_um2": 2459963.52,
+        "saving_fraction": -0.06190924271020881,
+        "qualification": "User modeling assumption, not NVIDIA disclosure; FMA-only blocks omit conversion/FP compare capabilities included in UCC. SFU here means the measured two-operation EXP/EX2 unit."
+      }
+    },
+    {
+      "unified_top": "VX_ucc_v4_compact_comb",
+      "unified_um2": 39431.07,
+      "separate_um2": 43049.034,
+      "overhead_vs_dpa_fraction": 0.17470523980585817,
+      "saving_vs_separate_fraction": 0.08404286144957396,
+      "same_function_groups_system": {
+        "separate_um2": 2317930.776,
+        "unified_um2": 2523588.48,
+        "saving_fraction": -0.08872469623743418
+      },
+      "qualification": "Tensor/scalar modes mutually exclusive; separate units can execute concurrently. Native FP is RNE/FTZ approximate; standalone FPU is IEEE exact. Both MUFU comparators cover EX2 and natural EXP only; polynomial precisions differ.",
+      "requested_64D_16I_32FMA_4SFU": {
+        "separate_um2": 2316547.8,
+        "unified_um2": 2523588.48,
+        "saving_fraction": -0.08937466345395517,
+        "qualification": "User modeling assumption, not NVIDIA disclosure; FMA-only blocks omit conversion/FP compare capabilities included in UCC. SFU here means the measured two-operation EXP/EX2 unit."
+      }
+    },
+    {
+      "unified_top": "VX_ucc_v4_csa_const_comb",
+      "unified_um2": 40997.124,
+      "separate_um2": 43049.034,
+      "overhead_vs_dpa_fraction": 0.2213601198184707,
+      "saving_vs_separate_fraction": 0.04766448417866931,
+      "same_function_groups_system": {
+        "separate_um2": 2317930.776,
+        "unified_um2": 2623815.936,
+        "saving_fraction": -0.13196475199654545
+      },
+      "qualification": "Tensor/scalar modes mutually exclusive; separate units can execute concurrently. Native FP is RNE/FTZ approximate; standalone FPU is IEEE exact. Both MUFU comparators cover EX2 and natural EXP only; polynomial precisions differ.",
+      "requested_64D_16I_32FMA_4SFU": {
+        "separate_um2": 2316547.8,
+        "unified_um2": 2623815.936,
+        "saving_fraction": -0.1326405334696743,
+        "qualification": "User modeling assumption, not NVIDIA disclosure; FMA-only blocks omit conversion/FP compare capabilities included in UCC. SFU here means the measured two-operation EXP/EX2 unit."
+      }
+    },
+    {
+      "unified_top": "VX_ucc_v4_anchor_comb",
+      "unified_um2": 39944.898,
+      "separate_um2": 43049.034,
+      "overhead_vs_dpa_fraction": 0.19001287523038424,
+      "saving_vs_separate_fraction": 0.07210698386402814,
+      "same_function_groups_system": {
+        "separate_um2": 2317930.776,
+        "unified_um2": 2556473.472,
+        "saving_fraction": -0.10291191543331912
+      },
+      "qualification": "Tensor/scalar modes mutually exclusive; separate units can execute concurrently. Native FP is RNE/FTZ approximate; standalone FPU is IEEE exact. Both MUFU comparators cover EX2 and natural EXP only; polynomial precisions differ.",
+      "requested_64D_16I_32FMA_4SFU": {
+        "separate_um2": 2316547.8,
+        "unified_um2": 2556473.472,
+        "saving_fraction": -0.10357035240110313,
+        "qualification": "User modeling assumption, not NVIDIA disclosure; FMA-only blocks omit conversion/FP compare capabilities included in UCC. SFU here means the measured two-operation EXP/EX2 unit."
+      }
+    },
+    {
+      "unified_top": "VX_ucc_v4_anchor_crop_comb",
+      "unified_um2": 39809.826,
+      "separate_um2": 43049.034,
+      "overhead_vs_dpa_fraction": 0.18598889652143558,
+      "saving_vs_separate_fraction": 0.07524461524502501,
+      "same_function_groups_system": {
+        "separate_um2": 2317930.776,
+        "unified_um2": 2547828.864,
+        "saving_fraction": -0.09918246497280214
+      },
+      "qualification": "Tensor/scalar modes mutually exclusive; separate units can execute concurrently. Native FP is RNE/FTZ approximate; standalone FPU is IEEE exact. Both MUFU comparators cover EX2 and natural EXP only; polynomial precisions differ.",
+      "requested_64D_16I_32FMA_4SFU": {
+        "separate_um2": 2316547.8,
+        "unified_um2": 2547828.864,
+        "saving_fraction": -0.09983867546354985,
+        "qualification": "User modeling assumption, not NVIDIA disclosure; FMA-only blocks omit conversion/FP compare capabilities included in UCC. SFU here means the measured two-operation EXP/EX2 unit."
+      }
+    },
+    {
+      "unified_top": "VX_ucc_v4_compact_unpaired_comb",
+      "unified_um2": 38246.67,
+      "separate_um2": 43049.034,
+      "overhead_vs_dpa_fraction": 0.13942035187291424,
+      "saving_vs_separate_fraction": 0.11155567393219556,
+      "same_function_groups_system": {
+        "separate_um2": 2317930.776,
+        "unified_um2": 2447786.88,
+        "saving_fraction": -0.05602242540827285
+      },
+      "qualification": "Tensor/scalar modes mutually exclusive; separate units can execute concurrently. Native FP is RNE/FTZ approximate; standalone FPU is IEEE exact. Both MUFU comparators cover EX2 and natural EXP only; polynomial precisions differ.",
+      "requested_64D_16I_32FMA_4SFU": {
+        "separate_um2": 2316547.8,
+        "unified_um2": 2447786.88,
+        "saving_fraction": -0.05665286941197589,
+        "qualification": "User modeling assumption, not NVIDIA disclosure; FMA-only blocks omit conversion/FP compare capabilities included in UCC. SFU here means the measured two-operation EXP/EX2 unit."
+      }
+    }
+  ]
+}

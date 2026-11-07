@@ -22,7 +22,8 @@ module VX_tcu_tfr_mul_f8 import VX_tcu_pkg::*;
     parameter WA    = 28,
     parameter EXP_W = 10,
     parameter USE_DSP = 0,  // map mantissa multipliers onto DSP48 slices
-    parameter PROD_REG = 0  // product/flag register stages (multiply-stage seam)
+    parameter PROD_REG = 0,  // product/flag register stages (multiply-stage seam)
+    parameter EXTERNAL_MUL = 0
 ) (
     input wire                      clk,
     input wire                      enable,
@@ -34,6 +35,9 @@ module VX_tcu_tfr_mul_f8 import VX_tcu_pkg::*;
 
     input wire [N-1:0][31:0]        a_row,
     input wire [N-1:0][31:0]        b_col,
+    output wire [TCK-1:0][1:0][3:0] mantissa_a,
+    output wire [TCK-1:0][1:0][3:0] mantissa_b,
+    input wire [TCK-1:0][1:0][7:0] external_products,
 `ifdef VX_CFG_TCU_MX_ENABLE
     input wire [7:0]                sf_a,
     input wire [7:0]                sf_b,
@@ -51,6 +55,7 @@ module VX_tcu_tfr_mul_f8 import VX_tcu_pkg::*;
     `UNUSED_SPARAM (INSTANCE_ID)
     `UNUSED_VAR ({clk, req_id, valid_in})
     `UNUSED_VAR (vld_mask)
+    `STATIC_ASSERT (!EXTERNAL_MUL || PROD_REG == 0, ("external FP8 products require an unregistered multiplier seam"))
 
     localparam F32_BIAS  = 127;
     localparam S_FP32    = 23;
@@ -186,7 +191,7 @@ module VX_tcu_tfr_mul_f8 import VX_tcu_pkg::*;
         `UNUSED_VAR (diff_1_minus_0[6])
 
         wire term0_ge_term1 = ~diff_0_minus_1[6];
-        wire term0_is_max = (v0 & ~v1) || (v1 & term0_ge_term1);
+        wire term0_is_max = v0 && (!v1 || term0_ge_term1);
         wire diff_sign = term0_is_max;
 
         wire [5:0] diff_abs = term0_is_max ? diff_0_minus_1[5:0] : diff_1_minus_0[5:0];
@@ -239,18 +244,24 @@ module VX_tcu_tfr_mul_f8 import VX_tcu_pkg::*;
         // halving the f8 DSP count vs one DSP per product. PROD_REG lands the
         // products in the DSP48 PREG.
         wire [1:0][7:0] man_prod;
-        VX_tcu_tfr_wmul #(
-            .N       (4),
-            .LANES   (2),
-            .USE_DSP (USE_DSP),
-            .OUT_REG (PROD_REG)
-        ) wtmul (
-            .clk    (clk),
-            .enable (enable),
-            .a (ma_sel),
-            .b (mb_sel),
-            .p (man_prod)
-        );
+        assign mantissa_a[i] = ma_sel;
+        assign mantissa_b[i] = mb_sel;
+        if (EXTERNAL_MUL) begin : g_external
+            assign man_prod = external_products[i];
+        end else begin : g_internal
+            VX_tcu_tfr_wmul #(
+                .N       (4),
+                .LANES   (2),
+                .USE_DSP (USE_DSP),
+                .OUT_REG (PROD_REG)
+            ) wtmul (
+                .clk    (clk),
+                .enable (enable),
+                .a (ma_sel),
+                .b (mb_sel),
+                .p (man_prod)
+            );
+        end
 
         // Sort/align controls depend only on exponents and signs: pre-seam
         // compute, post-seam use.
@@ -338,7 +349,7 @@ module VX_tcu_tfr_mul_f8 import VX_tcu_pkg::*;
         wire any_nan = (|(nan_sel & lane_valid)) || add_nan;
         wire any_inf = (|(inf_sel & lane_valid)) && ~any_nan;
 
-        wire final_sign_inf = inf_sel[0] ? sign_sel[0] : sign_sel[1];
+        wire final_sign_inf = inf_sel[0] && lane_valid[0] ? sign_sel[0] : sign_sel[1];
 
         // The sign field is only consumed for infinity lanes downstream.
         assign exceptions[i].is_nan = any_nan;

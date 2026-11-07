@@ -1,0 +1,1902 @@
+{
+  "baseline": {
+    "top": "VX_ucc_dpa16_comb",
+    "area_um2": 33566.778,
+    "cells": 48587,
+    "sequential_cells": 0,
+    "data_path_ps": 4525,
+    "slack_ps": 475,
+    "critical_path_start": "(R) a[2][6]",
+    "critical_path_end": "(R) result[0]",
+    "sequential_fmax_mhz": null,
+    "combinational_area_um2": 33566.778,
+    "sequential_area_um2": 0.0,
+    "power_vectorless": {
+      "leakage_w": 0.0011032,
+      "internal_w": 0.00525989,
+      "switching_w": 0.0036643,
+      "dynamic_w": 0.00892419,
+      "limitation": "Genus default activity assumptions; no workload waveform annotation."
+    },
+    "timing_budget_ns": 5.0,
+    "timing_met": true,
+    "corner": "TT 0.8V 25C",
+    "wireload": "ZeroWireload",
+    "input_slew_ps": 50,
+    "output_load_ff": 5,
+    "preprocessed_sha256": "cb38bac340ad022095929be02ffd84bda71f1b544a98f7c8bb559ab78f1b78f7",
+    "dpa_numeric_sources": {
+      "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+      "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+    },
+    "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_dpa16_comb",
+    "status": "synthesized; functional verification reported separately"
+  },
+  "previous_exact": {
+    "top": "VX_ucc_v4_anchor_crop_comb",
+    "area_um2": 39809.826,
+    "cells": 57930,
+    "sequential_cells": 0,
+    "data_path_ps": 5000,
+    "slack_ps": 0,
+    "critical_path_start": "(F) scale_b[1][6]",
+    "critical_path_end": "(F) result[5]",
+    "sequential_fmax_mhz": null,
+    "combinational_area_um2": 39809.826,
+    "sequential_area_um2": 0.0,
+    "power_vectorless": {
+      "leakage_w": 0.0013095,
+      "internal_w": 0.00842867,
+      "switching_w": 0.00595417,
+      "dynamic_w": 0.01438284,
+      "limitation": "Genus default activity assumptions; no workload waveform annotation."
+    },
+    "timing_budget_ns": 5.0,
+    "timing_met": true,
+    "corner": "TT 0.8V 25C",
+    "wireload": "ZeroWireload",
+    "input_slew_ps": 50,
+    "output_load_ff": 5,
+    "preprocessed_sha256": "1b00a3e8c052250e09bc0ff75fd2d2d81acb52443e275c6328fd6d2e70c1bf7d",
+    "dpa_numeric_sources": {
+      "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+      "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+    },
+    "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_anchor_crop_comb",
+    "status": "synthesized; functional verification reported separately"
+  },
+  "variants": [
+    {
+      "measurement": {
+        "top": "VX_ucc_v4_window_comb",
+        "area_um2": 39430.188,
+        "cells": 57431,
+        "sequential_cells": 0,
+        "data_path_ps": 5000,
+        "slack_ps": 0,
+        "critical_path_start": "(F) a[0]",
+        "critical_path_end": "(F) result[4]",
+        "sequential_fmax_mhz": null,
+        "combinational_area_um2": 39430.188,
+        "sequential_area_um2": 0.0,
+        "power_vectorless": {
+          "leakage_w": 0.001288,
+          "internal_w": 0.00778848,
+          "switching_w": 0.00535723,
+          "dynamic_w": 0.013145710000000001,
+          "limitation": "Genus default activity assumptions; no workload waveform annotation."
+        },
+        "timing_budget_ns": 5.0,
+        "timing_met": true,
+        "corner": "TT 0.8V 25C",
+        "wireload": "ZeroWireload",
+        "input_slew_ps": 50,
+        "output_load_ff": 5,
+        "preprocessed_sha256": "7df7f86bdfeeb3d959a6c44343782139f466bf74e689789be906ef4939b0e098",
+        "dpa_numeric_sources": {
+          "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+          "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+        },
+        "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_window_comb",
+        "status": "synthesized; functional verification reported separately"
+      },
+      "rtl": {
+        "build": "ucc_v4_exact_exp_window",
+        "manifest": {
+          "path": "build_ucc/ucc_v4_exact_exp_window/test_manifest.json",
+          "sha256": "7050f37037800341ec69159b618cdcc9675a5fd6b30674c48c656e1476d3cd39"
+        },
+        "result": "Integer checks: 101536\nShift, conversion and FP comparison checks: 608691\nPASS unified: 185536 scalar and 32769 DPA cases, 0 mismatches\n",
+        "directed_manifest": {
+          "path": "build_ucc/ucc_v4_exact_exp_window/segmented_directed_manifest.json",
+          "sha256": "bedc32a80771831f76d70ba2a8ed6b90cb3f293531c692f6375a5efd2728e3a5"
+        },
+        "directed_result": "Integer checks: 101536\nShift, conversion and FP comparison checks: 147516\nPASS unified: 920900 scalar and 58525 DPA cases, 0 mismatches\n"
+      },
+      "gate_manifest": {
+        "path": "build_ucc/ucc_gate_window/manifest.json",
+        "sha256": "4413236892ce00602e13ee95e506df8533ebf747ecb0413b29dda974fc512812"
+      },
+      "gate_checks": 23008,
+      "current_source_differences": [
+        {
+          "path": "hw/rtl/ucc/VX_ucc_fma_prepare.sv",
+          "frozen_sha256": "fbce83334520b13ff020170fc60a5f6c2a253f0c76115f26c75a8046566f7a70",
+          "current_sha256": "08ddb8dcefcc0e3de19cc85afaaf90c2612e2660dfe7d4c19f6c52fdcaf49d75"
+        },
+        {
+          "path": "hw/rtl/ucc/VX_ucc_mul_reducer.sv",
+          "frozen_sha256": "da35c805f1498590c2aa4ee1b6c99dfbab10dc98c2cdb5542788554419e1fbd8",
+          "current_sha256": "abcd32ae748c33e9c58d17f8811482e3694ffd09726b3c8660baa96a67da6ece"
+        },
+        {
+          "path": "hw/rtl/ucc/VX_ucc_shift_window.sv",
+          "frozen_sha256": "4f7d780558e529c09faa94875400da34221f440c7a74b829084827cd74be14cf",
+          "current_sha256": "fb82f54f91dd9e875133470199cda98fd9d5569953f321dc7e9821af36a07dcb"
+        },
+        {
+          "path": "hw/rtl/ucc/VX_ucc_comb.sv",
+          "frozen_sha256": "046a0a9f20886f7e1f3edffa3063acd745441d159709f3a8b3656c12e019302d",
+          "current_sha256": "973a8ee7f3b2d267694bee1f101fb9ce30da001b05b5033793d1f546b9d5d29b"
+        }
+      ],
+      "delta_vs_previous_exact_um2": -379.637999999999,
+      "delta_vs_previous_exact_fraction": -0.009536288854917307,
+      "overhead_vs_dpa_fraction": 0.17467896382548265,
+      "area_breakdown": {
+        "top": "VX_ucc_v4_window_comb",
+        "total_um2": 39430.188,
+        "preprocessed_sha256": "7df7f86bdfeeb3d959a6c44343782139f466bf74e689789be906ef4939b0e098",
+        "categories_um2": {
+          "retained_coefficient_rom": 326.088,
+          "retained_multiplier_logic": 3151.764,
+          "retained_reduction_adders": 2074.464,
+          "unattributed_other": 8794.548,
+          "unattributed_tensor_preparation": 25083.324
+        },
+        "limitation": "Genus flattens arithmetic and control together. Retained categories are attributable subsets, not complete functional costs. Zero/missing categories mean no separately retained hierarchy; mux/control and normalization are also in the unattributed residual.",
+        "hierarchy": [
+          {
+            "depth": 0,
+            "path": "VX_ucc_v4_window_comb",
+            "module": "VX_ucc_v4_window_comb",
+            "inclusive_um2": 39430.188,
+            "cells": 57431,
+            "exclusive_um2": 8.82,
+            "category": "unattributed_other"
+          },
+          {
+            "depth": 2,
+            "path": "VX_ucc_v4_window_comb/core",
+            "module": "VX_ucc_comb_W80_CHUNK11_ENABLE_INT1_ENABLE_AUX1_EN",
+            "inclusive_um2": 39421.368,
+            "cells": 57425,
+            "exclusive_um2": 8785.728,
+            "category": "unattributed_other"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_ex2.prepare_coefficients_rom",
+            "module": "VX_rom_DATAW72_SIZE512_OUT_REG0_INIT_DATAx01fffff0",
+            "inclusive_um2": 326.088,
+            "cells": 644,
+            "exclusive_um2": 326.088,
+            "category": "retained_coefficient_rom"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[0].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0",
+            "inclusive_um2": 41.076,
+            "cells": 47,
+            "exclusive_um2": 41.076,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[0].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30",
+            "inclusive_um2": 95.508,
+            "cells": 71,
+            "exclusive_um2": 95.508,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[0].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30",
+            "inclusive_um2": 67.41,
+            "cells": 39,
+            "exclusive_um2": 67.41,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[1].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_1",
+            "inclusive_um2": 32.634,
+            "cells": 34,
+            "exclusive_um2": 32.634,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[1].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_1",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[1].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_1",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[2].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_2",
+            "inclusive_um2": 62.37,
+            "cells": 113,
+            "exclusive_um2": 62.37,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[2].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_2",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[2].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_2",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[3].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_3",
+            "inclusive_um2": 32.634,
+            "cells": 34,
+            "exclusive_um2": 32.634,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[3].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_3",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[3].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_3",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[4].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_4",
+            "inclusive_um2": 32.634,
+            "cells": 34,
+            "exclusive_um2": 32.634,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[4].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_4",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[4].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_4",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[5].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_5",
+            "inclusive_um2": 32.13,
+            "cells": 30,
+            "exclusive_um2": 32.13,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[5].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_5",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[5].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_5",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[6].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_6",
+            "inclusive_um2": 32.13,
+            "cells": 30,
+            "exclusive_um2": 32.13,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[6].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_6",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[6].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_6",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[7].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_7",
+            "inclusive_um2": 33.768,
+            "cells": 42,
+            "exclusive_um2": 33.768,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[7].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_7",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[7].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_7",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[8].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_8",
+            "inclusive_um2": 33.768,
+            "cells": 42,
+            "exclusive_um2": 33.768,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[8].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_8",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[8].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_8",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[9].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_9",
+            "inclusive_um2": 35.784,
+            "cells": 42,
+            "exclusive_um2": 35.784,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[9].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_9",
+            "inclusive_um2": 95.508,
+            "cells": 69,
+            "exclusive_um2": 95.508,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[9].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_9",
+            "inclusive_um2": 68.922,
+            "cells": 43,
+            "exclusive_um2": 68.922,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[10].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_10",
+            "inclusive_um2": 42.21,
+            "cells": 58,
+            "exclusive_um2": 42.21,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[10].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_10",
+            "inclusive_um2": 101.556,
+            "cells": 107,
+            "exclusive_um2": 101.556,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[10].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_10",
+            "inclusive_um2": 76.23,
+            "cells": 74,
+            "exclusive_um2": 76.23,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[11].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_11",
+            "inclusive_um2": 32.508,
+            "cells": 34,
+            "exclusive_um2": 32.508,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[11].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_11",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[11].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_11",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[12].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_12",
+            "inclusive_um2": 44.73,
+            "cells": 59,
+            "exclusive_um2": 44.73,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[12].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_12",
+            "inclusive_um2": 101.682,
+            "cells": 106,
+            "exclusive_um2": 101.682,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[12].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_12",
+            "inclusive_um2": 77.364,
+            "cells": 77,
+            "exclusive_um2": 77.364,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[13].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_13",
+            "inclusive_um2": 33.768,
+            "cells": 42,
+            "exclusive_um2": 33.768,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[13].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_13",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[13].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_13",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[14].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_14",
+            "inclusive_um2": 32.256,
+            "cells": 32,
+            "exclusive_um2": 32.256,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[14].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_14",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[14].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_14",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[15].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_15",
+            "inclusive_um2": 32.256,
+            "cells": 32,
+            "exclusive_um2": 32.256,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[15].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_15",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_mul[15].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_15",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_wide_accumulator.accumulator_fp_neg_popcount",
+            "module": "VX_popcount_N17",
+            "inclusive_um2": 49.266,
+            "cells": 87,
+            "exclusive_um2": 49.266,
+            "category": "retained_reduction_adders"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/g_wide_accumulator.accumulator_sig_csa",
+            "module": "VX_csa_tree_N18_W80_S80",
+            "inclusive_um2": 2025.198,
+            "cells": 1550,
+            "exclusive_um2": 2025.198,
+            "category": "retained_reduction_adders"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_window_comb/core/tensor_prepare",
+            "module": "VX_tcu_tfr_shared_mul_N8_W25_WA32_SF4_USE_DSP0_PRO",
+            "inclusive_um2": 25083.324,
+            "cells": 38051,
+            "exclusive_um2": 8690.598,
+            "category": "unattributed_tensor_preparation"
+          },
+          {
+            "depth": 6,
+            "path": "VX_ucc_v4_window_comb/core/tensor_prepare/g_mul_f4_sf[0].mul_f4",
+            "module": "VX_tcu_tfr_mul_f4_N8_TCK16_W25_WA32_EXP_W10_USE_DS",
+            "inclusive_um2": 4075.218,
+            "cells": 5931,
+            "exclusive_um2": 4075.218,
+            "category": "unattributed_tensor_preparation"
+          },
+          {
+            "depth": 6,
+            "path": "VX_ucc_v4_window_comb/core/tensor_prepare/g_mul_f4_sf[1].mul_f4",
+            "module": "VX_tcu_tfr_mul_f4_N8_TCK16_W25_WA32_EXP_W10_USE_DS",
+            "inclusive_um2": 4101.552,
+            "cells": 5959,
+            "exclusive_um2": 4101.552,
+            "category": "unattributed_tensor_preparation"
+          },
+          {
+            "depth": 6,
+            "path": "VX_ucc_v4_window_comb/core/tensor_prepare/g_mul_f4_sf[2].mul_f4",
+            "module": "VX_tcu_tfr_mul_f4_N8_TCK16_W25_WA32_EXP_W10_USE_DS",
+            "inclusive_um2": 4097.646,
+            "cells": 5970,
+            "exclusive_um2": 4097.646,
+            "category": "unattributed_tensor_preparation"
+          },
+          {
+            "depth": 6,
+            "path": "VX_ucc_v4_window_comb/core/tensor_prepare/g_mul_f4_sf[3].mul_f4",
+            "module": "VX_tcu_tfr_mul_f4_N8_TCK16_W25_WA32_EXP_W10_USE_DS",
+            "inclusive_um2": 4118.31,
+            "cells": 6017,
+            "exclusive_um2": 4118.31,
+            "category": "unattributed_tensor_preparation"
+          }
+        ]
+      }
+    },
+    {
+      "measurement": {
+        "top": "VX_ucc_v4_segmented_comb",
+        "area_um2": 39540.816,
+        "cells": 57512,
+        "sequential_cells": 0,
+        "data_path_ps": 5000,
+        "slack_ps": 0,
+        "critical_path_start": "(F) op[1]",
+        "critical_path_end": "(F) result[6]",
+        "sequential_fmax_mhz": null,
+        "combinational_area_um2": 39540.816,
+        "sequential_area_um2": 0.0,
+        "power_vectorless": {
+          "leakage_w": 0.00128092,
+          "internal_w": 0.00771284,
+          "switching_w": 0.00555042,
+          "dynamic_w": 0.01326326,
+          "limitation": "Genus default activity assumptions; no workload waveform annotation."
+        },
+        "timing_budget_ns": 5.0,
+        "timing_met": true,
+        "corner": "TT 0.8V 25C",
+        "wireload": "ZeroWireload",
+        "input_slew_ps": 50,
+        "output_load_ff": 5,
+        "preprocessed_sha256": "23fb6817acc2a4f59f95ad442232959e5698161b0100c591d387729e2c8048d9",
+        "dpa_numeric_sources": {
+          "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+          "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+        },
+        "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_segmented_comb",
+        "status": "synthesized; functional verification reported separately"
+      },
+      "rtl": {
+        "build": "ucc_v4_exact_exp_w64_segmented",
+        "manifest": {
+          "path": "build_ucc/ucc_v4_exact_exp_w64_segmented/test_manifest.json",
+          "sha256": "ccd64d77f310da9d9b5f9da338d3e3d8d78d826f0c861ca2b524166b3fba13e2"
+        },
+        "result": "Integer checks: 101536\nShift, conversion and FP comparison checks: 608691\nPASS unified: 185536 scalar and 32769 DPA cases, 0 mismatches\n",
+        "directed_manifest": {
+          "path": "build_ucc/ucc_v4_exact_exp_w64_segmented/segmented_directed_manifest.json",
+          "sha256": "8c0a0876d70cb359388ccf9589990a860204892d446e27f847efe55b8cc8e362"
+        },
+        "directed_result": "Integer checks: 101536\nShift, conversion and FP comparison checks: 147516\nPASS unified: 920900 scalar and 58525 DPA cases, 0 mismatches\n"
+      },
+      "gate_manifest": {
+        "path": "build_ucc/ucc_gate_segmented/manifest.json",
+        "sha256": "879b9a9cec408e245326e5835361698656ea85fc422dd53d10af35ea4c0e71ef"
+      },
+      "gate_checks": 23008,
+      "current_source_differences": [
+        {
+          "path": "hw/rtl/ucc/VX_ucc_fma_prepare.sv",
+          "frozen_sha256": "fbce83334520b13ff020170fc60a5f6c2a253f0c76115f26c75a8046566f7a70",
+          "current_sha256": "08ddb8dcefcc0e3de19cc85afaaf90c2612e2660dfe7d4c19f6c52fdcaf49d75"
+        },
+        {
+          "path": "hw/rtl/ucc/VX_ucc_mul_reducer.sv",
+          "frozen_sha256": "da35c805f1498590c2aa4ee1b6c99dfbab10dc98c2cdb5542788554419e1fbd8",
+          "current_sha256": "abcd32ae748c33e9c58d17f8811482e3694ffd09726b3c8660baa96a67da6ece"
+        },
+        {
+          "path": "hw/rtl/ucc/VX_ucc_shift_window.sv",
+          "frozen_sha256": "4f7d780558e529c09faa94875400da34221f440c7a74b829084827cd74be14cf",
+          "current_sha256": "fb82f54f91dd9e875133470199cda98fd9d5569953f321dc7e9821af36a07dcb"
+        },
+        {
+          "path": "hw/rtl/ucc/VX_ucc_comb.sv",
+          "frozen_sha256": "046a0a9f20886f7e1f3edffa3063acd745441d159709f3a8b3656c12e019302d",
+          "current_sha256": "973a8ee7f3b2d267694bee1f101fb9ce30da001b05b5033793d1f546b9d5d29b"
+        }
+      ],
+      "delta_vs_previous_exact_um2": -269.01000000000204,
+      "delta_vs_previous_exact_fraction": -0.00675737693503109,
+      "overhead_vs_dpa_fraction": 0.17797472250687862,
+      "area_breakdown": {
+        "top": "VX_ucc_v4_segmented_comb",
+        "total_um2": 39540.816,
+        "preprocessed_sha256": "23fb6817acc2a4f59f95ad442232959e5698161b0100c591d387729e2c8048d9",
+        "categories_um2": {
+          "retained_coefficient_rom": 329.742,
+          "retained_multiplier_logic": 2484.468,
+          "retained_reconfigurable_multiplier_reduction": 176.652,
+          "retained_reduction_adders": 2164.428,
+          "unattributed_other": 9297.54,
+          "unattributed_tensor_preparation": 25087.986
+        },
+        "limitation": "Genus flattens arithmetic and control together. Retained categories are attributable subsets, not complete functional costs. Zero/missing categories mean no separately retained hierarchy; mux/control and normalization are also in the unattributed residual.",
+        "hierarchy": [
+          {
+            "depth": 0,
+            "path": "VX_ucc_v4_segmented_comb",
+            "module": "VX_ucc_v4_segmented_comb",
+            "inclusive_um2": 39540.816,
+            "cells": 57512,
+            "exclusive_um2": 0.0,
+            "category": "unattributed_other"
+          },
+          {
+            "depth": 2,
+            "path": "VX_ucc_v4_segmented_comb/core",
+            "module": "VX_ucc_comb_W64_CHUNK11_ENABLE_INT1_ENABLE_AUX1_EN",
+            "inclusive_um2": 39540.816,
+            "cells": 57512,
+            "exclusive_um2": 9297.54,
+            "category": "unattributed_other"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_ex2.prepare_coefficients_rom",
+            "module": "VX_rom_DATAW72_SIZE512_OUT_REG0_INIT_DATAx01fffff0",
+            "inclusive_um2": 329.742,
+            "cells": 655,
+            "exclusive_um2": 329.742,
+            "category": "retained_coefficient_rom"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[0].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0",
+            "inclusive_um2": 42.462,
+            "cells": 56,
+            "exclusive_um2": 42.462,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[0].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30",
+            "inclusive_um2": 99.414,
+            "cells": 88,
+            "exclusive_um2": 99.414,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[0].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[1].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_1",
+            "inclusive_um2": 33.768,
+            "cells": 42,
+            "exclusive_um2": 33.768,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[1].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_1",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[1].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_1",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[2].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_2",
+            "inclusive_um2": 33.768,
+            "cells": 42,
+            "exclusive_um2": 33.768,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[2].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_2",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[2].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_2",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[3].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_3",
+            "inclusive_um2": 32.13,
+            "cells": 30,
+            "exclusive_um2": 32.13,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[3].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_3",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[3].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_3",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[4].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_4",
+            "inclusive_um2": 33.768,
+            "cells": 42,
+            "exclusive_um2": 33.768,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[4].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_4",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[4].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_4",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[5].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_5",
+            "inclusive_um2": 33.768,
+            "cells": 42,
+            "exclusive_um2": 33.768,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[5].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_5",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[5].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_5",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[6].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_6",
+            "inclusive_um2": 33.39,
+            "cells": 38,
+            "exclusive_um2": 33.39,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[6].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_6",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[6].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_6",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[7].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_7",
+            "inclusive_um2": 32.13,
+            "cells": 30,
+            "exclusive_um2": 32.13,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[7].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_7",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[7].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_7",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[8].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_8",
+            "inclusive_um2": 32.13,
+            "cells": 30,
+            "exclusive_um2": 32.13,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[8].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_8",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[8].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_8",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[12].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_9",
+            "inclusive_um2": 32.508,
+            "cells": 34,
+            "exclusive_um2": 32.508,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[12].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_9",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[12].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_9",
+            "inclusive_um2": 67.914,
+            "cells": 43,
+            "exclusive_um2": 67.914,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[13].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_10",
+            "inclusive_um2": 31.878,
+            "cells": 30,
+            "exclusive_um2": 31.878,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[13].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_10",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[13].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_10",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[14].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_11",
+            "inclusive_um2": 32.256,
+            "cells": 32,
+            "exclusive_um2": 32.256,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[14].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_11",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[14].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_11",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[15].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_12",
+            "inclusive_um2": 32.256,
+            "cells": 32,
+            "exclusive_um2": 32.256,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[15].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_12",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_mul[15].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_12",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_reconfigured_slices.multiplier_group_g_adder[0].adder",
+            "module": "VX_ks_adder_N22_BYPASS0",
+            "inclusive_um2": 46.62,
+            "cells": 54,
+            "exclusive_um2": 46.62,
+            "category": "retained_reconfigurable_multiplier_reduction"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_reconfigured_slices.multiplier_group_g_adder[1].adder",
+            "module": "VX_ks_adder_N22_BYPASS0_2",
+            "inclusive_um2": 68.292,
+            "cells": 89,
+            "exclusive_um2": 68.292,
+            "category": "retained_reconfigurable_multiplier_reduction"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_reconfigured_slices.multiplier_group_g_adder[2].adder",
+            "module": "VX_ks_adder_N22_BYPASS0_1",
+            "inclusive_um2": 61.74,
+            "cells": 73,
+            "exclusive_um2": 61.74,
+            "category": "retained_reconfigurable_multiplier_reduction"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_segmented_accumulator.accumulator_high_adder",
+            "module": "VX_ks_adder_N32_BYPASS0_1",
+            "inclusive_um2": 115.164,
+            "cells": 164,
+            "exclusive_um2": 115.164,
+            "category": "retained_reduction_adders"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_segmented_accumulator.accumulator_low_adder",
+            "module": "VX_ks_adder_N32_BYPASS0",
+            "inclusive_um2": 93.996,
+            "cells": 125,
+            "exclusive_um2": 93.996,
+            "category": "retained_reduction_adders"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_segmented_accumulator.accumulator_popcount",
+            "module": "VX_popcount_N17",
+            "inclusive_um2": 49.266,
+            "cells": 87,
+            "exclusive_um2": 49.266,
+            "category": "retained_reduction_adders"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/g_segmented_accumulator.accumulator_reduction",
+            "module": "VX_csa_tree_N18_W64_S64",
+            "inclusive_um2": 1906.002,
+            "cells": 1346,
+            "exclusive_um2": 1906.002,
+            "category": "retained_reduction_adders"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_comb/core/tensor_prepare",
+            "module": "VX_tcu_tfr_shared_mul_N8_W25_WA32_SF4_USE_DSP0_PRO",
+            "inclusive_um2": 25087.986,
+            "cells": 38282,
+            "exclusive_um2": 8553.51,
+            "category": "unattributed_tensor_preparation"
+          },
+          {
+            "depth": 6,
+            "path": "VX_ucc_v4_segmented_comb/core/tensor_prepare/g_mul_f4_sf[0].mul_f4",
+            "module": "VX_tcu_tfr_mul_f4_N8_TCK16_W25_WA32_EXP_W10_USE_DS",
+            "inclusive_um2": 4129.272,
+            "cells": 6129,
+            "exclusive_um2": 4129.272,
+            "category": "unattributed_tensor_preparation"
+          },
+          {
+            "depth": 6,
+            "path": "VX_ucc_v4_segmented_comb/core/tensor_prepare/g_mul_f4_sf[1].mul_f4",
+            "module": "VX_tcu_tfr_mul_f4_N8_TCK16_W25_WA32_EXP_W10_USE_DS",
+            "inclusive_um2": 4128.516,
+            "cells": 6131,
+            "exclusive_um2": 4128.516,
+            "category": "unattributed_tensor_preparation"
+          },
+          {
+            "depth": 6,
+            "path": "VX_ucc_v4_segmented_comb/core/tensor_prepare/g_mul_f4_sf[2].mul_f4",
+            "module": "VX_tcu_tfr_mul_f4_N8_TCK16_W25_WA32_EXP_W10_USE_DS",
+            "inclusive_um2": 4142.628,
+            "cells": 6153,
+            "exclusive_um2": 4142.628,
+            "category": "unattributed_tensor_preparation"
+          },
+          {
+            "depth": 6,
+            "path": "VX_ucc_v4_segmented_comb/core/tensor_prepare/g_mul_f4_sf[3].mul_f4",
+            "module": "VX_tcu_tfr_mul_f4_N8_TCK16_W25_WA32_EXP_W10_USE_DS",
+            "inclusive_um2": 4134.06,
+            "cells": 6144,
+            "exclusive_um2": 4134.06,
+            "category": "unattributed_tensor_preparation"
+          }
+        ]
+      }
+    },
+    {
+      "measurement": {
+        "top": "VX_ucc_v4_segmented_align_comb",
+        "area_um2": 39635.316,
+        "cells": 57889,
+        "sequential_cells": 0,
+        "data_path_ps": 5000,
+        "slack_ps": 0,
+        "critical_path_start": "(F) a[0]",
+        "critical_path_end": "(F) result[2]",
+        "sequential_fmax_mhz": null,
+        "combinational_area_um2": 39635.316,
+        "sequential_area_um2": 0.0,
+        "power_vectorless": {
+          "leakage_w": 0.00128502,
+          "internal_w": 0.00661227,
+          "switching_w": 0.00460328,
+          "dynamic_w": 0.011215550000000001,
+          "limitation": "Genus default activity assumptions; no workload waveform annotation."
+        },
+        "timing_budget_ns": 5.0,
+        "timing_met": true,
+        "corner": "TT 0.8V 25C",
+        "wireload": "ZeroWireload",
+        "input_slew_ps": 50,
+        "output_load_ff": 5,
+        "preprocessed_sha256": "eb1ac24e6309e742db240e1afd0ea4586263f555d82f492568507822948dab04",
+        "dpa_numeric_sources": {
+          "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f4.sv": "f52a1909c56e96d6c2c42f90db41e1ba4a9daa4d5052914844a4095b81963b4f",
+          "hw/rtl/tcu/tfr/VX_tcu_tfr_mul_f8.sv": "55fb7033bcc44226d798ce465e2f4750ac2c0cd92453d0977660eeb4e506c135"
+        },
+        "reports": "/data2/jwang710/UCC_FU/rta_vortex/build_ucc/ucc_synth/VX_ucc_v4_segmented_align_comb",
+        "status": "synthesized; functional verification reported separately"
+      },
+      "rtl": {
+        "build": "ucc_v4_exact_exp_w64_segmented_align_checked",
+        "manifest": {
+          "path": "build_ucc/ucc_v4_exact_exp_w64_segmented_align_checked/test_manifest.json",
+          "sha256": "71e1ae56eafeb49f07501fc6f1f5325dd72fcf3c6ce6b8471b7410f720cc1775"
+        },
+        "result": "Integer checks: 101536\nShift, conversion and FP comparison checks: 608691\nPASS unified: 185536 scalar and 32769 DPA cases, 0 mismatches\n",
+        "directed_manifest": {
+          "path": "build_ucc/ucc_v4_exact_exp_w64_segmented_align_checked/segmented_directed_manifest.json",
+          "sha256": "1f552e004d41833951ecc5d0532b87396d308890972d93e03092418aaefdb997"
+        },
+        "directed_result": "Integer checks: 101536\nShift, conversion and FP comparison checks: 147516\nPASS unified: 920900 scalar and 58525 DPA cases, 0 mismatches\n"
+      },
+      "gate_manifest": {
+        "path": "build_ucc/ucc_gate_segmented_align/manifest.json",
+        "sha256": "01acc21f4a3ce8084fdcd06cdaab4daae9f4538d71825f47f09fdfe9a0d17517"
+      },
+      "gate_checks": 23008,
+      "current_source_differences": [
+        {
+          "path": "hw/rtl/ucc/VX_ucc_mul_align.sv",
+          "frozen_sha256": "62b98c5b555109d728560fa91e71f5d675d83b7f48840f42d1929ca57367b875",
+          "current_sha256": "48690f170c871079f7326ea1efb61313338f653da2305877efd7f3ab1405cc98"
+        },
+        {
+          "path": "hw/rtl/ucc/VX_ucc_mul_reducer.sv",
+          "frozen_sha256": "da35c805f1498590c2aa4ee1b6c99dfbab10dc98c2cdb5542788554419e1fbd8",
+          "current_sha256": "abcd32ae748c33e9c58d17f8811482e3694ffd09726b3c8660baa96a67da6ece"
+        },
+        {
+          "path": "hw/rtl/ucc/VX_ucc_shift_window.sv",
+          "frozen_sha256": "4f7d780558e529c09faa94875400da34221f440c7a74b829084827cd74be14cf",
+          "current_sha256": "fb82f54f91dd9e875133470199cda98fd9d5569953f321dc7e9821af36a07dcb"
+        }
+      ],
+      "delta_vs_previous_exact_um2": -174.51000000000204,
+      "delta_vs_previous_exact_fraction": -0.004383591126472242,
+      "overhead_vs_dpa_fraction": 0.18079000611854967,
+      "area_breakdown": {
+        "top": "VX_ucc_v4_segmented_align_comb",
+        "total_um2": 39635.316,
+        "preprocessed_sha256": "eb1ac24e6309e742db240e1afd0ea4586263f555d82f492568507822948dab04",
+        "categories_um2": {
+          "retained_coefficient_rom": 328.482,
+          "retained_multiplier_logic": 2485.098,
+          "retained_reconfigurable_multiplier_reduction": 190.764,
+          "retained_reduction_adders": 2169.09,
+          "unattributed_other": 9364.068,
+          "unattributed_tensor_preparation": 25097.814
+        },
+        "limitation": "Genus flattens arithmetic and control together. Retained categories are attributable subsets, not complete functional costs. Zero/missing categories mean no separately retained hierarchy; mux/control and normalization are also in the unattributed residual.",
+        "hierarchy": [
+          {
+            "depth": 0,
+            "path": "VX_ucc_v4_segmented_align_comb",
+            "module": "VX_ucc_v4_segmented_align_comb",
+            "inclusive_um2": 39635.316,
+            "cells": 57889,
+            "exclusive_um2": 0.0,
+            "category": "unattributed_other"
+          },
+          {
+            "depth": 2,
+            "path": "VX_ucc_v4_segmented_align_comb/core",
+            "module": "VX_ucc_comb_W64_CHUNK11_ENABLE_INT1_ENABLE_AUX1_EN",
+            "inclusive_um2": 39635.316,
+            "cells": 57889,
+            "exclusive_um2": 9364.068,
+            "category": "unattributed_other"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_ex2.prepare_coefficients_rom",
+            "module": "VX_rom_DATAW72_SIZE512_OUT_REG0_INIT_DATAx01fffff0",
+            "inclusive_um2": 328.482,
+            "cells": 656,
+            "exclusive_um2": 328.482,
+            "category": "retained_coefficient_rom"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[0].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0",
+            "inclusive_um2": 39.69,
+            "cells": 55,
+            "exclusive_um2": 39.69,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[0].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30",
+            "inclusive_um2": 99.414,
+            "cells": 85,
+            "exclusive_um2": 99.414,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[0].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[1].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_1",
+            "inclusive_um2": 32.382,
+            "cells": 34,
+            "exclusive_um2": 32.382,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[1].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_1",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[1].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_1",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[2].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_2",
+            "inclusive_um2": 32.382,
+            "cells": 32,
+            "exclusive_um2": 32.382,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[2].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_2",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[2].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_2",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[3].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_3",
+            "inclusive_um2": 32.634,
+            "cells": 36,
+            "exclusive_um2": 32.634,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[3].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_3",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[3].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_3",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[4].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_4",
+            "inclusive_um2": 32.382,
+            "cells": 32,
+            "exclusive_um2": 32.382,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[4].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_4",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[4].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_4",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[5].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_5",
+            "inclusive_um2": 33.768,
+            "cells": 42,
+            "exclusive_um2": 33.768,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[5].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_5",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[5].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_5",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[6].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_6",
+            "inclusive_um2": 33.768,
+            "cells": 42,
+            "exclusive_um2": 33.768,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[6].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_6",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[6].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_6",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[7].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_7",
+            "inclusive_um2": 33.768,
+            "cells": 42,
+            "exclusive_um2": 33.768,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[7].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_7",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[7].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_7",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[8].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_8",
+            "inclusive_um2": 33.768,
+            "cells": 42,
+            "exclusive_um2": 33.768,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[8].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_8",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[8].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_8",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[12].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_9",
+            "inclusive_um2": 32.508,
+            "cells": 34,
+            "exclusive_um2": 32.508,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[12].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_9",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[12].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_9",
+            "inclusive_um2": 67.914,
+            "cells": 43,
+            "exclusive_um2": 67.914,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[13].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_10",
+            "inclusive_um2": 33.768,
+            "cells": 42,
+            "exclusive_um2": 33.768,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[13].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_10",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[13].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_10",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[14].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_11",
+            "inclusive_um2": 33.768,
+            "cells": 42,
+            "exclusive_um2": 33.768,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[14].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_11",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[14].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_11",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[15].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_final_add",
+            "module": "VX_ks_adder_N22_BYPASS1h0_12",
+            "inclusive_um2": 32.256,
+            "cells": 32,
+            "exclusive_um2": 32.256,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[15].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[0].g_lin.cluster_linear",
+            "module": "VX_csa_block_N6_W22_S30_12",
+            "inclusive_um2": 89.712,
+            "cells": 49,
+            "exclusive_um2": 89.712,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_mul[15].g_single.multiplier_g_lut.g_mul[0].g_wal.u_mul_pp_acc_g_do_cluster.g_clusters[1].g_lin.cluster_linear",
+            "module": "VX_csa_block_N5_W22_S30_12",
+            "inclusive_um2": 67.032,
+            "cells": 37,
+            "exclusive_um2": 67.032,
+            "category": "retained_multiplier_logic"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_reconfigured_slices.multiplier_group_g_adder[0].adder",
+            "module": "VX_ks_adder_N22_BYPASS0",
+            "inclusive_um2": 50.778,
+            "cells": 61,
+            "exclusive_um2": 50.778,
+            "category": "retained_reconfigurable_multiplier_reduction"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_reconfigured_slices.multiplier_group_g_adder[1].adder",
+            "module": "VX_ks_adder_N22_BYPASS0_2",
+            "inclusive_um2": 70.812,
+            "cells": 95,
+            "exclusive_um2": 70.812,
+            "category": "retained_reconfigurable_multiplier_reduction"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_reconfigured_slices.multiplier_group_g_adder[2].adder",
+            "module": "VX_ks_adder_N22_BYPASS0_1",
+            "inclusive_um2": 69.174,
+            "cells": 94,
+            "exclusive_um2": 69.174,
+            "category": "retained_reconfigurable_multiplier_reduction"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_segmented_accumulator.accumulator_high_adder",
+            "module": "VX_ks_adder_N32_BYPASS0_1",
+            "inclusive_um2": 111.132,
+            "cells": 152,
+            "exclusive_um2": 111.132,
+            "category": "retained_reduction_adders"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_segmented_accumulator.accumulator_low_adder",
+            "module": "VX_ks_adder_N32_BYPASS0",
+            "inclusive_um2": 93.744,
+            "cells": 126,
+            "exclusive_um2": 93.744,
+            "category": "retained_reduction_adders"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_segmented_accumulator.accumulator_popcount",
+            "module": "VX_popcount_N17",
+            "inclusive_um2": 49.266,
+            "cells": 87,
+            "exclusive_um2": 49.266,
+            "category": "retained_reduction_adders"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/g_segmented_accumulator.accumulator_reduction",
+            "module": "VX_csa_tree_N18_W64_S64",
+            "inclusive_um2": 1914.948,
+            "cells": 1363,
+            "exclusive_um2": 1914.948,
+            "category": "retained_reduction_adders"
+          },
+          {
+            "depth": 4,
+            "path": "VX_ucc_v4_segmented_align_comb/core/tensor_prepare",
+            "module": "VX_tcu_tfr_shared_mul_N8_W25_WA32_SF4_USE_DSP0_PRO",
+            "inclusive_um2": 25097.814,
+            "cells": 38334,
+            "exclusive_um2": 8563.338,
+            "category": "unattributed_tensor_preparation"
+          },
+          {
+            "depth": 6,
+            "path": "VX_ucc_v4_segmented_align_comb/core/tensor_prepare/g_mul_f4_sf[0].mul_f4",
+            "module": "VX_tcu_tfr_mul_f4_N8_TCK16_W25_WA32_EXP_W10_USE_DS",
+            "inclusive_um2": 4127.508,
+            "cells": 6102,
+            "exclusive_um2": 4127.508,
+            "category": "unattributed_tensor_preparation"
+          },
+          {
+            "depth": 6,
+            "path": "VX_ucc_v4_segmented_align_comb/core/tensor_prepare/g_mul_f4_sf[1].mul_f4",
+            "module": "VX_tcu_tfr_mul_f4_N8_TCK16_W25_WA32_EXP_W10_USE_DS",
+            "inclusive_um2": 4132.548,
+            "cells": 6149,
+            "exclusive_um2": 4132.548,
+            "category": "unattributed_tensor_preparation"
+          },
+          {
+            "depth": 6,
+            "path": "VX_ucc_v4_segmented_align_comb/core/tensor_prepare/g_mul_f4_sf[2].mul_f4",
+            "module": "VX_tcu_tfr_mul_f4_N8_TCK16_W25_WA32_EXP_W10_USE_DS",
+            "inclusive_um2": 4141.746,
+            "cells": 6157,
+            "exclusive_um2": 4141.746,
+            "category": "unattributed_tensor_preparation"
+          },
+          {
+            "depth": 6,
+            "path": "VX_ucc_v4_segmented_align_comb/core/tensor_prepare/g_mul_f4_sf[3].mul_f4",
+            "module": "VX_tcu_tfr_mul_f4_N8_TCK16_W25_WA32_EXP_W10_USE_DS",
+            "inclusive_um2": 4132.674,
+            "cells": 6144,
+            "exclusive_um2": 4132.674,
+            "category": "unattributed_tensor_preparation"
+          }
+        ]
+      }
+    }
+  ],
+  "mathematical_model": {
+    "checks": 1106436,
+    "new_directed_random_checks": 400004,
+    "first_failures": [],
+    "scope": "Exact integer FMA oracle; model checks do not replace RTL or all-input formal proof."
+  },
+  "primitives": {
+    "build": "ucc_segments_final",
+    "manifest": {
+      "path": "build_ucc/ucc_segments_final/test_manifest.json",
+      "sha256": "f5bf73e61d6fd4185c1db677f35bcbd00889f3055ef8fa5d74ecee6aaac9475c"
+    },
+    "result": "PASS segments: 200000 mode-switch cases; 600000 multiplier/reduction outputs, 400000 shift/sticky outputs, 200000 signed accumulations, 200000 multiplier-assisted alignments\n"
+  },
+  "protocol": [
+    {
+      "build": "ucc_stream_window",
+      "manifest": {
+        "path": "build_ucc/ucc_stream_window/test_manifest.json",
+        "sha256": "916b9a691cc34b61adb028430b0963328ddef9b05ebc8ca3c42903a89e92d8d1"
+      },
+      "result": "PASS stream: 6161 accepted, 6143 retired, 18 reset-discarded, 4541 stalled cycles, 1000 consecutive II=1 acceptances, 798 flagged and 231 predicate results\n"
+    },
+    {
+      "build": "ucc_stream_segmented",
+      "manifest": {
+        "path": "build_ucc/ucc_stream_segmented/test_manifest.json",
+        "sha256": "6eea90ddf319939b21b89f229783b51c9ee72bddb8f9b030f05bb493ff0953ea"
+      },
+      "result": "PASS stream: 6161 accepted, 6143 retired, 18 reset-discarded, 4541 stalled cycles, 1000 consecutive II=1 acceptances, 798 flagged and 231 predicate results\n"
+    },
+    {
+      "build": "ucc_stream_segmented_align",
+      "manifest": {
+        "path": "build_ucc/ucc_stream_segmented_align/test_manifest.json",
+        "sha256": "1c5c7028e3bdbbb68fd07a04d47bbdaa79fb714c354b15c22c5b5aae29a198a6"
+      },
+      "result": "PASS stream: 6161 accepted, 6143 retired, 18 reset-discarded, 4541 stalled cycles, 1000 consecutive II=1 acceptances, 798 flagged and 231 predicate results\n"
+    }
+  ],
+  "recommended_candidate": {
+    "top": "VX_ucc_v4_window_comb",
+    "area_um2": 39430.188,
+    "stream_parameters": {
+      "EXACT_FP": 1,
+      "EXP_STYLE": 1,
+      "FMA_STYLE": 3,
+      "WINDOW_NORM": 1
+    },
+    "qualification": "Minimum of the prior selected exact configuration and these three verified 5 ns candidates."
+  },
+  "default_stream_elaboration": {
+    "path": "build_ucc/ucc_stream_window_default_lint.json",
+    "sha256": "2e5a20fc248ac5420e7114b40f49a8252d4486cfaa67b2d6a1cee6d77e246fab"
+  },
+  "limitations": [
+    "Differential verification, not an all-input formal proof.",
+    "5 ns combinational ZeroWireload synthesis, not post-route or a 1 GHz pipeline.",
+    "Source and gate evidence identify frozen revisions. First two snapshots precede disabled-by-default multiplier alignment routing; subsequent primitive begin/end style edits are covered by the final primitive test. No byte-identical resynthesis claim.",
+    "Standard W64 general-vector expectations also have zero differences against the exact oracle; directed replay uses exact expectations directly.",
+    "Retained hierarchy attribution is partial; flattened mux/control and arithmetic costs cannot be fully separated."
+  ]
+}

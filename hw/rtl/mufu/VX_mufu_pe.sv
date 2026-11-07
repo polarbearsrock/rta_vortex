@@ -1,6 +1,8 @@
 `include "VX_define.vh"
 
-module VX_mufu_pe import VX_gpu_pkg::*; (
+module VX_mufu_pe import VX_gpu_pkg::*; #(
+    parameter PIPELINED = 1
+) (
     input wire          clk,
     input wire          reset,
     input wire          enable,
@@ -185,6 +187,7 @@ module VX_mufu_pe import VX_gpu_pkg::*; (
     wire [17:0] s1_xl, s2_xl, s3_xl;
 
     VX_pipe_register #(
+        .DEPTH (PIPELINED),
         .DATAW (MISC_W + 3 + 7 + 18)
     ) s1_reg (
         .clk      (clk),
@@ -198,7 +201,7 @@ module VX_mufu_pe import VX_gpu_pkg::*; (
     wire signed [26:0] rom_a1;
     wire signed [19:0] rom_a2;
 
-    VX_mufu_rom rom (
+    VX_mufu_rom #(.REGISTERED (PIPELINED)) rom (
         .clk    (clk),
         .enable (enable),
         .tbl    (s1_tbl),
@@ -209,6 +212,7 @@ module VX_mufu_pe import VX_gpu_pkg::*; (
     );
 
     VX_pipe_register #(
+        .DEPTH (PIPELINED),
         .DATAW (MISC_W + 18)
     ) s2_reg (
         .clk      (clk),
@@ -224,6 +228,7 @@ module VX_mufu_pe import VX_gpu_pkg::*; (
     wire [17:0] s3_sq;
 
     VX_pipe_register #(
+        .DEPTH (PIPELINED),
         .DATAW (MISC_W + 18 + 18)
     ) s3_reg (
         .clk      (clk),
@@ -241,7 +246,7 @@ module VX_mufu_pe import VX_gpu_pkg::*; (
         .B_WIDTH (19),
         .R_WIDTH (46),
         .SIGNED  (1),
-        .LATENCY (1)
+        .LATENCY (PIPELINED)
     ) mul1 (
         .clk    (clk),
         .enable (enable),
@@ -255,7 +260,7 @@ module VX_mufu_pe import VX_gpu_pkg::*; (
         .B_WIDTH (19),
         .R_WIDTH (39),
         .SIGNED  (1),
-        .LATENCY (1)
+        .LATENCY (PIPELINED)
     ) mul2 (
         .clk    (clk),
         .enable (enable),
@@ -267,6 +272,7 @@ module VX_mufu_pe import VX_gpu_pkg::*; (
     wire [31:0] s4_a0;
 
     VX_pipe_register #(
+        .DEPTH (PIPELINED),
         .DATAW (MISC_W + 32)
     ) s4_reg (
         .clk      (clk),
@@ -300,6 +306,7 @@ module VX_mufu_pe import VX_gpu_pkg::*; (
     wire [39:0] s5_mag;
 
     VX_pipe_register #(
+        .DEPTH (PIPELINED),
         .DATAW (1 + 32 + 10 + 1 + 1 + 40)
     ) s5_reg (
         .clk      (clk),
@@ -330,6 +337,7 @@ module VX_mufu_pe import VX_gpu_pkg::*; (
     wire [24:0] s6_sig;
 
     VX_pipe_register #(
+        .DEPTH (PIPELINED),
         .DATAW (1 + 32 + 1 + 1 + 1 + 12 + 25)
     ) s6_reg (
         .clk      (clk),
@@ -359,6 +367,7 @@ module VX_mufu_pe import VX_gpu_pkg::*; (
     end
 
     VX_pipe_register #(
+        .DEPTH (PIPELINED),
         .DATAW (32)
     ) s7_reg (
         .clk      (clk),

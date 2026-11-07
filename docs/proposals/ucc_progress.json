@@ -1,0 +1,126 @@
+{
+  "goal_status": "complete",
+  "checkpoint": "Final RTL, mapped-gate, numerical, protocol and PPA/provenance checks passed",
+  "selected": {
+    "native_regular": {
+      "top": "VX_ucc_v4_const_unpaired_comb",
+      "stream_parameters": {
+        "EXACT_FP": 0,
+        "EXP_STYLE": 1,
+        "SHARED_ALIGN": 0
+      },
+      "area_um2": 38436.93,
+      "EXP_sampled_max_ulp": 1,
+      "frozen_synthesis_manifest": "build_ucc/ucc_synth/VX_ucc_v4_const_unpaired_comb/manifest.json",
+      "current_source_differences": [
+        "hw/rtl/ucc/VX_ucc_fma_prepare.sv",
+        "hw/rtl/ucc/VX_ucc_comb.sv"
+      ],
+      "revision_note": "Frozen netlist has its own mapped checks. Subsequent FMA prepare changes affect inactive special outputs or disabled exact branches in native mode; final RTL regression uses current source. No claim that resynthesis is byte-identical."
+    },
+    "native_minimum": {
+      "top": "VX_ucc_v4_compact_unpaired_comb",
+      "stream_parameters": {
+        "EXACT_FP": 0,
+        "EXP_STYLE": 2,
+        "SHARED_ALIGN": 0
+      },
+      "area_um2": 38246.67,
+      "EXP_sampled_max_ulp": 2,
+      "frozen_synthesis_manifest": "build_ucc/ucc_synth/VX_ucc_v4_compact_unpaired_comb/manifest.json",
+      "current_source_differences": [
+        "hw/rtl/ucc/VX_ucc_fma_prepare.sv"
+      ],
+      "revision_note": "Frozen netlist has its own mapped checks. Subsequent FMA prepare changes affect inactive special outputs or disabled exact branches in native mode; final RTL regression uses current source. No claim that resynthesis is byte-identical."
+    },
+    "exact": {
+      "top": "VX_ucc_v4_anchor_crop_comb",
+      "stream_parameters": {
+        "EXACT_FP": 1,
+        "FMA_STYLE": 3,
+        "EXP_STYLE": 1
+      },
+      "area_um2": 39809.826,
+      "EXP_sampled_max_ulp": 1,
+      "frozen_synthesis_manifest": "build_ucc/ucc_synth/VX_ucc_v4_anchor_crop_comb/manifest.json",
+      "current_source_differences": [
+        "hw/rtl/ucc/VX_ucc_fma_prepare.sv"
+      ],
+      "revision_note": "Frozen netlist has its own mapped checks. Subsequent FMA prepare changes affect inactive special outputs or disabled exact branches in native mode; final RTL regression uses current source. No claim that resynthesis is byte-identical."
+    }
+  },
+  "pending_jobs_at_checkpoint": [],
+  "completed": [
+    "Corrected multi-precision DPA independent/reference/pipeline verification",
+    "Native BF16x9 and exact 8/11-bit multiplier decomposition experiments",
+    "INT, shift, conversion, compare, Boolean, EX2 and EXP RTL",
+    "Final native regular, native compact, exact anchored/cropped each928532 full RTL checks",
+    "Exact334656distant-addend and186240subnormal directed checks in fullUCC",
+    "147516EXP/EX2 highprecision boundary vectors in each final UCC",
+    "Native/exact/compact elastic protocol checks with flags/predicates/tags and1000 consecutive accepts",
+    "All selected mapped gates23008checks each",
+    "Current N28Genus5ns comparisons, instructiongroupchain, hierarchyaccounting and both systemaggregates"
+  ],
+  "next_actions": [],
+  "limitations": [
+    "5ns pre-layout combinational timing, no routed PPA or1GHzpipeline proof",
+    "Native BF16x9 is RNE/FTZ approximate; EXP1/2ULP results are sampled",
+    "Optional BFE/BFI/SHF and narrow FP conversions excluded; other MUFU/compilerlowering excluded",
+    "Uniform64UCC remains5.67%-9.98% larger than requested mixed aggregate",
+    "Synthesis tied to frozen source snapshots; current equivalent refactoring has independent RTL tests",
+    "Measured candidate minimum, not a globalareaoptimality proof"
+  ],
+  "delivery": {
+    "architecture": "docs/proposals/unified_dpa16.md",
+    "instructions": "docs/proposals/ucc_instruction_resources.md",
+    "PPA": "docs/proposals/ucc_ppa_interim.md",
+    "measurements": "docs/proposals/ucc_measurements.json",
+    "verification": "docs/proposals/ucc_verification.json",
+    "RTL_entry": "hw/rtl/ucc/VX_ucc_stream.sv",
+    "test_runner": "hw/unittest/ucc/run.py",
+    "synthesis_runner": "hw/syn/ucc/run.sh"
+  },
+  "checkpoint_scope": "Original completed goal checkpoint; subsequent completed experiments and selections are recorded under followups.",
+  "followups": {
+    "exact_fma_multiplier_reuse": {
+      "status": "complete",
+      "report": "docs/proposals/ucc_segmented_fma.md",
+      "measurements": "docs/proposals/ucc_segmented_measurements.json",
+      "recommended_candidate": {
+        "top": "VX_ucc_v4_window_comb",
+        "area_um2": 39430.188,
+        "stream_parameters": {
+          "EXACT_FP": 1,
+          "EXP_STYLE": 1,
+          "FMA_STYLE": 3,
+          "WINDOW_NORM": 1
+        },
+        "qualification": "Minimum of the prior selected exact configuration and these three verified 5 ns candidates."
+      },
+      "default_change": "Exact stream mode now uses WINDOW_NORM=EXACT_FP; FMA_STYLE remains 3. Native defaults are unchanged.",
+      "validation": "Three candidates each passed 928532 standard and 1228477 directed RTL checks, 23008 mapped checks, and protocol checks with 1000 consecutive II=1 acceptances.",
+      "finding": "Narrow normalization reduces mapped area by 0.954%; tested multiplier-reconfiguration alternatives are larger than the narrow-window-only candidate."
+    },
+    "exp_coefficient_sharing": {
+      "status": "complete",
+      "report": "docs/proposals/ucc_coeff_sharing.md",
+      "measurements": "docs/proposals/ucc_coeff_sharing_measurements.json",
+      "scope": "Standalone coefficient banks; full UCC and defaults unchanged.",
+      "groups": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "minimum_area_per_pe": {
+        "style": "plane",
+        "ports": 4,
+        "group_area_um2": 1182.132,
+        "per_pe_um2": 295.533,
+        "delay_ps": 262
+      },
+      "validation": "All 12 candidates passed 5351040 RTL coefficient checks and 214656 mapped coefficient checks; all 8 array/plane netlists have zero cross-PE dynamic sharing.",
+      "recommendation": "Keep independently addressed selection local to each PE. Four-port plane organization has the minimum measured area per PE, but its 0.319% group benefit is mapping variation, not shared lookup logic."
+    }
+  }
+}

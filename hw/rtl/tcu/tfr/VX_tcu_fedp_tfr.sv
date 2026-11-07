@@ -140,6 +140,14 @@ module VX_tcu_fedp_tfr import VX_tcu_pkg::*; #(
         .a_row(a_row),
         .b_col(b_col),
         .c_val(c_val),
+        `UNUSED_PIN (mantissa_a),
+        `UNUSED_PIN (mantissa_b),
+        .external_products ('0),
+        .external_exp_enable (1'b0),
+        .external_exponents ('0),
+        `UNUSED_PIN (f8_mantissa_a),
+        `UNUSED_PIN (f8_mantissa_b),
+        .external_f8_products ('0),
     `ifdef VX_CFG_TCU_MX_ENABLE
         .sf_a(sf_a),
         .sf_b(sf_b),
@@ -216,6 +224,11 @@ module VX_tcu_fedp_tfr import VX_tcu_pkg::*; #(
         .lane_mask(s1_lane_mask),
         .sigs_in(s1_raw_sig),
         .is_int(s1_is_int),
+        .external_shift (1'b0),
+        .external_data (52'd0),
+        .external_amount (8'd0),
+        `UNUSED_PIN (external_result),
+        `UNUSED_PIN (external_sticky),
         .max_exp(s1_max_exp),
         .sigs_out(s1_aln_sigs),
         .sticky_bits(s1_aln_sticky),
@@ -239,7 +252,8 @@ module VX_tcu_fedp_tfr import VX_tcu_pkg::*; #(
         .SHARED_DATAW(EXP_W + EXC_W + ACC_SIG_W + 1 + 1 + C_HI_W + 1),
         .LANE_DATAW (ACC_SIG_W + 2),
         .DEPTH      (ALN_LATENCY),
-        .LANE_MASK  (LANE_MASK)
+        // Inactive lanes must register zero; the accumulator has no lane mask.
+        .LANE_MASK  (0)
     ) pipe_aln (
         .clk(clk),
         .reset(reset),
@@ -263,12 +277,17 @@ module VX_tcu_fedp_tfr import VX_tcu_pkg::*; #(
         .N (TCK+1),
         .WO(ACC_SIG_W)
     ) acc (
+        .post_enable (1'b0),
+        .post_operands ('0),
+        .post_negatives ('0),
+        .reduced_sigs (),
         .clk(clk),
         .valid_in(vld_pipe[S2_IDX]),
         .req_id(req_pipe[S2_IDX]),
         .sigs_in(s2_aln_sigs),
         .sticky_in(s2_aln_sticky),
         .fp_negs(s2_fp_negs),
+        `UNUSED_PIN (sum_out),
         .sig_out(s2_acc_mag),
         .sign_out(s2_acc_sign),
         .sticky_out(s2_acc_sticky)

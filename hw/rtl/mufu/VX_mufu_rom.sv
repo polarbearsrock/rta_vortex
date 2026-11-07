@@ -1,6 +1,8 @@
 `include "VX_platform.vh"
 
-module VX_mufu_rom (
+module VX_mufu_rom #(
+    parameter REGISTERED = 1
+) (
     input  wire clk,
     input  wire enable,
     input  wire [2:0] tbl,
@@ -548,7 +550,7 @@ module VX_mufu_rom (
     VX_rom #(
         .DATAW     (DATAW),
         .SIZE      (SIZE),
-        .OUT_REG   (1),
+        .OUT_REG   (REGISTERED),
         .INIT_DATA (ROM_DATA)
     ) rom (
         .clk   (clk),
@@ -559,7 +561,7 @@ module VX_mufu_rom (
 
     VX_pipe_register #(
         .DATAW (DATAW),
-        .DEPTH (1)
+        .DEPTH (REGISTERED)
     ) rd_reg (
         .clk      (clk),
         .reset    (1'b0),

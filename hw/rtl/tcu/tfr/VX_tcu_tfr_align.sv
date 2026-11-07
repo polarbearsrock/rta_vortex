@@ -22,7 +22,8 @@ module VX_tcu_tfr_align import VX_tcu_pkg::*; #(
     parameter `STRING INSTANCE_ID = "",
     parameter N     = 5,
     parameter WI    = 25,
-    parameter WO    = WI + 5
+    parameter WO    = WI + 5,
+    parameter SHARED_SHIFT = 0
 ) (
     input  wire                 clk,
     input  wire                 valid_in,
@@ -34,6 +35,11 @@ module VX_tcu_tfr_align import VX_tcu_pkg::*; #(
 
     input  wire [N-1:0][WI-1:0] sigs_in,
     input  wire                 is_int,
+    input  wire                 external_shift,
+    input  wire [51:0]          external_data,
+    input  wire [7:0]           external_amount,
+    output wire [51:0]          external_result,
+    output wire                 external_sticky,
     output logic [TCU_EXP_BITS-1:0] max_exp,
     output wire [N-1:0][WO-1:0] sigs_out,
     output wire [N-1:0]         sticky_bits,
@@ -45,8 +51,26 @@ module VX_tcu_tfr_align import VX_tcu_pkg::*; #(
     localparam MAX_PRE_SHIFT = WI - 23;
     localparam SHIFT_MAG_W   = (WI - 1) + MAX_PRE_SHIFT;
 
-    wire [TCU_EXP_BITS-1:0] or_red[N:0];
+    wire [N:0][TCU_EXP_BITS-1:0] or_red;
     wire [N-1:0][7:0] shift_amts;
+    wire [N-1:0][SHIFT_MAG_W-1:0] preshift_magnitudes;
+    wire [51:0] paired_result;
+    wire [1:0] paired_sticky;
+    if (SHARED_SHIFT) begin : g_shared_shift
+        `STATIC_ASSERT (WI == 25 && N >= 3, ("paired alignment requires two 26-bit product lanes"))
+        VX_paired_shift_jam shifter (
+            .data_in  (external_shift ? external_data : {preshift_magnitudes[N-2], preshift_magnitudes[N-3]}),
+            .amount   (external_shift ? {external_amount, external_amount} : {shift_amts[N-2], shift_amts[N-3]}),
+            .joined   (external_shift),
+            .data_out (paired_result),
+            .sticky   (paired_sticky)
+        );
+    end else begin : g_no_shared_shift
+        assign paired_result = '0;
+        assign paired_sticky = '0;
+    end
+    assign external_result = paired_result;
+    assign external_sticky = paired_sticky[0];
 
     // Determine maximum exponent via OR-Reduction Tree
     assign or_red[0] = {TCU_EXP_BITS{1'b0}};
@@ -83,6 +107,7 @@ module VX_tcu_tfr_align import VX_tcu_pkg::*; #(
 
         // 2. Pre-Shift Magnitude
         wire [SHIFT_MAG_W-1:0] mag_shifted;
+        assign preshift_magnitudes[i] = mag_shifted;
         if (i == N-1) begin : g_c_term
             assign mag_shifted = { {(MAX_PRE_SHIFT - (WI - 24)){1'b0}}, in_mag, {(WI - 24){1'b0}} };
         end else begin : g_prod_term
@@ -91,16 +116,22 @@ module VX_tcu_tfr_align import VX_tcu_pkg::*; #(
 
         // 3. Shift adjustment
         wire is_overshift = (shift_amt >= 8'(SHIFT_MAG_W));
-        wire [SHIFT_MAG_W-1:0] shift_res_full = mag_shifted >> shift_amt;
+        wire [SHIFT_MAG_W-1:0] shift_res_full;
+        if (SHARED_SHIFT && (i == N-3 || i == N-2)) begin : g_paired
+            assign shift_res_full = paired_result[(i-(N-3))*SHIFT_MAG_W +: SHIFT_MAG_W];
+            assign sticky_bits[i] = lane_en && paired_sticky[i-(N-3)];
+        end else begin : g_ordinary
+            assign shift_res_full = mag_shifted >> shift_amt;
+            wire [SHIFT_MAG_W-1:0] sticky_check_shift = mag_shifted << (8'(SHIFT_MAG_W) - shift_amt);
+            assign sticky_bits[i] = lane_en & (is_overshift ? (|mag_shifted) : (|sticky_check_shift));
+        end
         wire [WI:0] adj_mag = is_overshift ? '0 : shift_res_full[WI:0];
 
         // 4. Sticky Calculation
-        wire [SHIFT_MAG_W-1:0] sticky_check_shift = mag_shifted << (8'(SHIFT_MAG_W) - shift_amt);
-        assign sticky_bits[i] = lane_en & (is_overshift ? (|mag_shifted) : (|sticky_check_shift));
 
         // 5. Operand formation: masked, negated (fp) or sign-extended (int).
         wire fp_neg = in_sign & lane_en & ~is_int;
-        wire [WO-1:0] fp_mag  = WO'(adj_mag & {(WI+1){lane_en}});
+        wire [WO-1:0] fp_mag  = WO'(adj_mag) & {WO{lane_en}};
         wire [WO-1:0] fp_form = fp_neg ? ~fp_mag : fp_mag;
         wire [WO-1:0] int_form = WO'($signed(sigs_in[i])) & {WO{lane_en}};
         assign sigs_out[i] = is_int ? int_form : fp_form;

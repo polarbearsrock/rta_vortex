@@ -34,11 +34,9 @@ module VX_rom #(
         end
         assign rdata = rdata_r;
     end else begin : g_logic
-        reg [DATAW-1:0] mem [0:SIZE-1];
-        initial begin
-            for (integer i = 0; i < SIZE; ++i) begin
-                mem[i] = INIT_DATA[i * DATAW +: DATAW];
-            end
+        wire [DATAW-1:0] mem [0:SIZE-1];
+        for (genvar i = 0; i < SIZE; ++i) begin : g_word
+            assign mem[i] = INIT_DATA[i * DATAW +: DATAW];
         end
         if (OUT_REG != 0) begin : g_out_reg
             reg [DATAW-1:0] rdata_r;

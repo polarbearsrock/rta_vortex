@@ -35,8 +35,8 @@ module VX_ks_adder #(
 
         localparam LEVELS = $clog2(N);
 
-        wire [N-1:0] G [LEVELS+1];
-        wire [N-1:0] P [LEVELS+1];
+        wire [LEVELS:0][N-1:0] G;
+        wire [LEVELS:0][N-1:0] P;
 
         // Initial generate & propagate
         for (genvar i = 0; i < N; i++) begin : g_initial_gp

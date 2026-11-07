@@ -119,11 +119,7 @@ module VX_tcu_tfr_mul_f4 import VX_tcu_pkg::*;
             assign b_exp[0] = raw_b[2] & ~raw_b[1];
             assign b_exp[1] = raw_b[2] & raw_b[1];
 
-            wire signed [9:0] sf_exp_a = $signed({1'b0, sf_a}) - 10'sd127;
-            wire signed [9:0] sf_exp_b = $signed({1'b0, sf_b}) - 10'sd127;
             wire signed [5:0] exp_biased_raw = 6'(10'(EXP_ADJ_MXFP4)
-                                                + sf_exp_a
-                                                + sf_exp_b
                                                 + 10'(a_exp)
                                                 + 10'(b_exp));
 
@@ -250,10 +246,12 @@ module VX_tcu_tfr_mul_f4 import VX_tcu_pkg::*;
 
         assign result_sig_mxfp4[i] = {sum_sign & ~is_zero_out, abs_sum[23:0]};
         assign sig_zero_mxfp4[i]   = is_zero_out;
-        assign result_exp_mxfp4[i] = EXP_W'(max_exp_biased) + EXP_W'(EXP_BASE_BIASED_MXFP4);
+        // The common block exponent must not wrap in the narrow local sorter.
+        assign result_exp_mxfp4[i] = EXP_W'(max_exp_biased) + EXP_W'(EXP_BASE_BIASED_MXFP4)
+                                  + EXP_W'(sf_a) + EXP_W'(sf_b) - EXP_W'(254);
 
         // The sign field is only consumed for infinity lanes downstream.
-        assign exceptions_mxfp4[i].is_nan = 1'b0;
+        assign exceptions_mxfp4[i].is_nan = (sf_a == 8'hff || sf_b == 8'hff) && (|vld_mask[i*4 +: 4]);
         assign exceptions_mxfp4[i].is_inf = 1'b0;
         assign exceptions_mxfp4[i].sign   = 1'b0;
     end
@@ -287,10 +285,10 @@ module VX_tcu_tfr_mul_f4 import VX_tcu_pkg::*;
         `UNUSED_VAR ({sf_a[7], sf_b[7]})
 
         // e4m3 scale factor mantissa mul
-        wire [3:0] sf_man_a = {1'b1, sf_a[2:0]};
-        wire [3:0] sf_man_b = {1'b1, sf_b[2:0]};
-        wire [3:0] sf_exp_a = sf_a[6:3];
-        wire [3:0] sf_exp_b = sf_b[6:3];
+        wire [3:0] sf_man_a = {(|sf_a[6:3]), sf_a[2:0]};
+        wire [3:0] sf_man_b = {(|sf_b[6:3]), sf_b[2:0]};
+        wire [3:0] sf_exp_a = (|sf_a[6:3]) ? sf_a[6:3] : 4'd1;
+        wire [3:0] sf_exp_b = (|sf_b[6:3]) ? sf_b[6:3] : 4'd1;
 
         wire [7:0] sf_man_prod;
         VX_tcu_tfr_wmul #(
@@ -511,7 +509,7 @@ module VX_tcu_tfr_mul_f4 import VX_tcu_pkg::*;
         assign result_exp_nvfp4[i] = EXP_W'(max_exp_biased) + EXP_W'(EXP_BASE_BIASED);
 
         // The sign field is only consumed for infinity lanes downstream.
-        assign exceptions_nvfp4[i].is_nan = 1'b0;
+        assign exceptions_nvfp4[i].is_nan = ((&sf_a[6:0]) || (&sf_b[6:0])) && (|vld_mask[i*4 +: 4]);
         assign exceptions_nvfp4[i].is_inf = 1'b0;
         assign exceptions_nvfp4[i].sign   = 1'b0;
     end

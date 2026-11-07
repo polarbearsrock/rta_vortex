@@ -19,7 +19,8 @@
 module VX_tcu_tfr_acc import VX_tcu_pkg::*; #(
     parameter `STRING INSTANCE_ID = "",
     parameter N  = 5,
-    parameter WO = 30
+    parameter WO = 30,
+    parameter POST_REDUCE = 0
 ) (
     input  wire                 clk,
     input  wire                 valid_in,
@@ -27,6 +28,11 @@ module VX_tcu_tfr_acc import VX_tcu_pkg::*; #(
     input  wire [N-1:0][WO-1:0] sigs_in,
     input  wire [N-1:0]         sticky_in,
     input  wire [N-1:0]         fp_negs,
+    input  wire                 post_enable,
+    input  wire [2:0][WO-1:0]   post_operands,
+    input  wire [2:0]           post_negatives,
+    output wire [1:0][WO-1:0]   reduced_sigs,
+    output wire [WO-1:0]        sum_out,
     output wire [WO-1:0]        sig_out,   // Sum magnitude
     output wire                 sign_out,  // Sum sign
     output wire                 sticky_out
@@ -62,6 +68,21 @@ module VX_tcu_tfr_acc import VX_tcu_pkg::*; #(
         .sum      (sum_vec),
         .carry    (carry_vec)
     );
+    assign reduced_sigs = {carry_vec, sum_vec};
+    wire [WO-1:0] final_sum, final_carry;
+    if (POST_REDUCE) begin : g_post_reduction
+        wire [1:0] correction = 2'(post_negatives[0]) + 2'(post_negatives[1]) + 2'(post_negatives[2]);
+        wire [3:0][WO-1:0] terms = {WO'(correction), post_operands};
+        wire [WO-1:0] post_sum, post_carry;
+        VX_csa_tree #(.N (4), .W (WO), .S (WO)) reduction (
+            .operands (terms), .sum (post_sum), .carry (post_carry)
+        );
+        assign final_sum = post_enable ? post_sum : sum_vec;
+        assign final_carry = post_enable ? post_carry : carry_vec;
+    end else begin : g_direct_reduction
+        assign final_sum = sum_vec;
+        assign final_carry = carry_vec;
+    end
 
     // Resolve the sum in sign-magnitude form with two parallel adders, so the
     // norm stage can run its LZC directly on the exact magnitude.
@@ -71,8 +92,8 @@ module VX_tcu_tfr_acc import VX_tcu_pkg::*; #(
         .BYPASS (`FORCE_BUILTIN_ADDER(WO))
     ) final_adder (
         .cin   (1'b0),
-        .dataa (sum_vec),
-        .datab (carry_vec),
+        .dataa (final_sum),
+        .datab (final_carry),
         .sum   (sig_pos),
         `UNUSED_PIN (cout)
     );
@@ -84,14 +105,15 @@ module VX_tcu_tfr_acc import VX_tcu_pkg::*; #(
         .BYPASS (`FORCE_BUILTIN_ADDER(WO))
     ) neg_adder (
         .cin   (1'b1),
-        .dataa (~sum_vec),
-        .datab (~carry_vec),
+        .dataa (~final_sum),
+        .datab (~final_carry),
         .sum   (sig_neg_raw),
         `UNUSED_PIN (cout)
     );
     wire [WO-1:0] sig_neg = sig_neg_raw + WO'(1);
 
     assign sign_out = sig_pos[WO-1];
+    assign sum_out  = sig_pos;
     assign sig_out  = sign_out ? sig_neg : sig_pos;
 
     // Sticky bit aggregation
