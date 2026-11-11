@@ -1,0 +1,1 @@
+s1(11Nov2026:07:26:55):  xrun -64bit -sv -timescale 1ns/1ps -top b32_schedule_tb ../b32plus_tilezero_preselect_live_sfu6/design.sv ../../hw/syn/ucc_reuse/selected/design.sv bench.sv +NORMAL_AFTER_SFU_MASK=2 +SFU_AFTER_NORMAL_MASK=0 -l xrun.log 

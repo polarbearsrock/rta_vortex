@@ -1,0 +1,208 @@
+Multi-Mode Analysis View Report
+_______________________________
+
++ ALL Views
+   |
+   + Analysis View:  dpa.SS.setup_view
+     |
+     + Delay Calc Corner: SS.setup_view_delay
+     |   |
+     |   + timing_condition: SS.setup_view_cond
+     |   |    |
+     |   |    + library_sets: SS.setup_view_libs
+     |   |        |
+     |   |        + timing: /data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140_180a/tcbn28hpcplusbwp30p140ssg0p72v125c.lib
+                             /data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140hvt_180a/tcbn28hpcplusbwp30p140hvtssg0p72v125c.lib
+                             /data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140lvt_180a/tcbn28hpcplusbwp30p140lvtssg0p72v125c.lib
+     |   |
+     |   |
+     |   |
+     |   + rc_corner: SS.setup_view_rc
+     |   |    |
+     |   |    + postRoute_res: 1.0 1.0 1.0
+     |   |    |
+     |   |    + postRoute_cap: 1.0 1.0 1.0
+     |   |    |
+     |   |    + postRoute_xcap: 1.0 1.0 1.0
+     |   |    |
+     |   |    + postRoute_clkcap: 1.0 1.0 1.0
+     |   |    |
+     |   |    + postRoute_clkres: 1.0 1.0 1.0
+     |   |    |
+     |   |    + qx_tech_file: /data2/tools-additional/pdk/N28/cadence_ref/qrc/cln28hpcplus_1p10m_5x2y2r/rcworst/qrcTechFile
+     |   |    |
+     |   |    + temperature: 125.0
+     |
+     + Constraint Mode: dpa
+     |   |
+     |   + SDC Constraint Files: /data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus_sm25_fixed/b32plus_tilezero_preselect_live_sfu6/dpa.sdc
+   |
+   + Analysis View:  cuda.SS.setup_view
+     |
+     + Delay Calc Corner: SS.setup_view_delay
+     |   |
+     |   + timing_condition: SS.setup_view_cond
+     |   |    |
+     |   |    + library_sets: SS.setup_view_libs
+     |   |        |
+     |   |        + timing: /data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140_180a/tcbn28hpcplusbwp30p140ssg0p72v125c.lib
+                             /data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140hvt_180a/tcbn28hpcplusbwp30p140hvtssg0p72v125c.lib
+                             /data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140lvt_180a/tcbn28hpcplusbwp30p140lvtssg0p72v125c.lib
+     |   |
+     |   |
+     |   |
+     |   + rc_corner: SS.setup_view_rc
+     |   |    |
+     |   |    + postRoute_res: 1.0 1.0 1.0
+     |   |    |
+     |   |    + postRoute_cap: 1.0 1.0 1.0
+     |   |    |
+     |   |    + postRoute_xcap: 1.0 1.0 1.0
+     |   |    |
+     |   |    + postRoute_clkcap: 1.0 1.0 1.0
+     |   |    |
+     |   |    + postRoute_clkres: 1.0 1.0 1.0
+     |   |    |
+     |   |    + qx_tech_file: /data2/tools-additional/pdk/N28/cadence_ref/qrc/cln28hpcplus_1p10m_5x2y2r/rcworst/qrcTechFile
+     |   |    |
+     |   |    + temperature: 125.0
+     |
+     + Constraint Mode: cuda
+     |   |
+     |   + SDC Constraint Files: /data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus_sm25_fixed/b32plus_tilezero_preselect_live_sfu6/cuda.sdc
+   |
+   + Analysis View:  dpa.FF.hold_view
+     |
+     + Delay Calc Corner: FF.hold_view_delay
+     |   |
+     |   + timing_condition: FF.hold_view_cond
+     |   |    |
+     |   |    + library_sets: FF.hold_view_libs
+     |   |        |
+     |   |        + timing: /data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140_180a/tcbn28hpcplusbwp30p140ffg0p88vm40c.lib
+                             /data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140hvt_180a/tcbn28hpcplusbwp30p140hvtffg0p88vm40c.lib
+                             /data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140lvt_180a/tcbn28hpcplusbwp30p140lvtffg0p88vm40c.lib
+     |   |
+     |   |
+     |   |
+     |   + rc_corner: FF.hold_view_rc
+     |   |    |
+     |   |    + postRoute_res: 1.0 1.0 1.0
+     |   |    |
+     |   |    + postRoute_cap: 1.0 1.0 1.0
+     |   |    |
+     |   |    + postRoute_xcap: 1.0 1.0 1.0
+     |   |    |
+     |   |    + postRoute_clkcap: 1.0 1.0 1.0
+     |   |    |
+     |   |    + postRoute_clkres: 1.0 1.0 1.0
+     |   |    |
+     |   |    + qx_tech_file: /data2/tools-additional/pdk/N28/cadence_ref/qrc/cln28hpcplus_1p10m_5x2y2r/rcbest/qrcTechFile
+     |   |    |
+     |   |    + temperature: -40.0
+     |
+     + Constraint Mode: dpa
+     |   |
+     |   + SDC Constraint Files: /data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus_sm25_fixed/b32plus_tilezero_preselect_live_sfu6/dpa.sdc
+   |
+   + Analysis View:  cuda.FF.hold_view
+     |
+     + Delay Calc Corner: FF.hold_view_delay
+     |   |
+     |   + timing_condition: FF.hold_view_cond
+     |   |    |
+     |   |    + library_sets: FF.hold_view_libs
+     |   |        |
+     |   |        + timing: /data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140_180a/tcbn28hpcplusbwp30p140ffg0p88vm40c.lib
+                             /data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140hvt_180a/tcbn28hpcplusbwp30p140hvtffg0p88vm40c.lib
+                             /data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140lvt_180a/tcbn28hpcplusbwp30p140lvtffg0p88vm40c.lib
+     |   |
+     |   |
+     |   |
+     |   + rc_corner: FF.hold_view_rc
+     |   |    |
+     |   |    + postRoute_res: 1.0 1.0 1.0
+     |   |    |
+     |   |    + postRoute_cap: 1.0 1.0 1.0
+     |   |    |
+     |   |    + postRoute_xcap: 1.0 1.0 1.0
+     |   |    |
+     |   |    + postRoute_clkcap: 1.0 1.0 1.0
+     |   |    |
+     |   |    + postRoute_clkres: 1.0 1.0 1.0
+     |   |    |
+     |   |    + qx_tech_file: /data2/tools-additional/pdk/N28/cadence_ref/qrc/cln28hpcplus_1p10m_5x2y2r/rcbest/qrcTechFile
+     |   |    |
+     |   |    + temperature: -40.0
+     |
+     + Constraint Mode: cuda
+     |   |
+     |   + SDC Constraint Files: /data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus_sm25_fixed/b32plus_tilezero_preselect_live_sfu6/cuda.sdc
+   |
+   + Analysis View:  dpa.TT.extra_view
+     |
+     + Delay Calc Corner: TT.extra_view_delay
+     |   |
+     |   + timing_condition: TT.extra_view_cond
+     |   |    |
+     |   |    + library_sets: TT.extra_view_libs
+     |   |        |
+     |   |        + timing: /data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140_180a/tcbn28hpcplusbwp30p140tt0p8v25c.lib
+                             /data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140hvt_180a/tcbn28hpcplusbwp30p140hvttt0p8v25c.lib
+                             /data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140lvt_180a/tcbn28hpcplusbwp30p140lvttt0p8v25c.lib
+     |   |
+     |   |
+     |   |
+     |   + rc_corner: TT.extra_view_rc
+     |   |    |
+     |   |    + postRoute_res: 1.0 1.0 1.0
+     |   |    |
+     |   |    + postRoute_cap: 1.0 1.0 1.0
+     |   |    |
+     |   |    + postRoute_xcap: 1.0 1.0 1.0
+     |   |    |
+     |   |    + postRoute_clkcap: 1.0 1.0 1.0
+     |   |    |
+     |   |    + postRoute_clkres: 1.0 1.0 1.0
+     |   |    |
+     |   |    + qx_tech_file: /data2/tools-additional/pdk/N28/cadence_ref/qrc/cln28hpcplus_1p10m_5x2y2r/typical/qrcTechFile
+     |   |    |
+     |   |    + temperature: 25.0
+     |
+     + Constraint Mode: dpa
+     |   |
+     |   + SDC Constraint Files: /data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus_sm25_fixed/b32plus_tilezero_preselect_live_sfu6/dpa.sdc
+   |
+   + Analysis View:  cuda.TT.extra_view
+     |
+     + Delay Calc Corner: TT.extra_view_delay
+     |   |
+     |   + timing_condition: TT.extra_view_cond
+     |   |    |
+     |   |    + library_sets: TT.extra_view_libs
+     |   |        |
+     |   |        + timing: /data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140_180a/tcbn28hpcplusbwp30p140tt0p8v25c.lib
+                             /data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140hvt_180a/tcbn28hpcplusbwp30p140hvttt0p8v25c.lib
+                             /data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140lvt_180a/tcbn28hpcplusbwp30p140lvttt0p8v25c.lib
+     |   |
+     |   |
+     |   |
+     |   + rc_corner: TT.extra_view_rc
+     |   |    |
+     |   |    + postRoute_res: 1.0 1.0 1.0
+     |   |    |
+     |   |    + postRoute_cap: 1.0 1.0 1.0
+     |   |    |
+     |   |    + postRoute_xcap: 1.0 1.0 1.0
+     |   |    |
+     |   |    + postRoute_clkcap: 1.0 1.0 1.0
+     |   |    |
+     |   |    + postRoute_clkres: 1.0 1.0 1.0
+     |   |    |
+     |   |    + qx_tech_file: /data2/tools-additional/pdk/N28/cadence_ref/qrc/cln28hpcplus_1p10m_5x2y2r/typical/qrcTechFile
+     |   |    |
+     |   |    + temperature: 25.0
+     |
+     + Constraint Mode: cuda
+     |   |
+     |   + SDC Constraint Files: /data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus_sm25_fixed/b32plus_tilezero_preselect_live_sfu6/cuda.sdc

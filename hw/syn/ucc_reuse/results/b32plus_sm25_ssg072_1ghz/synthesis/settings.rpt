@@ -1,0 +1,11 @@
+auto_ungroup=both
+lp_insert_clock_gating=true
+syn_generic_effort=medium
+syn_map_effort=high
+syn_opt_effort=high
+interconnect_mode=ple
+retime=false
+lp_clock_gating_min_flops=2
+lp_clock_gating_max_flops=100000
+setup_views=dpa.SS.setup_view cuda.SS.setup_view
+hold_views=dpa.FF.hold_view cuda.FF.hold_view dpa.TT.extra_view cuda.TT.extra_view

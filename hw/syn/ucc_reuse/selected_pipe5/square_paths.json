@@ -1,0 +1,8 @@
+{
+  "design_sha256": "0110c24c49204a77ff3fe8ab9b53734ed5d425aa8567da2ccc16a75ff6ad51e2",
+  "target_multiplier_count": 117,
+  "square_multiplier_count": 27,
+  "target_multipliers_with_combinational_square_path": 0,
+  "paths": [],
+  "scope": "Conservative structural connectivity across top-level combinational operators. Registers terminate traversal; no mode or valid assumptions."
+}

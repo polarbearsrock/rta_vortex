@@ -1,0 +1,1151 @@
+{
+  "proof_status": "PASS",
+  "removed": [
+    {
+      "select": "select_829",
+      "source": "w22540",
+      "producer": 1075
+    },
+    {
+      "select": "select_830",
+      "source": "w22656",
+      "producer": 1033
+    },
+    {
+      "select": "select_831",
+      "source": "w23466",
+      "producer": 1022
+    },
+    {
+      "select": "select_832",
+      "source": "w23467",
+      "producer": 1022
+    },
+    {
+      "select": "select_833",
+      "source": "w23468",
+      "producer": 1022
+    },
+    {
+      "select": "select_834",
+      "source": "w23469",
+      "producer": 1022
+    },
+    {
+      "select": "select_835",
+      "source": "w22829",
+      "producer": 970
+    },
+    {
+      "select": "select_836",
+      "source": "w22830",
+      "producer": 970
+    },
+    {
+      "select": "select_837",
+      "source": "w23562",
+      "producer": 959
+    },
+    {
+      "select": "select_838",
+      "source": "w23563",
+      "producer": 959
+    },
+    {
+      "select": "select_839",
+      "source": "w23564",
+      "producer": 959
+    },
+    {
+      "select": "select_840",
+      "source": "w23565",
+      "producer": 959
+    },
+    {
+      "select": "select_841",
+      "source": "w23003",
+      "producer": 907
+    },
+    {
+      "select": "select_842",
+      "source": "w23004",
+      "producer": 907
+    },
+    {
+      "select": "select_843",
+      "source": "w22491",
+      "producer": 1108
+    },
+    {
+      "select": "select_844",
+      "source": "w22492",
+      "producer": 1108
+    },
+    {
+      "select": "select_845",
+      "source": "w22493",
+      "producer": 1108
+    },
+    {
+      "select": "select_846",
+      "source": "w23890",
+      "producer": 1076
+    },
+    {
+      "select": "select_847",
+      "source": "w22607",
+      "producer": 1066
+    },
+    {
+      "select": "select_848",
+      "source": "w22608",
+      "producer": 1066
+    },
+    {
+      "select": "select_849",
+      "source": "w22609",
+      "producer": 1066
+    },
+    {
+      "select": "select_850",
+      "source": "w23970",
+      "producer": 1034
+    },
+    {
+      "select": "select_851",
+      "source": "w23998",
+      "producer": 1013
+    },
+    {
+      "select": "select_852",
+      "source": "w23999",
+      "producer": 1013
+    },
+    {
+      "select": "select_853",
+      "source": "w24000",
+      "producer": 1013
+    },
+    {
+      "select": "select_854",
+      "source": "w24001",
+      "producer": 1013
+    },
+    {
+      "select": "select_862",
+      "source": "w24098",
+      "producer": 971
+    },
+    {
+      "select": "select_863",
+      "source": "w24099",
+      "producer": 971
+    },
+    {
+      "select": "select_864",
+      "source": "w24127",
+      "producer": 950
+    },
+    {
+      "select": "select_865",
+      "source": "w24128",
+      "producer": 950
+    },
+    {
+      "select": "select_866",
+      "source": "w24129",
+      "producer": 950
+    },
+    {
+      "select": "select_867",
+      "source": "w24130",
+      "producer": 950
+    },
+    {
+      "select": "select_875",
+      "source": "w24227",
+      "producer": 908
+    },
+    {
+      "select": "select_876",
+      "source": "w24228",
+      "producer": 908
+    },
+    {
+      "select": "select_877",
+      "source": "w24377",
+      "producer": 1098
+    },
+    {
+      "select": "select_878",
+      "source": "w24378",
+      "producer": 1098
+    },
+    {
+      "select": "select_880",
+      "source": "w24416",
+      "producer": 1077
+    },
+    {
+      "select": "select_881",
+      "source": "w23362",
+      "producer": 1086
+    },
+    {
+      "select": "select_882",
+      "source": "w23369",
+      "producer": 1086
+    },
+    {
+      "select": "select_883",
+      "source": "w24435",
+      "producer": 1056
+    },
+    {
+      "select": "select_884",
+      "source": "w24436",
+      "producer": 1056
+    },
+    {
+      "select": "select_885",
+      "source": "w24474",
+      "producer": 1035
+    },
+    {
+      "select": "select_886",
+      "source": "w23433",
+      "producer": 1044
+    },
+    {
+      "select": "select_887",
+      "source": "w24483",
+      "producer": 1014
+    },
+    {
+      "select": "select_888",
+      "source": "w24484",
+      "producer": 1014
+    },
+    {
+      "select": "select_889",
+      "source": "w24485",
+      "producer": 1014
+    },
+    {
+      "select": "select_890",
+      "source": "w24486",
+      "producer": 1014
+    },
+    {
+      "select": "select_891",
+      "source": "w24487",
+      "producer": 1014
+    },
+    {
+      "select": "select_892",
+      "source": "w24488",
+      "producer": 1014
+    },
+    {
+      "select": "select_893",
+      "source": "w24489",
+      "producer": 1014
+    },
+    {
+      "select": "select_896",
+      "source": "w24555",
+      "producer": 972
+    },
+    {
+      "select": "select_897",
+      "source": "w24556",
+      "producer": 972
+    },
+    {
+      "select": "select_898",
+      "source": "w23522",
+      "producer": 981
+    },
+    {
+      "select": "select_899",
+      "source": "w23528",
+      "producer": 981
+    },
+    {
+      "select": "select_900",
+      "source": "w23529",
+      "producer": 981
+    },
+    {
+      "select": "select_901",
+      "source": "w24565",
+      "producer": 951
+    },
+    {
+      "select": "select_902",
+      "source": "w24566",
+      "producer": 951
+    },
+    {
+      "select": "select_903",
+      "source": "w24567",
+      "producer": 951
+    },
+    {
+      "select": "select_904",
+      "source": "w24568",
+      "producer": 951
+    },
+    {
+      "select": "select_905",
+      "source": "w24569",
+      "producer": 951
+    },
+    {
+      "select": "select_906",
+      "source": "w24570",
+      "producer": 951
+    },
+    {
+      "select": "select_907",
+      "source": "w24571",
+      "producer": 951
+    },
+    {
+      "select": "select_908",
+      "source": "w24627",
+      "producer": 909
+    },
+    {
+      "select": "select_909",
+      "source": "w24628",
+      "producer": 909
+    },
+    {
+      "select": "select_910",
+      "source": "w23624",
+      "producer": 918
+    },
+    {
+      "select": "select_911",
+      "source": "w23625",
+      "producer": 918
+    },
+    {
+      "select": "select_912",
+      "source": "w24648",
+      "producer": 1099
+    },
+    {
+      "select": "select_913",
+      "source": "w24649",
+      "producer": 1099
+    },
+    {
+      "select": "select_915",
+      "source": "w24688",
+      "producer": 1078
+    },
+    {
+      "select": "select_917",
+      "source": "w24707",
+      "producer": 1057
+    },
+    {
+      "select": "select_918",
+      "source": "w24708",
+      "producer": 1057
+    },
+    {
+      "select": "select_919",
+      "source": "w24747",
+      "producer": 1036
+    },
+    {
+      "select": "select_920",
+      "source": "w24755",
+      "producer": 1015
+    },
+    {
+      "select": "select_921",
+      "source": "w24756",
+      "producer": 1015
+    },
+    {
+      "select": "select_922",
+      "source": "w24757",
+      "producer": 1015
+    },
+    {
+      "select": "select_923",
+      "source": "w24758",
+      "producer": 1015
+    },
+    {
+      "select": "select_924",
+      "source": "w24759",
+      "producer": 1015
+    },
+    {
+      "select": "select_925",
+      "source": "w22715",
+      "producer": 1021
+    },
+    {
+      "select": "select_926",
+      "source": "w22716",
+      "producer": 1021
+    },
+    {
+      "select": "select_927",
+      "source": "w22717",
+      "producer": 1021
+    },
+    {
+      "select": "select_928",
+      "source": "w22718",
+      "producer": 1021
+    },
+    {
+      "select": "select_929",
+      "source": "w22719",
+      "producer": 1021
+    },
+    {
+      "select": "select_931",
+      "source": "w24829",
+      "producer": 973
+    },
+    {
+      "select": "select_932",
+      "source": "w24830",
+      "producer": 973
+    },
+    {
+      "select": "select_934",
+      "source": "w24838",
+      "producer": 952
+    },
+    {
+      "select": "select_935",
+      "source": "w24839",
+      "producer": 952
+    },
+    {
+      "select": "select_936",
+      "source": "w24840",
+      "producer": 952
+    },
+    {
+      "select": "select_937",
+      "source": "w24841",
+      "producer": 952
+    },
+    {
+      "select": "select_938",
+      "source": "w22889",
+      "producer": 958
+    },
+    {
+      "select": "select_939",
+      "source": "w22890",
+      "producer": 958
+    },
+    {
+      "select": "select_940",
+      "source": "w22891",
+      "producer": 958
+    },
+    {
+      "select": "select_941",
+      "source": "w22892",
+      "producer": 958
+    },
+    {
+      "select": "select_942",
+      "source": "w24901",
+      "producer": 910
+    },
+    {
+      "select": "select_943",
+      "source": "w24902",
+      "producer": 910
+    },
+    {
+      "select": "select_944",
+      "source": "w24920",
+      "producer": 1100
+    },
+    {
+      "select": "select_945",
+      "source": "w24921",
+      "producer": 1100
+    },
+    {
+      "select": "select_946",
+      "source": "w22498",
+      "producer": 1109
+    },
+    {
+      "select": "select_947",
+      "source": "w22499",
+      "producer": 1109
+    },
+    {
+      "select": "select_948",
+      "source": "w22500",
+      "producer": 1109
+    },
+    {
+      "select": "select_949",
+      "source": "w22501",
+      "producer": 1109
+    },
+    {
+      "select": "select_950",
+      "source": "w24961",
+      "producer": 1079
+    },
+    {
+      "select": "select_951",
+      "source": "w22556",
+      "producer": 1088
+    },
+    {
+      "select": "select_952",
+      "source": "w24980",
+      "producer": 1058
+    },
+    {
+      "select": "select_953",
+      "source": "w22614",
+      "producer": 1067
+    },
+    {
+      "select": "select_954",
+      "source": "w22615",
+      "producer": 1067
+    },
+    {
+      "select": "select_955",
+      "source": "w22616",
+      "producer": 1067
+    },
+    {
+      "select": "select_956",
+      "source": "w25021",
+      "producer": 1037
+    },
+    {
+      "select": "select_957",
+      "source": "w25028",
+      "producer": 1016
+    },
+    {
+      "select": "select_958",
+      "source": "w25029",
+      "producer": 1016
+    },
+    {
+      "select": "select_959",
+      "source": "w25030",
+      "producer": 1016
+    },
+    {
+      "select": "select_960",
+      "source": "w25031",
+      "producer": 1016
+    },
+    {
+      "select": "select_961",
+      "source": "w25032",
+      "producer": 1016
+    },
+    {
+      "select": "select_969",
+      "source": "w22788",
+      "producer": 1004
+    },
+    {
+      "select": "select_970",
+      "source": "w25104",
+      "producer": 974
+    },
+    {
+      "select": "select_971",
+      "source": "w25105",
+      "producer": 974
+    },
+    {
+      "select": "select_972",
+      "source": "w22846",
+      "producer": 983
+    },
+    {
+      "select": "select_973",
+      "source": "w25112",
+      "producer": 953
+    },
+    {
+      "select": "select_974",
+      "source": "w25113",
+      "producer": 953
+    },
+    {
+      "select": "select_975",
+      "source": "w25114",
+      "producer": 953
+    },
+    {
+      "select": "select_976",
+      "source": "w25115",
+      "producer": 953
+    },
+    {
+      "select": "select_984",
+      "source": "w25176",
+      "producer": 911
+    },
+    {
+      "select": "select_985",
+      "source": "w25177",
+      "producer": 911
+    },
+    {
+      "select": "select_986",
+      "source": "w25194",
+      "producer": 1101
+    },
+    {
+      "select": "select_987",
+      "source": "w25195",
+      "producer": 1101
+    },
+    {
+      "select": "select_988",
+      "source": "w25196",
+      "producer": 1101
+    },
+    {
+      "select": "select_996",
+      "source": "w25218",
+      "producer": 1080
+    },
+    {
+      "select": "select_997",
+      "source": "w25237",
+      "producer": 1080
+    },
+    {
+      "select": "select_1005",
+      "source": "w25255",
+      "producer": 1059
+    },
+    {
+      "select": "select_1006",
+      "source": "w25256",
+      "producer": 1059
+    },
+    {
+      "select": "select_1007",
+      "source": "w25298",
+      "producer": 1038
+    },
+    {
+      "select": "select_1008",
+      "source": "w22685",
+      "producer": 1047
+    },
+    {
+      "select": "select_1009",
+      "source": "w25303",
+      "producer": 1017
+    },
+    {
+      "select": "select_1010",
+      "source": "w25304",
+      "producer": 1017
+    },
+    {
+      "select": "select_1011",
+      "source": "w25305",
+      "producer": 1017
+    },
+    {
+      "select": "select_1012",
+      "source": "w25306",
+      "producer": 1017
+    },
+    {
+      "select": "select_1013",
+      "source": "w25307",
+      "producer": 1017
+    },
+    {
+      "select": "select_1014",
+      "source": "w25308",
+      "producer": 1017
+    },
+    {
+      "select": "select_1015",
+      "source": "w25309",
+      "producer": 1017
+    },
+    {
+      "select": "select_1023",
+      "source": "w25327",
+      "producer": 996
+    },
+    {
+      "select": "select_1031",
+      "source": "w25364",
+      "producer": 975
+    },
+    {
+      "select": "select_1032",
+      "source": "w25382",
+      "producer": 975
+    },
+    {
+      "select": "select_1033",
+      "source": "w25383",
+      "producer": 975
+    },
+    {
+      "select": "select_1041",
+      "source": "w25388",
+      "producer": 954
+    },
+    {
+      "select": "select_1042",
+      "source": "w25389",
+      "producer": 954
+    },
+    {
+      "select": "select_1043",
+      "source": "w25390",
+      "producer": 954
+    },
+    {
+      "select": "select_1044",
+      "source": "w25391",
+      "producer": 954
+    },
+    {
+      "select": "select_1045",
+      "source": "w25392",
+      "producer": 954
+    },
+    {
+      "select": "select_1046",
+      "source": "w25393",
+      "producer": 954
+    },
+    {
+      "select": "select_1047",
+      "source": "w25454",
+      "producer": 912
+    },
+    {
+      "select": "select_1048",
+      "source": "w25455",
+      "producer": 912
+    },
+    {
+      "select": "select_1049",
+      "source": "w23032",
+      "producer": 921
+    },
+    {
+      "select": "select_1050",
+      "source": "w23033",
+      "producer": 921
+    },
+    {
+      "select": "select_1051",
+      "source": "w25472",
+      "producer": 1102
+    },
+    {
+      "select": "select_1052",
+      "source": "w25473",
+      "producer": 1102
+    },
+    {
+      "select": "select_1053",
+      "source": "w25474",
+      "producer": 1102
+    },
+    {
+      "select": "select_1054",
+      "source": "w25475",
+      "producer": 1102
+    },
+    {
+      "select": "select_1062",
+      "source": "w25496",
+      "producer": 1081
+    },
+    {
+      "select": "select_1063",
+      "source": "w25497",
+      "producer": 1081
+    },
+    {
+      "select": "select_1064",
+      "source": "w25516",
+      "producer": 1081
+    },
+    {
+      "select": "select_1072",
+      "source": "w25533",
+      "producer": 1060
+    },
+    {
+      "select": "select_1073",
+      "source": "w25534",
+      "producer": 1060
+    },
+    {
+      "select": "select_1074",
+      "source": "w25577",
+      "producer": 1039
+    },
+    {
+      "select": "select_1075",
+      "source": "w25581",
+      "producer": 1018
+    },
+    {
+      "select": "select_1076",
+      "source": "w25582",
+      "producer": 1018
+    },
+    {
+      "select": "select_1077",
+      "source": "w25583",
+      "producer": 1018
+    },
+    {
+      "select": "select_1078",
+      "source": "w25584",
+      "producer": 1018
+    },
+    {
+      "select": "select_1079",
+      "source": "w25585",
+      "producer": 1018
+    },
+    {
+      "select": "select_1080",
+      "source": "w25586",
+      "producer": 1018
+    },
+    {
+      "select": "select_1081",
+      "source": "w25587",
+      "producer": 1018
+    },
+    {
+      "select": "select_1082",
+      "source": "w25588",
+      "producer": 1018
+    },
+    {
+      "select": "select_1090",
+      "source": "w25605",
+      "producer": 997
+    },
+    {
+      "select": "select_1091",
+      "source": "w25606",
+      "producer": 997
+    },
+    {
+      "select": "select_1099",
+      "source": "w25642",
+      "producer": 976
+    },
+    {
+      "select": "select_1100",
+      "source": "w25643",
+      "producer": 976
+    },
+    {
+      "select": "select_1101",
+      "source": "w25661",
+      "producer": 976
+    },
+    {
+      "select": "select_1102",
+      "source": "w25662",
+      "producer": 976
+    },
+    {
+      "select": "select_1110",
+      "source": "w25666",
+      "producer": 955
+    },
+    {
+      "select": "select_1111",
+      "source": "w25667",
+      "producer": 955
+    },
+    {
+      "select": "select_1112",
+      "source": "w25668",
+      "producer": 955
+    },
+    {
+      "select": "select_1113",
+      "source": "w25669",
+      "producer": 955
+    },
+    {
+      "select": "select_1114",
+      "source": "w25670",
+      "producer": 955
+    },
+    {
+      "select": "select_1115",
+      "source": "w22918",
+      "producer": 964
+    },
+    {
+      "select": "select_1116",
+      "source": "w22919",
+      "producer": 964
+    },
+    {
+      "select": "select_1117",
+      "source": "w22920",
+      "producer": 964
+    },
+    {
+      "select": "select_1118",
+      "source": "w22921",
+      "producer": 964
+    },
+    {
+      "select": "select_1119",
+      "source": "w25733",
+      "producer": 913
+    },
+    {
+      "select": "select_1120",
+      "source": "w25734",
+      "producer": 913
+    },
+    {
+      "select": "select_1121",
+      "source": "w25750",
+      "producer": 1103
+    },
+    {
+      "select": "select_1122",
+      "source": "w25751",
+      "producer": 1103
+    },
+    {
+      "select": "select_1123",
+      "source": "w25752",
+      "producer": 1103
+    },
+    {
+      "select": "select_1124",
+      "source": "w25753",
+      "producer": 1103
+    },
+    {
+      "select": "select_1125",
+      "source": "w25754",
+      "producer": 1103
+    },
+    {
+      "select": "select_1132",
+      "source": "w25774",
+      "producer": 1082
+    },
+    {
+      "select": "select_1133",
+      "source": "w25775",
+      "producer": 1082
+    },
+    {
+      "select": "select_1134",
+      "source": "w25776",
+      "producer": 1082
+    },
+    {
+      "select": "select_1135",
+      "source": "w25795",
+      "producer": 1082
+    },
+    {
+      "select": "select_1142",
+      "source": "w25811",
+      "producer": 1061
+    },
+    {
+      "select": "select_1143",
+      "source": "w25812",
+      "producer": 1061
+    },
+    {
+      "select": "select_1144",
+      "source": "w22635",
+      "producer": 1070
+    },
+    {
+      "select": "select_1145",
+      "source": "w22636",
+      "producer": 1070
+    },
+    {
+      "select": "select_1146",
+      "source": "w22637",
+      "producer": 1070
+    },
+    {
+      "select": "select_1147",
+      "source": "w25856",
+      "producer": 1040
+    },
+    {
+      "select": "select_1148",
+      "source": "w25859",
+      "producer": 1019
+    },
+    {
+      "select": "select_1149",
+      "source": "w25860",
+      "producer": 1019
+    },
+    {
+      "select": "select_1150",
+      "source": "w25861",
+      "producer": 1019
+    },
+    {
+      "select": "select_1151",
+      "source": "w25862",
+      "producer": 1019
+    },
+    {
+      "select": "select_1152",
+      "source": "w25863",
+      "producer": 1019
+    },
+    {
+      "select": "select_1153",
+      "source": "w25864",
+      "producer": 1019
+    },
+    {
+      "select": "select_1154",
+      "source": "w25865",
+      "producer": 1019
+    },
+    {
+      "select": "select_1155",
+      "source": "w25866",
+      "producer": 1019
+    },
+    {
+      "select": "select_1156",
+      "source": "w25867",
+      "producer": 1019
+    },
+    {
+      "select": "select_1163",
+      "source": "w25883",
+      "producer": 998
+    },
+    {
+      "select": "select_1164",
+      "source": "w25884",
+      "producer": 998
+    },
+    {
+      "select": "select_1165",
+      "source": "w25885",
+      "producer": 998
+    },
+    {
+      "select": "select_1172",
+      "source": "w25920",
+      "producer": 977
+    },
+    {
+      "select": "select_1173",
+      "source": "w25921",
+      "producer": 977
+    },
+    {
+      "select": "select_1174",
+      "source": "w25922",
+      "producer": 977
+    },
+    {
+      "select": "select_1175",
+      "source": "w25940",
+      "producer": 977
+    },
+    {
+      "select": "select_1176",
+      "source": "w25941",
+      "producer": 977
+    },
+    {
+      "select": "select_1183",
+      "source": "w25944",
+      "producer": 956
+    },
+    {
+      "select": "select_1184",
+      "source": "w25945",
+      "producer": 956
+    },
+    {
+      "select": "select_1185",
+      "source": "w25946",
+      "producer": 956
+    },
+    {
+      "select": "select_1186",
+      "source": "w25947",
+      "producer": 956
+    },
+    {
+      "select": "select_1187",
+      "source": "w25948",
+      "producer": 956
+    },
+    {
+      "select": "select_1194",
+      "source": "w26012",
+      "producer": 914
+    },
+    {
+      "select": "select_1195",
+      "source": "w26013",
+      "producer": 914
+    }
+  ],
+  "removed_masks": 226,
+  "remaining_masks": 141,
+  "input_sha256": {
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/b32plus_tilemux1_preselect_live_sfu6/design.sv": "97c08aca50e45b88de16536fa9aa794eef887f964ea1b5a176fed8729dc8aebe",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/tile_mask_boundary_proof/manifest.json": "415c78e04ca593eccbcf3fc37c72fe1a1cd8789af62fa8e435161f95b239fcce",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/tile_mask_boundary_proof/cofactor_bits.json": "526ca93ede278275d4ca75955abcbb033a708b67065aee4280fcfc104c19e254",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/tile_mask_boundary_proof/miter.v": "c2d4d6b09109e6f32b38fd962fbaa03725177b39bcfe8997ae0f9d15d65479bc",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/tile_mask_boundary_proof/prove.ys": "914e898d73522eb3612a6ff35d59dadaa5ede906436560850c2c51d5fe10a939",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/tile_mask_boundary_proof/register_miter.v": "b8fa53052f44551d742227765e9684bf1294579b1f55b3f88efdb8f2aaf17ee5",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/tile_mask_boundary_proof/prove_register.ys": "6497fd2b1d49e7bd4dae98140fbe4a0a7b3049c1726889fbe078a53f8071724e"
+  },
+  "scope": "Combined equivalence of all tile mask outputs for arbitrary normal boundary data and SFU boundary data obeying the direct register invariants; each invariant separately proved after one synchronous edge.",
+  "proof_log_sha256": {
+    "proof.log": "efb2147485eca2c3b4718a110f68b1f6cb6aae00d4b2520931a6713d54221989",
+    "register_proof.log": "ae4edc24d5ce41243eac1bac0c14b35b2c6e383e8eeb93915b769d8e7c4418a4"
+  }
+}

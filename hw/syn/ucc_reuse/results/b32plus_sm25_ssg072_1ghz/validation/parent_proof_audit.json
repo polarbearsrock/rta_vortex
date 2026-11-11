@@ -1,0 +1,30 @@
+{
+  "tilemux1_preselect_register_proof": {
+    "passed": true,
+    "scope": "Sequential equivalence after one edge; arbitrary data, selector and reset; each original/transformed equation checked against frozen RTL",
+    "verified_sha256": {
+      "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/b32plus_tilemux1_preselect_causal_sfu6/select_register_validation.json": "46c5e5b3f92f1f51f3f2d8bc0ff036c936a29026d5e5f0327bffd6df25af0e24",
+      "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/b32plus_tilemux1_causal_routed_control_sfu6/design.sv": "b936f4181f89b226b4d9eb01460f5a23b5257ecb040b995b6dc4d95a758384b9",
+      "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/b32plus_tilemux1_preselect_causal_sfu6/design.sv": "08a6559117b5b6b61df81021aa7b57773b3b41f4adc735367010c6039be5b630",
+      "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/syn/ucc_reuse/b32_select_register_proof.py": "91b9322dbff8a3cfb5fa8aa55b75ea2a66f5a599c0de7cd612706137f7158a93",
+      "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/tilemux1_preselect_register_proof/miter.sv": "e8cc657eb77b2c2425d5a007825abfd9eb95368bb3ef06b2c2a6f090ef3b2eeb",
+      "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/tilemux1_preselect_register_proof/prove.ys": "65e4d1209792eedd85ba80fb2e72dcc8bf7d429514c6b40ce43fd6a1244be970",
+      "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/tilemux1_preselect_register_proof/proof.log": "43487531b143bfa6c2ecb72746e68651338d5d129445c83720ef6fa21e9a6467"
+    }
+  },
+  "tile_mask_boundary_proof": {
+    "passed": true,
+    "scope": "Combined equivalence of all tile mask outputs for arbitrary normal boundary data and SFU boundary data obeying the direct register invariants; each invariant separately proved after one synchronous edge.",
+    "verified_sha256": {
+      "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/b32plus_tilemux1_preselect_live_sfu6/design.sv": "97c08aca50e45b88de16536fa9aa794eef887f964ea1b5a176fed8729dc8aebe",
+      "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/tile_mask_boundary_proof/manifest.json": "415c78e04ca593eccbcf3fc37c72fe1a1cd8789af62fa8e435161f95b239fcce",
+      "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/tile_mask_boundary_proof/cofactor_bits.json": "526ca93ede278275d4ca75955abcbb033a708b67065aee4280fcfc104c19e254",
+      "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/tile_mask_boundary_proof/miter.v": "c2d4d6b09109e6f32b38fd962fbaa03725177b39bcfe8997ae0f9d15d65479bc",
+      "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/tile_mask_boundary_proof/prove.ys": "914e898d73522eb3612a6ff35d59dadaa5ede906436560850c2c51d5fe10a939",
+      "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/tile_mask_boundary_proof/register_miter.v": "b8fa53052f44551d742227765e9684bf1294579b1f55b3f88efdb8f2aaf17ee5",
+      "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/tile_mask_boundary_proof/prove_register.ys": "6497fd2b1d49e7bd4dae98140fbe4a0a7b3049c1726889fbe078a53f8071724e",
+      "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/tile_mask_boundary_proof/proof.log": "efb2147485eca2c3b4718a110f68b1f6cb6aae00d4b2520931a6713d54221989",
+      "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/tile_mask_boundary_proof/register_proof.log": "ae4edc24d5ce41243eac1bac0c14b35b2c6e383e8eeb93915b769d8e7c4418a4"
+    }
+  }
+}

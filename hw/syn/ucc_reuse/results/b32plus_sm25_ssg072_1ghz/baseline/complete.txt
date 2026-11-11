@@ -1,0 +1,1 @@
+top=ucc_dpa16_baseline period_ns=1.0 retiming=false clock_gating=true auto_ungroup=both

@@ -1,0 +1,16 @@
+{
+  "preparation_only": true,
+  "new_synthesis_launched": false,
+  "designs": {
+    "ucc": {
+      "input_files_identical": 12,
+      "design_sha256": "0110c24c49204a77ff3fe8ab9b53734ed5d425aa8567da2ccc16a75ff6ad51e2",
+      "passed": true
+    },
+    "dpa": {
+      "input_files_identical": 11,
+      "design_sha256": "778387c9201dea5cac75ba15649a9557d2a449cd953478f042a5602ad7bdefca",
+      "passed": true
+    }
+  }
+}

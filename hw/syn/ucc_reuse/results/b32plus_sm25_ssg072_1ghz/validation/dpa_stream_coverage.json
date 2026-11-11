@@ -1,0 +1,18 @@
+{
+  "scope": "Existing executed vector sequence, including the bench periodic issue bubble and mode drain. No additional test run. DPA has no SFU reservation within a contiguous DPA run.",
+  "max_consecutive_dpa_issues": 97,
+  "longest_by_dpa_opcode": {
+    "0x58": 4,
+    "0x59": 5,
+    "0x5a": 5,
+    "0x5b": 4,
+    "0x5c": 4,
+    "0x5d": 4,
+    "0x5e": 5,
+    "0x5f": 5
+  },
+  "distinct_nvfp4_scale_pairs": 3075,
+  "distinct_mxfp4_scale_pairs": 3068,
+  "vectors_sha256": "6ea1d78b1062668d3370af88a925cd28448e92e2d959744a3c3d3767e6c21c51",
+  "audited_utc": "2026-11-11T17:37:58.580197+00:00"
+}

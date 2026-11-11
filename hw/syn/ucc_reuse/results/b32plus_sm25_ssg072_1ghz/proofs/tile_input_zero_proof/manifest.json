@@ -1,0 +1,668 @@
+{
+  "proof_status": "PASS",
+  "scope": "All 134 stage outputs after one edge; arbitrary operand data, other boundary inputs, SFU activity and synchronous reset; no mode or opcode assumptions",
+  "input_sha256": {
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/b32plus_tilemask_preselect_live_sfu6/design.sv": "323007d1c014c2ac6eb09f2b481f4094b48aa1c924ac29dd9f7c9ed606a832c4",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/b32plus_tilezero_preselect_live_sfu6/design.sv": "0110c24c49204a77ff3fe8ab9b53734ed5d425aa8567da2ccc16a75ff6ad51e2",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/remaining_tile_mask_audit.json": "037769346b679f6a54658d4937456a36c0b42152dc24be4f562a3a4d5fbb08ca",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/b32plus_tilezero_preselect_live_sfu6/input_zero_validation.json": "2659e0d7afbbce66a643d7523339374011a9fca60d03a368f942ec84df1a0fbe",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/syn/ucc_reuse/b32_tile_input_zero.py": "f0f17861c3b87efeec39ecb23eb96c60a89b247fc016d470ef6bb31da0509d21",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/tile_input_zero_proof/miter.v": "cb3e5947f4b400cba4566f4406f1e30f5e82b56637ba42432da1a3c21b6229cf",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/tile_input_zero_proof/prove.ys": "f35077e500bd48bb271b18024f01423b2132f929ed03d7a3d43d5b12a287a5b5"
+  },
+  "parent": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/b32plus_tilemask_preselect_live_sfu6",
+  "parent_design_sha256": "323007d1c014c2ac6eb09f2b481f4094b48aa1c924ac29dd9f7c9ed606a832c4",
+  "design_sha256": "0110c24c49204a77ff3fe8ab9b53734ed5d425aa8567da2ccc16a75ff6ad51e2",
+  "script_sha256": "f0f17861c3b87efeec39ecb23eb96c60a89b247fc016d470ef6bb31da0509d21",
+  "masked_input_registers": [
+    "p1_19638",
+    "p1_19639",
+    "p1_19640",
+    "p1_19654",
+    "p1_19655",
+    "p1_19656",
+    "p1_22049",
+    "p1_22050",
+    "p1_22051",
+    "p1_22065",
+    "p1_22066",
+    "p1_22067",
+    "p1_22113",
+    "p1_22114",
+    "p1_22115",
+    "p1_22129",
+    "p1_22130",
+    "p1_22131",
+    "p1_22145",
+    "p1_22146",
+    "p1_22147"
+  ],
+  "removed_output_masks": 134,
+  "remaining_slot1_masks": 7,
+  "raw_register_count_unchanged": true,
+  "arithmetic_instances_unchanged": true,
+  "consumer_boundary_audit": "All modified registers feed only the 20 proved helpers; all 134 product bits feed only the removed output masks",
+  "changes": [
+    {
+      "before": "    p1_19638 <= w19638;",
+      "after": "    p1_19638 <= (rst_ni && sfu_valid_pipe[0]) ? 1'b0 : w19638;"
+    },
+    {
+      "before": "    p1_19639 <= w19639;",
+      "after": "    p1_19639 <= (rst_ni && sfu_valid_pipe[0]) ? 1'b0 : w19639;"
+    },
+    {
+      "before": "    p1_19640 <= w19640;",
+      "after": "    p1_19640 <= (rst_ni && sfu_valid_pipe[0]) ? 1'b0 : w19640;"
+    },
+    {
+      "before": "    p1_19654 <= w19654;",
+      "after": "    p1_19654 <= (rst_ni && sfu_valid_pipe[0]) ? 1'b0 : w19654;"
+    },
+    {
+      "before": "    p1_19655 <= w19655;",
+      "after": "    p1_19655 <= (rst_ni && sfu_valid_pipe[0]) ? 1'b0 : w19655;"
+    },
+    {
+      "before": "    p1_19656 <= w19656;",
+      "after": "    p1_19656 <= (rst_ni && sfu_valid_pipe[0]) ? 1'b0 : w19656;"
+    },
+    {
+      "before": "    p1_22049 <= w22049;",
+      "after": "    p1_22049 <= (rst_ni && sfu_valid_pipe[0]) ? 1'b0 : w22049;"
+    },
+    {
+      "before": "    p1_22050 <= w22050;",
+      "after": "    p1_22050 <= (rst_ni && sfu_valid_pipe[0]) ? 1'b0 : w22050;"
+    },
+    {
+      "before": "    p1_22051 <= w22051;",
+      "after": "    p1_22051 <= (rst_ni && sfu_valid_pipe[0]) ? 1'b0 : w22051;"
+    },
+    {
+      "before": "    p1_22065 <= w22065;",
+      "after": "    p1_22065 <= (rst_ni && sfu_valid_pipe[0]) ? 1'b0 : w22065;"
+    },
+    {
+      "before": "    p1_22066 <= w22066;",
+      "after": "    p1_22066 <= (rst_ni && sfu_valid_pipe[0]) ? 1'b0 : w22066;"
+    },
+    {
+      "before": "    p1_22067 <= w22067;",
+      "after": "    p1_22067 <= (rst_ni && sfu_valid_pipe[0]) ? 1'b0 : w22067;"
+    },
+    {
+      "before": "    p1_22113 <= w22113;",
+      "after": "    p1_22113 <= (rst_ni && sfu_valid_pipe[0]) ? 1'b0 : w22113;"
+    },
+    {
+      "before": "    p1_22114 <= w22114;",
+      "after": "    p1_22114 <= (rst_ni && sfu_valid_pipe[0]) ? 1'b0 : w22114;"
+    },
+    {
+      "before": "    p1_22115 <= w22115;",
+      "after": "    p1_22115 <= (rst_ni && sfu_valid_pipe[0]) ? 1'b0 : w22115;"
+    },
+    {
+      "before": "    p1_22129 <= w22129;",
+      "after": "    p1_22129 <= (rst_ni && sfu_valid_pipe[0]) ? 1'b0 : w22129;"
+    },
+    {
+      "before": "    p1_22130 <= w22130;",
+      "after": "    p1_22130 <= (rst_ni && sfu_valid_pipe[0]) ? 1'b0 : w22130;"
+    },
+    {
+      "before": "    p1_22131 <= w22131;",
+      "after": "    p1_22131 <= (rst_ni && sfu_valid_pipe[0]) ? 1'b0 : w22131;"
+    },
+    {
+      "before": "    p1_22145 <= w22145;",
+      "after": "    p1_22145 <= (rst_ni && sfu_valid_pipe[0]) ? 1'b0 : w22145;"
+    },
+    {
+      "before": "    p1_22146 <= w22146;",
+      "after": "    p1_22146 <= (rst_ni && sfu_valid_pipe[0]) ? 1'b0 : w22146;"
+    },
+    {
+      "before": "    p1_22147 <= w22147;",
+      "after": "    p1_22147 <= (rst_ni && sfu_valid_pipe[0]) ? 1'b0 : w22147;"
+    },
+    {
+      "before": "  assign select_989 = sfu_valid_pipe[1] ? 1'b0 : w22505;",
+      "after": "  assign select_989 = w22505;"
+    },
+    {
+      "before": "  assign select_990 = sfu_valid_pipe[1] ? 1'b0 : w22506;",
+      "after": "  assign select_990 = w22506;"
+    },
+    {
+      "before": "  assign select_991 = sfu_valid_pipe[1] ? 1'b0 : w22507;",
+      "after": "  assign select_991 = w22507;"
+    },
+    {
+      "before": "  assign select_992 = sfu_valid_pipe[1] ? 1'b0 : w22508;",
+      "after": "  assign select_992 = w22508;"
+    },
+    {
+      "before": "  assign select_993 = sfu_valid_pipe[1] ? 1'b0 : w22509;",
+      "after": "  assign select_993 = w22509;"
+    },
+    {
+      "before": "  assign select_994 = sfu_valid_pipe[1] ? 1'b0 : w22510;",
+      "after": "  assign select_994 = w22510;"
+    },
+    {
+      "before": "  assign select_995 = sfu_valid_pipe[1] ? 1'b0 : w22511;",
+      "after": "  assign select_995 = w22511;"
+    },
+    {
+      "before": "  assign select_1055 = sfu_valid_pipe[1] ? 1'b0 : w22512;",
+      "after": "  assign select_1055 = w22512;"
+    },
+    {
+      "before": "  assign select_1056 = sfu_valid_pipe[1] ? 1'b0 : w22513;",
+      "after": "  assign select_1056 = w22513;"
+    },
+    {
+      "before": "  assign select_1057 = sfu_valid_pipe[1] ? 1'b0 : w22514;",
+      "after": "  assign select_1057 = w22514;"
+    },
+    {
+      "before": "  assign select_1058 = sfu_valid_pipe[1] ? 1'b0 : w22515;",
+      "after": "  assign select_1058 = w22515;"
+    },
+    {
+      "before": "  assign select_1059 = sfu_valid_pipe[1] ? 1'b0 : w22516;",
+      "after": "  assign select_1059 = w22516;"
+    },
+    {
+      "before": "  assign select_1060 = sfu_valid_pipe[1] ? 1'b0 : w22517;",
+      "after": "  assign select_1060 = w22517;"
+    },
+    {
+      "before": "  assign select_1061 = sfu_valid_pipe[1] ? 1'b0 : w22518;",
+      "after": "  assign select_1061 = w22518;"
+    },
+    {
+      "before": "  assign select_1126 = sfu_valid_pipe[1] ? 1'b0 : w22519;",
+      "after": "  assign select_1126 = w22519;"
+    },
+    {
+      "before": "  assign select_1127 = sfu_valid_pipe[1] ? 1'b0 : w22520;",
+      "after": "  assign select_1127 = w22520;"
+    },
+    {
+      "before": "  assign select_1128 = sfu_valid_pipe[1] ? 1'b0 : w22521;",
+      "after": "  assign select_1128 = w22521;"
+    },
+    {
+      "before": "  assign select_1129 = sfu_valid_pipe[1] ? 1'b0 : w22522;",
+      "after": "  assign select_1129 = w22522;"
+    },
+    {
+      "before": "  assign select_1130 = sfu_valid_pipe[1] ? 1'b0 : w22523;",
+      "after": "  assign select_1130 = w22523;"
+    },
+    {
+      "before": "  assign select_1131 = sfu_valid_pipe[1] ? 1'b0 : w22524;",
+      "after": "  assign select_1131 = w22524;"
+    },
+    {
+      "before": "  assign select_998 = sfu_valid_pipe[1] ? 1'b0 : w22563;",
+      "after": "  assign select_998 = w22563;"
+    },
+    {
+      "before": "  assign select_999 = sfu_valid_pipe[1] ? 1'b0 : w22564;",
+      "after": "  assign select_999 = w22564;"
+    },
+    {
+      "before": "  assign select_1000 = sfu_valid_pipe[1] ? 1'b0 : w22565;",
+      "after": "  assign select_1000 = w22565;"
+    },
+    {
+      "before": "  assign select_1001 = sfu_valid_pipe[1] ? 1'b0 : w22566;",
+      "after": "  assign select_1001 = w22566;"
+    },
+    {
+      "before": "  assign select_1002 = sfu_valid_pipe[1] ? 1'b0 : w22567;",
+      "after": "  assign select_1002 = w22567;"
+    },
+    {
+      "before": "  assign select_1003 = sfu_valid_pipe[1] ? 1'b0 : w22568;",
+      "after": "  assign select_1003 = w22568;"
+    },
+    {
+      "before": "  assign select_1004 = sfu_valid_pipe[1] ? 1'b0 : w22569;",
+      "after": "  assign select_1004 = w22569;"
+    },
+    {
+      "before": "  assign select_1065 = sfu_valid_pipe[1] ? 1'b0 : w22570;",
+      "after": "  assign select_1065 = w22570;"
+    },
+    {
+      "before": "  assign select_1066 = sfu_valid_pipe[1] ? 1'b0 : w22571;",
+      "after": "  assign select_1066 = w22571;"
+    },
+    {
+      "before": "  assign select_1067 = sfu_valid_pipe[1] ? 1'b0 : w22572;",
+      "after": "  assign select_1067 = w22572;"
+    },
+    {
+      "before": "  assign select_1068 = sfu_valid_pipe[1] ? 1'b0 : w22573;",
+      "after": "  assign select_1068 = w22573;"
+    },
+    {
+      "before": "  assign select_1069 = sfu_valid_pipe[1] ? 1'b0 : w22574;",
+      "after": "  assign select_1069 = w22574;"
+    },
+    {
+      "before": "  assign select_1070 = sfu_valid_pipe[1] ? 1'b0 : w22575;",
+      "after": "  assign select_1070 = w22575;"
+    },
+    {
+      "before": "  assign select_1071 = sfu_valid_pipe[1] ? 1'b0 : w22576;",
+      "after": "  assign select_1071 = w22576;"
+    },
+    {
+      "before": "  assign select_1136 = sfu_valid_pipe[1] ? 1'b0 : w22577;",
+      "after": "  assign select_1136 = w22577;"
+    },
+    {
+      "before": "  assign select_1137 = sfu_valid_pipe[1] ? 1'b0 : w22578;",
+      "after": "  assign select_1137 = w22578;"
+    },
+    {
+      "before": "  assign select_1138 = sfu_valid_pipe[1] ? 1'b0 : w22579;",
+      "after": "  assign select_1138 = w22579;"
+    },
+    {
+      "before": "  assign select_1139 = sfu_valid_pipe[1] ? 1'b0 : w22580;",
+      "after": "  assign select_1139 = w22580;"
+    },
+    {
+      "before": "  assign select_1140 = sfu_valid_pipe[1] ? 1'b0 : w22581;",
+      "after": "  assign select_1140 = w22581;"
+    },
+    {
+      "before": "  assign select_1141 = sfu_valid_pipe[1] ? 1'b0 : w22582;",
+      "after": "  assign select_1141 = w22582;"
+    },
+    {
+      "before": "  assign select_855 = sfu_valid_pipe[1] ? 1'b0 : w22723;",
+      "after": "  assign select_855 = w22723;"
+    },
+    {
+      "before": "  assign select_856 = sfu_valid_pipe[1] ? 1'b0 : w22724;",
+      "after": "  assign select_856 = w22724;"
+    },
+    {
+      "before": "  assign select_857 = sfu_valid_pipe[1] ? 1'b0 : w22725;",
+      "after": "  assign select_857 = w22725;"
+    },
+    {
+      "before": "  assign select_858 = sfu_valid_pipe[1] ? 1'b0 : w22726;",
+      "after": "  assign select_858 = w22726;"
+    },
+    {
+      "before": "  assign select_859 = sfu_valid_pipe[1] ? 1'b0 : w22727;",
+      "after": "  assign select_859 = w22727;"
+    },
+    {
+      "before": "  assign select_860 = sfu_valid_pipe[1] ? 1'b0 : w22728;",
+      "after": "  assign select_860 = w22728;"
+    },
+    {
+      "before": "  assign select_861 = sfu_valid_pipe[1] ? 1'b0 : w22729;",
+      "after": "  assign select_861 = w22729;"
+    },
+    {
+      "before": "  assign select_962 = sfu_valid_pipe[1] ? 1'b0 : w22730;",
+      "after": "  assign select_962 = w22730;"
+    },
+    {
+      "before": "  assign select_963 = sfu_valid_pipe[1] ? 1'b0 : w22731;",
+      "after": "  assign select_963 = w22731;"
+    },
+    {
+      "before": "  assign select_964 = sfu_valid_pipe[1] ? 1'b0 : w22732;",
+      "after": "  assign select_964 = w22732;"
+    },
+    {
+      "before": "  assign select_965 = sfu_valid_pipe[1] ? 1'b0 : w22733;",
+      "after": "  assign select_965 = w22733;"
+    },
+    {
+      "before": "  assign select_966 = sfu_valid_pipe[1] ? 1'b0 : w22734;",
+      "after": "  assign select_966 = w22734;"
+    },
+    {
+      "before": "  assign select_967 = sfu_valid_pipe[1] ? 1'b0 : w22735;",
+      "after": "  assign select_967 = w22735;"
+    },
+    {
+      "before": "  assign select_968 = sfu_valid_pipe[1] ? 1'b0 : w22736;",
+      "after": "  assign select_968 = w22736;"
+    },
+    {
+      "before": "  assign select_1016 = sfu_valid_pipe[1] ? 1'b0 : w22737;",
+      "after": "  assign select_1016 = w22737;"
+    },
+    {
+      "before": "  assign select_1017 = sfu_valid_pipe[1] ? 1'b0 : w22738;",
+      "after": "  assign select_1017 = w22738;"
+    },
+    {
+      "before": "  assign select_1018 = sfu_valid_pipe[1] ? 1'b0 : w22739;",
+      "after": "  assign select_1018 = w22739;"
+    },
+    {
+      "before": "  assign select_1019 = sfu_valid_pipe[1] ? 1'b0 : w22740;",
+      "after": "  assign select_1019 = w22740;"
+    },
+    {
+      "before": "  assign select_1020 = sfu_valid_pipe[1] ? 1'b0 : w22741;",
+      "after": "  assign select_1020 = w22741;"
+    },
+    {
+      "before": "  assign select_1021 = sfu_valid_pipe[1] ? 1'b0 : w22742;",
+      "after": "  assign select_1021 = w22742;"
+    },
+    {
+      "before": "  assign select_1022 = sfu_valid_pipe[1] ? 1'b0 : w22743;",
+      "after": "  assign select_1022 = w22743;"
+    },
+    {
+      "before": "  assign select_1083 = sfu_valid_pipe[1] ? 1'b0 : w22744;",
+      "after": "  assign select_1083 = w22744;"
+    },
+    {
+      "before": "  assign select_1084 = sfu_valid_pipe[1] ? 1'b0 : w22745;",
+      "after": "  assign select_1084 = w22745;"
+    },
+    {
+      "before": "  assign select_1085 = sfu_valid_pipe[1] ? 1'b0 : w22746;",
+      "after": "  assign select_1085 = w22746;"
+    },
+    {
+      "before": "  assign select_1086 = sfu_valid_pipe[1] ? 1'b0 : w22747;",
+      "after": "  assign select_1086 = w22747;"
+    },
+    {
+      "before": "  assign select_1087 = sfu_valid_pipe[1] ? 1'b0 : w22748;",
+      "after": "  assign select_1087 = w22748;"
+    },
+    {
+      "before": "  assign select_1088 = sfu_valid_pipe[1] ? 1'b0 : w22749;",
+      "after": "  assign select_1088 = w22749;"
+    },
+    {
+      "before": "  assign select_1089 = sfu_valid_pipe[1] ? 1'b0 : w22750;",
+      "after": "  assign select_1089 = w22750;"
+    },
+    {
+      "before": "  assign select_1157 = sfu_valid_pipe[1] ? 1'b0 : w22751;",
+      "after": "  assign select_1157 = w22751;"
+    },
+    {
+      "before": "  assign select_1158 = sfu_valid_pipe[1] ? 1'b0 : w22752;",
+      "after": "  assign select_1158 = w22752;"
+    },
+    {
+      "before": "  assign select_1159 = sfu_valid_pipe[1] ? 1'b0 : w22753;",
+      "after": "  assign select_1159 = w22753;"
+    },
+    {
+      "before": "  assign select_1160 = sfu_valid_pipe[1] ? 1'b0 : w22754;",
+      "after": "  assign select_1160 = w22754;"
+    },
+    {
+      "before": "  assign select_1161 = sfu_valid_pipe[1] ? 1'b0 : w22755;",
+      "after": "  assign select_1161 = w22755;"
+    },
+    {
+      "before": "  assign select_1162 = sfu_valid_pipe[1] ? 1'b0 : w22756;",
+      "after": "  assign select_1162 = w22756;"
+    },
+    {
+      "before": "  assign select_1024 = sfu_valid_pipe[1] ? 1'b0 : w22795;",
+      "after": "  assign select_1024 = w22795;"
+    },
+    {
+      "before": "  assign select_1025 = sfu_valid_pipe[1] ? 1'b0 : w22796;",
+      "after": "  assign select_1025 = w22796;"
+    },
+    {
+      "before": "  assign select_1026 = sfu_valid_pipe[1] ? 1'b0 : w22797;",
+      "after": "  assign select_1026 = w22797;"
+    },
+    {
+      "before": "  assign select_1027 = sfu_valid_pipe[1] ? 1'b0 : w22798;",
+      "after": "  assign select_1027 = w22798;"
+    },
+    {
+      "before": "  assign select_1028 = sfu_valid_pipe[1] ? 1'b0 : w22799;",
+      "after": "  assign select_1028 = w22799;"
+    },
+    {
+      "before": "  assign select_1029 = sfu_valid_pipe[1] ? 1'b0 : w22800;",
+      "after": "  assign select_1029 = w22800;"
+    },
+    {
+      "before": "  assign select_1030 = sfu_valid_pipe[1] ? 1'b0 : w22801;",
+      "after": "  assign select_1030 = w22801;"
+    },
+    {
+      "before": "  assign select_1092 = sfu_valid_pipe[1] ? 1'b0 : w22802;",
+      "after": "  assign select_1092 = w22802;"
+    },
+    {
+      "before": "  assign select_1093 = sfu_valid_pipe[1] ? 1'b0 : w22803;",
+      "after": "  assign select_1093 = w22803;"
+    },
+    {
+      "before": "  assign select_1094 = sfu_valid_pipe[1] ? 1'b0 : w22804;",
+      "after": "  assign select_1094 = w22804;"
+    },
+    {
+      "before": "  assign select_1095 = sfu_valid_pipe[1] ? 1'b0 : w22805;",
+      "after": "  assign select_1095 = w22805;"
+    },
+    {
+      "before": "  assign select_1096 = sfu_valid_pipe[1] ? 1'b0 : w22806;",
+      "after": "  assign select_1096 = w22806;"
+    },
+    {
+      "before": "  assign select_1097 = sfu_valid_pipe[1] ? 1'b0 : w22807;",
+      "after": "  assign select_1097 = w22807;"
+    },
+    {
+      "before": "  assign select_1098 = sfu_valid_pipe[1] ? 1'b0 : w22808;",
+      "after": "  assign select_1098 = w22808;"
+    },
+    {
+      "before": "  assign select_1166 = sfu_valid_pipe[1] ? 1'b0 : w22809;",
+      "after": "  assign select_1166 = w22809;"
+    },
+    {
+      "before": "  assign select_1167 = sfu_valid_pipe[1] ? 1'b0 : w22810;",
+      "after": "  assign select_1167 = w22810;"
+    },
+    {
+      "before": "  assign select_1168 = sfu_valid_pipe[1] ? 1'b0 : w22811;",
+      "after": "  assign select_1168 = w22811;"
+    },
+    {
+      "before": "  assign select_1169 = sfu_valid_pipe[1] ? 1'b0 : w22812;",
+      "after": "  assign select_1169 = w22812;"
+    },
+    {
+      "before": "  assign select_1170 = sfu_valid_pipe[1] ? 1'b0 : w22813;",
+      "after": "  assign select_1170 = w22813;"
+    },
+    {
+      "before": "  assign select_1171 = sfu_valid_pipe[1] ? 1'b0 : w22814;",
+      "after": "  assign select_1171 = w22814;"
+    },
+    {
+      "before": "  assign select_1034 = sfu_valid_pipe[1] ? 1'b0 : w22853;",
+      "after": "  assign select_1034 = w22853;"
+    },
+    {
+      "before": "  assign select_1035 = sfu_valid_pipe[1] ? 1'b0 : w22854;",
+      "after": "  assign select_1035 = w22854;"
+    },
+    {
+      "before": "  assign select_1036 = sfu_valid_pipe[1] ? 1'b0 : w22855;",
+      "after": "  assign select_1036 = w22855;"
+    },
+    {
+      "before": "  assign select_1037 = sfu_valid_pipe[1] ? 1'b0 : w22856;",
+      "after": "  assign select_1037 = w22856;"
+    },
+    {
+      "before": "  assign select_1038 = sfu_valid_pipe[1] ? 1'b0 : w22857;",
+      "after": "  assign select_1038 = w22857;"
+    },
+    {
+      "before": "  assign select_1039 = sfu_valid_pipe[1] ? 1'b0 : w22858;",
+      "after": "  assign select_1039 = w22858;"
+    },
+    {
+      "before": "  assign select_1040 = sfu_valid_pipe[1] ? 1'b0 : w22859;",
+      "after": "  assign select_1040 = w22859;"
+    },
+    {
+      "before": "  assign select_1103 = sfu_valid_pipe[1] ? 1'b0 : w22860;",
+      "after": "  assign select_1103 = w22860;"
+    },
+    {
+      "before": "  assign select_1104 = sfu_valid_pipe[1] ? 1'b0 : w22861;",
+      "after": "  assign select_1104 = w22861;"
+    },
+    {
+      "before": "  assign select_1105 = sfu_valid_pipe[1] ? 1'b0 : w22862;",
+      "after": "  assign select_1105 = w22862;"
+    },
+    {
+      "before": "  assign select_1106 = sfu_valid_pipe[1] ? 1'b0 : w22863;",
+      "after": "  assign select_1106 = w22863;"
+    },
+    {
+      "before": "  assign select_1107 = sfu_valid_pipe[1] ? 1'b0 : w22864;",
+      "after": "  assign select_1107 = w22864;"
+    },
+    {
+      "before": "  assign select_1108 = sfu_valid_pipe[1] ? 1'b0 : w22865;",
+      "after": "  assign select_1108 = w22865;"
+    },
+    {
+      "before": "  assign select_1109 = sfu_valid_pipe[1] ? 1'b0 : w22866;",
+      "after": "  assign select_1109 = w22866;"
+    },
+    {
+      "before": "  assign select_1177 = sfu_valid_pipe[1] ? 1'b0 : w22867;",
+      "after": "  assign select_1177 = w22867;"
+    },
+    {
+      "before": "  assign select_1178 = sfu_valid_pipe[1] ? 1'b0 : w22868;",
+      "after": "  assign select_1178 = w22868;"
+    },
+    {
+      "before": "  assign select_1179 = sfu_valid_pipe[1] ? 1'b0 : w22869;",
+      "after": "  assign select_1179 = w22869;"
+    },
+    {
+      "before": "  assign select_1180 = sfu_valid_pipe[1] ? 1'b0 : w22870;",
+      "after": "  assign select_1180 = w22870;"
+    },
+    {
+      "before": "  assign select_1181 = sfu_valid_pipe[1] ? 1'b0 : w22871;",
+      "after": "  assign select_1181 = w22871;"
+    },
+    {
+      "before": "  assign select_1182 = sfu_valid_pipe[1] ? 1'b0 : w22872;",
+      "after": "  assign select_1182 = w22872;"
+    },
+    {
+      "before": "  assign select_868 = sfu_valid_pipe[1] ? 1'b0 : w22897;",
+      "after": "  assign select_868 = w22897;"
+    },
+    {
+      "before": "  assign select_869 = sfu_valid_pipe[1] ? 1'b0 : w22898;",
+      "after": "  assign select_869 = w22898;"
+    },
+    {
+      "before": "  assign select_870 = sfu_valid_pipe[1] ? 1'b0 : w22899;",
+      "after": "  assign select_870 = w22899;"
+    },
+    {
+      "before": "  assign select_871 = sfu_valid_pipe[1] ? 1'b0 : w22900;",
+      "after": "  assign select_871 = w22900;"
+    },
+    {
+      "before": "  assign select_872 = sfu_valid_pipe[1] ? 1'b0 : w22901;",
+      "after": "  assign select_872 = w22901;"
+    },
+    {
+      "before": "  assign select_873 = sfu_valid_pipe[1] ? 1'b0 : w22902;",
+      "after": "  assign select_873 = w22902;"
+    },
+    {
+      "before": "  assign select_874 = sfu_valid_pipe[1] ? 1'b0 : w22903;",
+      "after": "  assign select_874 = w22903;"
+    },
+    {
+      "before": "  assign select_977 = sfu_valid_pipe[1] ? 1'b0 : w22904;",
+      "after": "  assign select_977 = w22904;"
+    },
+    {
+      "before": "  assign select_978 = sfu_valid_pipe[1] ? 1'b0 : w22905;",
+      "after": "  assign select_978 = w22905;"
+    },
+    {
+      "before": "  assign select_979 = sfu_valid_pipe[1] ? 1'b0 : w22906;",
+      "after": "  assign select_979 = w22906;"
+    },
+    {
+      "before": "  assign select_980 = sfu_valid_pipe[1] ? 1'b0 : w22907;",
+      "after": "  assign select_980 = w22907;"
+    },
+    {
+      "before": "  assign select_981 = sfu_valid_pipe[1] ? 1'b0 : w22908;",
+      "after": "  assign select_981 = w22908;"
+    },
+    {
+      "before": "  assign select_982 = sfu_valid_pipe[1] ? 1'b0 : w22909;",
+      "after": "  assign select_982 = w22909;"
+    },
+    {
+      "before": "  assign select_983 = sfu_valid_pipe[1] ? 1'b0 : w22910;",
+      "after": "  assign select_983 = w22910;"
+    },
+    {
+      "before": "  assign select_1188 = sfu_valid_pipe[1] ? 1'b0 : w22925;",
+      "after": "  assign select_1188 = w22925;"
+    },
+    {
+      "before": "  assign select_1189 = sfu_valid_pipe[1] ? 1'b0 : w22926;",
+      "after": "  assign select_1189 = w22926;"
+    },
+    {
+      "before": "  assign select_1190 = sfu_valid_pipe[1] ? 1'b0 : w22927;",
+      "after": "  assign select_1190 = w22927;"
+    },
+    {
+      "before": "  assign select_1191 = sfu_valid_pipe[1] ? 1'b0 : w22928;",
+      "after": "  assign select_1191 = w22928;"
+    },
+    {
+      "before": "  assign select_1192 = sfu_valid_pipe[1] ? 1'b0 : w22929;",
+      "after": "  assign select_1192 = w22929;"
+    },
+    {
+      "before": "  assign select_1193 = sfu_valid_pipe[1] ? 1'b0 : w22930;",
+      "after": "  assign select_1193 = w22930;"
+    }
+  ],
+  "proof_log_sha256": "23b58022b94150e8aed281314d2e41ca4c27cd323b6a1236bf56d4391e402180"
+}

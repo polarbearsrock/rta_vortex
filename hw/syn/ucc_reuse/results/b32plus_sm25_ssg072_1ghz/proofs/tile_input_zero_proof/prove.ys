@@ -1,0 +1,5 @@
+read_verilog miter.v
+prep -top miter
+flatten
+opt
+sat -seq 2 -prove eq 1 -prove-skip 1 -verify

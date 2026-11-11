@@ -1,0 +1,92 @@
+{
+  "source_run": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus_sm25_fixed/b32plus_tilezero_preselect_live_sfu6",
+  "checkpoint": "final",
+  "retiming": false,
+  "synthesis": false,
+  "final_ppa": true,
+  "input_sha256": {
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus_sm25_fixed/b32plus_tilezero_preselect_live_sfu6/final.db": "875101f2a0d57f964f6b78e880273585d1178a1af88aba98dab3f3414e158308",
+    "build_ucc_b32plus/b32plus_tilezero_preselect_live_sfu6/pipeline.json": "2246f82f92eefd680431fe6e9c4a0f70ec91d21ef46935f45fdc67058441ece0",
+    "build_ucc_b32plus/b32plus_tilezero_preselect_live_sfu6/graph.json": "0960b5009e31192dc893d1140e4560133b4a34b8392173a727af15622d7fb1d8",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/area_sm25_tilezero_preselect_live_final/analyze.tcl": "8086db39f1339c9600ee64ff8ef9cf907e1b31c1b85b46ba14bc45784c9ee3b2"
+  },
+  "scope": "Physical endpoint-cone attribution, not original module area. Mode-disabled arcs traversed; overlapping cones form disjoint shared buckets.",
+  "complete": true,
+  "analysis_script_sha256": "202470913b1ef7cabff56f9b5c842269fcf8b8c72f97a5baabf6d24a79041fe7",
+  "cell_area_um2": 46711.098,
+  "reported_cell_area_um2": 46711.098,
+  "buckets": {
+    "normal_s3 + sfu_s4": {
+      "instances": 12819,
+      "area_um2": 12065.256
+    },
+    "normal_s1 + sfu_s2": {
+      "instances": 5831,
+      "area_um2": 3262.14
+    },
+    "normal_s1 + sfu_s1": {
+      "instances": 5558,
+      "area_um2": 3828.258
+    },
+    "normal_s2 + sfu_s3": {
+      "instances": 6694,
+      "area_um2": 6322.806
+    },
+    "normal_s2 + sfu_s2": {
+      "instances": 2385,
+      "area_um2": 2006.172
+    },
+    "normal_s2 + sfu_s2 + sfu_s3": {
+      "instances": 81,
+      "area_um2": 49.77
+    },
+    "normal_s1 + normal_s2 + sfu_s2": {
+      "instances": 1814,
+      "area_um2": 1707.174
+    },
+    "normal_s1 + sfu_s1 + sfu_s2": {
+      "instances": 2733,
+      "area_um2": 2337.93
+    },
+    "normal_s1 + sfu_s1 + sfu_s2 + sfu_s3": {
+      "instances": 135,
+      "area_um2": 113.274
+    },
+    "normal_s4 + sfu_s5": {
+      "instances": 1590,
+      "area_um2": 1089.648
+    },
+    "sequential": {
+      "instances": 4793,
+      "area_um2": 11733.246
+    },
+    "output": {
+      "instances": 449,
+      "area_um2": 322.056
+    },
+    "normal_s5 + sfu_s6": {
+      "instances": 1486,
+      "area_um2": 1042.524
+    },
+    "unassigned": {
+      "instances": 4,
+      "area_um2": 2.016
+    },
+    "normal_s1 + sfu_s1 + sfu_s3": {
+      "instances": 276,
+      "area_um2": 150.822
+    },
+    "normal_s1 + sfu_s3": {
+      "instances": 46,
+      "area_um2": 18.396
+    },
+    "normal_s1 + normal_s2 + sfu_s2 + sfu_s3": {
+      "instances": 807,
+      "area_um2": 659.358
+    },
+    "normal_s1 + normal_s3 + normal_s4 + normal_s5 + sfu_s1 + sfu_s2 + sfu_s3 + sfu_s4 + sfu_s5 + sfu_s6": {
+      "instances": 1,
+      "area_um2": 0.252
+    }
+  }
+}

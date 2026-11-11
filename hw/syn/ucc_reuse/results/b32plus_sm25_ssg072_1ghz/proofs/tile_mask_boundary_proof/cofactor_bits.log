@@ -1,0 +1,231 @@
+
+-- Running command `read_json cofactor.json; techmap; opt; write_json cofactor_bits.json' --
+
+1. Executing JSON frontend.
+Importing module cofactor from JSON tree.
+
+2. Executing TECHMAP pass (map to technology primitives).
+
+2.1. Executing Verilog-2005 frontend: /share/techmap.v
+Parsing Verilog input from `/share/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+2.2. Continuing TECHMAP pass.
+Running "alumacc" on wrapper $extern:wrap:$add:A_SIGNED=0:A_WIDTH=24:B_SIGNED=0:B_WIDTH=24:Y_WIDTH=24:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$add:A_SIGNED=0:A_WIDTH=24:B_SIGNED=0:B_WIDTH=24:Y_WIDTH=24:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$add:A_SIGNED=0:A_WIDTH=24:B_SIGNED=0:B_WIDTH=24:Y_WIDTH=24:394426c56d1a028ba8fdd5469b163e04011def47.
+Running "alumacc" on wrapper $extern:wrap:$add:A_SIGNED=0:A_WIDTH=8:B_SIGNED=0:B_WIDTH=24:Y_WIDTH=24:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$add:A_SIGNED=0:A_WIDTH=8:B_SIGNED=0:B_WIDTH=24:Y_WIDTH=24:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$add:A_SIGNED=0:A_WIDTH=8:B_SIGNED=0:B_WIDTH=24:Y_WIDTH=24:394426c56d1a028ba8fdd5469b163e04011def47.
+Running "alumacc" on wrapper $extern:wrap:$mul:A_SIGNED=0:A_WIDTH=4:B_SIGNED=0:B_WIDTH=4:Y_WIDTH=8:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$mul:A_SIGNED=0:A_WIDTH=4:B_SIGNED=0:B_WIDTH=4:Y_WIDTH=8:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$mul:A_SIGNED=0:A_WIDTH=4:B_SIGNED=0:B_WIDTH=4:Y_WIDTH=8:394426c56d1a028ba8fdd5469b163e04011def47.
+Running "alumacc" on wrapper $extern:wrap:$mul:A_SIGNED=0:A_WIDTH=3:B_SIGNED=0:B_WIDTH=3:Y_WIDTH=6:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$mul:A_SIGNED=0:A_WIDTH=3:B_SIGNED=0:B_WIDTH=3:Y_WIDTH=6:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$mul:A_SIGNED=0:A_WIDTH=3:B_SIGNED=0:B_WIDTH=3:Y_WIDTH=6:394426c56d1a028ba8fdd5469b163e04011def47.
+Running "alumacc" on wrapper $extern:wrap:$mul:A_SIGNED=0:A_WIDTH=3:B_SIGNED=0:B_WIDTH=4:Y_WIDTH=7:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$mul:A_SIGNED=0:A_WIDTH=3:B_SIGNED=0:B_WIDTH=4:Y_WIDTH=7:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$mul:A_SIGNED=0:A_WIDTH=3:B_SIGNED=0:B_WIDTH=4:Y_WIDTH=7:394426c56d1a028ba8fdd5469b163e04011def47.
+Running "alumacc" on wrapper $extern:wrap:$mul:A_SIGNED=0:A_WIDTH=4:B_SIGNED=0:B_WIDTH=3:Y_WIDTH=7:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$mul:A_SIGNED=0:A_WIDTH=4:B_SIGNED=0:B_WIDTH=3:Y_WIDTH=7:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$mul:A_SIGNED=0:A_WIDTH=4:B_SIGNED=0:B_WIDTH=3:Y_WIDTH=7:394426c56d1a028ba8fdd5469b163e04011def47.
+Running "alumacc" on wrapper $extern:wrap:$mul:A_SIGNED=0:A_WIDTH=4:B_SIGNED=0:B_WIDTH=2:Y_WIDTH=6:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$mul:A_SIGNED=0:A_WIDTH=4:B_SIGNED=0:B_WIDTH=2:Y_WIDTH=6:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$mul:A_SIGNED=0:A_WIDTH=4:B_SIGNED=0:B_WIDTH=2:Y_WIDTH=6:394426c56d1a028ba8fdd5469b163e04011def47.
+Running "alumacc" on wrapper $extern:wrap:$mul:A_SIGNED=0:A_WIDTH=3:B_SIGNED=0:B_WIDTH=2:Y_WIDTH=5:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$mul:A_SIGNED=0:A_WIDTH=3:B_SIGNED=0:B_WIDTH=2:Y_WIDTH=5:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$mul:A_SIGNED=0:A_WIDTH=3:B_SIGNED=0:B_WIDTH=2:Y_WIDTH=5:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $paramod$29d3d723e2c9a54df62a83d5064c4f03fe8f57c9\_90_alu for cells of type $alu.
+Using template $paramod$e82d3fc1811c5751348a3964470632b35a435fc7\_90_alu for cells of type $alu.
+Using extmapper maccmap for cells of type $macc_v2.
+  add { \boundary [190] \boundary [191] \boundary [192] \boundary [193] } * { \boundary [194] \boundary [195] \boundary [196] \boundary [197] } (4x4 bits, unsigned)
+  add { \boundary [78] \boundary [79] \boundary [80] } * { \boundary [25] \boundary [26] \boundary [27] } (3x3 bits, unsigned)
+  add { \boundary [28] \boundary [29] \boundary [30] \boundary [31] } * { \boundary [78] \boundary [79] \boundary [80] } (4x3 bits, unsigned)
+  add { \boundary [32] \boundary [33] \boundary [34] \boundary [35] } * { \boundary [78] \boundary [79] \boundary [80] } (4x3 bits, unsigned)
+  add { 1'0 \boundary [218] \boundary [219] \boundary [220] } * { \boundary [225] \boundary [226] \boundary [227] } (4x3 bits, unsigned)
+  add { \boundary [209] \boundary [210] \boundary [211] \boundary [212] } * { \boundary [225] \boundary [226] \boundary [227] } (4x3 bits, unsigned)
+  add { 1'0 \boundary [366] \boundary [367] \boundary [368] } * { \boundary [369] \boundary [370] } (4x2 bits, unsigned)
+  add { \boundary [373] \boundary [374] \boundary [375] \boundary [376] } * { \boundary [377] \boundary [378] \boundary [379] \boundary [380] } (4x4 bits, unsigned)
+  add { 1'0 \boundary [218] \boundary [219] \boundary [220] } * { \boundary [221] \boundary [222] \boundary [223] \boundary [224] } (4x4 bits, unsigned)
+  add { \boundary [209] \boundary [210] \boundary [211] \boundary [212] } * { \boundary [213] \boundary [214] } (4x2 bits, unsigned)
+  add { \boundary [81] \boundary [82] \boundary [83] } * { \boundary [11] \boundary [12] \boundary [13] } (3x3 bits, unsigned)
+  add { 3'000 \boundary [243] } * { \boundary [244] \boundary [245] \boundary [246] } (4x3 bits, unsigned)
+  add { \boundary [232] \boundary [233] \boundary [234] \boundary [235] } * { \boundary [244] \boundary [245] \boundary [246] } (4x3 bits, unsigned)
+  add { \boundary [84] \boundary [85] \boundary [86] \boundary [87] } * { \boundary [11] \boundary [12] \boundary [13] } (4x3 bits, unsigned)
+  add { \boundary [88] \boundary [89] \boundary [90] \boundary [91] } * { \boundary [11] \boundary [12] \boundary [13] } (4x3 bits, unsigned)
+  add { \boundary [381] \boundary [382] \boundary [383] \boundary [384] } * { \boundary [385] \boundary [386] \boundary [387] \boundary [388] } (4x4 bits, unsigned)
+  add { \boundary [389] \boundary [390] \boundary [391] \boundary [392] } * { 3'000 \boundary [396] } (4x4 bits, unsigned)
+  add { \boundary [236] \boundary [237] \boundary [238] \boundary [239] } * { 3'000 \boundary [243] } (4x4 bits, unsigned)
+  add { \boundary [228] \boundary [229] \boundary [230] \boundary [231] } * { \boundary [232] \boundary [233] \boundary [234] \boundary [235] } (4x4 bits, unsigned)
+  add { \boundary [259] \boundary [260] \boundary [261] \boundary [262] } * { \boundary [266] \boundary [267] \boundary [268] } (4x3 bits, unsigned)
+  add { \boundary [266] \boundary [267] \boundary [268] } * { \boundary [251] \boundary [252] } (3x2 bits, unsigned)
+  add { \boundary [255] \boundary [256] \boundary [257] \boundary [258] } * { \boundary [263] \boundary [264] \boundary [265] } (4x3 bits, unsigned)
+  add { \boundary [247] \boundary [248] \boundary [249] \boundary [250] } * { \boundary [263] \boundary [264] \boundary [265] } (4x3 bits, unsigned)
+  add { \boundary [397] \boundary [398] \boundary [399] \boundary [400] } * { \boundary [401] \boundary [402] } (4x2 bits, unsigned)
+  add { \boundary [405] \boundary [406] \boundary [407] \boundary [408] } * { \boundary [409] \boundary [410] \boundary [411] \boundary [412] } (4x4 bits, unsigned)
+  add { \boundary [255] \boundary [256] \boundary [257] \boundary [258] } * { \boundary [259] \boundary [260] \boundary [261] \boundary [262] } (4x4 bits, unsigned)
+  add { \boundary [247] \boundary [248] \boundary [249] \boundary [250] } * { \boundary [251] \boundary [252] } (4x2 bits, unsigned)
+  add { \boundary [58] \boundary [59] \boundary [60] } * { \boundary [36] \boundary [37] \boundary [38] } (3x3 bits, unsigned)
+  add { \boundary [39] \boundary [40] \boundary [41] \boundary [42] } * { \boundary [58] \boundary [59] \boundary [60] } (4x3 bits, unsigned)
+  add { \boundary [43] \boundary [44] \boundary [45] \boundary [46] } * { \boundary [58] \boundary [59] \boundary [60] } (4x3 bits, unsigned)
+  add { 1'0 \boundary [101] \boundary [102] \boundary [103] } * { 2'00 \boundary [110] } (4x3 bits, unsigned)
+  add { \boundary [92] \boundary [93] \boundary [94] \boundary [95] } * { 2'00 \boundary [110] } (4x3 bits, unsigned)
+  add { 1'0 \boundary [270] \boundary [271] \boundary [272] } * { \boundary [273] \boundary [274] \boundary [275] \boundary [276] } (4x4 bits, unsigned)
+  add { \boundary [277] \boundary [278] \boundary [279] \boundary [280] } * { \boundary [281] \boundary [282] \boundary [283] \boundary [284] } (4x4 bits, unsigned)
+  add { 1'0 \boundary [101] \boundary [102] \boundary [103] } * { \boundary [104] \boundary [105] \boundary [106] \boundary [107] } (4x4 bits, unsigned)
+  add { \boundary [92] \boundary [93] \boundary [94] \boundary [95] } * { \boundary [96] \boundary [97] \boundary [98] \boundary [99] } (4x4 bits, unsigned)
+  add { \boundary [61] \boundary [62] \boundary [63] } * { \boundary [47] \boundary [48] \boundary [49] } (3x3 bits, unsigned)
+  add { \boundary [50] \boundary [51] \boundary [52] \boundary [53] } * { \boundary [61] \boundary [62] \boundary [63] } (4x3 bits, unsigned)
+  add { \boundary [54] \boundary [55] \boundary [56] \boundary [57] } * { \boundary [61] \boundary [62] \boundary [63] } (4x3 bits, unsigned)
+  add { 1'0 \boundary [120] \boundary [121] \boundary [122] } * { \boundary [127] \boundary [128] \boundary [129] } (4x3 bits, unsigned)
+  add { \boundary [111] \boundary [112] \boundary [113] \boundary [114] } * { \boundary [127] \boundary [128] \boundary [129] } (4x3 bits, unsigned)
+  add { 1'0 \boundary [286] \boundary [287] \boundary [288] } * { \boundary [289] \boundary [290] \boundary [291] } (4x3 bits, unsigned)
+  add { \boundary [293] \boundary [294] \boundary [295] \boundary [296] } * { \boundary [297] \boundary [298] \boundary [299] \boundary [300] } (4x4 bits, unsigned)
+  add { 1'0 \boundary [120] \boundary [121] \boundary [122] } * { \boundary [123] \boundary [124] \boundary [125] \boundary [126] } (4x4 bits, unsigned)
+  add { \boundary [111] \boundary [112] \boundary [113] \boundary [114] } * { \boundary [115] \boundary [116] \boundary [117] } (4x3 bits, unsigned)
+  add { \boundary [149] \boundary [150] \boundary [151] } * { 2'00 \boundary [148] } (3x3 bits, unsigned)
+  add { \boundary [142] \boundary [143] \boundary [144] \boundary [145] } * { \boundary [149] \boundary [150] \boundary [151] } (4x3 bits, unsigned)
+  add { \boundary [134] \boundary [135] \boundary [136] \boundary [137] } * { \boundary [149] \boundary [150] \boundary [151] } (4x3 bits, unsigned)
+  add { \boundary [138] \boundary [139] \boundary [140] \boundary [141] } * { 2'00 \boundary [148] } (4x3 bits, unsigned)
+  add { \boundary [130] \boundary [131] \boundary [132] \boundary [133] } * { 2'00 \boundary [148] } (4x3 bits, unsigned)
+  add { \boundary [301] \boundary [302] \boundary [303] \boundary [304] } * { \boundary [305] \boundary [306] \boundary [307] \boundary [308] } (4x4 bits, unsigned)
+  add { \boundary [309] \boundary [310] \boundary [311] \boundary [312] } * { \boundary [313] \boundary [314] \boundary [315] \boundary [316] } (4x4 bits, unsigned)
+  add { \boundary [138] \boundary [139] \boundary [140] \boundary [141] } * { \boundary [142] \boundary [143] \boundary [144] \boundary [145] } (4x4 bits, unsigned)
+  add { \boundary [130] \boundary [131] \boundary [132] \boundary [133] } * { \boundary [134] \boundary [135] \boundary [136] \boundary [137] } (4x4 bits, unsigned)
+  add { \boundary [164] \boundary [165] \boundary [166] \boundary [167] } * { \boundary [171] \boundary [172] \boundary [173] } (4x3 bits, unsigned)
+  add { \boundary [171] \boundary [172] \boundary [173] } * { \boundary [156] \boundary [157] \boundary [158] } (3x3 bits, unsigned)
+  add { \boundary [160] \boundary [161] \boundary [162] \boundary [163] } * { \boundary [168] \boundary [169] \boundary [170] } (4x3 bits, unsigned)
+  add { \boundary [152] \boundary [153] \boundary [154] \boundary [155] } * { \boundary [168] \boundary [169] \boundary [170] } (4x3 bits, unsigned)
+  add { \boundary [317] \boundary [318] \boundary [319] \boundary [320] } * { \boundary [321] \boundary [322] \boundary [323] } (4x3 bits, unsigned)
+  add { \boundary [325] \boundary [326] \boundary [327] \boundary [328] } * { \boundary [329] \boundary [330] \boundary [331] \boundary [332] } (4x4 bits, unsigned)
+  add { \boundary [160] \boundary [161] \boundary [162] \boundary [163] } * { \boundary [164] \boundary [165] \boundary [166] \boundary [167] } (4x4 bits, unsigned)
+  add { \boundary [152] \boundary [153] \boundary [154] \boundary [155] } * { \boundary [156] \boundary [157] \boundary [158] } (4x3 bits, unsigned)
+  add { \boundary [64] \boundary [65] \boundary [66] } * { \boundary [0] \boundary [1] \boundary [2] } (3x3 bits, unsigned)
+  add { \boundary [3] \boundary [4] \boundary [5] \boundary [6] } * { \boundary [64] \boundary [65] \boundary [66] } (4x3 bits, unsigned)
+  add { \boundary [7] \boundary [8] \boundary [9] \boundary [10] } * { \boundary [64] \boundary [65] \boundary [66] } (4x3 bits, unsigned)
+  add { \boundary [67] \boundary [68] \boundary [69] \boundary [70] } * { \boundary [0] \boundary [1] \boundary [2] } (4x3 bits, unsigned)
+  add { \boundary [71] \boundary [72] \boundary [73] \boundary [74] } * { \boundary [0] \boundary [1] \boundary [2] } (4x3 bits, unsigned)
+  add { 1'0 \boundary [334] \boundary [335] \boundary [336] } * { \boundary [337] \boundary [338] \boundary [339] \boundary [340] } (4x4 bits, unsigned)
+  add { \boundary [341] \boundary [342] \boundary [343] \boundary [344] } * { 3'000 \boundary [348] } (4x4 bits, unsigned)
+  add { 1'0 \boundary [183] \boundary [184] \boundary [185] } * { 3'000 \boundary [189] } (4x4 bits, unsigned)
+  add { \boundary [174] \boundary [175] \boundary [176] \boundary [177] } * { \boundary [178] \boundary [179] \boundary [180] \boundary [181] } (4x4 bits, unsigned)
+  add { \boundary [75] \boundary [76] \boundary [77] } * { \boundary [14] \boundary [15] \boundary [16] } (3x3 bits, unsigned)
+  add { \boundary [17] \boundary [18] \boundary [19] \boundary [20] } * { \boundary [75] \boundary [76] \boundary [77] } (4x3 bits, unsigned)
+  add { \boundary [21] \boundary [22] \boundary [23] \boundary [24] } * { \boundary [75] \boundary [76] \boundary [77] } (4x3 bits, unsigned)
+  add { 1'0 \boundary [199] \boundary [200] \boundary [201] } * { \boundary [206] \boundary [207] \boundary [208] } (4x3 bits, unsigned)
+  add { \boundary [190] \boundary [191] \boundary [192] \boundary [193] } * { \boundary [206] \boundary [207] \boundary [208] } (4x3 bits, unsigned)
+  add { 1'0 \boundary [350] \boundary [351] \boundary [352] } * { \boundary [353] \boundary [354] \boundary [355] \boundary [356] } (4x4 bits, unsigned)
+  add { \boundary [357] \boundary [358] \boundary [359] \boundary [360] } * { \boundary [361] \boundary [362] \boundary [363] \boundary [364] } (4x4 bits, unsigned)
+  add { 1'0 \boundary [199] \boundary [200] \boundary [201] } * { \boundary [202] \boundary [203] \boundary [204] \boundary [205] } (4x4 bits, unsigned)
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000001000 for cells of type $fa.
+Using template $paramod$a1bc51c02ce12ac21eb18988e83292af48ed7d72\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $and.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000000111 for cells of type $fa.
+Using template $paramod$dbcdc7e8aa1a4080cea2deda6fdc8772064f4d90\_90_alu for cells of type $alu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000000110 for cells of type $fa.
+Using template $paramod$00298f3f8094950cb9a5ff2fda48d0d8bde8806c\_90_alu for cells of type $alu.
+Using template $paramod$b18e16801adf491a64caa0542270798e5d4ac6b6\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $xor.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000011000 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000011000 for cells of type $lcu.
+Using extmapper simplemap for cells of type $pos.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $or.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000001000 for cells of type $lcu.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000111 for cells of type $lcu.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000110 for cells of type $lcu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000000101 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000101 for cells of type $lcu.
+No more expansions possible.
+<suppressed ~10300 debug messages>
+
+3. Executing OPT pass (performing simple optimizations).
+
+3.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cofactor.
+<suppressed ~20240 debug messages>
+
+3.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cofactor'.
+Computing hashes of 6452 cells of `\cofactor'.
+Finding duplicate cells in `\cofactor'.
+Computing hashes of 6370 cells of `\cofactor'.
+Finding duplicate cells in `\cofactor'.
+Computing hashes of 6355 cells of `\cofactor'.
+Finding duplicate cells in `\cofactor'.
+<suppressed ~291 debug messages>
+Removed a total of 97 cells.
+
+3.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \cofactor..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+3.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \cofactor.
+Performed a total of 0 changes.
+
+3.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cofactor'.
+Computing hashes of 6355 cells of `\cofactor'.
+Finding duplicate cells in `\cofactor'.
+Removed a total of 0 cells.
+
+3.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cofactor..
+Removed 5080 unused cells and 12287 unused wires.
+<suppressed ~5288 debug messages>
+
+3.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cofactor.
+
+3.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \cofactor..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+3.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \cofactor.
+Performed a total of 0 changes.
+
+3.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cofactor'.
+Computing hashes of 1275 cells of `\cofactor'.
+Finding duplicate cells in `\cofactor'.
+Removed a total of 0 cells.
+
+3.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cofactor..
+
+3.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cofactor.
+
+3.16. Finished fast OPT passes. (There is nothing left to do.)
+
+4. Executing JSON backend.

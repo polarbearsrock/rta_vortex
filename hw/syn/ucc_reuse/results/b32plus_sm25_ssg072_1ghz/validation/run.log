@@ -1,0 +1,2391 @@
+TOOL:	xrun(64)	22.09-s001: Started on Nov 11, 2026 at 07:26:54 PST
+xrun(64): 22.09-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+file: ../b32plus_tilezero_preselect_live_sfu6/design.sv
+	module worklib.or_op_1758:sv
+		errors: 0, warnings: 0
+	module worklib.or_op_1759:sv
+		errors: 0, warnings: 0
+	module worklib.not_op_1760:sv
+		errors: 0, warnings: 0
+	module worklib.or_op_1769:sv
+		errors: 0, warnings: 0
+	module worklib.or_op_1770:sv
+		errors: 0, warnings: 0
+	module worklib.leq_unsigned_13990:sv
+		errors: 0, warnings: 0
+	module worklib.sub_unsigned_14000:sv
+		errors: 0, warnings: 0
+	module worklib.add_signed_11653:sv
+		errors: 0, warnings: 0
+	module worklib.sub_signed_14004:sv
+		errors: 0, warnings: 0
+	module worklib.geq_signed:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_14011:sv
+		errors: 0, warnings: 0
+	module worklib.gt_signed_14014:sv
+		errors: 0, warnings: 0
+	module worklib.add_signed_13326:sv
+		errors: 0, warnings: 0
+	module worklib.sub_signed_14018:sv
+		errors: 0, warnings: 0
+	module worklib.equal_unsigned_11661:sv
+		errors: 0, warnings: 0
+	module worklib.lt_signed:sv
+		errors: 0, warnings: 0
+	module worklib.gt_signed_14026:sv
+		errors: 0, warnings: 0
+	module worklib.sub_signed_14028:sv
+		errors: 0, warnings: 0
+	module worklib.shift_left_vlog_unsigned_15336:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_15338:sv
+		errors: 0, warnings: 0
+	module worklib.geq_signed_11664:sv
+		errors: 0, warnings: 0
+	module worklib.leq_signed_15350:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_15352:sv
+		errors: 0, warnings: 0
+	module worklib.add_signed_15354:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_12459:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_589:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1771:sv
+		errors: 0, warnings: 0
+	module worklib.mux_15371:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_13884:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_878:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_1062:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_11869:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_616:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_578:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_15388:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_15391:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_816:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_15396:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_585:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1772:sv
+		errors: 0, warnings: 0
+	module worklib.mux_15404:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_15405:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_583:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1775:sv
+		errors: 0, warnings: 0
+	module worklib.mux_15408:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_1063:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_11612:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_15428:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_15432:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_1032:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_11875:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_11867:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_579:sv
+		errors: 0, warnings: 0
+	module worklib.leq_unsigned:sv
+		errors: 0, warnings: 0
+	module worklib.geq_unsigned_13924:sv
+		errors: 0, warnings: 0
+	module worklib.leq_unsigned_13927:sv
+		errors: 0, warnings: 0
+	module worklib.geq_unsigned_13930:sv
+		errors: 0, warnings: 0
+	module worklib.lt_unsigned_13942:sv
+		errors: 0, warnings: 0
+	module worklib.not_op:sv
+		errors: 0, warnings: 0
+	module worklib.add_signed:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_535:sv
+		errors: 0, warnings: 0
+	module worklib.geq_unsigned:sv
+		errors: 0, warnings: 0
+	module worklib.lt_unsigned:sv
+		errors: 0, warnings: 0
+	module worklib.sub_unsigned:sv
+		errors: 0, warnings: 0
+	module worklib.sub_signed:sv
+		errors: 0, warnings: 0
+	module worklib.sub_unsigned_539:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_541:sv
+		errors: 0, warnings: 0
+	module worklib.sub_signed_543:sv
+		errors: 0, warnings: 0
+	module worklib.geq_unsigned_550:sv
+		errors: 0, warnings: 0
+	module worklib.sub_unsigned_552:sv
+		errors: 0, warnings: 0
+	module worklib.sub_unsigned_557:sv
+		errors: 0, warnings: 0
+	module worklib.nequal_unsigned:sv
+		errors: 0, warnings: 0
+	module worklib.equal_unsigned_561:sv
+		errors: 0, warnings: 0
+	module worklib.equal_unsigned_566:sv
+		errors: 0, warnings: 0
+	module worklib.sub_signed_568:sv
+		errors: 0, warnings: 0
+	module worklib.sub_signed_570:sv
+		errors: 0, warnings: 0
+	module worklib.add_signed_574:sv
+		errors: 0, warnings: 0
+	module worklib.sub_unsigned_576:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_24:sv
+		errors: 0, warnings: 0
+	module worklib.mux_577:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_25:sv
+		errors: 0, warnings: 0
+	module worklib.mux_584:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_595:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_28:sv
+		errors: 0, warnings: 0
+	module worklib.mux_602:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_611:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_31:sv
+		errors: 0, warnings: 0
+	module worklib.mux_613:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_34:sv
+		errors: 0, warnings: 0
+	module worklib.mux_614:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_615:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_619:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_623:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_626:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_631:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_632:sv
+		errors: 0, warnings: 0
+	module worklib.and_op:sv
+		errors: 0, warnings: 0
+	module worklib.and_op_1:sv
+		errors: 0, warnings: 0
+	module worklib.and_op_3:sv
+		errors: 0, warnings: 0
+	module worklib.and_op_5:sv
+		errors: 0, warnings: 0
+	module worklib.and_op_7:sv
+		errors: 0, warnings: 0
+	module worklib.and_op_9:sv
+		errors: 0, warnings: 0
+	module worklib.and_op_11:sv
+		errors: 0, warnings: 0
+	module worklib.and_op_13:sv
+		errors: 0, warnings: 0
+	module worklib.bmux:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned:sv
+		errors: 0, warnings: 0
+	module worklib.case_box:sv
+		errors: 0, warnings: 0
+	module worklib.mux:sv
+		errors: 0, warnings: 0
+	module worklib.or_op:sv
+		errors: 0, warnings: 0
+	module worklib.or_op_92:sv
+		errors: 0, warnings: 0
+	module worklib.or_op_93:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_687:sv
+		errors: 0, warnings: 0
+	module worklib.sub_signed_689:sv
+		errors: 0, warnings: 0
+	module worklib.gt_signed:sv
+		errors: 0, warnings: 0
+	module worklib.leq_signed:sv
+		errors: 0, warnings: 0
+	module worklib.leq_signed_694:sv
+		errors: 0, warnings: 0
+	module worklib.leq_signed_697:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_699:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_701:sv
+		errors: 0, warnings: 0
+	module worklib.sub_unsigned_705:sv
+		errors: 0, warnings: 0
+	module worklib.leq_signed_708:sv
+		errors: 0, warnings: 0
+	module worklib.sub_signed_710:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_106:sv
+		errors: 0, warnings: 0
+	module worklib.mux_713:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_107:sv
+		errors: 0, warnings: 0
+	module worklib.mux_728:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_110:sv
+		errors: 0, warnings: 0
+	module worklib.mux_729:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_113:sv
+		errors: 0, warnings: 0
+	module worklib.mux_734:sv
+		errors: 0, warnings: 0
+	module worklib.mux_738:sv
+		errors: 0, warnings: 0
+	module worklib.mux_745:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_809:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_811:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_813:sv
+		errors: 0, warnings: 0
+	module worklib.mult_unsigned:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_751:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_753:sv
+		errors: 0, warnings: 0
+	module worklib.mult_unsigned_787:sv
+		errors: 0, warnings: 0
+	module worklib.mult_unsigned_795:sv
+		errors: 0, warnings: 0
+	module worklib.mult_unsigned_803:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_804:sv
+		errors: 0, warnings: 0
+	module worklib.not_op_119:sv
+		errors: 0, warnings: 0
+	module worklib.not_op_120:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_871:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_874:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_877:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_880:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_121:sv
+		errors: 0, warnings: 0
+	module worklib.not_op_122:sv
+		errors: 0, warnings: 0
+	module worklib.and_op_123:sv
+		errors: 0, warnings: 0
+	module worklib.or_op_124:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_125:sv
+		errors: 0, warnings: 0
+	module worklib.not_op_126:sv
+		errors: 0, warnings: 0
+	module worklib.equal_unsigned_891:sv
+		errors: 0, warnings: 0
+	module worklib.equal_unsigned_905:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_945:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_211:sv
+		errors: 0, warnings: 0
+	module worklib.mux_1061:sv
+		errors: 0, warnings: 0
+	module worklib.or_op_162:sv
+		errors: 0, warnings: 0
+	module worklib.or_op_163:sv
+		errors: 0, warnings: 0
+	module worklib.not_op_169:sv
+		errors: 0, warnings: 0
+	module worklib.or_op_172:sv
+		errors: 0, warnings: 0
+	module worklib.lt_unsigned_1011:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_186:sv
+		errors: 0, warnings: 0
+	module worklib.mux_1022:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_187:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_190:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_193:sv
+		errors: 0, warnings: 0
+	module worklib.mux_1031:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_196:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_199:sv
+		errors: 0, warnings: 0
+	module worklib.mux_1045:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_202:sv
+		errors: 0, warnings: 0
+	module worklib.mux_1052:sv
+		errors: 0, warnings: 0
+	module worklib.mux_1054:sv
+		errors: 0, warnings: 0
+	module worklib.and_op_216:sv
+		errors: 0, warnings: 0
+	module worklib.or_op_217:sv
+		errors: 0, warnings: 0
+	module worklib.or_op_219:sv
+		errors: 0, warnings: 0
+	module worklib.or_op_220:sv
+		errors: 0, warnings: 0
+	module worklib.or_op_221:sv
+		errors: 0, warnings: 0
+	module worklib.or_op_226:sv
+		errors: 0, warnings: 0
+	module worklib.or_op_228:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_231:sv
+		errors: 0, warnings: 0
+	module worklib.or_op_239:sv
+		errors: 0, warnings: 0
+	module worklib.or_op_243:sv
+		errors: 0, warnings: 0
+	module worklib.or_op_245:sv
+		errors: 0, warnings: 0
+	module worklib.lt_unsigned_1072:sv
+		errors: 0, warnings: 0
+	module worklib.gt_unsigned:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1419:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1420:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1421:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1422:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1423:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1424:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1425:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1426:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1427:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1428:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1429:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1430:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1431:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1432:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1433:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1434:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1435:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1436:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1437:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1438:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1439:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1440:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1441:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1442:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1443:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1444:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1445:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1446:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1447:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1448:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1449:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1450:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1451:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1452:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1453:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1454:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1455:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1456:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1457:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1458:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1459:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1460:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1461:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1462:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1463:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1464:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1465:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1466:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1467:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1468:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1469:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1470:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1471:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1472:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1473:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1474:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1475:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1476:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1477:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1478:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1479:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1480:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1481:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1482:sv
+		errors: 0, warnings: 0
+	module worklib.and_op_1483:sv
+		errors: 0, warnings: 0
+	module worklib.and_op_1485:sv
+		errors: 0, warnings: 0
+	module worklib.and_op_1486:sv
+		errors: 0, warnings: 0
+	module worklib.or_op_1554:sv
+		errors: 0, warnings: 0
+	module worklib.or_op_1558:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_1334:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_11885:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_11887:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_11889:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_11891:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_11893:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_11913:sv
+		errors: 0, warnings: 0
+	module worklib.nequal_unsigned_12013:sv
+		errors: 0, warnings: 0
+	module worklib.sub_signed_12015:sv
+		errors: 0, warnings: 0
+	module worklib.gt_signed_12018:sv
+		errors: 0, warnings: 0
+	module worklib.sub_unsigned_12020:sv
+		errors: 0, warnings: 0
+	module worklib.gt_signed_12025:sv
+		errors: 0, warnings: 0
+	module worklib.sub_unsigned_12027:sv
+		errors: 0, warnings: 0
+	module worklib.sub_unsigned_12029:sv
+		errors: 0, warnings: 0
+	module worklib.gt_unsigned_12032:sv
+		errors: 0, warnings: 0
+	module worklib.add_signed_1694:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_2584:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_11277:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_11279:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_11281:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_12207:sv
+		errors: 0, warnings: 0
+	module worklib.sub_unsigned_12229:sv
+		errors: 0, warnings: 0
+	module worklib.sub_unsigned_12329:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_12331:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_12333:sv
+		errors: 0, warnings: 0
+	module worklib.gt_unsigned_12336:sv
+		errors: 0, warnings: 0
+	module worklib.mult_unsigned_12430:sv
+		errors: 0, warnings: 0
+	module worklib.and_op_324:sv
+		errors: 0, warnings: 0
+	module worklib.and_op_325:sv
+		errors: 0, warnings: 0
+	module worklib.and_op_326:sv
+		errors: 0, warnings: 0
+	module worklib.and_op_327:sv
+		errors: 0, warnings: 0
+	module worklib.and_op_347:sv
+		errors: 0, warnings: 0
+	module worklib.and_op_348:sv
+		errors: 0, warnings: 0
+	module worklib.and_op_349:sv
+		errors: 0, warnings: 0
+	module worklib.and_op_350:sv
+		errors: 0, warnings: 0
+	module worklib.and_op_370:sv
+		errors: 0, warnings: 0
+	module worklib.and_op_371:sv
+		errors: 0, warnings: 0
+	module worklib.and_op_372:sv
+		errors: 0, warnings: 0
+	module worklib.and_op_373:sv
+		errors: 0, warnings: 0
+	module worklib.and_op_393:sv
+		errors: 0, warnings: 0
+	module worklib.and_op_394:sv
+		errors: 0, warnings: 0
+	module worklib.and_op_395:sv
+		errors: 0, warnings: 0
+	module worklib.and_op_396:sv
+		errors: 0, warnings: 0
+	module worklib.nequal_unsigned_1142:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_401:sv
+		errors: 0, warnings: 0
+	module worklib.mux_2080:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_402:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_405:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_408:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_411:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_414:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_417:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_420:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_423:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_426:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_429:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_432:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_435:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_438:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_441:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_444:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_447:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_450:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_453:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_456:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_459:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_462:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_465:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_468:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_471:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_474:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_477:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_480:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_483:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_486:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_489:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_492:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_495:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_498:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_501:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_504:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_507:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_510:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_513:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_516:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_519:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_522:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_525:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_528:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_531:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_534:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_537:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_540:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_543:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_546:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_549:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_552:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_555:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_558:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_561:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_564:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_567:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_570:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_573:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_576:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_579:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_582:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_585:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_588:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_591:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_594:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_597:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_600:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_603:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_606:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_609:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_612:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_615:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_618:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_621:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_624:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_627:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_630:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_633:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_636:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_639:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_642:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_645:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_648:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_651:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_654:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_657:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_660:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_663:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_666:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_669:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_672:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_675:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_678:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_681:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_684:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_687:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_690:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_693:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_696:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_699:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_702:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_705:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_708:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_711:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_714:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_717:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_720:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_723:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_726:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_729:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_732:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_735:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_738:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_741:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_744:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_747:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_750:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_753:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_756:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_759:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_762:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_765:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_768:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_771:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_774:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_777:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_780:sv
+		errors: 0, warnings: 0
+	module worklib.and_op_252:sv
+		errors: 0, warnings: 0
+	module worklib.and_op_253:sv
+		errors: 0, warnings: 0
+	module worklib.and_op_254:sv
+		errors: 0, warnings: 0
+	module worklib.and_op_255:sv
+		errors: 0, warnings: 0
+	module worklib.and_op_256:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1249:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1250:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1251:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1252:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1253:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1254:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1255:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1256:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1257:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1258:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1259:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1260:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1261:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1262:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1263:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1264:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1265:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1266:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1267:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1268:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1269:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1270:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1271:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1272:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1273:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1274:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1275:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1276:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1277:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1278:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1279:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1280:sv
+		errors: 0, warnings: 0
+	module worklib.xor_op_1281:sv
+		errors: 0, warnings: 0
+	module worklib.shift_right_vlog_unsigned:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_11283:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_11285:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_11339:sv
+		errors: 0, warnings: 0
+	module worklib.mult_unsigned_11405:sv
+		errors: 0, warnings: 0
+	module worklib.sub_signed_11605:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1282:sv
+		errors: 0, warnings: 0
+	module worklib.mux_11613:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1283:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1286:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1289:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1292:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1295:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1298:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1301:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1304:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1307:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1310:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1313:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1316:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1319:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1322:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1325:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1328:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1331:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1334:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1337:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1340:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1343:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1346:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1349:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1352:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1355:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1358:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1361:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1364:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1367:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1370:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1373:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_2320:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_2322:sv
+		errors: 0, warnings: 0
+	module worklib.sub_unsigned_3574:sv
+		errors: 0, warnings: 0
+	module worklib.sub_unsigned_11655:sv
+		errors: 0, warnings: 0
+	module worklib.geq_signed_11659:sv
+		errors: 0, warnings: 0
+	module worklib.sub_signed_11866:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1409:sv
+		errors: 0, warnings: 0
+	module worklib.mux_11868:sv
+		errors: 0, warnings: 0
+	module worklib.shift_left_vlog_unsigned_1985:sv
+		errors: 0, warnings: 0
+	module worklib.shift_right_vlog_unsigned_13264:sv
+		errors: 0, warnings: 0
+	module worklib.not_op_1629:sv
+		errors: 0, warnings: 0
+	module worklib.not_op_1630:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_13266:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_13268:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_13270:sv
+		errors: 0, warnings: 0
+	module worklib.add_signed_13317:sv
+		errors: 0, warnings: 0
+	module worklib.geq_signed_13320:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_13322:sv
+		errors: 0, warnings: 0
+	module worklib.add_signed_13324:sv
+		errors: 0, warnings: 0
+	module worklib.sub_signed_13328:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1631:sv
+		errors: 0, warnings: 0
+	module worklib.mux_13293:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1632:sv
+		errors: 0, warnings: 0
+	module worklib.mux_13294:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1635:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1638:sv
+		errors: 0, warnings: 0
+	module worklib.mux_13297:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1641:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1644:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1647:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1650:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1653:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1656:sv
+		errors: 0, warnings: 0
+	module worklib.mux_13303:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1659:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1662:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1665:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1668:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1671:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1674:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1677:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1680:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1683:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1686:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1689:sv
+		errors: 0, warnings: 0
+	module worklib.case_box_1692:sv
+		errors: 0, warnings: 0
+	module worklib.mux_13315:sv
+		errors: 0, warnings: 0
+	module worklib.shift_left_vlog_unsigned_13880:sv
+		errors: 0, warnings: 0
+	module worklib.or_op_1726:sv
+		errors: 0, warnings: 0
+	module worklib.geq_signed_13883:sv
+		errors: 0, warnings: 0
+	module worklib.or_op_1738:sv
+		errors: 0, warnings: 0
+	module worklib.or_op_1727:sv
+		errors: 0, warnings: 0
+	module worklib.or_op_1728:sv
+		errors: 0, warnings: 0
+	module worklib.or_op_1729:sv
+		errors: 0, warnings: 0
+	module worklib.add_unsigned_13889:sv
+		errors: 0, warnings: 0
+	module worklib.equal_unsigned_13891:sv
+		errors: 0, warnings: 0
+	module worklib.bmux_13897:sv
+		errors: 0, warnings: 0
+	module worklib.CDN_mux2:sv
+		errors: 0, warnings: 0
+	module worklib.CDN_mux4:sv
+		errors: 0, warnings: 0
+	module worklib.CDN_mux5:sv
+		errors: 0, warnings: 0
+	module worklib.CDN_mux6:sv
+		errors: 0, warnings: 0
+	module worklib.CDN_mux7:sv
+		errors: 0, warnings: 0
+	module worklib.CDN_mux3:sv
+		errors: 0, warnings: 0
+	module worklib.CDN_mux11:sv
+		errors: 0, warnings: 0
+	module worklib.CDN_mux8:sv
+		errors: 0, warnings: 0
+	module worklib.CDN_mux33:sv
+		errors: 0, warnings: 0
+	module worklib.CDN_bmux2:sv
+		errors: 0, warnings: 0
+	module worklib.CDN_bmux4:sv
+		errors: 0, warnings: 0
+	module worklib.CDN_bmux8:sv
+		errors: 0, warnings: 0
+	module worklib.CDN_bmux64:sv
+		errors: 0, warnings: 0
+	module worklib.CDN_bmux32:sv
+		errors: 0, warnings: 0
+	module worklib.b32_scalar_product:sv
+		errors: 0, warnings: 0
+	module worklib.ucc_b32_pipe5:sv
+		errors: 0, warnings: 0
+file: ../../hw/syn/ucc_reuse/selected/design.sv
+	package worklib.cf_math_pkg:sv
+		errors: 0, warnings: 0
+	package worklib.fpnew_pkg:sv
+		errors: 0, warnings: 0
+	module worklib.lzc:sv
+		errors: 0, warnings: 0
+	module worklib.fpnew_classifier:sv
+		errors: 0, warnings: 0
+	module worklib.fpnew_rounding:sv
+		errors: 0, warnings: 0
+	package worklib.dpa16_pkg:sv
+		errors: 0, warnings: 0
+	module worklib.dpa16_unpack:sv
+		errors: 0, warnings: 0
+	module worklib.dpa16_mul12:sv
+		errors: 0, warnings: 0
+	module worklib.dpa16_align_sum:sv
+		errors: 0, warnings: 0
+	module worklib.dpa16_norm:sv
+		errors: 0, warnings: 0
+	module worklib.fpnew_noncomp:sv
+		errors: 0, warnings: 0
+	module worklib.fpnew_cast_multi:sv
+		errors: 0, warnings: 0
+	package worklib.ucc_pkg:sv
+		errors: 0, warnings: 0
+	module worklib.ucc_shift:sv
+		errors: 0, warnings: 0
+	module worklib.ucc_fp32_ctrl:sv
+		errors: 0, warnings: 0
+	module worklib.ucc_fp32_norm:sv
+		errors: 0, warnings: 0
+	module worklib.ucc_fp32_preround:sv
+		errors: 0, warnings: 0
+	module worklib.ucc_fp32_round:sv
+		errors: 0, warnings: 0
+	module worklib.dpa16_mul11:sv
+		errors: 0, warnings: 0
+	module worklib.ucc_tiles:sv
+		errors: 0, warnings: 0
+	module worklib.ucc_tilemul:sv
+		errors: 0, warnings: 0
+	module worklib.ucc_int_alu:sv
+		errors: 0, warnings: 0
+	module worklib.ucc_fp_noncomp:sv
+		errors: 0, warnings: 0
+	module worklib.ucc_fp_cast:sv
+		errors: 0, warnings: 0
+	module worklib.ucc_sfu_rom:sv
+		errors: 0, warnings: 0
+	module worklib.ucc_sfu:sv
+		errors: 0, warnings: 0
+	module worklib.ucc_dpa16_core:sv
+		errors: 0, warnings: 0
+	module worklib.ucc_dpa16:sv
+		errors: 0, warnings: 0
+	module worklib.ucc_convert_shared:sv
+		errors: 0, warnings: 0
+	module worklib.ucc_fma:sv
+		errors: 0, warnings: 0
+	module worklib.ucc_lane:sv
+		errors: 0, warnings: 0
+	module worklib.ucc_factored_sum:sv
+		errors: 0, warnings: 0
+	module worklib.ucc_shared_heap:sv
+		errors: 0, warnings: 0
+file: bench.sv
+	module worklib.b32_schedule_tb:sv
+		errors: 0, warnings: 0
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+	Top level design units:
+		fpnew_pkg
+		ucc_pkg
+		dpa16_pkg
+		cf_math_pkg
+		b32_schedule_tb
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+/data/eda_tools/cadence/XCELIUM2209/tools/bin/64bit/xmroot: line 35: cds_root: command not found
+		worklib.fpnew_rounding:sv <0x2bd495e6>
+			streams:   4, words:  2738
+		worklib.ucc_fp32_round:sv <0x0bd52164>
+			streams:  14, words:  5536
+		worklib.ucc_fp32_preround:sv <0x1ff831d2>
+			streams:   7, words:  2422
+		worklib.ucc_shift:sv <0x7301bb99>
+			streams:   1, words:   462
+		worklib.ucc_fp32_norm:sv <0x5248d4f3>
+			streams:   5, words:  2319
+		worklib.ucc_factored_sum:sv <0x39f1231a>
+			streams:   4, words:  2170
+		worklib.ucc_shift:sv <0x0f3f134c>
+			streams:   1, words:   512
+		worklib.dpa16_norm:sv <0x38df7810>
+			streams:   0, words:     0
+		worklib.ucc_shared_heap:sv <0x0a93c938>
+			streams: 731, words: 412243
+		worklib.ucc_dpa16_core:sv <0x71f43ed3>
+			streams:  53, words: 45833
+		worklib.ucc_dpa16:sv <0x6f085e37>
+			streams:  14, words:  5472
+		worklib.ucc_convert_shared:sv <0x61d62e89>
+			streams:  17, words:  8814
+		worklib.ucc_fp_noncomp:sv <0x72ca942e>
+			streams:   9, words:  6356
+		worklib.ucc_tilemul:sv <0x65d0998e>
+			streams:   3, words: 10724
+		worklib.ucc_fp32_ctrl:sv <0x0dfd9ba1>
+			streams:  21, words: 12922
+		worklib.ucc_sfu:sv <0x0399df09>
+			streams:  52, words: 27034
+		worklib.ucc_lane:sv <0x5822927b>
+			streams:   8, words:  2227
+		worklib.add_unsigned_13889:sv <0x64c476ac>
+			streams:   1, words:   332
+		worklib.leq_signed_15350:sv <0x3880c274>
+			streams:   1, words:   301
+		worklib.geq_signed_11664:sv <0x0b0d018e>
+			streams:   1, words:   304
+		worklib.add_signed_15354:sv <0x325c91f7>
+			streams:   1, words:   330
+		worklib.add_unsigned_15352:sv <0x43ff0fb5>
+			streams:   1, words:   280
+		worklib.or_op_1729:sv <0x1c3d9b52>
+			streams:   0, words:     0
+		worklib.or_op_1728:sv <0x23f66034>
+			streams:   0, words:     0
+		worklib.or_op_1727:sv <0x247c65ce>
+			streams:   0, words:     0
+		worklib.equal_unsigned_13891:sv <0x16edd30e>
+			streams:   1, words:   273
+		worklib.or_op_1726:sv <0x5750a8f8>
+			streams:   2, words:  7667
+		worklib.or_op_1769:sv <0x2dac783f>
+			streams:   0, words:     0
+		worklib.geq_signed_13883:sv <0x7c5dd993>
+			streams:   1, words:   250
+		worklib.CDN_bmux4:sv <0x65e85651>
+			streams:   1, words:   288
+		worklib.CDN_bmux4:sv <0x50fa21a7>
+			streams:   0, words:     0
+		worklib.CDN_bmux4:sv <0x0d397541>
+			streams:   0, words:     0
+		worklib.CDN_bmux4:sv <0x71496026>
+			streams:   0, words:     0
+		worklib.or_op_243:sv <0x0ca2eee8>
+			streams:   0, words:     0
+		worklib.case_box_1775:sv <0x5706e331>
+			streams:   0, words:     0
+		worklib.case_box_1772:sv <0x3a71dcb6>
+			streams:   0, words:     0
+		worklib.shift_left_vlog_unsigned_13880:sv <0x53e9bf43>
+			streams:   0, words:     0
+		worklib.sub_signed_14018:sv <0x48e7322b>
+			streams:   1, words:   340
+		worklib.gt_signed_14014:sv <0x1754a591>
+			streams:   1, words:   278
+		worklib.geq_signed_13320:sv <0x13536e71>
+			streams:   1, words:   293
+		worklib.add_signed_13326:sv <0x0ce02e55>
+			streams:   1, words:   340
+		worklib.add_signed_13317:sv <0x1b9186ca>
+			streams:   1, words:   330
+		worklib.geq_signed:sv <0x6b49fd7a>
+			streams:   1, words:   304
+		worklib.sub_signed_13328:sv <0x6d88b00e>
+			streams:   1, words:   368
+		worklib.add_unsigned_13322:sv <0x43af4507>
+			streams:   1, words:   346
+		worklib.add_unsigned_14011:sv <0x49e6e238>
+			streams:   1, words:   332
+		worklib.sub_signed_14004:sv <0x5906b130>
+			streams:   1, words:   354
+		worklib.case_box_1692:sv <0x05c7661c>
+			streams:   1, words:   246
+		worklib.case_box_1656:sv <0x749790a2>
+			streams:   0, words:     0
+		worklib.case_box_1674:sv <0x74dcd522>
+			streams:   1, words:   246
+		worklib.case_box_1638:sv <0x3dab1916>
+			streams:   1, words:   246
+		worklib.case_box_1683:sv <0x29290d48>
+			streams:   0, words:     0
+		worklib.case_box_1665:sv <0x09a4dde1>
+			streams:   0, words:     0
+		worklib.case_box_1647:sv <0x56f88800>
+			streams:   0, words:     0
+		worklib.case_box_1632:sv <0x147923b4>
+			streams:   0, words:     0
+		worklib.case_box_1689:sv <0x1fbf4628>
+			streams:   2, words:   571
+		worklib.case_box_1680:sv <0x11bd3199>
+			streams:   0, words:     0
+		worklib.case_box_1671:sv <0x7296f68e>
+			streams:   0, words:     0
+		worklib.case_box_1662:sv <0x44323fb1>
+			streams:   0, words:     0
+		worklib.case_box_1653:sv <0x579c8412>
+			streams:   0, words:     0
+		worklib.case_box_1644:sv <0x297badcf>
+			streams:   0, words:     0
+		worklib.case_box_1635:sv <0x6aa9c200>
+			streams:   0, words:     0
+		worklib.case_box_1631:sv <0x22ea22e2>
+			streams:   0, words:     0
+		worklib.case_box_1686:sv <0x451c7875>
+			streams:   1, words:   298
+		worklib.case_box_1677:sv <0x2539b4c1>
+			streams:   0, words:     0
+		worklib.case_box_1668:sv <0x2412b71d>
+			streams:   0, words:     0
+		worklib.case_box_1659:sv <0x48aede69>
+			streams:   0, words:     0
+		worklib.case_box_1650:sv <0x18374aa8>
+			streams:   0, words:     0
+		worklib.case_box_1641:sv <0x48141e98>
+			streams:   0, words:     0
+		worklib.CDN_bmux32:sv <0x786514e0>
+			streams:  33, words: 11647
+		worklib.equal_unsigned_11661:sv <0x108cc30f>
+			streams:   1, words:   414
+		worklib.add_unsigned_13270:sv <0x2b40901b>
+			streams:   1, words:   712
+		worklib.add_unsigned_13268:sv <0x6edffc87>
+			streams:   1, words:  1304
+		worklib.not_op_1630:sv <0x72509599>
+			streams:   0, words:     0
+		worklib.not_op_1629:sv <0x075ccbe0>
+			streams:   0, words:     0
+		worklib.add_unsigned_13266:sv <0x25f1de7d>
+			streams:   1, words:  1138
+		worklib.b32_scalar_product:sv <0x1d53ecc4>
+			streams:   1, words:  2271
+		worklib.sub_unsigned_3574:sv <0x6a2694c3>
+			streams:   1, words:   348
+		worklib.add_unsigned_11285:sv <0x7af3a2a6>
+			streams:   1, words:   327
+		worklib.add_unsigned_11283:sv <0x21f3ccaf>
+			streams:   1, words:   338
+		worklib.xor_op_1249:sv <0x3bca43c1>
+			streams:   0, words:     0
+		worklib.xor_op_1250:sv <0x79a7509e>
+			streams:   0, words:     0
+		worklib.xor_op_1251:sv <0x0b5e28b4>
+			streams:   0, words:     0
+		worklib.xor_op_1252:sv <0x7f98c1ee>
+			streams:   0, words:     0
+		worklib.xor_op_1254:sv <0x2530b6a0>
+			streams:   1, words:   317
+		worklib.xor_op_1253:sv <0x06f87b5b>
+			streams:   1, words:   317
+		worklib.add_unsigned_2320:sv <0x2fda6c3c>
+			streams:   1, words:   323
+		worklib.xor_op_1256:sv <0x230f27d0>
+			streams:   1, words:   317
+		worklib.xor_op_1255:sv <0x57c9ce8a>
+			streams:   1, words:   317
+		worklib.mult_unsigned_11405:sv <0x0b658c07>
+			streams:   1, words:   366
+		worklib.xor_op_1258:sv <0x0753dd02>
+			streams:   1, words:   317
+		worklib.xor_op_1257:sv <0x51f65ffa>
+			streams:   1, words:   317
+		worklib.xor_op_1260:sv <0x56a24848>
+			streams:   1, words:   317
+		worklib.xor_op_1259:sv <0x75aaa528>
+			streams:   1, words:   317
+		worklib.xor_op_1262:sv <0x509dd938>
+			streams:   1, words:   317
+		worklib.xor_op_1261:sv <0x245b3062>
+			streams:   1, words:   317
+		worklib.xor_op_1264:sv <0x01ac6ce9>
+			streams:   1, words:   317
+		worklib.xor_op_1263:sv <0x2264a112>
+			streams:   1, words:   317
+		worklib.xor_op_1266:sv <0x0793fd99>
+			streams:   1, words:   317
+		worklib.xor_op_1265:sv <0x735514c3>
+			streams:   1, words:   317
+		worklib.xor_op_1268:sv <0x23cf074b>
+			streams:   1, words:   317
+		worklib.xor_op_1267:sv <0x756a85b3>
+			streams:   1, words:   317
+		worklib.sub_signed_11605:sv <0x0b2504bf>
+			streams:   1, words:   284
+		worklib.add_unsigned_2322:sv <0x092318cc>
+			streams:   1, words:   320
+		worklib.add_unsigned_2322:sv <0x7e94fc2e>
+			streams:   1, words:   318
+		worklib.add_unsigned_2322:sv <0x268a5506>
+			streams:   1, words:   266
+		worklib.xor_op_1421:sv <0x104c9e43>
+			streams:   1, words:   317
+		worklib.xor_op_1422:sv <0x0f0eea95>
+			streams:   1, words:   317
+		worklib.xor_op_1425:sv <0x79c26eb3>
+			streams:   1, words:   317
+		worklib.xor_op_1426:sv <0x66801a65>
+			streams:   1, words:   317
+		worklib.xor_op_1429:sv <0x72b7cf31>
+			streams:   1, words:   317
+		worklib.xor_op_1430:sv <0x255a3d44>
+			streams:   1, words:   317
+		worklib.xor_op_1433:sv <0x3a184992>
+			streams:   1, words:   317
+		worklib.xor_op_1434:sv <0x4cd4cdb4>
+			streams:   1, words:   317
+		worklib.xor_op_1437:sv <0x5396b962>
+			streams:   1, words:   317
+		worklib.xor_op_1438:sv <0x47a16c36>
+			streams:   1, words:   317
+		worklib.xor_op_1441:sv <0x7372dcd9>
+			streams:   1, words:   317
+		worklib.xor_op_1442:sv <0x6c30a80f>
+			streams:   1, words:   317
+		worklib.xor_op_1445:sv <0x1afc2c29>
+			streams:   1, words:   317
+		worklib.xor_op_1446:sv <0x05be58ff>
+			streams:   1, words:   317
+		worklib.xor_op_1449:sv <0x11898dab>
+			streams:   1, words:   317
+		worklib.xor_op_1450:sv <0x46647fde>
+			streams:   1, words:   317
+		worklib.xor_op_1453:sv <0x59260b08>
+			streams:   1, words:   317
+		worklib.xor_op_1454:sv <0x2fea8f2e>
+			streams:   1, words:   317
+		worklib.xor_op_1457:sv <0x30a8fbf8>
+			streams:   1, words:   317
+		worklib.xor_op_1458:sv <0x249f2eac>
+			streams:   1, words:   317
+		worklib.xor_op_1420:sv <0x3bc992ed>
+			streams:   1, words:   317
+		worklib.xor_op_1419:sv <0x0328ee7c>
+			streams:   1, words:   317
+		worklib.xor_op_1424:sv <0x5247621d>
+			streams:   1, words:   317
+		worklib.xor_op_1423:sv <0x248be63b>
+			streams:   1, words:   317
+		worklib.xor_op_1428:sv <0x5932c39f>
+			streams:   1, words:   317
+		worklib.xor_op_1427:sv <0x4d0516cb>
+			streams:   1, words:   317
+		worklib.xor_op_1432:sv <0x119d453c>
+			streams:   1, words:   317
+		worklib.xor_op_1431:sv <0x0edf31ea>
+			streams:   1, words:   317
+		worklib.xor_op_1436:sv <0x7813b5cc>
+			streams:   1, words:   317
+		worklib.xor_op_1435:sv <0x6751c11a>
+			streams:   1, words:   317
+		worklib.xor_op_1440:sv <0x58f7d077>
+			streams:   1, words:   317
+		worklib.xor_op_1439:sv <0x6c246098>
+			streams:   1, words:   317
+		worklib.xor_op_1444:sv <0x31792087>
+			streams:   1, words:   317
+		worklib.xor_op_1443:sv <0x47b5a4a1>
+			streams:   1, words:   317
+		worklib.xor_op_1448:sv <0x3a0c8105>
+			streams:   1, words:   317
+		worklib.xor_op_1447:sv <0x2e3b5451>
+			streams:   1, words:   317
+		worklib.xor_op_1452:sv <0x72a307a6>
+			streams:   1, words:   317
+		worklib.xor_op_1451:sv <0x6de17370>
+			streams:   1, words:   317
+		worklib.xor_op_1456:sv <0x1b2df756>
+			streams:   1, words:   317
+		worklib.xor_op_1455:sv <0x046f8380>
+			streams:   1, words:   317
+		worklib.not_op_119:sv <0x2c4f5d34>
+			streams:   0, words:     0
+		worklib.not_op_120:sv <0x66931ed4>
+			streams:   0, words:     0
+		worklib.not_op_1760:sv <0x23b959b5>
+			streams:   0, words:     0
+		worklib.add_unsigned_11913:sv <0x7632be98>
+			streams:   1, words:   328
+		worklib.xor_op_1276:sv <0x426ad9ef>
+			streams:   1, words:   317
+		worklib.xor_op_1275:sv <0x36ac30b5>
+			streams:   1, words:   317
+		worklib.xor_op_1278:sv <0x6636233d>
+			streams:   1, words:   317
+		worklib.xor_op_1277:sv <0x3093a1c5>
+			streams:   1, words:   317
+		worklib.xor_op_1280:sv <0x3e5ba74a>
+			streams:   1, words:   317
+		worklib.xor_op_1279:sv <0x14cf5b17>
+			streams:   1, words:   317
+		worklib.add_signed_13324:sv <0x0a4fa81b>
+			streams:   1, words:   281
+		worklib.sub_signed_14028:sv <0x23d76738>
+			streams:   1, words:   293
+		worklib.add_unsigned_811:sv <0x6a00b130>
+			streams:   1, words:   824
+		worklib.CDN_mux2:sv <0x5d184628>
+			streams:   0, words:     0
+		worklib.CDN_mux2:sv <0x6325aab7>
+			streams:   0, words:     0
+		worklib.CDN_mux2:sv <0x39246983>
+			streams:   0, words:     0
+		worklib.shift_left_vlog_unsigned_15336:sv <0x14c7d81f>
+			streams:   0, words:     0
+		worklib.add_unsigned_809:sv <0x473f67f2>
+			streams:   1, words:   784
+		worklib.sub_signed_543:sv <0x6698e9a3>
+			streams:   1, words:   738
+		worklib.add_unsigned_541:sv <0x0a7a3ff1>
+			streams:   1, words:   657
+		worklib.add_unsigned_11893:sv <0x3e57a789>
+			streams:   1, words:   405
+		worklib.add_unsigned_11891:sv <0x4e3988cc>
+			streams:   1, words:   421
+		worklib.xor_op_1473:sv <0x362a85ec>
+			streams:   1, words:   317
+		worklib.xor_op_1474:sv <0x40e601ca>
+			streams:   1, words:   317
+		worklib.add_unsigned_11889:sv <0x0ba6e450>
+			streams:   1, words:   421
+		worklib.xor_op_1477:sv <0x5fa4751c>
+			streams:   1, words:   317
+		worklib.xor_op_1478:sv <0x4b93a048>
+			streams:   1, words:   317
+		worklib.xor_op_1481:sv <0x5f99ef3e>
+			streams:   1, words:   317
+		worklib.xor_op_1482:sv <0x40db9be8>
+			streams:   1, words:   317
+		worklib.and_op_9:sv <0x6bc43e08>
+			streams:   0, words:     0
+		worklib.and_op_7:sv <0x23207905>
+			streams:   0, words:     0
+		worklib.and_op_11:sv <0x6496f8c9>
+			streams:   0, words:     0
+		worklib.and_op_3:sv <0x3bc597c0>
+			streams:   0, words:     0
+		worklib.and_op:sv <0x6ec0548b>
+			streams:   0, words:     0
+		worklib.and_op_5:sv <0x42ea0d47>
+			streams:   0, words:     0
+		worklib.and_op_1:sv <0x5a0fe382>
+			streams:   0, words:     0
+		worklib.xor_op_1472:sv <0x1daf8942>
+			streams:   1, words:   317
+		worklib.xor_op_1471:sv <0x02edfd94>
+			streams:   1, words:   317
+		worklib.xor_op_1476:sv <0x742179b2>
+			streams:   1, words:   317
+		worklib.xor_op_1475:sv <0x6b630d64>
+			streams:   1, words:   317
+		worklib.xor_op_1480:sv <0x741ce390>
+			streams:   1, words:   317
+		worklib.xor_op_1479:sv <0x6016ace6>
+			streams:   1, words:   317
+		worklib.and_op_13:sv <0x61a19b3d>
+			streams:   0, words:     0
+		worklib.mult_unsigned_803:sv <0x47ade955>
+			streams:   1, words:   408
+		worklib.mult_unsigned_787:sv <0x3848f42a>
+			streams:   1, words:   408
+		worklib.mult_unsigned_795:sv <0x5e8a44dd>
+			streams:   1, words:   408
+		worklib.CDN_bmux64:sv <0x22d7db80>
+			streams:  65, words: 25401
+		worklib.add_unsigned:sv <0x7b094a06>
+			streams:   1, words:   336
+		worklib.add_signed:sv <0x63cac619>
+			streams:   0, words:     0
+		worklib.add_signed:sv <0x2cccd525>
+			streams:   1, words:   362
+		worklib.or_op_228:sv <0x1be58d74>
+			streams:   0, words:     0
+		worklib.or_op_226:sv <0x75cb6fe3>
+			streams:   0, words:     0
+		worklib.equal_unsigned_566:sv <0x113da499>
+			streams:   1, words:   273
+		worklib.not_op:sv <0x634d305f>
+			streams:   0, words:     0
+		worklib.xor_op_231:sv <0x69e3d27d>
+			streams:   0, words:     0
+		worklib.CDN_mux2:sv <0x441b7ca9>
+			streams:   0, words:     0
+		worklib.or_op_1759:sv <0x65d03022>
+			streams:   0, words:     0
+		worklib.or_op_239:sv <0x179b8d01>
+			streams:   0, words:     0
+		worklib.or_op_220:sv <0x575b78a1>
+			streams:   0, words:     0
+		worklib.xor_op_121:sv <0x60b78d00>
+			streams:   0, words:     0
+		worklib.sub_unsigned:sv <0x5c790ba6>
+			streams:   1, words:   720
+		worklib.add_unsigned_535:sv <0x5caff918>
+			streams:   1, words:   332
+		worklib.shift_right_vlog_unsigned_13264:sv <0x7130f2d7>
+			streams:   0, words:     0
+		worklib.sub_signed_710:sv <0x21a2ae22>
+			streams:   1, words:   344
+		worklib.leq_signed_708:sv <0x79d26ba3>
+			streams:   1, words:   304
+		worklib.leq_signed_697:sv <0x51c9c337>
+			streams:   1, words:   304
+		worklib.leq_signed_694:sv <0x48103cb7>
+			streams:   1, words:   304
+		worklib.leq_signed:sv <0x28ccd852>
+			streams:   1, words:   301
+		worklib.gt_signed:sv <0x08bbb90c>
+			streams:   1, words:   272
+		worklib.sub_signed_689:sv <0x154c51d0>
+			streams:   1, words:   397
+		worklib.CDN_mux5:sv <0x214dc4bf>
+			streams:   1, words:   331
+		worklib.CDN_mux5:sv <0x360afd3b>
+			streams:   0, words:     0
+		worklib.sub_unsigned_705:sv <0x77278394>
+			streams:   1, words:   336
+		worklib.not_op_169:sv <0x29917f58>
+			streams:   0, words:     0
+		worklib.case_box_113:sv <0x4dfecf40>
+			streams:   0, words:     0
+		worklib.case_box_110:sv <0x2114e28c>
+			streams:   0, words:     0
+		worklib.case_box_107:sv <0x61888d49>
+			streams:   0, words:     0
+		worklib.or_op_163:sv <0x1d97ba61>
+			streams:   0, words:     0
+		worklib.or_op_93:sv <0x74786a51>
+			streams:   0, words:     0
+		worklib.add_unsigned_701:sv <0x3ad87646>
+			streams:   1, words:   391
+		worklib.add_unsigned_2322:sv <0x513db1e4>
+			streams:   1, words:   380
+		worklib.CDN_mux2:sv <0x417e5741>
+			streams:   0, words:     0
+		worklib.add_unsigned_699:sv <0x6cd33191>
+			streams:   1, words:   333
+		worklib.or_op_162:sv <0x7fd5ec9a>
+			streams:   0, words:     0
+		worklib.xor_op_1269:sv <0x51367f61>
+			streams:   1, words:   317
+		worklib.xor_op_1270:sv <0x135b6c3e>
+			streams:   1, words:   317
+		worklib.xor_op_1271:sv <0x61a21414>
+			streams:   1, words:   317
+		worklib.xor_op_1272:sv <0x1564fd4e>
+			streams:   1, words:   317
+		worklib.xor_op_1273:sv <0x679d8564>
+			streams:   1, words:   317
+		worklib.xor_op_1274:sv <0x4455489f>
+			streams:   1, words:   317
+		worklib.xor_op_1281:sv <0x4ca2df60>
+			streams:   1, words:   317
+		worklib.or_op:sv <0x0fbe8e2c>
+			streams:   0, words:     0
+		worklib.or_op_92:sv <0x26960a16>
+			streams:   0, words:     0
+		worklib.shift_right_vlog_unsigned:sv <0x3b1b65b0>
+			streams:   0, words:     0
+		worklib.add_unsigned_687:sv <0x4e1fdf77>
+			streams:   1, words:   350
+		worklib.CDN_bmux8:sv <0x0713c2cf>
+			streams:   9, words:  2415
+		worklib.CDN_mux3:sv <0x597b1337>
+			streams:   0, words:     0
+		worklib.CDN_mux3:sv <0x5e861e9f>
+			streams:   0, words:     0
+		worklib.lt_unsigned_1011:sv <0x44e03d79>
+			streams:   1, words:   303
+		worklib.gt_signed_14026:sv <0x22da098f>
+			streams:   1, words:   278
+		worklib.lt_signed:sv <0x7e1cb31f>
+			streams:   1, words:   275
+		worklib.add_signed_11653:sv <0x7a6c18a0>
+			streams:   1, words:   355
+		worklib.gt_unsigned_12032:sv <0x4eaff67d>
+			streams:   1, words:   271
+		worklib.gt_signed_12018:sv <0x4a6d045f>
+			streams:   1, words:   278
+		worklib.case_box_202:sv <0x4011e301>
+			streams:   0, words:     0
+		worklib.case_box_199:sv <0x301bab8e>
+			streams:   0, words:     0
+		worklib.case_box_196:sv <0x6647d09a>
+			streams:   0, words:     0
+		worklib.case_box_190:sv <0x2488b2ca>
+			streams:   0, words:     0
+		worklib.case_box_187:sv <0x4cef0cc5>
+			streams:   0, words:     0
+		worklib.add_signed_1694:sv <0x2e3d1fe2>
+			streams:   1, words:   328
+		worklib.sub_unsigned_12029:sv <0x4cd23263>
+			streams:   1, words:   328
+		worklib.sub_signed_12015:sv <0x45f96ff5>
+			streams:   1, words:   328
+		worklib.or_op_1758:sv <0x30f82a21>
+			streams:   0, words:     0
+		worklib.case_box_106:sv <0x0443070b>
+			streams:   0, words:     0
+		worklib.CDN_mux11:sv <0x22b3b49b>
+			streams:   1, words:   589
+		worklib.not_op_122:sv <0x0faa6b3f>
+			streams:   0, words:     0
+		worklib.xor_op:sv <0x33dab515>
+			streams:   0, words:     0
+		worklib.add_unsigned_15338:sv <0x4e00fc36>
+			streams:   1, words:   328
+		worklib.sub_unsigned_14000:sv <0x776bcbca>
+			streams:   1, words:   334
+		worklib.case_box_211:sv <0x48d94c42>
+			streams:   0, words:     0
+		worklib.gt_signed_12025:sv <0x3bb2bd89>
+			streams:   1, words:   277
+		worklib.CDN_bmux2:sv <0x1cb5cee9>
+			streams:   0, words:     0
+		worklib.gt_unsigned_12336:sv <0x34f5f1d1>
+			streams:   1, words:   207
+		worklib.sub_unsigned_12229:sv <0x45a409de>
+			streams:   1, words:   334
+		worklib.add_unsigned_11887:sv <0x373f2248>
+			streams:   1, words:   421
+		worklib.add_unsigned_11885:sv <0x47510d0d>
+			streams:   1, words:   421
+		worklib.add_unsigned_753:sv <0x23d0935d>
+			streams:   1, words:   391
+		worklib.gt_unsigned_12336:sv <0x43421533>
+			streams:   1, words:   321
+		worklib.or_op_1558:sv <0x63a92d0b>
+			streams:   0, words:     0
+		worklib.or_op_1554:sv <0x0556ba97>
+			streams:   0, words:     0
+		worklib.xor_op_1461:sv <0x1c7e523d>
+			streams:   1, words:   317
+		worklib.xor_op_1462:sv <0x033c26eb>
+			streams:   1, words:   317
+		worklib.xor_op_1465:sv <0x75f0a2cd>
+			streams:   1, words:   317
+		worklib.xor_op_1466:sv <0x6ab2d61b>
+			streams:   1, words:   317
+		worklib.xor_op_1469:sv <0x7e85034f>
+			streams:   1, words:   317
+		worklib.add_unsigned_751:sv <0x3eab511f>
+			streams:   1, words:   401
+		worklib.xor_op_1470:sv <0x2968f13a>
+			streams:   1, words:   317
+		worklib.xor_op_1460:sv <0x37fb5e93>
+			streams:   1, words:   317
+		worklib.xor_op_1459:sv <0x0f1a2202>
+			streams:   1, words:   317
+		worklib.xor_op_1464:sv <0x5e75ae63>
+			streams:   1, words:   317
+		worklib.xor_op_1463:sv <0x28b92a45>
+			streams:   1, words:   317
+		worklib.xor_op_1468:sv <0x55000fe1>
+			streams:   1, words:   317
+		worklib.xor_op_1467:sv <0x4137dab5>
+			streams:   1, words:   317
+		worklib.mult_unsigned_803:sv <0x301a0db7>
+			streams:   1, words:   289
+		worklib.mult_unsigned_795:sv <0x293da03f>
+			streams:   1, words:   289
+		worklib.mult_unsigned_787:sv <0x4fff10c8>
+			streams:   1, words:   289
+		worklib.mult_unsigned:sv <0x14490f37>
+			streams:   1, words:   292
+		worklib.sub_signed_12015:sv <0x0fd71f0b>
+			streams:   1, words:   397
+		worklib.sub_unsigned_12027:sv <0x7ec710a4>
+			streams:   1, words:   411
+		worklib.mult_unsigned:sv <0x63feebd5>
+			streams:   1, words:   411
+		worklib.add_signed_1694:sv <0x64136f1c>
+			streams:   1, words:   391
+		worklib.CDN_bmux2:sv <0x05b6f468>
+			streams:   0, words:     0
+		worklib.mult_unsigned_12430:sv <0x654df85e>
+			streams:   1, words:   340
+		worklib.add_unsigned_12207:sv <0x575ac41e>
+			streams:   1, words:   327
+		worklib.CDN_bmux2:sv <0x7889e142>
+			streams:   0, words:     0
+		worklib.CDN_bmux2:sv <0x618adbc3>
+			streams:   0, words:     0
+		worklib.add_unsigned_11281:sv <0x70b84aff>
+			streams:   1, words:   338
+		worklib.CDN_mux2:sv <0x67642aed>
+			streams:   0, words:     0
+		worklib.case_box_1373:sv <0x4d002cdf>
+			streams:   2, words:   688
+		worklib.case_box_1370:sv <0x4a4e3963>
+			streams:   2, words:   688
+		worklib.case_box_1367:sv <0x0091c34c>
+			streams:   2, words:   688
+		worklib.case_box_1364:sv <0x07dfd6f0>
+			streams:   2, words:   688
+		worklib.case_box_1361:sv <0x3feb58a6>
+			streams:   2, words:   688
+		worklib.case_box_1358:sv <0x583731b2>
+			streams:   2, words:   688
+		worklib.case_box_1355:sv <0x711a69e9>
+			streams:   2, words:   688
+		worklib.case_box_1352:sv <0x7a75fca8>
+			streams:   2, words:   688
+		worklib.case_box_1349:sv <0x2d925077>
+			streams:   2, words:   688
+		worklib.case_box_1346:sv <0x37e4133b>
+			streams:   2, words:   688
+		worklib.case_box_1343:sv <0x0fd09d6d>
+			streams:   2, words:   688
+		worklib.case_box_1340:sv <0x089e88d1>
+			streams:   2, words:   688
+		worklib.case_box_1337:sv <0x1c9117db>
+			streams:   2, words:   688
+		worklib.case_box_1334:sv <0x1bdf0267>
+			streams:   2, words:   688
+		worklib.case_box_1331:sv <0x23eb8c31>
+			streams:   2, words:   688
+		worklib.case_box_1328:sv <0x47573bf9>
+			streams:   2, words:   688
+		worklib.case_box_1325:sv <0x6e7a63a2>
+			streams:   2, words:   688
+		worklib.case_box_1322:sv <0x6515f6e3>
+			streams:   2, words:   688
+		worklib.case_box_1319:sv <0x319284e0>
+			streams:   2, words:   688
+		worklib.case_box_1316:sv <0x2be4c7ac>
+			streams:   2, words:   688
+		worklib.case_box_1313:sv <0x13d049fa>
+			streams:   2, words:   688
+		worklib.case_box_1310:sv <0x149e5c46>
+			streams:   2, words:   688
+		worklib.case_box_1307:sv <0x5e41a669>
+			streams:   2, words:   688
+		worklib.case_box_1304:sv <0x590fb3d5>
+			streams:   2, words:   688
+		worklib.case_box_1301:sv <0x613b3d83>
+			streams:   2, words:   688
+		worklib.case_box_1298:sv <0x4fdc07c8>
+			streams:   2, words:   688
+		worklib.case_box_1295:sv <0x66f15f93>
+			streams:   2, words:   688
+		worklib.case_box_1292:sv <0x6d9ecad2>
+			streams:   2, words:   688
+		worklib.case_box_1289:sv <0x3a79660d>
+			streams:   2, words:   688
+		worklib.case_box_1286:sv <0x200f2541>
+			streams:   2, words:   688
+		worklib.case_box_1283:sv <0x183bab17>
+			streams:   2, words:   688
+		worklib.case_box_1282:sv <0x2c2ea5bc>
+			streams:   2, words:   688
+		worklib.sub_unsigned_12329:sv <0x35ffd51a>
+			streams:   1, words:   359
+		worklib.nequal_unsigned_1142:sv <0x0c6d0104>
+			streams:   1, words:   276
+		worklib.add_unsigned_11279:sv <0x17119761>
+			streams:   1, words:   338
+		worklib.sub_unsigned_12020:sv <0x3ec40ef0>
+			streams:   1, words:   336
+		worklib.case_box_28:sv <0x74c74224>
+			streams:   0, words:     0
+		worklib.and_op_396:sv <0x205e8364>
+			streams:   0, words:     0
+		worklib.and_op_394:sv <0x5b5b73e7>
+			streams:   0, words:     0
+		worklib.and_op_373:sv <0x2a356a70>
+			streams:   0, words:     0
+		worklib.and_op_371:sv <0x51309af3>
+			streams:   0, words:     0
+		worklib.and_op_350:sv <0x33837a69>
+			streams:   0, words:     0
+		worklib.and_op_348:sv <0x1bd11776>
+			streams:   0, words:     0
+		worklib.and_op_327:sv <0x054a0aae>
+			streams:   0, words:     0
+		worklib.and_op_325:sv <0x7e4ffa2d>
+			streams:   0, words:     0
+		worklib.add_unsigned_1334:sv <0x00cc73d0>
+			streams:   1, words:   421
+		worklib.and_op_1486:sv <0x71520a8a>
+			streams:   0, words:     0
+		worklib.and_op_395:sv <0x6274e05d>
+			streams:   0, words:     0
+		worklib.and_op_393:sv <0x57c696bd>
+			streams:   0, words:     0
+		worklib.and_op_372:sv <0x131af9ca>
+			streams:   0, words:     0
+		worklib.and_op_370:sv <0x681f0949>
+			streams:   0, words:     0
+		worklib.and_op_349:sv <0x22fe84cc>
+			streams:   0, words:     0
+		worklib.and_op_347:sv <0x3bc54e78>
+			streams:   0, words:     0
+		worklib.and_op_326:sv <0x3c659914>
+			streams:   0, words:     0
+		worklib.and_op_324:sv <0x47606997>
+			streams:   0, words:     0
+		worklib.and_op_1485:sv <0x7c2941b9>
+			streams:   0, words:     0
+		worklib.add_unsigned_11277:sv <0x2b885179>
+			streams:   1, words:   334
+		worklib.nequal_unsigned_12013:sv <0x66591889>
+			streams:   1, words:   220
+		worklib.add_unsigned_12333:sv <0x07860be1>
+			streams:   1, words:   388
+		worklib.case_box:sv <0x15104149>
+			streams:  11, words:  2528
+		worklib.CDN_mux6:sv <0x0841a949>
+			streams:   1, words:   374
+		worklib.add_unsigned_2584:sv <0x77c904a1>
+			streams:   1, words:   279
+		worklib.CDN_bmux2:sv <0x3d043d1c>
+			streams:   0, words:     0
+		worklib.CDN_mux8:sv <0x42807855>
+			streams:   1, words:   460
+		worklib.add_unsigned_12331:sv <0x2ff68d8c>
+			streams:   1, words:   335
+		worklib.CDN_mux7:sv <0x3fcd3762>
+			streams:   1, words:   417
+		worklib.sub_unsigned_552:sv <0x626db8f1>
+			streams:   1, words:   338
+		worklib.case_box_25:sv <0x5847d95c>
+			streams:   0, words:     0
+		worklib.add_signed_574:sv <0x4d6a6b8d>
+			streams:   1, words:   340
+		worklib.sub_signed_570:sv <0x12e04cfc>
+			streams:   1, words:   346
+		worklib.CDN_mux4:sv <0x5bd77e46>
+			streams:   1, words:   288
+		worklib.and_op_256:sv <0x6a98ab5f>
+			streams:   0, words:     0
+		worklib.and_op_255:sv <0x28b2c866>
+			streams:   0, words:     0
+		worklib.and_op_254:sv <0x119d5bdc>
+			streams:   0, words:     0
+		worklib.and_op_253:sv <0x1d00be86>
+			streams:   0, words:     0
+		worklib.and_op_252:sv <0x242f2d3c>
+			streams:   0, words:     0
+		worklib.case_box_780:sv <0x2a1c5b1a>
+			streams:   0, words:     0
+		worklib.case_box_777:sv <0x63655663>
+			streams:   0, words:     0
+		worklib.case_box_774:sv <0x258b83df>
+			streams:   0, words:     0
+		worklib.case_box_771:sv <0x6eb8fd1b>
+			streams:   0, words:     0
+		worklib.case_box_768:sv <0x24cedc40>
+			streams:   0, words:     0
+		worklib.case_box_765:sv <0x6f71c25a>
+			streams:   0, words:     0
+		worklib.case_box_762:sv <0x69d92789>
+			streams:   0, words:     0
+		worklib.case_box_759:sv <0x6d2a8399>
+			streams:   0, words:     0
+		worklib.case_box_756:sv <0x6b0e0694>
+			streams:   0, words:     0
+		worklib.case_box_753:sv <0x203d7850>
+			streams:   0, words:     0
+		worklib.case_box_750:sv <0x66d3adec>
+			streams:   0, words:     0
+		worklib.case_box_747:sv <0x21f44711>
+			streams:   0, words:     0
+		worklib.case_box_744:sv <0x671a92ad>
+			streams:   0, words:     0
+		worklib.case_box_741:sv <0x2c29ec69>
+			streams:   0, words:     0
+		worklib.case_box_738:sv <0x380ce997>
+			streams:   0, words:     0
+		worklib.case_box_735:sv <0x73b3f78d>
+			streams:   0, words:     0
+		worklib.case_box_732:sv <0x751b125e>
+			streams:   0, words:     0
+		worklib.case_box_729:sv <0x72f6a812>
+			streams:   0, words:     0
+		worklib.case_box_726:sv <0x74d22d1f>
+			streams:   0, words:     0
+		worklib.case_box_723:sv <0x3fe153db>
+			streams:   0, words:     0
+		worklib.case_box_720:sv <0x790f8667>
+			streams:   0, words:     0
+		worklib.case_box_717:sv <0x3d3672c6>
+			streams:   0, words:     0
+		worklib.case_box_714:sv <0x7bd8a77a>
+			streams:   0, words:     0
+		worklib.case_box_711:sv <0x30ebd9be>
+			streams:   0, words:     0
+		worklib.case_box_708:sv <0x7a9df8e5>
+			streams:   0, words:     0
+		worklib.case_box_705:sv <0x3122e6ff>
+			streams:   0, words:     0
+		worklib.case_box_702:sv <0x378a032c>
+			streams:   0, words:     0
+		worklib.case_box_699:sv <0x3cfdf881>
+			streams:   0, words:     0
+		worklib.case_box_696:sv <0x3ad97d8c>
+			streams:   0, words:     0
+		worklib.case_box_693:sv <0x71ea0348>
+			streams:   0, words:     0
+		worklib.case_box_690:sv <0x3704d6f4>
+			streams:   0, words:     0
+		worklib.case_box_687:sv <0x70233c09>
+			streams:   0, words:     0
+		worklib.case_box_684:sv <0x36cde9b5>
+			streams:   0, words:     0
+		worklib.case_box_681:sv <0x7dfe9771>
+			streams:   0, words:     0
+		worklib.case_box_678:sv <0x39d651ae>
+			streams:   0, words:     0
+		worklib.case_box_675:sv <0x72694fb4>
+			streams:   0, words:     0
+		worklib.case_box_672:sv <0x74c1aa67>
+			streams:   0, words:     0
+		worklib.case_box_669:sv <0x732c102b>
+			streams:   0, words:     0
+		worklib.case_box_666:sv <0x75089526>
+			streams:   0, words:     0
+		worklib.case_box_663:sv <0x3e3bebe2>
+			streams:   0, words:     0
+		worklib.case_box_660:sv <0x78d53e5e>
+			streams:   0, words:     0
+		worklib.case_box_657:sv <0x3ceccaff>
+			streams:   0, words:     0
+		worklib.case_box_654:sv <0x7a021f43>
+			streams:   0, words:     0
+		worklib.case_box_651:sv <0x31316187>
+			streams:   0, words:     0
+		worklib.case_box_648:sv <0x7b4740dc>
+			streams:   0, words:     0
+		worklib.case_box_645:sv <0x30f85ec6>
+			streams:   0, words:     0
+		worklib.case_box_642:sv <0x3650bb15>
+			streams:   0, words:     0
+		worklib.case_box_639:sv <0x6fee25fc>
+			streams:   0, words:     0
+		worklib.case_box_636:sv <0x69caa0f1>
+			streams:   0, words:     0
+		worklib.case_box_633:sv <0x22f9de35>
+			streams:   0, words:     0
+		worklib.case_box_630:sv <0x64170b89>
+			streams:   0, words:     0
+		worklib.case_box_627:sv <0x2330e174>
+			streams:   0, words:     0
+		worklib.case_box_624:sv <0x65de34c8>
+			streams:   0, words:     0
+		worklib.case_box_621:sv <0x2eed4a0c>
+			streams:   0, words:     0
+		worklib.case_box_618:sv <0x6785750b>
+			streams:   0, words:     0
+		worklib.case_box_615:sv <0x2c3a6b11>
+			streams:   0, words:     0
+		worklib.case_box_612:sv <0x2a928ec2>
+			streams:   0, words:     0
+		worklib.case_box_609:sv <0x2d7f348e>
+			streams:   0, words:     0
+		worklib.case_box_606:sv <0x2b5bb183>
+			streams:   0, words:     0
+		worklib.case_box_603:sv <0x6068cf47>
+			streams:   0, words:     0
+		worklib.case_box_600:sv <0x26861afb>
+			streams:   0, words:     0
+		worklib.case_box_597:sv <0x3e8302b4>
+			streams:   0, words:     0
+		worklib.case_box_594:sv <0x786dd708>
+			streams:   0, words:     0
+		worklib.case_box_591:sv <0x335ea9cc>
+			streams:   0, words:     0
+		worklib.case_box_588:sv <0x79288897>
+			streams:   0, words:     0
+		worklib.case_box_585:sv <0x3297968d>
+			streams:   0, words:     0
+		worklib.case_box_582:sv <0x343f735e>
+			streams:   0, words:     0
+		worklib.case_box_579:sv <0x3d8c2e96>
+			streams:   0, words:     0
+		worklib.case_box_576:sv <0x3ba8ab9b>
+			streams:   0, words:     0
+		worklib.case_box_573:sv <0x709bd55f>
+			streams:   0, words:     0
+		worklib.case_box_570:sv <0x367500e3>
+			streams:   0, words:     0
+		worklib.case_box_567:sv <0x7152ea1e>
+			streams:   0, words:     0
+		worklib.case_box_564:sv <0x37bc3fa2>
+			streams:   0, words:     0
+		worklib.case_box_561:sv <0x7c8f4166>
+			streams:   0, words:     0
+		worklib.case_box_558:sv <0x35e77e61>
+			streams:   0, words:     0
+		worklib.case_box_555:sv <0x7e58607b>
+			streams:   0, words:     0
+		worklib.case_box_552:sv <0x78f085a8>
+			streams:   0, words:     0
+		worklib.case_box_549:sv <0x7f1d3fe4>
+			streams:   0, words:     0
+		worklib.case_box_546:sv <0x7939bae9>
+			streams:   0, words:     0
+		worklib.case_box_543:sv <0x320ac42d>
+			streams:   0, words:     0
+		worklib.case_box_540:sv <0x74e41191>
+			streams:   0, words:     0
+		worklib.case_box_537:sv <0x6d90dfc9>
+			streams:   0, words:     0
+		worklib.case_box_534:sv <0x2b7e0a75>
+			streams:   0, words:     0
+		worklib.case_box_531:sv <0x604d74b1>
+			streams:   0, words:     0
+		worklib.case_box_528:sv <0x2a3b55ea>
+			streams:   0, words:     0
+		worklib.case_box_525:sv <0x61844bf0>
+			streams:   0, words:     0
+		worklib.case_box_522:sv <0x672cae23>
+			streams:   0, words:     0
+		worklib.case_box_519:sv <0x63df0a33>
+			streams:   0, words:     0
+		worklib.case_box_516:sv <0x65fb8f3e>
+			streams:   0, words:     0
+		worklib.case_box_513:sv <0x2ec8f1fa>
+			streams:   0, words:     0
+		worklib.case_box_510:sv <0x68262446>
+			streams:   0, words:     0
+		worklib.case_box_507:sv <0x2f01cebb>
+			streams:   0, words:     0
+		worklib.case_box_504:sv <0x69ef1b07>
+			streams:   0, words:     0
+		worklib.case_box_501:sv <0x22dc65c3>
+			streams:   0, words:     0
+		worklib.case_box_498:sv <0x64300579>
+			streams:   0, words:     0
+		worklib.case_box_495:sv <0x2f8f1b63>
+			streams:   0, words:     0
+		worklib.case_box_492:sv <0x2927feb0>
+			streams:   0, words:     0
+		worklib.case_box_489:sv <0x2eca44fc>
+			streams:   0, words:     0
+		worklib.case_box_486:sv <0x28eec1f1>
+			streams:   0, words:     0
+		worklib.case_box_483:sv <0x63ddbf35>
+			streams:   0, words:     0
+		worklib.case_box_480:sv <0x25336a89>
+			streams:   0, words:     0
+		worklib.case_box_477:sv <0x6c4a67f0>
+			streams:   0, words:     0
+		worklib.case_box_474:sv <0x2aa4b24c>
+			streams:   0, words:     0
+		worklib.case_box_471:sv <0x6197cc88>
+			streams:   0, words:     0
+		worklib.case_box_468:sv <0x2be1edd3>
+			streams:   0, words:     0
+		worklib.case_box_465:sv <0x605ef3c9>
+			streams:   0, words:     0
+		worklib.case_box_462:sv <0x66f6161a>
+			streams:   0, words:     0
+		worklib.case_box_459:sv <0x6205b20a>
+			streams:   0, words:     0
+		worklib.case_box_456:sv <0x64213707>
+			streams:   0, words:     0
+		worklib.case_box_453:sv <0x2f1249c3>
+			streams:   0, words:     0
+		worklib.case_box_450:sv <0x69fc9c7f>
+			streams:   0, words:     0
+		worklib.case_box_447:sv <0x2edb7682>
+			streams:   0, words:     0
+		worklib.case_box_444:sv <0x6835a33e>
+			streams:   0, words:     0
+		worklib.case_box_441:sv <0x2306ddfa>
+			streams:   0, words:     0
+		worklib.case_box_438:sv <0x3723d804>
+			streams:   0, words:     0
+		worklib.case_box_435:sv <0x7c9cc61e>
+			streams:   0, words:     0
+		worklib.case_box_432:sv <0x7a3423cd>
+			streams:   0, words:     0
+		worklib.case_box_429:sv <0x7dd99981>
+			streams:   0, words:     0
+		worklib.case_box_426:sv <0x7bfd1c8c>
+			streams:   0, words:     0
+		worklib.case_box_423:sv <0x30ce6248>
+			streams:   0, words:     0
+		worklib.case_box_420:sv <0x7620b7f4>
+			streams:   0, words:     0
+		worklib.case_box_417:sv <0x32194355>
+			streams:   0, words:     0
+		worklib.case_box_414:sv <0x74f796e9>
+			streams:   0, words:     0
+		worklib.case_box_411:sv <0x3fc4e82d>
+			streams:   0, words:     0
+		worklib.case_box_408:sv <0x75b2c976>
+			streams:   0, words:     0
+		worklib.case_box_405:sv <0x3e0dd76c>
+			streams:   0, words:     0
+		worklib.case_box_402:sv <0x38a532bf>
+			streams:   0, words:     0
+		worklib.case_box_401:sv <0x7e4be703>
+			streams:   0, words:     0
+		worklib.and_op_1483:sv <0x3d5ff685>
+			streams:   2, words:   969
+		worklib.gt_unsigned:sv <0x02ea79d0>
+			streams:   1, words:   261
+		worklib.lt_unsigned_1072:sv <0x406a6da0>
+			streams:   1, words:   269
+		worklib.or_op_221:sv <0x28efbb80>
+			streams:   0, words:     0
+		worklib.or_op_219:sv <0x7f13474f>
+			streams:   0, words:     0
+		worklib.or_op_217:sv <0x31fd4c26>
+			streams:   0, words:     0
+		worklib.and_op_216:sv <0x2dfedcfc>
+			streams:   0, words:     0
+		worklib.equal_unsigned_905:sv <0x09f1ee29>
+			streams:   1, words:   265
+		worklib.equal_unsigned_891:sv <0x67553f33>
+			streams:   1, words:   317
+		worklib.not_op_126:sv <0x0ac73a5e>
+			streams:   0, words:     0
+		worklib.xor_op_125:sv <0x483fb8cb>
+			streams:   0, words:     0
+		worklib.or_op_124:sv <0x4b3792a4>
+			streams:   0, words:     0
+		worklib.and_op_123:sv <0x31e2e39e>
+			streams:   0, words:     0
+		worklib.case_box_34:sv <0x342bda86>
+			streams:   0, words:     0
+		worklib.case_box_31:sv <0x7cb0b828>
+			streams:   0, words:     0
+		worklib.case_box_24:sv <0x2da4eecc>
+			streams:   0, words:     0
+		worklib.sub_unsigned_576:sv <0x11eef054>
+			streams:   1, words:   322
+		worklib.sub_signed_568:sv <0x244acb82>
+			streams:   1, words:   350
+		worklib.equal_unsigned_561:sv <0x5fb25e12>
+			streams:   1, words:   273
+		worklib.nequal_unsigned:sv <0x5a946c05>
+			streams:   1, words:   276
+		worklib.sub_unsigned_557:sv <0x26abfbff>
+			streams:   1, words:   333
+		worklib.geq_unsigned_550:sv <0x6734b20c>
+			streams:   1, words:   277
+		worklib.sub_unsigned_539:sv <0x611f8083>
+			streams:   1, words:   327
+		worklib.sub_signed:sv <0x5094536c>
+			streams:   1, words:   340
+		worklib.lt_unsigned:sv <0x6f71ccf3>
+			streams:   1, words:   269
+		worklib.geq_unsigned:sv <0x2bde4532>
+			streams:   1, words:   269
+		worklib.CDN_bmux2:sv <0x0f8aa3fe>
+			streams:   0, words:     0
+		worklib.lt_unsigned_13942:sv <0x7d1cde5d>
+			streams:   0, words:     0
+		worklib.geq_unsigned_13930:sv <0x626d1f0e>
+			streams:   1, words:   263
+		worklib.leq_unsigned_13927:sv <0x5d081329>
+			streams:   1, words:   264
+		worklib.geq_unsigned_13924:sv <0x4a2033da>
+			streams:   1, words:   271
+		worklib.leq_unsigned:sv <0x075529d9>
+			streams:   1, words:   272
+		worklib.case_box_1771:sv <0x5bda6387>
+			streams:   0, words:     0
+		worklib.leq_unsigned_13990:sv <0x0ff933ca>
+			streams:   1, words:   264
+		worklib.ucc_b32_pipe5:sv <0x267e96c0>
+			streams: 2439, words: 1433049
+		worklib.b32_schedule_tb:sv <0x025f5cde>
+			streams:  44, words: 42091
+		worklib.ucc_fma:sv <0x5d06e81b>
+			streams: 262, words: 116034
+		worklib.fpnew_noncomp:sv <0x2efd29d8>
+			streams:  29, words: 13739
+		worklib.ucc_sfu_rom:sv <0x5932a63d>
+			streams:   6, words:  8458
+		worklib.fpnew_classifier:sv <0x21acaa91>
+			streams:   1, words:  3701
+		worklib.ucc_tiles:sv <0x57c9586a>
+			streams:  45, words: 23139
+		worklib.ucc_int_alu:sv <0x0f588559>
+			streams:  16, words: 10185
+		worklib.ucc_pkg:sv <0x10d66801>
+			streams:   4, words:  2127
+		worklib.fpnew_classifier:sv <0x32756dd4>
+			streams:   1, words:  3844
+		worklib.fpnew_pkg:sv <0x09bd26af>
+			streams:  28, words: 15045
+		worklib.dpa16_unpack:sv <0x4be794f1>
+			streams:   9, words: 56839
+		worklib.dpa16_mul11:sv <0x48ce3e3b>
+			streams:  26, words:  7239
+		worklib.lzc:sv <0x28f94236>
+			streams:  17, words: 33575
+		worklib.cf_math_pkg:sv <0x60d3d3df>
+			streams:   2, words:   670
+		worklib.dpa16_align_sum:sv <0x70e34662>
+			streams:  12, words: 10800
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                27968     592
+		Verilog packages:           4       4
+		Registers:               6323    6225
+		Scalar wires:          170384       -
+		Expanded wires:         29359    4731
+		Vectored wires:          3028       -
+		Always blocks:            431     498
+		Initial blocks:            34      34
+		Cont. assignments:      42690   13500
+		Pseudo assignments:       795     762
+		Assertions:                 1       1
+		Simulation timescale:     1ps
+	Writing initial simulation snapshot: worklib.b32_schedule_tb:sv
+Loading snapshot worklib.b32_schedule_tb:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /data/eda_tools/cadence/XCELIUM2209/tools/xcelium/files/xmsimrc
+xcelium> run
+SCHEDULE_PASS issued=143476 checks=143486 cycles=175387 mode_changes=200 reservation_bubbles=28982 max_normal_run=97 max_sfu_run=64
+Simulation complete via $finish(1) at time 1753870 NS + 0
+./bench.sv:146     $finish;
+xcelium> exit
+TOOL:	xrun(64)	22.09-s001: Exiting on Nov 11, 2026 at 07:30:07 PST  (total: 00:03:13)

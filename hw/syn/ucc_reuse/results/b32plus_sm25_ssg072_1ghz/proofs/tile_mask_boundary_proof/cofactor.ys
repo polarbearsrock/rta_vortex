@@ -1,0 +1,7 @@
+read_verilog cone.v
+hierarchy -top cofactor
+proc
+flatten
+opt_expr
+opt_clean
+write_json cofactor.json

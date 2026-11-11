@@ -1,0 +1,347 @@
+{
+  "cell_area_um2": 46711.098,
+  "sequential_area_um2": 11733.246,
+  "register_area_um2": 11733.246,
+  "clock_gating": {
+    "instances": 0,
+    "area_um2": 0.0
+  },
+  "combinational_area_um2": 34977.852,
+  "timing": {
+    "dpa": {
+      "worst_slack_ps": 0.0,
+      "wns_ps": 0,
+      "tns_ps": -0.0,
+      "violating_paths": 0,
+      "startpoint": "(R) p5_14872_reg/CP",
+      "endpoint": "(R) d_o[19]"
+    },
+    "cuda": {
+      "worst_slack_ps": 0.0,
+      "wns_ps": 0,
+      "tns_ps": -0.0,
+      "violating_paths": 0,
+      "startpoint": "(R) sfu_valid_pipe_reg[3]/CP",
+      "endpoint": "(R) p1_33980_reg/D"
+    }
+  },
+  "instance_count": {
+    "leaf": 47502,
+    "sequential": 4793,
+    "combinational": 42709
+  },
+  "gate_categories": {
+    "sequential": {
+      "instances": 4793,
+      "area_um2": 11733.246
+    },
+    "inverter": {
+      "instances": 5197,
+      "area_um2": 1792.602
+    },
+    "buffer": {
+      "instances": 498,
+      "area_um2": 337.05
+    },
+    "logic": {
+      "instances": 37014,
+      "area_um2": 32848.2
+    },
+    "physical_cells": {
+      "instances": 0,
+      "area_um2": 0.0
+    }
+  },
+  "tool": "Genus(TM) Synthesis Solution 25.10-p002_1",
+  "gate_count_validation": {
+    "per_master_instances": 47502,
+    "per_master_area_um2": 46711.098,
+    "type_summary_instances": 47502,
+    "type_summary_count_delta": 0
+  },
+  "interconnect_report": "global",
+  "meets_1ghz_setup": true,
+  "manifest": {
+    "source_run": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/b32plus_tilezero_preselect_live_sfu6",
+    "top": "ucc_b32_pipe5",
+    "latency": "FP32/INT32/DPA: 5 cycles; SFU: 6 cycles; homogeneous II=1; dispatcher follows fixed reservations",
+    "design_sha256": "0110c24c49204a77ff3fe8ab9b53734ed5d425aa8567da2ccc16a75ff6ad51e2",
+    "elaboration_parameters": {},
+    "genus_executable": "/data/eda_tools/cadence/DDI251/GENUS251/bin/genus",
+    "corner": "SSG 0.72 V /125 C",
+    "voltage_v": 0.72,
+    "views": [
+      [
+        "SS.setup_view",
+        "ss",
+        "125.0",
+        "setup",
+        "1",
+        "0"
+      ],
+      [
+        "FF.hold_view",
+        "ff",
+        "-40.0",
+        "hold",
+        "0",
+        "1"
+      ],
+      [
+        "TT.extra_view",
+        "tt",
+        "25.0",
+        "tt",
+        "0",
+        "1"
+      ]
+    ],
+    "modes": [
+      "dpa",
+      "cuda"
+    ],
+    "setup_views": [
+      "dpa.SS.setup_view",
+      "cuda.SS.setup_view"
+    ],
+    "period_ns": 1.0,
+    "input_delay_ns": 0.3,
+    "output_delay_ns": 0.3,
+    "setup_uncertainty_ns": 0.05,
+    "clock_transition_ns": 0.05,
+    "max_transition_ns": 0.1,
+    "max_fanout": 32,
+    "driving_cell": "BUFFD4BWP30P140",
+    "output_load_pf": 0.005,
+    "reset_timing": "false path from rst_ni",
+    "generic_effort": "medium",
+    "map_effort": "high",
+    "opt_effort": "high",
+    "automatic_ungroup": "both",
+    "clock_gating": true,
+    "retiming": false,
+    "clock_gating_min_flops": 2,
+    "clock_gating_max_flops": 100000,
+    "physical_inputs": "SM technology/cell LEFs and QRC corners; PLE, no placement/routing",
+    "mode_assumption": "dpa_mode_i static in DPA/CUDA views; drain pipeline before switch",
+    "pdk_files": [
+      {
+        "kind": "LIB",
+        "corner": "ss",
+        "path": "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140_180a/tcbn28hpcplusbwp30p140ssg0p72v125c.lib",
+        "sha256": "44a332fd6b6defdb005a3d7a7c4e7f817fe8ec6e6036b0293acd549fa6d353c5"
+      },
+      {
+        "kind": "LIB",
+        "corner": "ss",
+        "path": "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140hvt_180a/tcbn28hpcplusbwp30p140hvtssg0p72v125c.lib",
+        "sha256": "47d6a840a373f60d53e66b7a4dcf5e921115575abb62e6be174bac0cd72ce004"
+      },
+      {
+        "kind": "LIB",
+        "corner": "ss",
+        "path": "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140lvt_180a/tcbn28hpcplusbwp30p140lvtssg0p72v125c.lib",
+        "sha256": "a35a385653dba58f4d8308f4c3638f1e3ca3ed3e80a249ce560386b6340ce711"
+      },
+      {
+        "kind": "LIB",
+        "corner": "ff",
+        "path": "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140_180a/tcbn28hpcplusbwp30p140ffg0p88vm40c.lib",
+        "sha256": "8441281883345249cadb115e439955cdc7a1a082df04d1e4804c378cc5d63f20"
+      },
+      {
+        "kind": "LIB",
+        "corner": "ff",
+        "path": "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140hvt_180a/tcbn28hpcplusbwp30p140hvtffg0p88vm40c.lib",
+        "sha256": "4e5b9a5636a1046fd1242e7d3610d0341ee0283ea6628725f83021babbac4fde"
+      },
+      {
+        "kind": "LIB",
+        "corner": "ff",
+        "path": "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140lvt_180a/tcbn28hpcplusbwp30p140lvtffg0p88vm40c.lib",
+        "sha256": "cf09929821a01322a1cea374d827ac8e8402a0479d2d1efe19c6d93134c5e62a"
+      },
+      {
+        "kind": "LIB",
+        "corner": "tt",
+        "path": "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140_180a/tcbn28hpcplusbwp30p140tt0p8v25c.lib",
+        "sha256": "a7885368f37a229aecf912729421a1aaeea63baac9a057d296c83d7326259efb"
+      },
+      {
+        "kind": "LIB",
+        "corner": "tt",
+        "path": "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140hvt_180a/tcbn28hpcplusbwp30p140hvttt0p8v25c.lib",
+        "sha256": "e45d608a992ee577b442a1e6a7501c3789aa9a186c4f9368e32ee258bf4cde19"
+      },
+      {
+        "kind": "LIB",
+        "corner": "tt",
+        "path": "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140lvt_180a/tcbn28hpcplusbwp30p140lvttt0p8v25c.lib",
+        "sha256": "6ff0fd0aaba7fafb7cd927b3726aee66ae77763073bbd831a3d33bd42d0a793b"
+      },
+      {
+        "kind": "LEF",
+        "corner": null,
+        "path": "/data2/tools-additional/pdk/N28/cadence_ref/apr_tlef/HVH/tsmcn28_10lm5X2Y2RRDL.tlef",
+        "sha256": "f5604b5a4058e669879e68a40b273291a0773990695c75332ef53ec00f788f24"
+      },
+      {
+        "kind": "LEF",
+        "corner": null,
+        "path": "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Back_End/lef/tcbn28hpcplusbwp30p140_110a/lef/tcbn28hpcplusbwp30p140.lef",
+        "sha256": "a075e1fa8d1c829a6a97064bee393a03679b0c40e36b2e8ce3fb398b116502b5"
+      },
+      {
+        "kind": "LEF",
+        "corner": null,
+        "path": "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Back_End/lef/tcbn28hpcplusbwp30p140hvt_110a/lef/tcbn28hpcplusbwp30p140hvt.lef",
+        "sha256": "1ba0378cfcdb9a5559f6b56dcf3b0c1f3a66c6d658dc9ee8ab4daf5eb4e270a6"
+      },
+      {
+        "kind": "LEF",
+        "corner": null,
+        "path": "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Back_End/lef/tcbn28hpcplusbwp30p140lvt_110a/lef/tcbn28hpcplusbwp30p140lvt.lef",
+        "sha256": "76ada24244c267d81743e00c1a540291c782a6a0493fa7cdee3d17d780631ecc"
+      },
+      {
+        "kind": "QRC",
+        "corner": "setup",
+        "path": "/data2/tools-additional/pdk/N28/cadence_ref/qrc/cln28hpcplus_1p10m_5x2y2r/rcworst/qrcTechFile",
+        "sha256": "92f56d202afbff5e7b41acd59ace3438b3c2b246ff609a7d8fa49a27bf10ec51"
+      },
+      {
+        "kind": "QRC",
+        "corner": "hold",
+        "path": "/data2/tools-additional/pdk/N28/cadence_ref/qrc/cln28hpcplus_1p10m_5x2y2r/rcbest/qrcTechFile",
+        "sha256": "25b8b3be9beeee20349bcff83bbb7344ee8ec976c6b5ea5377b717745d7db485"
+      },
+      {
+        "kind": "QRC",
+        "corner": "tt",
+        "path": "/data2/tools-additional/pdk/N28/cadence_ref/qrc/cln28hpcplus_1p10m_5x2y2r/typical/qrcTechFile",
+        "sha256": "4c9dfe7a0a2ce402421f1507ea60293d35aac4d56994f55a21a1f3c2dbedd0ca"
+      }
+    ],
+    "reference_files": {
+      "/data2/jwang710/RTA_code/vortex_syn/fpu/config.tcl": "c7bdd274adff804f75f9db2d8ed60b54daff21402f4578e6d98636544e9206fc",
+      "/data2/jwang710/RTA_code/vortex_syn/fpu/constraints/fpu_block_top.sdc": "60da194b2847234c7169161c7d5d481bb83d66aec306228dc9037d8b2422b59d",
+      "/data2/jwang710/RTA_code/vortex_syn/fpu/syn/mmmc_build_macros.tcl": "7c04c18f74c6bf3cffd4c4663d66de7e380d78cce68f7d15a05699e96b6c3711",
+      "/data2/jwang710/RTA_code/vortex_syn/fpu/syn/run_genus.tcl": "18327830ad8b737551134c3bdec1d60d10453803249afe35ab421b45f3f84d55",
+      "/data/eda_tools/script/pnr/tsmcn28/flow/setup/tsmcn28_libs.tcl": "13dc9028226dd3e701e723ac866728f8b247924307852f9547b446e26b955f8a"
+    },
+    "prior_validation": "Unchanged RTL: retain source-run validation; no new gate replay",
+    "input_sha256": {
+      "design.sv": "0110c24c49204a77ff3fe8ab9b53734ed5d425aa8567da2ccc16a75ff6ad51e2",
+      "source_manifest.json": "f110202bbfec555b292d286203e2aec65537f4fe0fdea74f7752535912882550",
+      "flow.tcl": "71387fb2b811bbd15bbb58d3813393b453d6ef54df01d727422b4a99ead0864f",
+      "synth.tcl": "747e6448e615ed25a99833704ff149bfc2868010a698da35d4b03aba572a6a1f",
+      "mmmc.tcl": "8900801639eee338c015f0d51d39c0ea6248861a00598cca24995d07b60c5e2b",
+      "dpa.sdc": "fc400f54c8b07fba685287a918ecc388d914cbf56247f116a140600005d5d5d8",
+      "cuda.sdc": "2071881ba4677b5320c0c7d10ca637d4dd288ad4dadf1c87d003bc16ff8d34d1",
+      "reference/config.tcl": "c7bdd274adff804f75f9db2d8ed60b54daff21402f4578e6d98636544e9206fc",
+      "reference/fpu_block_top.sdc": "60da194b2847234c7169161c7d5d481bb83d66aec306228dc9037d8b2422b59d",
+      "reference/mmmc_build_macros.tcl": "7c04c18f74c6bf3cffd4c4663d66de7e380d78cce68f7d15a05699e96b6c3711",
+      "reference/run_genus.tcl": "18327830ad8b737551134c3bdec1d60d10453803249afe35ab421b45f3f84d55",
+      "reference/tsmcn28_libs.tcl": "13dc9028226dd3e701e723ac866728f8b247924307852f9547b446e26b955f8a"
+    },
+    "normal_latency": 5,
+    "sfu_latency": 6,
+    "reservation_contract": {
+      "input_protocol": "Per-opcode fixed latency, valid-only; dispatcher avoids the listed resource/output reservations; drain all classes before dpa_mode_i changes",
+      "reservation_stage_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "forbidden_normal_after_sfu_offsets": [
+        1
+      ],
+      "forbidden_sfu_after_normal_offsets": []
+    },
+    "rtl_validation": {
+      "path": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/b32plus_tilezero_preselect_live_sfu6_rtl_check/summary.json",
+      "sha256": "f70e43bc5afe074e34dc0f5068b1e3cf562b402e2899d19aa55c02d2f4113975",
+      "passed": true,
+      "checks": 143486
+    }
+  },
+  "settings": {
+    "auto_ungroup": "both",
+    "lp_insert_clock_gating": "true",
+    "syn_generic_effort": "medium",
+    "syn_map_effort": "high",
+    "syn_opt_effort": "high",
+    "interconnect_mode": "ple",
+    "retime": "false",
+    "lp_clock_gating_min_flops": "2",
+    "lp_clock_gating_max_flops": "100000",
+    "setup_views": "dpa.SS.setup_view cuda.SS.setup_view",
+    "hold_views": "dpa.FF.hold_view cuda.FF.hold_view dpa.TT.extra_view cuda.TT.extra_view"
+  },
+  "run": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus_sm25_fixed/b32plus_tilezero_preselect_live_sfu6",
+  "gate_replay": false,
+  "scope": "Final synthesis cell area and setup STA; PLE, no placement/CTS/routing",
+  "file_sha256": {
+    "design.sv": "0110c24c49204a77ff3fe8ab9b53734ed5d425aa8567da2ccc16a75ff6ad51e2",
+    "source_manifest.json": "f110202bbfec555b292d286203e2aec65537f4fe0fdea74f7752535912882550",
+    "flow.tcl": "71387fb2b811bbd15bbb58d3813393b453d6ef54df01d727422b4a99ead0864f",
+    "synth.tcl": "747e6448e615ed25a99833704ff149bfc2868010a698da35d4b03aba572a6a1f",
+    "mmmc.tcl": "8900801639eee338c015f0d51d39c0ea6248861a00598cca24995d07b60c5e2b",
+    "dpa.sdc": "fc400f54c8b07fba685287a918ecc388d914cbf56247f116a140600005d5d5d8",
+    "cuda.sdc": "2071881ba4677b5320c0c7d10ca637d4dd288ad4dadf1c87d003bc16ff8d34d1",
+    "reference/config.tcl": "c7bdd274adff804f75f9db2d8ed60b54daff21402f4578e6d98636544e9206fc",
+    "reference/fpu_block_top.sdc": "60da194b2847234c7169161c7d5d481bb83d66aec306228dc9037d8b2422b59d",
+    "reference/mmmc_build_macros.tcl": "7c04c18f74c6bf3cffd4c4663d66de7e380d78cce68f7d15a05699e96b6c3711",
+    "reference/run_genus.tcl": "18327830ad8b737551134c3bdec1d60d10453803249afe35ab421b45f3f84d55",
+    "reference/tsmcn28_libs.tcl": "13dc9028226dd3e701e723ac866728f8b247924307852f9547b446e26b955f8a",
+    "manifest.json": "77836cacd2c72a887662427aade7d34d384b3664d7c940a9ab8b4a51e04bbcfa",
+    "mapped.v": "57336df8d7055b9fbb40ddba339947f704da2bc389c4b53f3276be18620caf51",
+    "settings.rpt": "7b8f9429c3ea2c3f1b8798ca4d8bfc31307d1eebf2aa90f57f69396b5814a883",
+    "area.rpt": "4a18ef1684ea9f1d3cc5de1fdf58730a078eb1bb73e00d85aba12e0e30780b27",
+    "area_hier.rpt": "4a18ef1684ea9f1d3cc5de1fdf58730a078eb1bb73e00d85aba12e0e30780b27",
+    "gates.rpt": "2775c02612d449ed9e8072ef0793831cc06ce863ce740982d4e056e3c2d2a155",
+    "clock_gating.rpt": "41ecc3689610fd758f0fc3121dbc9db30004897a06e7875ab7ff99bdf5b6571d",
+    "timing_intent.rpt": "b68e068f4b7510ad696ac45a2aefb6f243fa6f0af65824bbff1541eadef75c9e",
+    "timing_intent_final.rpt": "dcfffc1729f42f663d40a20ad372da17391cfd6b7ec4d930cd5d301b7126bcad",
+    "check_design.rpt": "f431e591a7d42d2ed3d778330e9a25462baa1e8bf3b75da172626737a59bf51a",
+    "analysis_views.rpt": "5c85f051585f22152e4fcc9c3a0bf6a926adff8d3d79c289ad75b1d175e2325c",
+    "analysis_views_final.rpt": "5c85f051585f22152e4fcc9c3a0bf6a926adff8d3d79c289ad75b1d175e2325c",
+    "complete.txt": "e9a9e9720459c1f7a3411bb9b8afd368ea12b0c8c1b208bf370f88a0566715df",
+    "run.log": "afdba867a66e2faad13c29f6e88ea8e30aabd46775b16dc8f3ce46387866da2d",
+    "qor_dpa.rpt": "b66c758f06c3a16559b163811135c3c2cdd01c52c72d5a8757203477fe480265",
+    "timing_dpa.rpt": "68bc1bac51780652cfcd60f7c28ce7a7fb532c64c688a7bccc3142cc6e6c059c",
+    "mapped_dpa.sdc": "bce96ad0205e0647b3c3d2e6e5beec052d5506dda92e1629f17366f74525a1ed",
+    "qor_cuda.rpt": "659673fc9a20a35d04dc7a5c76b39243f24ee34eeb09f6cecc675f061a1f9b57",
+    "timing_cuda.rpt": "772d0f884410dc41506cf9a1f8b858136ae0d1ba0f752d94dc789cd97ac531ae",
+    "mapped_cuda.sdc": "67b148a07bc812f301008f18b3ff569dffed5f08a098b16858b357daafc83cf8"
+  }
+}

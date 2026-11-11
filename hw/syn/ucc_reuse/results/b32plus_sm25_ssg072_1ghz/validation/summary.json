@@ -1,0 +1,22 @@
+{
+  "issued": 143476,
+  "checks": 143486,
+  "cycles": 175387,
+  "mode_changes": 200,
+  "reservation_bubbles": 28982,
+  "max_normal_run": 97,
+  "max_sfu_run": 64,
+  "passed": true,
+  "normal_latency": 5,
+  "sfu_latency": 6,
+  "homogeneous_ii": 1,
+  "gate_replay": false,
+  "sha256": {
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/b32plus_tilezero_preselect_live_sfu6/design.sv": "0110c24c49204a77ff3fe8ab9b53734ed5d425aa8567da2ccc16a75ff6ad51e2",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/b32plus_tilezero_preselect_live_sfu6/pipeline.json": "2246f82f92eefd680431fe6e9c4a0f70ec91d21ef46935f45fdc67058441ece0",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/b32plus_tilezero_preselect_live_sfu6_rtl_check/bench.sv": "d1df7349d26f39b6255565aac59dfaa0442ce4f0c55454e8cb930fbf5909524d",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/b32plus_tilezero_preselect_live_sfu6_rtl_check/vectors.txt": "6ea1d78b1062668d3370af88a925cd28448e92e2d959744a3c3d3767e6c21c51",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32plus/b32plus_tilezero_preselect_live_sfu6_rtl_check/run.log": "49dee8e282637d1f26bf23039cb24c88b30b8e19bcccb0c4e389940fd6708a5e",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/syn/ucc_reuse/selected/design.sv": "799430342320dbeb6e1414f8e7ec3c1a9da24b8f0456758a694fa2abe62233a7"
+  }
+}

@@ -1,0 +1,7 @@
+# Frozen evidence must retain the exact bytes recorded in the manifests.
+selected_pipe5/*.sv -text linguist-generated=true
+selected_pipe5/*.json -text linguist-generated=true
+baseline_pipe5/*.sv -text linguist-generated=true
+baseline_pipe5/*.json -text linguist-generated=true
+results/** -text linguist-generated=true
+results/b32plus_sm25_ssg072_1ghz/README.md text linguist-generated=false

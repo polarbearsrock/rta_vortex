@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "checks": 24453,
+  "cycles": 24463,
+  "planned_checks": 24453,
+  "planned_cycles": 24463,
+  "cases": [
+    "fp32_dpa"
+  ],
+  "rtl": true,
+  "top": "ucc_dpa16_baseline",
+  "returncode": 0,
+  "method": "Xcelium functional simulation; sequential UDP NBA scheduling; no SDF",
+  "command": [
+    "/data/eda_tools/cadence/XCELIUM2209/tools.lnx86/inca/bin/xrun",
+    "-64bit",
+    "-sv",
+    "-sequdp_nba_delay",
+    "-timescale",
+    "1ns/1ps",
+    "-top",
+    "ucc_reuse_gate",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_reuse/rtl_dpa5_groups/design.sv",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_reuse/rtl_dpa5_groups_check/bench.sv",
+    "-l",
+    "xrun.log",
+    "-v",
+    "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/verilog/tcbn28hpcplusbwp30p140_110a/tcbn28hpcplusbwp30p140.v",
+    "-v",
+    "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/verilog/tcbn28hpcplusbwp30p140hvt_110a/tcbn28hpcplusbwp30p140hvt.v",
+    "-v",
+    "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/verilog/tcbn28hpcplusbwp30p140lvt_110a/tcbn28hpcplusbwp30p140lvt.v"
+  ],
+  "sha256": {
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_reuse/rtl_dpa5_groups/design.sv": "778387c9201dea5cac75ba15649a9557d2a449cd953478f042a5602ad7bdefca",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_reuse/rtl_dpa5_groups_check/vectors.txt": "c9444ceac2d76b5f23bd772bbfa15a839ba77367d1c400be3368ed82753765d9",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_reuse/rtl_dpa5_groups_check/bench.sv": "385b39525f2bd94d346a46f5622fb89db732b221bbaa60095a9c7aa64f70f0c6",
+    "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/verilog/tcbn28hpcplusbwp30p140_110a/tcbn28hpcplusbwp30p140.v": "ad61185819c14bf80791f2ce89ce943e2b8967e41ed180f624d18ceaafa99501",
+    "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/verilog/tcbn28hpcplusbwp30p140hvt_110a/tcbn28hpcplusbwp30p140hvt.v": "5391dac8a65b10d3ccb5abe11a7e76a1541ea1bd6d56fc0de3951b8c2761683d",
+    "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/verilog/tcbn28hpcplusbwp30p140lvt_110a/tcbn28hpcplusbwp30p140lvt.v": "acd9dccd9f40b77d396ee0bb46cc99075596fd5ab501ed5e82d74227e9baaab8"
+  }
+}

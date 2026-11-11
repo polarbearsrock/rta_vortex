@@ -1,0 +1,369 @@
+
+-- Executing script file `prove_register.ys' --
+
+1. Executing Verilog-2005 frontend: register_miter.v
+Parsing Verilog input from `register_miter.v' to AST representation.
+Generating RTLIL representation for module `\register_miter'.
+Successfully finished Verilog frontend.
+
+2. Executing PREP pass.
+
+2.1. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1.1. Analyzing design hierarchy..
+Top module:  \register_miter
+
+2.1.2. Analyzing design hierarchy..
+Top module:  \register_miter
+Removed 0 unused modules.
+
+2.2. Executing PROC pass (convert processes to netlists).
+
+2.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+2.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+2.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 39 assignments to connections.
+
+2.2.4. Executing PROC_INIT pass (extract init attributes).
+
+2.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+2.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+2.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\register_miter.$proc$register_miter.v:80$151'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:78$147'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:76$143'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:74$139'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:72$135'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:70$131'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:68$127'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:66$123'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:64$119'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:62$115'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:60$111'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:58$107'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:56$103'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:54$99'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:52$95'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:50$91'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:48$87'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:46$83'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:44$79'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:42$75'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:40$71'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:38$67'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:36$63'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:34$59'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:32$55'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:30$51'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:28$47'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:26$43'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:24$39'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:22$35'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:20$31'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:18$27'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:16$23'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:14$19'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:12$15'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:10$11'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:8$7'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:6$3'.
+Creating decoders for process `\register_miter.$proc$register_miter.v:5$1'.
+
+2.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+2.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\register_miter.\data [37]' using process `\register_miter.$proc$register_miter.v:80$151'.
+  created $dff cell `$procdff$158' with positive edge clock.
+Creating register for signal `\register_miter.\data [36]' using process `\register_miter.$proc$register_miter.v:78$147'.
+  created $dff cell `$procdff$159' with positive edge clock.
+Creating register for signal `\register_miter.\data [35]' using process `\register_miter.$proc$register_miter.v:76$143'.
+  created $dff cell `$procdff$160' with positive edge clock.
+Creating register for signal `\register_miter.\data [34]' using process `\register_miter.$proc$register_miter.v:74$139'.
+  created $dff cell `$procdff$161' with positive edge clock.
+Creating register for signal `\register_miter.\data [33]' using process `\register_miter.$proc$register_miter.v:72$135'.
+  created $dff cell `$procdff$162' with positive edge clock.
+Creating register for signal `\register_miter.\data [32]' using process `\register_miter.$proc$register_miter.v:70$131'.
+  created $dff cell `$procdff$163' with positive edge clock.
+Creating register for signal `\register_miter.\data [31]' using process `\register_miter.$proc$register_miter.v:68$127'.
+  created $dff cell `$procdff$164' with positive edge clock.
+Creating register for signal `\register_miter.\data [30]' using process `\register_miter.$proc$register_miter.v:66$123'.
+  created $dff cell `$procdff$165' with positive edge clock.
+Creating register for signal `\register_miter.\data [29]' using process `\register_miter.$proc$register_miter.v:64$119'.
+  created $dff cell `$procdff$166' with positive edge clock.
+Creating register for signal `\register_miter.\data [28]' using process `\register_miter.$proc$register_miter.v:62$115'.
+  created $dff cell `$procdff$167' with positive edge clock.
+Creating register for signal `\register_miter.\data [27]' using process `\register_miter.$proc$register_miter.v:60$111'.
+  created $dff cell `$procdff$168' with positive edge clock.
+Creating register for signal `\register_miter.\data [26]' using process `\register_miter.$proc$register_miter.v:58$107'.
+  created $dff cell `$procdff$169' with positive edge clock.
+Creating register for signal `\register_miter.\data [25]' using process `\register_miter.$proc$register_miter.v:56$103'.
+  created $dff cell `$procdff$170' with positive edge clock.
+Creating register for signal `\register_miter.\data [24]' using process `\register_miter.$proc$register_miter.v:54$99'.
+  created $dff cell `$procdff$171' with positive edge clock.
+Creating register for signal `\register_miter.\data [23]' using process `\register_miter.$proc$register_miter.v:52$95'.
+  created $dff cell `$procdff$172' with positive edge clock.
+Creating register for signal `\register_miter.\data [22]' using process `\register_miter.$proc$register_miter.v:50$91'.
+  created $dff cell `$procdff$173' with positive edge clock.
+Creating register for signal `\register_miter.\data [21]' using process `\register_miter.$proc$register_miter.v:48$87'.
+  created $dff cell `$procdff$174' with positive edge clock.
+Creating register for signal `\register_miter.\data [20]' using process `\register_miter.$proc$register_miter.v:46$83'.
+  created $dff cell `$procdff$175' with positive edge clock.
+Creating register for signal `\register_miter.\data [19]' using process `\register_miter.$proc$register_miter.v:44$79'.
+  created $dff cell `$procdff$176' with positive edge clock.
+Creating register for signal `\register_miter.\data [18]' using process `\register_miter.$proc$register_miter.v:42$75'.
+  created $dff cell `$procdff$177' with positive edge clock.
+Creating register for signal `\register_miter.\data [17]' using process `\register_miter.$proc$register_miter.v:40$71'.
+  created $dff cell `$procdff$178' with positive edge clock.
+Creating register for signal `\register_miter.\data [16]' using process `\register_miter.$proc$register_miter.v:38$67'.
+  created $dff cell `$procdff$179' with positive edge clock.
+Creating register for signal `\register_miter.\data [15]' using process `\register_miter.$proc$register_miter.v:36$63'.
+  created $dff cell `$procdff$180' with positive edge clock.
+Creating register for signal `\register_miter.\data [14]' using process `\register_miter.$proc$register_miter.v:34$59'.
+  created $dff cell `$procdff$181' with positive edge clock.
+Creating register for signal `\register_miter.\data [13]' using process `\register_miter.$proc$register_miter.v:32$55'.
+  created $dff cell `$procdff$182' with positive edge clock.
+Creating register for signal `\register_miter.\data [12]' using process `\register_miter.$proc$register_miter.v:30$51'.
+  created $dff cell `$procdff$183' with positive edge clock.
+Creating register for signal `\register_miter.\data [11]' using process `\register_miter.$proc$register_miter.v:28$47'.
+  created $dff cell `$procdff$184' with positive edge clock.
+Creating register for signal `\register_miter.\data [10]' using process `\register_miter.$proc$register_miter.v:26$43'.
+  created $dff cell `$procdff$185' with positive edge clock.
+Creating register for signal `\register_miter.\data [9]' using process `\register_miter.$proc$register_miter.v:24$39'.
+  created $dff cell `$procdff$186' with positive edge clock.
+Creating register for signal `\register_miter.\data [8]' using process `\register_miter.$proc$register_miter.v:22$35'.
+  created $dff cell `$procdff$187' with positive edge clock.
+Creating register for signal `\register_miter.\data [7]' using process `\register_miter.$proc$register_miter.v:20$31'.
+  created $dff cell `$procdff$188' with positive edge clock.
+Creating register for signal `\register_miter.\data [6]' using process `\register_miter.$proc$register_miter.v:18$27'.
+  created $dff cell `$procdff$189' with positive edge clock.
+Creating register for signal `\register_miter.\data [5]' using process `\register_miter.$proc$register_miter.v:16$23'.
+  created $dff cell `$procdff$190' with positive edge clock.
+Creating register for signal `\register_miter.\data [4]' using process `\register_miter.$proc$register_miter.v:14$19'.
+  created $dff cell `$procdff$191' with positive edge clock.
+Creating register for signal `\register_miter.\data [3]' using process `\register_miter.$proc$register_miter.v:12$15'.
+  created $dff cell `$procdff$192' with positive edge clock.
+Creating register for signal `\register_miter.\data [2]' using process `\register_miter.$proc$register_miter.v:10$11'.
+  created $dff cell `$procdff$193' with positive edge clock.
+Creating register for signal `\register_miter.\data [1]' using process `\register_miter.$proc$register_miter.v:8$7'.
+  created $dff cell `$procdff$194' with positive edge clock.
+Creating register for signal `\register_miter.\data [0]' using process `\register_miter.$proc$register_miter.v:6$3'.
+  created $dff cell `$procdff$195' with positive edge clock.
+Creating register for signal `\register_miter.\active' using process `\register_miter.$proc$register_miter.v:5$1'.
+  created $dff cell `$procdff$196' with positive edge clock.
+
+2.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+2.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `register_miter.$proc$register_miter.v:80$151'.
+Removing empty process `register_miter.$proc$register_miter.v:78$147'.
+Removing empty process `register_miter.$proc$register_miter.v:76$143'.
+Removing empty process `register_miter.$proc$register_miter.v:74$139'.
+Removing empty process `register_miter.$proc$register_miter.v:72$135'.
+Removing empty process `register_miter.$proc$register_miter.v:70$131'.
+Removing empty process `register_miter.$proc$register_miter.v:68$127'.
+Removing empty process `register_miter.$proc$register_miter.v:66$123'.
+Removing empty process `register_miter.$proc$register_miter.v:64$119'.
+Removing empty process `register_miter.$proc$register_miter.v:62$115'.
+Removing empty process `register_miter.$proc$register_miter.v:60$111'.
+Removing empty process `register_miter.$proc$register_miter.v:58$107'.
+Removing empty process `register_miter.$proc$register_miter.v:56$103'.
+Removing empty process `register_miter.$proc$register_miter.v:54$99'.
+Removing empty process `register_miter.$proc$register_miter.v:52$95'.
+Removing empty process `register_miter.$proc$register_miter.v:50$91'.
+Removing empty process `register_miter.$proc$register_miter.v:48$87'.
+Removing empty process `register_miter.$proc$register_miter.v:46$83'.
+Removing empty process `register_miter.$proc$register_miter.v:44$79'.
+Removing empty process `register_miter.$proc$register_miter.v:42$75'.
+Removing empty process `register_miter.$proc$register_miter.v:40$71'.
+Removing empty process `register_miter.$proc$register_miter.v:38$67'.
+Removing empty process `register_miter.$proc$register_miter.v:36$63'.
+Removing empty process `register_miter.$proc$register_miter.v:34$59'.
+Removing empty process `register_miter.$proc$register_miter.v:32$55'.
+Removing empty process `register_miter.$proc$register_miter.v:30$51'.
+Removing empty process `register_miter.$proc$register_miter.v:28$47'.
+Removing empty process `register_miter.$proc$register_miter.v:26$43'.
+Removing empty process `register_miter.$proc$register_miter.v:24$39'.
+Removing empty process `register_miter.$proc$register_miter.v:22$35'.
+Removing empty process `register_miter.$proc$register_miter.v:20$31'.
+Removing empty process `register_miter.$proc$register_miter.v:18$27'.
+Removing empty process `register_miter.$proc$register_miter.v:16$23'.
+Removing empty process `register_miter.$proc$register_miter.v:14$19'.
+Removing empty process `register_miter.$proc$register_miter.v:12$15'.
+Removing empty process `register_miter.$proc$register_miter.v:10$11'.
+Removing empty process `register_miter.$proc$register_miter.v:8$7'.
+Removing empty process `register_miter.$proc$register_miter.v:6$3'.
+Removing empty process `register_miter.$proc$register_miter.v:5$1'.
+Cleaned up 0 empty switches.
+
+2.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module register_miter.
+<suppressed ~38 debug messages>
+
+2.3. Executing FUTURE pass.
+
+2.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module register_miter.
+
+2.5. Executing CHECK pass (checking for obvious problems).
+Checking module register_miter...
+Found and reported 0 problems.
+
+2.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \register_miter..
+Removed 0 unused cells and 78 unused wires.
+<suppressed ~1 debug messages>
+
+2.7. Executing OPT pass (performing simple optimizations).
+
+2.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module register_miter.
+
+2.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\register_miter'.
+Computing hashes of 157 cells of `\register_miter'.
+Finding duplicate cells in `\register_miter'.
+Computing hashes of 120 cells of `\register_miter'.
+Finding duplicate cells in `\register_miter'.
+<suppressed ~111 debug messages>
+Removed a total of 37 cells.
+
+2.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \register_miter..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~78 debug messages>
+
+2.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \register_miter.
+Performed a total of 0 changes.
+
+2.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\register_miter'.
+Computing hashes of 120 cells of `\register_miter'.
+Finding duplicate cells in `\register_miter'.
+Removed a total of 0 cells.
+
+2.7.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \register_miter..
+Removed 0 unused cells and 37 unused wires.
+<suppressed ~1 debug messages>
+
+2.7.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module register_miter.
+
+2.7.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.7.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \register_miter..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~78 debug messages>
+
+2.7.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \register_miter.
+Performed a total of 0 changes.
+
+2.7.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\register_miter'.
+Computing hashes of 120 cells of `\register_miter'.
+Finding duplicate cells in `\register_miter'.
+Removed a total of 0 cells.
+
+2.7.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \register_miter..
+
+2.7.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module register_miter.
+
+2.7.14. Finished fast OPT passes. (There is nothing left to do.)
+
+2.8. Executing WREDUCE pass (reducing word size of cells).
+
+2.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \register_miter..
+
+2.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+2.11. Executing OPT pass (performing simple optimizations).
+
+2.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module register_miter.
+
+2.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\register_miter'.
+Computing hashes of 120 cells of `\register_miter'.
+Finding duplicate cells in `\register_miter'.
+Removed a total of 0 cells.
+
+2.11.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \register_miter..
+
+2.11.4. Finished fast OPT passes.
+
+2.12. Executing SORT pass.
+
+2.13. Printing statistics.
+
+=== register_miter ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       50 wires
+      161 wire bits
+        8 public wires
+      119 public wire bits
+        5 ports
+       42 port bits
+      120 cells
+       39   $dff
+        1   $logic_and
+        1   $logic_not
+        1   $logic_or
+       39   $mux
+       38   $not
+        1   $reduce_and
+
+2.14. Executing CHECK pass (checking for obvious problems).
+Checking module register_miter...
+Found and reported 0 problems.
+
+3. Executing SAT pass (solving SAT problems in the circuit).
+Using SAT solver `minisat`.
+
+Setting up time step 1:
+Final constraint equation: { } = { }
+Imported 120 cells to SAT database.
+No constraints for initial state found.
+
+
+Setting up time step 2:
+Final constraint equation: { } = { }
+Imported 120 cells to SAT database.
+Import proof-constraint: \eq = 1'1
+Final proof equation: \eq = 1'1
+
+Solving problem with 1091 variables and 2585 clauses..
+SAT proof finished - no model found: SUCCESS!
+
+                  /$$$$$$      /$$$$$$$$     /$$$$$$$    
+                 /$$__  $$    | $$_____/    | $$__  $$   
+                | $$  \ $$    | $$          | $$  \ $$   
+                | $$  | $$    | $$$$$       | $$  | $$   
+                | $$  | $$    | $$__/       | $$  | $$   
+                | $$/$$ $$    | $$          | $$  | $$   
+                |  $$$$$$/ /$$| $$$$$$$$ /$$| $$$$$$$//$$
+                 \____ $$$|__/|________/|__/|_______/|__/
+                       \__/                              
+

@@ -1,0 +1,1895 @@
+
+-- Executing script file `prove.ys' --
+
+1. Executing Verilog-2005 frontend: miter.v
+Parsing Verilog input from `miter.v' to AST representation.
+Generating RTLIL representation for module `\or_op_1758'.
+Generating RTLIL representation for module `\or_op_1759'.
+Generating RTLIL representation for module `\not_op_1760'.
+Generating RTLIL representation for module `\or_op_1769'.
+Generating RTLIL representation for module `\or_op_1770'.
+Generating RTLIL representation for module `\leq_unsigned_13990'.
+Generating RTLIL representation for module `\sub_unsigned_14000'.
+Generating RTLIL representation for module `\add_signed_11653'.
+Generating RTLIL representation for module `\sub_signed_14004'.
+Generating RTLIL representation for module `\geq_signed'.
+Generating RTLIL representation for module `\add_unsigned_14011'.
+Generating RTLIL representation for module `\gt_signed_14014'.
+Generating RTLIL representation for module `\add_signed_13326'.
+Generating RTLIL representation for module `\sub_signed_14018'.
+Generating RTLIL representation for module `\equal_unsigned_11661'.
+Generating RTLIL representation for module `\lt_signed'.
+Generating RTLIL representation for module `\gt_signed_14026'.
+Generating RTLIL representation for module `\sub_signed_14028'.
+Generating RTLIL representation for module `\shift_left_vlog_unsigned_15336'.
+Generating RTLIL representation for module `\add_unsigned_15338'.
+Generating RTLIL representation for module `\geq_signed_11664'.
+Generating RTLIL representation for module `\leq_signed_15350'.
+Generating RTLIL representation for module `\add_unsigned_15352'.
+Generating RTLIL representation for module `\add_signed_15354'.
+Generating RTLIL representation for module `\bmux_12459'.
+Generating RTLIL representation for module `\bmux_589'.
+Generating RTLIL representation for module `\case_box_1771'.
+Generating RTLIL representation for module `\mux_15371'.
+Generating RTLIL representation for module `\bmux_13884'.
+Generating RTLIL representation for module `\bmux_878'.
+Generating RTLIL representation for module `\bmux_1062'.
+Generating RTLIL representation for module `\bmux_11869'.
+Generating RTLIL representation for module `\bmux_616'.
+Generating RTLIL representation for module `\bmux_578'.
+Generating RTLIL representation for module `\bmux_15388'.
+Generating RTLIL representation for module `\bmux_15391'.
+Generating RTLIL representation for module `\bmux_816'.
+Generating RTLIL representation for module `\bmux_15396'.
+Generating RTLIL representation for module `\bmux_585'.
+Generating RTLIL representation for module `\case_box_1772'.
+Generating RTLIL representation for module `\mux_15404'.
+Generating RTLIL representation for module `\bmux_15405'.
+Generating RTLIL representation for module `\bmux_583'.
+Generating RTLIL representation for module `\case_box_1775'.
+Generating RTLIL representation for module `\mux_15408'.
+Generating RTLIL representation for module `\bmux_1063'.
+Generating RTLIL representation for module `\bmux_11612'.
+Generating RTLIL representation for module `\bmux_15428'.
+Generating RTLIL representation for module `\bmux_15432'.
+Generating RTLIL representation for module `\bmux_1032'.
+Generating RTLIL representation for module `\bmux_11875'.
+Generating RTLIL representation for module `\bmux_11867'.
+Generating RTLIL representation for module `\bmux_579'.
+Generating RTLIL representation for module `\leq_unsigned'.
+Generating RTLIL representation for module `\geq_unsigned_13924'.
+Generating RTLIL representation for module `\leq_unsigned_13927'.
+Generating RTLIL representation for module `\geq_unsigned_13930'.
+Generating RTLIL representation for module `\lt_unsigned_13942'.
+Generating RTLIL representation for module `\not_op'.
+Generating RTLIL representation for module `\add_signed'.
+Generating RTLIL representation for module `\add_unsigned_535'.
+Generating RTLIL representation for module `\geq_unsigned'.
+Generating RTLIL representation for module `\lt_unsigned'.
+Generating RTLIL representation for module `\sub_unsigned'.
+Generating RTLIL representation for module `\sub_signed'.
+Generating RTLIL representation for module `\sub_unsigned_539'.
+Generating RTLIL representation for module `\add_unsigned_541'.
+Generating RTLIL representation for module `\sub_signed_543'.
+Generating RTLIL representation for module `\geq_unsigned_550'.
+Generating RTLIL representation for module `\sub_unsigned_552'.
+Generating RTLIL representation for module `\sub_unsigned_557'.
+Generating RTLIL representation for module `\nequal_unsigned'.
+Generating RTLIL representation for module `\equal_unsigned_561'.
+Generating RTLIL representation for module `\equal_unsigned_566'.
+Generating RTLIL representation for module `\sub_signed_568'.
+Generating RTLIL representation for module `\sub_signed_570'.
+Generating RTLIL representation for module `\add_signed_574'.
+Generating RTLIL representation for module `\sub_unsigned_576'.
+Generating RTLIL representation for module `\case_box_24'.
+Generating RTLIL representation for module `\mux_577'.
+Generating RTLIL representation for module `\case_box_25'.
+Generating RTLIL representation for module `\mux_584'.
+Generating RTLIL representation for module `\bmux_595'.
+Generating RTLIL representation for module `\case_box_28'.
+Generating RTLIL representation for module `\mux_602'.
+Generating RTLIL representation for module `\bmux_611'.
+Generating RTLIL representation for module `\case_box_31'.
+Generating RTLIL representation for module `\mux_613'.
+Generating RTLIL representation for module `\case_box_34'.
+Generating RTLIL representation for module `\mux_614'.
+Generating RTLIL representation for module `\bmux_615'.
+Generating RTLIL representation for module `\bmux_619'.
+Generating RTLIL representation for module `\bmux_623'.
+Generating RTLIL representation for module `\bmux_626'.
+Generating RTLIL representation for module `\bmux_631'.
+Generating RTLIL representation for module `\bmux_632'.
+Generating RTLIL representation for module `\and_op'.
+Generating RTLIL representation for module `\and_op_1'.
+Generating RTLIL representation for module `\and_op_3'.
+Generating RTLIL representation for module `\and_op_5'.
+Generating RTLIL representation for module `\and_op_7'.
+Generating RTLIL representation for module `\and_op_9'.
+Generating RTLIL representation for module `\and_op_11'.
+Generating RTLIL representation for module `\and_op_13'.
+Generating RTLIL representation for module `\bmux'.
+Generating RTLIL representation for module `\add_unsigned'.
+Generating RTLIL representation for module `\case_box'.
+Generating RTLIL representation for module `\mux'.
+Generating RTLIL representation for module `\or_op'.
+Generating RTLIL representation for module `\or_op_92'.
+Generating RTLIL representation for module `\or_op_93'.
+Generating RTLIL representation for module `\add_unsigned_687'.
+Generating RTLIL representation for module `\sub_signed_689'.
+Generating RTLIL representation for module `\gt_signed'.
+Generating RTLIL representation for module `\leq_signed'.
+Generating RTLIL representation for module `\leq_signed_694'.
+Generating RTLIL representation for module `\leq_signed_697'.
+Generating RTLIL representation for module `\add_unsigned_699'.
+Generating RTLIL representation for module `\add_unsigned_701'.
+Generating RTLIL representation for module `\sub_unsigned_705'.
+Generating RTLIL representation for module `\leq_signed_708'.
+Generating RTLIL representation for module `\sub_signed_710'.
+Generating RTLIL representation for module `\case_box_106'.
+Generating RTLIL representation for module `\mux_713'.
+Generating RTLIL representation for module `\case_box_107'.
+Generating RTLIL representation for module `\mux_728'.
+Generating RTLIL representation for module `\case_box_110'.
+Generating RTLIL representation for module `\mux_729'.
+Generating RTLIL representation for module `\case_box_113'.
+Generating RTLIL representation for module `\mux_734'.
+Generating RTLIL representation for module `\mux_738'.
+Generating RTLIL representation for module `\mux_745'.
+Generating RTLIL representation for module `\add_unsigned_809'.
+Generating RTLIL representation for module `\add_unsigned_811'.
+Generating RTLIL representation for module `\bmux_813'.
+Generating RTLIL representation for module `\mult_unsigned'.
+Generating RTLIL representation for module `\add_unsigned_751'.
+Generating RTLIL representation for module `\add_unsigned_753'.
+Generating RTLIL representation for module `\mult_unsigned_787'.
+Generating RTLIL representation for module `\mult_unsigned_795'.
+Generating RTLIL representation for module `\mult_unsigned_803'.
+Generating RTLIL representation for module `\bmux_804'.
+Generating RTLIL representation for module `\not_op_119'.
+Generating RTLIL representation for module `\not_op_120'.
+Generating RTLIL representation for module `\add_unsigned_871'.
+Generating RTLIL representation for module `\bmux_874'.
+Generating RTLIL representation for module `\bmux_877'.
+Generating RTLIL representation for module `\bmux_880'.
+Generating RTLIL representation for module `\xor_op'.
+Generating RTLIL representation for module `\xor_op_121'.
+Generating RTLIL representation for module `\not_op_122'.
+Generating RTLIL representation for module `\and_op_123'.
+Generating RTLIL representation for module `\or_op_124'.
+Generating RTLIL representation for module `\xor_op_125'.
+Generating RTLIL representation for module `\not_op_126'.
+Generating RTLIL representation for module `\equal_unsigned_891'.
+Generating RTLIL representation for module `\equal_unsigned_905'.
+Generating RTLIL representation for module `\bmux_945'.
+Generating RTLIL representation for module `\case_box_211'.
+Generating RTLIL representation for module `\mux_1061'.
+Generating RTLIL representation for module `\or_op_162'.
+Generating RTLIL representation for module `\or_op_163'.
+Generating RTLIL representation for module `\not_op_169'.
+Generating RTLIL representation for module `\or_op_172'.
+Generating RTLIL representation for module `\lt_unsigned_1011'.
+Generating RTLIL representation for module `\case_box_186'.
+Generating RTLIL representation for module `\mux_1022'.
+Generating RTLIL representation for module `\case_box_187'.
+Generating RTLIL representation for module `\case_box_190'.
+Generating RTLIL representation for module `\case_box_193'.
+Generating RTLIL representation for module `\mux_1031'.
+Generating RTLIL representation for module `\case_box_196'.
+Generating RTLIL representation for module `\case_box_199'.
+Generating RTLIL representation for module `\mux_1045'.
+Generating RTLIL representation for module `\case_box_202'.
+Generating RTLIL representation for module `\mux_1052'.
+Generating RTLIL representation for module `\mux_1054'.
+Generating RTLIL representation for module `\and_op_216'.
+Generating RTLIL representation for module `\or_op_217'.
+Generating RTLIL representation for module `\or_op_219'.
+Generating RTLIL representation for module `\or_op_220'.
+Generating RTLIL representation for module `\or_op_221'.
+Generating RTLIL representation for module `\or_op_226'.
+Generating RTLIL representation for module `\or_op_228'.
+Generating RTLIL representation for module `\xor_op_231'.
+Generating RTLIL representation for module `\or_op_239'.
+Generating RTLIL representation for module `\or_op_243'.
+Generating RTLIL representation for module `\or_op_245'.
+Generating RTLIL representation for module `\lt_unsigned_1072'.
+Generating RTLIL representation for module `\gt_unsigned'.
+Generating RTLIL representation for module `\xor_op_1419'.
+Generating RTLIL representation for module `\xor_op_1420'.
+Generating RTLIL representation for module `\xor_op_1421'.
+Generating RTLIL representation for module `\xor_op_1422'.
+Generating RTLIL representation for module `\xor_op_1423'.
+Generating RTLIL representation for module `\xor_op_1424'.
+Generating RTLIL representation for module `\xor_op_1425'.
+Generating RTLIL representation for module `\xor_op_1426'.
+Generating RTLIL representation for module `\xor_op_1427'.
+Generating RTLIL representation for module `\xor_op_1428'.
+Generating RTLIL representation for module `\xor_op_1429'.
+Generating RTLIL representation for module `\xor_op_1430'.
+Generating RTLIL representation for module `\xor_op_1431'.
+Generating RTLIL representation for module `\xor_op_1432'.
+Generating RTLIL representation for module `\xor_op_1433'.
+Generating RTLIL representation for module `\xor_op_1434'.
+Generating RTLIL representation for module `\xor_op_1435'.
+Generating RTLIL representation for module `\xor_op_1436'.
+Generating RTLIL representation for module `\xor_op_1437'.
+Generating RTLIL representation for module `\xor_op_1438'.
+Generating RTLIL representation for module `\xor_op_1439'.
+Generating RTLIL representation for module `\xor_op_1440'.
+Generating RTLIL representation for module `\xor_op_1441'.
+Generating RTLIL representation for module `\xor_op_1442'.
+Generating RTLIL representation for module `\xor_op_1443'.
+Generating RTLIL representation for module `\xor_op_1444'.
+Generating RTLIL representation for module `\xor_op_1445'.
+Generating RTLIL representation for module `\xor_op_1446'.
+Generating RTLIL representation for module `\xor_op_1447'.
+Generating RTLIL representation for module `\xor_op_1448'.
+Generating RTLIL representation for module `\xor_op_1449'.
+Generating RTLIL representation for module `\xor_op_1450'.
+Generating RTLIL representation for module `\xor_op_1451'.
+Generating RTLIL representation for module `\xor_op_1452'.
+Generating RTLIL representation for module `\xor_op_1453'.
+Generating RTLIL representation for module `\xor_op_1454'.
+Generating RTLIL representation for module `\xor_op_1455'.
+Generating RTLIL representation for module `\xor_op_1456'.
+Generating RTLIL representation for module `\xor_op_1457'.
+Generating RTLIL representation for module `\xor_op_1458'.
+Generating RTLIL representation for module `\xor_op_1459'.
+Generating RTLIL representation for module `\xor_op_1460'.
+Generating RTLIL representation for module `\xor_op_1461'.
+Generating RTLIL representation for module `\xor_op_1462'.
+Generating RTLIL representation for module `\xor_op_1463'.
+Generating RTLIL representation for module `\xor_op_1464'.
+Generating RTLIL representation for module `\xor_op_1465'.
+Generating RTLIL representation for module `\xor_op_1466'.
+Generating RTLIL representation for module `\xor_op_1467'.
+Generating RTLIL representation for module `\xor_op_1468'.
+Generating RTLIL representation for module `\xor_op_1469'.
+Generating RTLIL representation for module `\xor_op_1470'.
+Generating RTLIL representation for module `\xor_op_1471'.
+Generating RTLIL representation for module `\xor_op_1472'.
+Generating RTLIL representation for module `\xor_op_1473'.
+Generating RTLIL representation for module `\xor_op_1474'.
+Generating RTLIL representation for module `\xor_op_1475'.
+Generating RTLIL representation for module `\xor_op_1476'.
+Generating RTLIL representation for module `\xor_op_1477'.
+Generating RTLIL representation for module `\xor_op_1478'.
+Generating RTLIL representation for module `\xor_op_1479'.
+Generating RTLIL representation for module `\xor_op_1480'.
+Generating RTLIL representation for module `\xor_op_1481'.
+Generating RTLIL representation for module `\xor_op_1482'.
+Generating RTLIL representation for module `\and_op_1483'.
+Generating RTLIL representation for module `\and_op_1485'.
+Generating RTLIL representation for module `\and_op_1486'.
+Generating RTLIL representation for module `\or_op_1554'.
+Generating RTLIL representation for module `\or_op_1558'.
+Generating RTLIL representation for module `\add_unsigned_1334'.
+Generating RTLIL representation for module `\add_unsigned_11885'.
+Generating RTLIL representation for module `\add_unsigned_11887'.
+Generating RTLIL representation for module `\add_unsigned_11889'.
+Generating RTLIL representation for module `\add_unsigned_11891'.
+Generating RTLIL representation for module `\add_unsigned_11893'.
+Generating RTLIL representation for module `\add_unsigned_11913'.
+Generating RTLIL representation for module `\nequal_unsigned_12013'.
+Generating RTLIL representation for module `\sub_signed_12015'.
+Generating RTLIL representation for module `\gt_signed_12018'.
+Generating RTLIL representation for module `\sub_unsigned_12020'.
+Generating RTLIL representation for module `\gt_signed_12025'.
+Generating RTLIL representation for module `\sub_unsigned_12027'.
+Generating RTLIL representation for module `\sub_unsigned_12029'.
+Generating RTLIL representation for module `\gt_unsigned_12032'.
+Generating RTLIL representation for module `\add_signed_1694'.
+Generating RTLIL representation for module `\add_unsigned_2584'.
+Generating RTLIL representation for module `\add_unsigned_11277'.
+Generating RTLIL representation for module `\add_unsigned_11279'.
+Generating RTLIL representation for module `\add_unsigned_11281'.
+Generating RTLIL representation for module `\add_unsigned_12207'.
+Generating RTLIL representation for module `\sub_unsigned_12229'.
+Generating RTLIL representation for module `\sub_unsigned_12329'.
+Generating RTLIL representation for module `\add_unsigned_12331'.
+Generating RTLIL representation for module `\add_unsigned_12333'.
+Generating RTLIL representation for module `\gt_unsigned_12336'.
+Generating RTLIL representation for module `\mult_unsigned_12430'.
+Generating RTLIL representation for module `\and_op_324'.
+Generating RTLIL representation for module `\and_op_325'.
+Generating RTLIL representation for module `\and_op_326'.
+Generating RTLIL representation for module `\and_op_327'.
+Generating RTLIL representation for module `\and_op_347'.
+Generating RTLIL representation for module `\and_op_348'.
+Generating RTLIL representation for module `\and_op_349'.
+Generating RTLIL representation for module `\and_op_350'.
+Generating RTLIL representation for module `\and_op_370'.
+Generating RTLIL representation for module `\and_op_371'.
+Generating RTLIL representation for module `\and_op_372'.
+Generating RTLIL representation for module `\and_op_373'.
+Generating RTLIL representation for module `\and_op_393'.
+Generating RTLIL representation for module `\and_op_394'.
+Generating RTLIL representation for module `\and_op_395'.
+Generating RTLIL representation for module `\and_op_396'.
+Generating RTLIL representation for module `\nequal_unsigned_1142'.
+Generating RTLIL representation for module `\case_box_401'.
+Generating RTLIL representation for module `\mux_2080'.
+Generating RTLIL representation for module `\case_box_402'.
+Generating RTLIL representation for module `\case_box_405'.
+Generating RTLIL representation for module `\case_box_408'.
+Generating RTLIL representation for module `\case_box_411'.
+Generating RTLIL representation for module `\case_box_414'.
+Generating RTLIL representation for module `\case_box_417'.
+Generating RTLIL representation for module `\case_box_420'.
+Generating RTLIL representation for module `\case_box_423'.
+Generating RTLIL representation for module `\case_box_426'.
+Generating RTLIL representation for module `\case_box_429'.
+Generating RTLIL representation for module `\case_box_432'.
+Generating RTLIL representation for module `\case_box_435'.
+Generating RTLIL representation for module `\case_box_438'.
+Generating RTLIL representation for module `\case_box_441'.
+Generating RTLIL representation for module `\case_box_444'.
+Generating RTLIL representation for module `\case_box_447'.
+Generating RTLIL representation for module `\case_box_450'.
+Generating RTLIL representation for module `\case_box_453'.
+Generating RTLIL representation for module `\case_box_456'.
+Generating RTLIL representation for module `\case_box_459'.
+Generating RTLIL representation for module `\case_box_462'.
+Generating RTLIL representation for module `\case_box_465'.
+Generating RTLIL representation for module `\case_box_468'.
+Generating RTLIL representation for module `\case_box_471'.
+Generating RTLIL representation for module `\case_box_474'.
+Generating RTLIL representation for module `\case_box_477'.
+Generating RTLIL representation for module `\case_box_480'.
+Generating RTLIL representation for module `\case_box_483'.
+Generating RTLIL representation for module `\case_box_486'.
+Generating RTLIL representation for module `\case_box_489'.
+Generating RTLIL representation for module `\case_box_492'.
+Generating RTLIL representation for module `\case_box_495'.
+Generating RTLIL representation for module `\case_box_498'.
+Generating RTLIL representation for module `\case_box_501'.
+Generating RTLIL representation for module `\case_box_504'.
+Generating RTLIL representation for module `\case_box_507'.
+Generating RTLIL representation for module `\case_box_510'.
+Generating RTLIL representation for module `\case_box_513'.
+Generating RTLIL representation for module `\case_box_516'.
+Generating RTLIL representation for module `\case_box_519'.
+Generating RTLIL representation for module `\case_box_522'.
+Generating RTLIL representation for module `\case_box_525'.
+Generating RTLIL representation for module `\case_box_528'.
+Generating RTLIL representation for module `\case_box_531'.
+Generating RTLIL representation for module `\case_box_534'.
+Generating RTLIL representation for module `\case_box_537'.
+Generating RTLIL representation for module `\case_box_540'.
+Generating RTLIL representation for module `\case_box_543'.
+Generating RTLIL representation for module `\case_box_546'.
+Generating RTLIL representation for module `\case_box_549'.
+Generating RTLIL representation for module `\case_box_552'.
+Generating RTLIL representation for module `\case_box_555'.
+Generating RTLIL representation for module `\case_box_558'.
+Generating RTLIL representation for module `\case_box_561'.
+Generating RTLIL representation for module `\case_box_564'.
+Generating RTLIL representation for module `\case_box_567'.
+Generating RTLIL representation for module `\case_box_570'.
+Generating RTLIL representation for module `\case_box_573'.
+Generating RTLIL representation for module `\case_box_576'.
+Generating RTLIL representation for module `\case_box_579'.
+Generating RTLIL representation for module `\case_box_582'.
+Generating RTLIL representation for module `\case_box_585'.
+Generating RTLIL representation for module `\case_box_588'.
+Generating RTLIL representation for module `\case_box_591'.
+Generating RTLIL representation for module `\case_box_594'.
+Generating RTLIL representation for module `\case_box_597'.
+Generating RTLIL representation for module `\case_box_600'.
+Generating RTLIL representation for module `\case_box_603'.
+Generating RTLIL representation for module `\case_box_606'.
+Generating RTLIL representation for module `\case_box_609'.
+Generating RTLIL representation for module `\case_box_612'.
+Generating RTLIL representation for module `\case_box_615'.
+Generating RTLIL representation for module `\case_box_618'.
+Generating RTLIL representation for module `\case_box_621'.
+Generating RTLIL representation for module `\case_box_624'.
+Generating RTLIL representation for module `\case_box_627'.
+Generating RTLIL representation for module `\case_box_630'.
+Generating RTLIL representation for module `\case_box_633'.
+Generating RTLIL representation for module `\case_box_636'.
+Generating RTLIL representation for module `\case_box_639'.
+Generating RTLIL representation for module `\case_box_642'.
+Generating RTLIL representation for module `\case_box_645'.
+Generating RTLIL representation for module `\case_box_648'.
+Generating RTLIL representation for module `\case_box_651'.
+Generating RTLIL representation for module `\case_box_654'.
+Generating RTLIL representation for module `\case_box_657'.
+Generating RTLIL representation for module `\case_box_660'.
+Generating RTLIL representation for module `\case_box_663'.
+Generating RTLIL representation for module `\case_box_666'.
+Generating RTLIL representation for module `\case_box_669'.
+Generating RTLIL representation for module `\case_box_672'.
+Generating RTLIL representation for module `\case_box_675'.
+Generating RTLIL representation for module `\case_box_678'.
+Generating RTLIL representation for module `\case_box_681'.
+Generating RTLIL representation for module `\case_box_684'.
+Generating RTLIL representation for module `\case_box_687'.
+Generating RTLIL representation for module `\case_box_690'.
+Generating RTLIL representation for module `\case_box_693'.
+Generating RTLIL representation for module `\case_box_696'.
+Generating RTLIL representation for module `\case_box_699'.
+Generating RTLIL representation for module `\case_box_702'.
+Generating RTLIL representation for module `\case_box_705'.
+Generating RTLIL representation for module `\case_box_708'.
+Generating RTLIL representation for module `\case_box_711'.
+Generating RTLIL representation for module `\case_box_714'.
+Generating RTLIL representation for module `\case_box_717'.
+Generating RTLIL representation for module `\case_box_720'.
+Generating RTLIL representation for module `\case_box_723'.
+Generating RTLIL representation for module `\case_box_726'.
+Generating RTLIL representation for module `\case_box_729'.
+Generating RTLIL representation for module `\case_box_732'.
+Generating RTLIL representation for module `\case_box_735'.
+Generating RTLIL representation for module `\case_box_738'.
+Generating RTLIL representation for module `\case_box_741'.
+Generating RTLIL representation for module `\case_box_744'.
+Generating RTLIL representation for module `\case_box_747'.
+Generating RTLIL representation for module `\case_box_750'.
+Generating RTLIL representation for module `\case_box_753'.
+Generating RTLIL representation for module `\case_box_756'.
+Generating RTLIL representation for module `\case_box_759'.
+Generating RTLIL representation for module `\case_box_762'.
+Generating RTLIL representation for module `\case_box_765'.
+Generating RTLIL representation for module `\case_box_768'.
+Generating RTLIL representation for module `\case_box_771'.
+Generating RTLIL representation for module `\case_box_774'.
+Generating RTLIL representation for module `\case_box_777'.
+Generating RTLIL representation for module `\case_box_780'.
+Generating RTLIL representation for module `\and_op_252'.
+Generating RTLIL representation for module `\and_op_253'.
+Generating RTLIL representation for module `\and_op_254'.
+Generating RTLIL representation for module `\and_op_255'.
+Generating RTLIL representation for module `\and_op_256'.
+Generating RTLIL representation for module `\xor_op_1249'.
+Generating RTLIL representation for module `\xor_op_1250'.
+Generating RTLIL representation for module `\xor_op_1251'.
+Generating RTLIL representation for module `\xor_op_1252'.
+Generating RTLIL representation for module `\xor_op_1253'.
+Generating RTLIL representation for module `\xor_op_1254'.
+Generating RTLIL representation for module `\xor_op_1255'.
+Generating RTLIL representation for module `\xor_op_1256'.
+Generating RTLIL representation for module `\xor_op_1257'.
+Generating RTLIL representation for module `\xor_op_1258'.
+Generating RTLIL representation for module `\xor_op_1259'.
+Generating RTLIL representation for module `\xor_op_1260'.
+Generating RTLIL representation for module `\xor_op_1261'.
+Generating RTLIL representation for module `\xor_op_1262'.
+Generating RTLIL representation for module `\xor_op_1263'.
+Generating RTLIL representation for module `\xor_op_1264'.
+Generating RTLIL representation for module `\xor_op_1265'.
+Generating RTLIL representation for module `\xor_op_1266'.
+Generating RTLIL representation for module `\xor_op_1267'.
+Generating RTLIL representation for module `\xor_op_1268'.
+Generating RTLIL representation for module `\xor_op_1269'.
+Generating RTLIL representation for module `\xor_op_1270'.
+Generating RTLIL representation for module `\xor_op_1271'.
+Generating RTLIL representation for module `\xor_op_1272'.
+Generating RTLIL representation for module `\xor_op_1273'.
+Generating RTLIL representation for module `\xor_op_1274'.
+Generating RTLIL representation for module `\xor_op_1275'.
+Generating RTLIL representation for module `\xor_op_1276'.
+Generating RTLIL representation for module `\xor_op_1277'.
+Generating RTLIL representation for module `\xor_op_1278'.
+Generating RTLIL representation for module `\xor_op_1279'.
+Generating RTLIL representation for module `\xor_op_1280'.
+Generating RTLIL representation for module `\xor_op_1281'.
+Generating RTLIL representation for module `\shift_right_vlog_unsigned'.
+Generating RTLIL representation for module `\add_unsigned_11283'.
+Generating RTLIL representation for module `\add_unsigned_11285'.
+Generating RTLIL representation for module `\add_unsigned_11339'.
+Generating RTLIL representation for module `\mult_unsigned_11405'.
+Generating RTLIL representation for module `\sub_signed_11605'.
+Generating RTLIL representation for module `\case_box_1282'.
+Generating RTLIL representation for module `\mux_11613'.
+Generating RTLIL representation for module `\case_box_1283'.
+Generating RTLIL representation for module `\case_box_1286'.
+Generating RTLIL representation for module `\case_box_1289'.
+Generating RTLIL representation for module `\case_box_1292'.
+Generating RTLIL representation for module `\case_box_1295'.
+Generating RTLIL representation for module `\case_box_1298'.
+Generating RTLIL representation for module `\case_box_1301'.
+Generating RTLIL representation for module `\case_box_1304'.
+Generating RTLIL representation for module `\case_box_1307'.
+Generating RTLIL representation for module `\case_box_1310'.
+Generating RTLIL representation for module `\case_box_1313'.
+Generating RTLIL representation for module `\case_box_1316'.
+Generating RTLIL representation for module `\case_box_1319'.
+Generating RTLIL representation for module `\case_box_1322'.
+Generating RTLIL representation for module `\case_box_1325'.
+Generating RTLIL representation for module `\case_box_1328'.
+Generating RTLIL representation for module `\case_box_1331'.
+Generating RTLIL representation for module `\case_box_1334'.
+Generating RTLIL representation for module `\case_box_1337'.
+Generating RTLIL representation for module `\case_box_1340'.
+Generating RTLIL representation for module `\case_box_1343'.
+Generating RTLIL representation for module `\case_box_1346'.
+Generating RTLIL representation for module `\case_box_1349'.
+Generating RTLIL representation for module `\case_box_1352'.
+Generating RTLIL representation for module `\case_box_1355'.
+Generating RTLIL representation for module `\case_box_1358'.
+Generating RTLIL representation for module `\case_box_1361'.
+Generating RTLIL representation for module `\case_box_1364'.
+Generating RTLIL representation for module `\case_box_1367'.
+Generating RTLIL representation for module `\case_box_1370'.
+Generating RTLIL representation for module `\case_box_1373'.
+Generating RTLIL representation for module `\add_unsigned_2320'.
+Generating RTLIL representation for module `\add_unsigned_2322'.
+Generating RTLIL representation for module `\sub_unsigned_3574'.
+Generating RTLIL representation for module `\sub_unsigned_11655'.
+Generating RTLIL representation for module `\geq_signed_11659'.
+Generating RTLIL representation for module `\sub_signed_11866'.
+Generating RTLIL representation for module `\case_box_1409'.
+Generating RTLIL representation for module `\mux_11868'.
+Generating RTLIL representation for module `\shift_left_vlog_unsigned_1985'.
+Generating RTLIL representation for module `\shift_right_vlog_unsigned_13264'.
+Generating RTLIL representation for module `\not_op_1629'.
+Generating RTLIL representation for module `\not_op_1630'.
+Generating RTLIL representation for module `\add_unsigned_13266'.
+Generating RTLIL representation for module `\add_unsigned_13268'.
+Generating RTLIL representation for module `\add_unsigned_13270'.
+Generating RTLIL representation for module `\add_signed_13317'.
+Generating RTLIL representation for module `\geq_signed_13320'.
+Generating RTLIL representation for module `\add_unsigned_13322'.
+Generating RTLIL representation for module `\add_signed_13324'.
+Generating RTLIL representation for module `\sub_signed_13328'.
+Generating RTLIL representation for module `\case_box_1631'.
+Generating RTLIL representation for module `\mux_13293'.
+Generating RTLIL representation for module `\case_box_1632'.
+Generating RTLIL representation for module `\mux_13294'.
+Generating RTLIL representation for module `\case_box_1635'.
+Generating RTLIL representation for module `\case_box_1638'.
+Generating RTLIL representation for module `\mux_13297'.
+Generating RTLIL representation for module `\case_box_1641'.
+Generating RTLIL representation for module `\case_box_1644'.
+Generating RTLIL representation for module `\case_box_1647'.
+Generating RTLIL representation for module `\case_box_1650'.
+Generating RTLIL representation for module `\case_box_1653'.
+Generating RTLIL representation for module `\case_box_1656'.
+Generating RTLIL representation for module `\mux_13303'.
+Generating RTLIL representation for module `\case_box_1659'.
+Generating RTLIL representation for module `\case_box_1662'.
+Generating RTLIL representation for module `\case_box_1665'.
+Generating RTLIL representation for module `\case_box_1668'.
+Generating RTLIL representation for module `\case_box_1671'.
+Generating RTLIL representation for module `\case_box_1674'.
+Generating RTLIL representation for module `\case_box_1677'.
+Generating RTLIL representation for module `\case_box_1680'.
+Generating RTLIL representation for module `\case_box_1683'.
+Generating RTLIL representation for module `\case_box_1686'.
+Generating RTLIL representation for module `\case_box_1689'.
+Generating RTLIL representation for module `\case_box_1692'.
+Generating RTLIL representation for module `\mux_13315'.
+Generating RTLIL representation for module `\shift_left_vlog_unsigned_13880'.
+Generating RTLIL representation for module `\or_op_1726'.
+Generating RTLIL representation for module `\geq_signed_13883'.
+Generating RTLIL representation for module `\or_op_1738'.
+Generating RTLIL representation for module `\or_op_1727'.
+Generating RTLIL representation for module `\or_op_1728'.
+Generating RTLIL representation for module `\or_op_1729'.
+Generating RTLIL representation for module `\add_unsigned_13889'.
+Generating RTLIL representation for module `\equal_unsigned_13891'.
+Generating RTLIL representation for module `\bmux_13897'.
+Generating RTLIL representation for module `\CDN_mux2'.
+Generating RTLIL representation for module `\CDN_mux4'.
+Generating RTLIL representation for module `\CDN_mux5'.
+Generating RTLIL representation for module `\CDN_mux6'.
+Generating RTLIL representation for module `\CDN_mux7'.
+Generating RTLIL representation for module `\CDN_mux3'.
+Generating RTLIL representation for module `\CDN_mux11'.
+Generating RTLIL representation for module `\CDN_mux8'.
+Generating RTLIL representation for module `\CDN_mux33'.
+Generating RTLIL representation for module `\CDN_bmux2'.
+Generating RTLIL representation for module `\CDN_bmux4'.
+Generating RTLIL representation for module `\CDN_bmux8'.
+Generating RTLIL representation for module `\CDN_bmux64'.
+Generating RTLIL representation for module `\CDN_bmux32'.
+Generating RTLIL representation for module `\b32_scalar_product'.
+Generating RTLIL representation for module `\tile_cone'.
+Generating RTLIL representation for module `\tile_changed'.
+Generating RTLIL representation for module `\miter'.
+Successfully finished Verilog frontend.
+
+2. Executing PREP pass.
+
+2.1. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1.1. Analyzing design hierarchy..
+Top module:  \miter
+Used module:     \tile_changed
+Used module:         \mult_unsigned_803
+Used module:         \mult_unsigned_795
+Used module:         \mult_unsigned_787
+Used module:         \mult_unsigned
+Used module:         \add_unsigned_753
+Used module:         \add_unsigned_751
+Used module:     \tile_cone
+
+2.1.2. Analyzing design hierarchy..
+Top module:  \miter
+Used module:     \tile_changed
+Used module:         \mult_unsigned_803
+Used module:         \mult_unsigned_795
+Used module:         \mult_unsigned_787
+Used module:         \mult_unsigned
+Used module:         \add_unsigned_753
+Used module:         \add_unsigned_751
+Used module:     \tile_cone
+Removing unused module `\b32_scalar_product'.
+Removing unused module `\CDN_bmux32'.
+Removing unused module `\CDN_bmux64'.
+Removing unused module `\CDN_bmux8'.
+Removing unused module `\CDN_bmux4'.
+Removing unused module `\CDN_bmux2'.
+Removing unused module `\CDN_mux33'.
+Removing unused module `\CDN_mux8'.
+Removing unused module `\CDN_mux11'.
+Removing unused module `\CDN_mux3'.
+Removing unused module `\CDN_mux7'.
+Removing unused module `\CDN_mux6'.
+Removing unused module `\CDN_mux5'.
+Removing unused module `\CDN_mux4'.
+Removing unused module `\CDN_mux2'.
+Removing unused module `\bmux_13897'.
+Removing unused module `\equal_unsigned_13891'.
+Removing unused module `\add_unsigned_13889'.
+Removing unused module `\or_op_1729'.
+Removing unused module `\or_op_1728'.
+Removing unused module `\or_op_1727'.
+Removing unused module `\or_op_1738'.
+Removing unused module `\geq_signed_13883'.
+Removing unused module `\or_op_1726'.
+Removing unused module `\shift_left_vlog_unsigned_13880'.
+Removing unused module `\mux_13315'.
+Removing unused module `\case_box_1692'.
+Removing unused module `\case_box_1689'.
+Removing unused module `\case_box_1686'.
+Removing unused module `\case_box_1683'.
+Removing unused module `\case_box_1680'.
+Removing unused module `\case_box_1677'.
+Removing unused module `\case_box_1674'.
+Removing unused module `\case_box_1671'.
+Removing unused module `\case_box_1668'.
+Removing unused module `\case_box_1665'.
+Removing unused module `\case_box_1662'.
+Removing unused module `\case_box_1659'.
+Removing unused module `\mux_13303'.
+Removing unused module `\case_box_1656'.
+Removing unused module `\case_box_1653'.
+Removing unused module `\case_box_1650'.
+Removing unused module `\case_box_1647'.
+Removing unused module `\case_box_1644'.
+Removing unused module `\case_box_1641'.
+Removing unused module `\mux_13297'.
+Removing unused module `\case_box_1638'.
+Removing unused module `\case_box_1635'.
+Removing unused module `\mux_13294'.
+Removing unused module `\case_box_1632'.
+Removing unused module `\mux_13293'.
+Removing unused module `\case_box_1631'.
+Removing unused module `\sub_signed_13328'.
+Removing unused module `\add_signed_13324'.
+Removing unused module `\add_unsigned_13322'.
+Removing unused module `\geq_signed_13320'.
+Removing unused module `\add_signed_13317'.
+Removing unused module `\add_unsigned_13270'.
+Removing unused module `\add_unsigned_13268'.
+Removing unused module `\add_unsigned_13266'.
+Removing unused module `\not_op_1630'.
+Removing unused module `\not_op_1629'.
+Removing unused module `\shift_right_vlog_unsigned_13264'.
+Removing unused module `\shift_left_vlog_unsigned_1985'.
+Removing unused module `\mux_11868'.
+Removing unused module `\case_box_1409'.
+Removing unused module `\sub_signed_11866'.
+Removing unused module `\geq_signed_11659'.
+Removing unused module `\sub_unsigned_11655'.
+Removing unused module `\sub_unsigned_3574'.
+Removing unused module `\add_unsigned_2322'.
+Removing unused module `\add_unsigned_2320'.
+Removing unused module `\case_box_1373'.
+Removing unused module `\case_box_1370'.
+Removing unused module `\case_box_1367'.
+Removing unused module `\case_box_1364'.
+Removing unused module `\case_box_1361'.
+Removing unused module `\case_box_1358'.
+Removing unused module `\case_box_1355'.
+Removing unused module `\case_box_1352'.
+Removing unused module `\case_box_1349'.
+Removing unused module `\case_box_1346'.
+Removing unused module `\case_box_1343'.
+Removing unused module `\case_box_1340'.
+Removing unused module `\case_box_1337'.
+Removing unused module `\case_box_1334'.
+Removing unused module `\case_box_1331'.
+Removing unused module `\case_box_1328'.
+Removing unused module `\case_box_1325'.
+Removing unused module `\case_box_1322'.
+Removing unused module `\case_box_1319'.
+Removing unused module `\case_box_1316'.
+Removing unused module `\case_box_1313'.
+Removing unused module `\case_box_1310'.
+Removing unused module `\case_box_1307'.
+Removing unused module `\case_box_1304'.
+Removing unused module `\case_box_1301'.
+Removing unused module `\case_box_1298'.
+Removing unused module `\case_box_1295'.
+Removing unused module `\case_box_1292'.
+Removing unused module `\case_box_1289'.
+Removing unused module `\case_box_1286'.
+Removing unused module `\case_box_1283'.
+Removing unused module `\mux_11613'.
+Removing unused module `\case_box_1282'.
+Removing unused module `\sub_signed_11605'.
+Removing unused module `\mult_unsigned_11405'.
+Removing unused module `\add_unsigned_11339'.
+Removing unused module `\add_unsigned_11285'.
+Removing unused module `\add_unsigned_11283'.
+Removing unused module `\shift_right_vlog_unsigned'.
+Removing unused module `\xor_op_1281'.
+Removing unused module `\xor_op_1280'.
+Removing unused module `\xor_op_1279'.
+Removing unused module `\xor_op_1278'.
+Removing unused module `\xor_op_1277'.
+Removing unused module `\xor_op_1276'.
+Removing unused module `\xor_op_1275'.
+Removing unused module `\xor_op_1274'.
+Removing unused module `\xor_op_1273'.
+Removing unused module `\xor_op_1272'.
+Removing unused module `\xor_op_1271'.
+Removing unused module `\xor_op_1270'.
+Removing unused module `\xor_op_1269'.
+Removing unused module `\xor_op_1268'.
+Removing unused module `\xor_op_1267'.
+Removing unused module `\xor_op_1266'.
+Removing unused module `\xor_op_1265'.
+Removing unused module `\xor_op_1264'.
+Removing unused module `\xor_op_1263'.
+Removing unused module `\xor_op_1262'.
+Removing unused module `\xor_op_1261'.
+Removing unused module `\xor_op_1260'.
+Removing unused module `\xor_op_1259'.
+Removing unused module `\xor_op_1258'.
+Removing unused module `\xor_op_1257'.
+Removing unused module `\xor_op_1256'.
+Removing unused module `\xor_op_1255'.
+Removing unused module `\xor_op_1254'.
+Removing unused module `\xor_op_1253'.
+Removing unused module `\xor_op_1252'.
+Removing unused module `\xor_op_1251'.
+Removing unused module `\xor_op_1250'.
+Removing unused module `\xor_op_1249'.
+Removing unused module `\and_op_256'.
+Removing unused module `\and_op_255'.
+Removing unused module `\and_op_254'.
+Removing unused module `\and_op_253'.
+Removing unused module `\and_op_252'.
+Removing unused module `\case_box_780'.
+Removing unused module `\case_box_777'.
+Removing unused module `\case_box_774'.
+Removing unused module `\case_box_771'.
+Removing unused module `\case_box_768'.
+Removing unused module `\case_box_765'.
+Removing unused module `\case_box_762'.
+Removing unused module `\case_box_759'.
+Removing unused module `\case_box_756'.
+Removing unused module `\case_box_753'.
+Removing unused module `\case_box_750'.
+Removing unused module `\case_box_747'.
+Removing unused module `\case_box_744'.
+Removing unused module `\case_box_741'.
+Removing unused module `\case_box_738'.
+Removing unused module `\case_box_735'.
+Removing unused module `\case_box_732'.
+Removing unused module `\case_box_729'.
+Removing unused module `\case_box_726'.
+Removing unused module `\case_box_723'.
+Removing unused module `\case_box_720'.
+Removing unused module `\case_box_717'.
+Removing unused module `\case_box_714'.
+Removing unused module `\case_box_711'.
+Removing unused module `\case_box_708'.
+Removing unused module `\case_box_705'.
+Removing unused module `\case_box_702'.
+Removing unused module `\case_box_699'.
+Removing unused module `\case_box_696'.
+Removing unused module `\case_box_693'.
+Removing unused module `\case_box_690'.
+Removing unused module `\case_box_687'.
+Removing unused module `\case_box_684'.
+Removing unused module `\case_box_681'.
+Removing unused module `\case_box_678'.
+Removing unused module `\case_box_675'.
+Removing unused module `\case_box_672'.
+Removing unused module `\case_box_669'.
+Removing unused module `\case_box_666'.
+Removing unused module `\case_box_663'.
+Removing unused module `\case_box_660'.
+Removing unused module `\case_box_657'.
+Removing unused module `\case_box_654'.
+Removing unused module `\case_box_651'.
+Removing unused module `\case_box_648'.
+Removing unused module `\case_box_645'.
+Removing unused module `\case_box_642'.
+Removing unused module `\case_box_639'.
+Removing unused module `\case_box_636'.
+Removing unused module `\case_box_633'.
+Removing unused module `\case_box_630'.
+Removing unused module `\case_box_627'.
+Removing unused module `\case_box_624'.
+Removing unused module `\case_box_621'.
+Removing unused module `\case_box_618'.
+Removing unused module `\case_box_615'.
+Removing unused module `\case_box_612'.
+Removing unused module `\case_box_609'.
+Removing unused module `\case_box_606'.
+Removing unused module `\case_box_603'.
+Removing unused module `\case_box_600'.
+Removing unused module `\case_box_597'.
+Removing unused module `\case_box_594'.
+Removing unused module `\case_box_591'.
+Removing unused module `\case_box_588'.
+Removing unused module `\case_box_585'.
+Removing unused module `\case_box_582'.
+Removing unused module `\case_box_579'.
+Removing unused module `\case_box_576'.
+Removing unused module `\case_box_573'.
+Removing unused module `\case_box_570'.
+Removing unused module `\case_box_567'.
+Removing unused module `\case_box_564'.
+Removing unused module `\case_box_561'.
+Removing unused module `\case_box_558'.
+Removing unused module `\case_box_555'.
+Removing unused module `\case_box_552'.
+Removing unused module `\case_box_549'.
+Removing unused module `\case_box_546'.
+Removing unused module `\case_box_543'.
+Removing unused module `\case_box_540'.
+Removing unused module `\case_box_537'.
+Removing unused module `\case_box_534'.
+Removing unused module `\case_box_531'.
+Removing unused module `\case_box_528'.
+Removing unused module `\case_box_525'.
+Removing unused module `\case_box_522'.
+Removing unused module `\case_box_519'.
+Removing unused module `\case_box_516'.
+Removing unused module `\case_box_513'.
+Removing unused module `\case_box_510'.
+Removing unused module `\case_box_507'.
+Removing unused module `\case_box_504'.
+Removing unused module `\case_box_501'.
+Removing unused module `\case_box_498'.
+Removing unused module `\case_box_495'.
+Removing unused module `\case_box_492'.
+Removing unused module `\case_box_489'.
+Removing unused module `\case_box_486'.
+Removing unused module `\case_box_483'.
+Removing unused module `\case_box_480'.
+Removing unused module `\case_box_477'.
+Removing unused module `\case_box_474'.
+Removing unused module `\case_box_471'.
+Removing unused module `\case_box_468'.
+Removing unused module `\case_box_465'.
+Removing unused module `\case_box_462'.
+Removing unused module `\case_box_459'.
+Removing unused module `\case_box_456'.
+Removing unused module `\case_box_453'.
+Removing unused module `\case_box_450'.
+Removing unused module `\case_box_447'.
+Removing unused module `\case_box_444'.
+Removing unused module `\case_box_441'.
+Removing unused module `\case_box_438'.
+Removing unused module `\case_box_435'.
+Removing unused module `\case_box_432'.
+Removing unused module `\case_box_429'.
+Removing unused module `\case_box_426'.
+Removing unused module `\case_box_423'.
+Removing unused module `\case_box_420'.
+Removing unused module `\case_box_417'.
+Removing unused module `\case_box_414'.
+Removing unused module `\case_box_411'.
+Removing unused module `\case_box_408'.
+Removing unused module `\case_box_405'.
+Removing unused module `\case_box_402'.
+Removing unused module `\mux_2080'.
+Removing unused module `\case_box_401'.
+Removing unused module `\nequal_unsigned_1142'.
+Removing unused module `\and_op_396'.
+Removing unused module `\and_op_395'.
+Removing unused module `\and_op_394'.
+Removing unused module `\and_op_393'.
+Removing unused module `\and_op_373'.
+Removing unused module `\and_op_372'.
+Removing unused module `\and_op_371'.
+Removing unused module `\and_op_370'.
+Removing unused module `\and_op_350'.
+Removing unused module `\and_op_349'.
+Removing unused module `\and_op_348'.
+Removing unused module `\and_op_347'.
+Removing unused module `\and_op_327'.
+Removing unused module `\and_op_326'.
+Removing unused module `\and_op_325'.
+Removing unused module `\and_op_324'.
+Removing unused module `\mult_unsigned_12430'.
+Removing unused module `\gt_unsigned_12336'.
+Removing unused module `\add_unsigned_12333'.
+Removing unused module `\add_unsigned_12331'.
+Removing unused module `\sub_unsigned_12329'.
+Removing unused module `\sub_unsigned_12229'.
+Removing unused module `\add_unsigned_12207'.
+Removing unused module `\add_unsigned_11281'.
+Removing unused module `\add_unsigned_11279'.
+Removing unused module `\add_unsigned_11277'.
+Removing unused module `\add_unsigned_2584'.
+Removing unused module `\add_signed_1694'.
+Removing unused module `\gt_unsigned_12032'.
+Removing unused module `\sub_unsigned_12029'.
+Removing unused module `\sub_unsigned_12027'.
+Removing unused module `\gt_signed_12025'.
+Removing unused module `\sub_unsigned_12020'.
+Removing unused module `\gt_signed_12018'.
+Removing unused module `\sub_signed_12015'.
+Removing unused module `\nequal_unsigned_12013'.
+Removing unused module `\add_unsigned_11913'.
+Removing unused module `\add_unsigned_11893'.
+Removing unused module `\add_unsigned_11891'.
+Removing unused module `\add_unsigned_11889'.
+Removing unused module `\add_unsigned_11887'.
+Removing unused module `\add_unsigned_11885'.
+Removing unused module `\add_unsigned_1334'.
+Removing unused module `\or_op_1558'.
+Removing unused module `\or_op_1554'.
+Removing unused module `\and_op_1486'.
+Removing unused module `\and_op_1485'.
+Removing unused module `\and_op_1483'.
+Removing unused module `\xor_op_1482'.
+Removing unused module `\xor_op_1481'.
+Removing unused module `\xor_op_1480'.
+Removing unused module `\xor_op_1479'.
+Removing unused module `\xor_op_1478'.
+Removing unused module `\xor_op_1477'.
+Removing unused module `\xor_op_1476'.
+Removing unused module `\xor_op_1475'.
+Removing unused module `\xor_op_1474'.
+Removing unused module `\xor_op_1473'.
+Removing unused module `\xor_op_1472'.
+Removing unused module `\xor_op_1471'.
+Removing unused module `\xor_op_1470'.
+Removing unused module `\xor_op_1469'.
+Removing unused module `\xor_op_1468'.
+Removing unused module `\xor_op_1467'.
+Removing unused module `\xor_op_1466'.
+Removing unused module `\xor_op_1465'.
+Removing unused module `\xor_op_1464'.
+Removing unused module `\xor_op_1463'.
+Removing unused module `\xor_op_1462'.
+Removing unused module `\xor_op_1461'.
+Removing unused module `\xor_op_1460'.
+Removing unused module `\xor_op_1459'.
+Removing unused module `\xor_op_1458'.
+Removing unused module `\xor_op_1457'.
+Removing unused module `\xor_op_1456'.
+Removing unused module `\xor_op_1455'.
+Removing unused module `\xor_op_1454'.
+Removing unused module `\xor_op_1453'.
+Removing unused module `\xor_op_1452'.
+Removing unused module `\xor_op_1451'.
+Removing unused module `\xor_op_1450'.
+Removing unused module `\xor_op_1449'.
+Removing unused module `\xor_op_1448'.
+Removing unused module `\xor_op_1447'.
+Removing unused module `\xor_op_1446'.
+Removing unused module `\xor_op_1445'.
+Removing unused module `\xor_op_1444'.
+Removing unused module `\xor_op_1443'.
+Removing unused module `\xor_op_1442'.
+Removing unused module `\xor_op_1441'.
+Removing unused module `\xor_op_1440'.
+Removing unused module `\xor_op_1439'.
+Removing unused module `\xor_op_1438'.
+Removing unused module `\xor_op_1437'.
+Removing unused module `\xor_op_1436'.
+Removing unused module `\xor_op_1435'.
+Removing unused module `\xor_op_1434'.
+Removing unused module `\xor_op_1433'.
+Removing unused module `\xor_op_1432'.
+Removing unused module `\xor_op_1431'.
+Removing unused module `\xor_op_1430'.
+Removing unused module `\xor_op_1429'.
+Removing unused module `\xor_op_1428'.
+Removing unused module `\xor_op_1427'.
+Removing unused module `\xor_op_1426'.
+Removing unused module `\xor_op_1425'.
+Removing unused module `\xor_op_1424'.
+Removing unused module `\xor_op_1423'.
+Removing unused module `\xor_op_1422'.
+Removing unused module `\xor_op_1421'.
+Removing unused module `\xor_op_1420'.
+Removing unused module `\xor_op_1419'.
+Removing unused module `\gt_unsigned'.
+Removing unused module `\lt_unsigned_1072'.
+Removing unused module `\or_op_245'.
+Removing unused module `\or_op_243'.
+Removing unused module `\or_op_239'.
+Removing unused module `\xor_op_231'.
+Removing unused module `\or_op_228'.
+Removing unused module `\or_op_226'.
+Removing unused module `\or_op_221'.
+Removing unused module `\or_op_220'.
+Removing unused module `\or_op_219'.
+Removing unused module `\or_op_217'.
+Removing unused module `\and_op_216'.
+Removing unused module `\mux_1054'.
+Removing unused module `\mux_1052'.
+Removing unused module `\case_box_202'.
+Removing unused module `\mux_1045'.
+Removing unused module `\case_box_199'.
+Removing unused module `\case_box_196'.
+Removing unused module `\mux_1031'.
+Removing unused module `\case_box_193'.
+Removing unused module `\case_box_190'.
+Removing unused module `\case_box_187'.
+Removing unused module `\mux_1022'.
+Removing unused module `\case_box_186'.
+Removing unused module `\lt_unsigned_1011'.
+Removing unused module `\or_op_172'.
+Removing unused module `\not_op_169'.
+Removing unused module `\or_op_163'.
+Removing unused module `\or_op_162'.
+Removing unused module `\mux_1061'.
+Removing unused module `\case_box_211'.
+Removing unused module `\bmux_945'.
+Removing unused module `\equal_unsigned_905'.
+Removing unused module `\equal_unsigned_891'.
+Removing unused module `\not_op_126'.
+Removing unused module `\xor_op_125'.
+Removing unused module `\or_op_124'.
+Removing unused module `\and_op_123'.
+Removing unused module `\not_op_122'.
+Removing unused module `\xor_op_121'.
+Removing unused module `\xor_op'.
+Removing unused module `\bmux_880'.
+Removing unused module `\bmux_877'.
+Removing unused module `\bmux_874'.
+Removing unused module `\add_unsigned_871'.
+Removing unused module `\not_op_120'.
+Removing unused module `\not_op_119'.
+Removing unused module `\bmux_804'.
+Removing unused module `\bmux_813'.
+Removing unused module `\add_unsigned_811'.
+Removing unused module `\add_unsigned_809'.
+Removing unused module `\mux_745'.
+Removing unused module `\mux_738'.
+Removing unused module `\mux_734'.
+Removing unused module `\case_box_113'.
+Removing unused module `\mux_729'.
+Removing unused module `\case_box_110'.
+Removing unused module `\mux_728'.
+Removing unused module `\case_box_107'.
+Removing unused module `\mux_713'.
+Removing unused module `\case_box_106'.
+Removing unused module `\sub_signed_710'.
+Removing unused module `\leq_signed_708'.
+Removing unused module `\sub_unsigned_705'.
+Removing unused module `\add_unsigned_701'.
+Removing unused module `\add_unsigned_699'.
+Removing unused module `\leq_signed_697'.
+Removing unused module `\leq_signed_694'.
+Removing unused module `\leq_signed'.
+Removing unused module `\gt_signed'.
+Removing unused module `\sub_signed_689'.
+Removing unused module `\add_unsigned_687'.
+Removing unused module `\or_op_93'.
+Removing unused module `\or_op_92'.
+Removing unused module `\or_op'.
+Removing unused module `\mux'.
+Removing unused module `\case_box'.
+Removing unused module `\add_unsigned'.
+Removing unused module `\bmux'.
+Removing unused module `\and_op_13'.
+Removing unused module `\and_op_11'.
+Removing unused module `\and_op_9'.
+Removing unused module `\and_op_7'.
+Removing unused module `\and_op_5'.
+Removing unused module `\and_op_3'.
+Removing unused module `\and_op_1'.
+Removing unused module `\and_op'.
+Removing unused module `\bmux_632'.
+Removing unused module `\bmux_631'.
+Removing unused module `\bmux_626'.
+Removing unused module `\bmux_623'.
+Removing unused module `\bmux_619'.
+Removing unused module `\bmux_615'.
+Removing unused module `\mux_614'.
+Removing unused module `\case_box_34'.
+Removing unused module `\mux_613'.
+Removing unused module `\case_box_31'.
+Removing unused module `\bmux_611'.
+Removing unused module `\mux_602'.
+Removing unused module `\case_box_28'.
+Removing unused module `\bmux_595'.
+Removing unused module `\mux_584'.
+Removing unused module `\case_box_25'.
+Removing unused module `\mux_577'.
+Removing unused module `\case_box_24'.
+Removing unused module `\sub_unsigned_576'.
+Removing unused module `\add_signed_574'.
+Removing unused module `\sub_signed_570'.
+Removing unused module `\sub_signed_568'.
+Removing unused module `\equal_unsigned_566'.
+Removing unused module `\equal_unsigned_561'.
+Removing unused module `\nequal_unsigned'.
+Removing unused module `\sub_unsigned_557'.
+Removing unused module `\sub_unsigned_552'.
+Removing unused module `\geq_unsigned_550'.
+Removing unused module `\sub_signed_543'.
+Removing unused module `\add_unsigned_541'.
+Removing unused module `\sub_unsigned_539'.
+Removing unused module `\sub_signed'.
+Removing unused module `\sub_unsigned'.
+Removing unused module `\lt_unsigned'.
+Removing unused module `\geq_unsigned'.
+Removing unused module `\add_unsigned_535'.
+Removing unused module `\add_signed'.
+Removing unused module `\not_op'.
+Removing unused module `\lt_unsigned_13942'.
+Removing unused module `\geq_unsigned_13930'.
+Removing unused module `\leq_unsigned_13927'.
+Removing unused module `\geq_unsigned_13924'.
+Removing unused module `\leq_unsigned'.
+Removing unused module `\bmux_579'.
+Removing unused module `\bmux_11867'.
+Removing unused module `\bmux_11875'.
+Removing unused module `\bmux_1032'.
+Removing unused module `\bmux_15432'.
+Removing unused module `\bmux_15428'.
+Removing unused module `\bmux_11612'.
+Removing unused module `\bmux_1063'.
+Removing unused module `\mux_15408'.
+Removing unused module `\case_box_1775'.
+Removing unused module `\bmux_583'.
+Removing unused module `\bmux_15405'.
+Removing unused module `\mux_15404'.
+Removing unused module `\case_box_1772'.
+Removing unused module `\bmux_585'.
+Removing unused module `\bmux_15396'.
+Removing unused module `\bmux_816'.
+Removing unused module `\bmux_15391'.
+Removing unused module `\bmux_15388'.
+Removing unused module `\bmux_578'.
+Removing unused module `\bmux_616'.
+Removing unused module `\bmux_11869'.
+Removing unused module `\bmux_1062'.
+Removing unused module `\bmux_878'.
+Removing unused module `\bmux_13884'.
+Removing unused module `\mux_15371'.
+Removing unused module `\case_box_1771'.
+Removing unused module `\bmux_589'.
+Removing unused module `\bmux_12459'.
+Removing unused module `\add_signed_15354'.
+Removing unused module `\add_unsigned_15352'.
+Removing unused module `\leq_signed_15350'.
+Removing unused module `\geq_signed_11664'.
+Removing unused module `\add_unsigned_15338'.
+Removing unused module `\shift_left_vlog_unsigned_15336'.
+Removing unused module `\sub_signed_14028'.
+Removing unused module `\gt_signed_14026'.
+Removing unused module `\lt_signed'.
+Removing unused module `\equal_unsigned_11661'.
+Removing unused module `\sub_signed_14018'.
+Removing unused module `\add_signed_13326'.
+Removing unused module `\gt_signed_14014'.
+Removing unused module `\add_unsigned_14011'.
+Removing unused module `\geq_signed'.
+Removing unused module `\sub_signed_14004'.
+Removing unused module `\add_signed_11653'.
+Removing unused module `\sub_unsigned_14000'.
+Removing unused module `\leq_unsigned_13990'.
+Removing unused module `\or_op_1770'.
+Removing unused module `\or_op_1769'.
+Removing unused module `\not_op_1760'.
+Removing unused module `\or_op_1759'.
+Removing unused module `\or_op_1758'.
+Removed 575 unused modules.
+
+2.2. Executing PROC pass (convert processes to netlists).
+
+2.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+2.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+2.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+2.2.4. Executing PROC_INIT pass (extract init attributes).
+
+2.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+2.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+2.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+2.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+2.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+2.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+2.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+2.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tile_cone.
+Optimizing module miter.
+Optimizing module tile_changed.
+Optimizing module mult_unsigned_803.
+Optimizing module mult_unsigned_795.
+Optimizing module mult_unsigned_787.
+Optimizing module add_unsigned_753.
+Optimizing module add_unsigned_751.
+Optimizing module mult_unsigned.
+
+2.3. Executing FUTURE pass.
+
+2.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tile_cone.
+Optimizing module miter.
+Optimizing module tile_changed.
+Optimizing module mult_unsigned_803.
+Optimizing module mult_unsigned_795.
+Optimizing module mult_unsigned_787.
+Optimizing module add_unsigned_753.
+Optimizing module add_unsigned_751.
+Optimizing module mult_unsigned.
+
+2.5. Executing CHECK pass (checking for obvious problems).
+Checking module tile_cone...
+Checking module miter...
+Checking module tile_changed...
+Checking module mult_unsigned_803...
+Checking module mult_unsigned_795...
+Checking module mult_unsigned_787...
+Checking module add_unsigned_753...
+Checking module add_unsigned_751...
+Checking module mult_unsigned...
+Found and reported 0 problems.
+
+2.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tile_cone..
+Finding unused cells or wires in module \miter..
+Finding unused cells or wires in module \tile_changed..
+Finding unused cells or wires in module \mult_unsigned_803..
+Finding unused cells or wires in module \mult_unsigned_795..
+Finding unused cells or wires in module \mult_unsigned_787..
+Finding unused cells or wires in module \add_unsigned_753..
+Finding unused cells or wires in module \add_unsigned_751..
+Finding unused cells or wires in module \mult_unsigned..
+Removed 0 unused cells and 591 unused wires.
+<suppressed ~9 debug messages>
+
+2.7. Executing OPT pass (performing simple optimizations).
+
+2.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tile_cone.
+Optimizing module miter.
+Optimizing module tile_changed.
+Optimizing module mult_unsigned_803.
+Optimizing module mult_unsigned_795.
+Optimizing module mult_unsigned_787.
+Optimizing module add_unsigned_753.
+Optimizing module add_unsigned_751.
+Optimizing module mult_unsigned.
+
+2.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tile_cone'.
+Computing hashes of 547 cells of `\tile_cone'.
+Finding duplicate cells in `\tile_cone'.
+Finding identical cells in module `\miter'.
+Computing hashes of 3 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Finding identical cells in module `\tile_changed'.
+Computing hashes of 321 cells of `\tile_changed'.
+Finding duplicate cells in `\tile_changed'.
+Finding identical cells in module `\mult_unsigned_803'.
+Computing hashes of 1 cells of `\mult_unsigned_803'.
+Finding duplicate cells in `\mult_unsigned_803'.
+Finding identical cells in module `\mult_unsigned_795'.
+Computing hashes of 1 cells of `\mult_unsigned_795'.
+Finding duplicate cells in `\mult_unsigned_795'.
+Finding identical cells in module `\mult_unsigned_787'.
+Computing hashes of 1 cells of `\mult_unsigned_787'.
+Finding duplicate cells in `\mult_unsigned_787'.
+Finding identical cells in module `\add_unsigned_753'.
+Computing hashes of 1 cells of `\add_unsigned_753'.
+Finding duplicate cells in `\add_unsigned_753'.
+Finding identical cells in module `\add_unsigned_751'.
+Computing hashes of 1 cells of `\add_unsigned_751'.
+Finding duplicate cells in `\add_unsigned_751'.
+Finding identical cells in module `\mult_unsigned'.
+Computing hashes of 1 cells of `\mult_unsigned'.
+Finding duplicate cells in `\mult_unsigned'.
+Removed a total of 0 cells.
+
+2.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tile_cone..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \miter..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \tile_changed..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \mult_unsigned_803..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \mult_unsigned_795..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \mult_unsigned_787..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \add_unsigned_753..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \add_unsigned_751..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \mult_unsigned..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+<suppressed ~1168 debug messages>
+
+2.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tile_cone.
+  Optimizing cells in module \miter.
+  Optimizing cells in module \tile_changed.
+  Optimizing cells in module \mult_unsigned_803.
+  Optimizing cells in module \mult_unsigned_795.
+  Optimizing cells in module \mult_unsigned_787.
+  Optimizing cells in module \add_unsigned_753.
+  Optimizing cells in module \add_unsigned_751.
+  Optimizing cells in module \mult_unsigned.
+Performed a total of 0 changes.
+
+2.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tile_cone'.
+Computing hashes of 547 cells of `\tile_cone'.
+Finding duplicate cells in `\tile_cone'.
+Finding identical cells in module `\miter'.
+Computing hashes of 3 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Finding identical cells in module `\tile_changed'.
+Computing hashes of 321 cells of `\tile_changed'.
+Finding duplicate cells in `\tile_changed'.
+Finding identical cells in module `\mult_unsigned_803'.
+Computing hashes of 1 cells of `\mult_unsigned_803'.
+Finding duplicate cells in `\mult_unsigned_803'.
+Finding identical cells in module `\mult_unsigned_795'.
+Computing hashes of 1 cells of `\mult_unsigned_795'.
+Finding duplicate cells in `\mult_unsigned_795'.
+Finding identical cells in module `\mult_unsigned_787'.
+Computing hashes of 1 cells of `\mult_unsigned_787'.
+Finding duplicate cells in `\mult_unsigned_787'.
+Finding identical cells in module `\add_unsigned_753'.
+Computing hashes of 1 cells of `\add_unsigned_753'.
+Finding duplicate cells in `\add_unsigned_753'.
+Finding identical cells in module `\add_unsigned_751'.
+Computing hashes of 1 cells of `\add_unsigned_751'.
+Finding duplicate cells in `\add_unsigned_751'.
+Finding identical cells in module `\mult_unsigned'.
+Computing hashes of 1 cells of `\mult_unsigned'.
+Finding duplicate cells in `\mult_unsigned'.
+Removed a total of 0 cells.
+
+2.7.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tile_cone..
+Finding unused cells or wires in module \miter..
+Finding unused cells or wires in module \tile_changed..
+Finding unused cells or wires in module \mult_unsigned_803..
+Finding unused cells or wires in module \mult_unsigned_795..
+Finding unused cells or wires in module \mult_unsigned_787..
+Finding unused cells or wires in module \add_unsigned_753..
+Finding unused cells or wires in module \add_unsigned_751..
+Finding unused cells or wires in module \mult_unsigned..
+
+2.7.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tile_cone.
+Optimizing module miter.
+Optimizing module tile_changed.
+Optimizing module mult_unsigned_803.
+Optimizing module mult_unsigned_795.
+Optimizing module mult_unsigned_787.
+Optimizing module add_unsigned_753.
+Optimizing module add_unsigned_751.
+Optimizing module mult_unsigned.
+
+2.7.8. Finished fast OPT passes. (There is nothing left to do.)
+
+2.8. Executing WREDUCE pass (reducing word size of cells).
+
+2.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tile_cone..
+Finding unused cells or wires in module \miter..
+Finding unused cells or wires in module \tile_changed..
+Finding unused cells or wires in module \mult_unsigned_803..
+Finding unused cells or wires in module \mult_unsigned_795..
+Finding unused cells or wires in module \mult_unsigned_787..
+Finding unused cells or wires in module \add_unsigned_753..
+Finding unused cells or wires in module \add_unsigned_751..
+Finding unused cells or wires in module \mult_unsigned..
+
+2.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+2.11. Executing OPT pass (performing simple optimizations).
+
+2.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tile_cone.
+Optimizing module miter.
+Optimizing module tile_changed.
+Optimizing module mult_unsigned_803.
+Optimizing module mult_unsigned_795.
+Optimizing module mult_unsigned_787.
+Optimizing module add_unsigned_753.
+Optimizing module add_unsigned_751.
+Optimizing module mult_unsigned.
+
+2.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tile_cone'.
+Computing hashes of 547 cells of `\tile_cone'.
+Finding duplicate cells in `\tile_cone'.
+Finding identical cells in module `\miter'.
+Computing hashes of 3 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Finding identical cells in module `\tile_changed'.
+Computing hashes of 321 cells of `\tile_changed'.
+Finding duplicate cells in `\tile_changed'.
+Finding identical cells in module `\mult_unsigned_803'.
+Computing hashes of 1 cells of `\mult_unsigned_803'.
+Finding duplicate cells in `\mult_unsigned_803'.
+Finding identical cells in module `\mult_unsigned_795'.
+Computing hashes of 1 cells of `\mult_unsigned_795'.
+Finding duplicate cells in `\mult_unsigned_795'.
+Finding identical cells in module `\mult_unsigned_787'.
+Computing hashes of 1 cells of `\mult_unsigned_787'.
+Finding duplicate cells in `\mult_unsigned_787'.
+Finding identical cells in module `\add_unsigned_753'.
+Computing hashes of 1 cells of `\add_unsigned_753'.
+Finding duplicate cells in `\add_unsigned_753'.
+Finding identical cells in module `\add_unsigned_751'.
+Computing hashes of 1 cells of `\add_unsigned_751'.
+Finding duplicate cells in `\add_unsigned_751'.
+Finding identical cells in module `\mult_unsigned'.
+Computing hashes of 1 cells of `\mult_unsigned'.
+Finding duplicate cells in `\mult_unsigned'.
+Removed a total of 0 cells.
+
+2.11.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tile_cone..
+Finding unused cells or wires in module \miter..
+Finding unused cells or wires in module \tile_changed..
+Finding unused cells or wires in module \mult_unsigned_803..
+Finding unused cells or wires in module \mult_unsigned_795..
+Finding unused cells or wires in module \mult_unsigned_787..
+Finding unused cells or wires in module \add_unsigned_753..
+Finding unused cells or wires in module \add_unsigned_751..
+Finding unused cells or wires in module \mult_unsigned..
+
+2.11.4. Finished fast OPT passes.
+
+2.12. Executing SORT pass.
+
+2.13. Printing statistics.
+
+=== add_unsigned_751 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        3 wires
+       56 wire bits
+        3 public wires
+       56 public wire bits
+        3 ports
+       56 port bits
+        1 cells
+        1   $add
+
+=== add_unsigned_753 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        3 wires
+       72 wire bits
+        3 public wires
+       72 public wire bits
+        3 ports
+       72 port bits
+        1 cells
+        1   $add
+
+=== miter ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        5 wires
+     1149 wire bits
+        5 public wires
+     1149 public wire bits
+        3 ports
+      415 port bits
+        1 cells
+        1   $eq
+        2 submodules
+        1   tile_changed
+        1   tile_cone
+
+=== mult_unsigned ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        3 wires
+       16 wire bits
+        3 public wires
+       16 public wire bits
+        3 ports
+       16 port bits
+        1 cells
+        1   $mul
+
+=== mult_unsigned_787 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        3 wires
+       14 wire bits
+        3 public wires
+       14 public wire bits
+        3 ports
+       14 port bits
+        1 cells
+        1   $mul
+
+=== mult_unsigned_795 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        3 wires
+       14 wire bits
+        3 public wires
+       14 public wire bits
+        3 ports
+       14 port bits
+        1 cells
+        1   $mul
+
+=== mult_unsigned_803 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        3 wires
+       12 wire bits
+        3 public wires
+       12 public wire bits
+        3 ports
+       12 port bits
+        1 cells
+        1   $mul
+
+=== tile_changed ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     2786 wires
+     3930 wire bits
+     2786 public wires
+     3930 public wire bits
+        4 ports
+     1148 port bits
+      179 cells
+      179   $mux
+      142 submodules
+        9   add_unsigned_751
+       54   add_unsigned_753
+       36   mult_unsigned
+       18   mult_unsigned_787
+       18   mult_unsigned_795
+        7   mult_unsigned_803
+
+=== tile_cone ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     2786 wires
+     3930 wire bits
+     2786 public wires
+     3930 public wire bits
+        4 ports
+     1148 port bits
+      405 cells
+      405   $mux
+      142 submodules
+        9   add_unsigned_751
+       54   add_unsigned_753
+       36   mult_unsigned
+       18   mult_unsigned_787
+       18   mult_unsigned_795
+        7   mult_unsigned_803
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+      869 miter
+      179 tile_changed
+        1   add_unsigned_751
+        1   add_unsigned_753
+        1   mult_unsigned
+        1   mult_unsigned_787
+        1   mult_unsigned_795
+        1   mult_unsigned_803
+      405 tile_cone
+        1   add_unsigned_751
+        1   add_unsigned_753
+        1   mult_unsigned
+        1   mult_unsigned_787
+        1   mult_unsigned_795
+        1   mult_unsigned_803
+
+        +----------Count including submodules.
+        | 
+     6429 wires
+    20121 wire bits
+     6429 public wires
+    20121 public wire bits
+      863 ports
+    13823 port bits
+        - memories
+        - memory bits
+        - processes
+      869 cells
+      126   $add
+        1   $eq
+      158   $mul
+      584   $mux
+        2 submodules
+        1   tile_changed
+        1   tile_cone
+
+2.14. Executing CHECK pass (checking for obvious problems).
+Checking module add_unsigned_751...
+Checking module add_unsigned_753...
+Checking module miter...
+Checking module mult_unsigned...
+Checking module mult_unsigned_787...
+Checking module mult_unsigned_795...
+Checking module mult_unsigned_803...
+Checking module tile_changed...
+Checking module tile_cone...
+Found and reported 0 problems.
+
+3. Executing FLATTEN pass (flatten design).
+Deleting now unused module add_unsigned_751.
+Deleting now unused module add_unsigned_753.
+Deleting now unused module mult_unsigned.
+Deleting now unused module mult_unsigned_787.
+Deleting now unused module mult_unsigned_795.
+Deleting now unused module mult_unsigned_803.
+Deleting now unused module tile_changed.
+Deleting now unused module tile_cone.
+<suppressed ~286 debug messages>
+
+4. Executing OPT pass (performing simple optimizations).
+
+4.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+
+4.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\miter'.
+Computing hashes of 1155 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 1106 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 1103 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 1102 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+<suppressed ~159 debug messages>
+Removed a total of 53 cells.
+
+4.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \miter..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~1168 debug messages>
+
+4.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \miter.
+Performed a total of 0 changes.
+
+4.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\miter'.
+Computing hashes of 1102 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 930 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 900 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 893 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 892 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 891 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+<suppressed ~633 debug messages>
+Removed a total of 211 cells.
+
+4.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+
+4.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+
+4.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \miter..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28516$12012.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28516$12012.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28515$12011.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28515$12011.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28514$12010.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28514$12010.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28513$12009.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28513$12009.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28512$12008.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28512$12008.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28506$12007.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28506$12007.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28505$12006.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28505$12006.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28504$12005.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28504$12005.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28503$12004.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28503$12004.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28502$12003.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28502$12003.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28501$12002.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28501$12002.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28495$12001.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28495$12001.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28494$12000.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28494$12000.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28493$11999.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28493$11999.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28492$11998.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28492$11998.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28491$11997.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28491$11997.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28490$11996.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28490$11996.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28486$11995.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28486$11995.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28485$11994.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28485$11994.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28484$11993.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28484$11993.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28483$11992.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28483$11992.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28482$11991.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28482$11991.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28481$11990.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28481$11990.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28465$11989.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28465$11989.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28464$11988.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28464$11988.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28463$11987.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28463$11987.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28462$11986.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28462$11986.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28461$11985.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28461$11985.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28460$11984.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28460$11984.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28455$11983.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28455$11983.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28454$11982.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28454$11982.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28453$11981.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28453$11981.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28452$11980.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28452$11980.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28451$11979.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28451$11979.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28450$11978.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28450$11978.
+    dead port 1/2 on $mux $flatten\after_u.$ternary$miter.v:28517$12013.
+    dead port 2/2 on $mux $flatten\after_u.$ternary$miter.v:28517$12013.
+Removed 72 multiplexer ports.
+<suppressed ~738 debug messages>
+
+4.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \miter.
+Performed a total of 0 changes.
+
+4.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\miter'.
+Computing hashes of 855 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Removed a total of 0 cells.
+
+4.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+Removed 6 unused cells and 84 unused wires.
+<suppressed ~90 debug messages>
+
+4.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+
+4.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \miter..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~738 debug messages>
+
+4.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \miter.
+Performed a total of 0 changes.
+
+4.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\miter'.
+Computing hashes of 849 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Removed a total of 0 cells.
+
+4.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+
+4.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+
+4.23. Finished fast OPT passes. (There is nothing left to do.)
+
+5. Executing SAT pass (solving SAT problems in the circuit).
+Using SAT solver `minisat`.
+
+Setting up SAT problem:
+Final constraint equation: { } = { }
+Imported 849 cells to SAT database.
+Import proof-constraint: \eq = 1'1
+Final proof equation: \eq = 1'1
+
+Solving problem with 47734 variables and 134635 clauses..
+SAT proof finished - no model found: SUCCESS!
+
+                  /$$$$$$      /$$$$$$$$     /$$$$$$$    
+                 /$$__  $$    | $$_____/    | $$__  $$   
+                | $$  \ $$    | $$          | $$  \ $$   
+                | $$  | $$    | $$$$$       | $$  | $$   
+                | $$  | $$    | $$__/       | $$  | $$   
+                | $$/$$ $$    | $$          | $$  | $$   
+                |  $$$$$$/ /$$| $$$$$$$$ /$$| $$$$$$$//$$
+                 \____ $$$|__/|________/|__/|_______/|__/
+                       \__/                              
+

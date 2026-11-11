@@ -1,0 +1,66 @@
+{
+  "period_ns": 1.0,
+  "input_delay_ns": 0.3,
+  "output_delay_ns": 0.3,
+  "setup_uncertainty_ns": 0.05,
+  "input_transition_ns": 0.05,
+  "clock_transition_ns": 0.05,
+  "output_load_pf": 0.005,
+  "max_transition_ns": 0.1,
+  "clock_gating": false,
+  "generic_effort": "medium",
+  "map_effort": "high",
+  "opt_effort": "high",
+  "preserve_hierarchy": false,
+  "physical_inputs": [],
+  "corner": "SSG 0.72 V / 125 C, N28 RVT/HVT/LVT",
+  "voltage_v": 0.72,
+  "pdk_files": [
+    {
+      "path": "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140_180a/tcbn28hpcplusbwp30p140ssg0p72v125c.lib",
+      "sha256": "44a332fd6b6defdb005a3d7a7c4e7f817fe8ec6e6036b0293acd549fa6d353c5"
+    },
+    {
+      "path": "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140hvt_180a/tcbn28hpcplusbwp30p140hvtssg0p72v125c.lib",
+      "sha256": "47d6a840a373f60d53e66b7a4dcf5e921115575abb62e6be174bac0cd72ce004"
+    },
+    {
+      "path": "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140lvt_180a/tcbn28hpcplusbwp30p140lvtssg0p72v125c.lib",
+      "sha256": "a35a385653dba58f4d8308f4c3638f1e3ca3ed3e80a249ce560386b6340ce711"
+    }
+  ],
+  "measurement_id": "DPA5_FIXED_SSG072_1GHZ",
+  "top": "ucc_dpa16_baseline",
+  "parameters": {
+    "DpaStages": 5
+  },
+  "stages": 5,
+  "ii": 1,
+  "retiming": false,
+  "source_design": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_reuse/rtl_dpa5_groups/design.sv",
+  "design_sha256": "778387c9201dea5cac75ba15649a9557d2a449cd953478f042a5602ad7bdefca",
+  "analysis_views": [
+    "dpa_view"
+  ],
+  "checkpoints": [
+    "post_generic.db",
+    "post_map.db",
+    "final.db"
+  ],
+  "matched_ucc": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32_pipe5_ssg072/b32_fixed",
+  "rtl_validation_record": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/docs/proposals/shwet_reuse_results/dpa_pipeline_rtl_checks.json",
+  "rtl_validation_key": "standalone.rtl_dpa5_groups_check",
+  "arithmetic": "Original Shwet DPA semantics, 27-bit alignment window/truncation; all 16 original 12x12 tiles",
+  "registers": "Original active-low asynchronous reset and stage enables retained; no extra clock gating insertion",
+  "comparison_caveat": "Original DPA arithmetic and register structure retained; B32 uses shared RNE backend and unreset data registers",
+  "input_sha256": {
+    "design.sv": "778387c9201dea5cac75ba15649a9557d2a449cd953478f042a5602ad7bdefca",
+    "libraries.tcl": "85f3804bde4eca166fd223ea0d1490a9781357359d5726f80af3c5f73aba5c1e",
+    "dpa.sdc": "1f228b70f37018a61496e349b22b495c1edc41f8747b22b6f9f5d1114b4ac78e",
+    "mmmc.tcl": "141ce8467b5258a2e941502404de252ac7b3c06d5e98ef53b7f4fb5c88189252",
+    "synth.tcl": "b1a66427464597989b09ff3366e164b53c0baf6dd8f77a06168b98d09275119b",
+    "rtl_validation.json": "18a5b2ffcffed0cabe06600f7fa4121179dd529e49216f3d22ff24aec212a71d"
+  },
+  "voltage_comparison_source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_b32_pipe5/dpa5_matched_ssg09",
+  "voltage_comparison_ppa": "/data2/jwang710/UCC_FU/artifacts/ucc_b32_pipe5_ssg09_1ghz/dpa5_matched_ssg09/ppa.json"
+}
