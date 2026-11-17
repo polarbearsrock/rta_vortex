@@ -1,0 +1,8 @@
+{
+  "reason": "The selection was copied from the previous checkpoint and inherited its ten added ICGs. The final sizing checkpoint adds zero ICGs; the audited physical ICG identities and count of 170 are unchanged. No measurement, mapping, constraints or audit evidence is modified.",
+  "before": "/data2/jwang710/UCC_FU/artifacts/ucc_area45800_energy20_goal_20261117_v2/selection_before_metadata_correction.json",
+  "before_sha256": "07ae19c642a7f3178308f31d20b93aa9429352c2ffeffa056333733a03b6d6f2",
+  "after": "/data2/jwang710/UCC_FU/artifacts/ucc_area45800_energy20_goal_20261117_v2/selection.json",
+  "after_sha256": "cdfbb960a685008ed2255f3ef333bc5948267f64b1be055db9961fc2a4dda992",
+  "audit_sha256": "fea1c9886e83943ee9643be8b34f1721b7c022644eec6f022ca6f6afcc56bd1f"
+}

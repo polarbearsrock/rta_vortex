@@ -1,0 +1,71 @@
+{
+  "complete": true,
+  "cell_count": 51270,
+  "cell_area_um2": 45782.604,
+  "worst_slack_ps": {
+    "dpa": 0.0,
+    "cuda": 0.0
+  },
+  "drv_violation_rows": {
+    "dpa": {
+      "max_transition": 0,
+      "max_fanout": 0,
+      "max_capacitance": 0
+    },
+    "cuda": {
+      "max_transition": 0,
+      "max_fanout": 0,
+      "max_capacitance": 0
+    }
+  },
+  "original_cell_masters_preserved": true,
+  "optimization_performed": false,
+  "mapped_sha256": "084109416b89bb9ad157b87ba188b8f108f1ddd84e5f76d8f758631f71298acc",
+  "final_goal_accepted": false,
+  "scope": "Paired mapped-netlist import under matched 1 GHz LEF/QRC constraints. No optimization, resizing or retiming; timing is separate from energy.",
+  "evidence_sha256": {
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/flow.tcl": "71387fb2b811bbd15bbb58d3813393b453d6ef54df01d727422b4a99ead0864f",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/mmmc.tcl": "8900801639eee338c015f0d51d39c0ea6248861a00598cca24995d07b60c5e2b",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/dpa.sdc": "fc400f54c8b07fba685287a918ecc388d914cbf56247f116a140600005d5d5d8",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/cuda.sdc": "2071881ba4677b5320c0c7d10ca637d4dd288ad4dadf1c87d003bc16ff8d34d1",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/input.v": "084109416b89bb9ad157b87ba188b8f108f1ddd84e5f76d8f758631f71298acc",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/timing.tcl": "608a035573a1d04611aeb4fee76240929ba9a5b1c3d95254e02a6937c1a2392e",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/manifest.json": "a1bb6c659c6439b623a92d51802af6255d4ded1854267551016e1a503ccd416d",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/driver.log": "c4e78ecce36c42a56d4c6e11923e33f73ee6a8c079ec8b19a35c7643146119fe",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/launch.json": "f10556fb3f0a7258b378e8928fcd982fc243f55facb951bc2dacf05049993205",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/genus.log": "5ac6903b30ddae8d8f4c64964f7284ac7314cc4b3802759a3605ae1af1ceb225",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/genus.cmd": "594691252f2c43a61377f56e4d741f85ab95635037af54a60a6e30bc7696de65",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/unresolved.rpt": "f431e591a7d42d2ed3d778330e9a25462baa1e8bf3b75da172626737a59bf51a",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/settings.rpt": "85eea9ddd234320fbfedd049c2e4892c936bf0d0b885cd53f6376623c650e7be",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/invariants.rpt": "bc3114aab02e5239fc5ffe7363b39dbc0c1cb7721557e81f2c35cd7a1a4f0a48",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/views_dpa.rpt": "bd49033f12fd794024e93330b717cbf87b4da6c53ae799ca2e463b5df8c2f835",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/cases_dpa.rpt": "a62eca16112ebc89f8b8bddb6137106f3e30a4d90cc7f266cb30e04649dd39bc",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/timing_dpa.rpt": "1151b74081d3b295a808805655d87bbec26a1feb98486ce184f04ec257ea3581",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/timing_clockgate_dpa.rpt": "b80a5d20b06d82b2b422e6bea2f2c322295e8024d1d600337ff8ef1fab0dcaf9",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/qor_dpa.rpt": "30b062b94fdf5cc7b75ddcd2a73e3d0161d241247d8be7726a54ea691b3edbb8",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/dpa_max_transition.rpt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/dpa_max_fanout.rpt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/dpa_max_capacitance.rpt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/loops_dpa.rpt": "2d6ec50d47a755cfebada04cb8a7bf7d0c92435b62621f36c9206b10ce92aa4d",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/views_cuda.rpt": "bd49033f12fd794024e93330b717cbf87b4da6c53ae799ca2e463b5df8c2f835",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/cases_cuda.rpt": "daae1231da88655641ca927be5eff002a8e3cbb238e3e8fc77da20328aa7c8cd",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/timing_cuda.rpt": "43747edbeed35f36699e5e54528d24002d2e021682f877c115a72fef8bd23a50",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/timing_clockgate_cuda.rpt": "a966e8f04fe3957cd174e729a40b541956c058bbe46fb6d63c739cf12b905a00",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/qor_cuda.rpt": "09565eec0de9a9793147ca3a48b11dcf8844f87bdff766a3e453abe38e910003",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/cuda_max_transition.rpt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/cuda_max_fanout.rpt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/cuda_max_capacitance.rpt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/loops_cuda.rpt": "8b61aa3ff3f677da5c47ac796711986d7b8fc0d34c36114d5167d4054bc4a2f6",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/area.rpt": "0f1b11c04107c7a7a669e94290e5f9d3e68695e88cf227fc9fc9aed365e28366",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/area_hier.rpt": "0f1b11c04107c7a7a669e94290e5f9d3e68695e88cf227fc9fc9aed365e28366",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/gates.rpt": "a1cfdeb036ff2f3bb43c558a95ca54588ec55d70e60dbc1a834b903aa58ff8eb",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/clock_gating.rpt": "a73bde40252aa9f7a5fe9be8d2faef7d0eeeec63b9e23d21b668f3535e85026f",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/checked.v": "1bd60d3b10a7951c702cecb2a4dd1dab26918ddf540fb198c146449e6e501281",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/complete.txt": "a061282f8d5f9c2b1e442a52f68771475794f8f76ce7466ca6219881015ed11c",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/reference/config.tcl": "c7bdd274adff804f75f9db2d8ed60b54daff21402f4578e6d98636544e9206fc",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/reference/fpu_block_top.sdc": "60da194b2847234c7169161c7d5d481bb83d66aec306228dc9037d8b2422b59d",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/reference/mmmc_build_macros.tcl": "7c04c18f74c6bf3cffd4c4663d66de7e380d78cce68f7d15a05699e96b6c3711",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/reference/run_genus.tcl": "18327830ad8b737551134c3bdec1d60d10453803249afe35ab421b45f3f84d55",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_timing/reference/tsmcn28_libs.tcl": "13dc9028226dd3e701e723ac866728f8b247924307852f9547b446e26b955f8a"
+  }
+}

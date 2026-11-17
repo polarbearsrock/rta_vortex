@@ -1,0 +1,11 @@
+# Remove fixed-opcode run detection from UCC gating
+
+The current user request removes the five-cycle homogeneous FMA/MUL/EX2 detector. Keep the accepted 45,782.604 um² / +19.396425% checkpoint as historical evidence only; its measurements must not be assigned to the replacement.
+
+Start from its exact mapped implementation. Disable and remove all fifteen run-history state bits, propagate the resulting constants using actual Liberty truth tables, bypass redundant always-enabled child ICGs, and remove only unreachable combinational control. Preserve every arithmetic state bit, its next-state expression after those constants, the existing pipeline valid/opcode control, reset handling, and all architectural latencies. Other gating has reused the history events, so deleting only the nineteen original leaf gates is insufficient.
+
+The ordinary pipeline already carries valid/opcode and reservation information for per-instruction bank enables. Retain that mechanism rather than adding another opcode pipeline. A register that is unneeded may hold; a constant needed by the next instruction must still be supplied correctly. Additional lookahead changes require checking the actual bank's consumers and capture edge.
+
+First check mixed instructions, bubbles, mode drains and hot resets on the new mapped implementation. Re-run matched SSG 0.72 V /125 C, 1 GHz, 300 ps IO STA and Joules with no retiming. Report any energy or timing regression explicitly. Publish the latest implementation and retain the old result as a labeled historical comparison.
+
+The implementation is complete: fifteen history FFs and 28 redundant ICGs are removed, leaving 51,142 cells /4,501 FFs /142 ICGs. Fresh mixed replay passes 144,656 comparisons and sixteen hot resets. Matched read-only Genus reports 45,651.186 um², both setup views at 0.0 ps WNS, ICG slack 0.0/1.1 ps and zero DRVs. Fresh fixed-four Joules is 7.530630 /0.996990 /4.725380 /6.889320 pJ/op (FMA/ADD/MUL/EX2): +38.238130% aggregate overhead. The former <20% target is not met by this no-history version. DPA energy is not remeasured. Existing per-instruction enables remain; constant-read bypass is a future separate optimization. The current published entry is `hw/syn/ucc_reuse/results/ucc_per_instruction_gating_ssg072_1ghz/README.md`.

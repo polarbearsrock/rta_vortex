@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "gate_replay": true,
+  "mapped_sha256": "084109416b89bb9ad157b87ba188b8f108f1ddd84e5f76d8f758631f71298acc",
+  "issued": 143732,
+  "checks": 144656,
+  "cycles": 186140,
+  "mode_changes": 200,
+  "reservation_bubbles": 37757,
+  "max_normal_run": 97,
+  "max_sfu_run": 64,
+  "max_int2_run": 128,
+  "int2_latency": 2,
+  "max_mul4_run": 128,
+  "mul4_latency": 4,
+  "additional_hot_mul_resets": 16,
+  "evidence_sha256": {
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/syn/ucc_reuse/b32_mapped_candidate_check.py": "212a900deca6bfa51b68de4e154ab6c5bbdd49e75abfac4528df25979ef97510",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117/candidate.json": "fcf1bcc78035ec186726542d529f2b85024d3e34ed07c3c8e9914dd24e9fe50f",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117/mapped.v": "084109416b89bb9ad157b87ba188b8f108f1ddd84e5f76d8f758631f71298acc",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sticky4_control_clamp_capture10_load_balance4_20261117_measurement/scalar/manifest.json": "0fd39254aeb416a4eeaf2ca7f1e57d32e67c0b615575211b53a96c3f197a0f31",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_check/bench.sv": "7ea5209177b5360b5982075c93c1222c1cc313649d17a7e5ebc7873adc1684c3",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_check/reference.sv": "799430342320dbeb6e1414f8e7ec3c1a9da24b8f0456758a694fa2abe62233a7",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_check/vectors.txt": "09f2da4edbb5768def5ebeb7bbb2f6e2cbd54fa84e8121ddfd692c93683b35a6",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_check/run.log": "24fe6268da5880f53a81f999f1ac049a29aa964dea40c805489c1b12b8d4e14b",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_check/launch.json": "f4733613eb3c8599942b7575addfc81d7dab66ef60ce2c7c884acae0b8e277de"
+  }
+}

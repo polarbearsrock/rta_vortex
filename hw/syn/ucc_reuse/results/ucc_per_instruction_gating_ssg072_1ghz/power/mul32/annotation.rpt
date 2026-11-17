@@ -1,0 +1,29 @@
+Stim Id                   : /stim#1
+Stim file                 : /data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/per_instruction_no_run_history_20261117_power/mul32.vcd
+Stim file format          : vcd
+Top instance              : /tb/dut
+Design Top                : /ucc_b32_pipe5
+Num frames                : 1
+Duration                  : 1000ns
+-------------------------------- Annotation Report --------------------------------
+Object Type         Asserted  UnAsserted  Unconnected  Constant  Total  Asserted% 
+-----------------------------------------------------------------------------------
+Primary Ports                                                                     
+  Inputs                 654           0            0         0    654    100.00% 
+  Outputs                 65           0            0         0     65    100.00% 
+  I/O                      0           0            0         0      0        N/A 
+Sequential Outputs                                                                
+  Memory                   0           0            0         0      0        N/A 
+  Flop                  6356           0            0         0   6356    100.00% 
+  Latch                    0           0            0         0      0        N/A 
+  Arch ICGC              142           0            0         0    142    100.00% 
+  Inferred ICGC            0           0            0         0      0        N/A 
+  Total ICGC             142           0            0         0    142    100.00% 
+Drivers                                                                           
+  Driver nets          55609           0            0         0  55609    100.00% 
+  RTL Driver nets      54955           0            0         0  54955    100.00% 
+DFT                                                                               
+  Input Ports              0           0            0         0      0        N/A 
+  Flop Outputs             0           0            0         0      0        N/A 
+  Memory Outputs           0           0            0         0      0        N/A 
+-----------------------------------------------------------------------------------

@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "gate_replay": true,
+  "mapped_sha256": "fef2f2a00e34dde69529dc3964d2497a389bde41a58f24ff8af1b38749fa3f46",
+  "issued": 143732,
+  "checks": 144656,
+  "cycles": 186140,
+  "mode_changes": 200,
+  "reservation_bubbles": 37757,
+  "max_normal_run": 97,
+  "max_sfu_run": 64,
+  "max_int2_run": 128,
+  "int2_latency": 2,
+  "max_mul4_run": 128,
+  "mul4_latency": 4,
+  "additional_hot_mul_resets": 16,
+  "evidence_sha256": {
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/syn/ucc_reuse/b32_mapped_candidate_check.py": "212a900deca6bfa51b68de4e154ab6c5bbdd49e75abfac4528df25979ef97510",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/per_instruction_no_run_history_20261117/candidate.json": "02e1ff74f058bd8362bce5b1cbcbefcae14354296c949ec25c216fddbeb6c4a9",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/per_instruction_no_run_history_20261117/mapped.v": "fef2f2a00e34dde69529dc3964d2497a389bde41a58f24ff8af1b38749fa3f46",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_measurement/scalar/manifest.json": "92ae79190dacac91235ec12fcefe24d14d271b2702d632ed22b356fa9dcb343f",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/per_instruction_no_run_history_20261117_check/bench.sv": "7ea5209177b5360b5982075c93c1222c1cc313649d17a7e5ebc7873adc1684c3",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/per_instruction_no_run_history_20261117_check/reference.sv": "799430342320dbeb6e1414f8e7ec3c1a9da24b8f0456758a694fa2abe62233a7",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/per_instruction_no_run_history_20261117_check/vectors.txt": "09f2da4edbb5768def5ebeb7bbb2f6e2cbd54fa84e8121ddfd692c93683b35a6",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/per_instruction_no_run_history_20261117_check/run.log": "bdaaea71d16673507460579e0609861701b2226dfaa9cb6a349af1b5a2ddc9b5",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/per_instruction_no_run_history_20261117_check/launch.json": "74fbf7959c0def54eaecfae76a1027c9d2689081da9c37328c64b6ccfa46d35e"
+  }
+}

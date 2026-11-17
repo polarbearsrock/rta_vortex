@@ -1,0 +1,626 @@
+{
+  "parent_power": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sticky4_cone_registered_guard_fixed_opt_20261116_measurement/scalar",
+  "immediate_parent": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sticky4_registered_opt_repair_v6_20261116",
+  "parent_mapped_sha256": "1460f9fa0cb8f57fcee36706270071de76d482ccc6b79585d8da6afa81a23d26",
+  "mapped_sha256": "2814b77eff9ba93410ccf686ff3851871cf3a102047bb16ceb6bb865c03a13d7",
+  "cells": 50986,
+  "added_registers": 15,
+  "added_clock_gates": 22,
+  "modified_register_clocks": 256,
+  "original_data_logic_and_pins_unchanged": true,
+  "inverse_reconstructs_parent": true,
+  "selected_changed": false,
+  "objective_complete": false,
+  "numerical_and_latency_contract_unchanged": true,
+  "history_banks": [
+    {
+      "operation": "fma32",
+      "opcode": 96,
+      "current_match": "b32_constant_run_fma32_match_2_0_net",
+      "history": [
+        "b32_constant_run_fma32_history_0_q",
+        "b32_constant_run_fma32_history_1_q",
+        "b32_constant_run_fma32_history_2_q",
+        "b32_constant_run_fma32_history_3_q",
+        "b32_constant_run_fma32_history_4_q"
+      ],
+      "clock": "b32_constant_run_fma32_history_gate_clock",
+      "enable": "b32_constant_run_fma32_history_enable_2_0_net",
+      "event": "b32_constant_run_fma32_event_2_0_net"
+    },
+    {
+      "operation": "mul32",
+      "opcode": 32,
+      "current_match": "b32_constant_run_mul32_match_2_0_net",
+      "history": [
+        "b32_constant_run_mul32_history_0_q",
+        "b32_constant_run_mul32_history_1_q",
+        "b32_constant_run_mul32_history_2_q",
+        "b32_constant_run_mul32_history_3_q",
+        "b32_constant_run_mul32_history_4_q"
+      ],
+      "clock": "b32_constant_run_mul32_history_gate_clock",
+      "enable": "b32_constant_run_mul32_history_enable_2_0_net",
+      "event": "b32_constant_run_mul32_event_2_0_net"
+    },
+    {
+      "operation": "sfu_ex2",
+      "opcode": 122,
+      "current_match": "b32_constant_run_sfu_ex2_match_2_0_net",
+      "history": [
+        "b32_constant_run_sfu_ex2_history_0_q",
+        "b32_constant_run_sfu_ex2_history_1_q",
+        "b32_constant_run_sfu_ex2_history_2_q",
+        "b32_constant_run_sfu_ex2_history_3_q",
+        "b32_constant_run_sfu_ex2_history_4_q"
+      ],
+      "clock": "b32_constant_run_sfu_ex2_history_gate_clock",
+      "enable": "b32_constant_run_sfu_ex2_history_enable_2_0_net",
+      "event": "b32_constant_run_sfu_ex2_event_2_0_net"
+    }
+  ],
+  "banks": [
+    {
+      "original_gate": "RC_CG_HIER_INST22/RC_CGIC_INST",
+      "operations": [
+        "mul32"
+      ],
+      "registers": [
+        "p1_33793_reg",
+        "p1_33794_reg",
+        "p1_33795_reg",
+        "p1_33796_reg",
+        "p1_33797_reg",
+        "p1_33798_reg",
+        "p1_33799_reg",
+        "p1_33800_reg",
+        "p1_33801_reg",
+        "p1_33802_reg",
+        "p1_33803_reg",
+        "p1_33804_reg",
+        "p1_33805_reg",
+        "p1_33806_reg",
+        "p1_33807_reg",
+        "p1_33808_reg",
+        "p1_33809_reg",
+        "p1_33810_reg",
+        "p1_33811_reg",
+        "p1_33812_reg",
+        "p1_33813_reg",
+        "p1_33814_reg",
+        "p1_33815_reg",
+        "p1_33816_reg",
+        "p1_33817_reg",
+        "p1_33818_reg",
+        "p1_33819_reg",
+        "p1_33820_reg",
+        "p1_33821_reg",
+        "p1_33822_reg",
+        "p1_33823_reg",
+        "p1_33824_reg"
+      ],
+      "upper_register_energy_pj": 0.061904539999999994,
+      "clock": "b32_constant_run_capture_0_clock",
+      "allow": "b32_constant_run_allow_0_net"
+    },
+    {
+      "original_gate": "RC_CG_HIER_INST32/RC_CGIC_INST",
+      "operations": [
+        "sfu_ex2"
+      ],
+      "registers": [
+        "p2_19231_reg",
+        "p2_19255_reg",
+        "p2_21098_reg",
+        "p2_23291_reg",
+        "p2_23292_reg",
+        "p2_23312_reg",
+        "p3_18149_reg",
+        "p3_5735_reg"
+      ],
+      "upper_register_energy_pj": 0.015737440000000002,
+      "clock": "b32_constant_run_capture_1_clock",
+      "allow": "b32_constant_run_allow_1_net"
+    },
+    {
+      "original_gate": "RC_CG_HIER_INST34/RC_CGIC_INST",
+      "operations": [
+        "sfu_ex2"
+      ],
+      "registers": [
+        "p1_17016_reg",
+        "p1_17050_reg",
+        "p1_18149_reg",
+        "p1_2260_reg",
+        "p1_2261_reg",
+        "p1_2262_reg",
+        "p1_2263_reg",
+        "p1_5735_reg",
+        "p1_6069_reg"
+      ],
+      "upper_register_energy_pj": 0.01825466,
+      "clock": "b32_constant_run_capture_2_clock",
+      "allow": "b32_constant_run_allow_1_net"
+    },
+    {
+      "original_gate": "RC_CG_HIER_INST4/RC_CGIC_INST",
+      "operations": [
+        "sfu_ex2"
+      ],
+      "registers": [
+        "p2_23252_reg",
+        "p2_23253_reg",
+        "p2_23254_reg",
+        "p2_23255_reg",
+        "p2_23256_reg",
+        "p2_23257_reg",
+        "p2_23258_reg",
+        "p2_23259_reg",
+        "p2_23260_reg",
+        "p2_23261_reg",
+        "p2_23262_reg"
+      ],
+      "upper_register_energy_pj": 0.021763270000000005,
+      "clock": "b32_constant_run_capture_3_clock",
+      "allow": "b32_constant_run_allow_1_net"
+    },
+    {
+      "original_gate": "RC_CG_HIER_INST40/RC_CGIC_INST",
+      "operations": [
+        "sfu_ex2"
+      ],
+      "registers": [
+        "p1_19231_reg",
+        "p1_19255_reg",
+        "p1_21098_reg",
+        "p1_23291_reg",
+        "p1_23292_reg",
+        "p1_23312_reg",
+        "p2_18149_reg",
+        "p2_5735_reg"
+      ],
+      "upper_register_energy_pj": 0.0156232,
+      "clock": "b32_constant_run_capture_4_clock",
+      "allow": "b32_constant_run_allow_1_net"
+    },
+    {
+      "original_gate": "RC_CG_HIER_INST46/RC_CGIC_INST",
+      "operations": [
+        "mul32"
+      ],
+      "registers": [
+        "p1_24336_reg",
+        "p1_24337_reg",
+        "p1_24338_reg",
+        "p1_24339_reg",
+        "p1_24340_reg",
+        "p1_24341_reg",
+        "p1_24342_reg",
+        "p1_24343_reg",
+        "p1_24344_reg",
+        "p1_24345_reg",
+        "p1_24346_reg",
+        "p1_24347_reg",
+        "p1_24348_reg",
+        "p1_24349_reg",
+        "p1_24350_reg",
+        "p1_24351_reg",
+        "p1_24352_reg",
+        "p1_24353_reg",
+        "p1_24354_reg",
+        "p1_24355_reg",
+        "p1_24356_reg",
+        "p1_24357_reg",
+        "p1_24358_reg",
+        "p1_24359_reg",
+        "p1_24360_reg",
+        "p1_24361_reg",
+        "p1_24362_reg",
+        "p1_24363_reg",
+        "p1_24364_reg",
+        "p1_24365_reg",
+        "p1_24366_reg",
+        "p1_24367_reg",
+        "p1_24368_reg"
+      ],
+      "upper_register_energy_pj": 0.06570078999999998,
+      "clock": "b32_constant_run_capture_5_clock",
+      "allow": "b32_constant_run_allow_0_net"
+    },
+    {
+      "original_gate": "RC_CG_HIER_INST47/RC_CGIC_INST",
+      "operations": [
+        "mul32"
+      ],
+      "registers": [
+        "p2_24336_reg",
+        "p2_24337_reg",
+        "p2_24338_reg",
+        "p2_24339_reg",
+        "p2_24340_reg",
+        "p2_24341_reg",
+        "p2_24342_reg",
+        "p2_24343_reg",
+        "p2_24344_reg",
+        "p2_24345_reg",
+        "p2_24346_reg",
+        "p2_24347_reg",
+        "p2_24348_reg",
+        "p2_24349_reg",
+        "p2_24350_reg",
+        "p2_24351_reg",
+        "p2_24352_reg",
+        "p2_24353_reg",
+        "p2_24354_reg",
+        "p2_24355_reg",
+        "p2_24356_reg",
+        "p2_24357_reg",
+        "p2_24358_reg",
+        "p2_24359_reg",
+        "p2_24360_reg",
+        "p2_24361_reg",
+        "p2_24362_reg",
+        "p2_24363_reg",
+        "p2_24364_reg",
+        "p2_24365_reg",
+        "p2_24366_reg",
+        "p2_24367_reg",
+        "p2_24368_reg"
+      ],
+      "upper_register_energy_pj": 0.06538817999999998,
+      "clock": "b32_constant_run_capture_6_clock",
+      "allow": "b32_constant_run_allow_0_net"
+    },
+    {
+      "original_gate": "RC_CG_HIER_INST5/RC_CGIC_INST",
+      "operations": [
+        "sfu_ex2"
+      ],
+      "registers": [
+        "p1_33387_reg",
+        "p1_33388_reg",
+        "p1_33389_reg",
+        "p1_33390_reg",
+        "p1_33391_reg",
+        "p1_33392_reg",
+        "p1_33393_reg",
+        "p1_33394_reg",
+        "p1_33395_reg",
+        "p1_33396_reg",
+        "p1_33397_reg",
+        "p1_33398_reg",
+        "p1_33399_reg",
+        "p1_33432_reg",
+        "p1_33433_reg",
+        "p1_33434_reg",
+        "p1_33435_reg",
+        "p1_33436_reg",
+        "p1_33437_reg",
+        "p1_33438_reg",
+        "p1_33439_reg",
+        "p1_33440_reg",
+        "p1_33441_reg",
+        "p1_33442_reg",
+        "p1_33443_reg",
+        "p1_33444_reg",
+        "p1_33445_reg",
+        "p1_33446_reg",
+        "p1_33447_reg",
+        "p1_33448_reg",
+        "p1_33449_reg",
+        "p1_33450_reg",
+        "p1_33451_reg",
+        "p1_33452_reg",
+        "p5_18149_reg",
+        "p5_5735_reg"
+      ],
+      "upper_register_energy_pj": 0.07333558000000005,
+      "clock": "b32_constant_run_capture_7_clock",
+      "allow": "b32_constant_run_allow_1_net"
+    },
+    {
+      "original_gate": "RC_CG_HIER_INST62/RC_CGIC_INST",
+      "operations": [
+        "fma32"
+      ],
+      "registers": [
+        "b32_scalar_bank_pre_select_710_reg",
+        "b32_scalar_bank_pre_select_711_reg",
+        "b32_scalar_bank_pre_select_712_reg",
+        "b32_scalar_bank_pre_select_713_reg",
+        "b32_scalar_bank_pre_select_718_reg",
+        "b32_scalar_bank_pre_select_719_reg"
+      ],
+      "upper_register_energy_pj": 0.01386753,
+      "clock": "b32_constant_run_capture_8_clock",
+      "allow": "b32_constant_run_allow_8_net"
+    },
+    {
+      "original_gate": "RC_CG_HIER_INST63/RC_CGIC_INST",
+      "operations": [
+        "sfu_ex2"
+      ],
+      "registers": [
+        "p1_23252_reg",
+        "p1_23253_reg",
+        "p1_23254_reg",
+        "p1_23255_reg",
+        "p1_23256_reg",
+        "p1_23257_reg",
+        "p1_23258_reg",
+        "p1_23259_reg",
+        "p1_23260_reg",
+        "p1_23261_reg",
+        "p1_23262_reg"
+      ],
+      "upper_register_energy_pj": 0.0223367,
+      "clock": "b32_constant_run_capture_9_clock",
+      "allow": "b32_constant_run_allow_1_net"
+    },
+    {
+      "original_gate": "RC_CG_HIER_INST67/RC_CGIC_INST",
+      "operations": [
+        "fma32",
+        "sfu_ex2"
+      ],
+      "registers": [
+        "b32_scalar_bank_pre_select_778_reg",
+        "b32_scalar_bank_pre_select_786_reg",
+        "b32_scalar_bank_pre_select_787_reg",
+        "b32_scalar_bank_pre_select_788_reg",
+        "b32_scalar_bank_pre_select_789_reg"
+      ],
+      "upper_register_energy_pj": 0.02283231,
+      "clock": "b32_constant_run_capture_10_clock",
+      "allow": "b32_constant_run_allow_10_net"
+    },
+    {
+      "original_gate": "RC_CG_HIER_INST80/RC_CGIC_INST",
+      "operations": [
+        "fma32"
+      ],
+      "registers": [
+        "p1_19641_reg",
+        "p1_19642_reg",
+        "p1_19643_reg",
+        "p1_19644_reg",
+        "p1_19645_reg",
+        "p1_19646_reg"
+      ],
+      "upper_register_energy_pj": 0.01158525,
+      "clock": "b32_constant_run_capture_11_clock",
+      "allow": "b32_constant_run_allow_8_net"
+    },
+    {
+      "original_gate": "RC_CG_HIER_INST81/RC_CGIC_INST",
+      "operations": [
+        "fma32"
+      ],
+      "registers": [
+        "b32_scalar_bank_pre_select_424_reg",
+        "b32_scalar_bank_pre_select_679_reg",
+        "b32_scalar_bank_pre_select_680_reg",
+        "b32_scalar_bank_pre_select_681_reg",
+        "b32_scalar_bank_pre_select_690_reg",
+        "b32_scalar_bank_pre_select_691_reg",
+        "b32_scalar_bank_pre_select_692_reg",
+        "b32_scalar_bank_pre_select_693_reg"
+      ],
+      "upper_register_energy_pj": 0.01825569,
+      "clock": "b32_constant_run_capture_12_clock",
+      "allow": "b32_constant_run_allow_8_net"
+    },
+    {
+      "original_gate": "RC_CG_HIER_INST82/RC_CGIC_INST",
+      "operations": [
+        "fma32",
+        "sfu_ex2"
+      ],
+      "registers": [
+        "p1_19639_reg",
+        "p1_19640_reg",
+        "p1_22066_reg",
+        "p1_22067_reg"
+      ],
+      "upper_register_energy_pj": 0.0159062,
+      "clock": "b32_constant_run_capture_13_clock",
+      "allow": "b32_constant_run_allow_10_net"
+    },
+    {
+      "original_gate": "RC_CG_HIER_INST82/RC_CGIC_INST",
+      "operations": [
+        "sfu_ex2"
+      ],
+      "registers": [
+        "p1_22113_reg",
+        "p1_22114_reg",
+        "p1_22115_reg",
+        "p1_22129_reg",
+        "pre_select_399_reg",
+        "pre_select_400_reg"
+      ],
+      "upper_register_energy_pj": 0.01186451,
+      "clock": "b32_constant_run_capture_14_clock",
+      "allow": "b32_constant_run_allow_1_net"
+    },
+    {
+      "original_gate": "RC_CG_HIER_INST83/RC_CGIC_INST",
+      "operations": [
+        "fma32"
+      ],
+      "registers": [
+        "b32_scalar_bank_pre_select_364_reg",
+        "b32_scalar_bank_pre_select_365_reg",
+        "b32_scalar_bank_pre_select_368_reg",
+        "b32_scalar_bank_pre_select_369_reg"
+      ],
+      "upper_register_energy_pj": 0.00923936,
+      "clock": "b32_constant_run_capture_15_clock",
+      "allow": "b32_constant_run_allow_8_net"
+    },
+    {
+      "original_gate": "RC_CG_HIER_INST9/RC_CGIC_INST",
+      "operations": [
+        "mul32"
+      ],
+      "registers": [
+        "fusion_c_q_reg[3]",
+        "fusion_c_q_reg[4]",
+        "fusion_s_q_reg[0]",
+        "fusion_s_q_reg[1]"
+      ],
+      "upper_register_energy_pj": 0.008435030000000001,
+      "clock": "b32_constant_run_capture_16_clock",
+      "allow": "b32_constant_run_allow_0_net"
+    },
+    {
+      "original_gate": "RC_CG_HIER_INST9/RC_CGIC_INST",
+      "operations": [
+        "sfu_ex2"
+      ],
+      "registers": [
+        "fusion_c_q_reg[31]",
+        "fusion_c_q_reg[32]",
+        "fusion_c_q_reg[33]",
+        "fusion_c_q_reg[34]",
+        "fusion_c_q_reg[35]",
+        "fusion_c_q_reg[36]",
+        "fusion_c_q_reg[37]",
+        "fusion_c_q_reg[38]",
+        "fusion_c_q_reg[39]",
+        "fusion_c_q_reg[40]",
+        "fusion_c_q_reg[41]",
+        "fusion_c_q_reg[42]",
+        "fusion_c_q_reg[43]",
+        "fusion_s_q_reg[30]",
+        "fusion_s_q_reg[31]",
+        "fusion_s_q_reg[32]",
+        "fusion_s_q_reg[33]",
+        "fusion_s_q_reg[34]",
+        "fusion_s_q_reg[35]",
+        "fusion_s_q_reg[36]",
+        "fusion_s_q_reg[37]",
+        "fusion_s_q_reg[38]",
+        "fusion_s_q_reg[39]",
+        "fusion_s_q_reg[40]",
+        "fusion_s_q_reg[41]",
+        "fusion_s_q_reg[42]",
+        "fusion_s_q_reg[43]"
+      ],
+      "upper_register_energy_pj": 0.05522604,
+      "clock": "b32_constant_run_capture_17_clock",
+      "allow": "b32_constant_run_allow_1_net"
+    },
+    {
+      "original_gate": "RC_CG_HIER_INST94/RC_CGIC_INST",
+      "operations": [
+        "sfu_ex2"
+      ],
+      "registers": [
+        "p1_22130_reg",
+        "p1_22131_reg",
+        "p1_22145_reg",
+        "p1_22146_reg",
+        "p1_22147_reg"
+      ],
+      "upper_register_energy_pj": 0.01023737,
+      "clock": "b32_constant_run_capture_18_clock",
+      "allow": "b32_constant_run_allow_1_net"
+    }
+  ],
+  "control_input_taps": {
+    "op_i[0]": {
+      "net": "n_39575",
+      "polarity": 0,
+      "unary_identity_chain": [
+        "g687676"
+      ]
+    },
+    "op_i[1]": {
+      "net": "n_18278",
+      "polarity": 0,
+      "unary_identity_chain": [
+        "fopt3466",
+        "fopt3465",
+        "fopt3460",
+        "g6822"
+      ]
+    },
+    "op_i[2]": {
+      "net": "n_6551",
+      "polarity": 1,
+      "unary_identity_chain": [
+        "fopt2047"
+      ]
+    },
+    "op_i[3]": {
+      "net": "n_9213",
+      "polarity": 0,
+      "unary_identity_chain": [
+        "fopt3374",
+        "fopt3373",
+        "fopt3372"
+      ]
+    },
+    "op_i[4]": {
+      "net": "n_5969",
+      "polarity": 1,
+      "unary_identity_chain": [
+        "fopt1819",
+        "fopt1818",
+        "fopt1816"
+      ]
+    },
+    "op_i[5]": {
+      "net": "n_47182",
+      "polarity": 1,
+      "unary_identity_chain": [
+        "fopt657672"
+      ]
+    },
+    "op_i[6]": {
+      "net": "n_3428",
+      "polarity": 0,
+      "unary_identity_chain": [
+        "g4717",
+        "fopt775"
+      ]
+    },
+    "valid_i": {
+      "net": "n_8973",
+      "polarity": 0,
+      "unary_identity_chain": [
+        "fopt3132"
+      ]
+    }
+  },
+  "temporal_capture_proof": {
+    "passed": true,
+    "arbitrary_initial_reference_state": true,
+    "arbitrary_operand_values_each_cycle": true,
+    "prior_matching_issues": 5,
+    "current_matching_issue_required": true,
+    "abstract_fixed_point_checked": true,
+    "controller_skip_identity_exhaustive": true,
+    "actual_library_primitive_functions_checked": true,
+    "clock_waveform_check_pending": true,
+    "physical_timing_pending": true,
+    "scope": "Induction composition of constant next-state cofactors, matching-issue history and preserved original data graph; not whole-netlist sequential formal equivalence."
+  },
+  "evidence_sha256": {
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/syn/ucc_reuse/b32_temporal_capture_clock_gating_v4.py": "55caa93528510e28ac323ef471264fc97b956ec467d4bfaeb859c3e31403a274",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sticky4_registered_opt_repair_v6_20261116/candidate.json": "090dc1275ce21abea6deca9507a9785ada1a90063876102854b0c8d8f7097ebe",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sticky4_registered_opt_repair_v6_20261116/mapped.v": "1460f9fa0cb8f57fcee36706270071de76d482ccc6b79585d8da6afa81a23d26",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sticky4_registered_opt_temporal_constants_v2_20261116/result.json": "61a554e6bba26c2bcd60b37d52ba43b38503ca1d8aee43e1053acc38c4792d3e",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sticky4_registered_opt_constant_contexts_20261116/functions.json": "78ebce24ec8ba046b3a3f1d52799bc52fa2172f5d94ad84d83bb2f59f64112bd",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sticky4_registered_opt_constant_contexts_20261116/result.json": "d0201d35227936c13e95d6cfd95d21a3cd0646ee239f2bd12b94c46e78c39179",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sticky4_cone_registered_guard_fixed_opt_20261116_measurement/scalar/manifest.json": "6c125a1fbbc13ef994cd573d28100e2dd988d8a6fbe66d77e093515f5604ae0f",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sticky4_temporal_capture_gating_v4_20261116/mapped.v": "2814b77eff9ba93410ccf686ff3851871cf3a102047bb16ceb6bb865c03a13d7",
+    "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140_180a/tcbn28hpcplusbwp30p140ssg0p72v125c.lib": "44a332fd6b6defdb005a3d7a7c4e7f817fe8ec6e6036b0293acd549fa6d353c5",
+    "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140hvt_180a/tcbn28hpcplusbwp30p140hvtssg0p72v125c.lib": "47d6a840a373f60d53e66b7a4dcf5e921115575abb62e6be174bac0cd72ce004",
+    "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140lvt_180a/tcbn28hpcplusbwp30p140lvtssg0p72v125c.lib": "a35a385653dba58f4d8308f4c3638f1e3ca3ed3e80a249ce560386b6340ce711",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sticky4_registered_opt_temporal_constants_v2_20261116/fma32.json": "78b94f1647ea0cb076c11184bea44eec006625929609929ee43cabe540ba1eab",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sticky4_registered_opt_temporal_constants_v2_20261116/mul32.json": "092e88b3ee4d9b0f28b721ae799d2d019b3301af013640afd85f096ff5640306",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sticky4_registered_opt_temporal_constants_v2_20261116/sfu_ex2.json": "202861e14f89332257dc39a36b7bb4d7692a5398117ef64464aeed9076abbf21"
+  }
+}

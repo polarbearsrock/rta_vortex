@@ -1,0 +1,8 @@
+auto_ungroup=both
+lp_insert_clock_gating=true
+syn_generic_effort=medium
+syn_map_effort=high
+syn_opt_effort=high
+interconnect_mode=ple
+retime=false
+optimization_performed=false

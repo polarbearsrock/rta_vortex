@@ -1,0 +1,949 @@
+{
+  "mapped_sha256": "084109416b89bb9ad157b87ba188b8f108f1ddd84e5f76d8f758631f71298acc",
+  "cells": 51270,
+  "source_synthesis": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_selected_activity_opt_20261117/opt",
+  "native_rtl_reference_only": true,
+  "register_locations_fixed": true,
+  "synthesis_performed": true,
+  "optimization_performed": true,
+  "selected_changed": false,
+  "scope": "All changed masters have identical actual SSG Liberty pin and state functions, including three sized flip-flops. The full flattened graph preserves every cell name, pin connection, clock, register and output; reversing masters exactly reconstructs the parent. Fresh function, physical and energy checks required.",
+  "evidence_sha256": {
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/syn/ucc_reuse/b32_adopt_preserved_sizing.py": "906eb37062e6c54357af69e4c837a9c8c09eb51da5ed206ed67ced8a40afea09",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/syn/ucc_reuse/b32_mapped_clock_domain_cones.py": "93263aa4e205f3b2011a0f1faad9cee3d201fa089f817c0f5bb93399ac1d6ddc",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_combined150_20261117/candidate.json": "d0d4790cafc9cefde30fa1cc04cc804d3f5b8a6609b55ad84c5166f49b3a64bc",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_combined150_20261117/mapped.v": "a8ad96981509609fae045fcae31ef57f79372974b7dfab340c06fbd887e05038",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_combined150_sizing_20261117/result.json": "8c735d4abbd780b79c94c9586a82de4c79e33f89573aba163d8d86c494ab0ffd",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_combined150_sizing_20261117/master_changes.json": "36ea8e987698e5e0ffedfb18e4d3a952e67201d3a880c6aa845c929704e495f7",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_selected_activity_opt_20261117_measurement/scalar/manifest.json": "48c9ec4a9fb06a5dce07256913f600026d49a27adeaccc1f33e315ee50c5a122",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117/models.json": "4700e317479fead62e1727b3e029192f84b410e9b5503ea1a014ac451bcfebe9",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117/mapped.v": "084109416b89bb9ad157b87ba188b8f108f1ddd84e5f76d8f758631f71298acc",
+    "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140_180a/tcbn28hpcplusbwp30p140ssg0p72v125c.lib": "44a332fd6b6defdb005a3d7a7c4e7f817fe8ec6e6036b0293acd549fa6d353c5",
+    "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140hvt_180a/tcbn28hpcplusbwp30p140hvtssg0p72v125c.lib": "47d6a840a373f60d53e66b7a4dcf5e921115575abb62e6be174bac0cd72ce004",
+    "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140lvt_180a/tcbn28hpcplusbwp30p140lvtssg0p72v125c.lib": "a35a385653dba58f4d8308f4c3638f1e3ca3ed3e80a249ce560386b6340ce711"
+  },
+  "immediate_parent": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_combined150_20261117",
+  "immediate_parent_mapped_sha256": "a8ad96981509609fae045fcae31ef57f79372974b7dfab340c06fbd887e05038",
+  "local_boolean_master_identity_proved": false,
+  "hierarchical_master_identity_proved": true,
+  "local_boolean_master_changes": {
+    "op3539/g5016__5526": {
+      "before": "MUX2NOPTD2BWP30P140",
+      "after": "MUX2ND2BWP30P140LVT"
+    },
+    "op3539/g5018__3680": {
+      "before": "MUX2NOPTD2BWP30P140",
+      "after": "MUX2ND2BWP30P140LVT"
+    },
+    "op3542/g25": {
+      "before": "NR2D0BWP30P140",
+      "after": "NR2OPTIBD1BWP30P140HVT"
+    },
+    "op3535/g5553__2398": {
+      "before": "MUX2NOPTD2BWP30P140LVT",
+      "after": "MUX2ND2BWP30P140LVT"
+    },
+    "p1_29696_reg": {
+      "before": "DFQD4BWP30P140LVT",
+      "after": "DFQD1BWP30P140LVT"
+    },
+    "p1_29698_reg": {
+      "before": "DFQD4BWP30P140LVT",
+      "after": "DFQD1BWP30P140LVT"
+    },
+    "g344053": {
+      "before": "MUX2NOPTD2BWP30P140",
+      "after": "MUX2ND2BWP30P140LVT"
+    },
+    "g327970": {
+      "before": "CKND2D1BWP30P140",
+      "after": "ND2D1P5BWP30P140HVT"
+    },
+    "g324245": {
+      "before": "CKMUX2D0BWP30P140LVT",
+      "after": "MUX2D0BWP30P140LVT"
+    },
+    "g324554": {
+      "before": "XNR2OPTND2BWP30P140",
+      "after": "XNR2UD1BWP30P140LVT"
+    },
+    "g632805": {
+      "before": "MUX2NUD1BWP30P140LVT",
+      "after": "MUX2ND1BWP30P140LVT"
+    },
+    "g633401": {
+      "before": "INVD1P5BWP30P140LVT",
+      "after": "CKND1BWP30P140LVT"
+    },
+    "g633698": {
+      "before": "AOI32D0BWP30P140LVT",
+      "after": "AOI32D0BWP30P140"
+    },
+    "g633706": {
+      "before": "AOI21OPTREPBD2BWP30P140",
+      "after": "AOI21OPTREPBD1BWP30P140LVT"
+    },
+    "g636954": {
+      "before": "NR2OPTIBD4BWP30P140LVT",
+      "after": "NR2D3BWP30P140LVT"
+    },
+    "g636986": {
+      "before": "ND2D1P5BWP30P140LVT",
+      "after": "ND2D1BWP30P140LVT"
+    },
+    "g637546": {
+      "before": "AOI21D4BWP30P140LVT",
+      "after": "AOI21D2BWP30P140LVT"
+    },
+    "p1_12462_reg": {
+      "before": "DFD1BWP30P140LVT",
+      "after": "DFD2BWP30P140LVT"
+    },
+    "g587465": {
+      "before": "CKND1BWP30P140LVT",
+      "after": "INVD1BWP30P140LVT"
+    },
+    "g587509": {
+      "before": "ND2D2BWP30P140LVT",
+      "after": "ND2OPTIBD2BWP30P140LVT"
+    },
+    "g588854": {
+      "before": "AOI221D0BWP30P140LVT",
+      "after": "AOI221D1BWP30P140LVT"
+    },
+    "g598279": {
+      "before": "CKND6BWP30P140LVT",
+      "after": "INVD12BWP30P140LVT"
+    },
+    "csa_tree_op1518_add_10392_16_g6464": {
+      "before": "INVD1BWP30P140LVT",
+      "after": "INVD1P5BWP30P140"
+    },
+    "csa_tree_op1518_add_10392_16_g6477": {
+      "before": "MAOI222D1BWP30P140",
+      "after": "MAOI222D0BWP30P140LVT"
+    },
+    "op3591_mul_15652_16_g7485": {
+      "before": "OR2D1BWP30P140LVT",
+      "after": "OR2D4BWP30P140"
+    },
+    "g654369": {
+      "before": "MUX2D4BWP30P140LVT",
+      "after": "MUX2OPTD4BWP30P140LVT"
+    },
+    "g1859": {
+      "before": "CKND1BWP30P140",
+      "after": "INVD1BWP30P140"
+    },
+    "g661887": {
+      "before": "ND2D4BWP30P140LVT",
+      "after": "ND2D3BWP30P140LVT"
+    },
+    "g662502": {
+      "before": "NR2D2BWP30P140LVT",
+      "after": "NR2OPTIBD2BWP30P140LVT"
+    },
+    "g662506": {
+      "before": "CKND1BWP30P140LVT",
+      "after": "INVD1BWP30P140LVT"
+    },
+    "g664782": {
+      "before": "OAI31D2BWP30P140LVT",
+      "after": "OAI31D4BWP30P140LVT"
+    },
+    "g666106": {
+      "before": "CKND1BWP30P140",
+      "after": "INVD1BWP30P140"
+    },
+    "g666830": {
+      "before": "CKND1BWP30P140",
+      "after": "INVD1BWP30P140"
+    },
+    "g669330": {
+      "before": "ND2D2BWP30P140LVT",
+      "after": "CKND2D4BWP30P140"
+    },
+    "g669920": {
+      "before": "AO21D1BWP30P140LVT",
+      "after": "AO21D2BWP30P140LVT"
+    },
+    "fopt671600": {
+      "before": "CKBD1BWP30P140LVT",
+      "after": "CKBD2BWP30P140"
+    },
+    "g671980": {
+      "before": "OAI21OPTREPBD2BWP30P140LVT",
+      "after": "OAI21D2BWP30P140LVT"
+    },
+    "g672310": {
+      "before": "CKND1BWP30P140",
+      "after": "INVD1BWP30P140"
+    },
+    "g673299": {
+      "before": "OAI21D2BWP30P140LVT",
+      "after": "OAI21OPTREPBD1BWP30P140LVT"
+    },
+    "g673548": {
+      "before": "CKND1BWP30P140LVT",
+      "after": "INVD1BWP30P140LVT"
+    },
+    "g674166": {
+      "before": "XOR2D4BWP30P140",
+      "after": "CKXOR2D1BWP30P140LVT"
+    },
+    "g675421": {
+      "before": "XOR2D4BWP30P140LVT",
+      "after": "XOR2OPTND2BWP30P140LVT"
+    },
+    "g677210": {
+      "before": "OAI22OPTPBD2BWP30P140LVT",
+      "after": "OAI22OPTPBD1BWP30P140LVT"
+    },
+    "g677887": {
+      "before": "XOR2D4BWP30P140LVT",
+      "after": "XOR2OPTND2BWP30P140LVT"
+    },
+    "g679392": {
+      "before": "NR2D1BWP30P140LVT",
+      "after": "NR2D1P5BWP30P140"
+    },
+    "g679631": {
+      "before": "NR2OPTPAD1BWP30P140",
+      "after": "NR2OPTIBD1BWP30P140LVT"
+    },
+    "g680179": {
+      "before": "MUX2NOPTD4BWP30P140LVT",
+      "after": "MUX2NOPTD6BWP30P140LVT"
+    },
+    "g681120": {
+      "before": "NR2OPTPAD1BWP30P140LVT",
+      "after": "NR2D1BWP30P140"
+    },
+    "g681134": {
+      "before": "XOR2OPTND6BWP30P140LVT",
+      "after": "XOR2OPTND4BWP30P140LVT"
+    },
+    "g681527": {
+      "before": "NR2OPTPAD1BWP30P140LVT",
+      "after": "NR2D1BWP30P140LVT"
+    },
+    "g682554": {
+      "before": "ND2D1BWP30P140LVT",
+      "after": "ND2D1P5BWP30P140"
+    },
+    "g682990": {
+      "before": "AOI21D1BWP30P140LVT",
+      "after": "AOI21D1P5BWP30P140"
+    },
+    "g683997": {
+      "before": "NR2D1P5BWP30P140",
+      "after": "NR2D1BWP30P140LVT"
+    },
+    "g685279": {
+      "before": "XOR2D4BWP30P140LVT",
+      "after": "XOR2OPTND2BWP30P140LVT"
+    },
+    "g685918": {
+      "before": "MAOI22D2BWP30P140LVT",
+      "after": "MAOI22D4BWP30P140LVT"
+    },
+    "g685942": {
+      "before": "MUX2NUD1BWP30P140LVT",
+      "after": "MUX2ND1BWP30P140LVT"
+    },
+    "g687239": {
+      "before": "AOI22D1BWP30P140LVT",
+      "after": "AOI22D0P7BWP30P140LVT"
+    },
+    "g687327": {
+      "before": "INVD1BWP30P140LVT",
+      "after": "INVD1P5BWP30P140"
+    },
+    "g687328": {
+      "before": "MAOI222D1BWP30P140",
+      "after": "MAOI222D2BWP30P140"
+    },
+    "g687434": {
+      "before": "IND3D1BWP30P140LVT",
+      "after": "IND3D2BWP30P140"
+    },
+    "g688489": {
+      "before": "INVD1BWP30P140LVT",
+      "after": "INVD0P7BWP30P140LVT"
+    },
+    "g691532": {
+      "before": "INR2D4BWP30P140LVT",
+      "after": "INR2D8BWP30P140LVT"
+    },
+    "g692716": {
+      "before": "IAO21D0BWP30P140LVT",
+      "after": "IAO21D1BWP30P140LVT"
+    },
+    "g695502": {
+      "before": "XNR3UD1BWP30P140LVT",
+      "after": "XNR3D1BWP30P140LVT"
+    },
+    "g6278": {
+      "before": "OAI22D1BWP30P140",
+      "after": "OAI22D0P7BWP30P140LVT"
+    },
+    "b32_cone_guard_mask_1_70": {
+      "before": "AN2D16BWP30P140LVT",
+      "after": "AN2D8BWP30P140LVT"
+    },
+    "g2161": {
+      "before": "CKND0BWP30P140LVT",
+      "after": "CKND1BWP30P140"
+    },
+    "g2382": {
+      "before": "NR2OPTIBD2BWP30P140LVT",
+      "after": "NR2OPTPAD1BWP30P140LVT"
+    },
+    "g2533": {
+      "before": "AO21D1BWP30P140LVT",
+      "after": "AO21D2BWP30P140LVT"
+    },
+    "fopt130": {
+      "before": "BUFFD12BWP30P140LVT",
+      "after": "BUFFD8BWP30P140LVT"
+    },
+    "fopt3670": {
+      "before": "CKND4BWP30P140LVT",
+      "after": "INVD3BWP30P140LVT"
+    },
+    "g4804": {
+      "before": "NR2D3BWP30P140LVT",
+      "after": "NR2D2BWP30P140LVT"
+    },
+    "g4808": {
+      "before": "NR2OPTPAD1BWP30P140LVT",
+      "after": "NR2D1BWP30P140LVT"
+    },
+    "g5463": {
+      "before": "CKXOR2D2BWP30P140LVT",
+      "after": "XOR2D1BWP30P140LVT"
+    },
+    "g5803": {
+      "before": "XNR3UD1BWP30P140LVT",
+      "after": "XNR3D1BWP30P140LVT"
+    },
+    "g6633": {
+      "before": "AOI21OPTREPBD1BWP30P140LVT",
+      "after": "AOI21D1BWP30P140LVT"
+    },
+    "b32_unused_cut_mask_180": {
+      "before": "AN2D1BWP30P140LVT",
+      "after": "AN2D2BWP30P140"
+    },
+    "fopt14": {
+      "before": "CKND6BWP30P140LVT",
+      "after": "CKND4BWP30P140LVT"
+    },
+    "fopt2754": {
+      "before": "BUFFD8BWP30P140",
+      "after": "BUFFD16BWP30P140"
+    },
+    "g3202": {
+      "before": "OAI21D0P7BWP30P140LVT",
+      "after": "OAI21D1BWP30P140LVT"
+    },
+    "g5940": {
+      "before": "OAI21D1BWP30P140LVT",
+      "after": "OAI21D1P5BWP30P140"
+    },
+    "g5941": {
+      "before": "INVD1P5BWP30P140LVT",
+      "after": "INVD3BWP30P140"
+    },
+    "g9377": {
+      "before": "XOR2OPTND4BWP30P140LVT",
+      "after": "XOR2OPTND6BWP30P140LVT"
+    },
+    "g9420": {
+      "before": "MUX2D4BWP30P140LVT",
+      "after": "MUX2OPTD4BWP30P140LVT"
+    },
+    "g9495": {
+      "before": "AO21D1BWP30P140LVT",
+      "after": "AO21D2BWP30P140LVT"
+    },
+    "g1193": {
+      "before": "XOR2D4BWP30P140LVT",
+      "after": "XOR2OPTND2BWP30P140LVT"
+    },
+    "fopt1395": {
+      "before": "CKBD1BWP30P140",
+      "after": "DEL025D1BWP30P140LVT"
+    },
+    "fopt1532": {
+      "before": "CKND4BWP30P140LVT",
+      "after": "INVD3BWP30P140LVT"
+    },
+    "fopt1539": {
+      "before": "CKBD1BWP30P140LVT",
+      "after": "BUFFD4BWP30P140HVT"
+    },
+    "b32_unused_mulreg_cut_mask_3015": {
+      "before": "AN2D4BWP30P140LVT",
+      "after": "AN2D2BWP30P140LVT"
+    },
+    "g4244": {
+      "before": "INR2D1BWP30P140LVT",
+      "after": "INR2D2BWP30P140"
+    },
+    "b32_matched_unused_mask_5693": {
+      "before": "AN2D16BWP30P140LVT",
+      "after": "AN2D8BWP30P140LVT"
+    },
+    "g6158": {
+      "before": "XNR3UD1BWP30P140LVT",
+      "after": "XNR3D1BWP30P140LVT"
+    },
+    "fopt6309": {
+      "before": "CKND6BWP30P140LVT",
+      "after": "CKND4BWP30P140LVT"
+    },
+    "g7728": {
+      "before": "ND2OPTIBD1BWP30P140LVT",
+      "after": "CKND2D2BWP30P140"
+    },
+    "g7820": {
+      "before": "CKBD12BWP30P140LVT",
+      "after": "BUFFD8BWP30P140LVT"
+    },
+    "g11355": {
+      "before": "ND2D8BWP30P140LVT",
+      "after": "ND2D4BWP30P140LVT"
+    },
+    "g12022": {
+      "before": "NR2OPTIBD1BWP30P140LVT",
+      "after": "NR2D1BWP30P140LVT"
+    },
+    "g12335": {
+      "before": "INR2D1BWP30P140LVT",
+      "after": "INR2D6BWP30P140HVT"
+    },
+    "g12516": {
+      "before": "ND3D1BWP30P140LVT",
+      "after": "ND3OPTPAD1BWP30P140LVT"
+    },
+    "g13115": {
+      "before": "ND2D0P7BWP30P140LVT",
+      "after": "ND2OPTPAD1BWP30P140"
+    },
+    "g13406": {
+      "before": "AN2D2BWP30P140LVT",
+      "after": "AN2D6BWP30P140LVT"
+    },
+    "b32_matched_unused_mask_13800": {
+      "before": "AN2D8BWP30P140LVT",
+      "after": "AN2D4BWP30P140LVT"
+    },
+    "b32_matched_unused_mask_13802": {
+      "before": "AN2D8BWP30P140",
+      "after": "AN2D2BWP30P140LVT"
+    },
+    "b32_matched_unused_mask_13808": {
+      "before": "AN2D4BWP30P140",
+      "after": "AN2D2BWP30P140LVT"
+    },
+    "b32_matched_unused_mask_13810": {
+      "before": "AN2D8BWP30P140",
+      "after": "AN2D2BWP30P140LVT"
+    },
+    "g14016": {
+      "before": "MUX2NOPTD2BWP30P140LVT",
+      "after": "MUX2ND4BWP30P140LVT"
+    },
+    "hi_fo_buf407": {
+      "before": "INVD8BWP30P140LVT",
+      "after": "CKND6BWP30P140LVT"
+    },
+    "g1340": {
+      "before": "AN2D8BWP30P140LVT",
+      "after": "AN2D4BWP30P140"
+    },
+    "g1346": {
+      "before": "AN2D16BWP30P140",
+      "after": "AN2D8BWP30P140LVT"
+    }
+  },
+  "module_uniquifications": [
+    {
+      "instance": "op3534",
+      "old_module": "shift_right_vlog_unsigned_28_83615",
+      "new_module": "B32_AREA_CELL_CLONE_0"
+    },
+    {
+      "instance": "op3535",
+      "old_module": "shift_right_vlog_unsigned_28_83618",
+      "new_module": "B32_AREA_CELL_CLONE_1"
+    },
+    {
+      "instance": "op3536",
+      "old_module": "shift_right_vlog_unsigned_28_83617",
+      "new_module": "B32_AREA_CELL_CLONE_2"
+    },
+    {
+      "instance": "op3538",
+      "old_module": "shift_right_vlog_unsigned_28_83619",
+      "new_module": "B32_AREA_CELL_CLONE_3"
+    },
+    {
+      "instance": "shared_alignment_scalar_guard",
+      "old_module": "ucc_mode_output_guard_WIDTH100",
+      "new_module": "B32_AREA_CELL_CLONE_4"
+    }
+  ],
+  "all_clock_and_register_pins_unchanged": true,
+  "inverse_reconstructs_parent": true,
+  "identical_driver_functions_proved": true,
+  "liberty_pin_and_state_functions_equal": true,
+  "resized_cells": {
+    "op3539/g5016__5526": {
+      "before": "MUX2NOPTD2BWP30P140",
+      "after": "MUX2ND2BWP30P140LVT"
+    },
+    "op3539/g5018__3680": {
+      "before": "MUX2NOPTD2BWP30P140",
+      "after": "MUX2ND2BWP30P140LVT"
+    },
+    "op3542/g25": {
+      "before": "NR2D0BWP30P140",
+      "after": "NR2OPTIBD1BWP30P140HVT"
+    },
+    "op3535/g5553__2398": {
+      "before": "MUX2NOPTD2BWP30P140LVT",
+      "after": "MUX2ND2BWP30P140LVT"
+    },
+    "p1_29696_reg": {
+      "before": "DFQD4BWP30P140LVT",
+      "after": "DFQD1BWP30P140LVT"
+    },
+    "p1_29698_reg": {
+      "before": "DFQD4BWP30P140LVT",
+      "after": "DFQD1BWP30P140LVT"
+    },
+    "g344053": {
+      "before": "MUX2NOPTD2BWP30P140",
+      "after": "MUX2ND2BWP30P140LVT"
+    },
+    "g327970": {
+      "before": "CKND2D1BWP30P140",
+      "after": "ND2D1P5BWP30P140HVT"
+    },
+    "g324245": {
+      "before": "CKMUX2D0BWP30P140LVT",
+      "after": "MUX2D0BWP30P140LVT"
+    },
+    "g324554": {
+      "before": "XNR2OPTND2BWP30P140",
+      "after": "XNR2UD1BWP30P140LVT"
+    },
+    "g632805": {
+      "before": "MUX2NUD1BWP30P140LVT",
+      "after": "MUX2ND1BWP30P140LVT"
+    },
+    "g633401": {
+      "before": "INVD1P5BWP30P140LVT",
+      "after": "CKND1BWP30P140LVT"
+    },
+    "g633698": {
+      "before": "AOI32D0BWP30P140LVT",
+      "after": "AOI32D0BWP30P140"
+    },
+    "g633706": {
+      "before": "AOI21OPTREPBD2BWP30P140",
+      "after": "AOI21OPTREPBD1BWP30P140LVT"
+    },
+    "g636954": {
+      "before": "NR2OPTIBD4BWP30P140LVT",
+      "after": "NR2D3BWP30P140LVT"
+    },
+    "g636986": {
+      "before": "ND2D1P5BWP30P140LVT",
+      "after": "ND2D1BWP30P140LVT"
+    },
+    "g637546": {
+      "before": "AOI21D4BWP30P140LVT",
+      "after": "AOI21D2BWP30P140LVT"
+    },
+    "p1_12462_reg": {
+      "before": "DFD1BWP30P140LVT",
+      "after": "DFD2BWP30P140LVT"
+    },
+    "g587465": {
+      "before": "CKND1BWP30P140LVT",
+      "after": "INVD1BWP30P140LVT"
+    },
+    "g587509": {
+      "before": "ND2D2BWP30P140LVT",
+      "after": "ND2OPTIBD2BWP30P140LVT"
+    },
+    "g588854": {
+      "before": "AOI221D0BWP30P140LVT",
+      "after": "AOI221D1BWP30P140LVT"
+    },
+    "g598279": {
+      "before": "CKND6BWP30P140LVT",
+      "after": "INVD12BWP30P140LVT"
+    },
+    "csa_tree_op1518_add_10392_16_g6464": {
+      "before": "INVD1BWP30P140LVT",
+      "after": "INVD1P5BWP30P140"
+    },
+    "csa_tree_op1518_add_10392_16_g6477": {
+      "before": "MAOI222D1BWP30P140",
+      "after": "MAOI222D0BWP30P140LVT"
+    },
+    "op3591_mul_15652_16_g7485": {
+      "before": "OR2D1BWP30P140LVT",
+      "after": "OR2D4BWP30P140"
+    },
+    "g654369": {
+      "before": "MUX2D4BWP30P140LVT",
+      "after": "MUX2OPTD4BWP30P140LVT"
+    },
+    "g1859": {
+      "before": "CKND1BWP30P140",
+      "after": "INVD1BWP30P140"
+    },
+    "g661887": {
+      "before": "ND2D4BWP30P140LVT",
+      "after": "ND2D3BWP30P140LVT"
+    },
+    "g662502": {
+      "before": "NR2D2BWP30P140LVT",
+      "after": "NR2OPTIBD2BWP30P140LVT"
+    },
+    "g662506": {
+      "before": "CKND1BWP30P140LVT",
+      "after": "INVD1BWP30P140LVT"
+    },
+    "g664782": {
+      "before": "OAI31D2BWP30P140LVT",
+      "after": "OAI31D4BWP30P140LVT"
+    },
+    "g666106": {
+      "before": "CKND1BWP30P140",
+      "after": "INVD1BWP30P140"
+    },
+    "g666830": {
+      "before": "CKND1BWP30P140",
+      "after": "INVD1BWP30P140"
+    },
+    "g669330": {
+      "before": "ND2D2BWP30P140LVT",
+      "after": "CKND2D4BWP30P140"
+    },
+    "g669920": {
+      "before": "AO21D1BWP30P140LVT",
+      "after": "AO21D2BWP30P140LVT"
+    },
+    "fopt671600": {
+      "before": "CKBD1BWP30P140LVT",
+      "after": "CKBD2BWP30P140"
+    },
+    "g671980": {
+      "before": "OAI21OPTREPBD2BWP30P140LVT",
+      "after": "OAI21D2BWP30P140LVT"
+    },
+    "g672310": {
+      "before": "CKND1BWP30P140",
+      "after": "INVD1BWP30P140"
+    },
+    "g673299": {
+      "before": "OAI21D2BWP30P140LVT",
+      "after": "OAI21OPTREPBD1BWP30P140LVT"
+    },
+    "g673548": {
+      "before": "CKND1BWP30P140LVT",
+      "after": "INVD1BWP30P140LVT"
+    },
+    "g674166": {
+      "before": "XOR2D4BWP30P140",
+      "after": "CKXOR2D1BWP30P140LVT"
+    },
+    "g675421": {
+      "before": "XOR2D4BWP30P140LVT",
+      "after": "XOR2OPTND2BWP30P140LVT"
+    },
+    "g677210": {
+      "before": "OAI22OPTPBD2BWP30P140LVT",
+      "after": "OAI22OPTPBD1BWP30P140LVT"
+    },
+    "g677887": {
+      "before": "XOR2D4BWP30P140LVT",
+      "after": "XOR2OPTND2BWP30P140LVT"
+    },
+    "g679392": {
+      "before": "NR2D1BWP30P140LVT",
+      "after": "NR2D1P5BWP30P140"
+    },
+    "g679631": {
+      "before": "NR2OPTPAD1BWP30P140",
+      "after": "NR2OPTIBD1BWP30P140LVT"
+    },
+    "g680179": {
+      "before": "MUX2NOPTD4BWP30P140LVT",
+      "after": "MUX2NOPTD6BWP30P140LVT"
+    },
+    "g681120": {
+      "before": "NR2OPTPAD1BWP30P140LVT",
+      "after": "NR2D1BWP30P140"
+    },
+    "g681134": {
+      "before": "XOR2OPTND6BWP30P140LVT",
+      "after": "XOR2OPTND4BWP30P140LVT"
+    },
+    "g681527": {
+      "before": "NR2OPTPAD1BWP30P140LVT",
+      "after": "NR2D1BWP30P140LVT"
+    },
+    "g682554": {
+      "before": "ND2D1BWP30P140LVT",
+      "after": "ND2D1P5BWP30P140"
+    },
+    "g682990": {
+      "before": "AOI21D1BWP30P140LVT",
+      "after": "AOI21D1P5BWP30P140"
+    },
+    "g683997": {
+      "before": "NR2D1P5BWP30P140",
+      "after": "NR2D1BWP30P140LVT"
+    },
+    "g685279": {
+      "before": "XOR2D4BWP30P140LVT",
+      "after": "XOR2OPTND2BWP30P140LVT"
+    },
+    "g685918": {
+      "before": "MAOI22D2BWP30P140LVT",
+      "after": "MAOI22D4BWP30P140LVT"
+    },
+    "g685942": {
+      "before": "MUX2NUD1BWP30P140LVT",
+      "after": "MUX2ND1BWP30P140LVT"
+    },
+    "g687239": {
+      "before": "AOI22D1BWP30P140LVT",
+      "after": "AOI22D0P7BWP30P140LVT"
+    },
+    "g687327": {
+      "before": "INVD1BWP30P140LVT",
+      "after": "INVD1P5BWP30P140"
+    },
+    "g687328": {
+      "before": "MAOI222D1BWP30P140",
+      "after": "MAOI222D2BWP30P140"
+    },
+    "g687434": {
+      "before": "IND3D1BWP30P140LVT",
+      "after": "IND3D2BWP30P140"
+    },
+    "g688489": {
+      "before": "INVD1BWP30P140LVT",
+      "after": "INVD0P7BWP30P140LVT"
+    },
+    "g691532": {
+      "before": "INR2D4BWP30P140LVT",
+      "after": "INR2D8BWP30P140LVT"
+    },
+    "g692716": {
+      "before": "IAO21D0BWP30P140LVT",
+      "after": "IAO21D1BWP30P140LVT"
+    },
+    "g695502": {
+      "before": "XNR3UD1BWP30P140LVT",
+      "after": "XNR3D1BWP30P140LVT"
+    },
+    "g6278": {
+      "before": "OAI22D1BWP30P140",
+      "after": "OAI22D0P7BWP30P140LVT"
+    },
+    "b32_cone_guard_mask_1_70": {
+      "before": "AN2D16BWP30P140LVT",
+      "after": "AN2D8BWP30P140LVT"
+    },
+    "g2161": {
+      "before": "CKND0BWP30P140LVT",
+      "after": "CKND1BWP30P140"
+    },
+    "g2382": {
+      "before": "NR2OPTIBD2BWP30P140LVT",
+      "after": "NR2OPTPAD1BWP30P140LVT"
+    },
+    "g2533": {
+      "before": "AO21D1BWP30P140LVT",
+      "after": "AO21D2BWP30P140LVT"
+    },
+    "fopt130": {
+      "before": "BUFFD12BWP30P140LVT",
+      "after": "BUFFD8BWP30P140LVT"
+    },
+    "fopt3670": {
+      "before": "CKND4BWP30P140LVT",
+      "after": "INVD3BWP30P140LVT"
+    },
+    "g4804": {
+      "before": "NR2D3BWP30P140LVT",
+      "after": "NR2D2BWP30P140LVT"
+    },
+    "g4808": {
+      "before": "NR2OPTPAD1BWP30P140LVT",
+      "after": "NR2D1BWP30P140LVT"
+    },
+    "g5463": {
+      "before": "CKXOR2D2BWP30P140LVT",
+      "after": "XOR2D1BWP30P140LVT"
+    },
+    "g5803": {
+      "before": "XNR3UD1BWP30P140LVT",
+      "after": "XNR3D1BWP30P140LVT"
+    },
+    "g6633": {
+      "before": "AOI21OPTREPBD1BWP30P140LVT",
+      "after": "AOI21D1BWP30P140LVT"
+    },
+    "b32_unused_cut_mask_180": {
+      "before": "AN2D1BWP30P140LVT",
+      "after": "AN2D2BWP30P140"
+    },
+    "fopt14": {
+      "before": "CKND6BWP30P140LVT",
+      "after": "CKND4BWP30P140LVT"
+    },
+    "fopt2754": {
+      "before": "BUFFD8BWP30P140",
+      "after": "BUFFD16BWP30P140"
+    },
+    "g3202": {
+      "before": "OAI21D0P7BWP30P140LVT",
+      "after": "OAI21D1BWP30P140LVT"
+    },
+    "g5940": {
+      "before": "OAI21D1BWP30P140LVT",
+      "after": "OAI21D1P5BWP30P140"
+    },
+    "g5941": {
+      "before": "INVD1P5BWP30P140LVT",
+      "after": "INVD3BWP30P140"
+    },
+    "g9377": {
+      "before": "XOR2OPTND4BWP30P140LVT",
+      "after": "XOR2OPTND6BWP30P140LVT"
+    },
+    "g9420": {
+      "before": "MUX2D4BWP30P140LVT",
+      "after": "MUX2OPTD4BWP30P140LVT"
+    },
+    "g9495": {
+      "before": "AO21D1BWP30P140LVT",
+      "after": "AO21D2BWP30P140LVT"
+    },
+    "g1193": {
+      "before": "XOR2D4BWP30P140LVT",
+      "after": "XOR2OPTND2BWP30P140LVT"
+    },
+    "fopt1395": {
+      "before": "CKBD1BWP30P140",
+      "after": "DEL025D1BWP30P140LVT"
+    },
+    "fopt1532": {
+      "before": "CKND4BWP30P140LVT",
+      "after": "INVD3BWP30P140LVT"
+    },
+    "fopt1539": {
+      "before": "CKBD1BWP30P140LVT",
+      "after": "BUFFD4BWP30P140HVT"
+    },
+    "b32_unused_mulreg_cut_mask_3015": {
+      "before": "AN2D4BWP30P140LVT",
+      "after": "AN2D2BWP30P140LVT"
+    },
+    "g4244": {
+      "before": "INR2D1BWP30P140LVT",
+      "after": "INR2D2BWP30P140"
+    },
+    "b32_matched_unused_mask_5693": {
+      "before": "AN2D16BWP30P140LVT",
+      "after": "AN2D8BWP30P140LVT"
+    },
+    "g6158": {
+      "before": "XNR3UD1BWP30P140LVT",
+      "after": "XNR3D1BWP30P140LVT"
+    },
+    "fopt6309": {
+      "before": "CKND6BWP30P140LVT",
+      "after": "CKND4BWP30P140LVT"
+    },
+    "g7728": {
+      "before": "ND2OPTIBD1BWP30P140LVT",
+      "after": "CKND2D2BWP30P140"
+    },
+    "g7820": {
+      "before": "CKBD12BWP30P140LVT",
+      "after": "BUFFD8BWP30P140LVT"
+    },
+    "g11355": {
+      "before": "ND2D8BWP30P140LVT",
+      "after": "ND2D4BWP30P140LVT"
+    },
+    "g12022": {
+      "before": "NR2OPTIBD1BWP30P140LVT",
+      "after": "NR2D1BWP30P140LVT"
+    },
+    "g12335": {
+      "before": "INR2D1BWP30P140LVT",
+      "after": "INR2D6BWP30P140HVT"
+    },
+    "g12516": {
+      "before": "ND3D1BWP30P140LVT",
+      "after": "ND3OPTPAD1BWP30P140LVT"
+    },
+    "g13115": {
+      "before": "ND2D0P7BWP30P140LVT",
+      "after": "ND2OPTPAD1BWP30P140"
+    },
+    "g13406": {
+      "before": "AN2D2BWP30P140LVT",
+      "after": "AN2D6BWP30P140LVT"
+    },
+    "b32_matched_unused_mask_13800": {
+      "before": "AN2D8BWP30P140LVT",
+      "after": "AN2D4BWP30P140LVT"
+    },
+    "b32_matched_unused_mask_13802": {
+      "before": "AN2D8BWP30P140",
+      "after": "AN2D2BWP30P140LVT"
+    },
+    "b32_matched_unused_mask_13808": {
+      "before": "AN2D4BWP30P140",
+      "after": "AN2D2BWP30P140LVT"
+    },
+    "b32_matched_unused_mask_13810": {
+      "before": "AN2D8BWP30P140",
+      "after": "AN2D2BWP30P140LVT"
+    },
+    "g14016": {
+      "before": "MUX2NOPTD2BWP30P140LVT",
+      "after": "MUX2ND4BWP30P140LVT"
+    },
+    "hi_fo_buf407": {
+      "before": "INVD8BWP30P140LVT",
+      "after": "CKND6BWP30P140LVT"
+    },
+    "g1340": {
+      "before": "AN2D8BWP30P140LVT",
+      "after": "AN2D4BWP30P140"
+    },
+    "g1346": {
+      "before": "AN2D16BWP30P140",
+      "after": "AN2D8BWP30P140LVT"
+    }
+  },
+  "cloned_drivers": {},
+  "local_master_state_identity_proved": true,
+  "original_connectivity_unchanged": true,
+  "added_registers": 0,
+  "final_sizing_flow": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_combined150_sizing_20261117"
+}

@@ -1,0 +1,110 @@
+{
+  "complete": true,
+  "operations": {
+    "fma32": {
+      "dynamic_pj_per_op": 7.53063,
+      "parent_dynamic_pj_per_op": 6.6476299999999995,
+      "leakage_mw": 9.69544,
+      "parent_leakage_mw": 9.69261,
+      "dynamic_ratio_to_parent": 1.1328292940491576
+    },
+    "add32": {
+      "dynamic_pj_per_op": 0.99699,
+      "parent_dynamic_pj_per_op": 1.0141580000000001,
+      "leakage_mw": 9.50156,
+      "parent_leakage_mw": 9.51571,
+      "dynamic_ratio_to_parent": 0.9830716712780454
+    },
+    "mul32": {
+      "dynamic_pj_per_op": 4.72538,
+      "parent_dynamic_pj_per_op": 3.481676,
+      "leakage_mw": 9.65818,
+      "parent_leakage_mw": 9.64218,
+      "dynamic_ratio_to_parent": 1.3572141692679043
+    },
+    "sfu_ex2": {
+      "dynamic_pj_per_op": 6.8893200000000006,
+      "parent_dynamic_pj_per_op": 6.25348,
+      "leakage_mw": 9.68785,
+      "parent_leakage_mw": 9.68697,
+      "dynamic_ratio_to_parent": 1.1016777858088618
+    }
+  },
+  "fixed_four_sum_pj": 20.14232,
+  "cuda_ratio": 1.3823812964703885,
+  "setup_groups": {
+    "dpa": {
+      "cg_enable_group_clk": {
+        "wns_ps": 0.0,
+        "tns_ps": 0.0,
+        "violations": 0
+      },
+      "clk": {
+        "wns_ps": 0.0,
+        "tns_ps": 0.0,
+        "violations": 0
+      },
+      "default": {
+        "wns_ps": null,
+        "tns_ps": 0.0,
+        "violations": 0
+      }
+    },
+    "cuda": {
+      "cg_enable_group_clk": {
+        "wns_ps": 1.1,
+        "tns_ps": 0.0,
+        "violations": 0
+      },
+      "clk": {
+        "wns_ps": 0.0,
+        "tns_ps": 0.0,
+        "violations": 0
+      },
+      "default": {
+        "wns_ps": null,
+        "tns_ps": 0.0,
+        "violations": 0
+      }
+    }
+  },
+  "run_history_removed": true,
+  "synthesis_launched": false,
+  "selected_changed": false,
+  "objective_complete": false,
+  "cell_count": 51142,
+  "cell_area_um2": 45651.186,
+  "worst_slack_ps": {
+    "dpa": 0.0,
+    "cuda": 0.0
+  },
+  "drv_violation_rows": {
+    "dpa": {
+      "max_transition": 0,
+      "max_fanout": 0,
+      "max_capacitance": 0
+    },
+    "cuda": {
+      "max_transition": 0,
+      "max_fanout": 0,
+      "max_capacitance": 0
+    }
+  },
+  "scope": "Fresh Joules on unchanged fixed-operation vectors. Dynamic energy excludes leakage. No selection or qualification inferred from local screening or energy alone.",
+  "evidence_sha256": {
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/syn/ucc_reuse/b32_per_instruction_power.py": "b3b626e59d860da4e3dcfe396482fa1ae32f8871a979f130ad163ae25cb716d9",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/per_instruction_no_run_history_20261117/candidate.json": "02e1ff74f058bd8362bce5b1cbcbefcae14354296c949ec25c216fddbeb6c4a9",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/per_instruction_no_run_history_20261117_check/result.json": "2700f74445554274aeda10e2484331e4c26421bef5fe031337f6cea60a868889",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/per_instruction_no_run_history_20261117_timing/result.json": "44e266059bc016226153bf9d9af1b6186d60cc5e5b7760e368a5f5de574f3312",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/power_goal_contract_20pct_fixed_ex2_area45800.json": "1e268a76b05dce5a6b0eb7739d9cd74c1dfa5f69db3583685a01776d0a62d598",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_measurement/scalar/manifest.json": "92ae79190dacac91235ec12fcefe24d14d271b2702d632ed22b356fa9dcb343f",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/area45800_opt_sized_20261117_measurement/scalar/energy.json": "dc9dd94fc49a0666b9df0570ef717f9011822570b3ac8ff3a6291af282aec59a",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/per_instruction_no_run_history_20261117_power/manifest.json": "fd7da7ca184bd93dda51e189e7b20f76bd8969302a78086f3983d3e1a6848064",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/per_instruction_no_run_history_20261117_power/status.json": "c576a2c3b61adc0df57461290b3801336f49727ddcbae8086cefb0119c62f5ec",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/per_instruction_no_run_history_20261117_power/energy.json": "9d659d215ad66db1b6b5de722d02605ba47ad39bd9f10b8835d39bce6867f71a",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/per_instruction_no_run_history_20261117_power/power_fma32/result.json": "a3e16d7751cc44dc75463ab686254c143de231205ab1a683ff2df64514884625",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/per_instruction_no_run_history_20261117_power/power_add32/result.json": "3e1d0795f2bdb7a9db020a59b7f56e79ac97c9516b6ec013d2ed890eba9ffbd3",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/per_instruction_no_run_history_20261117_power/power_mul32/result.json": "268c7f55dba2f4fa95aed98095ee8742f26940de0753a6552197ff44bab86b16",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/per_instruction_no_run_history_20261117_power/power_sfu_ex2/result.json": "972d52de8e5cf115c2e6ac698e6c13d8705276811d9520520df7b470c5d11b98"
+  }
+}

@@ -1,0 +1,307 @@
+{
+  "complete": true,
+  "operations": {
+    "fma32": {
+      "opcode": 96,
+      "stages": [
+        {
+          "prior_matching_issues": 0,
+          "upper_dynamic_pj": 0,
+          "bits": 0
+        },
+        {
+          "prior_matching_issues": 1,
+          "upper_dynamic_pj": 0.052311899999999974,
+          "bits": 26
+        },
+        {
+          "prior_matching_issues": 2,
+          "upper_dynamic_pj": 0.12861902000000006,
+          "bits": 61
+        },
+        {
+          "prior_matching_issues": 3,
+          "upper_dynamic_pj": 0.14059885000000014,
+          "bits": 67
+        },
+        {
+          "prior_matching_issues": 4,
+          "upper_dynamic_pj": 0.15141429000000012,
+          "bits": 72
+        },
+        {
+          "prior_matching_issues": 5,
+          "upper_dynamic_pj": 0.15799805000000008,
+          "bits": 75
+        },
+        {
+          "prior_matching_issues": 6,
+          "upper_dynamic_pj": 0.15799805000000008,
+          "bits": 75
+        },
+        {
+          "prior_matching_issues": 7,
+          "upper_dynamic_pj": 0.15799805000000008,
+          "bits": 75
+        },
+        {
+          "prior_matching_issues": 8,
+          "upper_dynamic_pj": 0.15799805000000008,
+          "bits": 75
+        },
+        {
+          "prior_matching_issues": 9,
+          "upper_dynamic_pj": 0.15799805000000008,
+          "bits": 75
+        },
+        {
+          "prior_matching_issues": 10,
+          "upper_dynamic_pj": 0.15799805000000008,
+          "bits": 75
+        },
+        {
+          "prior_matching_issues": 11,
+          "upper_dynamic_pj": 0.15799805000000008,
+          "bits": 75
+        },
+        {
+          "prior_matching_issues": 12,
+          "upper_dynamic_pj": 0.15799805000000008,
+          "bits": 75
+        }
+      ]
+    },
+    "add32": {
+      "opcode": 0,
+      "stages": [
+        {
+          "prior_matching_issues": 0,
+          "upper_dynamic_pj": 0,
+          "bits": 0
+        },
+        {
+          "prior_matching_issues": 1,
+          "upper_dynamic_pj": 0.00198146,
+          "bits": 1
+        },
+        {
+          "prior_matching_issues": 2,
+          "upper_dynamic_pj": 0.00198146,
+          "bits": 1
+        },
+        {
+          "prior_matching_issues": 3,
+          "upper_dynamic_pj": 0.00198146,
+          "bits": 1
+        },
+        {
+          "prior_matching_issues": 4,
+          "upper_dynamic_pj": 0.00198146,
+          "bits": 1
+        },
+        {
+          "prior_matching_issues": 5,
+          "upper_dynamic_pj": 0.00198146,
+          "bits": 1
+        },
+        {
+          "prior_matching_issues": 6,
+          "upper_dynamic_pj": 0.00198146,
+          "bits": 1
+        },
+        {
+          "prior_matching_issues": 7,
+          "upper_dynamic_pj": 0.00198146,
+          "bits": 1
+        },
+        {
+          "prior_matching_issues": 8,
+          "upper_dynamic_pj": 0.00198146,
+          "bits": 1
+        },
+        {
+          "prior_matching_issues": 9,
+          "upper_dynamic_pj": 0.00198146,
+          "bits": 1
+        },
+        {
+          "prior_matching_issues": 10,
+          "upper_dynamic_pj": 0.00198146,
+          "bits": 1
+        },
+        {
+          "prior_matching_issues": 11,
+          "upper_dynamic_pj": 0.00198146,
+          "bits": 1
+        },
+        {
+          "prior_matching_issues": 12,
+          "upper_dynamic_pj": 0.00198146,
+          "bits": 1
+        }
+      ]
+    },
+    "mul32": {
+      "opcode": 32,
+      "stages": [
+        {
+          "prior_matching_issues": 0,
+          "upper_dynamic_pj": 0,
+          "bits": 0
+        },
+        {
+          "prior_matching_issues": 1,
+          "upper_dynamic_pj": 0.021765629999999998,
+          "bits": 11
+        },
+        {
+          "prior_matching_issues": 2,
+          "upper_dynamic_pj": 0.10317693000000006,
+          "bits": 52
+        },
+        {
+          "prior_matching_issues": 3,
+          "upper_dynamic_pj": 0.1845756099999999,
+          "bits": 93
+        },
+        {
+          "prior_matching_issues": 4,
+          "upper_dynamic_pj": 0.26525295999999976,
+          "bits": 134
+        },
+        {
+          "prior_matching_issues": 5,
+          "upper_dynamic_pj": 0.26525295999999976,
+          "bits": 134
+        },
+        {
+          "prior_matching_issues": 6,
+          "upper_dynamic_pj": 0.26525295999999976,
+          "bits": 134
+        },
+        {
+          "prior_matching_issues": 7,
+          "upper_dynamic_pj": 0.26525295999999976,
+          "bits": 134
+        },
+        {
+          "prior_matching_issues": 8,
+          "upper_dynamic_pj": 0.26525295999999976,
+          "bits": 134
+        },
+        {
+          "prior_matching_issues": 9,
+          "upper_dynamic_pj": 0.26525295999999976,
+          "bits": 134
+        },
+        {
+          "prior_matching_issues": 10,
+          "upper_dynamic_pj": 0.26525295999999976,
+          "bits": 134
+        },
+        {
+          "prior_matching_issues": 11,
+          "upper_dynamic_pj": 0.26525295999999976,
+          "bits": 134
+        },
+        {
+          "prior_matching_issues": 12,
+          "upper_dynamic_pj": 0.26525295999999976,
+          "bits": 134
+        }
+      ]
+    },
+    "sfu_ex2": {
+      "opcode": 122,
+      "stages": [
+        {
+          "prior_matching_issues": 0,
+          "upper_dynamic_pj": 0,
+          "bits": 0
+        },
+        {
+          "prior_matching_issues": 1,
+          "upper_dynamic_pj": 0.01825466,
+          "bits": 9
+        },
+        {
+          "prior_matching_issues": 2,
+          "upper_dynamic_pj": 0.12816038000000005,
+          "bits": 62
+        },
+        {
+          "prior_matching_issues": 3,
+          "upper_dynamic_pj": 0.16974893000000008,
+          "bits": 83
+        },
+        {
+          "prior_matching_issues": 4,
+          "upper_dynamic_pj": 0.23911147999999985,
+          "bits": 117
+        },
+        {
+          "prior_matching_issues": 5,
+          "upper_dynamic_pj": 0.3124470599999996,
+          "bits": 153
+        },
+        {
+          "prior_matching_issues": 6,
+          "upper_dynamic_pj": 0.3124470599999996,
+          "bits": 153
+        },
+        {
+          "prior_matching_issues": 7,
+          "upper_dynamic_pj": 0.3124470599999996,
+          "bits": 153
+        },
+        {
+          "prior_matching_issues": 8,
+          "upper_dynamic_pj": 0.3124470599999996,
+          "bits": 153
+        },
+        {
+          "prior_matching_issues": 9,
+          "upper_dynamic_pj": 0.3124470599999996,
+          "bits": 153
+        },
+        {
+          "prior_matching_issues": 10,
+          "upper_dynamic_pj": 0.3124470599999996,
+          "bits": 153
+        },
+        {
+          "prior_matching_issues": 11,
+          "upper_dynamic_pj": 0.3124470599999996,
+          "bits": 153
+        },
+        {
+          "prior_matching_issues": 12,
+          "upper_dynamic_pj": 0.3124470599999996,
+          "bits": 153
+        }
+      ]
+    }
+  },
+  "mapped_sha256": "81df5364b851c0985877e9284159d7effc5453c7c4554f5da5cb35eab4ffd8ac",
+  "scope": "Exhaustive local Boolean/next-state abstraction plus exact control-bank cofactors and a correlated 3-bit warmup domain; arbitrary initial registers and arbitrary operands each cycle. A capture is safe only under the full consecutive issue context and a matching current issue. No gate implementation, clock waveform proof or energy saving is claimed.",
+  "evidence_sha256": {
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/syn/ucc_reuse/b32_temporal_constant_capture_screen_v2.py": "a3226d6fda6c2ccec86f2597a1705936a635ea65a7798a5601116f5660e1c5bf",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sticky4_registered_opt_constant_contexts_20261116/result.json": "d0201d35227936c13e95d6cfd95d21a3cd0646ee239f2bd12b94c46e78c39179",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sticky4_registered_opt_constant_contexts_20261116/models.json": "9c063bd0b1d4510ab5758df6ecfe1d0e8a9d8a14f28d247e152c93f6124d0ac8",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sticky4_registered_opt_constant_contexts_20261116/functions.json": "78ebce24ec8ba046b3a3f1d52799bc52fa2172f5d94ad84d83bb2f59f64112bd",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sticky4_cone_registered_guard_fixed_opt_20261116_measurement/scalar/manifest.json": "6c125a1fbbc13ef994cd573d28100e2dd988d8a6fbe66d77e093515f5604ae0f",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sticky4_cone_registered_guard_fixed_opt_20261116_measurement/scalar/mapped.v": "81df5364b851c0985877e9284159d7effc5453c7c4554f5da5cb35eab4ffd8ac",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sticky4_registered_opt_leaf_20261116/fma32/result.json": "93251965817c6abe1017463a022162b11a5d393f8496ba2b4aef6bc867a37655",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sticky4_registered_opt_leaf_20261116/fma32/leaf.rpt": "adb3a056026e9548af8df423313d6fe6c1486203eab03d1164422967c182cf70",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sticky4_registered_opt_temporal_constants_v2_20261116/fma32.json": "78b94f1647ea0cb076c11184bea44eec006625929609929ee43cabe540ba1eab",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sticky4_registered_opt_leaf_20261116/add32/result.json": "9a3c4eba8960fb8f299487ecbed6b2b403ed6abafed4fd9956b0e677d040c107",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sticky4_registered_opt_leaf_20261116/add32/leaf.rpt": "223d29c89783cf0b0094f8413441d3e4bace97515eb3d18ee4ddbbd4f1015c50",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sticky4_registered_opt_temporal_constants_v2_20261116/add32.json": "f3f7f075f095c00fe87288cd0414c2cb0cff45b2dc08fa20350575232b46a65b",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sticky4_registered_opt_leaf_20261116/mul32/result.json": "d56d466a2aab419c3692f66ef9b05659b4e4ff3059e128c5477a9d0ace771b9b",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sticky4_registered_opt_leaf_20261116/mul32/leaf.rpt": "5203a683327ba0fef08e00d8db4d7ec7f10ecc6f8f3a5e669d36b7a31fd8ca11",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sticky4_registered_opt_temporal_constants_v2_20261116/mul32.json": "092e88b3ee4d9b0f28b721ae799d2d019b3301af013640afd85f096ff5640306",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sticky4_registered_opt_leaf_20261116/sfu_ex2/result.json": "44fda0dbd80998bfb84ca003fc7375f5dc34b0424d1f8ea1bb4f42f071f61a79",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sticky4_registered_opt_leaf_20261116/sfu_ex2/leaf.rpt": "dc4d9f02c9d0a270ddddce16bdb890dc87f00df3c4a6feb697d922c7fb569e3d",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sticky4_registered_opt_temporal_constants_v2_20261116/sfu_ex2.json": "202861e14f89332257dc39a36b7bb4d7692a5398117ef64464aeed9076abbf21"
+  }
+}

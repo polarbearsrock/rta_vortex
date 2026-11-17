@@ -1,0 +1,259 @@
+{
+  "objective": "Each DPA variant <20% dynamic-energy overhead; equal-count FMA32/INT32 ADD/INT32 MUL/fixed EX2 energy ratio <1.20; area <45800 um2",
+  "created_utc": "2026-11-17T02:44:23.788334+00:00",
+  "area_limit_um2": 45800,
+  "strict_ratio_limit": 1.2,
+  "conditions": "N28 SSG0.72V/125C Genus25 SM LEF/QRC 1GHz 300ps I/O retiming off",
+  "setup_requirement": "Both original DPA and CUDA setup views pass",
+  "baseline": "Separate DPA16 + FP32 + INT32 + SFU; active block plus measured idle dynamic of other blocks",
+  "baseline_total_pj_per_op": {
+    "fma32": 5.58585027,
+    "add32": 0.88443374,
+    "mul32": 3.44600074,
+    "sfu_rcp": 4.77527637,
+    "sfu_rsqrt": 4.82969637,
+    "sfu_ex2": 4.65445637,
+    "sfu_lg2": 4.77128637,
+    "sfu_sinpi": 4.685306369999999,
+    "sfu_cospi": 4.672776369999999,
+    "sfu_tanh": 4.567716369999999,
+    "dpa_fp16": 27.32846313,
+    "dpa_bf16": 24.60903313,
+    "dpa_tf32": 21.07696313,
+    "dpa_fp8": 26.118993130000003,
+    "dpa_nvfp4": 21.011663130000002,
+    "dpa_mxfp4": 20.40730313,
+    "dpa_mxfp8": 26.08851313,
+    "dpa_fp4": 19.62077313,
+    "fp32_add": 4.17546827,
+    "fp32_mul": 4.95211827,
+    "int_sub": 0.88912574,
+    "int_shl": 0.87353774,
+    "int_shr_u": 0.82001874,
+    "int_shr_s": 0.9135827400000001,
+    "int_cmp": 0.7955617399999999,
+    "int_mulhi_s": 3.6370957400000004,
+    "int_mulhi_u": 3.4394667400000003,
+    "cvt_i32_f32": 1.32650027,
+    "cvt_u32_f32": 1.2971052699999999,
+    "cvt_f32_i32": 1.3439972699999998,
+    "cvt_f32_u32": 1.29546827,
+    "dpa_fp8_rm1": 25.61322313,
+    "dpa_mxfp8_rm1": 25.59367313,
+    "dpa_fp8_rm2": 25.58933313,
+    "dpa_mxfp8_rm2": 25.60398313,
+    "dpa_fp8_rm3": 24.68272313,
+    "dpa_mxfp8_rm3": 24.72527313,
+    "sfu": 4.981966369999999
+  },
+  "required_dpa_streams": [
+    "dpa_fp16",
+    "dpa_bf16",
+    "dpa_tf32",
+    "dpa_fp8",
+    "dpa_nvfp4",
+    "dpa_mxfp4",
+    "dpa_mxfp8",
+    "dpa_fp4",
+    "dpa_fp8_rm1",
+    "dpa_mxfp8_rm1",
+    "dpa_fp8_rm2",
+    "dpa_mxfp8_rm2",
+    "dpa_fp8_rm3",
+    "dpa_mxfp8_rm3"
+  ],
+  "scalar_equal_weight_streams": [
+    "fma32",
+    "add32",
+    "mul32",
+    "sfu_ex2"
+  ],
+  "scalar_formula": "sum(UCC_energy[op] for op in scalar_equal_weight_streams) / sum(baseline_energy[op] for op in scalar_equal_weight_streams)",
+  "excluded_from_average": [
+    "idle",
+    "sfu (seven-function mixed stream)",
+    "other individual SFU functions and scalar diagnostics"
+  ],
+  "baseline_scalar_mean_pj": 3.6426852800000002,
+  "scalar_mean_limit_pj": 4.371222336,
+  "fp8_extra_scope": "FP8/MXFP8 both E5M2 and mixed E4M3/E5M2 selectors; original E4M3 streams retained",
+  "measurement": "100 warmup +1000 II=1 operations; direct checked gate VCD, internal+switching, no SPEF/CTS/delay glitches",
+  "evidence_sha256": {
+    "/data2/jwang710/UCC_FU/artifacts/ucc_b32_vs_separate_energy_ssg072_1ghz/comparison.json": "373a6830c6fb09be90153ab3a59cd90af17adc878c05420372c06129dc86eea0",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/baseline_fp8_rm1/power_dpa_fp8/result.json": "9215f99fe12a9258a88cecae016ce7728a0b82e81a29c23ff54c76fd2b5094b6",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/baseline_fp8_rm1/manifest.json": "aa0d27eaade4bbbe1f291efdf6cacac7f9f6e57414a3831c997867f9dd7c249d",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/baseline_fp8_rm1/power_dpa_mxfp8/result.json": "fb90030d49ce70c7609cfb82193656783d2782b375576f9a547f00226dde595c",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/baseline_fp8_rm2/power_dpa_fp8/result.json": "5fb371cbab4243ce7d97c0dd48daef0293b66fbc0ab7890bb247add705c15233",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/baseline_fp8_rm2/manifest.json": "4a1107bff01a05c4126ab170d0ceeb11b707b6884be2460ac4c5e2bee802682d",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/baseline_fp8_rm2/power_dpa_mxfp8/result.json": "4e538e8100f907c5480d8b93d4a0c2c880dae449ae63ddc6553db01a7be31ba1",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/baseline_fp8_rm3/power_dpa_fp8/result.json": "6aa41cce845436e5ce72bac5cd485a2c61d643dfd3fdd7013a1c824c524244aa",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/baseline_fp8_rm3/manifest.json": "8e293d6140df77d5366a04e34c67f39d6152c544d0fa1d78eaab93524b3a3b13",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/baseline_fp8_rm3/power_dpa_mxfp8/result.json": "ca97e163acaf8833f64f4448fe15a76d6df70b7a7484867649c6ec92f28206c9",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/power_goal_contract.json": "aab28fa9ff3796fdac261b29f1dbe3745a04851a9efb0709b8c34c10c02946ef",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_drv_sm25/manifest.json": "2c4af8148fa2717518dadafb0d10ecb40121244c7800831ec09308f78aa3f69b",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_drv_sm25/final.db": "d86420edf89552461ba93696f10e77bd2e91ed748d4149ab35482f3d4ad5e1e2",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_drv_sm25_power/manifest.json": "b2c491babda6c9f5c68255035e22a6ba7bf1644cb7137a4b374261188dcc5455",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_drv_sm25_power/energy.json": "033bfd6f29bc95c985109b15b20ddc0682dba6a317529b85dc7714552990c97d",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_repaired_matched_drv_audit/result.json": "76c8fb20d2d27e3728d1a77fb1794fd9aebf6ad78fe7c2f641479fa971403f72",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/syn/ucc_reuse/b32_repaired_baseline_contract.py": "babdac55d78b6c81485bf9591dbbc55644f6c870120c484537afe479b639f22b",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_drv_sm25_fp8_rm1/manifest.json": "cd32025fd013902361e5698eb02acc04ce75a60b1bc6d1e8d9d45d7001cfc53f",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_drv_sm25_fp8_rm1/energy.json": "cb7db1634a2f96b2cec3ae313d15d9dc6a580f005657e9deff816ad106a117de",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_drv_sm25_fp8_rm2/manifest.json": "83cac408ced7564ed47afe56885030ced9e88ff8e51af2b884173ab604cf89b0",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_drv_sm25_fp8_rm2/energy.json": "c1fbd8ad15d2aba06f919b5ab3ab06f7902262b487f9841f61dd920db666ea6f",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_drv_sm25_fp8_rm3/manifest.json": "fbf83a69c2e5d88e7b1f6d8147b0cfa6eaae22eab5ca6bc9360cff1e6a918c07",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_drv_sm25_fp8_rm3/energy.json": "e24a6d266cf7f795a3aa07d6da05a044ac51ac2b98af52d14d4964408573d127",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/fp32_matched_drv_audit/result.json": "6d0e4fa1fe036c53e7ff13dc74739d6de67a92eca884a94d406e226e60b52414",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/int32_matched_drv_audit/result.json": "a1250e6311169900653fcda07cb048c1b37117f3af7adecd3e952e0bc8298b30",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sfu_constrom_matched_drv_audit/result.json": "56e18a1980c716e8a49a644b6c0c5609bf5e8dabaaf2980a9105d13c5d6af7bb",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/power_goal_contract_drv.json": "1f4fffdca0236ca1aafba7be6c5101186059f234c7d8f663d46e13cb7a200eeb",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/power_goal_contract_20pct_drv.json": "43f1451d3e0681997f13014f92d918a2dcfe41e25b71b6f543739aef4661129e",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/power_goal_contract_20pct_fixed_ex2.json": "29573331a39f96efa91fa2aee5f50929df39b97a6c69cae3e090c9382a0c9326",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/power_goal_contract_20pct_fixed_ex2_area45500.json": "cc290de6d4fcb1716330162f0a4220249617e7f1ba747c1551321de3d06b993d"
+  },
+  "baseline_source_runs": {
+    "fp32": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_scalar_energy/fp32",
+    "int32": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_scalar_energy/int32",
+    "sfu": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_scalar_energy/sfu_constrom",
+    "dpa5": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_drv_sm25_power"
+  },
+  "completion_status": "Unproven; repaired-baseline version, goal not achieved",
+  "diagnostic_streams": [
+    "idle",
+    "sfu"
+  ],
+  "scope_revision": {
+    "updated_utc": "2026-11-12T09:57:29.231079+00:00",
+    "user_instruction": "CUDA power only needs representative paper operations",
+    "profile": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/syn/ucc_reuse/paper_power_profile.json",
+    "profile_sha256": "6f93217beacd7139d5207a799cbbfa6de6ea1edbb68fe57cddabe013ad8b6425",
+    "paper_sources": {
+      "/data2/jwang710/RTA_code/ISCA-2027-TARS/figures/src/fig_energy.py": "2d92322355afb5cf2fb8ded7d5d5f23c6a8a38ea222639867bc44755279a88a8",
+      "/data2/jwang710/RTA_code/ISCA-2027-TARS/sections/06-evaluation.tex": "54af9d9edf3e707cb50fb2cf47fd9206183d549298d30790e5766c46da194a8d",
+      "/data2/jwang710/RTA_code/ISCA-2027-TARS/sections/03-architecture.tex": "54bebb978a7fd0eb2673ddea18e3be8ba34d45264943328f5182590f287453f0"
+    },
+    "legacy_paper_numbers_used": false
+  },
+  "prior_scalar_selection": [
+    "fma32",
+    "add32",
+    "mul32",
+    "sfu_rcp",
+    "sfu_rsqrt",
+    "sfu_ex2",
+    "sfu_lg2",
+    "sfu_sinpi",
+    "sfu_cospi",
+    "sfu_tanh",
+    "fp32_add",
+    "fp32_mul",
+    "int_sub",
+    "int_shl",
+    "int_shr_u",
+    "int_shr_s",
+    "int_cmp",
+    "int_mulhi_s",
+    "int_mulhi_u",
+    "cvt_i32_f32",
+    "cvt_u32_f32",
+    "cvt_f32_i32",
+    "cvt_f32_u32"
+  ],
+  "baseline_fp8_source_runs": {
+    "1": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_drv_sm25_fp8_rm1",
+    "2": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_drv_sm25_fp8_rm2",
+    "3": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_drv_sm25_fp8_rm3"
+  },
+  "baseline_final_design_rule_reports": {
+    "fp32": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/fp32_matched_drv_audit/result.json",
+    "int32": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/int32_matched_drv_audit/result.json",
+    "sfu": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sfu_constrom_matched_drv_audit/result.json",
+    "dpa5": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_repaired_matched_drv_audit/result.json"
+  },
+  "design_rule_requirement": "Zero final transition/fanout/capacitance violations in all setup views, UCC and baselines",
+  "denominator_revision": {
+    "created_utc": "2026-11-12T14:00:27.638684+00:00",
+    "prior_contract": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/power_goal_contract.json",
+    "prior_contract_sha256": "aab28fa9ff3796fdac261b29f1dbe3745a04851a9efb0709b8c34c10c02946ef",
+    "reason": "Original DPA had one36-vs32fanout violation; identical RTL/constraints repaired and remeasured",
+    "old_dpa_idle_mw": 0.02041304,
+    "repaired_dpa_idle_mw": 0.02041304,
+    "scalar_denominator_change_pj": 0.0,
+    "dpa_changes": {
+      "dpa_fp16": {
+        "old_baseline_total_pj": 27.719883130000003,
+        "repaired_baseline_total_pj": 27.32846313
+      },
+      "dpa_bf16": {
+        "old_baseline_total_pj": 24.960553129999994,
+        "repaired_baseline_total_pj": 24.60903313
+      },
+      "dpa_tf32": {
+        "old_baseline_total_pj": 21.36325313,
+        "repaired_baseline_total_pj": 21.07696313
+      },
+      "dpa_fp8": {
+        "old_baseline_total_pj": 26.439083129999997,
+        "repaired_baseline_total_pj": 26.118993130000003
+      },
+      "dpa_nvfp4": {
+        "old_baseline_total_pj": 21.35320313,
+        "repaired_baseline_total_pj": 21.011663130000002
+      },
+      "dpa_mxfp4": {
+        "old_baseline_total_pj": 20.749343130000003,
+        "repaired_baseline_total_pj": 20.40730313
+      },
+      "dpa_mxfp8": {
+        "old_baseline_total_pj": 26.40797313,
+        "repaired_baseline_total_pj": 26.08851313
+      },
+      "dpa_fp4": {
+        "old_baseline_total_pj": 19.95702313,
+        "repaired_baseline_total_pj": 19.62077313
+      },
+      "dpa_fp8_rm1": {
+        "old_baseline_total_pj": 25.92673313,
+        "repaired_baseline_total_pj": 25.61322313
+      },
+      "dpa_mxfp8_rm1": {
+        "old_baseline_total_pj": 25.90708313,
+        "repaired_baseline_total_pj": 25.59367313
+      },
+      "dpa_fp8_rm2": {
+        "old_baseline_total_pj": 25.89930313,
+        "repaired_baseline_total_pj": 25.58933313
+      },
+      "dpa_mxfp8_rm2": {
+        "old_baseline_total_pj": 25.91353313,
+        "repaired_baseline_total_pj": 25.60398313
+      },
+      "dpa_fp8_rm3": {
+        "old_baseline_total_pj": 24.977903129999998,
+        "repaired_baseline_total_pj": 24.68272313
+      },
+      "dpa_mxfp8_rm3": {
+        "old_baseline_total_pj": 25.019933130000002,
+        "repaired_baseline_total_pj": 24.72527313
+      }
+    },
+    "original_files_unchanged": true,
+    "driver_sha256": "babdac55d78b6c81485bf9591dbbc55644f6c870120c484537afe479b639f22b"
+  },
+  "user_objective_update": {
+    "objective": "\u8ba9\u6211\u4eec\u7684\u5171\u4eab\u7684UCC\u7684\u52a8\u6001\u529f\u8017\u7684overhead\u6bd4baseline\u5c0f\u4e8e20%. \u540c\u65f6\u4fdd\u6301\u9762\u79ef\u4f4e\u4e8e46000.",
+    "previous_contract": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/power_goal_contract_drv.json",
+    "previous_contract_sha256": "1f4fffdca0236ca1aafba7be6c5101186059f234c7d8f663d46e13cb7a200eeb",
+    "baseline_weights_measurement_area_and_numerical_semantics_unchanged": true,
+    "in_flight_old_contracts_remain_immutable": true
+  },
+  "measurement_profile_revision": {
+    "user_instruction": "ok SFU\u6309\u7167\u56fa\u5b9a\u7684\u6765\u5c31\u53ef\u4ee5",
+    "context": "Fixed EX2 overhead was requested and reported immediately before this instruction. SFU representative uses fixed EX2; seven-function mixture is diagnostic.",
+    "previous_contract": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/power_goal_contract_20pct_drv.json",
+    "previous_contract_sha256": "43f1451d3e0681997f13014f92d918a2dcfe41e25b71b6f543739aef4661129e",
+    "rtl_numerics_conditions_individual_measurements_unchanged": true,
+    "other_three_scalar_weights_and_all_dpa_requirements_unchanged": true
+  },
+  "previous_contract": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/power_goal_contract_20pct_fixed_ex2_area45500.json",
+  "change_scope": "User revised the new area cap from 45500 to 45800 um2. All baseline, operations, weights, numerical semantics, latency, physical and power measurement conditions remain unchanged."
+}
