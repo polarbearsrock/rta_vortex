@@ -1,0 +1,1267 @@
+{
+  "implementation/mapped.v": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117/mapped.v",
+    "source_sha256": "795547913478148b7ab047464cfad79d96323e793cf111626b02b1be1383ece6",
+    "compression": "none"
+  },
+  "implementation/native_reference.sv": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/design.sv",
+    "source_sha256": "6e8b28a9f6087be02f7dc05efee35ffff15071513f774ae27bfe64d08ded680e",
+    "compression": "none"
+  },
+  "implementation/latency_policy.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/latency_policy.json",
+    "source_sha256": "f5d2c366f3e8c20acfe41e39a3bdc0729b529dda5bd67baedb314552e87a332b",
+    "compression": "none"
+  },
+  "implementation/numerical_policy.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/numerical_policy.json",
+    "source_sha256": "803bf329530ad7a1f6a2335803148df0c4c2e707a124bfa6e13ba8ab029dffb5",
+    "compression": "none"
+  },
+  "validation/bench.sv": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_check/bench.sv",
+    "source_sha256": "7ea5209177b5360b5982075c93c1222c1cc313649d17a7e5ebc7873adc1684c3",
+    "compression": "none"
+  },
+  "validation/reference.sv": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_check/reference.sv",
+    "source_sha256": "799430342320dbeb6e1414f8e7ec3c1a9da24b8f0456758a694fa2abe62233a7",
+    "compression": "none"
+  },
+  "validation/result.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_check/result.json",
+    "source_sha256": "c078e7a78605e67d110d9c07aa455ade4c7c4820dc48f85437047cf7afd70bbb",
+    "compression": "none"
+  },
+  "validation/vectors.txt.gz": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_check/vectors.txt",
+    "source_sha256": "09f2da4edbb5768def5ebeb7bbb2f6e2cbd54fa84e8121ddfd692c93683b35a6",
+    "compression": "gzip"
+  },
+  "validation/run.log.gz": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_check/run.log",
+    "source_sha256": "ad0bd936d937f640c2bf30a78f6447d683eeecebd1346769d89335c7e7b3e216",
+    "compression": "gzip"
+  },
+  "validation/reset_entry/bench.sv": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_reset_entry/bench.sv",
+    "source_sha256": "ba39b751386fc917a29e154b1bf3ed957345baf8bb1f138fb2f8bfabe16ff2e2",
+    "compression": "none"
+  },
+  "validation/reset_entry/reference.sv": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_reset_entry/reference.sv",
+    "source_sha256": "799430342320dbeb6e1414f8e7ec3c1a9da24b8f0456758a694fa2abe62233a7",
+    "compression": "none"
+  },
+  "validation/reset_entry/result.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_reset_entry/result.json",
+    "source_sha256": "abc6487448fbbb4b861b6a0c59ce9555610009b9490c5fbd8cbc67836830d7cc",
+    "compression": "none"
+  },
+  "validation/reset_entry/pairs.txt.gz": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_reset_entry/pairs.txt",
+    "source_sha256": "0193ea00415c040ff00fb275d18b87e1f7e9b96140a25f8b6605b9a7aeaa2c0c",
+    "compression": "gzip"
+  },
+  "validation/reset_entry/run.log.gz": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_reset_entry/run.log",
+    "source_sha256": "0bef6f0e1b410c8d952ba91701f2dbd176c2ed43428c68f94cbc0eeebb11bd2d",
+    "compression": "gzip"
+  },
+  "timing/flow.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/flow.tcl",
+    "source_sha256": "71387fb2b811bbd15bbb58d3813393b453d6ef54df01d727422b4a99ead0864f",
+    "compression": "none"
+  },
+  "timing/mmmc.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/mmmc.tcl",
+    "source_sha256": "8900801639eee338c015f0d51d39c0ea6248861a00598cca24995d07b60c5e2b",
+    "compression": "none"
+  },
+  "timing/dpa.sdc": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/dpa.sdc",
+    "source_sha256": "fc400f54c8b07fba685287a918ecc388d914cbf56247f116a140600005d5d5d8",
+    "compression": "none"
+  },
+  "timing/cuda.sdc": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/cuda.sdc",
+    "source_sha256": "2071881ba4677b5320c0c7d10ca637d4dd288ad4dadf1c87d003bc16ff8d34d1",
+    "compression": "none"
+  },
+  "timing/timing.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/timing.tcl",
+    "source_sha256": "608a035573a1d04611aeb4fee76240929ba9a5b1c3d95254e02a6937c1a2392e",
+    "compression": "none"
+  },
+  "timing/manifest.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/manifest.json",
+    "source_sha256": "3bf6f22f94c10b417f30acd056bbd89dfd6280231e0a23c401e09aba8f7c5c5a",
+    "compression": "none"
+  },
+  "timing/launch.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/launch.json",
+    "source_sha256": "7dda75723f9b5258a677877d24dc8c3fc1ad17e2141344b39efde4b79005ab67",
+    "compression": "none"
+  },
+  "timing/unresolved.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/unresolved.rpt",
+    "source_sha256": "f431e591a7d42d2ed3d778330e9a25462baa1e8bf3b75da172626737a59bf51a",
+    "compression": "none"
+  },
+  "timing/settings.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/settings.rpt",
+    "source_sha256": "85eea9ddd234320fbfedd049c2e4892c936bf0d0b885cd53f6376623c650e7be",
+    "compression": "none"
+  },
+  "timing/invariants.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/invariants.rpt",
+    "source_sha256": "8163c6eeb465d12ebba1f5c01891f32e0c983faaa045aa325ddc0a450cdd0547",
+    "compression": "none"
+  },
+  "timing/views_dpa.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/views_dpa.rpt",
+    "source_sha256": "0df37e25dce83474d90266de0b1e5a3308249f704e364dbdd52daf3372533ce0",
+    "compression": "none"
+  },
+  "timing/cases_dpa.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/cases_dpa.rpt",
+    "source_sha256": "cb5e021b4483ac373824fc0e16e50d7bd280d50db62908282f2c1728b47e6418",
+    "compression": "none"
+  },
+  "timing/timing_dpa.rpt.gz": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/timing_dpa.rpt",
+    "source_sha256": "56bed43c4b07fa4bfc0129ae3e3dfed55b976dce10725ec5ddd69b39b6a1e865",
+    "compression": "gzip"
+  },
+  "timing/timing_clockgate_dpa.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/timing_clockgate_dpa.rpt",
+    "source_sha256": "a6e804a49a3addf16138d32a55a7db9fb4f8bd92fdc5d7a616d1f2e893d1a5b2",
+    "compression": "none"
+  },
+  "timing/qor_dpa.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/qor_dpa.rpt",
+    "source_sha256": "cd2473e9ef23d1dbf5cc4d5fb30de99ffd365410cf518ff06c92d788f8b40a82",
+    "compression": "none"
+  },
+  "timing/dpa_max_transition.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/dpa_max_transition.rpt",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "compression": "none"
+  },
+  "timing/dpa_max_fanout.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/dpa_max_fanout.rpt",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "compression": "none"
+  },
+  "timing/dpa_max_capacitance.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/dpa_max_capacitance.rpt",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "compression": "none"
+  },
+  "timing/loops_dpa.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/loops_dpa.rpt",
+    "source_sha256": "a6fccce7d59605550833380cb4d39fd9803ac719c7aff7d76e2f94db9fd3eda5",
+    "compression": "none"
+  },
+  "timing/views_cuda.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/views_cuda.rpt",
+    "source_sha256": "0df37e25dce83474d90266de0b1e5a3308249f704e364dbdd52daf3372533ce0",
+    "compression": "none"
+  },
+  "timing/cases_cuda.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/cases_cuda.rpt",
+    "source_sha256": "e8e29e240ec0c687907e4472445026e0d6bfa4c56912803f5d6bcf30201a313d",
+    "compression": "none"
+  },
+  "timing/timing_cuda.rpt.gz": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/timing_cuda.rpt",
+    "source_sha256": "461ad8f9f560990d782a7ea66e1b61a358548a928cd7515a81c1d296d26e43f1",
+    "compression": "gzip"
+  },
+  "timing/timing_clockgate_cuda.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/timing_clockgate_cuda.rpt",
+    "source_sha256": "f571a94be8c01944b64161d5c5e7d69759428c5cfc8e51fca0a8a1a395d73370",
+    "compression": "none"
+  },
+  "timing/qor_cuda.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/qor_cuda.rpt",
+    "source_sha256": "9eeadfa706a6c44792ac38e67fece95c93a2c24ad2d2dfc9e3d033b0148593eb",
+    "compression": "none"
+  },
+  "timing/cuda_max_transition.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/cuda_max_transition.rpt",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "compression": "none"
+  },
+  "timing/cuda_max_fanout.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/cuda_max_fanout.rpt",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "compression": "none"
+  },
+  "timing/cuda_max_capacitance.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/cuda_max_capacitance.rpt",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "compression": "none"
+  },
+  "timing/loops_cuda.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/loops_cuda.rpt",
+    "source_sha256": "61ce59ef41b7a127ed67cc6f077d6cbebf2fd5bfbe67e589d62288a677ac54f6",
+    "compression": "none"
+  },
+  "timing/area.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/area.rpt",
+    "source_sha256": "4f581a30b8e471431f94f12ee1fd94a1180bd7cc635d72bae747d5d0d29dae5a",
+    "compression": "none"
+  },
+  "timing/area_hier.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/area_hier.rpt",
+    "source_sha256": "4f581a30b8e471431f94f12ee1fd94a1180bd7cc635d72bae747d5d0d29dae5a",
+    "compression": "none"
+  },
+  "timing/gates.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/gates.rpt",
+    "source_sha256": "3c0d1a41d492ed35b21fe0d5d37ea41f7a47688bb24eb240eb070c49d794f692",
+    "compression": "none"
+  },
+  "timing/clock_gating.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/clock_gating.rpt",
+    "source_sha256": "dcc85ad742bcb3dcb4d57ec78d8fa4a8ae168bb97217ddbbc482a0d4344143e8",
+    "compression": "none"
+  },
+  "timing/complete.txt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/complete.txt",
+    "source_sha256": "a061282f8d5f9c2b1e442a52f68771475794f8f76ce7466ca6219881015ed11c",
+    "compression": "none"
+  },
+  "timing/result.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/result.json",
+    "source_sha256": "086bb71ab5bc3339c9c152beba1c729d5776655c4c6df1ec3d48d75f4c961a14",
+    "compression": "none"
+  },
+  "timing/reference/config.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/reference/config.tcl",
+    "source_sha256": "c7bdd274adff804f75f9db2d8ed60b54daff21402f4578e6d98636544e9206fc",
+    "compression": "none"
+  },
+  "timing/reference/fpu_block_top.sdc": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/reference/fpu_block_top.sdc",
+    "source_sha256": "60da194b2847234c7169161c7d5d481bb83d66aec306228dc9037d8b2422b59d",
+    "compression": "none"
+  },
+  "timing/reference/mmmc_build_macros.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/reference/mmmc_build_macros.tcl",
+    "source_sha256": "7c04c18f74c6bf3cffd4c4663d66de7e380d78cce68f7d15a05699e96b6c3711",
+    "compression": "none"
+  },
+  "timing/reference/run_genus.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/reference/run_genus.tcl",
+    "source_sha256": "18327830ad8b737551134c3bdec1d60d10453803249afe35ab421b45f3f84d55",
+    "compression": "none"
+  },
+  "timing/reference/tsmcn28_libs.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/reference/tsmcn28_libs.tcl",
+    "source_sha256": "13dc9028226dd3e701e723ac866728f8b247924307852f9547b446e26b955f8a",
+    "compression": "none"
+  },
+  "provenance/checkpoint.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_full_checkpoint_goal_45475_20261117.json",
+    "source_sha256": "22e23894b3c21df8fa5ef7e864e517f95a5a10585030d581d32625c94fa4c807",
+    "compression": "none"
+  },
+  "provenance/contract.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/power_goal_contract_no_run_area46000_20261117.json",
+    "source_sha256": "c93867f75ca19a9226ce0e51966ad06e20bbec68b59cbc34e80acc69b57a487d",
+    "compression": "none"
+  },
+  "provenance/scalar_comparison.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/comparison.json",
+    "source_sha256": "b4e16990c42f30e51870c1ff68e0e0798e31665514e6e0b6a32c7bf8c0ec0b33",
+    "compression": "none"
+  },
+  "provenance/dpa_result.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/result.json",
+    "source_sha256": "cdebb53da923c64d6888ea5132f3b15f3d82ba8e5624faf50b4213e271fc41cf",
+    "compression": "none"
+  },
+  "provenance/candidate.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117/candidate.json",
+    "source_sha256": "a2b5dd17e8ba37ee11ae24ff2e8a1d405e90690241f4068ece8db2d9a7a157d7",
+    "compression": "none"
+  },
+  "provenance/repair_identity.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117/proof.json",
+    "source_sha256": "ea0646f6ec57342bb08e5c59c11fcbd07f366819705463ea07cf0e25ce384c1d",
+    "compression": "none"
+  },
+  "provenance/physical_icg_audit.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117/physical_icg_audit.json",
+    "source_sha256": "8e0c6a28d3ba356b6c7921ae99330b2506ce8a8063ca68e0e24545ea1250b58d",
+    "compression": "none"
+  },
+  "provenance/fixed_cut_lineage_audit.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117/fixed_cut_lineage_audit.json",
+    "source_sha256": "9283bf295b573322197d02438d065d442513991eb7bf68c2e2c8acff81411721",
+    "compression": "none"
+  },
+  "power/fma32/power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/power_fma32/power.tcl",
+    "source_sha256": "69bac1d20f7872783b8f2109b157ca12e8978c47c3f57b938cf92b3afddcda7d",
+    "compression": "none"
+  },
+  "power/fma32/power.sdc": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/power_fma32/power.sdc",
+    "source_sha256": "0fb21b31f59e9f4ca173c5760b6956fda681f28bf3257e7222f3e87ca5f7bc23",
+    "compression": "none"
+  },
+  "power/fma32/libraries_power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/power_fma32/libraries_power.tcl",
+    "source_sha256": "0878914e363d74492ebc7dcf1f4e8bf2101a2b0b17d96fa8353228848d12affe",
+    "compression": "none"
+  },
+  "power/fma32/power.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/power_fma32/power.rpt",
+    "source_sha256": "05d2a3b0ec0b2782393b6dce70bba6a26624617d9b9faa972d1772a3b5ed1956",
+    "compression": "none"
+  },
+  "power/fma32/annotation.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/power_fma32/annotation.rpt",
+    "source_sha256": "53ca0cedde6a8f8bb156a3e56ff8d2517f0b5982ab07648be0417e374cb517b3",
+    "compression": "none"
+  },
+  "power/fma32/result.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/power_fma32/result.json",
+    "source_sha256": "1ef016de04c398a500c140ec42b61053124f4c21229cc895f501236ce23fbabb",
+    "compression": "none"
+  },
+  "power/fma32/tb.sv": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/tb.sv",
+    "source_sha256": "3ca488320a7793a84dff832bf4fdf267ebb99e0af40dacdc1946ab3a9b209a2c",
+    "compression": "none"
+  },
+  "power/fma32/vectors.txt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/fma32.txt",
+    "source_sha256": "b27f970885248b4bf565a775f22f0246ff6ef50bc90c26e29beb9f3404727be3",
+    "compression": "none"
+  },
+  "power/fma32/simulation.log": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/fma32.sim.log",
+    "source_sha256": "7c0851af375b075d42947dc655767a66864ef5498875548b06f3cef8592ba7d2",
+    "compression": "none"
+  },
+  "power/add32/power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/power_add32/power.tcl",
+    "source_sha256": "ccac0f31aced1dc288c35bf1e9b224f0b5452fd9f829b95f78cf014eebcc8941",
+    "compression": "none"
+  },
+  "power/add32/power.sdc": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/power_add32/power.sdc",
+    "source_sha256": "0fb21b31f59e9f4ca173c5760b6956fda681f28bf3257e7222f3e87ca5f7bc23",
+    "compression": "none"
+  },
+  "power/add32/libraries_power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/power_add32/libraries_power.tcl",
+    "source_sha256": "0878914e363d74492ebc7dcf1f4e8bf2101a2b0b17d96fa8353228848d12affe",
+    "compression": "none"
+  },
+  "power/add32/power.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/power_add32/power.rpt",
+    "source_sha256": "287ab9f5597fbfb633fce227f8b02a46c3c62c07670230b15ed66d18af36fdf8",
+    "compression": "none"
+  },
+  "power/add32/annotation.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/power_add32/annotation.rpt",
+    "source_sha256": "4acab4bde92b8ec31e7752b4af2f0350c839a3f98916c43f209705e85aa299fd",
+    "compression": "none"
+  },
+  "power/add32/result.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/power_add32/result.json",
+    "source_sha256": "31188cc40bb368f66c59c00e9be733b78fdd82bc4a4c2c58dfcdef6097377e8c",
+    "compression": "none"
+  },
+  "power/add32/tb.sv": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/tb.sv",
+    "source_sha256": "3ca488320a7793a84dff832bf4fdf267ebb99e0af40dacdc1946ab3a9b209a2c",
+    "compression": "none"
+  },
+  "power/add32/vectors.txt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/add32.txt",
+    "source_sha256": "2a69bef5046043d5eea97442713f9c853508e43e8d0b64d3874b4fafcaafbc7b",
+    "compression": "none"
+  },
+  "power/add32/simulation.log": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/add32.sim.log",
+    "source_sha256": "f2116b67c130f150d58d65de910705d7710eb89b405ac03771b5122ba09e0467",
+    "compression": "none"
+  },
+  "power/mul32/power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/power_mul32/power.tcl",
+    "source_sha256": "2d1440f6bed0da6af141d9e002d28359642a39c9163f98a0ffd9cc2e16a5467c",
+    "compression": "none"
+  },
+  "power/mul32/power.sdc": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/power_mul32/power.sdc",
+    "source_sha256": "0fb21b31f59e9f4ca173c5760b6956fda681f28bf3257e7222f3e87ca5f7bc23",
+    "compression": "none"
+  },
+  "power/mul32/libraries_power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/power_mul32/libraries_power.tcl",
+    "source_sha256": "0878914e363d74492ebc7dcf1f4e8bf2101a2b0b17d96fa8353228848d12affe",
+    "compression": "none"
+  },
+  "power/mul32/power.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/power_mul32/power.rpt",
+    "source_sha256": "0bb95567dcfcee79dbd4b7aacbd69cbf56134f6d58932dd029fd440391a7b1c0",
+    "compression": "none"
+  },
+  "power/mul32/annotation.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/power_mul32/annotation.rpt",
+    "source_sha256": "b7aa955c8b4374ba1265c266b85d3cc1d883b95c9312a520526b9be25b49ffd8",
+    "compression": "none"
+  },
+  "power/mul32/result.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/power_mul32/result.json",
+    "source_sha256": "9cf5caf3fcec040bfc58211e18e2f85833851541878100be418b24a93ce93bda",
+    "compression": "none"
+  },
+  "power/mul32/tb.sv": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/tb.sv",
+    "source_sha256": "3ca488320a7793a84dff832bf4fdf267ebb99e0af40dacdc1946ab3a9b209a2c",
+    "compression": "none"
+  },
+  "power/mul32/vectors.txt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/mul32.txt",
+    "source_sha256": "12430709f2b41c224da25f5d07769c12950c311577257441ccd66abc7d78184c",
+    "compression": "none"
+  },
+  "power/mul32/simulation.log": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/mul32.sim.log",
+    "source_sha256": "cc48f24195b011a938185ed1b0ac7d18e8be314868f1faeec1527795d9f84711",
+    "compression": "none"
+  },
+  "power/sfu_ex2/power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/power_sfu_ex2/power.tcl",
+    "source_sha256": "0a84872013e80217cd48576d8dd07fe2ccfc2756ffba1d0c6d795990c65b36da",
+    "compression": "none"
+  },
+  "power/sfu_ex2/power.sdc": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/power_sfu_ex2/power.sdc",
+    "source_sha256": "0fb21b31f59e9f4ca173c5760b6956fda681f28bf3257e7222f3e87ca5f7bc23",
+    "compression": "none"
+  },
+  "power/sfu_ex2/libraries_power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/power_sfu_ex2/libraries_power.tcl",
+    "source_sha256": "0878914e363d74492ebc7dcf1f4e8bf2101a2b0b17d96fa8353228848d12affe",
+    "compression": "none"
+  },
+  "power/sfu_ex2/power.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/power_sfu_ex2/power.rpt",
+    "source_sha256": "5379bc9b7bd7264966ae3c0ff926963f2e439e3e512e99c75ca07dc8225e22bc",
+    "compression": "none"
+  },
+  "power/sfu_ex2/annotation.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/power_sfu_ex2/annotation.rpt",
+    "source_sha256": "920a642e074acbb5e2a8fd53f02c385a31995cef4f45237f7e04b336bb32a2db",
+    "compression": "none"
+  },
+  "power/sfu_ex2/result.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/power_sfu_ex2/result.json",
+    "source_sha256": "c8be4d2ee470f89c9bbac6b223642e8d838c21f88e8ca10321a749093dcce682",
+    "compression": "none"
+  },
+  "power/sfu_ex2/tb.sv": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/tb.sv",
+    "source_sha256": "3ca488320a7793a84dff832bf4fdf267ebb99e0af40dacdc1946ab3a9b209a2c",
+    "compression": "none"
+  },
+  "power/sfu_ex2/vectors.txt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/sfu_ex2.txt",
+    "source_sha256": "9cf1d7abe11381883f7fb515b78332d05c2338daca2aaeadfb3b2c19941e96cf",
+    "compression": "none"
+  },
+  "power/sfu_ex2/simulation.log": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/sfu_ex2.sim.log",
+    "source_sha256": "eba1793c26fceada31d504c906dbae50db85fb11c770fcd05f4021975ee3bca5",
+    "compression": "none"
+  },
+  "power/idle/power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_idle/power.tcl",
+    "source_sha256": "8fa6a13a92fab951e6d08f71b02479dc5217ad089d0a180b6b5b85d79f2e9378",
+    "compression": "none"
+  },
+  "power/idle/power.sdc": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_idle/power.sdc",
+    "source_sha256": "0fb21b31f59e9f4ca173c5760b6956fda681f28bf3257e7222f3e87ca5f7bc23",
+    "compression": "none"
+  },
+  "power/idle/libraries_power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_idle/libraries_power.tcl",
+    "source_sha256": "0878914e363d74492ebc7dcf1f4e8bf2101a2b0b17d96fa8353228848d12affe",
+    "compression": "none"
+  },
+  "power/idle/power.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_idle/power.rpt",
+    "source_sha256": "79aa750463c14830bbabf94698f3be453df934685586af0111b3aa568a0db0a9",
+    "compression": "none"
+  },
+  "power/idle/annotation.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_idle/annotation.rpt",
+    "source_sha256": "d05de27193cc5a2dcc6855e163f07160e15a8b0fb7c25229270d56290d262af6",
+    "compression": "none"
+  },
+  "power/idle/result.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_idle/result.json",
+    "source_sha256": "7d6539ebe9055142616936ae7fcfe3fce89929b7aa99a53098567be382ea441a",
+    "compression": "none"
+  },
+  "power/idle/tb.sv": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/tb.sv",
+    "source_sha256": "3ca488320a7793a84dff832bf4fdf267ebb99e0af40dacdc1946ab3a9b209a2c",
+    "compression": "none"
+  },
+  "power/idle/vectors.txt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/idle.txt",
+    "source_sha256": "a72ab38e9a109a787b001a029043de517f7cd337b6beba8e80229e8094d089e0",
+    "compression": "none"
+  },
+  "power/idle/simulation.log": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/idle.sim.log",
+    "source_sha256": "cf75d8017536b5491baee8b8052e3a6c581ddf2fbda54f02101cf947310a58dc",
+    "compression": "none"
+  },
+  "power/dpa_fp16/power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_fp16/power.tcl",
+    "source_sha256": "53b77e8f84c60a19a909fdf5e6f5b3f60ae691e4239b20a618cf8afaa0cd94d4",
+    "compression": "none"
+  },
+  "power/dpa_fp16/power.sdc": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_fp16/power.sdc",
+    "source_sha256": "0fb21b31f59e9f4ca173c5760b6956fda681f28bf3257e7222f3e87ca5f7bc23",
+    "compression": "none"
+  },
+  "power/dpa_fp16/libraries_power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_fp16/libraries_power.tcl",
+    "source_sha256": "0878914e363d74492ebc7dcf1f4e8bf2101a2b0b17d96fa8353228848d12affe",
+    "compression": "none"
+  },
+  "power/dpa_fp16/power.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_fp16/power.rpt",
+    "source_sha256": "1eb2620742e5a27f00d9168da50875502d87d51d8568a83fba2e638659458078",
+    "compression": "none"
+  },
+  "power/dpa_fp16/annotation.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_fp16/annotation.rpt",
+    "source_sha256": "4a967626e622b28992e531221897a678b1e54b5f26af8960bec8dfbc5ec6fbd5",
+    "compression": "none"
+  },
+  "power/dpa_fp16/result.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_fp16/result.json",
+    "source_sha256": "1bbe12f8be1f03bf08a4802774f31c776c17f5b3468a4bf5fc7405c13cfbc162",
+    "compression": "none"
+  },
+  "power/dpa_fp16/tb.sv": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/tb.sv",
+    "source_sha256": "3ca488320a7793a84dff832bf4fdf267ebb99e0af40dacdc1946ab3a9b209a2c",
+    "compression": "none"
+  },
+  "power/dpa_fp16/vectors.txt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/dpa_fp16.txt",
+    "source_sha256": "b21034141e26a2742ac00f297b38902b0f6f23fc262517e08988b8aa6963e29a",
+    "compression": "none"
+  },
+  "power/dpa_fp16/simulation.log": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/dpa_fp16.sim.log",
+    "source_sha256": "6f1580b163fc3e637e9669f0e9c3f2d4fe28d7597b4d1cc982087491918305a2",
+    "compression": "none"
+  },
+  "power/dpa_bf16/power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_bf16/power.tcl",
+    "source_sha256": "2355f4af0ad6374d5c44ed806c284777988154b83d269cdead16725e2f2ec1b8",
+    "compression": "none"
+  },
+  "power/dpa_bf16/power.sdc": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_bf16/power.sdc",
+    "source_sha256": "0fb21b31f59e9f4ca173c5760b6956fda681f28bf3257e7222f3e87ca5f7bc23",
+    "compression": "none"
+  },
+  "power/dpa_bf16/libraries_power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_bf16/libraries_power.tcl",
+    "source_sha256": "0878914e363d74492ebc7dcf1f4e8bf2101a2b0b17d96fa8353228848d12affe",
+    "compression": "none"
+  },
+  "power/dpa_bf16/power.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_bf16/power.rpt",
+    "source_sha256": "f3fa2afcec62f51cb161dc67ab8d8d0851e042452c19a3f5aeae2f62b1fc8224",
+    "compression": "none"
+  },
+  "power/dpa_bf16/annotation.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_bf16/annotation.rpt",
+    "source_sha256": "c4b3fc38bc317a38fb6da2ebac026ce1537be1c98f8cec2e6f9c6aa7b08497d3",
+    "compression": "none"
+  },
+  "power/dpa_bf16/result.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_bf16/result.json",
+    "source_sha256": "782b61db08b7b96e303d1dea8d989c683dda642875a42a389fb7e5bb989778c2",
+    "compression": "none"
+  },
+  "power/dpa_bf16/tb.sv": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/tb.sv",
+    "source_sha256": "3ca488320a7793a84dff832bf4fdf267ebb99e0af40dacdc1946ab3a9b209a2c",
+    "compression": "none"
+  },
+  "power/dpa_bf16/vectors.txt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/dpa_bf16.txt",
+    "source_sha256": "1137499bb65f4c11634281b7a1d32c73d61166a9f4111d9d1dd77067ed8616c9",
+    "compression": "none"
+  },
+  "power/dpa_bf16/simulation.log": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/dpa_bf16.sim.log",
+    "source_sha256": "b2a04a331d82b8c6ef3aa9ea7b84f50994bb82e322e7854459c7d9a0d8511a8c",
+    "compression": "none"
+  },
+  "power/dpa_tf32/power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_tf32/power.tcl",
+    "source_sha256": "ff53a78054939980996b95bef1a0db2a4d3bec7149a1ebba15e7ccf5b2f20874",
+    "compression": "none"
+  },
+  "power/dpa_tf32/power.sdc": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_tf32/power.sdc",
+    "source_sha256": "0fb21b31f59e9f4ca173c5760b6956fda681f28bf3257e7222f3e87ca5f7bc23",
+    "compression": "none"
+  },
+  "power/dpa_tf32/libraries_power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_tf32/libraries_power.tcl",
+    "source_sha256": "0878914e363d74492ebc7dcf1f4e8bf2101a2b0b17d96fa8353228848d12affe",
+    "compression": "none"
+  },
+  "power/dpa_tf32/power.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_tf32/power.rpt",
+    "source_sha256": "61c3a3e0c514d8f82d6968e7b79a20d5be3d2097f0cef7f5c7ec388a07969fa6",
+    "compression": "none"
+  },
+  "power/dpa_tf32/annotation.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_tf32/annotation.rpt",
+    "source_sha256": "72664eab3abc9447e05d351d4abc44fc2609478bece9e8eec37a11754b3ac2cd",
+    "compression": "none"
+  },
+  "power/dpa_tf32/result.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_tf32/result.json",
+    "source_sha256": "c17932d361a027469fa77fbf55fc1f0c921c9ad0be3475e99ec355ede463c5c3",
+    "compression": "none"
+  },
+  "power/dpa_tf32/tb.sv": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/tb.sv",
+    "source_sha256": "3ca488320a7793a84dff832bf4fdf267ebb99e0af40dacdc1946ab3a9b209a2c",
+    "compression": "none"
+  },
+  "power/dpa_tf32/vectors.txt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/dpa_tf32.txt",
+    "source_sha256": "76cb08a987684f99d3ad3bb6252d014dec458e84cc2af662adbcd62cc752cf43",
+    "compression": "none"
+  },
+  "power/dpa_tf32/simulation.log": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/dpa_tf32.sim.log",
+    "source_sha256": "ac298e957290ee76b27c9eba9cc3c090de3e55003aa6ca9ab83688cd5999c345",
+    "compression": "none"
+  },
+  "power/dpa_fp8/power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_fp8/power.tcl",
+    "source_sha256": "2a95f7feefb86adfec997df77c82684dfd2335bc94d15a201195e6469d368fcc",
+    "compression": "none"
+  },
+  "power/dpa_fp8/power.sdc": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_fp8/power.sdc",
+    "source_sha256": "0fb21b31f59e9f4ca173c5760b6956fda681f28bf3257e7222f3e87ca5f7bc23",
+    "compression": "none"
+  },
+  "power/dpa_fp8/libraries_power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_fp8/libraries_power.tcl",
+    "source_sha256": "0878914e363d74492ebc7dcf1f4e8bf2101a2b0b17d96fa8353228848d12affe",
+    "compression": "none"
+  },
+  "power/dpa_fp8/power.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_fp8/power.rpt",
+    "source_sha256": "01a347c87762fe62452a9e6446aea9942538b847a3e19c3207120e4b7003dc7f",
+    "compression": "none"
+  },
+  "power/dpa_fp8/annotation.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_fp8/annotation.rpt",
+    "source_sha256": "a76a0cadba98735940b3c51d51d5d851d382bd8fb25894cac973a50d49eae5c1",
+    "compression": "none"
+  },
+  "power/dpa_fp8/result.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_fp8/result.json",
+    "source_sha256": "97a29b3df50524f6c8b7b5318c50f2426cf6fb813c36780f71876859fd452819",
+    "compression": "none"
+  },
+  "power/dpa_fp8/tb.sv": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/tb.sv",
+    "source_sha256": "3ca488320a7793a84dff832bf4fdf267ebb99e0af40dacdc1946ab3a9b209a2c",
+    "compression": "none"
+  },
+  "power/dpa_fp8/vectors.txt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/dpa_fp8.txt",
+    "source_sha256": "763dd5bb0cf16e1fd2740db42bcc8ed1c6df2e078c130d59c05e300d6eb6aa60",
+    "compression": "none"
+  },
+  "power/dpa_fp8/simulation.log": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/dpa_fp8.sim.log",
+    "source_sha256": "ec15211e5c3f895d3689c35f576191a1998ac2701ed7e23e1a5461bdbd95861c",
+    "compression": "none"
+  },
+  "power/dpa_nvfp4/power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_nvfp4/power.tcl",
+    "source_sha256": "46adddb5f05628dc1f5753d2eadc852e5812de33b27a8c505c19a2ca56486e5b",
+    "compression": "none"
+  },
+  "power/dpa_nvfp4/power.sdc": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_nvfp4/power.sdc",
+    "source_sha256": "0fb21b31f59e9f4ca173c5760b6956fda681f28bf3257e7222f3e87ca5f7bc23",
+    "compression": "none"
+  },
+  "power/dpa_nvfp4/libraries_power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_nvfp4/libraries_power.tcl",
+    "source_sha256": "0878914e363d74492ebc7dcf1f4e8bf2101a2b0b17d96fa8353228848d12affe",
+    "compression": "none"
+  },
+  "power/dpa_nvfp4/power.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_nvfp4/power.rpt",
+    "source_sha256": "3703af38e507b11136a3291df173b708a70c359e5d060382e94288599fc0cfd1",
+    "compression": "none"
+  },
+  "power/dpa_nvfp4/annotation.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_nvfp4/annotation.rpt",
+    "source_sha256": "fc1c354af71e717b5e1f32ae957e19c987cf86d8b8ee6353dce6de9392ce89bf",
+    "compression": "none"
+  },
+  "power/dpa_nvfp4/result.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_nvfp4/result.json",
+    "source_sha256": "e87f112ade96f4c380fe551e87759ae5668617e4f0e8df29a782d30db445a31c",
+    "compression": "none"
+  },
+  "power/dpa_nvfp4/tb.sv": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/tb.sv",
+    "source_sha256": "3ca488320a7793a84dff832bf4fdf267ebb99e0af40dacdc1946ab3a9b209a2c",
+    "compression": "none"
+  },
+  "power/dpa_nvfp4/vectors.txt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/dpa_nvfp4.txt",
+    "source_sha256": "13407bef648849a64fca56b36bd22a3e449d2dec28534fd476dbb666ae1807fa",
+    "compression": "none"
+  },
+  "power/dpa_nvfp4/simulation.log": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/dpa_nvfp4.sim.log",
+    "source_sha256": "e7679187d5faace41630b92e3e1df5a3d07852ab7d6fa67fbb244c89b2ac20da",
+    "compression": "none"
+  },
+  "power/dpa_mxfp4/power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_mxfp4/power.tcl",
+    "source_sha256": "e987d4ef169282c6a4f77cfd1dca7724519a966516e4ca4f7d348bcc241a519d",
+    "compression": "none"
+  },
+  "power/dpa_mxfp4/power.sdc": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_mxfp4/power.sdc",
+    "source_sha256": "0fb21b31f59e9f4ca173c5760b6956fda681f28bf3257e7222f3e87ca5f7bc23",
+    "compression": "none"
+  },
+  "power/dpa_mxfp4/libraries_power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_mxfp4/libraries_power.tcl",
+    "source_sha256": "0878914e363d74492ebc7dcf1f4e8bf2101a2b0b17d96fa8353228848d12affe",
+    "compression": "none"
+  },
+  "power/dpa_mxfp4/power.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_mxfp4/power.rpt",
+    "source_sha256": "089927b6e907947415b8a26ff7258ac229a4bfb7936eb591ee5e0eaf543402e0",
+    "compression": "none"
+  },
+  "power/dpa_mxfp4/annotation.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_mxfp4/annotation.rpt",
+    "source_sha256": "d8aca2b20e71ab5c8621dda60df2424e085240dcfd4b8f086804f13e5fd3f92c",
+    "compression": "none"
+  },
+  "power/dpa_mxfp4/result.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_mxfp4/result.json",
+    "source_sha256": "fa8c14f518186e1d67ad3807c0fe8ef1b73d214c0a42b5d8ad3dcfe6da4c9344",
+    "compression": "none"
+  },
+  "power/dpa_mxfp4/tb.sv": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/tb.sv",
+    "source_sha256": "3ca488320a7793a84dff832bf4fdf267ebb99e0af40dacdc1946ab3a9b209a2c",
+    "compression": "none"
+  },
+  "power/dpa_mxfp4/vectors.txt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/dpa_mxfp4.txt",
+    "source_sha256": "b5f2c70efb0d8c974e077f404fc41644194a8165c099f5194fbf24b43bd4f11a",
+    "compression": "none"
+  },
+  "power/dpa_mxfp4/simulation.log": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/dpa_mxfp4.sim.log",
+    "source_sha256": "39d377d7ced6a7000e9d292c5f72ebb6446125bfd1c732821b4828b675611e53",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8/power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_mxfp8/power.tcl",
+    "source_sha256": "7de2fa252ec6592a1f04208bc2c256b02cefa5ea2122261b7fde95fea80943a5",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8/power.sdc": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_mxfp8/power.sdc",
+    "source_sha256": "0fb21b31f59e9f4ca173c5760b6956fda681f28bf3257e7222f3e87ca5f7bc23",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8/libraries_power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_mxfp8/libraries_power.tcl",
+    "source_sha256": "0878914e363d74492ebc7dcf1f4e8bf2101a2b0b17d96fa8353228848d12affe",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8/power.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_mxfp8/power.rpt",
+    "source_sha256": "d2580e2482051d62c016d2f7709869b9bf1d1256541dea301e205fabf8eac2ea",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8/annotation.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_mxfp8/annotation.rpt",
+    "source_sha256": "e47c377ccf8f5f274ac20f523828fa55676cbc039e91ad56c6cbf6e48d5770f9",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8/result.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_mxfp8/result.json",
+    "source_sha256": "5c66752d0ffb110226be0fa55c0aae0502e1305d1c050f622a5b9fd9d782bdbf",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8/tb.sv": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/tb.sv",
+    "source_sha256": "3ca488320a7793a84dff832bf4fdf267ebb99e0af40dacdc1946ab3a9b209a2c",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8/vectors.txt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/dpa_mxfp8.txt",
+    "source_sha256": "6e2992f98d793350221e58853123e1d7510304be95c775445c444070b6e779f4",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8/simulation.log": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/dpa_mxfp8.sim.log",
+    "source_sha256": "62721a5879fd812b434bf59f6417fbcbf5a459a580271a79f61e769a66266d27",
+    "compression": "none"
+  },
+  "power/dpa_fp4/power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_fp4/power.tcl",
+    "source_sha256": "64abd06f1569f05797ad998746b909478f46090ac5f38b742e581433e9d63dc7",
+    "compression": "none"
+  },
+  "power/dpa_fp4/power.sdc": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_fp4/power.sdc",
+    "source_sha256": "0fb21b31f59e9f4ca173c5760b6956fda681f28bf3257e7222f3e87ca5f7bc23",
+    "compression": "none"
+  },
+  "power/dpa_fp4/libraries_power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_fp4/libraries_power.tcl",
+    "source_sha256": "0878914e363d74492ebc7dcf1f4e8bf2101a2b0b17d96fa8353228848d12affe",
+    "compression": "none"
+  },
+  "power/dpa_fp4/power.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_fp4/power.rpt",
+    "source_sha256": "8009f8b3a0f121c5b688331ff094d3fbf2d2f4c54e7e5014bff7cc9d85de2b68",
+    "compression": "none"
+  },
+  "power/dpa_fp4/annotation.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_fp4/annotation.rpt",
+    "source_sha256": "e1e08c113c2a8891693e5c03fb6fd98447b04c9b754bbbb4f6bb6844b08d3609",
+    "compression": "none"
+  },
+  "power/dpa_fp4/result.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/power_dpa_fp4/result.json",
+    "source_sha256": "ec0876130af3a970beeca29b9978255a72b64e391e97a2aaa177102ef084da66",
+    "compression": "none"
+  },
+  "power/dpa_fp4/tb.sv": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/tb.sv",
+    "source_sha256": "3ca488320a7793a84dff832bf4fdf267ebb99e0af40dacdc1946ab3a9b209a2c",
+    "compression": "none"
+  },
+  "power/dpa_fp4/vectors.txt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/dpa_fp4.txt",
+    "source_sha256": "18b40d7b4f8b12218389d06a460bf9177a7dcb66dd516c38016296a608c8c732",
+    "compression": "none"
+  },
+  "power/dpa_fp4/simulation.log": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/power/dpa_fp4.sim.log",
+    "source_sha256": "3743da63041c35e08b8ded61f8cf03b64ae75dbea7a589d49e44f3cec2dc0355",
+    "compression": "none"
+  },
+  "power/dpa_fp8_rm1/power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm1/power_dpa_fp8/power.tcl",
+    "source_sha256": "2a95f7feefb86adfec997df77c82684dfd2335bc94d15a201195e6469d368fcc",
+    "compression": "none"
+  },
+  "power/dpa_fp8_rm1/power.sdc": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm1/power_dpa_fp8/power.sdc",
+    "source_sha256": "0fb21b31f59e9f4ca173c5760b6956fda681f28bf3257e7222f3e87ca5f7bc23",
+    "compression": "none"
+  },
+  "power/dpa_fp8_rm1/libraries_power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm1/power_dpa_fp8/libraries_power.tcl",
+    "source_sha256": "0878914e363d74492ebc7dcf1f4e8bf2101a2b0b17d96fa8353228848d12affe",
+    "compression": "none"
+  },
+  "power/dpa_fp8_rm1/power.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm1/power_dpa_fp8/power.rpt",
+    "source_sha256": "e040302fa4ae48dbf92636f2bd1471045b7e503dfa6d1bddc7f4fee79d58ce92",
+    "compression": "none"
+  },
+  "power/dpa_fp8_rm1/annotation.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm1/power_dpa_fp8/annotation.rpt",
+    "source_sha256": "be4930ca4ab71cce37c6d5c9d44bffb8af471f64de7da599c50015472c263de5",
+    "compression": "none"
+  },
+  "power/dpa_fp8_rm1/result.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm1/power_dpa_fp8/result.json",
+    "source_sha256": "5fddc5f8265c626b35cc1fdef704c2f50b8b29236f6f702e9474a664b5005aa8",
+    "compression": "none"
+  },
+  "power/dpa_fp8_rm1/tb.sv": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm1/tb.sv",
+    "source_sha256": "3ca488320a7793a84dff832bf4fdf267ebb99e0af40dacdc1946ab3a9b209a2c",
+    "compression": "none"
+  },
+  "power/dpa_fp8_rm1/vectors.txt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm1/dpa_fp8.txt",
+    "source_sha256": "3507f7204fa2b6aded6b6ad1c5159fbd970cc7764fdfd40a5ebd5ea0d19156d3",
+    "compression": "none"
+  },
+  "power/dpa_fp8_rm1/simulation.log": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm1/dpa_fp8.sim.log",
+    "source_sha256": "f68242fa27cc0cee05c390a06fb883ccd7f5b4183f26beb88d2df58418387cc3",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8_rm1/power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm1/power_dpa_mxfp8/power.tcl",
+    "source_sha256": "7de2fa252ec6592a1f04208bc2c256b02cefa5ea2122261b7fde95fea80943a5",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8_rm1/power.sdc": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm1/power_dpa_mxfp8/power.sdc",
+    "source_sha256": "0fb21b31f59e9f4ca173c5760b6956fda681f28bf3257e7222f3e87ca5f7bc23",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8_rm1/libraries_power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm1/power_dpa_mxfp8/libraries_power.tcl",
+    "source_sha256": "0878914e363d74492ebc7dcf1f4e8bf2101a2b0b17d96fa8353228848d12affe",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8_rm1/power.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm1/power_dpa_mxfp8/power.rpt",
+    "source_sha256": "ac02ec4c21cd7fce7eab4a278afb84923469526a70de05b91e5e8d217c524fc7",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8_rm1/annotation.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm1/power_dpa_mxfp8/annotation.rpt",
+    "source_sha256": "70b3d3abce8673d3ce9f7d887756c621f497c93a1a14002cf13cf9cf1fb310c9",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8_rm1/result.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm1/power_dpa_mxfp8/result.json",
+    "source_sha256": "4daa58f4203aad850670fb7afad78b4941f02335d26f4395dd7862cf8bb2e311",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8_rm1/tb.sv": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm1/tb.sv",
+    "source_sha256": "3ca488320a7793a84dff832bf4fdf267ebb99e0af40dacdc1946ab3a9b209a2c",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8_rm1/vectors.txt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm1/dpa_mxfp8.txt",
+    "source_sha256": "c0a2263fb662083fe75ffdb28fd3046c1f2b28968800f3ff19ced071d8ae38d7",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8_rm1/simulation.log": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm1/dpa_mxfp8.sim.log",
+    "source_sha256": "0ec23d5757ae7761ced84193bdc4cc3d627cba9dec8bddd5ec75761827dafd20",
+    "compression": "none"
+  },
+  "power/dpa_fp8_rm2/power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm2/power_dpa_fp8/power.tcl",
+    "source_sha256": "2a95f7feefb86adfec997df77c82684dfd2335bc94d15a201195e6469d368fcc",
+    "compression": "none"
+  },
+  "power/dpa_fp8_rm2/power.sdc": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm2/power_dpa_fp8/power.sdc",
+    "source_sha256": "0fb21b31f59e9f4ca173c5760b6956fda681f28bf3257e7222f3e87ca5f7bc23",
+    "compression": "none"
+  },
+  "power/dpa_fp8_rm2/libraries_power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm2/power_dpa_fp8/libraries_power.tcl",
+    "source_sha256": "0878914e363d74492ebc7dcf1f4e8bf2101a2b0b17d96fa8353228848d12affe",
+    "compression": "none"
+  },
+  "power/dpa_fp8_rm2/power.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm2/power_dpa_fp8/power.rpt",
+    "source_sha256": "d8889ed9be701a84813cb11760434b38b7244cb492508f428eb9c29fe29c081e",
+    "compression": "none"
+  },
+  "power/dpa_fp8_rm2/annotation.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm2/power_dpa_fp8/annotation.rpt",
+    "source_sha256": "6e3786054d7d0cd2add5fd12ce0e92874e4835f6d4269b1a225ec81fe1014f6a",
+    "compression": "none"
+  },
+  "power/dpa_fp8_rm2/result.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm2/power_dpa_fp8/result.json",
+    "source_sha256": "74b33809502b5bdf33a87dde8e655b40e5185e8ea59b45ce2e2c35cf44675f60",
+    "compression": "none"
+  },
+  "power/dpa_fp8_rm2/tb.sv": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm2/tb.sv",
+    "source_sha256": "3ca488320a7793a84dff832bf4fdf267ebb99e0af40dacdc1946ab3a9b209a2c",
+    "compression": "none"
+  },
+  "power/dpa_fp8_rm2/vectors.txt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm2/dpa_fp8.txt",
+    "source_sha256": "2a9c174395a4303f2be18cfc35bf50a5fb756839a7a2002ec2196f9ead4b45d6",
+    "compression": "none"
+  },
+  "power/dpa_fp8_rm2/simulation.log": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm2/dpa_fp8.sim.log",
+    "source_sha256": "32682600d2993172297d83d9d22a10926fea514a79c521de480bcd0b255c727e",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8_rm2/power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm2/power_dpa_mxfp8/power.tcl",
+    "source_sha256": "7de2fa252ec6592a1f04208bc2c256b02cefa5ea2122261b7fde95fea80943a5",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8_rm2/power.sdc": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm2/power_dpa_mxfp8/power.sdc",
+    "source_sha256": "0fb21b31f59e9f4ca173c5760b6956fda681f28bf3257e7222f3e87ca5f7bc23",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8_rm2/libraries_power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm2/power_dpa_mxfp8/libraries_power.tcl",
+    "source_sha256": "0878914e363d74492ebc7dcf1f4e8bf2101a2b0b17d96fa8353228848d12affe",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8_rm2/power.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm2/power_dpa_mxfp8/power.rpt",
+    "source_sha256": "02518acf551ebe138f27d5424881e5c2bfc62b152d93dacb8f492fcc5688efb5",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8_rm2/annotation.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm2/power_dpa_mxfp8/annotation.rpt",
+    "source_sha256": "8b7b8ebf4f36f65f9370d40287ce87d2d2e0926885a15ec1474b9674e3edccb4",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8_rm2/result.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm2/power_dpa_mxfp8/result.json",
+    "source_sha256": "a9a82c3fb95e3d92844a65862bced92543aa291dcc830b18a45f05059abcbb1a",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8_rm2/tb.sv": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm2/tb.sv",
+    "source_sha256": "3ca488320a7793a84dff832bf4fdf267ebb99e0af40dacdc1946ab3a9b209a2c",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8_rm2/vectors.txt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm2/dpa_mxfp8.txt",
+    "source_sha256": "c328d8b2cd3286176ed61afe449a8b7edb8c67aa9df911c7998427c0472aa457",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8_rm2/simulation.log": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm2/dpa_mxfp8.sim.log",
+    "source_sha256": "fc8bb89e811fb4cae027f1f81fe47fc9dd9ca9ac94d48809986b1c042233622a",
+    "compression": "none"
+  },
+  "power/dpa_fp8_rm3/power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm3/power_dpa_fp8/power.tcl",
+    "source_sha256": "2a95f7feefb86adfec997df77c82684dfd2335bc94d15a201195e6469d368fcc",
+    "compression": "none"
+  },
+  "power/dpa_fp8_rm3/power.sdc": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm3/power_dpa_fp8/power.sdc",
+    "source_sha256": "0fb21b31f59e9f4ca173c5760b6956fda681f28bf3257e7222f3e87ca5f7bc23",
+    "compression": "none"
+  },
+  "power/dpa_fp8_rm3/libraries_power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm3/power_dpa_fp8/libraries_power.tcl",
+    "source_sha256": "0878914e363d74492ebc7dcf1f4e8bf2101a2b0b17d96fa8353228848d12affe",
+    "compression": "none"
+  },
+  "power/dpa_fp8_rm3/power.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm3/power_dpa_fp8/power.rpt",
+    "source_sha256": "ce8bf5c660935bdcaa250477652bf0257668274e534f787c17993aabdbe62632",
+    "compression": "none"
+  },
+  "power/dpa_fp8_rm3/annotation.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm3/power_dpa_fp8/annotation.rpt",
+    "source_sha256": "0875e6ac32ae6d7cde228390bdc25558c94ecd9f6a3a7e15d5e6fb2e2ff619e6",
+    "compression": "none"
+  },
+  "power/dpa_fp8_rm3/result.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm3/power_dpa_fp8/result.json",
+    "source_sha256": "2fe29a249ee0bac66b34f214a9d41fde2eff1fd6877cc471e79e6074b18fdbe6",
+    "compression": "none"
+  },
+  "power/dpa_fp8_rm3/tb.sv": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm3/tb.sv",
+    "source_sha256": "3ca488320a7793a84dff832bf4fdf267ebb99e0af40dacdc1946ab3a9b209a2c",
+    "compression": "none"
+  },
+  "power/dpa_fp8_rm3/vectors.txt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm3/dpa_fp8.txt",
+    "source_sha256": "d6d8f789085f71cff3f5392c831c57fa346fd2a42deeabe823a5e4e95b635493",
+    "compression": "none"
+  },
+  "power/dpa_fp8_rm3/simulation.log": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm3/dpa_fp8.sim.log",
+    "source_sha256": "b9adc0a8fac5dd63d303b0af4dd869f88286756b09de5b36a4e8ea9c43f813ac",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8_rm3/power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm3/power_dpa_mxfp8/power.tcl",
+    "source_sha256": "7de2fa252ec6592a1f04208bc2c256b02cefa5ea2122261b7fde95fea80943a5",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8_rm3/power.sdc": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm3/power_dpa_mxfp8/power.sdc",
+    "source_sha256": "0fb21b31f59e9f4ca173c5760b6956fda681f28bf3257e7222f3e87ca5f7bc23",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8_rm3/libraries_power.tcl": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm3/power_dpa_mxfp8/libraries_power.tcl",
+    "source_sha256": "0878914e363d74492ebc7dcf1f4e8bf2101a2b0b17d96fa8353228848d12affe",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8_rm3/power.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm3/power_dpa_mxfp8/power.rpt",
+    "source_sha256": "9df56b6b6abdee0d04d572f76675cedf8491588eb6de63c2950cb1eafa78341d",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8_rm3/annotation.rpt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm3/power_dpa_mxfp8/annotation.rpt",
+    "source_sha256": "7e947910279a9b9e221cccb596254345bdcebc31433bded13d3d2708fd244768",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8_rm3/result.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm3/power_dpa_mxfp8/result.json",
+    "source_sha256": "3f155c02e3bed8d0a2895e3b5a52df953d7bc82a2c80424fa416173906b99baa",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8_rm3/tb.sv": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm3/tb.sv",
+    "source_sha256": "3ca488320a7793a84dff832bf4fdf267ebb99e0af40dacdc1946ab3a9b209a2c",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8_rm3/vectors.txt": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm3/dpa_mxfp8.txt",
+    "source_sha256": "5efe1ac13090181a4e6cfd1b75d3d84104366baab01fdc4e42f75e597175bbec",
+    "compression": "none"
+  },
+  "power/dpa_mxfp8_rm3/simulation.log": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/fp8_rm3/dpa_mxfp8.sim.log",
+    "source_sha256": "133e3d6ad58697e42aa7d27a2f5f2b27fcf18e72fae0d97d2fe51b58a8eb1d94",
+    "compression": "none"
+  },
+  "baseline/fp32_design_rule_audit.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/fp32_matched_drv_audit/result.json",
+    "source_sha256": "6d0e4fa1fe036c53e7ff13dc74739d6de67a92eca884a94d406e226e60b52414",
+    "compression": "none"
+  },
+  "baseline/int32_design_rule_audit.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/int32_matched_drv_audit/result.json",
+    "source_sha256": "a1250e6311169900653fcda07cb048c1b37117f3af7adecd3e952e0bc8298b30",
+    "compression": "none"
+  },
+  "baseline/sfu_design_rule_audit.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sfu_constrom_matched_drv_audit/result.json",
+    "source_sha256": "56e18a1980c716e8a49a644b6c0c5609bf5e8dabaaf2980a9105d13c5d6af7bb",
+    "compression": "none"
+  },
+  "baseline/dpa5_design_rule_audit.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_repaired_matched_drv_audit/result.json",
+    "source_sha256": "76c8fb20d2d27e3728d1a77fb1794fd9aebf6ad78fe7c2f641479fa971403f72",
+    "compression": "none"
+  },
+  "baseline/fp32/source_manifest.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_scalar_energy/fp32/manifest.json",
+    "source_sha256": "9504cb5b3b9e0f3a8a59bcf26a9757dff62bd45eaa28be9562a28ad39d8abe79",
+    "compression": "none"
+  },
+  "baseline/fp32/energy.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_scalar_energy/fp32/power/energy.json",
+    "source_sha256": "0e3b1e7793edcde176d7fa02cd7cad98bc2d14126a45e6bdbf19de205c32b1c4",
+    "compression": "none"
+  },
+  "baseline/fp32/manifest.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_scalar_energy/fp32/power/manifest.json",
+    "source_sha256": "76ccafe35e1de944b652f3f7f23489a43ca41ff86107667844d7cb2266a75ae8",
+    "compression": "none"
+  },
+  "baseline/int32/source_manifest.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_scalar_energy/int32/manifest.json",
+    "source_sha256": "fc29577b0d01847aef323650327ee3d9a83cfaa40c880e68100d523b9ea4f35d",
+    "compression": "none"
+  },
+  "baseline/int32/energy.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_scalar_energy/int32/power/energy.json",
+    "source_sha256": "8727cd40d399f6d3ee35774907be9f9bce937586e6a88e80c754d70ddccd1aaf",
+    "compression": "none"
+  },
+  "baseline/int32/manifest.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_scalar_energy/int32/power/manifest.json",
+    "source_sha256": "1c05420807066191743813f0024a5312b7b48fc31c44eadc2a2b1e9761ae6c20",
+    "compression": "none"
+  },
+  "baseline/sfu/source_manifest.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_scalar_energy/sfu_constrom/manifest.json",
+    "source_sha256": "2215c161b9093e373e5ca1f9b53dfa8f1c002b6d0590c60e32ca2e3fe2f316fc",
+    "compression": "none"
+  },
+  "baseline/sfu/energy.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_scalar_energy/sfu_constrom/power/energy.json",
+    "source_sha256": "a75c023ba103d41ada8314a69ff6780c575e00cf1f8fa79641172fe4d2cb0f0f",
+    "compression": "none"
+  },
+  "baseline/sfu/manifest.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_scalar_energy/sfu_constrom/power/manifest.json",
+    "source_sha256": "03cc178089584bc34a242ca9ab3a6a288aea99f1b284fc55aed76e1a69fef2b1",
+    "compression": "none"
+  },
+  "baseline/dpa5/energy.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_drv_sm25_power/energy.json",
+    "source_sha256": "033bfd6f29bc95c985109b15b20ddc0682dba6a317529b85dc7714552990c97d",
+    "compression": "none"
+  },
+  "baseline/dpa5/manifest.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_drv_sm25_power/manifest.json",
+    "source_sha256": "b2c491babda6c9f5c68255035e22a6ba7bf1644cb7137a4b374261188dcc5455",
+    "compression": "none"
+  },
+  "baseline/fp8_rm1/energy.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_drv_sm25_fp8_rm1/energy.json",
+    "source_sha256": "cb7db1634a2f96b2cec3ae313d15d9dc6a580f005657e9deff816ad106a117de",
+    "compression": "none"
+  },
+  "baseline/fp8_rm1/manifest.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_drv_sm25_fp8_rm1/manifest.json",
+    "source_sha256": "cd32025fd013902361e5698eb02acc04ce75a60b1bc6d1e8d9d45d7001cfc53f",
+    "compression": "none"
+  },
+  "baseline/fp8_rm2/energy.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_drv_sm25_fp8_rm2/energy.json",
+    "source_sha256": "c1fbd8ad15d2aba06f919b5ab3ab06f7902262b487f9841f61dd920db666ea6f",
+    "compression": "none"
+  },
+  "baseline/fp8_rm2/manifest.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_drv_sm25_fp8_rm2/manifest.json",
+    "source_sha256": "83cac408ced7564ed47afe56885030ced9e88ff8e51af2b884173ab604cf89b0",
+    "compression": "none"
+  },
+  "baseline/fp8_rm3/energy.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_drv_sm25_fp8_rm3/energy.json",
+    "source_sha256": "e24a6d266cf7f795a3aa07d6da05a044ac51ac2b98af52d14d4964408573d127",
+    "compression": "none"
+  },
+  "baseline/fp8_rm3/manifest.json": {
+    "source": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_drv_sm25_fp8_rm3/manifest.json",
+    "source_sha256": "fbf83a69c2e5d88e7b1f6d8147b0cfa6eaae22eab5ca6bc9360cff1e6a918c07",
+    "compression": "none"
+  }
+}

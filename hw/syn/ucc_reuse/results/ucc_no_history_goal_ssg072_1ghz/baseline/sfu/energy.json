@@ -1,0 +1,538 @@
+{
+  "synthesis": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_scalar_energy/sfu_constrom/synth",
+  "corner": "SSG 0.72 V /125 C",
+  "kind": "scalar_sfu",
+  "workloads": {
+    "idle": {
+      "cells": 9430,
+      "leakage_mw": 1.70734,
+      "internal_mw": 0.0168857,
+      "switching_mw": 0.0018341,
+      "total_mw": 1.72606,
+      "dynamic_mw": 0.0187198,
+      "dynamic_pj_per_op": null,
+      "operations": 0,
+      "window_ps": [
+        109000,
+        1109000
+      ],
+      "annotation": {
+        "Inputs": {
+          "total": 109,
+          "asserted": 109,
+          "percent": 100.0
+        },
+        "Outputs": {
+          "total": 64,
+          "asserted": 64,
+          "percent": 100.0
+        },
+        "Flop": {
+          "total": 810,
+          "asserted": 810,
+          "percent": 100.0
+        },
+        "Total ICGC": {
+          "total": 1,
+          "asserted": 1,
+          "percent": 100.0
+        },
+        "Driver nets": {
+          "total": 10167,
+          "asserted": 10167,
+          "percent": 100.0
+        }
+      },
+      "hierarchy": {
+        "/ucc_energy_sfu": {
+          "cells": 9430,
+          "leakage_mw": 1.70734,
+          "internal_mw": 0.0168857,
+          "switching_mw": 0.0018341,
+          "total_mw": 1.72606
+        },
+        "/ucc_energy_sfu/RC_CG_REBALANCE_HIER_INST": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410573,
+          "total_mw": 0.00221719
+        }
+      },
+      "vcd_sha256": "2ca03bfbe0c59bf7514315a53f4aeb24335ed6abc63ec565cdd4ea447880a400",
+      "finished_utc": "2026-11-12T04:21:50.634421+00:00"
+    },
+    "sfu": {
+      "cells": 9430,
+      "leakage_mw": 1.7514,
+      "internal_mw": 3.50865,
+      "switching_mw": 1.33762,
+      "total_mw": 6.59768,
+      "dynamic_mw": 4.84627,
+      "dynamic_pj_per_op": 4.84627,
+      "operations": 1000,
+      "window_ps": [
+        109000,
+        1109000
+      ],
+      "annotation": {
+        "Inputs": {
+          "total": 109,
+          "asserted": 109,
+          "percent": 100.0
+        },
+        "Outputs": {
+          "total": 64,
+          "asserted": 64,
+          "percent": 100.0
+        },
+        "Flop": {
+          "total": 810,
+          "asserted": 810,
+          "percent": 100.0
+        },
+        "Total ICGC": {
+          "total": 1,
+          "asserted": 1,
+          "percent": 100.0
+        },
+        "Driver nets": {
+          "total": 10167,
+          "asserted": 10167,
+          "percent": 100.0
+        }
+      },
+      "hierarchy": {
+        "/ucc_energy_sfu": {
+          "cells": 9430,
+          "leakage_mw": 1.7514,
+          "internal_mw": 3.50865,
+          "switching_mw": 1.33762,
+          "total_mw": 6.59768
+        },
+        "/ucc_energy_sfu/RC_CG_REBALANCE_HIER_INST": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00358627,
+          "switching_mw": 0.14503,
+          "total_mw": 0.148708
+        }
+      },
+      "vcd_sha256": "1a6f46959c8b892e39a943fb1322fe0b05463585de9ca2d8a1b57dcbbaae9e71",
+      "finished_utc": "2026-11-12T04:21:55.053856+00:00"
+    },
+    "sfu_rcp": {
+      "cells": 9430,
+      "leakage_mw": 1.74897,
+      "internal_mw": 3.4081,
+      "switching_mw": 1.23148,
+      "total_mw": 6.38855,
+      "dynamic_mw": 4.6395800000000005,
+      "dynamic_pj_per_op": 4.6395800000000005,
+      "operations": 1000,
+      "window_ps": [
+        109000,
+        1109000
+      ],
+      "annotation": {
+        "Inputs": {
+          "total": 109,
+          "asserted": 109,
+          "percent": 100.0
+        },
+        "Outputs": {
+          "total": 64,
+          "asserted": 64,
+          "percent": 100.0
+        },
+        "Flop": {
+          "total": 810,
+          "asserted": 810,
+          "percent": 100.0
+        },
+        "Total ICGC": {
+          "total": 1,
+          "asserted": 1,
+          "percent": 100.0
+        },
+        "Driver nets": {
+          "total": 10167,
+          "asserted": 10167,
+          "percent": 100.0
+        }
+      },
+      "hierarchy": {
+        "/ucc_energy_sfu": {
+          "cells": 9430,
+          "leakage_mw": 1.74897,
+          "internal_mw": 3.4081,
+          "switching_mw": 1.23148,
+          "total_mw": 6.38855
+        },
+        "/ucc_energy_sfu/RC_CG_REBALANCE_HIER_INST": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00358627,
+          "switching_mw": 0.14503,
+          "total_mw": 0.148708
+        }
+      },
+      "vcd_sha256": "2bfdb8256ea11ba6830b4e0f6afb74bb5495d3cf802b1900a9f84e264987631a",
+      "finished_utc": "2026-11-12T04:22:30.043250+00:00"
+    },
+    "sfu_rsqrt": {
+      "cells": 9430,
+      "leakage_mw": 1.74939,
+      "internal_mw": 3.43746,
+      "switching_mw": 1.25654,
+      "total_mw": 6.44339,
+      "dynamic_mw": 4.694,
+      "dynamic_pj_per_op": 4.694,
+      "operations": 1000,
+      "window_ps": [
+        109000,
+        1109000
+      ],
+      "annotation": {
+        "Inputs": {
+          "total": 109,
+          "asserted": 109,
+          "percent": 100.0
+        },
+        "Outputs": {
+          "total": 64,
+          "asserted": 64,
+          "percent": 100.0
+        },
+        "Flop": {
+          "total": 810,
+          "asserted": 810,
+          "percent": 100.0
+        },
+        "Total ICGC": {
+          "total": 1,
+          "asserted": 1,
+          "percent": 100.0
+        },
+        "Driver nets": {
+          "total": 10167,
+          "asserted": 10167,
+          "percent": 100.0
+        }
+      },
+      "hierarchy": {
+        "/ucc_energy_sfu": {
+          "cells": 9430,
+          "leakage_mw": 1.74939,
+          "internal_mw": 3.43746,
+          "switching_mw": 1.25654,
+          "total_mw": 6.44339
+        },
+        "/ucc_energy_sfu/RC_CG_REBALANCE_HIER_INST": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00358627,
+          "switching_mw": 0.14503,
+          "total_mw": 0.148708
+        }
+      },
+      "vcd_sha256": "70db7d446a82a0c344d885f78d6e603e42ab27898c4865cedff8ecda846ddf62",
+      "finished_utc": "2026-11-12T04:22:36.959869+00:00"
+    },
+    "sfu_ex2": {
+      "cells": 9430,
+      "leakage_mw": 1.74537,
+      "internal_mw": 3.3375,
+      "switching_mw": 1.18126,
+      "total_mw": 6.26413,
+      "dynamic_mw": 4.51876,
+      "dynamic_pj_per_op": 4.51876,
+      "operations": 1000,
+      "window_ps": [
+        109000,
+        1109000
+      ],
+      "annotation": {
+        "Inputs": {
+          "total": 109,
+          "asserted": 109,
+          "percent": 100.0
+        },
+        "Outputs": {
+          "total": 64,
+          "asserted": 64,
+          "percent": 100.0
+        },
+        "Flop": {
+          "total": 810,
+          "asserted": 810,
+          "percent": 100.0
+        },
+        "Total ICGC": {
+          "total": 1,
+          "asserted": 1,
+          "percent": 100.0
+        },
+        "Driver nets": {
+          "total": 10167,
+          "asserted": 10167,
+          "percent": 100.0
+        }
+      },
+      "hierarchy": {
+        "/ucc_energy_sfu": {
+          "cells": 9430,
+          "leakage_mw": 1.74537,
+          "internal_mw": 3.3375,
+          "switching_mw": 1.18126,
+          "total_mw": 6.26413
+        },
+        "/ucc_energy_sfu/RC_CG_REBALANCE_HIER_INST": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00358627,
+          "switching_mw": 0.14503,
+          "total_mw": 0.148708
+        }
+      },
+      "vcd_sha256": "7a3fb690030916bd6399b977d50071f20bdf45aadc86f1768002207007d97a9d",
+      "finished_utc": "2026-11-12T04:23:09.927937+00:00"
+    },
+    "sfu_lg2": {
+      "cells": 9430,
+      "leakage_mw": 1.74846,
+      "internal_mw": 3.39747,
+      "switching_mw": 1.23812,
+      "total_mw": 6.38404,
+      "dynamic_mw": 4.6355900000000005,
+      "dynamic_pj_per_op": 4.6355900000000005,
+      "operations": 1000,
+      "window_ps": [
+        109000,
+        1109000
+      ],
+      "annotation": {
+        "Inputs": {
+          "total": 109,
+          "asserted": 109,
+          "percent": 100.0
+        },
+        "Outputs": {
+          "total": 64,
+          "asserted": 64,
+          "percent": 100.0
+        },
+        "Flop": {
+          "total": 810,
+          "asserted": 810,
+          "percent": 100.0
+        },
+        "Total ICGC": {
+          "total": 1,
+          "asserted": 1,
+          "percent": 100.0
+        },
+        "Driver nets": {
+          "total": 10167,
+          "asserted": 10167,
+          "percent": 100.0
+        }
+      },
+      "hierarchy": {
+        "/ucc_energy_sfu": {
+          "cells": 9430,
+          "leakage_mw": 1.74846,
+          "internal_mw": 3.39747,
+          "switching_mw": 1.23812,
+          "total_mw": 6.38404
+        },
+        "/ucc_energy_sfu/RC_CG_REBALANCE_HIER_INST": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00358627,
+          "switching_mw": 0.14503,
+          "total_mw": 0.148708
+        }
+      },
+      "vcd_sha256": "3f4b52f668cad224a295e4801916eae3f32e40329b267b971925a363984aae59",
+      "finished_utc": "2026-11-12T04:23:17.642183+00:00"
+    },
+    "sfu_sinpi": {
+      "cells": 9430,
+      "leakage_mw": 1.7495,
+      "internal_mw": 3.33492,
+      "switching_mw": 1.21469,
+      "total_mw": 6.29911,
+      "dynamic_mw": 4.5496099999999995,
+      "dynamic_pj_per_op": 4.5496099999999995,
+      "operations": 1000,
+      "window_ps": [
+        109000,
+        1109000
+      ],
+      "annotation": {
+        "Inputs": {
+          "total": 109,
+          "asserted": 109,
+          "percent": 100.0
+        },
+        "Outputs": {
+          "total": 64,
+          "asserted": 64,
+          "percent": 100.0
+        },
+        "Flop": {
+          "total": 810,
+          "asserted": 810,
+          "percent": 100.0
+        },
+        "Total ICGC": {
+          "total": 1,
+          "asserted": 1,
+          "percent": 100.0
+        },
+        "Driver nets": {
+          "total": 10167,
+          "asserted": 10167,
+          "percent": 100.0
+        }
+      },
+      "hierarchy": {
+        "/ucc_energy_sfu": {
+          "cells": 9430,
+          "leakage_mw": 1.7495,
+          "internal_mw": 3.33492,
+          "switching_mw": 1.21469,
+          "total_mw": 6.29911
+        },
+        "/ucc_energy_sfu/RC_CG_REBALANCE_HIER_INST": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00358627,
+          "switching_mw": 0.14503,
+          "total_mw": 0.148708
+        }
+      },
+      "vcd_sha256": "5fce1b4b1ca2c2b2e13d45e94d48e7991e18da7ed6ffb3f928c7822ead226848",
+      "finished_utc": "2026-11-12T04:23:45.481709+00:00"
+    },
+    "sfu_cospi": {
+      "cells": 9430,
+      "leakage_mw": 1.74943,
+      "internal_mw": 3.32518,
+      "switching_mw": 1.2119,
+      "total_mw": 6.28651,
+      "dynamic_mw": 4.53708,
+      "dynamic_pj_per_op": 4.53708,
+      "operations": 1000,
+      "window_ps": [
+        109000,
+        1109000
+      ],
+      "annotation": {
+        "Inputs": {
+          "total": 109,
+          "asserted": 109,
+          "percent": 100.0
+        },
+        "Outputs": {
+          "total": 64,
+          "asserted": 64,
+          "percent": 100.0
+        },
+        "Flop": {
+          "total": 810,
+          "asserted": 810,
+          "percent": 100.0
+        },
+        "Total ICGC": {
+          "total": 1,
+          "asserted": 1,
+          "percent": 100.0
+        },
+        "Driver nets": {
+          "total": 10167,
+          "asserted": 10167,
+          "percent": 100.0
+        }
+      },
+      "hierarchy": {
+        "/ucc_energy_sfu": {
+          "cells": 9430,
+          "leakage_mw": 1.74943,
+          "internal_mw": 3.32518,
+          "switching_mw": 1.2119,
+          "total_mw": 6.28651
+        },
+        "/ucc_energy_sfu/RC_CG_REBALANCE_HIER_INST": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00358627,
+          "switching_mw": 0.14503,
+          "total_mw": 0.148708
+        }
+      },
+      "vcd_sha256": "842c294a3c064521dd8a3a1885330f1ee659cef94fbcf9b3e16bec52d20c5f40",
+      "finished_utc": "2026-11-12T04:23:56.890367+00:00"
+    },
+    "sfu_tanh": {
+      "cells": 9430,
+      "leakage_mw": 1.7506,
+      "internal_mw": 3.26378,
+      "switching_mw": 1.16824,
+      "total_mw": 6.18262,
+      "dynamic_mw": 4.43202,
+      "dynamic_pj_per_op": 4.43202,
+      "operations": 1000,
+      "window_ps": [
+        109000,
+        1109000
+      ],
+      "annotation": {
+        "Inputs": {
+          "total": 109,
+          "asserted": 109,
+          "percent": 100.0
+        },
+        "Outputs": {
+          "total": 64,
+          "asserted": 64,
+          "percent": 100.0
+        },
+        "Flop": {
+          "total": 810,
+          "asserted": 810,
+          "percent": 100.0
+        },
+        "Total ICGC": {
+          "total": 1,
+          "asserted": 1,
+          "percent": 100.0
+        },
+        "Driver nets": {
+          "total": 10167,
+          "asserted": 10167,
+          "percent": 100.0
+        }
+      },
+      "hierarchy": {
+        "/ucc_energy_sfu": {
+          "cells": 9430,
+          "leakage_mw": 1.7506,
+          "internal_mw": 3.26378,
+          "switching_mw": 1.16824,
+          "total_mw": 6.18262
+        },
+        "/ucc_energy_sfu/RC_CG_REBALANCE_HIER_INST": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00358627,
+          "switching_mw": 0.14503,
+          "total_mw": 0.148708
+        }
+      },
+      "vcd_sha256": "4cfe980f56d5e2579256fd5608bb23101989b21fafa1d2bf4e5ac42362197960",
+      "finished_utc": "2026-11-12T04:24:25.562181+00:00"
+    }
+  }
+}

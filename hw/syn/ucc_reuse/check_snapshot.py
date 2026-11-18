@@ -34,6 +34,21 @@ def verify(root):
     ratio = sum(energy['operations'][op]['dynamic_pj_per_op'] for op in ops) / sum(
         contract['baseline_total_pj_per_op'][op] for op in ops)
     assert abs(ratio - energy['cuda_ratio']) < 1e-12
+    if manifest.get('goal_complete'):
+        checkpoint = json.loads((root / 'provenance/checkpoint.json').read_text())
+        tensor = json.loads((root / 'provenance/dpa_result.json').read_text())
+        timing = json.loads((root / 'timing/result.json').read_text())
+        reset = json.loads((root / 'validation/reset_entry/result.json').read_text())
+        assert checkpoint['goal_complete'] and checkpoint['run_history_removed']
+        assert checkpoint['mapped_sha256'] == timing['mapped_sha256'] == reset['mapped_sha256'] == mapped_sha
+        assert checkpoint['cell_area_um2'] == timing['cell_area_um2'] < contract['area_limit_um2']
+        assert ratio < contract['strict_ratio_limit'] and not checkpoint['retiming']
+        assert reset['passed'] and reset['reset_cases'] == 2560
+        assert all(g['violations'] == 0 and (g['wns_ps'] is None or g['wns_ps'] >= 0)
+                   for row in checkpoint['setup_groups'].values() for g in row.values())
+        assert all(n == 0 for row in timing['drv_violation_rows'].values() for n in row.values())
+        assert set(tensor['rows']) == set(contract['required_dpa_streams'])
+        assert all(r['ratio'] < 1.05 for r in tensor['rows'].values())
     print('SNAPSHOT_VERIFIED', root.name, len(manifest['files']),
           'files; CUDA ratio', ratio, flush=True)
     return manifest

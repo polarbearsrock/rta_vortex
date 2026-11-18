@@ -1,0 +1,199 @@
+{
+  "synthesis": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_drv_sm25",
+  "corner": "SSG 0.72 V /125 C",
+  "kind": "dpa",
+  "workloads": {
+    "dpa_fp8": {
+      "cells": 35728,
+      "leakage_mw": 11.2854,
+      "internal_mw": 18.5334,
+      "switching_mw": 6.01532,
+      "total_mw": 35.8342,
+      "dynamic_mw": 24.54872,
+      "dynamic_pj_per_op": 24.54872,
+      "operations": 1000,
+      "window_ps": [
+        109000,
+        1109000
+      ],
+      "annotation": {
+        "Inputs": {
+          "total": 616,
+          "asserted": 616,
+          "percent": 100.0
+        },
+        "Outputs": {
+          "total": 32,
+          "asserted": 32,
+          "percent": 100.0
+        },
+        "Flop": {
+          "total": 2177,
+          "asserted": 2177,
+          "percent": 100.0
+        },
+        "Total ICGC": {
+          "total": 5,
+          "asserted": 5,
+          "percent": 100.0
+        },
+        "Driver nets": {
+          "total": 39273,
+          "asserted": 39273,
+          "percent": 100.0
+        }
+      },
+      "hierarchy": {
+        "/ucc_dpa16_baseline": {
+          "cells": 35728,
+          "leakage_mw": 11.2854,
+          "internal_mw": 18.5334,
+          "switching_mw": 6.01532,
+          "total_mw": 35.8342
+        },
+        "/ucc_dpa16_baseline/RC_CG_HIER_INST1": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00348251,
+          "switching_mw": 0.305754,
+          "total_mw": 0.309328
+        },
+        "/ucc_dpa16_baseline/i_dpa16_i_core_u_norm": {
+          "cells": 465,
+          "leakage_mw": 0.0914944,
+          "internal_mw": 0.113083,
+          "switching_mw": 0.0560242,
+          "total_mw": 0.260601
+        },
+        "/ucc_dpa16_baseline/i_dpa16_i_core_RC_CG_HIER_INST2": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.0035352,
+          "switching_mw": 0.223621,
+          "total_mw": 0.227248
+        },
+        "/ucc_dpa16_baseline/RC_CG_REBALANCE_HIER_INST": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00365986,
+          "switching_mw": 0.0349108,
+          "total_mw": 0.0386624
+        },
+        "/ucc_dpa16_baseline/i_dpa16_i_core_RC_CG_HIER_INST3": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00365361,
+          "switching_mw": 0.0106114,
+          "total_mw": 0.0143567
+        },
+        "/ucc_dpa16_baseline/i_dpa16_i_core_RC_CG_HIER_INST4": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00365075,
+          "switching_mw": 0.00697115,
+          "total_mw": 0.0107136
+        }
+      },
+      "vcd_sha256": "9772455f1ef0b5da29e3d1f5157bb78707b7eecf4446ff8b3ba49aa30cf2101b",
+      "finished_utc": "2026-11-12T13:57:59.787650+00:00",
+      "macs_per_op": 32,
+      "dynamic_pj_per_mac": 0.7671475
+    },
+    "dpa_mxfp8": {
+      "cells": 35728,
+      "leakage_mw": 11.2883,
+      "internal_mw": 18.5623,
+      "switching_mw": 6.02897,
+      "total_mw": 35.8796,
+      "dynamic_mw": 24.59127,
+      "dynamic_pj_per_op": 24.59127,
+      "operations": 1000,
+      "window_ps": [
+        109000,
+        1109000
+      ],
+      "annotation": {
+        "Inputs": {
+          "total": 616,
+          "asserted": 616,
+          "percent": 100.0
+        },
+        "Outputs": {
+          "total": 32,
+          "asserted": 32,
+          "percent": 100.0
+        },
+        "Flop": {
+          "total": 2177,
+          "asserted": 2177,
+          "percent": 100.0
+        },
+        "Total ICGC": {
+          "total": 5,
+          "asserted": 5,
+          "percent": 100.0
+        },
+        "Driver nets": {
+          "total": 39273,
+          "asserted": 39273,
+          "percent": 100.0
+        }
+      },
+      "hierarchy": {
+        "/ucc_dpa16_baseline": {
+          "cells": 35728,
+          "leakage_mw": 11.2883,
+          "internal_mw": 18.5623,
+          "switching_mw": 6.02897,
+          "total_mw": 35.8796
+        },
+        "/ucc_dpa16_baseline/RC_CG_HIER_INST1": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00348251,
+          "switching_mw": 0.305754,
+          "total_mw": 0.309328
+        },
+        "/ucc_dpa16_baseline/i_dpa16_i_core_u_norm": {
+          "cells": 465,
+          "leakage_mw": 0.0916077,
+          "internal_mw": 0.11226,
+          "switching_mw": 0.0552767,
+          "total_mw": 0.259144
+        },
+        "/ucc_dpa16_baseline/i_dpa16_i_core_RC_CG_HIER_INST2": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.0035352,
+          "switching_mw": 0.223621,
+          "total_mw": 0.227248
+        },
+        "/ucc_dpa16_baseline/RC_CG_REBALANCE_HIER_INST": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00365986,
+          "switching_mw": 0.0349108,
+          "total_mw": 0.0386624
+        },
+        "/ucc_dpa16_baseline/i_dpa16_i_core_RC_CG_HIER_INST3": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00365361,
+          "switching_mw": 0.0106114,
+          "total_mw": 0.0143567
+        },
+        "/ucc_dpa16_baseline/i_dpa16_i_core_RC_CG_HIER_INST4": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00365075,
+          "switching_mw": 0.00697115,
+          "total_mw": 0.0107136
+        }
+      },
+      "vcd_sha256": "80433c8ed5310bb3065c96b56266a1b29d6857af7e4faa8821e81139aa7ee61d",
+      "finished_utc": "2026-11-12T13:58:16.463763+00:00",
+      "macs_per_op": 32,
+      "dynamic_pj_per_mac": 0.7684771875
+    }
+  }
+}

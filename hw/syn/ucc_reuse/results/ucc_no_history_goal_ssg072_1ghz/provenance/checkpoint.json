@@ -1,0 +1,255 @@
+{
+  "candidate": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117",
+  "mapped_sha256": "795547913478148b7ab047464cfad79d96323e793cf111626b02b1be1383ece6",
+  "cell_area_um2": 45474.786,
+  "scalar_timing_and_drv_pass": true,
+  "mixed_checks": 144656,
+  "hot_mul_resets": 16,
+  "reset_entry_checks": 14336,
+  "reset_entry_cases": 2560,
+  "fixed_four_sum_pj": 17.336306999999998,
+  "cuda_ratio": 1.189802691381562,
+  "operations": {
+    "fma32": {
+      "dynamic_pj_per_op": 6.685169999999999,
+      "parent_dynamic_pj_per_op": 6.68494,
+      "leakage_mw": 9.56483,
+      "parent_leakage_mw": 9.56268,
+      "dynamic_ratio_to_parent": 1.0000344056939927
+    },
+    "add32": {
+      "dynamic_pj_per_op": 0.858977,
+      "parent_dynamic_pj_per_op": 0.858977,
+      "leakage_mw": 9.36274,
+      "parent_leakage_mw": 9.36062,
+      "dynamic_ratio_to_parent": 1.0
+    },
+    "mul32": {
+      "dynamic_pj_per_op": 3.7289700000000003,
+      "parent_dynamic_pj_per_op": 3.72889,
+      "leakage_mw": 9.51291,
+      "parent_leakage_mw": 9.51029,
+      "dynamic_ratio_to_parent": 1.0000214541056456
+    },
+    "sfu_ex2": {
+      "dynamic_pj_per_op": 6.0631900000000005,
+      "parent_dynamic_pj_per_op": 6.06234,
+      "leakage_mw": 9.54228,
+      "parent_leakage_mw": 9.54023,
+      "dynamic_ratio_to_parent": 1.0001402098859518
+    }
+  },
+  "run_history_removed": true,
+  "retiming": false,
+  "flops": 4496,
+  "clock_gates": 153,
+  "setup_groups": {
+    "dpa": {
+      "cg_enable_group_clk": {
+        "wns_ps": 0.5,
+        "tns_ps": 0.0,
+        "violations": 0
+      },
+      "clk": {
+        "wns_ps": 0.0,
+        "tns_ps": 0.0,
+        "violations": 0
+      },
+      "default": {
+        "wns_ps": null,
+        "tns_ps": 0.0,
+        "violations": 0
+      }
+    },
+    "cuda": {
+      "cg_enable_group_clk": {
+        "wns_ps": 0.1,
+        "tns_ps": 0.0,
+        "violations": 0
+      },
+      "clk": {
+        "wns_ps": 0.0,
+        "tns_ps": 0.0,
+        "violations": 0
+      },
+      "default": {
+        "wns_ps": null,
+        "tns_ps": 0.0,
+        "violations": 0
+      }
+    }
+  },
+  "dpa_energy_qualification_pending": false,
+  "each_dpa_pass": true,
+  "dpa_measurement": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/result.json",
+  "dpa_operations": {
+    "dpa_fp16": {
+      "dynamic_pj_per_op": 22.306179999999998,
+      "leakage_mw": 9.94703,
+      "baseline_pj_per_op": 27.32846313,
+      "ratio": 0.8162251896087506
+    },
+    "dpa_bf16": {
+      "dynamic_pj_per_op": 19.53258,
+      "leakage_mw": 9.87162,
+      "baseline_pj_per_op": 24.60903313,
+      "ratio": 0.7937158642851565
+    },
+    "dpa_tf32": {
+      "dynamic_pj_per_op": 16.12737,
+      "leakage_mw": 9.74989,
+      "baseline_pj_per_op": 21.07696313,
+      "ratio": 0.7651657357147922
+    },
+    "dpa_fp8": {
+      "dynamic_pj_per_op": 19.11075,
+      "leakage_mw": 9.94079,
+      "baseline_pj_per_op": 26.118993130000003,
+      "ratio": 0.731680195514489
+    },
+    "dpa_nvfp4": {
+      "dynamic_pj_per_op": 15.501460000000002,
+      "leakage_mw": 9.7493,
+      "baseline_pj_per_op": 21.011663130000002,
+      "ratio": 0.7377550222508255
+    },
+    "dpa_mxfp4": {
+      "dynamic_pj_per_op": 14.83564,
+      "leakage_mw": 9.69817,
+      "baseline_pj_per_op": 20.40730313,
+      "ratio": 0.726976999630622
+    },
+    "dpa_mxfp8": {
+      "dynamic_pj_per_op": 19.10556,
+      "leakage_mw": 9.9348,
+      "baseline_pj_per_op": 26.08851313,
+      "ratio": 0.7323361015170281
+    },
+    "dpa_fp4": {
+      "dynamic_pj_per_op": 14.01076,
+      "leakage_mw": 9.68236,
+      "baseline_pj_per_op": 19.62077313,
+      "ratio": 0.7140778758905103
+    },
+    "dpa_fp8_rm1": {
+      "dynamic_pj_per_op": 18.61145,
+      "leakage_mw": 9.89584,
+      "baseline_pj_per_op": 25.61322313,
+      "ratio": 0.7266344382172256
+    },
+    "dpa_mxfp8_rm1": {
+      "dynamic_pj_per_op": 18.64105,
+      "leakage_mw": 9.90938,
+      "baseline_pj_per_op": 25.59367313,
+      "ratio": 0.7283460215075428
+    },
+    "dpa_fp8_rm2": {
+      "dynamic_pj_per_op": 18.65721,
+      "leakage_mw": 9.906,
+      "baseline_pj_per_op": 25.58933313,
+      "ratio": 0.7291010635258395
+    },
+    "dpa_mxfp8_rm2": {
+      "dynamic_pj_per_op": 18.6907,
+      "leakage_mw": 9.90331,
+      "baseline_pj_per_op": 25.60398313,
+      "ratio": 0.7299918885706593
+    },
+    "dpa_fp8_rm3": {
+      "dynamic_pj_per_op": 17.88565,
+      "leakage_mw": 9.86486,
+      "baseline_pj_per_op": 24.68272313,
+      "ratio": 0.7246222349859498
+    },
+    "dpa_mxfp8_rm3": {
+      "dynamic_pj_per_op": 17.91374,
+      "leakage_mw": 9.87728,
+      "baseline_pj_per_op": 24.72527313,
+      "ratio": 0.7245113089676919
+    }
+  },
+  "native_rtl_reference_only": true,
+  "exact_capture_identity_chain_checked": false,
+  "standard_genus_remap_steps": [
+    {
+      "candidate": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_remapped_20261117",
+      "fixed_flops": 4496,
+      "fixed_icgs": 153,
+      "state_functions_unchanged": true,
+      "formal_remap_equivalence_claimed": false
+    }
+  ],
+  "full_sequential_formal_equivalence_claimed": false,
+  "energy_gap_to_20_percent_pj": -0.14858234400000114,
+  "goal_complete": true,
+  "selected_changed": true,
+  "previous_checkpoint": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_full_checkpoint_joint654_45861_20261117.json",
+  "lineage_root": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_full_checkpoint_pins4123_45873_20261117.json",
+  "scope": "Measured no-history mapped-Verilog improvement. Fixed-cut standard Genus remapping preserves FF/ICG inventory, clock connections and Liberty state functions; it is validated by fresh mixed/reset regressions, not a claimed formal remap proof. Subsequent sizing has independent whole-graph identity. Original setup/DRV, fixed-four Joules and fourteen DPA energies pass their respective thresholds. Native SV is the frozen functional reference; leakage is separate.",
+  "evidence_sha256": {
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117/candidate.json": "a2b5dd17e8ba37ee11ae24ff2e8a1d405e90690241f4068ece8db2d9a7a157d7",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117/physical_icg_audit.json": "8e0c6a28d3ba356b6c7921ae99330b2506ce8a8063ca68e0e24545ea1250b58d",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/result.json": "086bb71ab5bc3339c9c152beba1c729d5776655c4c6df1ec3d48d75f4c961a14",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_check/result.json": "c078e7a78605e67d110d9c07aa455ade4c7c4820dc48f85437047cf7afd70bbb",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_reset_entry/result.json": "abc6487448fbbb4b861b6a0c59ce9555610009b9490c5fbd8cbc67836830d7cc",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/comparison.json": "b4e16990c42f30e51870c1ff68e0e0798e31665514e6e0b6a32c7bf8c0ec0b33",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_dpa_power/result.json": "cdebb53da923c64d6888ea5132f3b15f3d82ba8e5624faf50b4213e271fc41cf",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/power_goal_contract_no_run_area46000_20261117.json": "c93867f75ca19a9226ce0e51966ad06e20bbec68b59cbc34e80acc69b57a487d",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_full_checkpoint_joint654_45861_20261117.json": "49bd53ac84cfcac44582e8647e0f08ef2aa8ff0f56ae94b7c4f08b48cb0e7e96",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_full_checkpoint_pins4123_45873_20261117.json": "3e1cb6e621f39abb128976511a1abbef930ca68909e39f6b98892cb50b701a9e",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117/mapped.v": "795547913478148b7ab047464cfad79d96323e793cf111626b02b1be1383ece6",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/settings.rpt": "85eea9ddd234320fbfedd049c2e4892c936bf0d0b885cd53f6376623c650e7be",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/manifest.json": "e40dc0e489e7d2abb0918bc0461b4b487b01c2ba7132d22b37bcf310e26a7207",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/syn/ucc_reuse/b32_freeze_fixed_cut_checkpoint.py": "3823e778c7d33122b8c2e6146461d2b990c55e3ae23df77c73550ece407ab1e1",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117/proof.json": "ea0646f6ec57342bb08e5c59c11fcbd07f366819705463ea07cf0e25ce384c1d",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_remapped_20261117/candidate.json": "37fe87be0070e58edccaf6501b54314ec3436fdaa5ade52fb121a398edc5ee48",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_remapped_20261117/mapped.v": "90215625b85d443c6de531f04745c8d416bff998da728d1d2757c2d97a5249da",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_pin_greedy1_activity_opt_20261117/opt/result.json": "a3130df07062b0aab67b120f989b4508e5fced486968bc798d95b771b0bc612f",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_pin_greedy1_activity_opt_20261117/opt/manifest.json": "3f40a0e8593f53d15d5e62b2548a8eecbc658dfea3d720ca0c2b825637100978",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_pin_greedy1_activity_opt_20261117/opt/fixed_registers.rpt": "6d765ef4e2061907e671643536b8d8bad099efd8fa12216a6d34f18613ffd472",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_pin_greedy1_activity_opt_20261117/opt/settings.rpt": "000853453a944bd8be954e1f1145233a7138141f60d1a4e32792e482719128a9",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_pin_greedy1_activity_opt_20261117/opt/synth.tcl": "d78a5486f0ff155f2e7b6a3e9f654c6516a2f4ec0126138f5b46ae7614de141b",
+    "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140_180a/tcbn28hpcplusbwp30p140ssg0p72v125c.lib": "44a332fd6b6defdb005a3d7a7c4e7f817fe8ec6e6036b0293acd549fa6d353c5",
+    "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140hvt_180a/tcbn28hpcplusbwp30p140hvtssg0p72v125c.lib": "47d6a840a373f60d53e66b7a4dcf5e921115575abb62e6be174bac0cd72ce004",
+    "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140lvt_180a/tcbn28hpcplusbwp30p140lvtssg0p72v125c.lib": "a35a385653dba58f4d8308f4c3638f1e3ca3ed3e80a249ce560386b6340ce711",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_pin_relaxed75_greedy1_20261117/candidate.json": "6928d1361d2fcc6a3d9265e1bca06ea8b96ccef5c0db4dd7b0a5b90f88e91d95",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_pin_relaxed75_greedy1_20261117/mapped.v": "1532761975e06e6381957f147530195a7050ec654efe3be4aa1e90885034b1f8",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_pin_relaxed75_greedy1_20261117/proof.json": "32a6c29aa1b7718957080995cc8900729b93982aafe256d8de21daef20638d24",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_pin_repaired_20261117/candidate.json": "2b2ceb2ba3aa9ad475c04435c57d733394cf3c4d392cd5134a05692293fea8f0",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_pin_repaired_20261117/mapped.v": "e4a8f3304e7224aed4068d2137fa6f35f913f4e468aae414fc55ccfb458d737c",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_pin_repaired_20261117/proof.json": "7f9a6a358042b2e52a41ca315c376ee1339e76f536d0bb6d7de0e5585db98771",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/fp32_matched_drv_audit/result.json": "6d0e4fa1fe036c53e7ff13dc74739d6de67a92eca884a94d406e226e60b52414",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_scalar_energy/fp32/synth/final.db": "dc8a996ad1a0ffec17a2ae5761755d0116a1d401d39792c071819d3ec718a999",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_scalar_energy/fp32/synth/manifest.json": "51a81b9d93d045f22c6887cdb2d04261072a3b32f53bf0864527ef9f5fedd755",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/fp32_matched_drv_audit/analyze.tcl": "5e640dc285b7bd399a3dcf4bc813e5da47a988542d59b9ccd211699be6b09c48",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/syn/ucc_reuse/b32_final_design_rules.py": "1d7aebf1a09afeda69ecc9243cf81d7c240ac6b2deedbe8a34b8f648c085e1f5",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/fp32_matched_drv_audit/all.SS.setup_view_max_transition.rpt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/fp32_matched_drv_audit/all.SS.setup_view_max_fanout.rpt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/fp32_matched_drv_audit/all.SS.setup_view_max_capacitance.rpt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/fp32_matched_drv_audit/design_rules.rpt": "db8389c450864366fdf62f7b7d90a57506ffac7dd73ad3bb748575473dcc9988",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/int32_matched_drv_audit/result.json": "a1250e6311169900653fcda07cb048c1b37117f3af7adecd3e952e0bc8298b30",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_scalar_energy/int32/synth/final.db": "5db441d554534da51703f46bb63720c90ece3588b5ecb7b6ac97fc4215e96b04",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_scalar_energy/int32/synth/manifest.json": "3df191b19c794cd73e0e0ba6530db0b1598adb49cf753feaec70f85f3f27ac67",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/int32_matched_drv_audit/analyze.tcl": "052907d58fac506a3d3789e7f07b44553c9e150a1213272ca8cc825bf8fb7701",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/int32_matched_drv_audit/all.SS.setup_view_max_transition.rpt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/int32_matched_drv_audit/all.SS.setup_view_max_fanout.rpt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/int32_matched_drv_audit/all.SS.setup_view_max_capacitance.rpt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/int32_matched_drv_audit/design_rules.rpt": "a53bd266b5c97340c6bb1ae70010dff1b630776b0ff5da32b5b82ccbc6c89e4a",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sfu_constrom_matched_drv_audit/result.json": "56e18a1980c716e8a49a644b6c0c5609bf5e8dabaaf2980a9105d13c5d6af7bb",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_scalar_energy/sfu_constrom/synth/final.db": "631c958603e900409c43afc49d5fc0b93685af11d083efd89412bce466276d09",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_scalar_energy/sfu_constrom/synth/manifest.json": "1a18929b374b3fcad6b6467ceb61f5495cdb82f6fc6f3052ded53128539edc77",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sfu_constrom_matched_drv_audit/analyze.tcl": "49319f5b7b7547a38d657639bcac54b87e2a35833456e0578e48bb7546b18f97",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sfu_constrom_matched_drv_audit/all.SS.setup_view_max_transition.rpt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sfu_constrom_matched_drv_audit/all.SS.setup_view_max_fanout.rpt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sfu_constrom_matched_drv_audit/all.SS.setup_view_max_capacitance.rpt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sfu_constrom_matched_drv_audit/design_rules.rpt": "51c6097810e02754f80d34dc6f6d25d1c59b65c99def080bc1e505b4f9f77450",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_repaired_matched_drv_audit/result.json": "76c8fb20d2d27e3728d1a77fb1794fd9aebf6ad78fe7c2f641479fa971403f72",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_drv_sm25/final.db": "d86420edf89552461ba93696f10e77bd2e91ed748d4149ab35482f3d4ad5e1e2",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_drv_sm25/manifest.json": "2c4af8148fa2717518dadafb0d10ecb40121244c7800831ec09308f78aa3f69b",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_repaired_matched_drv_audit/analyze.tcl": "35ffc3b0c2eae8f13c1ed1f353e7135ac37ca3aa087751418a028da2ac9b2fce",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_repaired_matched_drv_audit/dpa.SS.setup_view_max_transition.rpt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_repaired_matched_drv_audit/dpa.SS.setup_view_max_fanout.rpt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_repaired_matched_drv_audit/dpa.SS.setup_view_max_capacitance.rpt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_repaired_matched_drv_audit/design_rules.rpt": "f90fdc4f887aac6a63a6bd9e6bd453ba2d83926ca246fb41baafa55ea91a86a1"
+  }
+}

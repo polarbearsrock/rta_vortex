@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "before_mapped_sha256": "e4a8f3304e7224aed4068d2137fa6f35f913f4e468aae414fc55ccfb458d737c",
+  "after_mapped_sha256": "795547913478148b7ab047464cfad79d96323e793cf111626b02b1be1383ece6",
+  "clock_gates": 153,
+  "changed_physical_masters": {},
+  "replaced_instance_pairs": {},
+  "state_tables_and_output_functions_identical": true,
+  "wrapper_pin_maps_identical": true,
+  "scope": "All physical ICG instances and masters are retained and have identical actual Liberty state tables, output functions and wrapper pin maps. This checks physical gate semantics; rewired capture equations are proved separately. Timing and power can differ.",
+  "evidence_sha256": {
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/syn/ucc_reuse/b32_audit_preserved_clock_masters.py": "dc2c03d202634bde4ca473d920234955dec91735b2c26d15f94bcceee0e68b40",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_pin_repaired_20261117/mapped.v": "e4a8f3304e7224aed4068d2137fa6f35f913f4e468aae414fc55ccfb458d737c",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117/mapped.v": "795547913478148b7ab047464cfad79d96323e793cf111626b02b1be1383ece6",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_remapped_20261117_power/manifest.json": "4eebccde8b57119b3455785af038ca9c5484143b49c30829588326c3b6ff61f0",
+    "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140_180a/tcbn28hpcplusbwp30p140ssg0p72v125c.lib": "44a332fd6b6defdb005a3d7a7c4e7f817fe8ec6e6036b0293acd549fa6d353c5",
+    "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140hvt_180a/tcbn28hpcplusbwp30p140hvtssg0p72v125c.lib": "47d6a840a373f60d53e66b7a4dcf5e921115575abb62e6be174bac0cd72ce004",
+    "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140lvt_180a/tcbn28hpcplusbwp30p140lvtssg0p72v125c.lib": "a35a385653dba58f4d8308f4c3638f1e3ca3ed3e80a249ce560386b6340ce711"
+  }
+}

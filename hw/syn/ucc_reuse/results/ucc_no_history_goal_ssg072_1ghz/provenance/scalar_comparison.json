@@ -1,0 +1,113 @@
+{
+  "complete": true,
+  "operations": {
+    "fma32": {
+      "dynamic_pj_per_op": 6.685169999999999,
+      "parent_dynamic_pj_per_op": 6.68494,
+      "leakage_mw": 9.56483,
+      "parent_leakage_mw": 9.56268,
+      "dynamic_ratio_to_parent": 1.0000344056939927
+    },
+    "add32": {
+      "dynamic_pj_per_op": 0.858977,
+      "parent_dynamic_pj_per_op": 0.858977,
+      "leakage_mw": 9.36274,
+      "parent_leakage_mw": 9.36062,
+      "dynamic_ratio_to_parent": 1.0
+    },
+    "mul32": {
+      "dynamic_pj_per_op": 3.7289700000000003,
+      "parent_dynamic_pj_per_op": 3.72889,
+      "leakage_mw": 9.51291,
+      "parent_leakage_mw": 9.51029,
+      "dynamic_ratio_to_parent": 1.0000214541056456
+    },
+    "sfu_ex2": {
+      "dynamic_pj_per_op": 6.0631900000000005,
+      "parent_dynamic_pj_per_op": 6.06234,
+      "leakage_mw": 9.54228,
+      "parent_leakage_mw": 9.54023,
+      "dynamic_ratio_to_parent": 1.0001402098859518
+    }
+  },
+  "fixed_four_sum_pj": 17.336306999999998,
+  "cuda_ratio": 1.189802691381562,
+  "setup_groups": {
+    "dpa": {
+      "cg_enable_group_clk": {
+        "wns_ps": 0.5,
+        "tns_ps": 0.0,
+        "violations": 0
+      },
+      "clk": {
+        "wns_ps": 0.0,
+        "tns_ps": 0.0,
+        "violations": 0
+      },
+      "default": {
+        "wns_ps": null,
+        "tns_ps": 0.0,
+        "violations": 0
+      }
+    },
+    "cuda": {
+      "cg_enable_group_clk": {
+        "wns_ps": 0.1,
+        "tns_ps": 0.0,
+        "violations": 0
+      },
+      "clk": {
+        "wns_ps": 0.0,
+        "tns_ps": 0.0,
+        "violations": 0
+      },
+      "default": {
+        "wns_ps": null,
+        "tns_ps": 0.0,
+        "violations": 0
+      }
+    }
+  },
+  "run_history_removed": true,
+  "synthesis_launched": false,
+  "selected_changed": false,
+  "objective_complete": false,
+  "cell_count": 51090,
+  "cell_area_um2": 45474.786,
+  "worst_slack_ps": {
+    "dpa": 0.0,
+    "cuda": 0.0
+  },
+  "drv_violation_rows": {
+    "dpa": {
+      "max_transition": 0,
+      "max_fanout": 0,
+      "max_capacitance": 0
+    },
+    "cuda": {
+      "max_transition": 0,
+      "max_fanout": 0,
+      "max_capacitance": 0
+    }
+  },
+  "scope": "Fresh Joules on unchanged fixed-operation vectors. Dynamic energy excludes leakage. No selection or qualification inferred from local screening or energy alone.",
+  "evidence_sha256": {
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/syn/ucc_reuse/b32_buffered_sizing_power.py": "ee0865e9bdef9701132d0e80e740986ce2d04771fbe92d10d1372c9218e7b5ad",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117/candidate.json": "a2b5dd17e8ba37ee11ae24ff2e8a1d405e90690241f4068ece8db2d9a7a157d7",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117/proof.json": "ea0646f6ec57342bb08e5c59c11fcbd07f366819705463ea07cf0e25ce384c1d",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_check/result.json": "c078e7a78605e67d110d9c07aa455ade4c7c4820dc48f85437047cf7afd70bbb",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_reset_entry/result.json": "abc6487448fbbb4b861b6a0c59ce9555610009b9490c5fbd8cbc67836830d7cc",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_timing/result.json": "086bb71ab5bc3339c9c152beba1c729d5776655c4c6df1ec3d48d75f4c961a14",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/power_goal_contract_no_run_area46000_20261117.json": "c93867f75ca19a9226ce0e51966ad06e20bbec68b59cbc34e80acc69b57a487d",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_remapped_20261117_power/manifest.json": "4eebccde8b57119b3455785af038ca9c5484143b49c30829588326c3b6ff61f0",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_remapped_20261117_power/energy.json": "824b47d22cb762ac3b0d48093e74477b271d893802d884b7cce7ad37fb48b6fd",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/manifest.json": "e40dc0e489e7d2abb0918bc0461b4b487b01c2ba7132d22b37bcf310e26a7207",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/status.json": "3eb24fe767fa7039c01677385d549fdd787592179b16d85aa15103a4eb9041c5",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/energy.json": "c3b63a86e88e3f85259b01112ed7e5a004b39440cecf9893f95d3e16ae58a417",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117/mapped.v": "795547913478148b7ab047464cfad79d96323e793cf111626b02b1be1383ece6",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/power_fma32/result.json": "1ef016de04c398a500c140ec42b61053124f4c21229cc895f501236ce23fbabb",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/power_add32/result.json": "31188cc40bb368f66c59c00e9be733b78fdd82bc4a4c2c58dfcdef6097377e8c",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/power_mul32/result.json": "9cf5caf3fcec040bfc58211e18e2f85833851541878100be418b24a93ce93bda",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_power/power_sfu_ex2/result.json": "c8be4d2ee470f89c9bbac6b223642e8d838c21f88e8ca10321a749093dcce682"
+  }
+}

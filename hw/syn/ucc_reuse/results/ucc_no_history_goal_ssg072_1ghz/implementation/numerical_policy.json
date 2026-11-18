@@ -1,0 +1,73 @@
+{
+  "policy": "SFU per-product floor at bit 18, baseline half-up packing and special cases",
+  "independent_models_agree": true,
+  "inputs_order_valid_and_latency_unchanged": true,
+  "non_sfu_results_unchanged": true,
+  "streams": {
+    "idle": {
+      "checked": 0,
+      "changed": 0
+    },
+    "fma32": {
+      "checked": 0,
+      "changed": 0
+    },
+    "add32": {
+      "checked": 0,
+      "changed": 0
+    },
+    "mul32": {
+      "checked": 0,
+      "changed": 0
+    },
+    "sfu": {
+      "checked": 1100,
+      "changed": 74
+    },
+    "sfu_ex2": {
+      "checked": 1100,
+      "changed": 4
+    },
+    "dpa_fp16": {
+      "checked": 0,
+      "changed": 0
+    },
+    "dpa_bf16": {
+      "checked": 0,
+      "changed": 0
+    },
+    "dpa_tf32": {
+      "checked": 0,
+      "changed": 0
+    },
+    "dpa_fp8": {
+      "checked": 0,
+      "changed": 0
+    },
+    "dpa_nvfp4": {
+      "checked": 0,
+      "changed": 0
+    },
+    "dpa_mxfp4": {
+      "checked": 0,
+      "changed": 0
+    },
+    "dpa_mxfp8": {
+      "checked": 0,
+      "changed": 0
+    },
+    "dpa_fp4": {
+      "checked": 0,
+      "changed": 0
+    }
+  },
+  "evidence_sha256": {
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/syn/ucc_reuse/b32_sfu_truncated_power.py": "1e239dc57145b1c2ee7d74ea4769bb90632acf1d87e5826053ad433162a18cf9",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/unittest/ucc_lane/ucc/sfu.py": "d19e0c4f4354d2e1ceae56ce41f04fcba68ccd12d464f6df1e3a50dd3c60b6c0",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/sw/common/mufu.cpp": "663d3edcf106c1cc49dce791d153e65a138640a8d44e56213e7350df70a08d80",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/sw/common/mufu.h": "38e221e5164549516bbd74f2dd9a6b6ee2f947bd899f168d83cab42818c0e641",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/sw/common/mufu_tables.h": "c447fe67fe194a5b09130de31636e595f20609c4a0df372de4cc8a1bb5b41279",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/syn/ucc_reuse/b32_sfu_truncated_carry_probe.py": "00fcad9d9c30e2ee6bb9de58ad4538268eb432c3ca606904d745f80f3f2e944e",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/syn/ucc_reuse/b32_sfu_truncation_reference.py": "a580c1463bc8ce70ba9e52498954429576a9c234ca738c1856c36ea2da3eddb2"
+  }
+}

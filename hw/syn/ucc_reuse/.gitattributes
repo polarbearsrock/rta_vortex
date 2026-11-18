@@ -8,3 +8,4 @@ results/b32plus_sm25_ssg072_1ghz/README.md text linguist-generated=false
 results/ucc_area45800_energy20_ssg072_1ghz/README.md text linguist-generated=false
 results/ucc_per_instruction_gating_ssg072_1ghz/README.md text linguist-generated=false
 results/ucc_per_instruction_gating_ssg072_1ghz/GATING.md text linguist-generated=false
+results/ucc_no_history_goal_ssg072_1ghz/README.md text linguist-generated=false

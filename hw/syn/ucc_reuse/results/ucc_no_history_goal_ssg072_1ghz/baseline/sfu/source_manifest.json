@@ -1,0 +1,106 @@
+{
+  "top": "ucc_energy_sfu",
+  "group": "sfu",
+  "source_sha256": {
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_fcvt_unit.sv": "982595948e7851b0f2d631e3dceaa21187ec5f2721cd54b94d92c3ff04241bd1",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_csa_42.sv": "2be561f8b1f730fe1bb5f4334b0759a484ada66159ac72318b50c7781589c309",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_pipe_register.sv": "e9d57d106fbd6e68bb3f6a9accbd226e21530d36b2a560dc4566b8ec076454d8",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_multiplier.sv": "fef4477661999a2ac415c03579b83146e644c21e7fb4c17906d9d3a92deec1ed",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_fp_classifier.sv": "cba8b98ded6dc4b11b8ae3c7fb0d9aa3a4237324faaeea40757156026152f335",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_fma_unit_rtl.sv": "2bf246e0a790c040a5762e291cc0f5ed0853f8390eadfbbea7838e784b73d575",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_csa_tree.sv": "93a07eb72ad65b12b5914d8e93391e21083d8c133988ba58b7f16ed867ad2e48",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_rom.sv": "467e25095e4d12265119ec95a2ed688d0ef69ad9e8a4108112e5cacee2ee2d7a",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_mufu_rom.sv": "6e956d2eb2692ac11407b9c9e4b3cffefe5ee59e00511321563cfac63e66d850",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_fp_rounding.sv": "64a482a4fd98ffc8441e8dd85ec910c564adf4c5b1fc1a3cba41985e283b0992",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_fpu_pkg.sv": "0c3be774ac9c8375cbc82eab1ce7d3da24a4f87f8653346497d2e557957f72bd",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_lzc.sv": "35552af820d11451780e012c56e0e3d6981f795c6d230433af7ecc1439f919ca",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_fncp_unit.sv": "c197c9fd4930009b5f3f7974988edb50fa04d0bf66c98d486a4d6a6febef2640",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_mufu_pe.sv": "e79a1ed3b77a3d3155f10de4ec14f49ffc8fe8172e86dfb60b8adbc2acc16c23",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_ks_adder.sv": "d91073c837de5040fd19fe977bb72b09f90a1613906141299bae147fd5e830bc",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_wallace_mul.sv": "54d42ebaa1af07d017318ef272141e69beeea0072a40b3024fc29af81caa8f92",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_csa_32.sv": "f20ce1fd8af2d69710092dd0db7f32b5d07b3006e042235e0edcab013003afde",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_gpu_pkg.sv": "e67dbaaedc3c23e8b762738c8e5b0866b05001387cefd165d9606267a3fcdc3d",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_find_first.sv": "5c9b359b7055fc5844b05f027d01c63fdcd946f71895e06a3bffdf47968c49aa",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_reuse/synth_baseline/design.sv": "dbdafee7d2018bf6bd5cea8c073ba9bcaf604b771b5374a28eabeefd42ef48d5",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/syn/ucc_reuse/ucc_energy_scalar.sv": "26608fbb4d35e705f3e424874f448b2e94c8a183375cc2f2366bd5059680de49",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/syn/ucc_reuse/ucc_energy_const_rom.sv": "78b76b2ba17d41745fa8ba98bcb22bd3f4d3c652635f178d9185edf0e8f1a70c"
+  },
+  "design_sha256": "4aba49b080fce2b9bfe08ac0b2a6c5410255cff1224978ef8b2439e97c92981c",
+  "workloads": [
+    "idle",
+    "sfu",
+    "sfu_rcp",
+    "sfu_rsqrt",
+    "sfu_ex2",
+    "sfu_lg2",
+    "sfu_sinpi",
+    "sfu_cospi",
+    "sfu_tanh"
+  ],
+  "latency_by_unit": {
+    "fma": 8,
+    "cvt": 5,
+    "cmp": 2,
+    "alu": 2,
+    "imul": 4,
+    "sfu": 7
+  },
+  "files": {
+    "design.sv": "4aba49b080fce2b9bfe08ac0b2a6c5410255cff1224978ef8b2439e97c92981c",
+    "tb.sv": "d1110ea5c115c70caa0d4c8f0caf0294bc33bc2368aef1679bd4e655dc851e3b",
+    "idle.txt": "a72ab38e9a109a787b001a029043de517f7cd337b6beba8e80229e8094d089e0",
+    "sfu.txt": "d01533592ff96af8e4de089aa970def28760641f2c3687a2a42007518b0c508c",
+    "sfu_rcp.txt": "4845998c335d79e0fa54d8fbc7d80d3074a0d58b4423209fc4d0f99cca1f60b4",
+    "sfu_rsqrt.txt": "b7e3dd77640784f68f8d938a208c38a28d742274de6518d62eb19b586c06ce7f",
+    "sfu_ex2.txt": "9e2455b6e5f3587dde02de00ef87091be06e20f6052ed2b7c4696449d5cde7da",
+    "sfu_lg2.txt": "01f19317609f38f36214eb23a4e1879dd413954ad443b87051db9972ca8cebec",
+    "sfu_sinpi.txt": "f21fa8dd129104f34621b81525c94da99a1198fbdd88ecf5d1e98a9f0846a926",
+    "sfu_cospi.txt": "d68688f76dc41d4a61ae6e0ac77d31f926e8679ca57b2c6f59852dcd92e0ea8a",
+    "sfu_tanh.txt": "394db7be32c33c2b5ab823d39b477baeb20680095066e1e5ab7fdca9f43676c1"
+  },
+  "sfu_semantics": "Vortex truncated products / half-up, checked with C model",
+  "scope": "Independent scalar reference; no FP64 or integer/FP divider; MUL no MAD",
+  "source_snapshot": "Vortex SM preprocessed RTL + frozen original Shwet ALU + new wrappers",
+  "rtl_validation": {
+    "idle": {
+      "checks": 0,
+      "log_sha256": "eea780f7b63afc8a61c14d0e588ade36df186cb3d4bd0fe94ca63a1d8b7655ef"
+    },
+    "sfu": {
+      "checks": 1100,
+      "log_sha256": "a789de29209f376a1616eba08d3ffe9e5608696fe882d54e2cf735c581626610"
+    },
+    "sfu_rcp": {
+      "checks": 1100,
+      "log_sha256": "6d97e292898f99822279f77b149e7651586e2d841778db092984eea008fb4321"
+    },
+    "sfu_rsqrt": {
+      "checks": 1100,
+      "log_sha256": "a3a768fb8f8b0a13bf3c295ad2e74780e86bc1bc1652a0a3271164fafd986ddb"
+    },
+    "sfu_ex2": {
+      "checks": 1100,
+      "log_sha256": "239390f5f46604c9de7c9817e8e4f1bd5989738ae97a520b26671d19276eb2da"
+    },
+    "sfu_lg2": {
+      "checks": 1100,
+      "log_sha256": "182e466fe4cb7a190a0bbf46885e092e8aef9c367f483ff554042b2620e4aba6"
+    },
+    "sfu_sinpi": {
+      "checks": 1100,
+      "log_sha256": "1bb164cb5782909a556d6bac39be4c71176fdf6baf09be66572e4522f79b970d"
+    },
+    "sfu_cospi": {
+      "checks": 1100,
+      "log_sha256": "dbbb04c88f298ff38a836f33b7b43568f612f7a5a3ddd0b5506d1cb59d10c909"
+    },
+    "sfu_tanh": {
+      "checks": 1100,
+      "log_sha256": "c8ec72878782a1299ef956bc43b420599063514a363681643c1bef5214c6f3a0"
+    }
+  },
+  "driver_sha256": "c00ccb753d67431596ab583f1addd4359434035070071f72e36524ff0f4dad28",
+  "correction": "VX_rom initial memory -> continuously driven constant words; same INIT_DATA, address and enabled output register",
+  "rejected_source_run": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_scalar_energy/sfu",
+  "rejected_source_design_sha256": "4105e4c3064d38f8e4f1ce566797736825d17f35686e9ef23db5236a29e61c7b"
+}

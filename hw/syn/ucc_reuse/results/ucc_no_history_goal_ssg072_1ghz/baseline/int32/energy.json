@@ -1,0 +1,947 @@
+{
+  "synthesis": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_scalar_energy/int32/synth",
+  "corner": "SSG 0.72 V /125 C",
+  "kind": "scalar_int32",
+  "workloads": {
+    "idle": {
+      "cells": 4844,
+      "leakage_mw": 1.1515,
+      "internal_mw": 0.0230856,
+      "switching_mw": 0.00367183,
+      "total_mw": 1.17825,
+      "dynamic_mw": 0.026757430000000002,
+      "dynamic_pj_per_op": null,
+      "operations": 0,
+      "window_ps": [
+        109000,
+        1109000
+      ],
+      "annotation": {
+        "Inputs": {
+          "total": 109,
+          "asserted": 109,
+          "percent": 100.0
+        },
+        "Outputs": {
+          "total": 64,
+          "asserted": 64,
+          "percent": 100.0
+        },
+        "Flop": {
+          "total": 609,
+          "asserted": 609,
+          "percent": 100.0
+        },
+        "Total ICGC": {
+          "total": 6,
+          "asserted": 6,
+          "percent": 100.0
+        },
+        "Driver nets": {
+          "total": 5662,
+          "asserted": 5662,
+          "percent": 100.0
+        }
+      },
+      "hierarchy": {
+        "/ucc_energy_int32": {
+          "cells": 4844,
+          "leakage_mw": 1.1515,
+          "internal_mw": 0.0230856,
+          "switching_mw": 0.00367183,
+          "total_mw": 1.17825
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST0": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST1": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST2": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST3": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST4": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST5": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        }
+      },
+      "vcd_sha256": "100f3d818a1d2b33d4fe274c4c2b54a8d8d4427ea381cc9f9a258dae48b02ceb",
+      "finished_utc": "2026-11-12T04:07:08.204411+00:00"
+    },
+    "add32": {
+      "cells": 4844,
+      "leakage_mw": 1.15853,
+      "internal_mw": 0.565453,
+      "switching_mw": 0.191322,
+      "total_mw": 1.9153,
+      "dynamic_mw": 0.756775,
+      "dynamic_pj_per_op": 0.756775,
+      "operations": 1000,
+      "window_ps": [
+        109000,
+        1109000
+      ],
+      "annotation": {
+        "Inputs": {
+          "total": 109,
+          "asserted": 109,
+          "percent": 100.0
+        },
+        "Outputs": {
+          "total": 64,
+          "asserted": 64,
+          "percent": 100.0
+        },
+        "Flop": {
+          "total": 609,
+          "asserted": 609,
+          "percent": 100.0
+        },
+        "Total ICGC": {
+          "total": 6,
+          "asserted": 6,
+          "percent": 100.0
+        },
+        "Driver nets": {
+          "total": 5662,
+          "asserted": 5662,
+          "percent": 100.0
+        }
+      },
+      "hierarchy": {
+        "/ucc_energy_int32": {
+          "cells": 4844,
+          "leakage_mw": 1.15853,
+          "internal_mw": 0.565453,
+          "switching_mw": 0.191322,
+          "total_mw": 1.9153
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST2": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.0036565,
+          "switching_mw": 0.016795,
+          "total_mw": 0.0205433
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST5": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00365062,
+          "switching_mw": 0.00692156,
+          "total_mw": 0.0106639
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST0": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST1": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST3": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST4": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        }
+      },
+      "vcd_sha256": "ead7e911abeedc75ccc1b4e7f5ed70ca41e78e3463b7fe7e936c8a3f0a7e8d62",
+      "finished_utc": "2026-11-12T04:07:12.750061+00:00"
+    },
+    "mul32": {
+      "cells": 4844,
+      "leakage_mw": 1.21236,
+      "internal_mw": 2.44218,
+      "switching_mw": 0.876162,
+      "total_mw": 4.5307,
+      "dynamic_mw": 3.318342,
+      "dynamic_pj_per_op": 3.318342,
+      "operations": 1000,
+      "window_ps": [
+        109000,
+        1109000
+      ],
+      "annotation": {
+        "Inputs": {
+          "total": 109,
+          "asserted": 109,
+          "percent": 100.0
+        },
+        "Outputs": {
+          "total": 64,
+          "asserted": 64,
+          "percent": 100.0
+        },
+        "Flop": {
+          "total": 609,
+          "asserted": 609,
+          "percent": 100.0
+        },
+        "Total ICGC": {
+          "total": 6,
+          "asserted": 6,
+          "percent": 100.0
+        },
+        "Driver nets": {
+          "total": 5662,
+          "asserted": 5662,
+          "percent": 100.0
+        }
+      },
+      "hierarchy": {
+        "/ucc_energy_int32": {
+          "cells": 4844,
+          "leakage_mw": 1.21236,
+          "internal_mw": 2.44218,
+          "switching_mw": 0.876162,
+          "total_mw": 4.5307
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST0": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00365629,
+          "switching_mw": 0.0398068,
+          "total_mw": 0.0435548
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST1": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00365814,
+          "switching_mw": 0.0202424,
+          "total_mw": 0.0239922
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST3": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00365539,
+          "switching_mw": 0.0152419,
+          "total_mw": 0.018989
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST4": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00365442,
+          "switching_mw": 0.0134285,
+          "total_mw": 0.0171747
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST2": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST5": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        }
+      },
+      "vcd_sha256": "032dc4afcea932116e3831faaf5d5e1fd66aa09a38715088b03590fdb2fe82f3",
+      "finished_utc": "2026-11-12T04:07:45.969796+00:00"
+    },
+    "int_sub": {
+      "cells": 4844,
+      "leakage_mw": 1.15918,
+      "internal_mw": 0.569752,
+      "switching_mw": 0.191715,
+      "total_mw": 1.92065,
+      "dynamic_mw": 0.761467,
+      "dynamic_pj_per_op": 0.761467,
+      "operations": 1000,
+      "window_ps": [
+        109000,
+        1109000
+      ],
+      "annotation": {
+        "Inputs": {
+          "total": 109,
+          "asserted": 109,
+          "percent": 100.0
+        },
+        "Outputs": {
+          "total": 64,
+          "asserted": 64,
+          "percent": 100.0
+        },
+        "Flop": {
+          "total": 609,
+          "asserted": 609,
+          "percent": 100.0
+        },
+        "Total ICGC": {
+          "total": 6,
+          "asserted": 6,
+          "percent": 100.0
+        },
+        "Driver nets": {
+          "total": 5662,
+          "asserted": 5662,
+          "percent": 100.0
+        }
+      },
+      "hierarchy": {
+        "/ucc_energy_int32": {
+          "cells": 4844,
+          "leakage_mw": 1.15918,
+          "internal_mw": 0.569752,
+          "switching_mw": 0.191715,
+          "total_mw": 1.92065
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST2": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.0036565,
+          "switching_mw": 0.016795,
+          "total_mw": 0.0205433
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST5": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00365062,
+          "switching_mw": 0.00692156,
+          "total_mw": 0.0106639
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST0": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST1": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST3": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST4": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        }
+      },
+      "vcd_sha256": "70f74134a9f18b2c1fcea7cb98d13bed0c3d2470b4747a2a6c973990ce47d5ae",
+      "finished_utc": "2026-11-12T04:07:54.400905+00:00"
+    },
+    "int_shl": {
+      "cells": 4844,
+      "leakage_mw": 1.15932,
+      "internal_mw": 0.557066,
+      "switching_mw": 0.188813,
+      "total_mw": 1.90519,
+      "dynamic_mw": 0.745879,
+      "dynamic_pj_per_op": 0.745879,
+      "operations": 1000,
+      "window_ps": [
+        109000,
+        1109000
+      ],
+      "annotation": {
+        "Inputs": {
+          "total": 109,
+          "asserted": 109,
+          "percent": 100.0
+        },
+        "Outputs": {
+          "total": 64,
+          "asserted": 64,
+          "percent": 100.0
+        },
+        "Flop": {
+          "total": 609,
+          "asserted": 609,
+          "percent": 100.0
+        },
+        "Total ICGC": {
+          "total": 6,
+          "asserted": 6,
+          "percent": 100.0
+        },
+        "Driver nets": {
+          "total": 5662,
+          "asserted": 5662,
+          "percent": 100.0
+        }
+      },
+      "hierarchy": {
+        "/ucc_energy_int32": {
+          "cells": 4844,
+          "leakage_mw": 1.15932,
+          "internal_mw": 0.557066,
+          "switching_mw": 0.188813,
+          "total_mw": 1.90519
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST2": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.0036565,
+          "switching_mw": 0.016795,
+          "total_mw": 0.0205433
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST5": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00365062,
+          "switching_mw": 0.00692156,
+          "total_mw": 0.0106639
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST0": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST1": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST3": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST4": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        }
+      },
+      "vcd_sha256": "a71355769585dabed224363af8a70d43d51de052a7e2fdd076b4e0fcfb08a1fe",
+      "finished_utc": "2026-11-12T04:08:23.572598+00:00"
+    },
+    "int_shr_u": {
+      "cells": 4844,
+      "leakage_mw": 1.15428,
+      "internal_mw": 0.523617,
+      "switching_mw": 0.168743,
+      "total_mw": 1.84664,
+      "dynamic_mw": 0.69236,
+      "dynamic_pj_per_op": 0.69236,
+      "operations": 1000,
+      "window_ps": [
+        109000,
+        1109000
+      ],
+      "annotation": {
+        "Inputs": {
+          "total": 109,
+          "asserted": 109,
+          "percent": 100.0
+        },
+        "Outputs": {
+          "total": 64,
+          "asserted": 64,
+          "percent": 100.0
+        },
+        "Flop": {
+          "total": 609,
+          "asserted": 609,
+          "percent": 100.0
+        },
+        "Total ICGC": {
+          "total": 6,
+          "asserted": 6,
+          "percent": 100.0
+        },
+        "Driver nets": {
+          "total": 5662,
+          "asserted": 5662,
+          "percent": 100.0
+        }
+      },
+      "hierarchy": {
+        "/ucc_energy_int32": {
+          "cells": 4844,
+          "leakage_mw": 1.15428,
+          "internal_mw": 0.523617,
+          "switching_mw": 0.168743,
+          "total_mw": 1.84664
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST2": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.0036565,
+          "switching_mw": 0.016795,
+          "total_mw": 0.0205433
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST5": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00365062,
+          "switching_mw": 0.00692156,
+          "total_mw": 0.0106639
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST0": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST1": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST3": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST4": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        }
+      },
+      "vcd_sha256": "1b9d43e0bd01199f6cdd996d4f3e30c6cee4e81242700e65b64fcc9c82e7f7cf",
+      "finished_utc": "2026-11-12T04:08:32.968996+00:00"
+    },
+    "int_shr_s": {
+      "cells": 4844,
+      "leakage_mw": 1.15817,
+      "internal_mw": 0.585435,
+      "switching_mw": 0.200489,
+      "total_mw": 1.94409,
+      "dynamic_mw": 0.7859240000000001,
+      "dynamic_pj_per_op": 0.7859240000000001,
+      "operations": 1000,
+      "window_ps": [
+        109000,
+        1109000
+      ],
+      "annotation": {
+        "Inputs": {
+          "total": 109,
+          "asserted": 109,
+          "percent": 100.0
+        },
+        "Outputs": {
+          "total": 64,
+          "asserted": 64,
+          "percent": 100.0
+        },
+        "Flop": {
+          "total": 609,
+          "asserted": 609,
+          "percent": 100.0
+        },
+        "Total ICGC": {
+          "total": 6,
+          "asserted": 6,
+          "percent": 100.0
+        },
+        "Driver nets": {
+          "total": 5662,
+          "asserted": 5662,
+          "percent": 100.0
+        }
+      },
+      "hierarchy": {
+        "/ucc_energy_int32": {
+          "cells": 4844,
+          "leakage_mw": 1.15817,
+          "internal_mw": 0.585435,
+          "switching_mw": 0.200489,
+          "total_mw": 1.94409
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST2": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.0036565,
+          "switching_mw": 0.016795,
+          "total_mw": 0.0205433
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST5": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00365062,
+          "switching_mw": 0.00692156,
+          "total_mw": 0.0106639
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST0": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST1": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST3": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST4": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        }
+      },
+      "vcd_sha256": "3aa5e2779baf94639f24126a5850b3e9ebf795eb98cd168a0f67cbd1385e83df",
+      "finished_utc": "2026-11-12T04:09:03.917412+00:00"
+    },
+    "int_cmp": {
+      "cells": 4844,
+      "leakage_mw": 1.15818,
+      "internal_mw": 0.504736,
+      "switching_mw": 0.163167,
+      "total_mw": 1.82609,
+      "dynamic_mw": 0.6679029999999999,
+      "dynamic_pj_per_op": 0.6679029999999999,
+      "operations": 1000,
+      "window_ps": [
+        109000,
+        1109000
+      ],
+      "annotation": {
+        "Inputs": {
+          "total": 109,
+          "asserted": 109,
+          "percent": 100.0
+        },
+        "Outputs": {
+          "total": 64,
+          "asserted": 64,
+          "percent": 100.0
+        },
+        "Flop": {
+          "total": 609,
+          "asserted": 609,
+          "percent": 100.0
+        },
+        "Total ICGC": {
+          "total": 6,
+          "asserted": 6,
+          "percent": 100.0
+        },
+        "Driver nets": {
+          "total": 5662,
+          "asserted": 5662,
+          "percent": 100.0
+        }
+      },
+      "hierarchy": {
+        "/ucc_energy_int32": {
+          "cells": 4844,
+          "leakage_mw": 1.15818,
+          "internal_mw": 0.504736,
+          "switching_mw": 0.163167,
+          "total_mw": 1.82609
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST2": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.0036565,
+          "switching_mw": 0.016795,
+          "total_mw": 0.0205433
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST5": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00365062,
+          "switching_mw": 0.00692156,
+          "total_mw": 0.0106639
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST0": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST1": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST3": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST4": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        }
+      },
+      "vcd_sha256": "71b9d1137f64d9c37fecc97406ba46f9af1e09804ea63ba37f07fe5a999ed831",
+      "finished_utc": "2026-11-12T04:09:07.962616+00:00"
+    },
+    "int_mulhi_s": {
+      "cells": 4844,
+      "leakage_mw": 1.22582,
+      "internal_mw": 2.59452,
+      "switching_mw": 0.914917,
+      "total_mw": 4.73526,
+      "dynamic_mw": 3.509437,
+      "dynamic_pj_per_op": 3.509437,
+      "operations": 1000,
+      "window_ps": [
+        109000,
+        1109000
+      ],
+      "annotation": {
+        "Inputs": {
+          "total": 109,
+          "asserted": 109,
+          "percent": 100.0
+        },
+        "Outputs": {
+          "total": 64,
+          "asserted": 64,
+          "percent": 100.0
+        },
+        "Flop": {
+          "total": 609,
+          "asserted": 609,
+          "percent": 100.0
+        },
+        "Total ICGC": {
+          "total": 6,
+          "asserted": 6,
+          "percent": 100.0
+        },
+        "Driver nets": {
+          "total": 5662,
+          "asserted": 5662,
+          "percent": 100.0
+        }
+      },
+      "hierarchy": {
+        "/ucc_energy_int32": {
+          "cells": 4844,
+          "leakage_mw": 1.22582,
+          "internal_mw": 2.59452,
+          "switching_mw": 0.914917,
+          "total_mw": 4.73526
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST0": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00365629,
+          "switching_mw": 0.0398068,
+          "total_mw": 0.0435548
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST1": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00365814,
+          "switching_mw": 0.0202424,
+          "total_mw": 0.0239922
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST3": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00365539,
+          "switching_mw": 0.0152419,
+          "total_mw": 0.018989
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST4": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00365442,
+          "switching_mw": 0.0134285,
+          "total_mw": 0.0171747
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST2": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST5": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        }
+      },
+      "vcd_sha256": "3b8ff95474c8af8406e45a1c7f07627e85f39ae6136e52d07474c4015b250e3d",
+      "finished_utc": "2026-11-12T04:09:41.051040+00:00"
+    },
+    "int_mulhi_u": {
+      "cells": 4844,
+      "leakage_mw": 1.21555,
+      "internal_mw": 2.43784,
+      "switching_mw": 0.873968,
+      "total_mw": 4.52736,
+      "dynamic_mw": 3.311808,
+      "dynamic_pj_per_op": 3.311808,
+      "operations": 1000,
+      "window_ps": [
+        109000,
+        1109000
+      ],
+      "annotation": {
+        "Inputs": {
+          "total": 109,
+          "asserted": 109,
+          "percent": 100.0
+        },
+        "Outputs": {
+          "total": 64,
+          "asserted": 64,
+          "percent": 100.0
+        },
+        "Flop": {
+          "total": 609,
+          "asserted": 609,
+          "percent": 100.0
+        },
+        "Total ICGC": {
+          "total": 6,
+          "asserted": 6,
+          "percent": 100.0
+        },
+        "Driver nets": {
+          "total": 5662,
+          "asserted": 5662,
+          "percent": 100.0
+        }
+      },
+      "hierarchy": {
+        "/ucc_energy_int32": {
+          "cells": 4844,
+          "leakage_mw": 1.21555,
+          "internal_mw": 2.43784,
+          "switching_mw": 0.873968,
+          "total_mw": 4.52736
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST0": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00365629,
+          "switching_mw": 0.0398068,
+          "total_mw": 0.0435548
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST1": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00365814,
+          "switching_mw": 0.0202424,
+          "total_mw": 0.0239922
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST3": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00365539,
+          "switching_mw": 0.0152419,
+          "total_mw": 0.018989
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST4": {
+          "cells": 1,
+          "leakage_mw": 9.17397e-05,
+          "internal_mw": 0.00365442,
+          "switching_mw": 0.0134285,
+          "total_mw": 0.0171747
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST2": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        },
+        "/ucc_energy_int32/RC_CG_HIER_INST5": {
+          "cells": 1,
+          "leakage_mw": 8.64564e-05,
+          "internal_mw": 0.00172016,
+          "switching_mw": 0.000410457,
+          "total_mw": 0.00221707
+        }
+      },
+      "vcd_sha256": "4edab300c4d1c64672e417d56184a013817b0df35c63880db5a157aad9a3ae87",
+      "finished_utc": "2026-11-12T04:09:46.735990+00:00"
+    }
+  }
+}

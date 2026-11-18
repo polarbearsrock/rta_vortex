@@ -1,0 +1,364 @@
+{
+  "passed": true,
+  "arbitrary_inputs_and_state": true,
+  "arbitrary_instruction_order": true,
+  "actual_liberty_functions_checked": true,
+  "retained_liberty_pin_and_state_functions_equal": true,
+  "original_register_inventory_preserved": true,
+  "all_clock_pins_unchanged": true,
+  "all_input_and_output_connections_equal_after_unary_aliases": true,
+  "changed_masters": {
+    "g635575": {
+      "before": "OAI211D0BWP30P140HVT",
+      "after": "OAI211D0BWP30P140",
+      "sequential": false
+    },
+    "g641636": {
+      "before": "NR2D0BWP30P140HVT",
+      "after": "NR2D1BWP30P140LVT",
+      "sequential": false
+    },
+    "g642029": {
+      "before": "INR3D0BWP30P140HVT",
+      "after": "INR3D0BWP30P140",
+      "sequential": false
+    },
+    "g645015": {
+      "before": "NR2D0BWP30P140",
+      "after": "NR2OPTPAD1BWP30P140LVT",
+      "sequential": false
+    },
+    "g589660": {
+      "before": "AOI21D0BWP30P140",
+      "after": "AOI21OPTREPBD1BWP30P140LVT",
+      "sequential": false
+    },
+    "g6128": {
+      "before": "OAI211D0BWP30P140HVT",
+      "after": "OAI211D1BWP30P140LVT",
+      "sequential": false
+    },
+    "g641527": {
+      "before": "NR2D0BWP30P140HVT",
+      "after": "NR2D1BWP30P140LVT",
+      "sequential": false
+    },
+    "g12388": {
+      "before": "INR4D0BWP30P140",
+      "after": "INR4D0BWP30P140LVT",
+      "sequential": false
+    },
+    "g2803": {
+      "before": "INVD1BWP30P140LVT",
+      "after": "INVD1P5BWP30P140",
+      "sequential": false
+    },
+    "g12535": {
+      "before": "AOI222D0BWP30P140",
+      "after": "AOI222D0BWP30P140LVT",
+      "sequential": false
+    },
+    "g14560": {
+      "before": "AOI222D0BWP30P140",
+      "after": "AOI222D0BWP30P140LVT",
+      "sequential": false
+    }
+  },
+  "added_unary_cells": [
+    "drc58",
+    "drc_bufs106",
+    "drc_bufs108",
+    "drc_bufs112",
+    "drc_bufs114",
+    "drc_bufs118",
+    "drc_bufs120",
+    "drc_bufs28",
+    "drc_bufs38",
+    "drc_bufs40",
+    "drc_bufs53",
+    "drc_bufs54",
+    "drc_bufs77",
+    "drc_bufs84",
+    "drc_bufs86"
+  ],
+  "rewired_cells": {
+    "g335298": {
+      "before": {
+        "A1": "op372_g1_n_460",
+        "A2": "op310_g1_n_462",
+        "ZN": "n_27839"
+      },
+      "after": {
+        "A1": "n_3736",
+        "A2": "op310_g1_n_462",
+        "ZN": "n_27839"
+      }
+    },
+    "g638433": {
+      "before": {
+        "A1": "n_14498",
+        "A2": "n_14497",
+        "A3": "n_14496",
+        "A4": "n_14495",
+        "ZN": "n_15279"
+      },
+      "after": {
+        "A1": "n_14498",
+        "A2": "n_3978",
+        "A3": "n_14496",
+        "A4": "n_14495",
+        "ZN": "n_15279"
+      }
+    },
+    "g638724": {
+      "before": {
+        "A1": "n_8450",
+        "A2": "n_14842",
+        "B": "n_14200",
+        "ZN": "n_20194"
+      },
+      "after": {
+        "A1": "n_8450",
+        "A2": "n_4005",
+        "B": "n_14200",
+        "ZN": "n_20194"
+      }
+    },
+    "g639608": {
+      "before": {
+        "A1": "n_13194",
+        "A2": "n_13193",
+        "B": "n_17596",
+        "Z": "n_17355"
+      },
+      "after": {
+        "A1": "n_4035",
+        "A2": "n_13193",
+        "B": "n_17596",
+        "Z": "n_17355"
+      }
+    },
+    "g639872": {
+      "before": {
+        "A1": "n_13194",
+        "A2": "n_13193",
+        "ZN": "n_17596"
+      },
+      "after": {
+        "A1": "n_4035",
+        "A2": "n_13193",
+        "ZN": "n_17596"
+      }
+    },
+    "g640246": {
+      "before": {
+        "A1": "n_12607",
+        "A2": "op372_g1_n_460",
+        "A3": "op271_g1_n_463",
+        "ZN": "n_13277"
+      },
+      "after": {
+        "A1": "n_12607",
+        "A2": "n_3736",
+        "A3": "op271_g1_n_463",
+        "ZN": "n_13277"
+      }
+    },
+    "g642031": {
+      "before": {
+        "A1": "n_31078",
+        "A2": "n_35883",
+        "A3": "n_30812",
+        "A4": "n_30928",
+        "Z": "n_12271"
+      },
+      "after": {
+        "A1": "n_3269",
+        "A2": "n_35883",
+        "A3": "n_30812",
+        "A4": "n_30928",
+        "Z": "n_12271"
+      }
+    },
+    "g644578": {
+      "before": {
+        "A1": "n_31078",
+        "A2": "n_11489",
+        "ZN": "op553_g1_n_457"
+      },
+      "after": {
+        "A1": "n_3269",
+        "A2": "n_11489",
+        "ZN": "op553_g1_n_457"
+      }
+    },
+    "g693368": {
+      "before": {
+        "A1": "n_14841",
+        "A2": "n_14843",
+        "A3": "n_14842",
+        "A4": "n_14840",
+        "Z": "n_85580"
+      },
+      "after": {
+        "A1": "n_14841",
+        "A2": "n_14843",
+        "A3": "n_4005",
+        "A4": "n_14840",
+        "Z": "n_85580"
+      }
+    },
+    "g706160": {
+      "before": {
+        "A1": "n_8450",
+        "A2": "n_14497",
+        "B1": "n_30556",
+        "B2": "n_87379",
+        "C": "n_19053",
+        "ZN": "n_93029"
+      },
+      "after": {
+        "A1": "n_8450",
+        "A2": "n_3978",
+        "B1": "n_30556",
+        "B2": "n_87379",
+        "C": "n_19053",
+        "ZN": "n_93029"
+      }
+    },
+    "g755": {
+      "before": {
+        "A1": "n_2406",
+        "A2": "n_31698",
+        "B": "n_8411",
+        "C": "n_8393",
+        "ZN": "n_2422"
+      },
+      "after": {
+        "A1": "n_2406",
+        "A2": "n_31698",
+        "B": "n_8411",
+        "C": "n_3793",
+        "ZN": "n_2422"
+      }
+    },
+    "g3966": {
+      "before": {
+        "A1": "n_8397",
+        "A2": "n_5320",
+        "B": "n_8411",
+        "C": "n_8393",
+        "ZN": "n_8412"
+      },
+      "after": {
+        "A1": "n_8397",
+        "A2": "n_5320",
+        "B": "n_8411",
+        "C": "n_3793",
+        "ZN": "n_8412"
+      }
+    },
+    "g6257": {
+      "before": {
+        "A1": "n_9384",
+        "A2": "n_8886",
+        "A3": "n_102845",
+        "A4": "n_16953",
+        "ZN": "n_10556"
+      },
+      "after": {
+        "A1": "n_3458",
+        "A2": "n_8886",
+        "A3": "n_102845",
+        "A4": "n_16953",
+        "ZN": "n_10556"
+      }
+    },
+    "g11862": {
+      "before": {
+        "A1": "n_30143",
+        "A2": "n_31009",
+        "A3": "n_31098",
+        "A4": "n_31078",
+        "ZN": "n_21256"
+      },
+      "after": {
+        "A1": "n_30143",
+        "A2": "n_31009",
+        "A3": "n_31098",
+        "A4": "n_3269",
+        "ZN": "n_21256"
+      }
+    },
+    "g14414": {
+      "before": {
+        "A1": "b32_int2_result_q[29]",
+        "A2": "n_29221",
+        "B1": "n_26757",
+        "B2": "p2_34066",
+        "C1": "n_25744",
+        "C2": "p1_33827",
+        "ZN": "n_26954"
+      },
+      "after": {
+        "A1": "b32_int2_result_q[29]",
+        "A2": "n_29221",
+        "B1": "n_26757",
+        "B2": "p2_34066",
+        "C1": "n_3139",
+        "C2": "p1_33827",
+        "ZN": "n_26954"
+      }
+    },
+    "g14416": {
+      "before": {
+        "A1": "b32_int2_result_q[19]",
+        "A2": "n_29221",
+        "B1": "n_26757",
+        "B2": "p2_34076",
+        "C1": "n_25744",
+        "C2": "p1_33837",
+        "ZN": "n_26958"
+      },
+      "after": {
+        "A1": "b32_int2_result_q[19]",
+        "A2": "n_29221",
+        "B1": "n_26757",
+        "B2": "p2_34076",
+        "C1": "n_3139",
+        "C2": "p1_33837",
+        "ZN": "n_26958"
+      }
+    },
+    "g15115": {
+      "before": {
+        "A1": "op321_g1_n_466",
+        "A2": "n_15213",
+        "A3": "n_3418",
+        "B": "n_11273",
+        "ZN": "n_29025"
+      },
+      "after": {
+        "A1": "op321_g1_n_466",
+        "A2": "n_15213",
+        "A3": "n_3410",
+        "B": "n_11273",
+        "ZN": "n_29025"
+      }
+    }
+  },
+  "mapped_sha256": "795547913478148b7ab047464cfad79d96323e793cf111626b02b1be1383ece6",
+  "parent_mapped_sha256": "90215625b85d443c6de531f04745c8d416bff998da728d1d2757c2d97a5249da",
+  "scope": "Every retained named cell has identical actual Liberty pin and state functions. Output-wire renaming is bijective through retained output identities. Every additional cell is an actual-library unary buffer or inverter; recursive alias resolution proves all retained pins and top outputs identical with zero residual inversion. No added state, clock-pin change or register move. Physical clock-gate masters, timing and energy require separate checks.",
+  "evidence_sha256": {
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/syn/ucc_reuse/b32_buffered_sizing_identity.py": "c30491386a7768ce161ee9c2d681926c47e5c9162c189e9dd7cbc1ba18a998b5",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_remapped_20261117/candidate.json": "37fe87be0070e58edccaf6501b54314ec3436fdaa5ade52fb121a398edc5ee48",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_remapped_20261117/mapped.v": "90215625b85d443c6de531f04745c8d416bff998da728d1d2757c2d97a5249da",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_drv_size_20261117/checked.v": "795547913478148b7ab047464cfad79d96323e793cf111626b02b1be1383ece6",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_remapped_20261117_power/manifest.json": "4eebccde8b57119b3455785af038ca9c5484143b49c30829588326c3b6ff61f0",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_drv_identity_20261117/models.json": "7a0ad6a1012d4bbfcb56021da610f172450d54a9e420b25d561dd1db77222449",
+    "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140_180a/tcbn28hpcplusbwp30p140ssg0p72v125c.lib": "44a332fd6b6defdb005a3d7a7c4e7f817fe8ec6e6036b0293acd549fa6d353c5",
+    "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140hvt_180a/tcbn28hpcplusbwp30p140hvtssg0p72v125c.lib": "47d6a840a373f60d53e66b7a4dcf5e921115575abb62e6be174bac0cd72ce004",
+    "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140lvt_180a/tcbn28hpcplusbwp30p140lvtssg0p72v125c.lib": "a35a385653dba58f4d8308f4c3638f1e3ca3ed3e80a249ce560386b6340ce711"
+  }
+}

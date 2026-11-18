@@ -1,0 +1,179 @@
+{
+  "synthesis": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_scalar_energy/sfu_constrom/synth",
+  "kind": "scalar_sfu",
+  "top": "ucc_energy_sfu",
+  "corner": "SSG 0.72 V /125 C",
+  "created_utc": "2026-11-12T04:21:08.529996+00:00",
+  "period_ps": 1000,
+  "warm": 100,
+  "measure": 1000,
+  "seed": 1430471493,
+  "workloads": [
+    "idle",
+    "sfu",
+    "sfu_rcp",
+    "sfu_rsqrt",
+    "sfu_ex2",
+    "sfu_lg2",
+    "sfu_sinpi",
+    "sfu_cospi",
+    "sfu_tanh"
+  ],
+  "gate_simulation": {
+    "idle": {
+      "checked": 0,
+      "window_ps": [
+        109000,
+        1109000
+      ],
+      "vcd_sha256": "2ca03bfbe0c59bf7514315a53f4aeb24335ed6abc63ec565cdd4ea447880a400"
+    },
+    "sfu": {
+      "checked": 1100,
+      "window_ps": [
+        109000,
+        1109000
+      ],
+      "vcd_sha256": "1a6f46959c8b892e39a943fb1322fe0b05463585de9ca2d8a1b57dcbbaae9e71"
+    },
+    "sfu_rcp": {
+      "checked": 1100,
+      "window_ps": [
+        109000,
+        1109000
+      ],
+      "vcd_sha256": "2bfdb8256ea11ba6830b4e0f6afb74bb5495d3cf802b1900a9f84e264987631a"
+    },
+    "sfu_rsqrt": {
+      "checked": 1100,
+      "window_ps": [
+        109000,
+        1109000
+      ],
+      "vcd_sha256": "70db7d446a82a0c344d885f78d6e603e42ab27898c4865cedff8ecda846ddf62"
+    },
+    "sfu_ex2": {
+      "checked": 1100,
+      "window_ps": [
+        109000,
+        1109000
+      ],
+      "vcd_sha256": "7a3fb690030916bd6399b977d50071f20bdf45aadc86f1768002207007d97a9d"
+    },
+    "sfu_lg2": {
+      "checked": 1100,
+      "window_ps": [
+        109000,
+        1109000
+      ],
+      "vcd_sha256": "3f4b52f668cad224a295e4801916eae3f32e40329b267b971925a363984aae59"
+    },
+    "sfu_sinpi": {
+      "checked": 1100,
+      "window_ps": [
+        109000,
+        1109000
+      ],
+      "vcd_sha256": "5fce1b4b1ca2c2b2e13d45e94d48e7991e18da7ed6ffb3f928c7822ead226848"
+    },
+    "sfu_cospi": {
+      "checked": 1100,
+      "window_ps": [
+        109000,
+        1109000
+      ],
+      "vcd_sha256": "842c294a3c064521dd8a3a1885330f1ee659cef94fbcf9b3e16bec52d20c5f40"
+    },
+    "sfu_tanh": {
+      "checked": 1100,
+      "window_ps": [
+        109000,
+        1109000
+      ],
+      "vcd_sha256": "4cfe980f56d5e2579256fd5608bb23101989b21fafa1d2bf4e5ac42362197960"
+    }
+  },
+  "results": {},
+  "libraries": [
+    {
+      "kind": "LIB",
+      "corner": "ss",
+      "path": "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140_180a/tcbn28hpcplusbwp30p140ssg0p72v125c.lib",
+      "sha256": "44a332fd6b6defdb005a3d7a7c4e7f817fe8ec6e6036b0293acd549fa6d353c5"
+    },
+    {
+      "kind": "LIB",
+      "corner": "ss",
+      "path": "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140hvt_180a/tcbn28hpcplusbwp30p140hvtssg0p72v125c.lib",
+      "sha256": "47d6a840a373f60d53e66b7a4dcf5e921115575abb62e6be174bac0cd72ce004"
+    },
+    {
+      "kind": "LIB",
+      "corner": "ss",
+      "path": "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140lvt_180a/tcbn28hpcplusbwp30p140lvtssg0p72v125c.lib",
+      "sha256": "a35a385653dba58f4d8308f4c3638f1e3ca3ed3e80a249ce560386b6340ce711"
+    }
+  ],
+  "files": {
+    "mapped.v": "3ceb63049e69cf14303fc024b6d1462945f7a3d544a723ebbda32ee21dea8744",
+    "design.sv": "4aba49b080fce2b9bfe08ac0b2a6c5410255cff1224978ef8b2439e97c92981c",
+    "synthesis_manifest.json": "1a18929b374b3fcad6b6467ceb61f5495cdb82f6fc6f3052ded53128539edc77",
+    "power.sdc": "46ac41e52981c94c216697420a7a6d47d4bd5561fd6116c397b0b476dc384b32",
+    "tb.sv": "d1110ea5c115c70caa0d4c8f0caf0294bc33bc2368aef1679bd4e655dc851e3b",
+    "idle.txt": "a72ab38e9a109a787b001a029043de517f7cd337b6beba8e80229e8094d089e0",
+    "sfu.txt": "d01533592ff96af8e4de089aa970def28760641f2c3687a2a42007518b0c508c",
+    "sfu_rcp.txt": "4845998c335d79e0fa54d8fbc7d80d3074a0d58b4423209fc4d0f99cca1f60b4",
+    "sfu_rsqrt.txt": "b7e3dd77640784f68f8d938a208c38a28d742274de6518d62eb19b586c06ce7f",
+    "sfu_ex2.txt": "9e2455b6e5f3587dde02de00ef87091be06e20f6052ed2b7c4696449d5cde7da",
+    "sfu_lg2.txt": "01f19317609f38f36214eb23a4e1879dd413954ad443b87051db9972ca8cebec",
+    "sfu_sinpi.txt": "f21fa8dd129104f34621b81525c94da99a1198fbdd88ecf5d1e98a9f0846a926",
+    "sfu_cospi.txt": "d68688f76dc41d4a61ae6e0ac77d31f926e8679ca57b2c6f59852dcd92e0ea8a",
+    "sfu_tanh.txt": "394db7be32c33c2b5ab823d39b477baeb20680095066e1e5ab7fdca9f43676c1",
+    "libraries_power.tcl": "0878914e363d74492ebc7dcf1f4e8bf2101a2b0b17d96fa8353228848d12affe"
+  },
+  "reference_sha256": {
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_fcvt_unit.sv": "982595948e7851b0f2d631e3dceaa21187ec5f2721cd54b94d92c3ff04241bd1",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_csa_42.sv": "2be561f8b1f730fe1bb5f4334b0759a484ada66159ac72318b50c7781589c309",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_pipe_register.sv": "e9d57d106fbd6e68bb3f6a9accbd226e21530d36b2a560dc4566b8ec076454d8",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_multiplier.sv": "fef4477661999a2ac415c03579b83146e644c21e7fb4c17906d9d3a92deec1ed",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_fp_classifier.sv": "cba8b98ded6dc4b11b8ae3c7fb0d9aa3a4237324faaeea40757156026152f335",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_fma_unit_rtl.sv": "2bf246e0a790c040a5762e291cc0f5ed0853f8390eadfbbea7838e784b73d575",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_csa_tree.sv": "93a07eb72ad65b12b5914d8e93391e21083d8c133988ba58b7f16ed867ad2e48",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_rom.sv": "467e25095e4d12265119ec95a2ed688d0ef69ad9e8a4108112e5cacee2ee2d7a",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_mufu_rom.sv": "6e956d2eb2692ac11407b9c9e4b3cffefe5ee59e00511321563cfac63e66d850",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_fp_rounding.sv": "64a482a4fd98ffc8441e8dd85ec910c564adf4c5b1fc1a3cba41985e283b0992",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_fpu_pkg.sv": "0c3be774ac9c8375cbc82eab1ce7d3da24a4f87f8653346497d2e557957f72bd",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_lzc.sv": "35552af820d11451780e012c56e0e3d6981f795c6d230433af7ecc1439f919ca",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_fncp_unit.sv": "c197c9fd4930009b5f3f7974988edb50fa04d0bf66c98d486a4d6a6febef2640",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_mufu_pe.sv": "e79a1ed3b77a3d3155f10de4ec14f49ffc8fe8172e86dfb60b8adbc2acc16c23",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_ks_adder.sv": "d91073c837de5040fd19fe977bb72b09f90a1613906141299bae147fd5e830bc",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_wallace_mul.sv": "54d42ebaa1af07d017318ef272141e69beeea0072a40b3024fc29af81caa8f92",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_csa_32.sv": "f20ce1fd8af2d69710092dd0db7f32b5d07b3006e042235e0edcab013003afde",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_gpu_pkg.sv": "e67dbaaedc3c23e8b762738c8e5b0866b05001387cefd165d9606267a3fcdc3d",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_find_first.sv": "5c9b359b7055fc5844b05f027d01c63fdcd946f71895e06a3bffdf47968c49aa",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_reuse/synth_baseline/design.sv": "dbdafee7d2018bf6bd5cea8c073ba9bcaf604b771b5374a28eabeefd42ef48d5",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/syn/ucc_reuse/ucc_energy_scalar.sv": "26608fbb4d35e705f3e424874f448b2e94c8a183375cc2f2366bd5059680de49",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/syn/ucc_reuse/ucc_energy_const_rom.sv": "78b76b2ba17d41745fa8ba98bcb22bd3f4d3c652635f178d9185edf0e8f1a70c"
+  },
+  "driver_sha256": "d5be7ce2a2859581c130a7c90d053d84f01f8ff6f5541936f513690deccbb70f",
+  "activity": "Direct zero-delay gate VCD",
+  "interconnect": "Library cap + 5 fF; no SPEF/CTS/delay glitches",
+  "gating": "Synthesized per-unit load enables and input isolation; exact mapped netlist",
+  "latency_by_unit": {
+    "fma": 8,
+    "cvt": 5,
+    "cmp": 2,
+    "alu": 2,
+    "imul": 4,
+    "sfu": 7
+  },
+  "numerical_semantics": "Vortex truncated products / half-up, checked with C model",
+  "setup_wns_ps": 0.0,
+  "scope": "Independent scalar reference; no FP64 or integer/FP divider; MUL no MAD",
+  "execution_driver_sha256": "888ff3d0375ae0fafc14530f22471ee13c741ef391fbcefa03eccbe225b0d039",
+  "gate_models_sha256": {
+    "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/verilog/tcbn28hpcplusbwp30p140_110a/tcbn28hpcplusbwp30p140.v": "ad61185819c14bf80791f2ce89ce943e2b8967e41ed180f624d18ceaafa99501",
+    "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/verilog/tcbn28hpcplusbwp30p140hvt_110a/tcbn28hpcplusbwp30p140hvt.v": "5391dac8a65b10d3ccb5abe11a7e76a1541ea1bd6d56fc0de3951b8c2761683d",
+    "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/verilog/tcbn28hpcplusbwp30p140lvt_110a/tcbn28hpcplusbwp30p140lvt.v": "acd9dccd9f40b77d396ee0bb46cc99075596fd5ab501ed5e82d74227e9baaab8"
+  }
+}

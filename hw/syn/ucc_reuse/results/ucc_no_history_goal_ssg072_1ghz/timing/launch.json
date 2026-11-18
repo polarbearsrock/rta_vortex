@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/data/eda_tools/cadence/DDI251/GENUS251/bin/genus",
+    "-batch",
+    "-files",
+    "timing.tcl",
+    "-log",
+    "genus"
+  ],
+  "started_utc": "2026-11-18T01:14:18.671165+00:00",
+  "complete": true,
+  "pid": 3052127,
+  "returncode": 0,
+  "finished_utc": "2026-11-18T01:15:22.168478+00:00"
+}

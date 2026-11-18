@@ -1,0 +1,105 @@
+{
+  "flops": 4496,
+  "clock_gates": 153,
+  "run_history_removed": true,
+  "immediate_parent": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_remapped_20261117",
+  "parent_mapped_sha256": "90215625b85d443c6de531f04745c8d416bff998da728d1d2757c2d97a5249da",
+  "mapped_sha256": "795547913478148b7ab047464cfad79d96323e793cf111626b02b1be1383ece6",
+  "cells": 51090,
+  "added_registers": 0,
+  "added_cells": 15,
+  "latency_unchanged": true,
+  "all_original_input_and_clock_connections_preserved": false,
+  "all_original_input_values_and_clock_connections_preserved": true,
+  "original_sequential_inventory_preserved": true,
+  "all_clock_pins_unchanged": true,
+  "buffered_sizing_identity_proved": true,
+  "arbitrary_state_next_state_identity_proved": true,
+  "sized_masters": {
+    "g635575": {
+      "before": "OAI211D0BWP30P140HVT",
+      "after": "OAI211D0BWP30P140",
+      "sequential": false
+    },
+    "g641636": {
+      "before": "NR2D0BWP30P140HVT",
+      "after": "NR2D1BWP30P140LVT",
+      "sequential": false
+    },
+    "g642029": {
+      "before": "INR3D0BWP30P140HVT",
+      "after": "INR3D0BWP30P140",
+      "sequential": false
+    },
+    "g645015": {
+      "before": "NR2D0BWP30P140",
+      "after": "NR2OPTPAD1BWP30P140LVT",
+      "sequential": false
+    },
+    "g589660": {
+      "before": "AOI21D0BWP30P140",
+      "after": "AOI21OPTREPBD1BWP30P140LVT",
+      "sequential": false
+    },
+    "g6128": {
+      "before": "OAI211D0BWP30P140HVT",
+      "after": "OAI211D1BWP30P140LVT",
+      "sequential": false
+    },
+    "g641527": {
+      "before": "NR2D0BWP30P140HVT",
+      "after": "NR2D1BWP30P140LVT",
+      "sequential": false
+    },
+    "g12388": {
+      "before": "INR4D0BWP30P140",
+      "after": "INR4D0BWP30P140LVT",
+      "sequential": false
+    },
+    "g2803": {
+      "before": "INVD1BWP30P140LVT",
+      "after": "INVD1P5BWP30P140",
+      "sequential": false
+    },
+    "g12535": {
+      "before": "AOI222D0BWP30P140",
+      "after": "AOI222D0BWP30P140LVT",
+      "sequential": false
+    },
+    "g14560": {
+      "before": "AOI222D0BWP30P140",
+      "after": "AOI222D0BWP30P140LVT",
+      "sequential": false
+    }
+  },
+  "added_unary_cells": [
+    "drc58",
+    "drc_bufs106",
+    "drc_bufs108",
+    "drc_bufs112",
+    "drc_bufs114",
+    "drc_bufs118",
+    "drc_bufs120",
+    "drc_bufs28",
+    "drc_bufs38",
+    "drc_bufs40",
+    "drc_bufs53",
+    "drc_bufs54",
+    "drc_bufs77",
+    "drc_bufs84",
+    "drc_bufs86"
+  ],
+  "retiming": false,
+  "native_rtl_reference_only": true,
+  "selected_changed": false,
+  "scope": "Independent actual-Liberty and whole-graph alias proof preserves all original sequential state and observable functions. Only sizing and unary buffering/wire renaming; no register movement, history state or clock-pin changes. Fresh mixed/reset verification, both-mode STA, clock-gate audit and Joules are required.",
+  "evidence_sha256": {
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/syn/ucc_reuse/b32_adopt_buffered_sizing_v2.py": "c6c23e8e91a13d2166ded3cc4ae832534bdf5be90df724b6be1a6e17ad7f24f3",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_remapped_20261117/candidate.json": "37fe87be0070e58edccaf6501b54314ec3436fdaa5ade52fb121a398edc5ee48",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_remapped_20261117/mapped.v": "90215625b85d443c6de531f04745c8d416bff998da728d1d2757c2d97a5249da",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_drv_size_20261117/checked.v": "795547913478148b7ab047464cfad79d96323e793cf111626b02b1be1383ece6",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_drv_identity_20261117/proof.json": "ea0646f6ec57342bb08e5c59c11fcbd07f366819705463ea07cf0e25ce384c1d",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117/proof.json": "ea0646f6ec57342bb08e5c59c11fcbd07f366819705463ea07cf0e25ce384c1d",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117/mapped.v": "795547913478148b7ab047464cfad79d96323e793cf111626b02b1be1383ece6"
+  }
+}

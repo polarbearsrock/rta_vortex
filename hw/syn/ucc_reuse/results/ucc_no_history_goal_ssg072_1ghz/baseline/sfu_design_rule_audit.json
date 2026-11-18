@@ -1,0 +1,33 @@
+{
+  "source_run": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_scalar_energy/sfu_constrom/synth",
+  "created_utc": "2026-11-12T13:37:23.504585+00:00",
+  "seed_database_sha256": "631c958603e900409c43afc49d5fc0b93685af11d083efd89412bce466276d09",
+  "setup_views": [
+    "all.SS.setup_view"
+  ],
+  "input_sha256": {
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_scalar_energy/sfu_constrom/synth/final.db": "631c958603e900409c43afc49d5fc0b93685af11d083efd89412bce466276d09",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_scalar_energy/sfu_constrom/synth/manifest.json": "1a18929b374b3fcad6b6467ceb61f5495cdb82f6fc6f3052ded53128539edc77",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sfu_constrom_matched_drv_audit/analyze.tcl": "49319f5b7b7547a38d657639bcac54b87e2a35833456e0578e48bb7546b18f97",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/syn/ucc_reuse/b32_final_design_rules.py": "1d7aebf1a09afeda69ecc9243cf81d7c240ac6b2deedbe8a34b8f648c085e1f5"
+  },
+  "database_unmodified": true,
+  "scope": "Read-only final setup-view design-rule audit",
+  "returncode": 0,
+  "violation_counts": {
+    "all.SS.setup_view": {
+      "max_transition": 0,
+      "max_fanout": 0,
+      "max_capacitance": 0
+    }
+  },
+  "design_rules_pass": true,
+  "reports_sha256": {
+    "all.SS.setup_view_max_transition.rpt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "all.SS.setup_view_max_fanout.rpt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "all.SS.setup_view_max_capacitance.rpt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "design_rules.rpt": "51c6097810e02754f80d34dc6f6d25d1c59b65c99def080bc1e505b4f9f77450"
+  },
+  "run_log_sha256": "42bf25f6c374be7a9869a748252db4677df10f3b1276e255dfeb636b8276edec",
+  "complete": true
+}

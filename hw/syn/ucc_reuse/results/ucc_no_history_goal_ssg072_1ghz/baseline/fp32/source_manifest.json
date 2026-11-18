@@ -1,0 +1,96 @@
+{
+  "top": "ucc_energy_fp32",
+  "group": "fp32",
+  "source_sha256": {
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_fcvt_unit.sv": "982595948e7851b0f2d631e3dceaa21187ec5f2721cd54b94d92c3ff04241bd1",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_csa_42.sv": "2be561f8b1f730fe1bb5f4334b0759a484ada66159ac72318b50c7781589c309",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_pipe_register.sv": "e9d57d106fbd6e68bb3f6a9accbd226e21530d36b2a560dc4566b8ec076454d8",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_multiplier.sv": "fef4477661999a2ac415c03579b83146e644c21e7fb4c17906d9d3a92deec1ed",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_fp_classifier.sv": "cba8b98ded6dc4b11b8ae3c7fb0d9aa3a4237324faaeea40757156026152f335",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_fma_unit_rtl.sv": "2bf246e0a790c040a5762e291cc0f5ed0853f8390eadfbbea7838e784b73d575",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_csa_tree.sv": "93a07eb72ad65b12b5914d8e93391e21083d8c133988ba58b7f16ed867ad2e48",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_rom.sv": "467e25095e4d12265119ec95a2ed688d0ef69ad9e8a4108112e5cacee2ee2d7a",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_mufu_rom.sv": "6e956d2eb2692ac11407b9c9e4b3cffefe5ee59e00511321563cfac63e66d850",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_fp_rounding.sv": "64a482a4fd98ffc8441e8dd85ec910c564adf4c5b1fc1a3cba41985e283b0992",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_fpu_pkg.sv": "0c3be774ac9c8375cbc82eab1ce7d3da24a4f87f8653346497d2e557957f72bd",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_lzc.sv": "35552af820d11451780e012c56e0e3d6981f795c6d230433af7ecc1439f919ca",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_fncp_unit.sv": "c197c9fd4930009b5f3f7974988edb50fa04d0bf66c98d486a4d6a6febef2640",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_mufu_pe.sv": "e79a1ed3b77a3d3155f10de4ec14f49ffc8fe8172e86dfb60b8adbc2acc16c23",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_ks_adder.sv": "d91073c837de5040fd19fe977bb72b09f90a1613906141299bae147fd5e830bc",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_wallace_mul.sv": "54d42ebaa1af07d017318ef272141e69beeea0072a40b3024fc29af81caa8f92",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_csa_32.sv": "f20ce1fd8af2d69710092dd0db7f32b5d07b3006e042235e0edcab013003afde",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_gpu_pkg.sv": "e67dbaaedc3c23e8b762738c8e5b0866b05001387cefd165d9606267a3fcdc3d",
+    "/data2/jwang710/RTA_code/vortex_b200/build/hw/syn/synopsys/b200_genus/src/VX_find_first.sv": "5c9b359b7055fc5844b05f027d01c63fdcd946f71895e06a3bffdf47968c49aa",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_reuse/synth_baseline/design.sv": "dbdafee7d2018bf6bd5cea8c073ba9bcaf604b771b5374a28eabeefd42ef48d5",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/syn/ucc_reuse/ucc_energy_scalar.sv": "26608fbb4d35e705f3e424874f448b2e94c8a183375cc2f2366bd5059680de49"
+  },
+  "design_sha256": "4105e4c3064d38f8e4f1ce566797736825d17f35686e9ef23db5236a29e61c7b",
+  "workloads": [
+    "idle",
+    "fma32",
+    "fp32_add",
+    "fp32_mul",
+    "cvt_i32_f32",
+    "cvt_u32_f32",
+    "cvt_f32_i32",
+    "cvt_f32_u32"
+  ],
+  "latency_by_unit": {
+    "fma": 8,
+    "cvt": 5,
+    "cmp": 2,
+    "alu": 2,
+    "imul": 4,
+    "sfu": 7
+  },
+  "files": {
+    "design.sv": "4105e4c3064d38f8e4f1ce566797736825d17f35686e9ef23db5236a29e61c7b",
+    "tb.sv": "dec2999fcd8a560ead950cfb5c25117ae2093f3917d94dc6c4069b280ffb2fec",
+    "idle.txt": "a72ab38e9a109a787b001a029043de517f7cd337b6beba8e80229e8094d089e0",
+    "fma32.txt": "e1a36188feb5f87d9ff4deb204bb58c9c22b2c0b56e7c10a0d0284d844ab5d2c",
+    "fp32_add.txt": "e4dc6575751be84b66451b29cef70b6d0f7df39833500c40ef15abefcaa31de8",
+    "fp32_mul.txt": "5994e776577b4163984d70171ad8982cfbc4d3f8016121bfd2d1152477d6d797",
+    "cvt_i32_f32.txt": "193058e86287247fa10bae49cf54765241bfe91e257baa7ae910d4cea8907410",
+    "cvt_u32_f32.txt": "6f6204f2c6580c6be8e7d45832e100bba58b1615fc6e66798b7d557268edfd45",
+    "cvt_f32_i32.txt": "4b3f1bd2891f58e5dd90fb9e9c44cbd272360c9664d09ba363015d6fbe22bfc8",
+    "cvt_f32_u32.txt": "f7be5cae741b9adee7459c434d970ef2225bf4dca59ef787106cf994622f212e"
+  },
+  "sfu_semantics": "Vortex truncated products / half-up, checked with C model",
+  "scope": "Independent scalar reference; no FP64 or integer/FP divider; MUL no MAD",
+  "source_snapshot": "Vortex SM preprocessed RTL + frozen original Shwet ALU + new wrappers",
+  "rtl_validation": {
+    "idle": {
+      "checks": 0,
+      "log_sha256": "092ac43d0afe896d6a8fb3a3f776eea9c3f837baff2ec4c8a8cf912351d600e1"
+    },
+    "fma32": {
+      "checks": 1100,
+      "log_sha256": "89b1ff4088f8b22cc257c074dce2d20ee37f034710ba26dfea77689c3fbf37da"
+    },
+    "fp32_add": {
+      "checks": 1100,
+      "log_sha256": "17ac15fc2733e5ac8bb6a5ef373a9d97d41ec5e3daf1d3ad8b5227d61b686b54"
+    },
+    "fp32_mul": {
+      "checks": 1100,
+      "log_sha256": "e6eb096431928ab4e50a08f8ed6ff678a20ceffa1794511c75d5420c0b248f91"
+    },
+    "cvt_i32_f32": {
+      "checks": 1100,
+      "log_sha256": "75ac308d408fd03ca53841e70da8af7c165665093153cc8e45738fd7ed70fc7b"
+    },
+    "cvt_u32_f32": {
+      "checks": 1100,
+      "log_sha256": "e9666db2e7a8d8a00c08a4bfcbf88d2754aeb0ac99269b57b5b0c062e726ca54"
+    },
+    "cvt_f32_i32": {
+      "checks": 1100,
+      "log_sha256": "743022102fbabe19e350e41c7c3db7917a3c0624d9c9b910c33fc329632af094"
+    },
+    "cvt_f32_u32": {
+      "checks": 1100,
+      "log_sha256": "ee7af9b4a94609fd14c23bd1b7279c43148c34c3e0d84f08efe520d397046aa1"
+    }
+  },
+  "driver_sha256": "e84d9c0e93ce735b4d632f7206f8c328b4456333da81c5984b69c58a902bfc0c"
+}

@@ -1,0 +1,1314 @@
+{
+  "cells": 51090,
+  "leakage_mw": 9.68236,
+  "internal_mw": 10.3538,
+  "switching_mw": 3.65696,
+  "total_mw": 23.6931,
+  "dynamic_mw": 14.01076,
+  "dynamic_pj_per_op": 14.01076,
+  "operations": 1000,
+  "window_ps": [
+    109000,
+    1109000
+  ],
+  "annotation": {
+    "Inputs": {
+      "total": 654,
+      "asserted": 654,
+      "percent": 100.0
+    },
+    "Outputs": {
+      "total": 65,
+      "asserted": 65,
+      "percent": 100.0
+    },
+    "Flop": {
+      "total": 6473,
+      "asserted": 6473,
+      "percent": 100.0
+    },
+    "Total ICGC": {
+      "total": 153,
+      "asserted": 153,
+      "percent": 100.0
+    },
+    "Driver nets": {
+      "total": 55683,
+      "asserted": 55683,
+      "percent": 100.0
+    }
+  },
+  "hierarchy": {
+    "/ucc_b32_pipe5": {
+      "cells": 51090,
+      "leakage_mw": 9.68236,
+      "internal_mw": 10.3538,
+      "switching_mw": 3.65696,
+      "total_mw": 23.6931
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST0": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00353389,
+      "switching_mw": 0.0789186,
+      "total_mw": 0.0824637
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST1": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00353398,
+      "switching_mw": 0.0746921,
+      "total_mw": 0.0782373
+    },
+    "/ucc_b32_pipe5/op3557": {
+      "cells": 114,
+      "leakage_mw": 0.0125703,
+      "internal_mw": 0.0244602,
+      "switching_mw": 0.0143862,
+      "total_mw": 0.0514167
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST3": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00353899,
+      "switching_mw": 0.0255084,
+      "total_mw": 0.0290586
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST7": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00354001,
+      "switching_mw": 0.0206935,
+      "total_mw": 0.0242447
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST10": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00354054,
+      "switching_mw": 0.0172316,
+      "total_mw": 0.0207834
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST9": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00354087,
+      "switching_mw": 0.015642,
+      "total_mw": 0.019194
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST14": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00354108,
+      "switching_mw": 0.014509,
+      "total_mw": 0.0180613
+    },
+    "/ucc_b32_pipe5/op3538": {
+      "cells": 163,
+      "leakage_mw": 0.0173413,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 0.0173413
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST12": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00354033,
+      "switching_mw": 0.0134862,
+      "total_mw": 0.0170377
+    },
+    "/ucc_b32_pipe5/shared_alignment_scalar_guard": {
+      "cells": 103,
+      "leakage_mw": 0.0165627,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 0.0165627
+    },
+    "/ucc_b32_pipe5/op3537": {
+      "cells": 154,
+      "leakage_mw": 0.0164732,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 0.0164732
+    },
+    "/ucc_b32_pipe5/op3539": {
+      "cells": 145,
+      "leakage_mw": 0.0156661,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 0.0156661
+    },
+    "/ucc_b32_pipe5/op3540": {
+      "cells": 148,
+      "leakage_mw": 0.0154101,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 0.0154101
+    },
+    "/ucc_b32_pipe5/op3536": {
+      "cells": 139,
+      "leakage_mw": 0.0150924,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 0.0150924
+    },
+    "/ucc_b32_pipe5/op3534": {
+      "cells": 155,
+      "leakage_mw": 0.0146882,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 0.0146882
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST35": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00353812,
+      "switching_mw": 0.0105313,
+      "total_mw": 0.0140806
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST8": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.0035377,
+      "switching_mw": 0.0103846,
+      "total_mw": 0.0139335
+    },
+    "/ucc_b32_pipe5/op3535": {
+      "cells": 139,
+      "leakage_mw": 0.013905,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 0.013905
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST36": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00353784,
+      "switching_mw": 0.0101772,
+      "total_mw": 0.0137263
+    },
+    "/ucc_b32_pipe5/op3533": {
+      "cells": 140,
+      "leakage_mw": 0.0132408,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 0.0132408
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST38": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00353737,
+      "switching_mw": 0.00960181,
+      "total_mw": 0.0131504
+    },
+    "/ucc_b32_pipe5/b32_enable_or_clock_root_1_24": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00353686,
+      "switching_mw": 0.00953209,
+      "total_mw": 0.0130802
+    },
+    "/ucc_b32_pipe5/b32_enable_or_clock_root_1_0": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00353662,
+      "switching_mw": 0.00953209,
+      "total_mw": 0.0130799
+    },
+    "/ucc_b32_pipe5/b32_enable_or_clock_root_1_48": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00353648,
+      "switching_mw": 0.00935583,
+      "total_mw": 0.0129035
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST41": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00353668,
+      "switching_mw": 0.00869927,
+      "total_mw": 0.0122472
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST43": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00353623,
+      "switching_mw": 0.00813577,
+      "total_mw": 0.0116832
+    },
+    "/ucc_b32_pipe5/b32_enable_or_clock_root_3_0": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00353497,
+      "switching_mw": 0.00762541,
+      "total_mw": 0.0111716
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST60": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00353396,
+      "switching_mw": 0.00662412,
+      "total_mw": 0.0101693
+    },
+    "/ucc_b32_pipe5/b32_enable_or_clock_root_4_0": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00352955,
+      "switching_mw": 0.00510184,
+      "total_mw": 0.00864261
+    },
+    "/ucc_b32_pipe5/b32_word_value_bank5": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00353037,
+      "switching_mw": 0.0050995,
+      "total_mw": 0.0086411
+    },
+    "/ucc_b32_pipe5/b32_word_value_bank6": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00353016,
+      "switching_mw": 0.00499738,
+      "total_mw": 0.00853876
+    },
+    "/ucc_b32_pipe5/shared_alignment_dpa_guard": {
+      "cells": 108,
+      "leakage_mw": 0.00845865,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 0.00845865
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST66": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00352869,
+      "switching_mw": 0.00429391,
+      "total_mw": 0.00783382
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST73": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00352697,
+      "switching_mw": 0.00359821,
+      "total_mw": 0.00713641
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST126": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00352462,
+      "switching_mw": 0.00313943,
+      "total_mw": 0.00667527
+    },
+    "/ucc_b32_pipe5/op3541": {
+      "cells": 73,
+      "leakage_mw": 0.00662352,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 0.00662352
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST82": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00352448,
+      "switching_mw": 0.00307981,
+      "total_mw": 0.00661552
+    },
+    "/ucc_b32_pipe5/b32_enable_or_clock_root_2_0": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00352086,
+      "switching_mw": 0.00293234,
+      "total_mw": 0.00646442
+    },
+    "/ucc_b32_pipe5/op3552": {
+      "cells": 73,
+      "leakage_mw": 0.00608353,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 0.00608353
+    },
+    "/ucc_b32_pipe5/op3549": {
+      "cells": 71,
+      "leakage_mw": 0.00600717,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 0.00600717
+    },
+    "/ucc_b32_pipe5/op3547": {
+      "cells": 75,
+      "leakage_mw": 0.00600263,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 0.00600263
+    },
+    "/ucc_b32_pipe5/op3544": {
+      "cells": 70,
+      "leakage_mw": 0.00568575,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 0.00568575
+    },
+    "/ucc_b32_pipe5/op3545": {
+      "cells": 76,
+      "leakage_mw": 0.00558531,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 0.00558531
+    },
+    "/ucc_b32_pipe5/op3543": {
+      "cells": 74,
+      "leakage_mw": 0.00553376,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 0.00553376
+    },
+    "/ucc_b32_pipe5/op3553": {
+      "cells": 70,
+      "leakage_mw": 0.00537198,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 0.00537198
+    },
+    "/ucc_b32_pipe5/op3556": {
+      "cells": 72,
+      "leakage_mw": 0.00527517,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 0.00527517
+    },
+    "/ucc_b32_pipe5/b32_word_value_bank22": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00351436,
+      "switching_mw": 0.0015749,
+      "total_mw": 0.00510049
+    },
+    "/ucc_b32_pipe5/b32_word_value_bank23": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00351418,
+      "switching_mw": 0.00155416,
+      "total_mw": 0.00507957
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST99": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00351373,
+      "switching_mw": 0.00149196,
+      "total_mw": 0.00501691
+    },
+    "/ucc_b32_pipe5/op3546": {
+      "cells": 73,
+      "leakage_mw": 0.00501603,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 0.00501603
+    },
+    "/ucc_b32_pipe5/op3550": {
+      "cells": 71,
+      "leakage_mw": 0.00499309,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 0.00499309
+    },
+    "/ucc_b32_pipe5/op3555": {
+      "cells": 71,
+      "leakage_mw": 0.00493187,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 0.00493187
+    },
+    "/ucc_b32_pipe5/op3551": {
+      "cells": 68,
+      "leakage_mw": 0.00484926,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 0.00484926
+    },
+    "/ucc_b32_pipe5/b32_word_value_bank13": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00350923,
+      "switching_mw": 0.00120424,
+      "total_mw": 0.0047247
+    },
+    "/ucc_b32_pipe5/op3548": {
+      "cells": 70,
+      "leakage_mw": 0.00471906,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 0.00471906
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST128": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00350345,
+      "switching_mw": 0.00119414,
+      "total_mw": 0.00470881
+    },
+    "/ucc_b32_pipe5/op3542": {
+      "cells": 69,
+      "leakage_mw": 0.00468408,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 0.00468408
+    },
+    "/ucc_b32_pipe5/op3554": {
+      "cells": 71,
+      "leakage_mw": 0.00465817,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 0.00465817
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST110": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.0035029,
+      "switching_mw": 0.00114075,
+      "total_mw": 0.00465487
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST103": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00350735,
+      "switching_mw": 0.00106168,
+      "total_mw": 0.00458026
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST101": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00350694,
+      "switching_mw": 0.00104924,
+      "total_mw": 0.0045674
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST104": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00350694,
+      "switching_mw": 0.00104924,
+      "total_mw": 0.0045674
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST108": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00350623,
+      "switching_mw": 0.00100051,
+      "total_mw": 0.00451796
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST33": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00350271,
+      "switching_mw": 0.000762566,
+      "total_mw": 0.0042765
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST129": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00348818,
+      "switching_mw": 0.000644639,
+      "total_mw": 0.00414404
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST130": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00348818,
+      "switching_mw": 0.000644639,
+      "total_mw": 0.00414404
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST112": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00350027,
+      "switching_mw": 0.000601862,
+      "total_mw": 0.00411336
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST114": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00349885,
+      "switching_mw": 0.000556762,
+      "total_mw": 0.00406684
+    },
+    "/ucc_b32_pipe5/b32_word_value_bank7": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00348498,
+      "switching_mw": 0.000556511,
+      "total_mw": 0.00405271
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST127": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00349772,
+      "switching_mw": 0.000526694,
+      "total_mw": 0.00403563
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST115": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00349792,
+      "switching_mw": 0.000525658,
+      "total_mw": 0.0040348
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST113": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00349767,
+      "switching_mw": 0.000524621,
+      "total_mw": 0.00403351
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST116": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.00349767,
+      "switching_mw": 0.000524621,
+      "total_mw": 0.00403351
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST85": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.0034933,
+      "switching_mw": 0.000403315,
+      "total_mw": 0.00390783
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST86": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.0034933,
+      "switching_mw": 0.000403315,
+      "total_mw": 0.00390783
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST125": {
+      "cells": 1,
+      "leakage_mw": 1.12227e-05,
+      "internal_mw": 0.0034913,
+      "switching_mw": 0.000349402,
+      "total_mw": 0.00385193
+    },
+    "/ucc_b32_pipe5/b32_cross_change_bank0": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145267,
+      "switching_mw": 0.000381292,
+      "total_mw": 0.00184457
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST16": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.000381292,
+      "total_mw": 0.00184411
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST22": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.000381292,
+      "total_mw": 0.00184411
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST62": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.000381292,
+      "total_mw": 0.00184411
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST67": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.000381292,
+      "total_mw": 0.00184411
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST84": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.000381292,
+      "total_mw": 0.00184411
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST94": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.000381292,
+      "total_mw": 0.00184411
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST100": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.000381292,
+      "total_mw": 0.00184411
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST109": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.000381292,
+      "total_mw": 0.00184411
+    },
+    "/ucc_b32_pipe5/b32_enable_or_clock_root_0_0": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.000381292,
+      "total_mw": 0.00184411
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST2": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST4": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST6": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST11": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST13": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST15": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST17": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST18": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST19": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST20": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST21": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST23": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST24": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST25": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST26": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST27": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST28": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST29": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST30": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST31": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST37": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST42": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST44": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST45": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST46": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST47": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST48": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST49": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST50": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST51": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST52": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST53": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST54": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST55": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST56": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST57": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST58": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST59": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST61": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST63": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST65": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST68": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST69": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST70": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST71": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST72": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST74": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST75": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST76": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST77": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST78": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST79": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST80": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST81": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST83": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST87": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST88": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST89": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST92": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST95": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST96": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST97": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST98": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST102": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST105": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST106": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST107": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST111": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST121": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST122": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST123": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST124": {
+      "cells": 1,
+      "leakage_mw": 1.06067e-05,
+      "internal_mw": 0.00145221,
+      "switching_mw": 0.0,
+      "total_mw": 0.00146282
+    },
+    "/ucc_b32_pipe5/b32_word_value_bank0": {
+      "cells": 1,
+      "leakage_mw": 1.0976e-05,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 1.0976e-05
+    },
+    "/ucc_b32_pipe5/b32_word_value_bank1": {
+      "cells": 1,
+      "leakage_mw": 1.0976e-05,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 1.0976e-05
+    },
+    "/ucc_b32_pipe5/b32_word_value_bank2": {
+      "cells": 1,
+      "leakage_mw": 1.0976e-05,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 1.0976e-05
+    },
+    "/ucc_b32_pipe5/b32_word_value_bank3": {
+      "cells": 1,
+      "leakage_mw": 1.0976e-05,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 1.0976e-05
+    },
+    "/ucc_b32_pipe5/b32_word_value_bank4": {
+      "cells": 1,
+      "leakage_mw": 1.0976e-05,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 1.0976e-05
+    },
+    "/ucc_b32_pipe5/b32_word_value_bank8": {
+      "cells": 1,
+      "leakage_mw": 1.0976e-05,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 1.0976e-05
+    },
+    "/ucc_b32_pipe5/b32_word_value_bank9": {
+      "cells": 1,
+      "leakage_mw": 1.0976e-05,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 1.0976e-05
+    },
+    "/ucc_b32_pipe5/b32_word_value_bank11": {
+      "cells": 1,
+      "leakage_mw": 1.0976e-05,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 1.0976e-05
+    },
+    "/ucc_b32_pipe5/b32_word_value_bank15": {
+      "cells": 1,
+      "leakage_mw": 1.0976e-05,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 1.0976e-05
+    },
+    "/ucc_b32_pipe5/b32_word_value_bank16": {
+      "cells": 1,
+      "leakage_mw": 1.0976e-05,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 1.0976e-05
+    },
+    "/ucc_b32_pipe5/b32_word_value_bank17": {
+      "cells": 1,
+      "leakage_mw": 1.0976e-05,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 1.0976e-05
+    },
+    "/ucc_b32_pipe5/b32_word_value_bank18": {
+      "cells": 1,
+      "leakage_mw": 1.0976e-05,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 1.0976e-05
+    },
+    "/ucc_b32_pipe5/b32_word_value_bank20": {
+      "cells": 1,
+      "leakage_mw": 1.0976e-05,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 1.0976e-05
+    },
+    "/ucc_b32_pipe5/b32_word_value_bank21": {
+      "cells": 1,
+      "leakage_mw": 1.0976e-05,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 1.0976e-05
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST5": {
+      "cells": 1,
+      "leakage_mw": 1.01327e-05,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 1.01327e-05
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST32": {
+      "cells": 1,
+      "leakage_mw": 1.01327e-05,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 1.01327e-05
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST34": {
+      "cells": 1,
+      "leakage_mw": 1.01327e-05,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 1.01327e-05
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST39": {
+      "cells": 1,
+      "leakage_mw": 1.01327e-05,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 1.01327e-05
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST40": {
+      "cells": 1,
+      "leakage_mw": 1.01327e-05,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 1.01327e-05
+    },
+    "/ucc_b32_pipe5/RC_CG_HIER_INST64": {
+      "cells": 1,
+      "leakage_mw": 1.01327e-05,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 1.01327e-05
+    },
+    "/ucc_b32_pipe5/b32_word_value_bank14": {
+      "cells": 1,
+      "leakage_mw": 1.01327e-05,
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "total_mw": 1.01327e-05
+    }
+  },
+  "vcd_sha256": "80f8e59aa92c4a2e2d68d4114ab6635c572579f2de41671b4fb9392c2d7ea339",
+  "finished_utc": "2026-11-18T01:22:48.734086+00:00",
+  "macs_per_op": 64,
+  "dynamic_pj_per_mac": 0.218918125
+}

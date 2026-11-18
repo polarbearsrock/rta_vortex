@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "mapped_sha256": "795547913478148b7ab047464cfad79d96323e793cf111626b02b1be1383ece6",
+  "checks": 14336,
+  "reset_cases": 2560,
+  "cycles": 62722,
+  "opcode_encodings": 128,
+  "warm_operations": [
+    0,
+    32,
+    96,
+    122,
+    88
+  ],
+  "samples_per_opcode": 2,
+  "reset_widths": [
+    1,
+    2
+  ],
+  "gate_replay": true,
+  "verification_vectors_only": true,
+  "power_workloads_unchanged": true,
+  "scope": "Reset a live eight-issue stream then immediately issue each opcode with two existing oracle vectors, five predecessor families and one/two reset cycles. Valid and data are checked cycle by cycle. This is verification coverage, not formal reset equivalence or a changed energy benchmark.",
+  "evidence_sha256": {
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/syn/ucc_reuse/b32_reset_entry_check.py": "c34d0fe1d5eebcc811aa1636b576cc77771dc0d4100034381ceddde7dc8a431a",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117/candidate.json": "a2b5dd17e8ba37ee11ae24ff2e8a1d405e90690241f4068ece8db2d9a7a157d7",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117/mapped.v": "795547913478148b7ab047464cfad79d96323e793cf111626b02b1be1383ece6",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sticky4_unused_mul_fold4_fixed_opt_repair_v2_20261116_check/bench.sv": "6b97a1d17739c6065f683d46c63ee567ee64c85552cfcefa8e5912b36c17ebac",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sticky4_unused_mul_fold4_fixed_opt_repair_v2_20261116_check/reference.sv": "799430342320dbeb6e1414f8e7ec3c1a9da24b8f0456758a694fa2abe62233a7",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/sticky4_unused_mul_fold4_fixed_opt_repair_v2_20261116_check/vectors.txt": "09f2da4edbb5768def5ebeb7bbb2f6e2cbd54fa84e8121ddfd692c93683b35a6",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_remapped_20261117_power/manifest.json": "4eebccde8b57119b3455785af038ca9c5484143b49c30829588326c3b6ff61f0",
+    "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/verilog/tcbn28hpcplusbwp30p140_110a/tcbn28hpcplusbwp30p140.v": "ad61185819c14bf80791f2ce89ce943e2b8967e41ed180f624d18ceaafa99501",
+    "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/verilog/tcbn28hpcplusbwp30p140hvt_110a/tcbn28hpcplusbwp30p140hvt.v": "5391dac8a65b10d3ccb5abe11a7e76a1541ea1bd6d56fc0de3951b8c2761683d",
+    "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/verilog/tcbn28hpcplusbwp30p140lvt_110a/tcbn28hpcplusbwp30p140lvt.v": "acd9dccd9f40b77d396ee0bb46cc99075596fd5ab501ed5e82d74227e9baaab8",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_reset_entry/bench.sv": "ba39b751386fc917a29e154b1bf3ed957345baf8bb1f138fb2f8bfabe16ff2e2",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_reset_entry/pairs.txt": "0193ea00415c040ff00fb275d18b87e1f7e9b96140a25f8b6605b9a7aeaa2c0c",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_reset_entry/reference.sv": "799430342320dbeb6e1414f8e7ec3c1a9da24b8f0456758a694fa2abe62233a7",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_reset_entry/run.log": "0bef6f0e1b410c8d952ba91701f2dbd176c2ed43428c68f94cbc0eeebb11bd2d",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117_reset_entry/launch.json": "65f1ffc536740aa57ebf5b51b9794092b24e5d07f9b5b41791386c661789775f"
+  }
+}

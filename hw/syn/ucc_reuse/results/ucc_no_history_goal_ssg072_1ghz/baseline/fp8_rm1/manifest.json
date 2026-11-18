@@ -1,0 +1,98 @@
+{
+  "synthesis": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/dpa5_drv_sm25",
+  "kind": "dpa",
+  "top": "ucc_dpa16_baseline",
+  "corner": "SSG 0.72 V /125 C",
+  "created_utc": "2026-11-12T13:54:09.795129+00:00",
+  "period_ps": 1000,
+  "warm": 100,
+  "measure": 1000,
+  "seed": 1430471493,
+  "workloads": [
+    "dpa_fp8",
+    "dpa_mxfp8"
+  ],
+  "gate_simulation": {
+    "dpa_fp8": {
+      "checked": 1100,
+      "window_ps": [
+        109000,
+        1109000
+      ],
+      "vcd_sha256": "681f2f918d0b8b669f970b5bc44cb17a9aaf3a36987672cbd149815655dfe03e"
+    },
+    "dpa_mxfp8": {
+      "checked": 1100,
+      "window_ps": [
+        109000,
+        1109000
+      ],
+      "vcd_sha256": "3953bc4860be48ff3d2fccbdfe0f372817a3a19db17eb559223a025cc14fb537"
+    }
+  },
+  "results": {},
+  "files": {
+    "design.sv": "778387c9201dea5cac75ba15649a9557d2a449cd953478f042a5602ad7bdefca",
+    "mapped.v": "6a5a6b7a2e6ce4d5b4141bfde93f114c5d32c3cadd8a77e9c15ae422365f1ba9",
+    "synthesis_manifest.json": "2c4af8148fa2717518dadafb0d10ecb40121244c7800831ec09308f78aa3f69b",
+    "libraries_power.tcl": "0878914e363d74492ebc7dcf1f4e8bf2101a2b0b17d96fa8353228848d12affe",
+    "power.sdc": "46ac41e52981c94c216697420a7a6d47d4bd5561fd6116c397b0b476dc384b32",
+    "tb.sv": "01955fffe13ba3ff7f50388ee1bb22ce204c3e8028f853041910570b0c871fc2",
+    "dpa_fp8.txt": "dbc1884af2f7ddcffb5a9468e3dec4a05f74abd992ed2fc159d196f86ea44199",
+    "dpa_mxfp8.txt": "a979c3cdc67c940a2f5a56246f03ff7549c0fab4a974dbb7b614560bbec5374c"
+  },
+  "libraries": [
+    {
+      "kind": "LIB",
+      "corner": "ss",
+      "path": "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140_180a/tcbn28hpcplusbwp30p140ssg0p72v125c.lib",
+      "sha256": "44a332fd6b6defdb005a3d7a7c4e7f817fe8ec6e6036b0293acd549fa6d353c5"
+    },
+    {
+      "kind": "LIB",
+      "corner": "ss",
+      "path": "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140hvt_180a/tcbn28hpcplusbwp30p140hvtssg0p72v125c.lib",
+      "sha256": "47d6a840a373f60d53e66b7a4dcf5e921115575abb62e6be174bac0cd72ce004"
+    },
+    {
+      "kind": "LIB",
+      "corner": "ss",
+      "path": "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140lvt_180a/tcbn28hpcplusbwp30p140lvtssg0p72v125c.lib",
+      "sha256": "a35a385653dba58f4d8308f4c3638f1e3ca3ed3e80a249ce560386b6340ce711"
+    }
+  ],
+  "driver_sha256": "888ff3d0375ae0fafc14530f22471ee13c741ef391fbcefa03eccbe225b0d039",
+  "reference_sha256": {
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/syn/ucc_reuse/power.py": "03c2d32c8c18ebd17e5c82a87df6273036805690f59d0d1498adef5be5e032a0",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/syn/ucc_reuse/backend_rne.py": "11bdb5d732e2adc795dd3701dcd39f44df9087b92586c11a034458450aaa4acf",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/unittest/ucc_lane/ucc/__init__.py": "d7a7997b8ba75abac32da7857ffa95c5118d48d311e80887c63ee1eccfec3a78",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/unittest/ucc_lane/ucc/dpa.py": "81b528314096c96a68b7f51027b159f94a3b971f06167acddef766e4913dcb75",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/unittest/ucc_lane/ucc/dpavectors.py": "9b7ce6031d2c8b1f1ccd985066a029834924f57c37d3f521d2c0db68622f0c7a",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/unittest/ucc_lane/ucc/fpops.py": "04e4dc0ef70360afdede7caf63b429ba4f7deaac401e5ed967e7e97a12c21b7f",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/unittest/ucc_lane/ucc/fuvectors.py": "c04dae559d0411e9c9e5b42c6610f08dbb98ae3e269600e5f4fea095c01056f8",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/unittest/ucc_lane/ucc/intops.py": "af6dfb20102b71b51e5b6e337e184c32559e60c2246815f55ebb2ca6f3b2fa0d",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/unittest/ucc_lane/ucc/models.py": "616ec1bc133f3d5300ace42ef2c029ba0a8a5bdf0eb4d00f37bf035cedc114ba",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/unittest/ucc_lane/ucc/opcodes.py": "f60177a2e5906737c76fb444b466164981e58e93eca3d60a8a454933dfca235e",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/unittest/ucc_lane/ucc/paths.py": "2cfbc72379f040efe84dda93db3f07baa9c302ede70a41dbcb278a4f374085d5",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/unittest/ucc_lane/ucc/sfu.py": "d19e0c4f4354d2e1ceae56ce41f04fcba68ccd12d464f6df1e3a50dd3c60b6c0",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/unittest/ucc_lane/ucc/vectors.py": "0c382278cdde6f9fbe5582608d6e12054c58ab50baf7961132789573e81bcdcb",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/unittest/ucc_lane/ucc/verify.py": "d4e52311db19dadf5dec76cc1133d0172185c76cfd255dffced5a0a9bbf623e2"
+  },
+  "activity": "Direct zero-delay gate VCD; 100% annotation required",
+  "interconnect": "Library capacitance plus 5 fF output load; no SPEF, CTS or delay glitches",
+  "gating": "Unmodified mapped netlist; actual synthesized clock/data gating",
+  "dpa_semantics": "original truncation",
+  "fp8_e5m2_selector": 1,
+  "operand_encoding": [
+    "E5M2",
+    "E4M3"
+  ],
+  "coverage_extension_driver_sha256": "704681f7d270cfcc72a29d10134de3147f894ecb3f86ebcde80ca501408e1fc6",
+  "distribution": "Uniform finite FP8 bytes per lane; MXFP8 unit block scales; FP32 addend exponent \u00b16",
+  "execution_driver_sha256": "888ff3d0375ae0fafc14530f22471ee13c741ef391fbcefa03eccbe225b0d039",
+  "gate_models_sha256": {
+    "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/verilog/tcbn28hpcplusbwp30p140_110a/tcbn28hpcplusbwp30p140.v": "ad61185819c14bf80791f2ce89ce943e2b8967e41ed180f624d18ceaafa99501",
+    "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/verilog/tcbn28hpcplusbwp30p140hvt_110a/tcbn28hpcplusbwp30p140hvt.v": "5391dac8a65b10d3ccb5abe11a7e76a1541ea1bd6d56fc0de3951b8c2761683d",
+    "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/verilog/tcbn28hpcplusbwp30p140lvt_110a/tcbn28hpcplusbwp30p140lvt.v": "acd9dccd9f40b77d396ee0bb46cc99075596fd5ab501ed5e82d74227e9baaab8"
+  }
+}

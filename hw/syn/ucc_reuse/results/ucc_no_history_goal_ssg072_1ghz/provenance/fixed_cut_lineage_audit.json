@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "remap_steps": [
+    {
+      "candidate": "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_remapped_20261117",
+      "fixed_flops": 4496,
+      "fixed_icgs": 153,
+      "state_functions_unchanged": true,
+      "formal_remap_equivalence_claimed": false
+    }
+  ],
+  "previous_remap_steps": [],
+  "formal_remap_equivalence_claimed": false,
+  "evidence_sha256": {
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_full_checkpoint_pins4123_45873_20261117.json": "3e1cb6e621f39abb128976511a1abbef930ca68909e39f6b98892cb50b701a9e",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_full_checkpoint_joint654_45861_20261117.json": "49bd53ac84cfcac44582e8647e0f08ef2aa8ff0f56ae94b7c4f08b48cb0e7e96",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/hw/syn/ucc_reuse/b32_freeze_fixed_cut_checkpoint.py": "3823e778c7d33122b8c2e6146461d2b990c55e3ae23df77c73550ece407ab1e1",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_remapped_20261117_power/manifest.json": "4eebccde8b57119b3455785af038ca9c5484143b49c30829588326c3b6ff61f0",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117/candidate.json": "a2b5dd17e8ba37ee11ae24ff2e8a1d405e90690241f4068ece8db2d9a7a157d7",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117/mapped.v": "795547913478148b7ab047464cfad79d96323e793cf111626b02b1be1383ece6",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_repaired_20261117/proof.json": "ea0646f6ec57342bb08e5c59c11fcbd07f366819705463ea07cf0e25ce384c1d",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_remapped_20261117/candidate.json": "37fe87be0070e58edccaf6501b54314ec3436fdaa5ade52fb121a398edc5ee48",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_activity_remapped_20261117/mapped.v": "90215625b85d443c6de531f04745c8d416bff998da728d1d2757c2d97a5249da",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_pin_greedy1_activity_opt_20261117/opt/result.json": "a3130df07062b0aab67b120f989b4508e5fced486968bc798d95b771b0bc612f",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_pin_greedy1_activity_opt_20261117/opt/manifest.json": "3f40a0e8593f53d15d5e62b2548a8eecbc658dfea3d720ca0c2b825637100978",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_pin_greedy1_activity_opt_20261117/opt/fixed_registers.rpt": "6d765ef4e2061907e671643536b8d8bad099efd8fa12216a6d34f18613ffd472",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_pin_greedy1_activity_opt_20261117/opt/settings.rpt": "000853453a944bd8be954e1f1145233a7138141f60d1a4e32792e482719128a9",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_pin_greedy1_activity_opt_20261117/opt/synth.tcl": "d78a5486f0ff155f2e7b6a3e9f654c6516a2f4ec0126138f5b46ae7614de141b",
+    "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140_180a/tcbn28hpcplusbwp30p140ssg0p72v125c.lib": "44a332fd6b6defdb005a3d7a7c4e7f817fe8ec6e6036b0293acd549fa6d353c5",
+    "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140hvt_180a/tcbn28hpcplusbwp30p140hvtssg0p72v125c.lib": "47d6a840a373f60d53e66b7a4dcf5e921115575abb62e6be174bac0cd72ce004",
+    "/data2/tools-additional/pdk/N28/installed/standard_cell/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp30p140lvt_180a/tcbn28hpcplusbwp30p140lvtssg0p72v125c.lib": "a35a385653dba58f4d8308f4c3638f1e3ca3ed3e80a249ce560386b6340ce711",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_pin_relaxed75_greedy1_20261117/candidate.json": "6928d1361d2fcc6a3d9265e1bca06ea8b96ccef5c0db4dd7b0a5b90f88e91d95",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_pin_relaxed75_greedy1_20261117/mapped.v": "1532761975e06e6381957f147530195a7050ec654efe3be4aa1e90885034b1f8",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_pin_relaxed75_greedy1_20261117/proof.json": "32a6c29aa1b7718957080995cc8900729b93982aafe256d8de21daef20638d24",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_pin_repaired_20261117/candidate.json": "2b2ceb2ba3aa9ad475c04435c57d733394cf3c4d392cd5134a05692293fea8f0",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_pin_repaired_20261117/mapped.v": "e4a8f3304e7224aed4068d2137fa6f35f913f4e468aae414fc55ccfb458d737c",
+    "/data2/jwang710/UCC_FU/rta_vortex_shwet_reuse/build_ucc_shared_gating/no_history_joint_master_pin_repaired_20261117/proof.json": "7f9a6a358042b2e52a41ca315c376ee1339e76f536d0bb6d7de0e5585db98771"
+  }
+}
